@@ -10,9 +10,7 @@ See also ClimOO ontology webpage and ClimOO project website.
 
 ## Material
 
-Currently, this repository hosts the initial module
-
-ClimOO V1.0.0 is the first version and the current release of ClimOO ontology. It is formalized in [Web Ontology Language (OWL)](https://www.w3.org/TR/owl2-overview/) and covers English as natural language. ClimOO V1.0.0 conforms to [OBO-Foundry principles](https://obofoundry.org/principles/fp-000-summary.html).
+Currently, this repository hosts the initial working progress version of the ClimOO ontology, ClimOO V1.0.0. ClimOO V1.0.0 is formalized in [Web Ontology Language (OWL)](https://www.w3.org/TR/owl2-overview/) and covers English as natural language. ClimOO V1.0.0 conforms to [OBO-Foundry principles](https://obofoundry.org/principles/fp-000-summary.html).
 
 ClimOO materials can be found here:
 
@@ -49,9 +47,7 @@ Giorgio A. Ubbiali - Giorgio.Ubbiali@unimi.it
 
 ## Publications and Documentation
 
-
-
-## See Also
+Coming soon.
 
 
 ## License
