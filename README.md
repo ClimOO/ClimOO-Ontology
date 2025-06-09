@@ -30,7 +30,7 @@ The most recent version of ClimOO can be always found here.
 
 [Giorgio A.Ubbiali](https://orcid.org/0000-0001-7872-1770)
 
-Ludger Jansen
+[Ludger Jansen](https://jansenludger.github.io/home/)
 
 
 
