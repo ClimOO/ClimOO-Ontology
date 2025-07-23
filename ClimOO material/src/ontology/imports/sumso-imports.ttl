@@ -2797,6 +2797,10 @@ possible axioms may be created to refer to the presence of plants, fungi, animal
                                                rdfs:label "field" .
 
 
+###  http://purl.obolibrary.org/obo/ENVO_01001828
+<http://purl.obolibrary.org/obo/ENVO_01001828> rdf:type owl:Class .
+
+
 ###  http://purl.obolibrary.org/obo/IAO_0000005
 <http://purl.obolibrary.org/obo/IAO_0000005> rdf:type owl:Class ;
                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000033> ;
@@ -3963,15 +3967,7 @@ IAO “information content entity” class: http://purl.obolibrary.org/obo/IAO_0
 
 ###  https://w3id.org/sumso#SuMSO_0000004
 <https://w3id.org/sumso#SuMSO_0000004> rdf:type owl:Class ;
-                                       rdfs:subClassOf <https://www.w3id.org/sco#SCO_0000015> ,
-                                                       [ owl:intersectionOf ( <https://www.w3id.org/sco#SCO_0000015>
-                                                                              [ rdf:type owl:Restriction ;
-                                                                                owl:onProperty <http://purl.obolibrary.org/obo/RO_0000091> ;
-                                                                                owl:someValuesFrom <https://w3id.org/sumso#SuMSO_0000090>
-                                                                              ]
-                                                                            ) ;
-                                                         rdf:type owl:Class
-                                                       ] ;
+                                       rdfs:subClassOf _:genid128 ;
                                        rdfs:comment """Here, the term “food” is used genuinely in a broad and over-comprehensive sense. 
 To delve more into the meanings of “food”, we refer to Borghini et al. (2021) and Borghini and Piras (2020,2021).
 
@@ -3984,6 +3980,22 @@ Borghini, Andrea, & Piras, N. (2021). On Interpreting Something as Food. Food Et
                                        rdfs:label "food system"@en ;
                                        <http://www.w3.org/2004/02/skos/core#definition> "A complex system that pertains to food, to some extent."@en ;
                                        <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+_:genid128 owl:intersectionOf ( <http://purl.obolibrary.org/obo/ENVO_01001828>
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty <http://purl.obolibrary.org/obo/RO_0000091> ;
+                                   owl:someValuesFrom <https://w3id.org/sumso#SuMSO_0000090>
+                                 ]
+                               ) ;
+            rdf:type owl:Class .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <https://w3id.org/sumso#SuMSO_0000004> ;
+   owl:annotatedProperty rdfs:subClassOf ;
+   owl:annotatedTarget _:genid128 ;
+   rdfs:comment """ClimOO developer comment:
+We revied this axiom to reflect the adjusted system hierarchy."""@en
+ ] .
 
 
 ###  https://w3id.org/sumso#SuMSO_0000018
@@ -4944,9 +4956,9 @@ To represent variations of quality/realizable with respect to different processe
 
 ###  https://www.w3id.org/sco#SCO_0000003
 <https://www.w3id.org/sco#SCO_0000003> rdf:type owl:Class ;
-                                       owl:equivalentClass _:genid379 .
+                                       owl:equivalentClass _:genid380 .
 
-_:genid379 owl:intersectionOf ( <http://www.ontologyrepository.com/CommonCoreOntologies/RepresentationalInformationContentEntity>
+_:genid380 owl:intersectionOf ( <http://www.ontologyrepository.com/CommonCoreOntologies/RepresentationalInformationContentEntity>
                                  [ rdf:type owl:Restriction ;
                                    owl:onProperty <http://www.ontologyrepository.com/CommonCoreOntologies/is_about> ;
                                    owl:someValuesFrom <https://www.w3id.org/sco#SCO_0000015>
@@ -4961,7 +4973,7 @@ _:genid379 owl:intersectionOf ( <http://www.ontologyrepository.com/CommonCoreOnt
 [ rdf:type owl:Axiom ;
    owl:annotatedSource <https://www.w3id.org/sco#SCO_0000003> ;
    owl:annotatedProperty owl:equivalentClass ;
-   owl:annotatedTarget _:genid379 ;
+   owl:annotatedTarget _:genid380 ;
    rdfs:comment """Discussion with subject matter experts is required to revise this axiom with regard to the “represents” object property. This was the most appropriate object property among those pertaining to OBO-Foundry and compliant ontologies to use in constructing this axiom. 
 Nevertheless, implementations seem necessary to deepen the characterization, for instance with regard to representing and measuring the complex system of interest.. Revisions may regard adapting this object property or even further creating a new ad hoc object property. 
 

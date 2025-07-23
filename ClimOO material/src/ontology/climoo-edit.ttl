@@ -10,6 +10,7 @@
                                owl:versionIRI :V1.0.0 ;
                                owl:imports <http://ClimOO/climoo/import/sumso-imports#2025-06-16> ,
                                            <http://ClimOO/climoo/imports/cco-imports#2025-06-17> ,
+                                           <http://ClimOO/climoo/imports/envo-imports#2025-06-25> ,
                                            <http://purl.obolibrary.org/obo/climoo/imports/chebi_imports#2025-06-19> ,
                                            <http://purl.obolibrary.org/obo/climoo/imports/pato_imports#2025-06-19> ,
                                            <https://ClimOO/climoo/imports/iao-imports#2025-06-18> ,
@@ -38,8 +39,16 @@ Documentation webpage: https://www.w3id.org/climoo/docs"""@en ,
 <http://purl.obolibrary.org/obo/IAO_0000235> rdfs:subPropertyOf <http://www.ontologyrepository.com/CommonCoreOntologies/is_subject_of> .
 
 
+###  http://purl.obolibrary.org/obo/RO_0000058
+<http://purl.obolibrary.org/obo/RO_0000058> rdfs:subPropertyOf <http://purl.obolibrary.org/obo/BFO_0000058> .
+
+
+###  http://purl.obolibrary.org/obo/RO_0000059
+<http://purl.obolibrary.org/obo/RO_0000059> rdfs:subPropertyOf <http://purl.obolibrary.org/obo/BFO_0000059> .
+
+
 ###  https://www.commoncoreontologies.org/ont00001803
-<https://www.commoncoreontologies.org/ont00001803> rdfs:subPropertyOf <http://purl.obolibrary.org/obo/RO_0002501> .
+<https://www.commoncoreontologies.org/ont00001803> rdfs:subPropertyOf <http://purl.obolibrary.org/obo/RO_0002427> .
 
 
 ###  https://www.commoncoreontologies.org/ont00001805
@@ -47,7 +56,7 @@ Documentation webpage: https://www.w3id.org/climoo/docs"""@en ,
 
 
 ###  https://www.commoncoreontologies.org/ont00001819
-<https://www.commoncoreontologies.org/ont00001819> rdfs:subPropertyOf <http://purl.obolibrary.org/obo/RO_0002501> .
+<https://www.commoncoreontologies.org/ont00001819> rdfs:subPropertyOf <http://purl.obolibrary.org/obo/RO_0002418> .
 
 
 ###  https://www.commoncoreontologies.org/ont00001888
@@ -66,16 +75,79 @@ Documentation webpage: https://www.w3id.org/climoo/docs"""@en ,
 #    Classes
 #################################################################
 
+###  http://purl.obolibrary.org/obo/BFO_0000019
+<http://purl.obolibrary.org/obo/BFO_0000019> owl:equivalentClass <http://purl.obolibrary.org/obo/PATO_0000001> .
+
+
 ###  http://purl.obolibrary.org/obo/BFO_0000023
 <http://purl.obolibrary.org/obo/BFO_0000023> owl:equivalentClass <http://purl.obolibrary.org/obo/CHEBI_50906> .
 
 
 ###  http://purl.obolibrary.org/obo/CHEBI_24431
-<http://purl.obolibrary.org/obo/CHEBI_24431> rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000040> .
+<http://purl.obolibrary.org/obo/CHEBI_24431> rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000040> ;
+                                             rdfs:comment """ClimOO developer comment:
+Currently, we included only main classes from ChEBI relevant for ClimOO purposes."""@en .
 
 
 ###  http://purl.obolibrary.org/obo/CHEBI_50906
 <http://purl.obolibrary.org/obo/CHEBI_50906> rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000017> .
+
+
+###  http://purl.obolibrary.org/obo/ENVO_00000077
+<http://purl.obolibrary.org/obo/ENVO_00000077> rdfs:subClassOf _:genid1 .
+
+_:genid1 owl:intersectionOf ( <http://purl.obolibrary.org/obo/ENVO_01001110>
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000056> ;
+                                 owl:someValuesFrom <http://purl.obolibrary.org/obo/AGRO_00002071>
+                               ]
+                             ) ;
+          rdf:type owl:Class .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/ENVO_00000077> ;
+   owl:annotatedProperty rdfs:subClassOf ;
+   owl:annotatedTarget _:genid1 ;
+   rdfs:comment """ClimOO developer comment:
+Adapted from equivalent class axiom from EnvO. Reference to agricultural land conversion process can be re-added, as needed."""@en
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/ENVO_01000665
+<http://purl.obolibrary.org/obo/ENVO_01000665> rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000023> .
+
+
+###  http://purl.obolibrary.org/obo/ENVO_01001110
+<http://purl.obolibrary.org/obo/ENVO_01001110> owl:equivalentClass _:genid6 .
+
+_:genid6 owl:intersectionOf ( <http://purl.obolibrary.org/obo/ENVO_01000254>
+                               [ rdf:type owl:Class ;
+                                 owl:unionOf ( [ rdf:type owl:Restriction ;
+                                                 owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000051> ;
+                                                 owl:someValuesFrom <http://purl.obolibrary.org/obo/NCBITaxon_131567>
+                                               ]
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000051> ;
+                                                 owl:someValuesFrom <http://purl.obolibrary.org/obo/PCO_0000000>
+                                               ]
+                                             )
+                               ]
+                             ) ;
+          rdf:type owl:Class .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/ENVO_01001110> ;
+   owl:annotatedProperty owl:equivalentClass ;
+   owl:annotatedTarget _:genid6 ;
+   rdfs:comment """ClimOO developer comment:
+Re-added from EnvO."""@en
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/GO_0008150
+<http://purl.obolibrary.org/obo/GO_0008150> rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000015> ;
+                                            rdfs:comment """ClimOO developer comment:
+We include this class as a subclass of BFO:process. Given its definition, it may be considered as a subclass of OBI:planned process. We envision discussions with subject matter experts."""@en .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000003
@@ -134,8 +206,24 @@ See https://www.commoncoreontologies.org/ont00000974
 https://www.commoncoreontologies.org/ont00000476"""@en .
 
 
-###  http://purl.obolibrary.org/obo/PATO_0103000
-<http://purl.obolibrary.org/obo/PATO_0103000> rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000019> .
+###  http://purl.obolibrary.org/obo/PATO_0000001
+<http://purl.obolibrary.org/obo/PATO_0000001> rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000020> .
+
+
+###  http://purl.obolibrary.org/obo/PCO_0000031
+<http://purl.obolibrary.org/obo/PCO_0000031> rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000040> .
+
+
+###  https://w3id.org/sumso#SuMSO_0000160
+<https://w3id.org/sumso#SuMSO_0000160> rdfs:subClassOf <http://purl.obolibrary.org/obo/ENVO_01000665> .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <https://w3id.org/sumso#SuMSO_0000160> ;
+   owl:annotatedProperty rdfs:subClassOf ;
+   owl:annotatedTarget <http://purl.obolibrary.org/obo/ENVO_01000665> ;
+   rdfs:comment """ClimOO developer comment:
+This class presents a narrower focus than the EnvO class from which it has been adapted. Thus, we considered this class as a subclass of the original EnvO class."""@en
+ ] .
 
 
 ###  https://www.commoncoreontologies.org/ont00000120
@@ -159,6 +247,18 @@ We constructed an initial alignment between IAO a CCO representation of ICE and 
 #################################################################
 #    Annotations
 #################################################################
+
+<http://purl.obolibrary.org/obo/ENVO_00002005> rdfs:comment """ClimOO developer comment:
+Axioms detailing the additional elements that compose air may be reintroduced from EnvO, as needed."""@en .
+
+
+<http://purl.obolibrary.org/obo/ENVO_01001434> rdfs:comment """ClimOO developer comment:
+Revisions may be required to specify this definition. Currently, the term “change” is quite vague."""@en .
+
+
+<http://purl.obolibrary.org/obo/ENVO_01001686> rdfs:comment """ClimOO developer comment:
+The label of this class may require revisions to avoid mistakenly identifying it with the actual mass (quality) of an object."""@en .
+
 
 <http://purl.obolibrary.org/obo/IAO_0000009> rdfs:comment """ClimOO developer comment:
 We constructed an initial alignment between IAO a CCO representation of ICE and measurements. It is tentative. We envision discussions with subject matter experts to revise and implement the work done so far."""@en ;
