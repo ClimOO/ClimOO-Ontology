@@ -101,7 +101,9 @@ Currently, we included only main classes from ChEBI relevant for ClimOO purposes
 
 
 ###  http://purl.obolibrary.org/obo/CHEBI_78298
-<http://purl.obolibrary.org/obo/CHEBI_78298> rdfs:comment """ClimOO developer comment: 
+<http://purl.obolibrary.org/obo/CHEBI_78298> rdfs:comment """ClimOO developer comment:
+Contaminants can derives from the system of interest or its environment as well."""@en ,
+                                                          """ClimOO developer comment: 
 We envision revision of this class to specify the meaning of undesired effects, perspectives and stakeholders according to which are undesired as well as scale and level of analysis."""@en .
 
 
@@ -125,11 +127,37 @@ Adapted from equivalent class axiom from EnvO. Reference to agricultural land co
  ] .
 
 
+###  http://purl.obolibrary.org/obo/ENVO_00003074
+<http://purl.obolibrary.org/obo/ENVO_00003074> rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                 owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000176> ;
+                                                                 owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                      owl:unionOf ( <http://purl.obolibrary.org/obo/ENVO_01001828>
+                                                                                                    :ClimOO_0000023
+                                                                                                  )
+                                                                                    ]
+                                                               ] ;
+                                               rdfs:comment """ClimOO Ontology revised definition:
+Reference to supply chains and related activities may be added, as neeed."""@en .
+
+
 ###  http://purl.obolibrary.org/obo/ENVO_00010483
 <http://purl.obolibrary.org/obo/ENVO_00010483> rdfs:subClassOf [ rdf:type owl:Restriction ;
                                                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000176> ;
-                                                                 owl:someValuesFrom <http://purl.obolibrary.org/obo/ENVO_01000254>
+                                                                 owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                      owl:unionOf ( <http://purl.obolibrary.org/obo/ENVO_01000254>
+                                                                                                    :ClimOO_0000021
+                                                                                                  )
+                                                                                    ]
                                                                ] .
+
+
+###  http://purl.obolibrary.org/obo/ENVO_01000254
+<http://purl.obolibrary.org/obo/ENVO_01000254> rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                 owl:onProperty <http://purl.obolibrary.org/obo/RO_0000086> ;
+                                                                 owl:someValuesFrom <http://purl.obolibrary.org/obo/ENVO_01000203>
+                                                               ] ;
+                                               rdfs:comment """ClimOO developer comment:
+For ClimOO purposes, we intend this class as a subclass of “complex system” class. If needed, this class can be generalized as a sibling class and a more specific class for environmental complex system may be created."""@en .
 
 
 ###  http://purl.obolibrary.org/obo/ENVO_01000371
@@ -139,32 +167,46 @@ Adapted from equivalent class axiom from EnvO. Reference to agricultural land co
                                                                ] .
 
 
+###  http://purl.obolibrary.org/obo/ENVO_01000452
+<http://purl.obolibrary.org/obo/ENVO_01000452> rdfs:subClassOf [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                                        owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000054> ;
+                                                                                        owl:someValuesFrom <http://purl.obolibrary.org/obo/ENVO_02500000>
+                                                                                      ]
+                                                                                      [ rdf:type owl:Restriction ;
+                                                                                        owl:onProperty <http://purl.obolibrary.org/obo/RO_0000092> ;
+                                                                                        owl:someValuesFrom <http://purl.obolibrary.org/obo/ENVO_01000254>
+                                                                                      ]
+                                                                                    ) ;
+                                                                 rdf:type owl:Class
+                                                               ] .
+
+
 ###  http://purl.obolibrary.org/obo/ENVO_01000665
 <http://purl.obolibrary.org/obo/ENVO_01000665> rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000023> .
 
 
 ###  http://purl.obolibrary.org/obo/ENVO_01001110
-<http://purl.obolibrary.org/obo/ENVO_01001110> owl:equivalentClass _:genid8 .
+<http://purl.obolibrary.org/obo/ENVO_01001110> owl:equivalentClass _:genid21 .
 
-_:genid8 owl:intersectionOf ( <http://purl.obolibrary.org/obo/ENVO_01000254>
-                               [ rdf:type owl:Class ;
-                                 owl:unionOf ( [ rdf:type owl:Restriction ;
-                                                 owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000051> ;
-                                                 owl:someValuesFrom <http://purl.obolibrary.org/obo/NCBITaxon_131567>
-                                               ]
-                                               [ rdf:type owl:Restriction ;
-                                                 owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000051> ;
-                                                 owl:someValuesFrom <http://purl.obolibrary.org/obo/PCO_0000000>
-                                               ]
-                                             )
-                               ]
-                             ) ;
-          rdf:type owl:Class .
+_:genid21 owl:intersectionOf ( <http://purl.obolibrary.org/obo/ENVO_01000254>
+                                [ rdf:type owl:Class ;
+                                  owl:unionOf ( [ rdf:type owl:Restriction ;
+                                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000051> ;
+                                                  owl:someValuesFrom <http://purl.obolibrary.org/obo/NCBITaxon_131567>
+                                                ]
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000051> ;
+                                                  owl:someValuesFrom <http://purl.obolibrary.org/obo/PCO_0000000>
+                                                ]
+                                              )
+                                ]
+                              ) ;
+           rdf:type owl:Class .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource <http://purl.obolibrary.org/obo/ENVO_01001110> ;
    owl:annotatedProperty owl:equivalentClass ;
-   owl:annotatedTarget _:genid8 ;
+   owl:annotatedTarget _:genid21 ;
    rdfs:comment """ClimOO developer comment:
 Re-added from EnvO."""@en
  ] .
@@ -172,6 +214,13 @@ Re-added from EnvO."""@en
 
 ###  http://purl.obolibrary.org/obo/ENVO_01001170
 <http://purl.obolibrary.org/obo/ENVO_01001170> rdfs:subClassOf <http://purl.obolibrary.org/obo/ENVO_01001795> .
+
+
+###  http://purl.obolibrary.org/obo/ENVO_01001303
+<http://purl.obolibrary.org/obo/ENVO_01001303> rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                 owl:onProperty <http://purl.obolibrary.org/obo/RO_0000081> ;
+                                                                 owl:someValuesFrom <http://purl.obolibrary.org/obo/ENVO_01000254>
+                                                               ] .
 
 
 ###  http://purl.obolibrary.org/obo/ENVO_01001434
@@ -183,20 +232,24 @@ Revisions may be required to specify this definition. Currently, the term “cha
 ###  http://purl.obolibrary.org/obo/ENVO_01001686
 <http://purl.obolibrary.org/obo/ENVO_01001686> rdfs:subClassOf [ rdf:type owl:Restriction ;
                                                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000176> ;
-                                                                 owl:someValuesFrom <http://purl.obolibrary.org/obo/ENVO_01000254>
+                                                                 owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                      owl:unionOf ( <http://purl.obolibrary.org/obo/ENVO_01000254>
+                                                                                                    :ClimOO_0000021
+                                                                                                  )
+                                                                                    ]
                                                                ] ;
                                                rdfs:comment """ClimOO developer comment:
 The label of this class may require revisions to avoid mistakenly identifying it with the actual mass (quality) of an object."""@en .
 
 
 ###  http://purl.obolibrary.org/obo/ENVO_01001795
-<http://purl.obolibrary.org/obo/ENVO_01001795> rdfs:subClassOf _:genid18 ;
+<http://purl.obolibrary.org/obo/ENVO_01001795> rdfs:subClassOf _:genid35 ;
                                                rdfs:comment """ClimOO developer comment:
-For ClimOO Ontology purposes, we restricted this class to processing having as occurrent part only ecosystem interactions and interaction among ecosystems and related environments. We excluded interactions happening into ecosystem environment, as for the related superclass.
+For ClimOO Ontology purposes, we restricted this class to processes having as occurrent part only ecosystem interactions and interaction among ecosystems and related environments. We excluded interactions happening into ecosystem environment, as for the related superclass.
 See also “environmental system process” class.
 http://purl.obolibrary.org/obo/ENVO_02500000"""@en .
 
-_:genid18 rdf:type owl:Restriction ;
+_:genid35 rdf:type owl:Restriction ;
            owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000117> ;
            owl:someValuesFrom [ rdf:type owl:Class ;
                                 owl:unionOf ( :ClimOO_0000038
@@ -207,7 +260,7 @@ _:genid18 rdf:type owl:Restriction ;
 [ rdf:type owl:Axiom ;
    owl:annotatedSource <http://purl.obolibrary.org/obo/ENVO_01001795> ;
    owl:annotatedProperty rdfs:subClassOf ;
-   owl:annotatedTarget _:genid18 ;
+   owl:annotatedTarget _:genid35 ;
    rdfs:comment """ClimOO developer comment:
 See the comment to this class."""@en
  ] .
@@ -226,7 +279,9 @@ We suggest to revise definitions of “anthropogenic environment” and “antho
                                                                                                     :ClimOO_0000045
                                                                                                   )
                                                                                     ]
-                                                               ] .
+                                                               ] ;
+                                               rdfs:comment """ClimOO developer comment:
+For ClimOO Ontology purposes, we restricted this class to processes having as occurrent part only environmental system interactions and interaction among environmental systems and related environments. We aim to strictly focus on systems, avoiding possible alternative generalized interpretations of this class and related subclasses. Processes classifiable under these classes are to be intended in a conventional sense (examples may include system activities and practices), wheatear related interactions are to be intended as more atomic events composing such processes."""@en .
 
 
 ###  http://purl.obolibrary.org/obo/ENVO_02500026
@@ -361,6 +416,20 @@ We revised the position of the “food system” class to fit the more expanse s
                                                                             ) ;
                                                          rdf:type owl:Class
                                                        ] .
+
+
+###  https://w3id.org/sumso#SuMSO_0000044
+<https://w3id.org/sumso#SuMSO_0000044> rdfs:subClassOf :ClimOO_0000070 .
+
+
+###  https://w3id.org/sumso#SuMSO_0000050
+<https://w3id.org/sumso#SuMSO_0000050> rdfs:subClassOf :ClimOO_0000065 ;
+                                       rdfs:comment """ClimOO developer comment:
+Additional subclasses can be included to represent other supply chains and activities, pertaining to other systems, as needed."""@en .
+
+
+###  https://w3id.org/sumso#SuMSO_0000051
+<https://w3id.org/sumso#SuMSO_0000051> rdfs:subClassOf :ClimOO_0000065 .
 
 
 ###  https://w3id.org/sumso#SuMSO_0000160
@@ -1763,6 +1832,22 @@ See http://purl.obolibrary.org/obo/ENVO_01001633""" ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
 
 
+###  https://www.w3id.org/climoo#ClimOO_0000070
+:ClimOO_0000070 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000065 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000117> ;
+                                  owl:someValuesFrom [ rdf:type owl:Class ;
+                                                       owl:unionOf ( <https://w3id.org/sumso#SuMSO_0000027>
+                                                                     <https://w3id.org/sumso#SuMSO_0000029>
+                                                                   )
+                                                     ]
+                                ] ;
+                <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "An anthropized ecosystem process that pertains to a food system."@en ;
+                rdfs:label "food system process"@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
 #################################################################
 #    Annotations
 #################################################################
@@ -1777,6 +1862,10 @@ We suggest to revise definitions of “anthropogenic environment” and “antho
 
 <http://purl.obolibrary.org/obo/ENVO_01000952> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> """ClimOO developer comment:
 It seems that there is some inconsistence with the use of the term “environment” and “ecosystem” in the definition of this class. The superclass refers to ecosystems. Here the focus is on natural environment. Currently, we maintain this class as it is. We, however, suggest revisions."""@en .
+
+
+<http://purl.obolibrary.org/obo/ENVO_01000993> rdfs:comment """ClimOO Ontology revised definition:
+Reference to supply chains and related activities may be added, as neeed. Subclasses may be specified.""" .
 
 
 <http://purl.obolibrary.org/obo/ENVO_02500027> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> """ClimOO Ontology revised definition:
@@ -1807,8 +1896,8 @@ We constructed an initial alignment between IAO a CCO representation of ICE and 
 Additional subclasses can be included to represent other supply chains and activities, pertaining to other systems, as needed. Similarly, some environmental processes can be classify as subclasses here or related to some activities, as neeed."""@en .
 
 
-<https://w3id.org/sumso#SuMSO_0000050> rdfs:comment """ClimOO developer comment:
-Additional subclasses can be included to represent other supply chains and activities, pertaining to other systems, as needed."""@en .
+<https://www.w3id.org/sco#SCO_0000041> rdfs:comment """ClimOO developer comment:
+Some other ClimOO Ontology’s qualities and realizable entities can be further included as subclasses here, if needed."""@en .
 
 
 ###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
