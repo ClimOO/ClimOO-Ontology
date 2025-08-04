@@ -11,6 +11,7 @@
                                owl:imports <http://ClimOO/climoo/import/sumso-imports#2025-06-16> ,
                                            <http://ClimOO/climoo/imports/cco-imports#2025-06-17> ,
                                            <http://ClimOO/climoo/imports/envo-imports#2025-06-25> ,
+                                           <http://ClimOO/climoo/imports/sdgio-imports#2025-06-26> ,
                                            <http://purl.obolibrary.org/obo/climoo/imports/chebi_imports#2025-06-19> ,
                                            <http://purl.obolibrary.org/obo/climoo/imports/pato_imports#2025-06-19> ,
                                            <https://ClimOO/climoo/imports/iao-imports#2025-06-18> ,
@@ -493,13 +494,6 @@ See https://www.commoncoreontologies.org/ont00000974
 https://www.commoncoreontologies.org/ont00000476"""@en .
 
 
-###  http://purl.obolibrary.org/obo/OBI_0000245
-<http://purl.obolibrary.org/obo/OBI_0000245> rdfs:subClassOf [ rdf:type owl:Restriction ;
-                                                               owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000176> ;
-                                                               owl:someValuesFrom <http://purl.obolibrary.org/obo/ENVO_01001828>
-                                                             ] .
-
-
 ###  http://purl.obolibrary.org/obo/OBI_0000260
 <http://purl.obolibrary.org/obo/OBI_0000260> rdfs:subClassOf [ rdf:type owl:Restriction ;
                                                                owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000059> ;
@@ -525,6 +519,51 @@ https://www.commoncoreontologies.org/ont00000476"""@en .
 
 ###  http://purl.obolibrary.org/obo/PCO_0000031
 <http://purl.obolibrary.org/obo/PCO_0000031> rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000040> .
+
+
+###  http://purl.unep.org/sdg/SDGIO_00000011
+<http://purl.unep.org/sdg/SDGIO_00000011> rdfs:subClassOf _:genid98 ;
+                                          rdfs:comment """ClimOO developer comment:
+For ClimOO Ontology purposes, according to implementation of the EnvO “resource” class, we intend this class as referring to use of resources that specifically pertain to environmental systems.
+See also http://purl.unep.org/sdg/SDGIO_00000013"""@en .
+
+_:genid98 rdf:type owl:Restriction ;
+           owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000057> ;
+           owl:someValuesFrom [ owl:intersectionOf ( [ rdf:type owl:Class ;
+                                                       owl:unionOf ( <http://purl.obolibrary.org/obo/OBI_0000245>
+                                                                     <http://purl.obolibrary.org/obo/OBI_0100026>
+                                                                   )
+                                                     ]
+                                                     [ rdf:type owl:Restriction ;
+                                                       owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000176> ;
+                                                       owl:someValuesFrom <http://purl.obolibrary.org/obo/ENVO_01000254>
+                                                     ]
+                                                   ) ;
+                                rdf:type owl:Class
+                              ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.unep.org/sdg/SDGIO_00000011> ;
+   owl:annotatedProperty rdfs:subClassOf ;
+   owl:annotatedTarget _:genid98 ;
+   rdfs:comment """ClimOO developer comment:
+Reference to populations and collections of organisms can be added, possibly in accordance to EnvO original axiom."""@en
+ ] .
+
+
+###  http://purl.unep.org/sdg/SDGIO_00000013
+<http://purl.unep.org/sdg/SDGIO_00000013> rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                            owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000176> ;
+                                                            owl:someValuesFrom <http://purl.obolibrary.org/obo/ENVO_01000254>
+                                                          ] ;
+                                          rdfs:comment """ClimOO developer comment:
+For ClimOO Ontology purposes, we restrict this class to refer specifically to environmental systems. Similarly, we also constrain that a resource to be always part of a environmental system of interest. This class can be generalized to all systems and possibly system environments, as needed."""@en ,
+                                                       """ClimOO developer comment:
+Further wok is required to represent the relation between system resources and system components."""@en .
+
+
+###  http://purl.unep.org/sdg/SDGIO_00000017
+<http://purl.unep.org/sdg/SDGIO_00000017> rdfs:subClassOf <http://purl.obolibrary.org/obo/ENVO_02500000> .
 
 
 ###  https://w3id.org/sumso#SuMSO_0000004

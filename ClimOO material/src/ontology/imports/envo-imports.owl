@@ -3138,12 +3138,21 @@ https://github.com/gioUbbiali/Sustainability-Core-Ontology/issues/2"""@en
                                                                      rdf:type owl:Class
                                                                    ] ;
                                                rdfs:subClassOf <http://purl.obolibrary.org/obo/ENVO_02500000> ,
-                                                               [ rdf:type owl:Restriction ;
-                                                                 owl:onProperty <http://purl.obolibrary.org/obo/RO_0002608> ;
-                                                                 owl:someValuesFrom <http://purl.obolibrary.org/obo/NCBITaxon_9606>
-                                                               ] ;
+                                                               _:genid394 ;
                                                <http://purl.obolibrary.org/obo/IAO_0000115> "An environmental process which is driven by the action of humans." ;
                                                rdfs:label "anthropogenic environmental process" .
+
+_:genid394 rdf:type owl:Restriction ;
+            owl:onProperty <http://purl.obolibrary.org/obo/RO_0002608> ;
+            owl:someValuesFrom <http://purl.obolibrary.org/obo/NCBITaxon_9606> .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/ENVO_02500027> ;
+   owl:annotatedProperty rdfs:subClassOf ;
+   owl:annotatedTarget _:genid394 ;
+   rdfs:comment """ClimOO developer comment:
+This axiom may be specified for humans that are part of environmental systems."""@en
+ ] .
 
 
 ###  http://purl.obolibrary.org/obo/ENVO_02500036

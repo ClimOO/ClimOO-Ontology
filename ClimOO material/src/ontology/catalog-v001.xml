@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://ClimOO/climoo/imports/sdgio-imports#2025-06-26" uri="imports/sdgio-imports.ttl"/>
     <uri id="Imports Wizard Entry" name="http://ClimOO/climoo/imports/envo-imports#2025-06-25" uri="imports/envo-imports.owl"/>
     <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/climoo/imports/pato_imports#2025-06-19" uri="imports/pato-imports.ttl"/>
     <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/climoo/imports/chebi_imports#2025-06-19" uri="imports/chebi-imports.ttl"/>
