@@ -92,7 +92,22 @@ Revisions may be required or this class."""@en ;
 
 
 ###  http://purl.obolibrary.org/obo/CHEBI_24431
-<http://purl.obolibrary.org/obo/CHEBI_24431> rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000040> ;
+<http://purl.obolibrary.org/obo/CHEBI_24431> rdfs:subClassOf [ rdf:type owl:Class ;
+                                                               owl:unionOf ( [ rdf:type owl:Class ;
+                                                                               owl:unionOf ( <http://purl.obolibrary.org/obo/RO_0002577>
+                                                                                             <https://www.w3id.org/sco#SCO_0000006>
+                                                                                           )
+                                                                             ]
+                                                                             [ rdf:type owl:Restriction ;
+                                                                               owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000176> ;
+                                                                               owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                                    owl:unionOf ( <http://purl.obolibrary.org/obo/RO_0002577>
+                                                                                                                  <https://www.w3id.org/sco#SCO_0000006>
+                                                                                                                )
+                                                                                                  ]
+                                                                             ]
+                                                                           )
+                                                             ] ;
                                              rdfs:comment """ClimOO developer comment:
 Currently, we included only main classes from ChEBI relevant for ClimOO purposes."""@en .
 
@@ -109,20 +124,20 @@ We envision revision of this class to specify the meaning of undesired effects, 
 
 
 ###  http://purl.obolibrary.org/obo/ENVO_00000077
-<http://purl.obolibrary.org/obo/ENVO_00000077> rdfs:subClassOf _:genid1 .
+<http://purl.obolibrary.org/obo/ENVO_00000077> rdfs:subClassOf _:genid11 .
 
-_:genid1 owl:intersectionOf ( <http://purl.obolibrary.org/obo/ENVO_01001828>
-                               [ rdf:type owl:Restriction ;
-                                 owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000056> ;
-                                 owl:someValuesFrom <http://purl.obolibrary.org/obo/AGRO_00002071>
-                               ]
-                             ) ;
-          rdf:type owl:Class .
+_:genid11 owl:intersectionOf ( <http://purl.obolibrary.org/obo/ENVO_01001828>
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000056> ;
+                                  owl:someValuesFrom <http://purl.obolibrary.org/obo/AGRO_00002071>
+                                ]
+                              ) ;
+           rdf:type owl:Class .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource <http://purl.obolibrary.org/obo/ENVO_00000077> ;
    owl:annotatedProperty rdfs:subClassOf ;
-   owl:annotatedTarget _:genid1 ;
+   owl:annotatedTarget _:genid11 ;
    rdfs:comment """ClimOO developer comment:
 Adapted from equivalent class axiom from EnvO. Reference to agricultural land conversion process can be re-added, as needed."""@en
  ] .
@@ -290,9 +305,9 @@ Reference to supply chains and related activities may be added, as neeed. Subcla
 
 
 ###  http://purl.obolibrary.org/obo/ENVO_01001110
-<http://purl.obolibrary.org/obo/ENVO_01001110> owl:equivalentClass _:genid63 .
+<http://purl.obolibrary.org/obo/ENVO_01001110> owl:equivalentClass _:genid73 .
 
-_:genid63 owl:intersectionOf ( <http://purl.obolibrary.org/obo/ENVO_01000254>
+_:genid73 owl:intersectionOf ( <http://purl.obolibrary.org/obo/ENVO_01000254>
                                 [ rdf:type owl:Class ;
                                   owl:unionOf ( [ rdf:type owl:Restriction ;
                                                   owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000051> ;
@@ -310,7 +325,7 @@ _:genid63 owl:intersectionOf ( <http://purl.obolibrary.org/obo/ENVO_01000254>
 [ rdf:type owl:Axiom ;
    owl:annotatedSource <http://purl.obolibrary.org/obo/ENVO_01001110> ;
    owl:annotatedProperty owl:equivalentClass ;
-   owl:annotatedTarget _:genid63 ;
+   owl:annotatedTarget _:genid73 ;
    rdfs:comment """ClimOO developer comment:
 Re-added from EnvO."""@en
  ] .
@@ -358,13 +373,13 @@ The label of this class may require revisions to avoid mistakenly identifying it
 
 
 ###  http://purl.obolibrary.org/obo/ENVO_01001795
-<http://purl.obolibrary.org/obo/ENVO_01001795> rdfs:subClassOf _:genid83 ;
+<http://purl.obolibrary.org/obo/ENVO_01001795> rdfs:subClassOf _:genid93 ;
                                                rdfs:comment """ClimOO developer comment:
 For ClimOO Ontology purposes, we restricted this class to processes having as occurrent part only ecosystem interactions and interaction among ecosystems and related environments. We excluded interactions happening into ecosystem environment, as for the related superclass.
 See also “environmental system process” class.
 http://purl.obolibrary.org/obo/ENVO_02500000"""@en .
 
-_:genid83 rdf:type owl:Restriction ;
+_:genid93 rdf:type owl:Restriction ;
            owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000117> ;
            owl:someValuesFrom [ rdf:type owl:Class ;
                                 owl:unionOf ( :ClimOO_0000038
@@ -375,7 +390,7 @@ _:genid83 rdf:type owl:Restriction ;
 [ rdf:type owl:Axiom ;
    owl:annotatedSource <http://purl.obolibrary.org/obo/ENVO_01001795> ;
    owl:annotatedProperty rdfs:subClassOf ;
-   owl:annotatedTarget _:genid83 ;
+   owl:annotatedTarget _:genid93 ;
    rdfs:comment """ClimOO developer comment:
 See the comment to this class."""@en
  ] .
@@ -514,38 +529,64 @@ https://www.commoncoreontologies.org/ont00000476"""@en .
                                                                owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000115> ;
                                                                owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
                                                                owl:onClass <http://purl.obolibrary.org/obo/OBI_0100026>
-                                                             ] .
+                                                             ] ;
+                                             rdfs:comment """ClimOO developer comment:
+References to life and death can be added as for the “organism” class, as needed."""@en .
 
 
 ###  http://purl.obolibrary.org/obo/PCO_0000031
-<http://purl.obolibrary.org/obo/PCO_0000031> rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000040> .
+<http://purl.obolibrary.org/obo/PCO_0000031> owl:equivalentClass [ rdf:type owl:Class ;
+                                                                   owl:unionOf ( <http://purl.obolibrary.org/obo/OBI_0100026>
+                                                                                 <http://purl.obolibrary.org/obo/PCO_0000000>
+                                                                               )
+                                                                 ] ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000040> ,
+                                                             [ rdf:type owl:Class ;
+                                                               owl:unionOf ( [ rdf:type owl:Class ;
+                                                                               owl:unionOf ( <http://purl.obolibrary.org/obo/ENVO_01000254>
+                                                                                             :ClimOO_0000021
+                                                                                           )
+                                                                             ]
+                                                                             [ rdf:type owl:Restriction ;
+                                                                               owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000176> ;
+                                                                               owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                                    owl:unionOf ( <http://purl.obolibrary.org/obo/ENVO_01000254>
+                                                                                                                  :ClimOO_0000021
+                                                                                                                )
+                                                                                                  ]
+                                                                             ]
+                                                                           )
+                                                             ] ;
+                                             rdfs:comment """ClimOO developer comment:
+We leave open the discussion weather collections of organisms can be considered as systems or system environments themselves. We also assume all organisms (OBI sense) can be considered as complex (environmental) systems. Possible exceptions may exist, for instance with regards to viruses. We envision discussion with subject matter experts.
+See also comment to \"environmental system\" class. http://purl.obolibrary.org/obo/ENVO_01000254"""@en .
 
 
 ###  http://purl.unep.org/sdg/SDGIO_00000011
-<http://purl.unep.org/sdg/SDGIO_00000011> rdfs:subClassOf _:genid98 ;
+<http://purl.unep.org/sdg/SDGIO_00000011> rdfs:subClassOf _:genid121 ;
                                           rdfs:comment """ClimOO developer comment:
 For ClimOO Ontology purposes, according to implementation of the EnvO “resource” class, we intend this class as referring to use of resources that specifically pertain to environmental systems.
 See also http://purl.unep.org/sdg/SDGIO_00000013"""@en .
 
-_:genid98 rdf:type owl:Restriction ;
-           owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000057> ;
-           owl:someValuesFrom [ owl:intersectionOf ( [ rdf:type owl:Class ;
-                                                       owl:unionOf ( <http://purl.obolibrary.org/obo/OBI_0000245>
-                                                                     <http://purl.obolibrary.org/obo/OBI_0100026>
-                                                                   )
-                                                     ]
-                                                     [ rdf:type owl:Restriction ;
-                                                       owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000176> ;
-                                                       owl:someValuesFrom <http://purl.obolibrary.org/obo/ENVO_01000254>
-                                                     ]
-                                                   ) ;
-                                rdf:type owl:Class
-                              ] .
+_:genid121 rdf:type owl:Restriction ;
+            owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000057> ;
+            owl:someValuesFrom [ owl:intersectionOf ( [ rdf:type owl:Class ;
+                                                        owl:unionOf ( <http://purl.obolibrary.org/obo/OBI_0000245>
+                                                                      <http://purl.obolibrary.org/obo/OBI_0100026>
+                                                                    )
+                                                      ]
+                                                      [ rdf:type owl:Restriction ;
+                                                        owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000176> ;
+                                                        owl:someValuesFrom <http://purl.obolibrary.org/obo/ENVO_01000254>
+                                                      ]
+                                                    ) ;
+                                 rdf:type owl:Class
+                               ] .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource <http://purl.unep.org/sdg/SDGIO_00000011> ;
    owl:annotatedProperty rdfs:subClassOf ;
-   owl:annotatedTarget _:genid98 ;
+   owl:annotatedTarget _:genid121 ;
    rdfs:comment """ClimOO developer comment:
 Reference to populations and collections of organisms can be added, possibly in accordance to EnvO original axiom."""@en
  ] .

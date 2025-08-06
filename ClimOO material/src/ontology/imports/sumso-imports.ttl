@@ -3283,8 +3283,8 @@ see the comment under \"complex system activity\" and \"supply chain\" classes."
                                                                                  <http://purl.obolibrary.org/obo/NCBITaxon_2759>
                                                                                )
                                                                  ] ;
-                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000040> ,
-                                                             [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/BFO_0000040>
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/PCO_0000031> ,
+                                                             [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/PCO_0000031>
                                                                                     [ rdf:type owl:Restriction ;
                                                                                       owl:onProperty <http://purl.obolibrary.org/obo/RO_0000086> ;
                                                                                       owl:someValuesFrom [ rdf:type owl:Class ;
@@ -3373,6 +3373,10 @@ See http://purl.obolibrary.org/obo/FOODON_03411564  for consideration of an alte
                                               <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/obi.owl> ,
                                                                                            <http://purl.obolibrary.org/obo/pato.owl> ;
                                               rdfs:label "organismal quality" .
+
+
+###  http://purl.obolibrary.org/obo/PCO_0000031
+<http://purl.obolibrary.org/obo/PCO_0000031> rdf:type owl:Class .
 
 
 ###  http://purl.obolibrary.org/obo/RO_0002577
