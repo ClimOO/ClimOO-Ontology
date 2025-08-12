@@ -4002,8 +4002,7 @@ We revied this axiom to reflect the adjusted system hierarchy."""@en
 
 ###  https://w3id.org/sumso#SuMSO_0000018
 <https://w3id.org/sumso#SuMSO_0000018> rdf:type owl:Class ;
-                                       rdfs:subClassOf <https://www.w3id.org/sco#SCO_0000012> ,
-                                                       [ owl:intersectionOf ( <https://www.w3id.org/sco#SCO_0000012>
+                                       rdfs:subClassOf [ owl:intersectionOf ( <https://www.w3id.org/climoo#ClimOO_0000023>
                                                                               [ rdf:type owl:Restriction ;
                                                                                 owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000178> ;
                                                                                 owl:someValuesFrom <https://w3id.org/sumso#SuMSO_0000031>
@@ -4162,19 +4161,11 @@ we refrain from proceeding as such, choosing solely to not establish correspondi
                                                                               ]
                                                                               [ rdf:type owl:Restriction ;
                                                                                 owl:onProperty <https://www.w3id.org/sco#SCO_0000037> ;
-                                                                                owl:someValuesFrom <https://w3id.org/sumso#SuMSO_0000031>
-                                                                              ]
-                                                                              [ rdf:type owl:Restriction ;
-                                                                                owl:onProperty <https://www.w3id.org/sco#SCO_0000037> ;
                                                                                 owl:someValuesFrom [ rdf:type owl:Class ;
                                                                                                      owl:unionOf ( <https://w3id.org/sumso#SuMSO_0000025>
                                                                                                                    <https://w3id.org/sumso#SuMSO_0000032>
                                                                                                                  )
                                                                                                    ]
-                                                                              ]
-                                                                              [ rdf:type owl:Restriction ;
-                                                                                owl:onProperty <https://www.w3id.org/sco#SCO_0000037> ;
-                                                                                owl:allValuesFrom <https://w3id.org/sumso#SuMSO_0000031>
                                                                               ]
                                                                               [ rdf:type owl:Restriction ;
                                                                                 owl:onProperty <https://www.w3id.org/sco#SCO_0000037> ;
@@ -4218,7 +4209,7 @@ we refrain from proceeding as such, choosing solely to not establish correspondi
 
 ###  https://w3id.org/sumso#SuMSO_0000031
 <https://w3id.org/sumso#SuMSO_0000031> rdf:type owl:Class ;
-                                       owl:equivalentClass [ owl:intersectionOf ( <https://www.w3id.org/sco#SCO_0000026>
+                                       owl:equivalentClass [ owl:intersectionOf ( <https://www.w3id.org/climoo#ClimOO_0000019>
                                                                                   [ rdf:type owl:Restriction ;
                                                                                     owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000176> ;
                                                                                     owl:someValuesFrom <https://w3id.org/sumso#SuMSO_0000018>
@@ -4246,7 +4237,7 @@ we refrain from proceeding as such, choosing solely to not establish correspondi
                                                                                 ) ;
                                                              rdf:type owl:Class
                                                            ] ;
-                                       rdfs:subClassOf <https://www.w3id.org/sco#SCO_0000033> ;
+                                       rdfs:subClassOf <https://www.w3id.org/climoo#ClimOO_0000031> ;
                                        rdfs:label "food system environment agent"@en ;
                                        <http://www.w3.org/2004/02/skos/core#definition> "A food system environment component that is an agent in an interaction among food system environment components or in an interaction between food system components and food system environment components."@en ;
                                        <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
@@ -4974,8 +4965,20 @@ To represent variations of quality/realizable with respect to different processe
 <https://www.w3id.org/climoo#ClimOO_0000015> rdf:type owl:Class .
 
 
+###  https://www.w3id.org/climoo#ClimOO_0000019
+<https://www.w3id.org/climoo#ClimOO_0000019> rdf:type owl:Class .
+
+
+###  https://www.w3id.org/climoo#ClimOO_0000023
+<https://www.w3id.org/climoo#ClimOO_0000023> rdf:type owl:Class .
+
+
 ###  https://www.w3id.org/climoo#ClimOO_0000027
 <https://www.w3id.org/climoo#ClimOO_0000027> rdf:type owl:Class .
+
+
+###  https://www.w3id.org/climoo#ClimOO_0000031
+<https://www.w3id.org/climoo#ClimOO_0000031> rdf:type owl:Class .
 
 
 ###  https://www.w3id.org/climoo#ClimOO_0000035
@@ -5012,9 +5015,9 @@ To represent variations of quality/realizable with respect to different processe
 
 ###  https://www.w3id.org/sco#SCO_0000003
 <https://www.w3id.org/sco#SCO_0000003> rdf:type owl:Class ;
-                                       owl:equivalentClass _:genid380 .
+                                       owl:equivalentClass _:genid376 .
 
-_:genid380 owl:intersectionOf ( <http://www.ontologyrepository.com/CommonCoreOntologies/RepresentationalInformationContentEntity>
+_:genid376 owl:intersectionOf ( <http://www.ontologyrepository.com/CommonCoreOntologies/RepresentationalInformationContentEntity>
                                  [ rdf:type owl:Restriction ;
                                    owl:onProperty <http://www.ontologyrepository.com/CommonCoreOntologies/is_about> ;
                                    owl:someValuesFrom <https://www.w3id.org/sco#SCO_0000015>
@@ -5029,7 +5032,7 @@ _:genid380 owl:intersectionOf ( <http://www.ontologyrepository.com/CommonCoreOnt
 [ rdf:type owl:Axiom ;
    owl:annotatedSource <https://www.w3id.org/sco#SCO_0000003> ;
    owl:annotatedProperty owl:equivalentClass ;
-   owl:annotatedTarget _:genid380 ;
+   owl:annotatedTarget _:genid376 ;
    rdfs:comment """Discussion with subject matter experts is required to revise this axiom with regard to the “represents” object property. This was the most appropriate object property among those pertaining to OBO-Foundry and compliant ontologies to use in constructing this axiom. 
 Nevertheless, implementations seem necessary to deepen the characterization, for instance with regard to representing and measuring the complex system of interest.. Revisions may regard adapting this object property or even further creating a new ad hoc object property. 
 

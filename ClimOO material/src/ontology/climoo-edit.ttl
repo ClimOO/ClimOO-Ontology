@@ -72,6 +72,99 @@ Documentation webpage: https://www.w3id.org/climoo/docs"""@en ,
 <https://www.commoncoreontologies.org/ont00001982> rdfs:subPropertyOf <http://www.ontologyrepository.com/CommonCoreOntologies/is_about> .
 
 
+###  https://www.w3id.org/climoo#ClimOO_0000076
+:ClimOO_0000076 rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf <http://purl.obolibrary.org/obo/BFO_0000175> ;
+                owl:inverseOf :ClimOO_0000077 ;
+                rdfs:domain _:genid1 ;
+                rdfs:range _:genid5 ;
+                <http://purl.org/dc/terms/source> """Primary works of reference: Calhau et al. (2023), Calhau et al. (2024, 2025), Heylighen et al. (2006), and Mitchell (2009).
+Bibliography 
+• Calhau, R. F., Almeida, J. P. A., Guizzardi, G., Hoffmann, R., Pires, L. F., Logan, J., & Moreira, J. R. (2025). Towards an Ontology of Type-Level Phenomena for System Modeling. In J. Grabis, T. E. J. Vos, M. J. Escalona, & O. Pastor (Eds.), Research Challenges in Information Science (Vol. 547, pp. 121–139). Springer Nature Switzerland. https://doi.org/10.1007/978-3-031-92474-3_8
+
+• Calhau, R. F., Prince Sales, T., Oliveira, Í., Kokkula, S., Ferreira Pires, L., Cameron, D., Guizzardi, G., & Almeida, J. P. A. (2024). A System Core Ontology for Capability Emergence Modeling. In H. A. Proper, L. Pufahl, D. Karastoyanova, M. Van Sinderen, & J. Moreira (Eds.), Enterprise Design, Operations, and Computing (Vol. 14367, pp. 3–20). Springer Nature Switzerland. https://doi.org/10.1007/978-3-031-46587-1_1
+
+• Calhau, R., Sales, T. P., Almeida, J. P. A., & Guizzardi, G. (2023). Exploring system behavior in a system ontology. Int Conf Concept Model. 
+
+• Heylighen, F., Cilliers, P., & Gershenson, C. (2006). Complexity and Philosophy. arXiv [Cs.CC]. 
+
+• Mitchell, M. (2009). Complexity: A Guided Tour. Oxford University Press."""@en ;
+                <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "has supersystemat some time"@en ;
+                rdfs:comment """A subsystem is always a system that is a system component of another system, that, in turn, is intended as a supersystem for that first system. Whether interpreting a system as a super/subsystem or a component of another system depends on the perspective and the system scales used to analyze that system of interest.
+
+We currently do not include direct reference to perspectives and system scales in the definition. Nevertheless, we strongly suggest expressing the perspective and system scales of reference by annotating axioms that cover this object property with the annotation property “according to the perspective” https://www.w3id.org/sco#SCO_0000039. 
+
+We plan to implement the account of system scales and levels, ensuring a more adequate representation of these topics, especially concerning super/subsystems."""@en ,
+                             "This is an initial attempt to represent the supersystem/subsystem-system interrelation. Further details may be required to implement this model, for instance, by considering aspects regarding functions of super/subsystems and systems or related interconnections."@en ;
+                rdfs:label "is a subsystem of at some time"@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional> ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/semiFormalNaturalLanguageDefinition> "b is a subsystem of a at some time t = Def for some time t ((a is a system) & (b is a system) & (b proper continuant part of a at t))."@en .
+
+_:genid1 rdf:type owl:Class ;
+          owl:unionOf ( <http://purl.obolibrary.org/obo/RO_0002577>
+                        <https://www.w3id.org/sco#SCO_0000006>
+                      ) .
+
+_:genid5 rdf:type owl:Class ;
+          owl:unionOf ( <http://purl.obolibrary.org/obo/RO_0002577>
+                        <https://www.w3id.org/sco#SCO_0000006>
+                      ) .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :ClimOO_0000076 ;
+   owl:annotatedProperty rdfs:domain ;
+   owl:annotatedTarget _:genid1 ;
+   rdfs:comment """ClimOO developer comment:
+We extend the domain and range of this object property to “system environment” as considerations regarding systems equally apply to system environments.This supports also representing hierarchies of sub/super-systems across systems and related environments. Consider, for instance, cases when certain systems of interest are components of the system environments of other systems of interest, or when the system environment of a system of interest is another or part of another system interest."""@en
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :ClimOO_0000076 ;
+   owl:annotatedProperty rdfs:range ;
+   owl:annotatedTarget _:genid5 ;
+   rdfs:comment """ClimOO developer comment:
+We extend the domain and range of this object property to “system environment” as considerations regarding systems equally apply to system environments.This supports also representing hierarchies of sub/super-systems across systems and related environments. Consider, for instance, cases when certain systems of interest are components of the system environments of other systems of interest, or when the system environment of a system of interest is another or part of another system interest."""@en
+ ] .
+
+
+###  https://www.w3id.org/climoo#ClimOO_0000077
+:ClimOO_0000077 rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf <http://purl.obolibrary.org/obo/BFO_0000174> ;
+                rdfs:domain _:genid9 ;
+                rdfs:range _:genid13 ;
+                <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "has subsystem at some time"@en ;
+                rdfs:label "is a supersystem of at some time"@en ;
+                rdfs:seeAlso "See comments to the inverse property \" is a subsystem of at some time\". https://www.w3id.org/climoo#ClimOO_0000076"@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional> ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/semiFormalNaturalLanguageDefinition> "a is a supersystem of b at some time = Def b is a subsystem of a at some time t"@en .
+
+_:genid9 rdf:type owl:Class ;
+          owl:unionOf ( <http://purl.obolibrary.org/obo/RO_0002577>
+                        <https://www.w3id.org/sco#SCO_0000006>
+                      ) .
+
+_:genid13 rdf:type owl:Class ;
+           owl:unionOf ( <http://purl.obolibrary.org/obo/RO_0002577>
+                         <https://www.w3id.org/sco#SCO_0000006>
+                       ) .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :ClimOO_0000077 ;
+   owl:annotatedProperty rdfs:domain ;
+   owl:annotatedTarget _:genid9 ;
+   rdfs:comment """ClimOO developer comment:
+We extend the domain and range of this object property to “system environment” as considerations regarding systems equally apply to system environments.This supports also representing hierarchies of sub/super-systems across systems and related environments. Consider, for instance, cases when certain systems of interest are components of the system environments of other systems of interest, or when the system environment of a system of interest is another or part of another system interest."""@en
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :ClimOO_0000077 ;
+   owl:annotatedProperty rdfs:range ;
+   owl:annotatedTarget _:genid13 ;
+   rdfs:comment """ClimOO developer comment:
+We extend the domain and range of this object property to “system environment” as considerations regarding systems equally apply to system environments.This supports also representing hierarchies of sub/super-systems across systems and related environments. Consider, for instance, cases when certain systems of interest are components of the system environments of other systems of interest, or when the system environment of a system of interest is another or part of another system interest."""@en
+ ] .
+
+
 #################################################################
 #    Classes
 #################################################################
@@ -79,7 +172,9 @@ Documentation webpage: https://www.w3id.org/climoo/docs"""@en ,
 ###  http://purl.obolibrary.org/obo/AGRO_00002071
 <http://purl.obolibrary.org/obo/AGRO_00002071> rdfs:subClassOf :ClimOO_0000069 ;
                                                <http://www.ontologyrepository.com/CommonCoreOntologies/definition> """ClimOO developer comment: 
-Revisions may be required or this class."""@en ;
+Revisions may be required or this class."""@en ,
+                                                                                                                   """From EnvO:
+A process during which humans rear animals or plants on land for harvest and consumption."""@en ;
                                                rdfs:seeAlso "http://purl.obolibrary.org/obo/ENVO_01001246" .
 
 
@@ -124,9 +219,10 @@ We envision revision of this class to specify the meaning of undesired effects, 
 
 
 ###  http://purl.obolibrary.org/obo/ENVO_00000077
-<http://purl.obolibrary.org/obo/ENVO_00000077> rdfs:subClassOf _:genid11 .
+<http://purl.obolibrary.org/obo/ENVO_00000077> rdfs:subClassOf _:genid27 ;
+                                               owl:disjointWith :ClimOO_0000024 .
 
-_:genid11 owl:intersectionOf ( <http://purl.obolibrary.org/obo/ENVO_01001828>
+_:genid27 owl:intersectionOf ( <http://purl.obolibrary.org/obo/ENVO_01001828>
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000056> ;
                                   owl:someValuesFrom <http://purl.obolibrary.org/obo/AGRO_00002071>
@@ -137,7 +233,7 @@ _:genid11 owl:intersectionOf ( <http://purl.obolibrary.org/obo/ENVO_01001828>
 [ rdf:type owl:Axiom ;
    owl:annotatedSource <http://purl.obolibrary.org/obo/ENVO_00000077> ;
    owl:annotatedProperty rdfs:subClassOf ;
-   owl:annotatedTarget _:genid11 ;
+   owl:annotatedTarget _:genid27 ;
    rdfs:comment """ClimOO developer comment:
 Adapted from equivalent class axiom from EnvO. Reference to agricultural land conversion process can be re-added, as needed."""@en
  ] .
@@ -184,7 +280,8 @@ Reference to supply chains and related activities may be added, as neeed."""@en 
                                                <http://www.ontologyrepository.com/CommonCoreOntologies/definition> """ClimOO Ontology revised definition:
 A material entity which other material entities in an environmental system or its environment are primarily or partially composed of. Such a material entity and related entities that are primarily or partially composed of can be equally seen as an environmental system (or related environment) itself, depending on the endorsed perspective."""@en ;
                                                rdfs:comment """ClimOO developer comment:
-According to EnvO, this class identifies materials entities that primarily or partially compose entities in an environmental system. To ensure adequate alignment between EnvO and SCO, for ClimOO Ontology purposes, we extend the coverage of this class. We intend this class to refer to material entities that primarily or partially compose entities in an environmental system or its related environment. Such entities, as well as those that primarily compose, can be, however, also considered as a system (or related environment), depending on the perspectives endorsed. Consider, for instance, a portion of soil. It can compose an entity that can be seen as part of an agricultural system (or its related system environment), or as a system itself (or its related system environment). Axioms restrict this class in such a way."""@en .
+According to EnvO, this class identifies materials entities that primarily or partially compose entities in an environmental system. To ensure adequate alignment between EnvO and SCO, for ClimOO Ontology purposes, we extend the coverage of this class. We intend this class to refer to material entities that primarily or partially compose entities in an environmental system or its related environment. Such entities, as well as those that primarily compose, can be, however, also considered as a system (or related environment), depending on the perspectives endorsed. Consider, for instance, a portion of soil. It can compose an entity that can be seen as part of an agricultural system (or its related system environment), or as a system itself (or its related system environment). Axioms restrict this class in such a way."""@en ;
+                                               <https://www.w3id.org/sco#SCO_0000039> :ClimOO_0000072 .
 
 
 ###  http://purl.obolibrary.org/obo/ENVO_01000254
@@ -192,6 +289,7 @@ According to EnvO, this class identifies materials entities that primarily or pa
                                                                  owl:onProperty <http://purl.obolibrary.org/obo/RO_0000086> ;
                                                                  owl:someValuesFrom <http://purl.obolibrary.org/obo/ENVO_01000203>
                                                                ] ;
+                                               owl:disjointWith :ClimOO_0000021 ;
                                                rdfs:comment """ClimOO developer comment:
 For ClimOO purposes, we intend this class as a subclass of “complex system” class. If needed, this class can be generalized as a sibling class and a more specific class for environmental complex system may be created."""@en .
 
@@ -221,7 +319,8 @@ http://purl.obolibrary.org/obo/ENVO_00010483"""@en .
 
 
 ###  http://purl.obolibrary.org/obo/ENVO_01000313
-<http://purl.obolibrary.org/obo/ENVO_01000313> rdfs:comment """ClimOO developer comment:
+<http://purl.obolibrary.org/obo/ENVO_01000313> owl:disjointWith :ClimOO_0000071 ;
+                                               rdfs:comment """ClimOO developer comment:
 We suggest to revise definitions of “anthropogenic environment” and “anthopised ecosystem” for consistently clarifying the two. ClimOO Ontology builds its representation on the latter as lowest leaf of the EnvO hierarchy."""@en .
 
 
@@ -305,9 +404,10 @@ Reference to supply chains and related activities may be added, as neeed. Subcla
 
 
 ###  http://purl.obolibrary.org/obo/ENVO_01001110
-<http://purl.obolibrary.org/obo/ENVO_01001110> owl:equivalentClass _:genid73 .
+<http://purl.obolibrary.org/obo/ENVO_01001110> owl:equivalentClass _:genid89 ;
+                                               owl:disjointWith :ClimOO_0000022 .
 
-_:genid73 owl:intersectionOf ( <http://purl.obolibrary.org/obo/ENVO_01000254>
+_:genid89 owl:intersectionOf ( <http://purl.obolibrary.org/obo/ENVO_01000254>
                                 [ rdf:type owl:Class ;
                                   owl:unionOf ( [ rdf:type owl:Restriction ;
                                                   owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000051> ;
@@ -325,7 +425,7 @@ _:genid73 owl:intersectionOf ( <http://purl.obolibrary.org/obo/ENVO_01000254>
 [ rdf:type owl:Axiom ;
    owl:annotatedSource <http://purl.obolibrary.org/obo/ENVO_01001110> ;
    owl:annotatedProperty owl:equivalentClass ;
-   owl:annotatedTarget _:genid73 ;
+   owl:annotatedTarget _:genid89 ;
    rdfs:comment """ClimOO developer comment:
 Re-added from EnvO."""@en
  ] .
@@ -369,35 +469,37 @@ Revisions may be required to specify this definition. Currently, the term “cha
 See the comment to “environmental material” class. Same considerations apply here.
 http://purl.obolibrary.org/obo/ENVO_00010483"""@en ;
                                                rdfs:comment """ClimOO developer comment:
-The label of this class may require revisions to avoid mistakenly identifying it with the actual mass (quality) of an object."""@en .
+The label of this class may require revisions to avoid mistakenly identifying it with the actual mass (quality) of an object."""@en ;
+                                               <https://www.w3id.org/sco#SCO_0000039> :ClimOO_0000072 .
 
 
 ###  http://purl.obolibrary.org/obo/ENVO_01001795
-<http://purl.obolibrary.org/obo/ENVO_01001795> rdfs:subClassOf _:genid93 ;
+<http://purl.obolibrary.org/obo/ENVO_01001795> rdfs:subClassOf _:genid109 ;
                                                rdfs:comment """ClimOO developer comment:
 For ClimOO Ontology purposes, we restricted this class to processes having as occurrent part only ecosystem interactions and interaction among ecosystems and related environments. We excluded interactions happening into ecosystem environment, as for the related superclass.
 See also “environmental system process” class.
 http://purl.obolibrary.org/obo/ENVO_02500000"""@en .
 
-_:genid93 rdf:type owl:Restriction ;
-           owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000117> ;
-           owl:someValuesFrom [ rdf:type owl:Class ;
-                                owl:unionOf ( :ClimOO_0000038
-                                              :ClimOO_0000046
-                                            )
-                              ] .
+_:genid109 rdf:type owl:Restriction ;
+            owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000117> ;
+            owl:someValuesFrom [ rdf:type owl:Class ;
+                                 owl:unionOf ( :ClimOO_0000038
+                                               :ClimOO_0000046
+                                             )
+                               ] .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource <http://purl.obolibrary.org/obo/ENVO_01001795> ;
    owl:annotatedProperty rdfs:subClassOf ;
-   owl:annotatedTarget _:genid93 ;
+   owl:annotatedTarget _:genid109 ;
    rdfs:comment """ClimOO developer comment:
 See the comment to this class."""@en
  ] .
 
 
 ###  http://purl.obolibrary.org/obo/ENVO_01001828
-<http://purl.obolibrary.org/obo/ENVO_01001828> rdfs:comment """ClimOO developer comment:
+<http://purl.obolibrary.org/obo/ENVO_01001828> owl:disjointWith :ClimOO_0000023 ;
+                                               rdfs:comment """ClimOO developer comment:
 We suggest to revise definitions of “anthropogenic environment” and “anthopised ecosystem” for consistently clarifying the two. ClimOO Ontology builds its representation on the latter as lowest leaf of the EnvO hierarchy."""@en .
 
 
@@ -411,7 +513,8 @@ We suggest to revise definitions of “anthropogenic environment” and “antho
                                                                                     ]
                                                                ] ;
                                                rdfs:comment """ClimOO developer comment:
-For ClimOO Ontology purposes, we restricted this class to processes having as occurrent part only environmental system interactions and interaction among environmental systems and related environments. We aim to strictly focus on systems, avoiding possible alternative generalized interpretations of this class and related subclasses. Processes classifiable under these classes are to be intended in a conventional sense (examples may include system activities and practices), wheatear related interactions are to be intended as more atomic events composing such processes."""@en .
+For ClimOO Ontology purposes, we restricted this class to processes having as occurrent part only environmental system interactions and interaction among environmental systems and related environments. We aim to strictly focus on systems, avoiding possible alternative generalized interpretations of this class and related subclasses. Processes classifiable under these classes are to be intended in a conventional sense (examples may include system activities and practices), wheatear related interactions are to be intended as more atomic events composing such processes."""@en ;
+                                               <https://www.w3id.org/sco#SCO_0000039> :ClimOO_0000072 .
 
 
 ###  http://purl.obolibrary.org/obo/ENVO_02500026
@@ -456,6 +559,10 @@ We currently leave open the discussion whether some of these processes should be
 
 ###  http://purl.obolibrary.org/obo/ENVO_06105014
 <http://purl.obolibrary.org/obo/ENVO_06105014> rdfs:subClassOf <http://purl.obolibrary.org/obo/OBI_0000094> .
+
+
+###  http://purl.obolibrary.org/obo/ENVO_06105112
+<http://purl.obolibrary.org/obo/ENVO_06105112> rdfs:subClassOf <http://purl.obolibrary.org/obo/ENVO_00003074> .
 
 
 ###  http://purl.obolibrary.org/obo/GO_0008150
@@ -507,6 +614,25 @@ https://www.commoncoreontologies.org/ont00000476"""@en .
 Work to align representations of plans and plan specifications between IAO and CCO is required. We envision discussions with subject matter experts.
 See https://www.commoncoreontologies.org/ont00000974
 https://www.commoncoreontologies.org/ont00000476"""@en .
+
+
+###  http://purl.obolibrary.org/obo/OBI_0000245
+<http://purl.obolibrary.org/obo/OBI_0000245> rdfs:subClassOf [ rdf:type owl:Class ;
+                                                               owl:unionOf ( [ rdf:type owl:Class ;
+                                                                               owl:unionOf ( <http://purl.obolibrary.org/obo/ENVO_01001828>
+                                                                                             :ClimOO_0000023
+                                                                                           )
+                                                                             ]
+                                                                             [ rdf:type owl:Restriction ;
+                                                                               owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000176> ;
+                                                                               owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                                    owl:unionOf ( <http://purl.obolibrary.org/obo/ENVO_01001828>
+                                                                                                                  :ClimOO_0000023
+                                                                                                                )
+                                                                                                  ]
+                                                                             ]
+                                                                           )
+                                                             ] .
 
 
 ###  http://purl.obolibrary.org/obo/OBI_0000260
@@ -563,12 +689,12 @@ See also comment to \"environmental system\" class. http://purl.obolibrary.org/o
 
 
 ###  http://purl.unep.org/sdg/SDGIO_00000011
-<http://purl.unep.org/sdg/SDGIO_00000011> rdfs:subClassOf _:genid121 ;
+<http://purl.unep.org/sdg/SDGIO_00000011> rdfs:subClassOf _:genid147 ;
                                           rdfs:comment """ClimOO developer comment:
 For ClimOO Ontology purposes, according to implementation of the EnvO “resource” class, we intend this class as referring to use of resources that specifically pertain to environmental systems.
 See also http://purl.unep.org/sdg/SDGIO_00000013"""@en .
 
-_:genid121 rdf:type owl:Restriction ;
+_:genid147 rdf:type owl:Restriction ;
             owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000057> ;
             owl:someValuesFrom [ owl:intersectionOf ( [ rdf:type owl:Class ;
                                                         owl:unionOf ( <http://purl.obolibrary.org/obo/OBI_0000245>
@@ -586,7 +712,7 @@ _:genid121 rdf:type owl:Restriction ;
 [ rdf:type owl:Axiom ;
    owl:annotatedSource <http://purl.unep.org/sdg/SDGIO_00000011> ;
    owl:annotatedProperty rdfs:subClassOf ;
-   owl:annotatedTarget _:genid121 ;
+   owl:annotatedTarget _:genid147 ;
    rdfs:comment """ClimOO developer comment:
 Reference to populations and collections of organisms can be added, possibly in accordance to EnvO original axiom."""@en
  ] .
@@ -616,6 +742,37 @@ We revised the position of the “food system” class to fit the more expanse s
 <https://w3id.org/sumso#SuMSO_0000022> rdfs:subClassOf :ClimOO_0000011 .
 
 
+###  https://w3id.org/sumso#SuMSO_0000027
+<https://w3id.org/sumso#SuMSO_0000027> rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000167> ;
+                                                         owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+                                                         owl:onClass <https://w3id.org/sumso#SuMSO_0000024>
+                                                       ] .
+
+
+###  https://w3id.org/sumso#SuMSO_0000028
+<https://w3id.org/sumso#SuMSO_0000028> rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000167> ;
+                                                         owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+                                                         owl:onClass <https://w3id.org/sumso#SuMSO_0000031>
+                                                       ] .
+
+
+###  https://w3id.org/sumso#SuMSO_0000034
+<https://w3id.org/sumso#SuMSO_0000034> rdfs:subClassOf [ owl:intersectionOf ( :ClimOO_0000055
+                                                                              [ rdf:type owl:Restriction ;
+                                                                                owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000059> ;
+                                                                                owl:someValuesFrom <https://www.w3id.org/sco#SCO_0000004>
+                                                                              ]
+                                                                              [ rdf:type owl:Restriction ;
+                                                                                owl:onProperty <http://www.ontologyrepository.com/CommonCoreOntologies/is_subject_of> ;
+                                                                                owl:someValuesFrom <https://www.w3id.org/sco#SCO_0000004>
+                                                                              ]
+                                                                            ) ;
+                                                         rdf:type owl:Class
+                                                       ] .
+
+
 ###  https://w3id.org/sumso#SuMSO_0000035
 <https://w3id.org/sumso#SuMSO_0000035> rdfs:subClassOf :ClimOO_0000059 ,
                                                        [ owl:intersectionOf ( <https://w3id.org/sumso#SuMSO_0000038>
@@ -626,6 +783,21 @@ We revised the position of the “food system” class to fit the more expanse s
                                                                               [ rdf:type owl:Restriction ;
                                                                                 owl:onProperty <http://www.ontologyrepository.com/CommonCoreOntologies/is_subject_of> ;
                                                                                 owl:someValuesFrom <https://www.w3id.org/sco#SCO_0000040>
+                                                                              ]
+                                                                            ) ;
+                                                         rdf:type owl:Class
+                                                       ] .
+
+
+###  https://w3id.org/sumso#SuMSO_0000038
+<https://w3id.org/sumso#SuMSO_0000038> rdfs:subClassOf [ owl:intersectionOf ( :ClimOO_0000063
+                                                                              [ rdf:type owl:Restriction ;
+                                                                                owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000059> ;
+                                                                                owl:someValuesFrom <https://www.w3id.org/sco#SCO_0000004>
+                                                                              ]
+                                                                              [ rdf:type owl:Restriction ;
+                                                                                owl:onProperty <http://www.ontologyrepository.com/CommonCoreOntologies/is_subject_of> ;
+                                                                                owl:someValuesFrom <https://www.w3id.org/sco#SCO_0000004>
                                                                               ]
                                                                             ) ;
                                                          rdf:type owl:Class
@@ -929,6 +1101,7 @@ We constructed an initial alignment between IAO a CCO representation of ICE and 
                                       rdf:type owl:Class
                                     ] ;
                 rdfs:subClassOf <https://www.w3id.org/sco#SCO_0000026> ;
+                owl:disjointWith :ClimOO_0000025 ;
                 rdfs:label "environmental system environment component"@en ;
                 <http://www.w3.org/2004/02/skos/core#definition> "A complex system environment component that belongs to the complex system environment of an environmental system."@en ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
@@ -945,6 +1118,7 @@ We constructed an initial alignment between IAO a CCO representation of ICE and 
                                       rdf:type owl:Class
                                     ] ;
                 rdfs:subClassOf :ClimOO_0000017 ;
+                owl:disjointWith :ClimOO_0000026 ;
                 rdfs:label "ecosystem environment component"@en ;
                 <http://www.w3.org/2004/02/skos/core#definition> "An environmental system environment component that belongs to the environmental system environment of an ecosystem."@en ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
@@ -961,6 +1135,7 @@ We constructed an initial alignment between IAO a CCO representation of ICE and 
                                       rdf:type owl:Class
                                     ] ;
                 rdfs:subClassOf :ClimOO_0000018 ;
+                owl:disjointWith :ClimOO_0000027 ;
                 rdfs:label "anthropised ecosystem environment component"@en ;
                 <http://www.w3.org/2004/02/skos/core#definition> "A ecosystem environment component that belongs to the ecosystem environment of an anthropised ecosystem."@en ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
@@ -977,6 +1152,7 @@ We constructed an initial alignment between IAO a CCO representation of ICE and 
                                       rdf:type owl:Class
                                     ] ;
                 rdfs:subClassOf :ClimOO_0000019 ;
+                owl:disjointWith :ClimOO_0000028 ;
                 rdfs:label "agricultural ecosystem environment component"@en ;
                 <http://www.w3.org/2004/02/skos/core#definition> "An anthropised ecosystemsy environment component that belongs to the anthropised ecosystem environment of an agricultural ecosystem."@en ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
@@ -1175,13 +1351,13 @@ We constructed an initial alignment between IAO a CCO representation of ICE and 
                                     ] ;
                 rdfs:subClassOf :ClimOO_0000030 ;
                 rdfs:label "anthropised ecosystem environment agent"@en ;
-                <http://www.w3.org/2004/02/skos/core#definition> "An anthropised ecosystem environment agent that is an agent in an interaction among anthropised ecosystem environment components or in an interaction between anthropised ecosystem components and anthropised ecosystem environment components."@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "An anthropised ecosystem environment component that is an agent in an interaction among anthropised ecosystem environment components or in an interaction between anthropised ecosystem components and anthropised ecosystem environment components."@en ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
 
 
 ###  https://www.w3id.org/climoo#ClimOO_0000032
 :ClimOO_0000032 rdf:type owl:Class ;
-                owl:equivalentClass [ owl:intersectionOf ( :ClimOO_0000019
+                owl:equivalentClass [ owl:intersectionOf ( :ClimOO_0000020
                                                            [ rdf:type owl:Restriction ;
                                                              owl:onProperty <https://www.w3id.org/sco#SCO_0000038> ;
                                                              owl:someValuesFrom [ rdf:type owl:Class ;
@@ -1195,7 +1371,7 @@ We constructed an initial alignment between IAO a CCO representation of ICE and 
                                     ] ;
                 rdfs:subClassOf :ClimOO_0000031 ;
                 rdfs:label "agricultural ecosystem environment agent"@en ;
-                <http://www.w3.org/2004/02/skos/core#definition> "An agricultural ecosystem environment agent that is an agent in an interaction among agricultural ecosystem environment components or in an interaction between agricultural ecosystem components and agricultural ecosystem environment components."@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "An agricultural ecosystem environment component that is an agent in an interaction among agricultural ecosystem environment components or in an interaction between agricultural ecosystem components and agricultural ecosystem environment components."@en ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
 
 
@@ -1293,7 +1469,14 @@ We constructed an initial alignment between IAO a CCO representation of ICE and 
                                                        ]
                                                      ) ;
                                   rdf:type owl:Class
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000167> ;
+                                  owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+                                  owl:onClass :ClimOO_0000025
                                 ] ;
+                owl:disjointWith :ClimOO_0000041 ,
+                                 :ClimOO_0000045 ;
                 rdfs:label "interaction among environmental system components"@en ;
                 <http://www.w3.org/2004/02/skos/core#definition> "An interaction among complex system components that occurs among at least two environmental system components of an environmental system."@en ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
@@ -1313,7 +1496,14 @@ We constructed an initial alignment between IAO a CCO representation of ICE and 
                                                        ]
                                                      ) ;
                                   rdf:type owl:Class
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000167> ;
+                                  owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+                                  owl:onClass :ClimOO_0000026
                                 ] ;
+                owl:disjointWith :ClimOO_0000042 ,
+                                 :ClimOO_0000046 ;
                 rdfs:label "interaction among ecosystem components"@en ;
                 <http://www.w3.org/2004/02/skos/core#definition> "An interaction among environmental system components that occurs among at least two ecosystem components of an ecosystem."@en ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
@@ -1333,7 +1523,14 @@ We constructed an initial alignment between IAO a CCO representation of ICE and 
                                                        ]
                                                      ) ;
                                   rdf:type owl:Class
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000167> ;
+                                  owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+                                  owl:onClass :ClimOO_0000027
                                 ] ;
+                owl:disjointWith :ClimOO_0000043 ,
+                                 :ClimOO_0000047 ;
                 rdfs:label "interaction among anthropised ecosystem components"@en ;
                 <http://www.w3.org/2004/02/skos/core#definition> "An interaction among ecosystem components that occurs among at least two anthropised ecosystem components of an anthropised ecosystem."@en ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
@@ -1353,7 +1550,14 @@ We constructed an initial alignment between IAO a CCO representation of ICE and 
                                                        ]
                                                      ) ;
                                   rdf:type owl:Class
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000167> ;
+                                  owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+                                  owl:onClass :ClimOO_0000028
                                 ] ;
+                owl:disjointWith :ClimOO_0000044 ,
+                                 :ClimOO_0000048 ;
                 rdfs:label "interaction among agricultural ecosystem components"@en ;
                 <http://www.w3.org/2004/02/skos/core#definition> "An interaction among anthropised ecosystem components that occurs among at least two agricultural ecosystem components of an agricultural ecosystem."@en ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
@@ -1373,7 +1577,13 @@ We constructed an initial alignment between IAO a CCO representation of ICE and 
                                                        ]
                                                      ) ;
                                   rdf:type owl:Class
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000167> ;
+                                  owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+                                  owl:onClass :ClimOO_0000017
                                 ] ;
+                owl:disjointWith :ClimOO_0000045 ;
                 rdfs:label "interaction among environmental system environment components"@en ;
                 <http://www.w3.org/2004/02/skos/core#definition> "An interaction among complex system environment components that occurs among at least two environmental system environment components of an environmental system."@en ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
@@ -1393,7 +1603,13 @@ We constructed an initial alignment between IAO a CCO representation of ICE and 
                                                        ]
                                                      ) ;
                                   rdf:type owl:Class
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000167> ;
+                                  owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+                                  owl:onClass :ClimOO_0000018
                                 ] ;
+                owl:disjointWith :ClimOO_0000046 ;
                 rdfs:label "interaction among ecosystem environment components"@en ;
                 <http://www.w3.org/2004/02/skos/core#definition> "An interaction among environmental system environment components that occurs among at least two ecosystem environment components of an ecosystem."@en ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
@@ -1413,7 +1629,13 @@ We constructed an initial alignment between IAO a CCO representation of ICE and 
                                                        ]
                                                      ) ;
                                   rdf:type owl:Class
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000167> ;
+                                  owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+                                  owl:onClass :ClimOO_0000019
                                 ] ;
+                owl:disjointWith :ClimOO_0000047 ;
                 rdfs:label "interaction among anthropised ecosystem environment components"@en ;
                 <http://www.w3.org/2004/02/skos/core#definition> "An interaction among ecosystem environment components that occurs among at least two anthropised ecosystem environment components of an anthropised ecosystem."@en ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
@@ -1433,7 +1655,13 @@ We constructed an initial alignment between IAO a CCO representation of ICE and 
                                                        ]
                                                      ) ;
                                   rdf:type owl:Class
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000167> ;
+                                  owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+                                  owl:onClass :ClimOO_0000020
                                 ] ;
+                owl:disjointWith :ClimOO_0000048 ;
                 rdfs:label "interaction among agricultural ecosystem environment components"@en ;
                 <http://www.w3.org/2004/02/skos/core#definition> "An interaction among anthropised ecosystem environment components that occurs among at least two agricultural ecosystem environment components of an agricultural ecosystem."@en ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
@@ -1453,19 +1681,11 @@ We constructed an initial alignment between IAO a CCO representation of ICE and 
                                                        ]
                                                        [ rdf:type owl:Restriction ;
                                                          owl:onProperty <https://www.w3id.org/sco#SCO_0000037> ;
-                                                         owl:someValuesFrom :ClimOO_0000017
-                                                       ]
-                                                       [ rdf:type owl:Restriction ;
-                                                         owl:onProperty <https://www.w3id.org/sco#SCO_0000037> ;
                                                          owl:someValuesFrom [ rdf:type owl:Class ;
                                                                               owl:unionOf ( :ClimOO_0000001
                                                                                             :ClimOO_0000029
                                                                                           )
                                                                             ]
-                                                       ]
-                                                       [ rdf:type owl:Restriction ;
-                                                         owl:onProperty <https://www.w3id.org/sco#SCO_0000037> ;
-                                                         owl:allValuesFrom :ClimOO_0000017
                                                        ]
                                                        [ rdf:type owl:Restriction ;
                                                          owl:onProperty <https://www.w3id.org/sco#SCO_0000037> ;
@@ -1497,19 +1717,11 @@ We constructed an initial alignment between IAO a CCO representation of ICE and 
                                                        ]
                                                        [ rdf:type owl:Restriction ;
                                                          owl:onProperty <https://www.w3id.org/sco#SCO_0000037> ;
-                                                         owl:someValuesFrom :ClimOO_0000018
-                                                       ]
-                                                       [ rdf:type owl:Restriction ;
-                                                         owl:onProperty <https://www.w3id.org/sco#SCO_0000037> ;
                                                          owl:someValuesFrom [ rdf:type owl:Class ;
                                                                               owl:unionOf ( :ClimOO_0000002
                                                                                             :ClimOO_0000030
                                                                                           )
                                                                             ]
-                                                       ]
-                                                       [ rdf:type owl:Restriction ;
-                                                         owl:onProperty <https://www.w3id.org/sco#SCO_0000037> ;
-                                                         owl:allValuesFrom :ClimOO_0000018
                                                        ]
                                                        [ rdf:type owl:Restriction ;
                                                          owl:onProperty <https://www.w3id.org/sco#SCO_0000037> ;
@@ -1541,19 +1753,11 @@ We constructed an initial alignment between IAO a CCO representation of ICE and 
                                                        ]
                                                        [ rdf:type owl:Restriction ;
                                                          owl:onProperty <https://www.w3id.org/sco#SCO_0000037> ;
-                                                         owl:someValuesFrom :ClimOO_0000019
-                                                       ]
-                                                       [ rdf:type owl:Restriction ;
-                                                         owl:onProperty <https://www.w3id.org/sco#SCO_0000037> ;
                                                          owl:someValuesFrom [ rdf:type owl:Class ;
                                                                               owl:unionOf ( :ClimOO_0000003
                                                                                             :ClimOO_0000031
                                                                                           )
                                                                             ]
-                                                       ]
-                                                       [ rdf:type owl:Restriction ;
-                                                         owl:onProperty <https://www.w3id.org/sco#SCO_0000037> ;
-                                                         owl:allValuesFrom :ClimOO_0000019
                                                        ]
                                                        [ rdf:type owl:Restriction ;
                                                          owl:onProperty <https://www.w3id.org/sco#SCO_0000037> ;
@@ -1707,7 +1911,19 @@ Axioms can be added this classes and subclasses to refer to supply chains and ac
                                                          ) ;
                                       rdf:type owl:Class
                                     ] ;
-                rdfs:subClassOf <https://www.w3id.org/sco#SCO_0000016> ;
+                rdfs:subClassOf <https://www.w3id.org/sco#SCO_0000016> ,
+                                [ owl:intersectionOf ( <https://www.w3id.org/sco#SCO_0000016>
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000059> ;
+                                                         owl:someValuesFrom <https://www.w3id.org/sco#SCO_0000004>
+                                                       ]
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://www.ontologyrepository.com/CommonCoreOntologies/is_subject_of> ;
+                                                         owl:someValuesFrom <https://www.w3id.org/sco#SCO_0000004>
+                                                       ]
+                                                     ) ;
+                                  rdf:type owl:Class
+                                ] ;
                 rdfs:label "environmental system environment component perspective"@en ;
                 <http://www.w3.org/2004/02/skos/core#definition> "A complex system environment component perspective that is bearered by an environmental system environment component."@en ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
@@ -1723,7 +1939,19 @@ Axioms can be added this classes and subclasses to refer to supply chains and ac
                                                          ) ;
                                       rdf:type owl:Class
                                     ] ;
-                rdfs:subClassOf :ClimOO_0000053 ;
+                rdfs:subClassOf :ClimOO_0000053 ,
+                                [ owl:intersectionOf ( :ClimOO_0000053
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000059> ;
+                                                         owl:someValuesFrom <https://www.w3id.org/sco#SCO_0000004>
+                                                       ]
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://www.ontologyrepository.com/CommonCoreOntologies/is_subject_of> ;
+                                                         owl:someValuesFrom <https://www.w3id.org/sco#SCO_0000004>
+                                                       ]
+                                                     ) ;
+                                  rdf:type owl:Class
+                                ] ;
                 rdfs:label "ecosystem environment component perspective"@en ;
                 <http://www.w3.org/2004/02/skos/core#definition> "An environmental system environment component perspective that is bearered by an ecosystem environment component."@en ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
@@ -1739,7 +1967,19 @@ Axioms can be added this classes and subclasses to refer to supply chains and ac
                                                          ) ;
                                       rdf:type owl:Class
                                     ] ;
-                rdfs:subClassOf :ClimOO_0000054 ;
+                rdfs:subClassOf :ClimOO_0000054 ,
+                                [ owl:intersectionOf ( :ClimOO_0000054
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000059> ;
+                                                         owl:someValuesFrom <https://www.w3id.org/sco#SCO_0000004>
+                                                       ]
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://www.ontologyrepository.com/CommonCoreOntologies/is_subject_of> ;
+                                                         owl:someValuesFrom <https://www.w3id.org/sco#SCO_0000004>
+                                                       ]
+                                                     ) ;
+                                  rdf:type owl:Class
+                                ] ;
                 rdfs:label "anthropised ecosystem environment component perspective"@en ;
                 <http://www.w3.org/2004/02/skos/core#definition> "An ecosystem environment component perspective that is bearered by an anthropised ecosystem environment component."@en ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
@@ -1755,7 +1995,19 @@ Axioms can be added this classes and subclasses to refer to supply chains and ac
                                                          ) ;
                                       rdf:type owl:Class
                                     ] ;
-                rdfs:subClassOf :ClimOO_0000055 ;
+                rdfs:subClassOf :ClimOO_0000055 ,
+                                [ owl:intersectionOf ( :ClimOO_0000055
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000059> ;
+                                                         owl:someValuesFrom <https://www.w3id.org/sco#SCO_0000004>
+                                                       ]
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://www.ontologyrepository.com/CommonCoreOntologies/is_subject_of> ;
+                                                         owl:someValuesFrom <https://www.w3id.org/sco#SCO_0000004>
+                                                       ]
+                                                     ) ;
+                                  rdf:type owl:Class
+                                ] ;
                 rdfs:label "agricultural ecosystem environment component perspective"@en ;
                 <http://www.w3.org/2004/02/skos/core#definition> "An anthropised ecosystem environment component perspective that is bearered by an agricultural ecosystem environment component."@en ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
@@ -1883,7 +2135,19 @@ Axioms can be added this classes and subclasses to refer to supply chains and ac
                                                          ) ;
                                       rdf:type owl:Class
                                     ] ;
-                rdfs:subClassOf <https://www.w3id.org/sco#SCO_0000016> ;
+                rdfs:subClassOf <https://www.w3id.org/sco#SCO_0000016> ,
+                                [ owl:intersectionOf ( <https://www.w3id.org/sco#SCO_0000016>
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000059> ;
+                                                         owl:someValuesFrom <https://www.w3id.org/sco#SCO_0000004>
+                                                       ]
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://www.ontologyrepository.com/CommonCoreOntologies/is_subject_of> ;
+                                                         owl:someValuesFrom <https://www.w3id.org/sco#SCO_0000004>
+                                                       ]
+                                                     ) ;
+                                  rdf:type owl:Class
+                                ] ;
                 rdfs:label "environmental system component perspective"@en ;
                 <http://www.w3.org/2004/02/skos/core#definition> "A complex system component perspective that is bearered by an environmental system component."@en ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
@@ -1899,7 +2163,19 @@ Axioms can be added this classes and subclasses to refer to supply chains and ac
                                                          ) ;
                                       rdf:type owl:Class
                                     ] ;
-                rdfs:subClassOf :ClimOO_0000061 ;
+                rdfs:subClassOf :ClimOO_0000061 ,
+                                [ owl:intersectionOf ( :ClimOO_0000061
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000059> ;
+                                                         owl:someValuesFrom <https://www.w3id.org/sco#SCO_0000004>
+                                                       ]
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://www.ontologyrepository.com/CommonCoreOntologies/is_subject_of> ;
+                                                         owl:someValuesFrom <https://www.w3id.org/sco#SCO_0000004>
+                                                       ]
+                                                     ) ;
+                                  rdf:type owl:Class
+                                ] ;
                 rdfs:label "ecosystem component perspective"@en ;
                 <http://www.w3.org/2004/02/skos/core#definition> "An environmental system component perspective that is bearered by an ecosystem component."@en ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
@@ -1915,7 +2191,19 @@ Axioms can be added this classes and subclasses to refer to supply chains and ac
                                                          ) ;
                                       rdf:type owl:Class
                                     ] ;
-                rdfs:subClassOf :ClimOO_0000062 ;
+                rdfs:subClassOf :ClimOO_0000062 ,
+                                [ owl:intersectionOf ( :ClimOO_0000062
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000059> ;
+                                                         owl:someValuesFrom <https://www.w3id.org/sco#SCO_0000004>
+                                                       ]
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://www.ontologyrepository.com/CommonCoreOntologies/is_subject_of> ;
+                                                         owl:someValuesFrom <https://www.w3id.org/sco#SCO_0000004>
+                                                       ]
+                                                     ) ;
+                                  rdf:type owl:Class
+                                ] ;
                 rdfs:label "anthropised ecosystem component perspective"@en ;
                 <http://www.w3.org/2004/02/skos/core#definition> "An ecosystem component perspective that is bearered by an anthropised ecosystem component."@en ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
@@ -1931,7 +2219,19 @@ Axioms can be added this classes and subclasses to refer to supply chains and ac
                                                          ) ;
                                       rdf:type owl:Class
                                     ] ;
-                rdfs:subClassOf :ClimOO_0000063 ;
+                rdfs:subClassOf :ClimOO_0000063 ,
+                                [ owl:intersectionOf ( :ClimOO_0000063
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000059> ;
+                                                         owl:someValuesFrom <https://www.w3id.org/sco#SCO_0000004>
+                                                       ]
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://www.ontologyrepository.com/CommonCoreOntologies/is_subject_of> ;
+                                                         owl:someValuesFrom <https://www.w3id.org/sco#SCO_0000004>
+                                                       ]
+                                                     ) ;
+                                  rdf:type owl:Class
+                                ] ;
                 rdfs:label "agricultural ecosystem component perspective"@en ;
                 <http://www.w3.org/2004/02/skos/core#definition> "An anthropised ecosystem component perspective that is bearered by an agricultural ecosystem component."@en ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
@@ -2085,6 +2385,465 @@ See http://purl.obolibrary.org/obo/ENVO_01001633""" ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
 
 
+###  https://www.w3id.org/climoo#ClimOO_0000078
+:ClimOO_0000078 rdf:type owl:Class ;
+                owl:equivalentClass [ owl:intersectionOf ( :ClimOO_0000012
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000137> ;
+                                                             owl:someValuesFrom :ClimOO_0000079
+                                                           ]
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ] ;
+                rdfs:subClassOf :ClimOO_0000012 ;
+                rdfs:label "agrifood system boundary"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "An agricultural ecosystem boundary of an agrifood system."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo#ClimOO_0000079
+:ClimOO_0000079 rdf:type owl:Class ;
+                rdfs:subClassOf <http://purl.obolibrary.org/obo/ENVO_00000077> ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :ClimOO_0000076 ;
+                                  owl:someValuesFrom <https://w3id.org/sumso#SuMSO_0000004>
+                                ] ;
+                owl:disjointWith :ClimOO_0000084 ;
+                rdfs:comment """The terms “food system”, “agricultural system”, and “agrifood system” are often used slightly interchangeably. Here, for ClimOO ontology purposes, we use these terms as follows. A food system is a complex system dedicated to food for humans. An agricultural system is a complex system dedicated to agriculture. An agrifood system is an agricultural system that is specifically dedicated to food production for humans. Not all agricultural systems are dedicated to food production for humans. Some are, for instance, dedicated to food production for animals. Not all food systems include agricultural activities. 
+We envision discussions with subject matter experts."""@en ;
+                rdfs:label "agrifood system"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "An agricultural ecosystem dedicated to food production for humans."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :ClimOO_0000079 ;
+   owl:annotatedProperty <http://www.w3.org/2004/02/skos/core#definition> ;
+   owl:annotatedTarget "An agricultural ecosystem dedicated to food production for humans."@en ;
+   <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional>
+ ] .
+
+
+###  https://www.w3id.org/climoo#ClimOO_0000080
+:ClimOO_0000080 rdf:type owl:Class ;
+                owl:equivalentClass [ owl:intersectionOf ( :ClimOO_0000085
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <https://www.w3id.org/sco#SCO_0000038> ;
+                                                             owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                  owl:unionOf ( :ClimOO_0000088
+                                                                                                :ClimOO_0000090
+                                                                                              )
+                                                                                ]
+                                                           ]
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ] ;
+                rdfs:subClassOf <https://w3id.org/sumso#SuMSO_0000025> ,
+                                :ClimOO_0000004 ;
+                rdfs:label "agrifood system agent"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "An agrifood system component that is an agent in an interaction among agrifood system components or in an interaction between agrifood system components and agrifood system environment components."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo#ClimOO_0000081
+:ClimOO_0000081 rdf:type owl:Class ;
+                owl:equivalentClass [ owl:intersectionOf ( :ClimOO_0000085
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://purl.obolibrary.org/obo/RO_0000087> ;
+                                                             owl:someValuesFrom <https://www.w3id.org/sco#SCO_0000018>
+                                                           ]
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ] ;
+                rdfs:subClassOf <https://w3id.org/sumso#SuMSO_0000026> ,
+                                :ClimOO_0000008 ;
+                rdfs:label "agrifood system stakeholder"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "An agrifood system component with a stakeholder role."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo#ClimOO_0000082
+:ClimOO_0000082 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000016 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000175> ;
+                                  owl:someValuesFrom <https://w3id.org/sumso#SuMSO_0000023>
+                                ] ;
+                rdfs:label "agrifood system spatial region"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "An agricultural ecosystem spatial region of an agrifood system."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo#ClimOO_0000083
+:ClimOO_0000083 rdf:type owl:Class ;
+                owl:equivalentClass [ owl:intersectionOf ( :ClimOO_0000020
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000176> ;
+                                                             owl:someValuesFrom :ClimOO_0000084
+                                                           ]
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ] ;
+                rdfs:subClassOf <https://w3id.org/sumso#SuMSO_0000031> ,
+                                :ClimOO_0000020 ;
+                owl:disjointWith :ClimOO_0000085 ;
+                rdfs:label "agrifood system environment component"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "An agricultural ecosystem environment component that belongs to the agrifood system environment of an agrifood system."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo#ClimOO_0000084
+:ClimOO_0000084 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000024 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :ClimOO_0000076 ;
+                                  owl:someValuesFrom <https://w3id.org/sumso#SuMSO_0000018>
+                                ] ;
+                rdfs:label "agrifood system environment"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "An agricultural ecosystem environment that surrounds and is distinct and disjoint from an agrifood system."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo#ClimOO_0000085
+:ClimOO_0000085 rdf:type owl:Class ;
+                owl:equivalentClass [ owl:intersectionOf ( :ClimOO_0000028
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000176> ;
+                                                             owl:someValuesFrom :ClimOO_0000079
+                                                           ]
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ] ;
+                rdfs:subClassOf <https://w3id.org/sumso#SuMSO_0000024> ,
+                                :ClimOO_0000028 ;
+                rdfs:label "agrifood system component"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "An agricultural ecosystem component that belongs to an agrifood system."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo#ClimOO_0000086
+:ClimOO_0000086 rdf:type owl:Class ;
+                owl:equivalentClass [ owl:intersectionOf ( :ClimOO_0000083
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <https://www.w3id.org/sco#SCO_0000038> ;
+                                                             owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                  owl:unionOf ( :ClimOO_0000089
+                                                                                                :ClimOO_0000090
+                                                                                              )
+                                                                                ]
+                                                           ]
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ] ;
+                rdfs:subClassOf <https://w3id.org/sumso#SuMSO_0000032> ,
+                                :ClimOO_0000032 ;
+                rdfs:label "agrifood system environment agent"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "An agrifood system environment component that is an agent in an interaction among agrifood system environment components or in an interaction between agrifood system components and agrifood system environment components."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo#ClimOO_0000087
+:ClimOO_0000087 rdf:type owl:Class ;
+                owl:equivalentClass [ owl:intersectionOf ( :ClimOO_0000036
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000184> ;
+                                                             owl:someValuesFrom :ClimOO_0000079
+                                                           ]
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000184> ;
+                                                             owl:allValuesFrom :ClimOO_0000079
+                                                           ]
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ] ;
+                rdfs:subClassOf :ClimOO_0000036 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://purl.obolibrary.org/obo/RO_0002012> ;
+                                  owl:someValuesFrom <https://w3id.org/sumso#SuMSO_0000037>
+                                ] ;
+                rdfs:label "agrifood system history"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "The agricultural ecosystem history of an agrifood system."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo#ClimOO_0000088
+:ClimOO_0000088 rdf:type owl:Class ;
+                rdfs:subClassOf <https://w3id.org/sumso#SuMSO_0000027> ,
+                                :ClimOO_0000040 ,
+                                [ owl:intersectionOf ( :ClimOO_0000040
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <https://www.w3id.org/sco#SCO_0000037> ;
+                                                         owl:someValuesFrom :ClimOO_0000080
+                                                       ]
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <https://www.w3id.org/sco#SCO_0000037> ;
+                                                         owl:allValuesFrom :ClimOO_0000080
+                                                       ]
+                                                     ) ;
+                                  rdf:type owl:Class
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000167> ;
+                                  owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+                                  owl:onClass :ClimOO_0000085
+                                ] ;
+                owl:disjointWith :ClimOO_0000089 ,
+                                 :ClimOO_0000090 ;
+                rdfs:label "interaction among agrifood system components"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "An interaction among agricultural ecosystem components that occurs among at least two agrifood system components of an agrifood system."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo#ClimOO_0000089
+:ClimOO_0000089 rdf:type owl:Class ;
+                rdfs:subClassOf <https://w3id.org/sumso#SuMSO_0000028> ,
+                                :ClimOO_0000044 ,
+                                [ owl:intersectionOf ( :ClimOO_0000044
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <https://www.w3id.org/sco#SCO_0000037> ;
+                                                         owl:someValuesFrom :ClimOO_0000086
+                                                       ]
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <https://www.w3id.org/sco#SCO_0000037> ;
+                                                         owl:allValuesFrom :ClimOO_0000086
+                                                       ]
+                                                     ) ;
+                                  rdf:type owl:Class
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000167> ;
+                                  owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+                                  owl:onClass :ClimOO_0000083
+                                ] ;
+                owl:disjointWith :ClimOO_0000090 ;
+                rdfs:label "interaction among agrifood system environment components"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "An interaction among agricultural ecosystem environment components that occurs among at least two agrifood system environment components of an environment of an agrifood system."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo#ClimOO_0000090
+:ClimOO_0000090 rdf:type owl:Class ;
+                rdfs:subClassOf <https://w3id.org/sumso#SuMSO_0000029> ,
+                                :ClimOO_0000048 ,
+                                [ owl:intersectionOf ( :ClimOO_0000048
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000057> ;
+                                                         owl:someValuesFrom :ClimOO_0000083
+                                                       ]
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000057> ;
+                                                         owl:someValuesFrom :ClimOO_0000085
+                                                       ]
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <https://www.w3id.org/sco#SCO_0000037> ;
+                                                         owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                              owl:unionOf ( :ClimOO_0000080
+                                                                                            :ClimOO_0000086
+                                                                                          )
+                                                                            ]
+                                                       ]
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <https://www.w3id.org/sco#SCO_0000037> ;
+                                                         owl:allValuesFrom [ rdf:type owl:Class ;
+                                                                             owl:unionOf ( :ClimOO_0000080
+                                                                                           :ClimOO_0000086
+                                                                                         )
+                                                                           ]
+                                                       ]
+                                                     ) ;
+                                  rdf:type owl:Class
+                                ] ;
+                rdfs:label "interaction between agrifood system components and agrifood system environment components"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "An interaction between agricultural ecosystem components and agricultural ecosystem environment components that occurs between at least one agrifood system component and one agrifood system environment component where the latter belongs to the agrifood system environment of the agrifood system to which the agrifood system component belongs."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo#ClimOO_0000091
+:ClimOO_0000091 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000052 ,
+                                [ owl:intersectionOf ( :ClimOO_0000052
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000057> ;
+                                                         owl:someValuesFrom :ClimOO_0000079
+                                                       ]
+                                                     ) ;
+                                  rdf:type owl:Class
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://purl.obolibrary.org/obo/RO_0002012> ;
+                                  owl:someValuesFrom <https://w3id.org/sumso#SuMSO_0000030>
+                                ] ;
+                rdfs:label "agrifood system development"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "The agricultural ecosystem development of an agrifood system."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo#ClimOO_0000092
+:ClimOO_0000092 rdf:type owl:Class ;
+                owl:equivalentClass [ owl:intersectionOf ( :ClimOO_0000056
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://purl.obolibrary.org/obo/RO_0000092> ;
+                                                             owl:someValuesFrom :ClimOO_0000083
+                                                           ]
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ] ;
+                rdfs:subClassOf <https://w3id.org/sumso#SuMSO_0000034> ,
+                                :ClimOO_0000056 ,
+                                [ owl:intersectionOf ( :ClimOO_0000056
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000059> ;
+                                                         owl:someValuesFrom <https://www.w3id.org/sco#SCO_0000004>
+                                                       ]
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://www.ontologyrepository.com/CommonCoreOntologies/is_subject_of> ;
+                                                         owl:someValuesFrom <https://www.w3id.org/sco#SCO_0000004>
+                                                       ]
+                                                     ) ;
+                                  rdf:type owl:Class
+                                ] ;
+                rdfs:label "agrifood system environment component perspective"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "An agricultural ecosystem environment component perspective that is bearered by an agrifood system environment component."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo#ClimOO_0000093
+:ClimOO_0000093 rdf:type owl:Class ;
+                owl:equivalentClass [ owl:intersectionOf ( :ClimOO_0000060
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://purl.obolibrary.org/obo/RO_0000092> ;
+                                                             owl:someValuesFrom :ClimOO_0000081
+                                                           ]
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ] ;
+                rdfs:subClassOf <https://w3id.org/sumso#SuMSO_0000035> ,
+                                :ClimOO_0000060 ,
+                                [ owl:intersectionOf ( :ClimOO_0000094
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000059> ;
+                                                         owl:someValuesFrom <https://www.w3id.org/sco#SCO_0000040>
+                                                       ]
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://www.ontologyrepository.com/CommonCoreOntologies/is_subject_of> ;
+                                                         owl:someValuesFrom <https://www.w3id.org/sco#SCO_0000040>
+                                                       ]
+                                                     ) ;
+                                  rdf:type owl:Class
+                                ] ;
+                rdfs:label "agrifood system stakeholder perspective"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "An agricultural ecosystem stakeholder perspective that is bearered by an agrifood system stakeholder."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo#ClimOO_0000094
+:ClimOO_0000094 rdf:type owl:Class ;
+                owl:equivalentClass [ owl:intersectionOf ( :ClimOO_0000064
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://purl.obolibrary.org/obo/RO_0000092> ;
+                                                             owl:someValuesFrom :ClimOO_0000085
+                                                           ]
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ] ;
+                rdfs:subClassOf <https://w3id.org/sumso#SuMSO_0000038> ,
+                                :ClimOO_0000064 ,
+                                [ owl:intersectionOf ( :ClimOO_0000064
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000059> ;
+                                                         owl:someValuesFrom <https://www.w3id.org/sco#SCO_0000004>
+                                                       ]
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://www.ontologyrepository.com/CommonCoreOntologies/is_subject_of> ;
+                                                         owl:someValuesFrom <https://www.w3id.org/sco#SCO_0000004>
+                                                       ]
+                                                     ) ;
+                                  rdf:type owl:Class
+                                ] ;
+                rdfs:label "agrifood system component perspective"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "An agricultural ecosystem component perspective that is bearered by an agrifood system component."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo#ClimOO_0000095
+:ClimOO_0000095 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000069 ,
+                                :ClimOO_0000070 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000117> ;
+                                  owl:someValuesFrom [ rdf:type owl:Class ;
+                                                       owl:unionOf ( :ClimOO_0000088
+                                                                     :ClimOO_0000090
+                                                                   )
+                                                     ]
+                                ] ;
+                <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "An anthropized ecosystem process that pertains to an agricultural ecosystem."@en ;
+                rdfs:label "agrifood system process"@en .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://www.w3id.org/climoo#ClimOO_0000072
+:ClimOO_0000072 rdf:type owl:NamedIndividual ;
+                <http://purl.org/dc/terms/description> "This owl:NamedIndividual tracks the perspectives of ClimOO project participants according to which this ontology has been built."@en ;
+                <http://www.ontologyrepository.com/CommonCoreOntologies/definition> "The perspective of the ClimOO project participants."@en ;
+                rdfs:label "ClimOO project perspective"@en ;
+                rdfs:seeAlso "https://pthsta.it/climoo" ;
+                owl:versionInfo "2025-08-08" ;
+                <https://www.w3id.org/sco#SCO_0000039> :ClimOO_0000073 ,
+                                                       :ClimOO_0000074 ,
+                                                       :ClimOO_0000075 .
+
+
+###  https://www.w3id.org/climoo#ClimOO_0000073
+:ClimOO_0000073 rdf:type owl:NamedIndividual ,
+                         <https://www.w3id.org/sco#SCO_0000016> ;
+                <http://purl.org/dc/terms/description> "This owl:NamedIndividual tracks the framework view proposed by Hartmann et al. (2019)."@en ;
+                <http://purl.org/dc/terms/source> "Hartmann, N. B., Hüffer, T., Thompson, R. C., Hassellöv, M., Verschoor, A., Daugaard, A. E., Rist, S., Karlsson, T., Brennholt, N., Cole, M., Herrling, M. P., Hess, M. C., Ivleva, N. P., Lusher, A. L., & Wagner, M. (2019). Are We Speaking the Same Language? Recommendations for a Definition and Categorization Framework for Plastic Debris. Environmental Science & Technology, 53(3), 1039–1047. https://doi.org/10.1021/acs.est.8b05297" ;
+                rdfs:label "Hartmann et al. perspective on microplastics"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :ClimOO_0000073 ;
+   owl:annotatedProperty rdf:type ;
+   owl:annotatedTarget <https://www.w3id.org/sco#SCO_0000016> ;
+   rdfs:comment """ClimOO developer comment:
+This individual currently instantiate the “perspective class. Implementations may revise to specify that is a human perspective."""@en
+ ] .
+
+
+###  https://www.w3id.org/climoo#ClimOO_0000074
+:ClimOO_0000074 rdf:type owl:NamedIndividual ,
+                         <https://www.w3id.org/sco#SCO_0000016> ;
+                <http://purl.org/dc/terms/description> "This owl:NamedIndividual tracks the framework view proposed by Rochman et al. (2019)."@en ;
+                <http://purl.org/dc/terms/source> "Rochman, C. M., Brookson, C., Bikker, J., Djuric, N., Earn, A., Bucci, K., Athey, S., Huntington, A., McIlwraith, H., Munno, K., De Frond, H., Kolomijeca, A., Erdle, L., Grbic, J., Bayoumi, M., Borrelle, S. B., Wu, T., Santoro, S., Werbowski, L. M., … Hung, C. (2019). Rethinking microplastics as a diverse contaminant suite. Environmental Toxicology and Chemistry, 38(4), 703–711. https://doi.org/10.1002/etc.4371" ;
+                rdfs:label "Rochman et al. perpsective on microplastics"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :ClimOO_0000074 ;
+   owl:annotatedProperty rdf:type ;
+   owl:annotatedTarget <https://www.w3id.org/sco#SCO_0000016> ;
+   rdfs:comment """ClimOO developer comment:
+This individual currently instantiate the “perspective class. Implementations may revise to specify that is a human perspective."""@en
+ ] .
+
+
+###  https://www.w3id.org/climoo#ClimOO_0000075
+:ClimOO_0000075 rdf:type owl:NamedIndividual ,
+                         <https://www.w3id.org/sco#SCO_0000016> ;
+                <http://purl.org/dc/terms/description> "This owl:NamedIndividual tracks the framework view proposed by the 2019 GESAMP report."@en ;
+                <http://purl.org/dc/terms/source> "GESAMP (2019). Guidelines or the monitoring and assessment of plastic litter and microplastics in the ocean (Kershaw P.J., Turra A. and Galgani F. editors), (IMO/FAO/UNESCO-IOC/UNIDO/WMO/IAEA/UN/UNEP/UNDP/ISA Joint Group of Experts on the Scientific Aspects of Marine Environmental Protection). Rep. Stud. GESAMP No. 99, 130p." ;
+                rdfs:label "Perspective of GESAMP 2019 report on microplastics"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :ClimOO_0000075 ;
+   owl:annotatedProperty rdf:type ;
+   owl:annotatedTarget <https://www.w3id.org/sco#SCO_0000016> ;
+   rdfs:comment """ClimOO developer comment:
+This individual currently instantiate the “perspective class. Implementations may revise to specify that is a human perspective."""@en
+ ] .
+
+
 #################################################################
 #    Annotations
 #################################################################
@@ -2093,8 +2852,20 @@ See http://purl.obolibrary.org/obo/ENVO_01001633""" ;
 Axioms detailing the additional elements that compose air may be reintroduced from EnvO, as needed."""@en .
 
 
+<http://purl.obolibrary.org/obo/ENVO_01000776> <https://www.w3id.org/sco#SCO_0000039> :ClimOO_0000072 ,
+                                                                                      :ClimOO_0000073 ,
+                                                                                      :ClimOO_0000074 ,
+                                                                                      :ClimOO_0000075 .
+
+
 <http://purl.obolibrary.org/obo/ENVO_01000952> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> """ClimOO developer comment:
 It seems that there is some inconsistence with the use of the term “environment” and “ecosystem” in the definition of this class. The superclass refers to ecosystems. Here the focus is on natural environment. Currently, we maintain this class as it is. We, however, suggest revisions."""@en .
+
+
+<http://purl.obolibrary.org/obo/ENVO_06105101> <https://www.w3id.org/sco#SCO_0000039> :ClimOO_0000072 ,
+                                                                                      :ClimOO_0000073 ,
+                                                                                      :ClimOO_0000074 ,
+                                                                                      :ClimOO_0000075 .
 
 
 <http://purl.obolibrary.org/obo/IAO_0000009> rdfs:comment """ClimOO developer comment:
