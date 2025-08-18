@@ -17,6 +17,10 @@ http://purl.obolibrary.org/obo/CHEBI_24431
 http://purl.obolibrary.org/obo/CHEBI_59999
 http://purl.obolibrary.org/obo/CHEBI_23367
 
+http://purl.obolibrary.org/obo/CHEBI_60027 #polymer
+http://purl.obolibrary.org/obo/CHEBI_60004 #mixture
+http://purl.obolibrary.org/obo/CHEBI_59999 #chemical substance
+
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/CHEBI_24431
 http://purl.obolibrary.org/obo/CHEBI_23367
@@ -29,6 +33,12 @@ http://purl.obolibrary.org/obo/CHEBI_24432
 subClassOf http://purl.obolibrary.org/obo/CHEBI_50906
 http://purl.obolibrary.org/obo/CHEBI_51086
 subClassOf http://purl.obolibrary.org/obo/CHEBI_50906
+http://purl.obolibrary.org/obo/CHEBI_60027 #polymer
+subClassOf http://purl.obolibrary.org/obo/CHEBI_60004 #mixture
+http://purl.obolibrary.org/obo/CHEBI_60004 #mixture
+subClassOf http://purl.obolibrary.org/obo/CHEBI_59999 #chemical substance
+http://purl.obolibrary.org/obo/CHEBI_59999 #chemical substance
+subClassOf http://purl.obolibrary.org/obo/CHEBI_24431
 
 [Source term retrieval setting]
 includeAllIntermediates

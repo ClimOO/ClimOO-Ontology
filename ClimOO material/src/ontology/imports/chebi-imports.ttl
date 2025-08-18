@@ -181,6 +181,32 @@ obo:CHEBI_59999 rdf:type owl:Class ;
                 rdfs:label "chemical substance" .
 
 
+###  http://purl.obolibrary.org/obo/CHEBI_60004
+obo:CHEBI_60004 rdf:type owl:Class ;
+                rdfs:subClassOf obo:CHEBI_59999 ;
+                obo:IAO_0000115 "A mixture is a chemical substance composed of multiple molecules, at least two of which are of a different kind." ;
+                obo:IAO_0000412 obo:chebi.owl ;
+                oboInOwl:hasOBONamespace "chebi_ontology" ;
+                oboInOwl:hasRelatedSynonym "Mischung" ;
+                oboInOwl:id "CHEBI:60004" ;
+                oboInOwl:inSubset <http://purl.oboInOwllibrary.org/oboInOwl/chebi#3_STAR> ;
+                rdfs:label "mixture" .
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_60027
+obo:CHEBI_60027 rdf:type owl:Class ;
+                rdfs:subClassOf obo:CHEBI_60004 ;
+                obo:IAO_0000115 "A polymer is a mixture, which is composed of macromolecules of different kinds and which may be differentiated by composition, length, degree of branching etc.." ;
+                obo:IAO_0000412 obo:chebi.owl ;
+                oboInOwl:hasDbXref "Wikipedia:Polymer" ;
+                oboInOwl:hasExactSynonym "Polymer" ;
+                oboInOwl:hasOBONamespace "chebi_ontology" ;
+                oboInOwl:hasRelatedSynonym "Kunststoff" ;
+                oboInOwl:id "CHEBI:60027" ;
+                oboInOwl:inSubset <http://purl.oboInOwllibrary.org/oboInOwl/chebi#3_STAR> ;
+                rdfs:label "polymer" .
+
+
 ###  http://purl.obolibrary.org/obo/CHEBI_64909
 obo:CHEBI_64909 rdf:type owl:Class ;
                 rdfs:subClassOf obo:CHEBI_24432 ;
