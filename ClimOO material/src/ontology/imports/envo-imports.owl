@@ -191,6 +191,10 @@ A continuant cannot have an occurrent as part: use 'participates in'. An occurre
 <http://purl.obolibrary.org/obo/BFO_0000176> rdf:type owl:ObjectProperty .
 
 
+###  http://purl.obolibrary.org/obo/BFO_0000178
+<http://purl.obolibrary.org/obo/BFO_0000178> rdf:type owl:ObjectProperty .
+
+
 ###  http://purl.obolibrary.org/obo/ENVO_01001307
 <http://purl.obolibrary.org/obo/ENVO_01001307> rdf:type owl:ObjectProperty ;
                                                <http://purl.obolibrary.org/obo/IAO_0000112> "A duck swimming in a pond is partially surrounded by air and partially surrounded by water." ;
@@ -342,8 +346,8 @@ _:genid4 rdf:type rdf:List ;
                                             <http://purl.obolibrary.org/obo/IAO_0000115> "x surrounded_by y if and only if (1) x is adjacent to y and for every region r that is adjacent to x, r overlaps y (2) the shared boundary between x and y occupies the majority of the outermost boundary of x" ;
                                             <http://purl.obolibrary.org/obo/IAO_0000117> <https://orcid.org/0000-0002-6601-2165> ;
                                             <http://purl.obolibrary.org/obo/RO_0001900> <http://purl.obolibrary.org/obo/RO_0001901> ;
-                                            rdfs:label "surrounded by" ,
-                                                       "surrounded by"@en .
+                                            rdfs:label "surrounded by"@en ,
+                                                       "surrounded by" .
 
 
 ###  http://purl.obolibrary.org/obo/RO_0002220
@@ -412,8 +416,8 @@ _:genid4 rdf:type rdf:List ;
                                             rdfs:subPropertyOf <http://purl.obolibrary.org/obo/RO_0002234> ,
                                                                <http://purl.obolibrary.org/obo/RO_0002295> ;
                                             owl:inverseOf <http://purl.obolibrary.org/obo/RO_0002354> ;
-                                            <http://purl.obolibrary.org/obo/IAO_0000112> "an annotation of gene X to anatomical structure formation with results_in_formation_of UBERON:0000007 (pituitary gland) means that at the beginning of the process a pituitary gland does not exist and at the end of the process a pituitary gland exists." ,
-                                                                                         "every \"endocardial cushion formation\" (GO:0003272) results_in_formation_of some \"endocardial cushion\" (UBERON:0002062)"@en ;
+                                            <http://purl.obolibrary.org/obo/IAO_0000112> "every \"endocardial cushion formation\" (GO:0003272) results_in_formation_of some \"endocardial cushion\" (UBERON:0002062)"@en ,
+                                                                                         "an annotation of gene X to anatomical structure formation with results_in_formation_of UBERON:0000007 (pituitary gland) means that at the beginning of the process a pituitary gland does not exist and at the end of the process a pituitary gland exists." ;
                                             <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000125> ;
                                             <http://purl.obolibrary.org/obo/IAO_0000117> <https://orcid.org/0000-0002-6601-2165> ;
                                             <http://purl.obolibrary.org/obo/IAO_0000119> "GOC:mtg_berkeley_2013" ;
@@ -2013,18 +2017,11 @@ We revised this axiom to make reference to the related role."""@en
 
 ###  http://purl.obolibrary.org/obo/ENVO_01000776
 <http://purl.obolibrary.org/obo/ENVO_01000776> rdf:type owl:Class ;
-                                               owl:equivalentClass [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/ENVO_01001687>
-                                                                                          [ rdf:type owl:Restriction ;
-                                                                                            owl:onProperty <http://purl.obolibrary.org/obo/RO_0002473> ;
-                                                                                            owl:someValuesFrom <http://purl.obolibrary.org/obo/ENVO_06105112>
-                                                                                          ]
-                                                                                        ) ;
-                                                                     rdf:type owl:Class
-                                                                   ] ;
+                                               owl:equivalentClass _:genid178 ;
                                                rdfs:subClassOf <http://purl.obolibrary.org/obo/ENVO_01001687> ,
                                                                [ rdf:type owl:Restriction ;
-                                                                 owl:onProperty <http://purl.obolibrary.org/obo/RO_0002473> ;
-                                                                 owl:someValuesFrom <http://purl.obolibrary.org/obo/ENVO_06105112>
+                                                                 owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000178> ;
+                                                                 owl:someValuesFrom <http://purl.obolibrary.org/obo/ENVO_06105101>
                                                                ] ;
                                                <http://purl.obolibrary.org/obo/IAO_0000115> "A mass of solid material which is primarily composed of plastic."@en ;
                                                <http://purl.org/dc/elements/1.1/contributor> <https://orcid.org/0000-0002-2996-719X> ,
@@ -2035,6 +2032,22 @@ We revised this axiom to make reference to the related role."""@en
                                                                                                               "pezzo di plastica"@it ;
                                                <http://www.geneontology.org/formats/oboInOwl#inSubset> "envoPlastics"@es ;
                                                rdfs:label "piece of plastic"@en .
+
+_:genid178 owl:intersectionOf ( <http://purl.obolibrary.org/obo/ENVO_01001687>
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000178> ;
+                                   owl:someValuesFrom <http://purl.obolibrary.org/obo/ENVO_06105101>
+                                 ]
+                               ) ;
+            rdf:type owl:Class .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/ENVO_01000776> ;
+   owl:annotatedProperty owl:equivalentClass ;
+   owl:annotatedTarget _:genid178 ;
+   rdfs:comment """ClimOO developer comment:
+We expand coverage of this class, generalizing this axiom to refer to plastic in general rather than to solely synthetic plastic. We also changed the object property with a more general one, as some piece of plastic may contain amount of other material, for instance additives, exceeding 50%."""@en
+ ] .
 
 
 ###  http://purl.obolibrary.org/obo/ENVO_01000777
@@ -2427,7 +2440,7 @@ We revised this axiom to make reference to the related role."""@en
 
 ###  http://purl.obolibrary.org/obo/ENVO_01000993
 <http://purl.obolibrary.org/obo/ENVO_01000993> rdf:type owl:Class ;
-                                               owl:equivalentClass _:genid236 ;
+                                               owl:equivalentClass _:genid237 ;
                                                rdfs:subClassOf <http://purl.obolibrary.org/obo/OBI_0000094> ,
                                                                [ rdf:type owl:Restriction ;
                                                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000051> ;
@@ -2441,7 +2454,7 @@ We revised this axiom to make reference to the related role."""@en
                                                rdfs:comment "The term may refer to a range of human activity, from handicraft to high tech, but is most commonly applied to industrial production, in which raw materials are transformed into finished goods on a large scale." ;
                                                rdfs:label "manufacturing process"@en .
 
-_:genid236 owl:intersectionOf ( <http://purl.obolibrary.org/obo/OBI_0000094>
+_:genid237 owl:intersectionOf ( <http://purl.obolibrary.org/obo/OBI_0000094>
                                  [ rdf:type owl:Restriction ;
                                    owl:onProperty <http://purl.obolibrary.org/obo/RO_0002234> ;
                                    owl:someValuesFrom <http://purl.obolibrary.org/obo/ENVO_00003074>
@@ -2452,7 +2465,7 @@ _:genid236 owl:intersectionOf ( <http://purl.obolibrary.org/obo/OBI_0000094>
 [ rdf:type owl:Axiom ;
    owl:annotatedSource <http://purl.obolibrary.org/obo/ENVO_01000993> ;
    owl:annotatedProperty owl:equivalentClass ;
-   owl:annotatedTarget _:genid236 ;
+   owl:annotatedTarget _:genid237 ;
    rdfs:comment """ClimOO developer comment:
 We revised this axiom according to the new class hierarchy position."""@en
  ] .
@@ -3016,15 +3029,15 @@ We revised this axiom according to the new class hierarchy position."""@en
 
 ###  http://purl.obolibrary.org/obo/ENVO_01001795
 <http://purl.obolibrary.org/obo/ENVO_01001795> rdf:type owl:Class ;
-                                               owl:equivalentClass _:genid352 ;
+                                               owl:equivalentClass _:genid353 ;
                                                rdfs:subClassOf <http://purl.obolibrary.org/obo/ENVO_02500000> ,
-                                                               _:genid357 ;
+                                                               _:genid358 ;
                                                <http://purl.obolibrary.org/obo/IAO_0000115> "An environmental process either driven by or primarily impacting the parts or emergent properties of an ecosystem." ;
                                                <http://purl.org/dc/elements/1.1/creator> <https://orcid.org/0000-0002-4366-3088> ;
                                                <http://purl.org/dc/elements/1.1/date> "2019-10-21T11:52:55Z"^^xsd:dateTime ;
                                                rdfs:label "ecosystem process"@en .
 
-_:genid352 owl:intersectionOf ( <http://purl.obolibrary.org/obo/ENVO_02500000>
+_:genid353 owl:intersectionOf ( <http://purl.obolibrary.org/obo/ENVO_02500000>
                                  [ rdf:type owl:Restriction ;
                                    owl:onProperty <http://purl.obolibrary.org/obo/RO_0002608> ;
                                    owl:someValuesFrom <http://purl.obolibrary.org/obo/ENVO_01001110>
@@ -3032,14 +3045,14 @@ _:genid352 owl:intersectionOf ( <http://purl.obolibrary.org/obo/ENVO_02500000>
                                ) ;
             rdf:type owl:Class .
 
-_:genid357 rdf:type owl:Restriction ;
+_:genid358 rdf:type owl:Restriction ;
             owl:onProperty <http://purl.obolibrary.org/obo/RO_0002608> ;
             owl:someValuesFrom <http://purl.obolibrary.org/obo/ENVO_01001110> .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource <http://purl.obolibrary.org/obo/ENVO_01001795> ;
    owl:annotatedProperty owl:equivalentClass ;
-   owl:annotatedTarget _:genid352 ;
+   owl:annotatedTarget _:genid353 ;
    rdfs:comment """ClimOO developer comment:
 It seems that this axiom should be revised, at least, adding reference to concrete ecosystem agents. We currently, maintain this axiom as such; if needed, we will revise it."""@en
  ] .
@@ -3047,7 +3060,7 @@ It seems that this axiom should be revised, at least, adding reference to concre
 [ rdf:type owl:Axiom ;
    owl:annotatedSource <http://purl.obolibrary.org/obo/ENVO_01001795> ;
    owl:annotatedProperty rdfs:subClassOf ;
-   owl:annotatedTarget _:genid357 ;
+   owl:annotatedTarget _:genid358 ;
    rdfs:comment """ClimOO developer comment:
 It seems that this axiom should be revised, at least, adding reference to concrete ecosystem agents. We currently, maintain this axiom as such; if needed, we will revise it."""@en
  ] .
@@ -3128,12 +3141,12 @@ It seems that this axiom should be revised, at least, adding reference to concre
 ###  http://purl.obolibrary.org/obo/ENVO_02500000
 <http://purl.obolibrary.org/obo/ENVO_02500000> rdf:type owl:Class ;
                                                rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000015> ,
-                                                               _:genid369 ;
+                                                               _:genid370 ;
                                                <http://purl.obolibrary.org/obo/IAO_0000115> "A process in which includes the components of an environmental system as participants." ;
                                                rdfs:comment "This is a convenience class for organisation and should not be used for annotation." ;
                                                rdfs:label "environmental system process"@en .
 
-_:genid369 rdf:type owl:Restriction ;
+_:genid370 rdf:type owl:Restriction ;
             owl:onProperty <http://purl.obolibrary.org/obo/RO_0000057> ;
             owl:someValuesFrom [ rdf:type owl:Class ;
                                  owl:unionOf ( <http://purl.obolibrary.org/obo/ENVO_00010483>
@@ -3147,7 +3160,7 @@ _:genid369 rdf:type owl:Restriction ;
 [ rdf:type owl:Axiom ;
    owl:annotatedSource <http://purl.obolibrary.org/obo/ENVO_02500000> ;
    owl:annotatedProperty rdfs:subClassOf ;
-   owl:annotatedTarget _:genid369 ;
+   owl:annotatedTarget _:genid370 ;
    rdfs:comment """ClimOO developer comment:
 We omitted the corresponding equivalent class axiom to avoid incorrect automatic reclassifications of “system development” classes. We judged this an adequate compromise as, on one hand, this EnvO class has been created for grouping purposes (see comments to the class), and on the other, the SCO representation of system development requires further implementations.
 https://github.com/gioUbbiali/Sustainability-Core-Ontology/issues/2"""@en
@@ -3228,18 +3241,18 @@ https://github.com/gioUbbiali/Sustainability-Core-Ontology/issues/2"""@en
                                                                      rdf:type owl:Class
                                                                    ] ;
                                                rdfs:subClassOf <http://purl.obolibrary.org/obo/ENVO_02500000> ,
-                                                               _:genid395 ;
+                                                               _:genid396 ;
                                                <http://purl.obolibrary.org/obo/IAO_0000115> "An environmental process which is driven by the action of humans." ;
                                                rdfs:label "anthropogenic environmental process" .
 
-_:genid395 rdf:type owl:Restriction ;
+_:genid396 rdf:type owl:Restriction ;
             owl:onProperty <http://purl.obolibrary.org/obo/RO_0002608> ;
             owl:someValuesFrom <http://purl.obolibrary.org/obo/NCBITaxon_9606> .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource <http://purl.obolibrary.org/obo/ENVO_02500027> ;
    owl:annotatedProperty rdfs:subClassOf ;
-   owl:annotatedTarget _:genid395 ;
+   owl:annotatedTarget _:genid396 ;
    rdfs:comment """ClimOO developer comment:
 This axiom may be specified for humans that are part of environmental systems."""@en
  ] .
