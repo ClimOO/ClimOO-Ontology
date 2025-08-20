@@ -137,6 +137,10 @@ https://ontobee.org/ontology/PATO"""@en ;
 <http://www.geneontology.org/formats/oboInOwl#inSubset> rdf:type owl:AnnotationProperty .
 
 
+###  http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+rdf:type rdf:type owl:AnnotationProperty .
+
+
 #################################################################
 #    Object Properties
 #################################################################
@@ -3772,6 +3776,48 @@ Definitions of Cryosphere come from several glossaries including:
    owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
    owl:annotatedTarget "A material accumulation process during which atmospheric carbon dioxide is captured and stored." ;
    <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "https://www.usgs.gov/faqs/what-carbon-sequestration?qt-news_science_products=0#qt-news_science_products"
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/ENVO_06105002
+<http://purl.obolibrary.org/obo/ENVO_06105002> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000016> ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000115> "A disposition inhering in a bearer by virtue of that bearer's ability to, repeatedly, become plastic on heating and harden again on cooling."@en ;
+                                               <http://purl.org/dc/elements/1.1/contributor> <https://orcid.org/0000-0002-2996-719X> ,
+                                                                                             <https://orcid.org/0000-0003-1072-8081> ;
+                                               <http://purl.org/dc/elements/1.1/creator> <https://orcid.org/0000-0002-8166-0486> ;
+                                               <http://purl.org/dc/elements/1.1/date> "2021-04-27T09:10:14Z"^^xsd:dateTime ;
+                                               <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "termoplasticità"@it ,
+                                                                                                              "熱塑性"@zh ;
+                                               <http://www.geneontology.org/formats/oboInOwl#inSubset> "envoPlastics"@en ;
+                                               rdfs:label "thermoplasticity"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/ENVO_06105002> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "A disposition inhering in a bearer by virtue of that bearer's ability to, repeatedly, become plastic on heating and harden again on cooling."@en ;
+   <http://www.geneontology.org/formats/oboInOwl#hasDbXref> <https://www.lexico.com/en/definition/thermoplastic> ,
+                                                            <https://www.merriam-webster.com/dictionary/thermoplastic>
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/ENVO_06105004
+<http://purl.obolibrary.org/obo/ENVO_06105004> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000016> ;
+                                               <http://purl.obolibrary.org/obo/IAO_0000115> "A disposition which inheres in materials capable of becoming rigid when cured by heating."@en ;
+                                               <http://purl.org/dc/elements/1.1/contributor> <https://orcid.org/0000-0002-2996-719X> ,
+                                                                                             <https://orcid.org/0000-0003-1072-8081> ;
+                                               <http://purl.org/dc/elements/1.1/creator> <https://orcid.org/0000-0002-8166-0486> ;
+                                               <http://purl.org/dc/elements/1.1/date> "2021-04-27T13:46:52Z"^^xsd:dateTime ;
+                                               <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "熱固性"@zh ;
+                                               <http://www.geneontology.org/formats/oboInOwl#inSubset> "envoPlastics"@zh ;
+                                               rdfs:label "thermosetting disposition"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/ENVO_06105004> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "A disposition which inheres in materials capable of becoming rigid when cured by heating."@en ;
+   <http://www.geneontology.org/formats/oboInOwl#hasDbXref> <https://en.wikipedia.org/wiki/Thermosetting_polymer>
  ] .
 
 
