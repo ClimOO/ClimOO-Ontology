@@ -2861,13 +2861,13 @@ Axioms detailing the additional elements that compose air may be reintroduced fr
 
 
 <http://purl.obolibrary.org/obo/ENVO_01000944> <http://www.w3.org/2004/02/skos/core#definition> """Revised definition for ClimOO Ontology:
-A piece of plastic which is between 1 and 1000 µm in its largest dimension."""@en .
+A plastic debris particle that is between 1 and 1000 µm in its largest dimension."""@en .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource <http://purl.obolibrary.org/obo/ENVO_01000944> ;
    owl:annotatedProperty <http://www.w3.org/2004/02/skos/core#definition> ;
    owl:annotatedTarget """Revised definition for ClimOO Ontology:
-A piece of plastic which is between 1 and 1000 µm in its largest dimension."""@en ;
+A plastic debris particle that is between 1 and 1000 µm in its largest dimension."""@en ;
    rdfs:comment "We suggest specifying if using this class referring to 5 mm as the upper diameter threshold. 5 mm is a widely used threshold for microplastic diameter."@en ;
    <https://www.w3id.org/sco#SCO_0000039> :ClimOO_0000073
  ] .
@@ -2877,44 +2877,63 @@ A piece of plastic which is between 1 and 1000 µm in its largest dimension."""@
 It seems that there is some inconsistence with the use of the term “environment” and “ecosystem” in the definition of this class. The superclass refers to ecosystems. Here the focus is on natural environment. Currently, we maintain this class as it is. We, however, suggest revisions."""@en .
 
 
+<http://purl.obolibrary.org/obo/ENVO_03501305> rdfs:comment """ClimOO Ontology developer comment:
+This class seems requiring dismbiguation between the pliofilm material and the actual object."""@en .
+
+
+<http://purl.obolibrary.org/obo/ENVO_06105010> rdfs:label "debris particle of plastic pellet"@en .
+
+
 <http://purl.obolibrary.org/obo/ENVO_06105101> <https://www.w3id.org/sco#SCO_0000039> :ClimOO_0000072 ,
                                                                                       :ClimOO_0000073 ,
                                                                                       :ClimOO_0000074 ,
                                                                                       :ClimOO_0000075 .
 
 
+<http://purl.obolibrary.org/obo/ENVO_06105102> <http://www.ontologyrepository.com/CommonCoreOntologies/definition> """Revised definition for ClimOO Ontology:
+A plastic debris particle that is greater than 1 meter in its longest dimension."""@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/ENVO_06105102> ;
+   owl:annotatedProperty <http://www.ontologyrepository.com/CommonCoreOntologies/definition> ;
+   owl:annotatedTarget """Revised definition for ClimOO Ontology:
+A plastic debris particle that is greater than 1 meter in its longest dimension."""@en ;
+   <https://www.w3id.org/sco#SCO_0000039> :ClimOO_0000073
+ ] .
+
+
 <http://purl.obolibrary.org/obo/ENVO_06105103> <http://www.w3.org/2004/02/skos/core#definition> """Revised definition for ClimOO Ontology:
-A piece of plastic which is of 1 cm or more in its largest dimension."""@en .
+A plastic debris particle that is of 1 cm or more in its largest dimension."""@en .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource <http://purl.obolibrary.org/obo/ENVO_06105103> ;
    owl:annotatedProperty <http://www.w3.org/2004/02/skos/core#definition> ;
    owl:annotatedTarget """Revised definition for ClimOO Ontology:
-A piece of plastic which is of 1 cm or more in its largest dimension."""@en ;
+A plastic debris particle that is of 1 cm or more in its largest dimension."""@en ;
    <https://www.w3id.org/sco#SCO_0000039> :ClimOO_0000073
  ] .
 
 
 <http://purl.obolibrary.org/obo/ENVO_06105104> <http://www.w3.org/2004/02/skos/core#definition> """Revised definition for ClimOO Ontology:
-A piece of plastic which is between 1 and 10 mm in its largest dimension."""@en .
+A plastic debris particle that is between 1 and 10 mm in its largest dimension."""@en .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource <http://purl.obolibrary.org/obo/ENVO_06105104> ;
    owl:annotatedProperty <http://www.w3.org/2004/02/skos/core#definition> ;
    owl:annotatedTarget """Revised definition for ClimOO Ontology:
-A piece of plastic which is between 1 and 10 mm in its largest dimension."""@en ;
+A plastic debris particle that is between 1 and 10 mm in its largest dimension."""@en ;
    <https://www.w3id.org/sco#SCO_0000039> :ClimOO_0000073
  ] .
 
 
-<http://purl.obolibrary.org/obo/ENVO_06105105> <http://www.w3.org/2004/02/skos/core#definition> """Revised definition for ClimOO Ontology:
-A piece of plastic which is between 1 and 1000 nm in its largest dimension."""@en .
+<http://purl.obolibrary.org/obo/ENVO_06105105> <http://www.w3.org/2004/02/skos/core#definition> """Revised definition for ClimOO Ontology: 
+A plastic debris particle that is between 1 and 1000 nm in its largest dimension."""@en .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource <http://purl.obolibrary.org/obo/ENVO_06105105> ;
    owl:annotatedProperty <http://www.w3.org/2004/02/skos/core#definition> ;
-   owl:annotatedTarget """Revised definition for ClimOO Ontology:
-A piece of plastic which is between 1 and 1000 nm in its largest dimension."""@en ;
+   owl:annotatedTarget """Revised definition for ClimOO Ontology: 
+A plastic debris particle that is between 1 and 1000 nm in its largest dimension."""@en ;
    <https://www.w3id.org/sco#SCO_0000039> :ClimOO_0000073
  ] .
 
