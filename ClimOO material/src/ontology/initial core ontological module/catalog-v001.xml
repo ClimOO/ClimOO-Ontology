@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://ClimOO/climoo/imports/pato-imports2#2025-08-12" uri="file:/Users/f.u./Desktop/ClimOO-Ontology/ClimOO%20material/src/ontology/imports/pato-imports2.ttl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/climoo/imports/pato_imports#2025-06-19" uri="file:/Users/f.u./Desktop/ClimOO-Ontology/ClimOO%20material/src/ontology/imports/pato-imports.ttl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/climoo/imports/chebi_imports#2025-06-19" uri="file:/Users/f.u./Desktop/ClimOO-Ontology/ClimOO%20material/src/ontology/imports/chebi-imports.ttl"/>
+    <uri id="Imports Wizard Entry" name="http://ClimOO/climoo/import/sumso-imports#2025-06-16" uri="file:/Users/f.u./Desktop/ClimOO-Ontology/ClimOO%20material/src/ontology/imports/sumso-imports.ttl"/>
+    <uri id="User Entered Import Resolution" name="https://ClimOO/climoo/imports/iao-imports#2025-06-18" uri="file:/Users/f.u./Desktop/ClimOO-Ontology/ClimOO%20material/src/ontology/imports/iao-imports.ttl"/>
+    <uri id="User Entered Import Resolution" name="http://ClimOO/climoo/imports/sdgio-imports#2025-06-26" uri="file:/Users/f.u./Desktop/ClimOO-Ontology/ClimOO%20material/src/ontology/imports/sdgio-imports.ttl"/>
+    <uri id="User Entered Import Resolution" name="http://ClimOO/climoo/imports/envo-imports#2025-06-25" uri="file:/Users/f.u./Desktop/ClimOO-Ontology/ClimOO%20material/src/ontology/imports/envo-imports.owl"/>
+    <uri id="User Entered Import Resolution" name="http://ClimOO/climoo/imports/cco-imports#2025-06-17" uri="file:/Users/f.u./Desktop/ClimOO-Ontology/ClimOO%20material/src/ontology/imports/cco-imports.ttl"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base=""/>
+</catalog>
