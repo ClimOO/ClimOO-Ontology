@@ -141,6 +141,14 @@ https://ontobee.org/ontology/PATO"""@en ;
 rdf:type rdf:type owl:AnnotationProperty .
 
 
+###  https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity
+<https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> rdf:type owl:AnnotationProperty .
+
+
+###  https://www.w3id.org/sco#SCO_0000039
+<https://www.w3id.org/sco#SCO_0000039> rdf:type owl:AnnotationProperty .
+
+
 #################################################################
 #    Object Properties
 #################################################################
@@ -183,12 +191,20 @@ A continuant cannot have an occurrent as part: use 'participates in'. An occurre
                                              rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000015> .
 
 
+###  http://purl.obolibrary.org/obo/BFO_0000057
+<http://purl.obolibrary.org/obo/BFO_0000057> rdf:type owl:ObjectProperty .
+
+
 ###  http://purl.obolibrary.org/obo/BFO_0000066
 <http://purl.obolibrary.org/obo/BFO_0000066> rdf:type owl:ObjectProperty .
 
 
 ###  http://purl.obolibrary.org/obo/BFO_0000067
 <http://purl.obolibrary.org/obo/BFO_0000067> rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000110
+<http://purl.obolibrary.org/obo/BFO_0000110> rdf:type owl:ObjectProperty .
 
 
 ###  http://purl.obolibrary.org/obo/BFO_0000176
@@ -1351,7 +1367,7 @@ The lower boundary that separates soil from the nonsoil underneath is most diffi
 _:genid67 owl:intersectionOf ( <http://purl.obolibrary.org/obo/BFO_0000040>
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty <http://purl.obolibrary.org/obo/RO_0000087> ;
-                                  owl:someValuesFrom <https://w3id.org/sumso#SuMSO_0000053>
+                                  owl:someValuesFrom <https://www.w3id.org/climoo#ClimOO_0000235>
                                 ]
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty <http://purl.obolibrary.org/obo/RO_0002353> ;
@@ -1365,7 +1381,7 @@ _:genid67 owl:intersectionOf ( <http://purl.obolibrary.org/obo/BFO_0000040>
    owl:annotatedProperty owl:equivalentClass ;
    owl:annotatedTarget _:genid67 ;
    rdfs:comment """ClimOO developer comment:
-We revised this axiom to make reference to the related role."""@en
+We added references to the corresponding role."""@en
  ] .
 
 [ rdf:type owl:Axiom ;
@@ -2021,12 +2037,8 @@ We revised this axiom to make reference to the related role."""@en
 
 ###  http://purl.obolibrary.org/obo/ENVO_01000776
 <http://purl.obolibrary.org/obo/ENVO_01000776> rdf:type owl:Class ;
-                                               owl:equivalentClass _:genid178 ;
-                                               rdfs:subClassOf <http://purl.obolibrary.org/obo/ENVO_01001687> ,
-                                                               [ rdf:type owl:Restriction ;
-                                                                 owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000178> ;
-                                                                 owl:someValuesFrom <http://purl.obolibrary.org/obo/ENVO_06105101>
-                                                               ] ;
+                                               rdfs:subClassOf <http://purl.obolibrary.org/obo/ENVO_01001686> ,
+                                                               _:genid179 ;
                                                <http://purl.obolibrary.org/obo/IAO_0000115> "A mass of solid material which is primarily composed of plastic."@en ;
                                                <http://purl.org/dc/elements/1.1/contributor> <https://orcid.org/0000-0002-2996-719X> ,
                                                                                              <https://orcid.org/0000-0002-8166-0486> ,
@@ -2037,20 +2049,28 @@ We revised this axiom to make reference to the related role."""@en
                                                <http://www.geneontology.org/formats/oboInOwl#inSubset> "envoPlastics"@es ;
                                                rdfs:label "piece of plastic"@en .
 
-_:genid178 owl:intersectionOf ( <http://purl.obolibrary.org/obo/ENVO_01001687>
-                                 [ rdf:type owl:Restriction ;
-                                   owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000178> ;
-                                   owl:someValuesFrom <http://purl.obolibrary.org/obo/ENVO_06105101>
-                                 ]
-                               ) ;
-            rdf:type owl:Class .
+_:genid179 rdf:type owl:Restriction ;
+            owl:onProperty <http://purl.obolibrary.org/obo/RO_0002473> ;
+            owl:someValuesFrom <http://purl.obolibrary.org/obo/ENVO_06105101> .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource <http://purl.obolibrary.org/obo/ENVO_01000776> ;
-   owl:annotatedProperty owl:equivalentClass ;
-   owl:annotatedTarget _:genid178 ;
+   owl:annotatedProperty rdfs:subClassOf ;
+   owl:annotatedTarget <http://purl.obolibrary.org/obo/ENVO_01001686> ;
+   rdfs:comment """ClimOO Ontology developer comment:
+Not all plastics are solid and not under all conditions and temperatures. Thus, we reclassified this class as a direct subclass of the “mass of environmental material”. We assume that EnvO developers aimed to primarily account for plastic debris with these classes, that is, indeed, solid objects. For more details, see the plastic debris class and the following issue on the EnvO repo.
+http://purl.obolibrary.org/obo/ENVO_01000776
+https://github.com/EnvironmentOntology/envo/discussions/1636"""@en ;
+   <https://www.w3id.org/sco#SCO_0000039> <https://www.w3id.org/climoo#ClimOO_0000073>
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/ENVO_01000776> ;
+   owl:annotatedProperty rdfs:subClassOf ;
+   owl:annotatedTarget _:genid179 ;
    rdfs:comment """ClimOO developer comment:
-We expand coverage of this class, generalizing this axiom to refer to plastic in general rather than to solely synthetic plastic. We also changed the object property with a more general one, as some piece of plastic may contain amount of other material, for instance additives, exceeding 50%."""@en
+We expand coverage of this class, generalizing this axiom to refer to plastic in general rather than to solely synthetic plastic."""@en ,
+                "RO 'composed primarily of' is not a transitive object property. User may incorporate transitivity to specify the chain of composition between polymers, plastic/polymers-based material, and related pieces and objects of plastic/polymers-based material, as needed."@en
  ] .
 
 
@@ -2298,7 +2318,6 @@ We expand coverage of this class, generalizing this axiom to refer to plastic in
 
 ###  http://purl.obolibrary.org/obo/ENVO_01000944
 <http://purl.obolibrary.org/obo/ENVO_01000944> rdf:type owl:Class ;
-                                               rdfs:subClassOf <http://purl.obolibrary.org/obo/ENVO_01000776> ;
                                                <http://purl.obolibrary.org/obo/IAO_0000115> "A piece of plastic which has a diameter less than five millimetres." ;
                                                <http://purl.org/dc/elements/1.1/contributor> <https://orcid.org/0000-0002-2996-719X> ,
                                                                                              <https://orcid.org/0000-0002-8166-0486> ,
@@ -2444,7 +2463,7 @@ We expand coverage of this class, generalizing this axiom to refer to plastic in
 
 ###  http://purl.obolibrary.org/obo/ENVO_01000993
 <http://purl.obolibrary.org/obo/ENVO_01000993> rdf:type owl:Class ;
-                                               owl:equivalentClass _:genid237 ;
+                                               owl:equivalentClass _:genid234 ;
                                                rdfs:subClassOf <http://purl.obolibrary.org/obo/OBI_0000094> ,
                                                                [ rdf:type owl:Restriction ;
                                                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000051> ;
@@ -2458,7 +2477,7 @@ We expand coverage of this class, generalizing this axiom to refer to plastic in
                                                rdfs:comment "The term may refer to a range of human activity, from handicraft to high tech, but is most commonly applied to industrial production, in which raw materials are transformed into finished goods on a large scale." ;
                                                rdfs:label "manufacturing process"@en .
 
-_:genid237 owl:intersectionOf ( <http://purl.obolibrary.org/obo/OBI_0000094>
+_:genid234 owl:intersectionOf ( <http://purl.obolibrary.org/obo/OBI_0000094>
                                  [ rdf:type owl:Restriction ;
                                    owl:onProperty <http://purl.obolibrary.org/obo/RO_0002234> ;
                                    owl:someValuesFrom <http://purl.obolibrary.org/obo/ENVO_00003074>
@@ -2469,7 +2488,7 @@ _:genid237 owl:intersectionOf ( <http://purl.obolibrary.org/obo/OBI_0000094>
 [ rdf:type owl:Axiom ;
    owl:annotatedSource <http://purl.obolibrary.org/obo/ENVO_01000993> ;
    owl:annotatedProperty owl:equivalentClass ;
-   owl:annotatedTarget _:genid237 ;
+   owl:annotatedTarget _:genid234 ;
    rdfs:comment """ClimOO developer comment:
 We revised this axiom according to the new class hierarchy position."""@en
  ] .
@@ -2693,8 +2712,7 @@ We revised this axiom according to the new class hierarchy position."""@en
 
 ###  http://purl.obolibrary.org/obo/ENVO_01001260
 <http://purl.obolibrary.org/obo/ENVO_01001260> rdf:type owl:Class ;
-                                               rdfs:subClassOf <http://purl.obolibrary.org/obo/ENVO_02500027> ,
-                                                               <http://purl.obolibrary.org/obo/ENVO_02500042> ,
+                                               rdfs:subClassOf <http://purl.obolibrary.org/obo/ENVO_02500042> ,
                                                                [ rdf:type owl:Restriction ;
                                                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000051> ;
                                                                  owl:someValuesFrom <http://purl.obolibrary.org/obo/ENVO_03000010>
@@ -3033,15 +3051,15 @@ We revised this axiom according to the new class hierarchy position."""@en
 
 ###  http://purl.obolibrary.org/obo/ENVO_01001795
 <http://purl.obolibrary.org/obo/ENVO_01001795> rdf:type owl:Class ;
-                                               owl:equivalentClass _:genid353 ;
+                                               owl:equivalentClass _:genid350 ;
                                                rdfs:subClassOf <http://purl.obolibrary.org/obo/ENVO_02500000> ,
-                                                               _:genid358 ;
+                                                               _:genid355 ;
                                                <http://purl.obolibrary.org/obo/IAO_0000115> "An environmental process either driven by or primarily impacting the parts or emergent properties of an ecosystem." ;
                                                <http://purl.org/dc/elements/1.1/creator> <https://orcid.org/0000-0002-4366-3088> ;
                                                <http://purl.org/dc/elements/1.1/date> "2019-10-21T11:52:55Z"^^xsd:dateTime ;
                                                rdfs:label "ecosystem process"@en .
 
-_:genid353 owl:intersectionOf ( <http://purl.obolibrary.org/obo/ENVO_02500000>
+_:genid350 owl:intersectionOf ( <http://purl.obolibrary.org/obo/ENVO_02500000>
                                  [ rdf:type owl:Restriction ;
                                    owl:onProperty <http://purl.obolibrary.org/obo/RO_0002608> ;
                                    owl:someValuesFrom <http://purl.obolibrary.org/obo/ENVO_01001110>
@@ -3049,14 +3067,14 @@ _:genid353 owl:intersectionOf ( <http://purl.obolibrary.org/obo/ENVO_02500000>
                                ) ;
             rdf:type owl:Class .
 
-_:genid358 rdf:type owl:Restriction ;
+_:genid355 rdf:type owl:Restriction ;
             owl:onProperty <http://purl.obolibrary.org/obo/RO_0002608> ;
             owl:someValuesFrom <http://purl.obolibrary.org/obo/ENVO_01001110> .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource <http://purl.obolibrary.org/obo/ENVO_01001795> ;
    owl:annotatedProperty owl:equivalentClass ;
-   owl:annotatedTarget _:genid353 ;
+   owl:annotatedTarget _:genid350 ;
    rdfs:comment """ClimOO developer comment:
 It seems that this axiom should be revised, at least, adding reference to concrete ecosystem agents. We currently, maintain this axiom as such; if needed, we will revise it."""@en
  ] .
@@ -3064,7 +3082,7 @@ It seems that this axiom should be revised, at least, adding reference to concre
 [ rdf:type owl:Axiom ;
    owl:annotatedSource <http://purl.obolibrary.org/obo/ENVO_01001795> ;
    owl:annotatedProperty rdfs:subClassOf ;
-   owl:annotatedTarget _:genid358 ;
+   owl:annotatedTarget _:genid355 ;
    rdfs:comment """ClimOO developer comment:
 It seems that this axiom should be revised, at least, adding reference to concrete ecosystem agents. We currently, maintain this axiom as such; if needed, we will revise it."""@en
  ] .
@@ -3145,12 +3163,12 @@ It seems that this axiom should be revised, at least, adding reference to concre
 ###  http://purl.obolibrary.org/obo/ENVO_02500000
 <http://purl.obolibrary.org/obo/ENVO_02500000> rdf:type owl:Class ;
                                                rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000015> ,
-                                                               _:genid370 ;
+                                                               _:genid367 ;
                                                <http://purl.obolibrary.org/obo/IAO_0000115> "A process in which includes the components of an environmental system as participants." ;
                                                rdfs:comment "This is a convenience class for organisation and should not be used for annotation." ;
                                                rdfs:label "environmental system process"@en .
 
-_:genid370 rdf:type owl:Restriction ;
+_:genid367 rdf:type owl:Restriction ;
             owl:onProperty <http://purl.obolibrary.org/obo/RO_0000057> ;
             owl:someValuesFrom [ rdf:type owl:Class ;
                                  owl:unionOf ( <http://purl.obolibrary.org/obo/ENVO_00010483>
@@ -3164,7 +3182,7 @@ _:genid370 rdf:type owl:Restriction ;
 [ rdf:type owl:Axiom ;
    owl:annotatedSource <http://purl.obolibrary.org/obo/ENVO_02500000> ;
    owl:annotatedProperty rdfs:subClassOf ;
-   owl:annotatedTarget _:genid370 ;
+   owl:annotatedTarget _:genid367 ;
    rdfs:comment """ClimOO developer comment:
 We omitted the corresponding equivalent class axiom to avoid incorrect automatic reclassifications of “system development” classes. We judged this an adequate compromise as, on one hand, this EnvO class has been created for grouping purposes (see comments to the class), and on the other, the SCO representation of system development requires further implementations.
 https://github.com/gioUbbiali/Sustainability-Core-Ontology/issues/2"""@en
@@ -3173,16 +3191,7 @@ https://github.com/gioUbbiali/Sustainability-Core-Ontology/issues/2"""@en
 
 ###  http://purl.obolibrary.org/obo/ENVO_02500003
 <http://purl.obolibrary.org/obo/ENVO_02500003> rdf:type owl:Class ;
-                                               owl:equivalentClass [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/ENVO_02500000>
-                                                                                          [ rdf:type owl:Restriction ;
-                                                                                            owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000066> ;
-                                                                                            owl:someValuesFrom <http://purl.obolibrary.org/obo/ENVO_01000267>
-                                                                                          ]
-                                                                                        ) ;
-                                                                     rdf:type owl:Class
-                                                                   ] ;
-                                               rdfs:subClassOf <http://purl.obolibrary.org/obo/ENVO_02500000> ,
-                                                               [ rdf:type owl:Restriction ;
+                                               rdfs:subClassOf [ rdf:type owl:Restriction ;
                                                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000066> ;
                                                                  owl:someValuesFrom <http://purl.obolibrary.org/obo/ENVO_01000267>
                                                                ] ;
@@ -3245,18 +3254,18 @@ https://github.com/gioUbbiali/Sustainability-Core-Ontology/issues/2"""@en
                                                                      rdf:type owl:Class
                                                                    ] ;
                                                rdfs:subClassOf <http://purl.obolibrary.org/obo/ENVO_02500000> ,
-                                                               _:genid396 ;
+                                                               _:genid389 ;
                                                <http://purl.obolibrary.org/obo/IAO_0000115> "An environmental process which is driven by the action of humans." ;
                                                rdfs:label "anthropogenic environmental process" .
 
-_:genid396 rdf:type owl:Restriction ;
+_:genid389 rdf:type owl:Restriction ;
             owl:onProperty <http://purl.obolibrary.org/obo/RO_0002608> ;
             owl:someValuesFrom <http://purl.obolibrary.org/obo/NCBITaxon_9606> .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource <http://purl.obolibrary.org/obo/ENVO_02500027> ;
    owl:annotatedProperty rdfs:subClassOf ;
-   owl:annotatedTarget _:genid396 ;
+   owl:annotatedTarget _:genid389 ;
    rdfs:comment """ClimOO developer comment:
 This axiom may be specified for humans that are part of environmental systems."""@en
  ] .
@@ -3264,10 +3273,28 @@ This axiom may be specified for humans that are part of environmental systems.""
 
 ###  http://purl.obolibrary.org/obo/ENVO_02500036
 <http://purl.obolibrary.org/obo/ENVO_02500036> rdf:type owl:Class ;
-                                               rdfs:subClassOf <http://purl.obolibrary.org/obo/ENVO_02500000> ,
-                                                               [ rdf:type owl:Restriction ;
+                                               rdfs:subClassOf [ rdf:type owl:Restriction ;
                                                                  owl:onProperty <http://purl.obolibrary.org/obo/RO_0002234> ;
-                                                                 owl:someValuesFrom [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/ENVO_00010483>
+                                                                 owl:someValuesFrom [ owl:intersectionOf ( [ rdf:type owl:Class ;
+                                                                                                             owl:unionOf ( <http://purl.obolibrary.org/obo/ENVO_00010483>
+                                                                                                                           <http://purl.obolibrary.org/obo/ENVO_01000254>
+                                                                                                                           <https://www.w3id.org/climoo#ClimOO_0000021>
+                                                                                                                           [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/ENVO_00010483>
+                                                                                                                                                  [ rdf:type owl:Restriction ;
+                                                                                                                                                    owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000176> ;
+                                                                                                                                                    owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                                                                                                         owl:unionOf ( <http://purl.obolibrary.org/obo/ENVO_01000254>
+                                                                                                                                                                                       <https://www.w3id.org/climoo#ClimOO_0000017>
+                                                                                                                                                                                       <https://www.w3id.org/climoo#ClimOO_0000021>
+                                                                                                                                                                                       <https://www.w3id.org/climoo#ClimOO_0000025>
+                                                                                                                                                                                     )
+                                                                                                                                                                       ]
+                                                                                                                                                  ]
+                                                                                                                                                ) ;
+                                                                                                                             rdf:type owl:Class
+                                                                                                                           ]
+                                                                                                                         )
+                                                                                                           ]
                                                                                                            [ rdf:type owl:Restriction ;
                                                                                                              owl:onProperty <http://purl.obolibrary.org/obo/ENVO_02000200> ;
                                                                                                              owl:someValuesFrom [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/CHEBI_24431>
@@ -3427,25 +3454,7 @@ This axiom may be specified for humans that are part of environmental systems.""
 
 ###  http://purl.obolibrary.org/obo/ENVO_02500040
 <http://purl.obolibrary.org/obo/ENVO_02500040> rdf:type owl:Class ;
-                                               rdfs:subClassOf <http://purl.obolibrary.org/obo/ENVO_02500036> ,
-                                                               [ rdf:type owl:Restriction ;
-                                                                 owl:onProperty <http://purl.obolibrary.org/obo/RO_0002234> ;
-                                                                 owl:someValuesFrom [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/ENVO_00010483>
-                                                                                                           [ rdf:type owl:Restriction ;
-                                                                                                             owl:onProperty <http://purl.obolibrary.org/obo/ENVO_02000200> ;
-                                                                                                             owl:someValuesFrom [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/ENVO_06105112>
-                                                                                                                                                       [ rdf:type owl:Restriction ;
-                                                                                                                                                         owl:onProperty <http://purl.obolibrary.org/obo/RO_0000087> ;
-                                                                                                                                                         owl:someValuesFrom <http://purl.obolibrary.org/obo/CHEBI_78298>
-                                                                                                                                                       ]
-                                                                                                                                                     ) ;
-                                                                                                                                  rdf:type owl:Class
-                                                                                                                                ]
-                                                                                                           ]
-                                                                                                         ) ;
-                                                                                      rdf:type owl:Class
-                                                                                    ]
-                                                               ] ;
+                                               rdfs:subClassOf <http://purl.obolibrary.org/obo/ENVO_02500036> ;
                                                <http://purl.obolibrary.org/obo/IAO_0000115> "A pollution process during which plastic contaminants are released into an environmental material." ;
                                                <http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/envo#environmental_hazards> ,
                                                                                                        <http://purl.obolibrary.org/obo/envo#envoPlastics> ,
@@ -3462,14 +3471,7 @@ This axiom may be specified for humans that are part of environmental systems.""
 
 ###  http://purl.obolibrary.org/obo/ENVO_02500042
 <http://purl.obolibrary.org/obo/ENVO_02500042> rdf:type owl:Class ;
-                                               owl:equivalentClass [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/ENVO_02500026>
-                                                                                          [ rdf:type owl:Restriction ;
-                                                                                            owl:onProperty <http://purl.obolibrary.org/obo/RO_0002211> ;
-                                                                                            owl:someValuesFrom <http://purl.obolibrary.org/obo/ENVO_02500036>
-                                                                                          ]
-                                                                                        ) ;
-                                                                     rdf:type owl:Class
-                                                                   ] ;
+                                               owl:equivalentClass _:genid458 ;
                                                rdfs:subClassOf <http://purl.obolibrary.org/obo/ENVO_02000178> ,
                                                                [ rdf:type owl:Restriction ;
                                                                  owl:onProperty <http://purl.obolibrary.org/obo/RO_0002211> ;
@@ -3479,11 +3481,34 @@ This axiom may be specified for humans that are part of environmental systems.""
                                                <http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym> "pollution prevention" ;
                                                rdfs:label "pollution control" .
 
+_:genid458 owl:intersectionOf ( <http://purl.obolibrary.org/obo/ENVO_02000178>
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty <http://purl.obolibrary.org/obo/RO_0002211> ;
+                                   owl:someValuesFrom <http://purl.obolibrary.org/obo/ENVO_02500036>
+                                 ]
+                               ) ;
+            rdf:type owl:Class .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/ENVO_02500042> ;
+   owl:annotatedProperty owl:equivalentClass ;
+   owl:annotatedTarget _:genid458 ;
+   rdfs:comment """ClimOO Ontology developer comment:
+We revised this axiom to comply with the EnvO adapted class hierarchy."""@en
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/ENVO_02500042> ;
+   owl:annotatedProperty <http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym> ;
+   owl:annotatedTarget "pollution prevention" ;
+   rdfs:comment """ClimOO Ontology developer comment:
+This does not seem the case. We suggest to refer to the fllowing class for  pollution prevention processes: https://www.w3id.org/climoo#ClimOO_0000179"""@en
+ ] .
+
 
 ###  http://purl.obolibrary.org/obo/ENVO_03000009
 <http://purl.obolibrary.org/obo/ENVO_03000009> rdf:type owl:Class ;
-                                               rdfs:subClassOf <http://purl.obolibrary.org/obo/ENVO_02500000> ,
-                                                               [ rdf:type owl:Restriction ;
+                                               rdfs:subClassOf [ rdf:type owl:Restriction ;
                                                                  owl:onProperty <http://purl.obolibrary.org/obo/RO_0002084> ;
                                                                  owl:someValuesFrom [ rdf:type owl:Class ;
                                                                                       owl:unionOf ( <http://purl.obolibrary.org/obo/ENVO_03000010>
@@ -3501,8 +3526,7 @@ This axiom may be specified for humans that are part of environmental systems.""
 
 ###  http://purl.obolibrary.org/obo/ENVO_03000010
 <http://purl.obolibrary.org/obo/ENVO_03000010> rdf:type owl:Class ;
-                                               rdfs:subClassOf <http://purl.obolibrary.org/obo/ENVO_02500000> ,
-                                                               [ rdf:type owl:Restriction ;
+                                               rdfs:subClassOf [ rdf:type owl:Restriction ;
                                                                  owl:onProperty <http://purl.obolibrary.org/obo/RO_0002234> ;
                                                                  owl:someValuesFrom [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/BFO_0000040>
                                                                                                            [ rdf:type owl:Restriction ;
@@ -3523,8 +3547,7 @@ This axiom may be specified for humans that are part of environmental systems.""
 
 ###  http://purl.obolibrary.org/obo/ENVO_03000043
 <http://purl.obolibrary.org/obo/ENVO_03000043> rdf:type owl:Class ;
-                                               rdfs:subClassOf <http://purl.obolibrary.org/obo/ENVO_02500000> ,
-                                                               [ rdf:type owl:Restriction ;
+                                               rdfs:subClassOf [ rdf:type owl:Restriction ;
                                                                  owl:onProperty <http://purl.obolibrary.org/obo/RO_0002233> ;
                                                                  owl:someValuesFrom <http://purl.obolibrary.org/obo/ENVO_00010483>
                                                                ] ,
@@ -3823,7 +3846,7 @@ Definitions of Cryosphere come from several glossaries including:
 
 ###  http://purl.obolibrary.org/obo/ENVO_06105006
 <http://purl.obolibrary.org/obo/ENVO_06105006> rdf:type owl:Class ;
-                                               rdfs:subClassOf <http://purl.obolibrary.org/obo/ENVO_01000776> ;
+                                               rdfs:subClassOf <https://www.w3id.org/climoo#ClimOO_0000153> ;
                                                <http://purl.obolibrary.org/obo/IAO_0000115> "A piece of plastic which has a matrix- or sponge-like structure with numerous, hollow internal spaces."@en ;
                                                <http://purl.org/dc/elements/1.1/contributor> <https://orcid.org/0000-0002-2996-719X> ,
                                                                                              <https://orcid.org/0000-0002-4366-3088> ,
@@ -3847,7 +3870,7 @@ Definitions of Cryosphere come from several glossaries including:
 
 ###  http://purl.obolibrary.org/obo/ENVO_06105007
 <http://purl.obolibrary.org/obo/ENVO_06105007> rdf:type owl:Class ;
-                                               rdfs:subClassOf <http://purl.obolibrary.org/obo/ENVO_01000776> ;
+                                               rdfs:subClassOf <https://www.w3id.org/climoo#ClimOO_0000153> ;
                                                <http://purl.obolibrary.org/obo/IAO_0000115> "A piece of plastic which is flexible, thin, and planar."@en ;
                                                <http://purl.org/dc/elements/1.1/contributor> <https://orcid.org/0000-0002-2996-719X> ,
                                                                                              <https://orcid.org/0000-0003-1072-8081> ;
@@ -3880,7 +3903,7 @@ Definitions of Cryosphere come from several glossaries including:
 
 ###  http://purl.obolibrary.org/obo/ENVO_06105008
 <http://purl.obolibrary.org/obo/ENVO_06105008> rdf:type owl:Class ;
-                                               rdfs:subClassOf <http://purl.obolibrary.org/obo/ENVO_01000776> ;
+                                               rdfs:subClassOf <https://www.w3id.org/climoo#ClimOO_0000153> ;
                                                <http://purl.obolibrary.org/obo/IAO_0000115> "A piece of plastic which 1) is hard, 2) has an irregular shape, and 3) has broken off of a larger piece of plastic."@en ;
                                                <http://purl.org/dc/elements/1.1/contributor> <https://orcid.org/0000-0002-2996-719X> ,
                                                                                              <https://orcid.org/0000-0003-1072-8081> ;
@@ -3905,7 +3928,7 @@ Definitions of Cryosphere come from several glossaries including:
 
 ###  http://purl.obolibrary.org/obo/ENVO_06105009
 <http://purl.obolibrary.org/obo/ENVO_06105009> rdf:type owl:Class ;
-                                               rdfs:subClassOf <http://purl.obolibrary.org/obo/ENVO_01000776> ;
+                                               rdfs:subClassOf <https://www.w3id.org/climoo#ClimOO_0000153> ;
                                                <http://purl.obolibrary.org/obo/IAO_0000115> "A piece of plastic which is linear and flexible."@en ;
                                                <http://purl.org/dc/elements/1.1/contributor> <https://orcid.org/0000-0002-2996-719X> ,
                                                                                              <https://orcid.org/0000-0003-1072-8081> ;
@@ -3927,7 +3950,7 @@ Definitions of Cryosphere come from several glossaries including:
 
 ###  http://purl.obolibrary.org/obo/ENVO_06105010
 <http://purl.obolibrary.org/obo/ENVO_06105010> rdf:type owl:Class ;
-                                               rdfs:subClassOf <http://purl.obolibrary.org/obo/ENVO_01000776> ;
+                                               rdfs:subClassOf <https://www.w3id.org/climoo#ClimOO_0000153> ;
                                                <http://purl.obolibrary.org/obo/IAO_0000115> "A piece of plastic which is 1) hard, 2) has a smooth external surface, and 3) has a roughly spherical or granular shape."@en ;
                                                <http://purl.org/dc/elements/1.1/contributor> <https://orcid.org/0000-0002-2996-719X> ,
                                                                                              <https://orcid.org/0000-0003-1072-8081> ;
@@ -3974,7 +3997,7 @@ Definitions of Cryosphere come from several glossaries including:
 
 ###  http://purl.obolibrary.org/obo/ENVO_06105015
 <http://purl.obolibrary.org/obo/ENVO_06105015> rdf:type owl:Class ;
-                                               rdfs:subClassOf <http://purl.obolibrary.org/obo/ENVO_06105014> ;
+                                               rdfs:subClassOf <https://www.w3id.org/climoo#ClimOO_0000180> ;
                                                <http://purl.obolibrary.org/obo/IAO_0000115> "A biodegradation process during which plastic is broken down."@en ;
                                                <http://purl.org/dc/elements/1.1/contributor> <https://orcid.org/0000-0002-2996-719X> ,
                                                                                              <https://orcid.org/0000-0003-1072-8081> ;
@@ -4090,7 +4113,7 @@ Definitions of Cryosphere come from several glossaries including:
 
 ###  http://purl.obolibrary.org/obo/ENVO_06105102
 <http://purl.obolibrary.org/obo/ENVO_06105102> rdf:type owl:Class ;
-                                               rdfs:subClassOf <http://purl.obolibrary.org/obo/ENVO_01000776> ;
+                                               rdfs:subClassOf <https://www.w3id.org/climoo#ClimOO_0000234> ;
                                                <http://purl.obolibrary.org/obo/IAO_0000115> "A piece of plastic which is greater than 1 metre in its longest dimension."@en ;
                                                <http://purl.org/dc/elements/1.1/contributor> <https://orcid.org/0000-0002-2996-719X> ,
                                                                                              <https://orcid.org/0000-0002-8166-0486> ;
@@ -4110,7 +4133,7 @@ Definitions of Cryosphere come from several glossaries including:
 
 ###  http://purl.obolibrary.org/obo/ENVO_06105103
 <http://purl.obolibrary.org/obo/ENVO_06105103> rdf:type owl:Class ;
-                                               rdfs:subClassOf <http://purl.obolibrary.org/obo/ENVO_01000776> ;
+                                               rdfs:subClassOf <https://www.w3id.org/climoo#ClimOO_0000234> ;
                                                <http://purl.obolibrary.org/obo/IAO_0000115> "A piece of plastic which is between 25 and 1000 millimetres in its longest dimension."@en ;
                                                <http://purl.org/dc/elements/1.1/contributor> <https://orcid.org/0000-0002-2996-719X> ,
                                                                                              <https://orcid.org/0000-0002-8166-0486> ;
@@ -4130,7 +4153,7 @@ Definitions of Cryosphere come from several glossaries including:
 
 ###  http://purl.obolibrary.org/obo/ENVO_06105104
 <http://purl.obolibrary.org/obo/ENVO_06105104> rdf:type owl:Class ;
-                                               rdfs:subClassOf <http://purl.obolibrary.org/obo/ENVO_01000776> ;
+                                               rdfs:subClassOf <https://www.w3id.org/climoo#ClimOO_0000234> ;
                                                <http://purl.obolibrary.org/obo/IAO_0000115> "A piece of plastic which is between 5 and 25 millimetres in its longest dimension."@en ;
                                                <http://purl.org/dc/elements/1.1/contributor> <https://orcid.org/0000-0002-2996-719X> ,
                                                                                              <https://orcid.org/0000-0002-8166-0486> ;
@@ -4150,7 +4173,7 @@ Definitions of Cryosphere come from several glossaries including:
 
 ###  http://purl.obolibrary.org/obo/ENVO_06105105
 <http://purl.obolibrary.org/obo/ENVO_06105105> rdf:type owl:Class ;
-                                               rdfs:subClassOf <http://purl.obolibrary.org/obo/ENVO_01000776> ;
+                                               rdfs:subClassOf <https://www.w3id.org/climoo#ClimOO_0000234> ;
                                                <http://purl.obolibrary.org/obo/IAO_0000115> "A piece of plastic which has a diameter less than 1 micrometre."@en ;
                                                <http://purl.org/dc/elements/1.1/contributor> <https://orcid.org/0000-0002-2996-719X> ,
                                                                                              <https://orcid.org/0000-0002-8166-0486> ;
@@ -4171,20 +4194,7 @@ Definitions of Cryosphere come from several glossaries including:
 ###  http://purl.obolibrary.org/obo/ENVO_06105111
 <http://purl.obolibrary.org/obo/ENVO_06105111> rdf:type owl:Class ;
                                                rdfs:subClassOf <http://purl.obolibrary.org/obo/ENVO_06105101> ,
-                                                               [ rdf:type owl:Restriction ;
-                                                                 owl:onProperty <http://purl.obolibrary.org/obo/RO_0002354> ;
-                                                                 owl:someValuesFrom [ rdf:type owl:Class ;
-                                                                                      owl:unionOf ( <http://purl.obolibrary.org/obo/ENVO_02500000>
-                                                                                                    <http://purl.obolibrary.org/obo/GO_0008150>
-                                                                                                  )
-                                                                                    ]
-                                                               ] ,
-                                                               [ rdf:type owl:Restriction ;
-                                                                 owl:onProperty <http://purl.obolibrary.org/obo/RO_0002354> ;
-                                                                 owl:someValuesFrom [ rdf:type owl:Class ;
-                                                                                      owl:complementOf <http://purl.obolibrary.org/obo/ENVO_01000993>
-                                                                                    ]
-                                                               ] ;
+                                                               _:genid529 ;
                                                <http://purl.obolibrary.org/obo/IAO_0000115> "Plastic which is composed primarily of polymers produced by processes whose agents do not include humans or their technologies."@en ;
                                                <http://purl.obolibrary.org/obo/IAO_0000116> "The corresponding subclass axiom will be added in the second phase of this project."@en ;
                                                <http://purl.org/dc/elements/1.1/contributor> <https://orcid.org/0000-0002-2996-719X> ,
@@ -4194,10 +4204,31 @@ Definitions of Cryosphere come from several glossaries including:
                                                <http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/envo#envoPlastics> ;
                                                rdfs:label "natural plastic"@en .
 
+_:genid529 rdf:type owl:Restriction ;
+            owl:onProperty <http://purl.obolibrary.org/obo/RO_0002354> ;
+            owl:someValuesFrom [ rdf:type owl:Class ;
+                                 owl:complementOf <http://purl.obolibrary.org/obo/ENVO_01000993>
+                               ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/ENVO_06105111> ;
+   owl:annotatedProperty rdfs:subClassOf ;
+   owl:annotatedTarget _:genid529 ;
+   rdfs:comment """ClimOO Ontology developer comment:
+We revised the axiomatization according to implementations introduced by the ClimOO Ontology."""@en
+ ] .
+
 
 ###  http://purl.obolibrary.org/obo/ENVO_06105112
 <http://purl.obolibrary.org/obo/ENVO_06105112> rdf:type owl:Class ;
-                                               rdfs:subClassOf <http://purl.obolibrary.org/obo/ENVO_06105101> ;
+                                               rdfs:subClassOf [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/ENVO_06105101>
+                                                                                      [ rdf:type owl:Restriction ;
+                                                                                        owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000110> ;
+                                                                                        owl:someValuesFrom <https://www.w3id.org/climoo#ClimOO_0000210>
+                                                                                      ]
+                                                                                    ) ;
+                                                                 rdf:type owl:Class
+                                                               ] ;
                                                <http://purl.obolibrary.org/obo/IAO_0000115> "A plastic which is composed primarily of polymers produced by a manufacturing process."@en ;
                                                <http://purl.obolibrary.org/obo/IAO_0000116> "The corresponding subclass axiom will be added in the second phase of this project."@en ;
                                                <http://purl.org/dc/elements/1.1/contributor> <https://orcid.org/0000-0002-2996-719X> ,
@@ -4506,7 +4537,7 @@ Definitions of Cryosphere come from several glossaries including:
 
 ###  http://purl.obolibrary.org/obo/PATO_0015021
 <http://purl.obolibrary.org/obo/PATO_0015021> rdf:type owl:Class ;
-                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/PATO_0001018> ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000016> ;
                                               <http://purl.obolibrary.org/obo/IAO_0000115> "The propensity of a material to undergo combustion. Combustion encompasses smouldering and flaming combustion. Combustibility is usually applied to solids." ;
                                               rdfs:label "combustibility" .
 
@@ -4543,6 +4574,50 @@ Definitions of Cryosphere come from several glossaries including:
 
 ###  https://w3id.org/sumso#SuMSO_0000053
 <https://w3id.org/sumso#SuMSO_0000053> rdf:type owl:Class .
+
+
+###  https://www.w3id.org/climoo#ClimOO_0000017
+<https://www.w3id.org/climoo#ClimOO_0000017> rdf:type owl:Class .
+
+
+###  https://www.w3id.org/climoo#ClimOO_0000021
+<https://www.w3id.org/climoo#ClimOO_0000021> rdf:type owl:Class .
+
+
+###  https://www.w3id.org/climoo#ClimOO_0000025
+<https://www.w3id.org/climoo#ClimOO_0000025> rdf:type owl:Class .
+
+
+###  https://www.w3id.org/climoo#ClimOO_0000153
+<https://www.w3id.org/climoo#ClimOO_0000153> rdf:type owl:Class .
+
+
+###  https://www.w3id.org/climoo#ClimOO_0000163
+<https://www.w3id.org/climoo#ClimOO_0000163> rdf:type owl:Class .
+
+
+###  https://www.w3id.org/climoo#ClimOO_0000164
+<https://www.w3id.org/climoo#ClimOO_0000164> rdf:type owl:Class .
+
+
+###  https://www.w3id.org/climoo#ClimOO_0000166
+<https://www.w3id.org/climoo#ClimOO_0000166> rdf:type owl:Class .
+
+
+###  https://www.w3id.org/climoo#ClimOO_0000180
+<https://www.w3id.org/climoo#ClimOO_0000180> rdf:type owl:Class .
+
+
+###  https://www.w3id.org/climoo#ClimOO_0000210
+<https://www.w3id.org/climoo#ClimOO_0000210> rdf:type owl:Class .
+
+
+###  https://www.w3id.org/climoo#ClimOO_0000234
+<https://www.w3id.org/climoo#ClimOO_0000234> rdf:type owl:Class .
+
+
+###  https://www.w3id.org/climoo#ClimOO_0000235
+<https://www.w3id.org/climoo#ClimOO_0000235> rdf:type owl:Class .
 
 
 ###  https://www.w3id.org/sco#SCO_0000015

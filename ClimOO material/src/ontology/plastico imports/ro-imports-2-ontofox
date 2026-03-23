@@ -1,0 +1,41 @@
+[URI of the OWL(RDF/XML) output file]
+http://purl.obolibrary.org/obo/climoo/ro_imports
+
+[Source ontology]
+RO
+
+[Low level source term URIs]
+
+http://purl.obolibrary.org/obo/RO_0002222
+includeAllChildren
+http://purl.obolibrary.org/obo/RO_0002487
+includeAllChildren
+http://purl.obolibrary.org/obo/RO_0002337
+includeAllChildren
+http://purl.obolibrary.org/obo/RO_0003001
+http://purl.obolibrary.org/obo/RO_0003000
+http://purl.obolibrary.org/obo/RO_0000056
+includeAllChildren
+http://purl.obolibrary.org/obo/RO_0002323
+includeAllChildren
+http://purl.obolibrary.org/obo/RO_0000057
+includeAllChildren
+http://purl.obolibrary.org/obo/RO_0002479
+includeAllChildren
+http://purl.obolibrary.org/obo/RO_0000053
+includeAllChildren
+http://purl.obolibrary.org/obo/RO_0002328
+includeAllChildren
+http://purl.obolibrary.org/obo/RO_0002502
+includeAllChildren
+
+[Top level source term URIs and target direct superclass URIs]
+
+
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Source annotation URIs]
+includeAllAnnotationProperties
+
+[Source annotation URIs to be excluded]

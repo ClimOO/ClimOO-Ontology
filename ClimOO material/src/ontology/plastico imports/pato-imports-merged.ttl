@@ -1,0 +1,888 @@
+@prefix : <http://purl.obolibrary.org/obo/climoo/imports/pato_imports#> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix oboInOwl: <http://www.geneontology.org/formats/oboInOwl#> .
+@base <http://purl.obolibrary.org/obo/climoo/imports/pato_imports#> .
+
+<http://purl.obolibrary.org/obo/climoo/imports/pato_imports> rdf:type owl:Ontology ;
+                                                              owl:versionIRI <http://purl.obolibrary.org/obo/climoo/imports/pato_imports#2026-02-24> ;
+                                                              rdfs:comment """This file contains ClimOO Ontology imports fletched from the Phenotype And Trait Ontology (PATO) via OntoFox (https://ontofox.hegroup.org/index.php). This file also contains additional ClimOO Ontology imports that have been manually fletched from PATO.
+
+Ontology source: https://ontobee.org/ontology/PATO"""@en ,
+                                                                           "This file contains additional ClimOO Ontology imports from the Phenotype And Trait Ontology (PATO). These imports have been manually fletched from PATO."@en ;
+                                                              rdfs:seeAlso """The related Ontofox imput file.
+https://github.com/ClimOO/ClimOO-Ontology/tree/main/ClimOO%20material/src/ontology/imports/plastico%20imports/pato-imports-ontofox"""@en ;
+                                                              owl:versionInfo "2026-02-24" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.obolibrary.org/obo/IAO_0000115
+obo:IAO_0000115 rdf:type owl:AnnotationProperty ;
+                rdfs:label "definition" .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000412
+obo:IAO_0000412 rdf:type owl:AnnotationProperty ;
+                rdfs:label "imported from"@en .
+
+
+###  http://purl.obolibrary.org/obo/RO_0002604
+obo:RO_0002604 rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#created_by
+oboInOwl:created_by rdf:type owl:AnnotationProperty .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#creation_date
+oboInOwl:creation_date rdf:type owl:AnnotationProperty .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#hasAlternativeId
+oboInOwl:hasAlternativeId rdf:type owl:AnnotationProperty .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym
+oboInOwl:hasBroadSynonym rdf:type owl:AnnotationProperty .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#hasDbXref
+oboInOwl:hasDbXref rdf:type owl:AnnotationProperty .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#hasExactSynonym
+oboInOwl:hasExactSynonym rdf:type owl:AnnotationProperty ;
+                         rdfs:label "has_exact_synonym" .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym
+oboInOwl:hasNarrowSynonym rdf:type owl:AnnotationProperty ;
+                          rdfs:label "has_narrow_synonym" .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#hasOBONamespace
+oboInOwl:hasOBONamespace rdf:type owl:AnnotationProperty .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym
+oboInOwl:hasRelatedSynonym rdf:type owl:AnnotationProperty .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#id
+oboInOwl:id rdf:type owl:AnnotationProperty .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#inSubset
+oboInOwl:inSubset rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#label
+rdfs:label rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://purl.obolibrary.org/obo/BFO_0000050
+obo:BFO_0000050 rdf:type owl:ObjectProperty ,
+                         owl:TransitiveProperty ;
+                rdfs:label "part of"@en .
+
+
+###  http://purl.obolibrary.org/obo/RO_0015011
+obo:RO_0015011 rdf:type owl:ObjectProperty ;
+               obo:IAO_0000115 "s3 has_cross_section s3 if and only if : there exists some 2d plane that intersects the bearer of s3, and the impression of s3 upon that plane has shape quality s2." ;
+               rdfs:comment "Example: a spherical object has the quality of being spherical, and the spherical quality has_cross_section round." ;
+               rdfs:label "has cross section" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:RO_0015011 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "s3 has_cross_section s3 if and only if : there exists some 2d plane that intersects the bearer of s3, and the impression of s3 upon that plane has shape quality s2." ;
+   oboInOwl:hasDbXref "https://orcid.org/0000-0002-6601-2165"
+ ] .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://purl.obolibrary.org/obo/BFO_0000001
+obo:BFO_0000001 rdf:type owl:Class ;
+                obo:IAO_0000412 obo:envo.owl ;
+                rdfs:label "entity"@en .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000002
+obo:BFO_0000002 rdf:type owl:Class ;
+                rdfs:subClassOf obo:BFO_0000001 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:allValuesFrom obo:BFO_0000002
+                                ] ;
+                obo:IAO_0000115 "An entity that exists in full at any time in which it exists at all, persists through time while maintaining its identity and has no temporal parts."@en ;
+                obo:IAO_0000412 obo:envo.owl ;
+                rdfs:label "continuant"@en .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000019
+obo:BFO_0000019 rdf:type owl:Class ;
+                rdfs:subClassOf obo:BFO_0000020 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:allValuesFrom obo:BFO_0000019
+                                ] ;
+                obo:IAO_0000412 obo:envo.owl ;
+                rdfs:label "quality"@en .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000020
+obo:BFO_0000020 rdf:type owl:Class ;
+                rdfs:subClassOf obo:BFO_0000002 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000050 ;
+                                  owl:allValuesFrom obo:BFO_0000020
+                                ] ;
+                obo:IAO_0000115 "b is a relational specifically dependent continuant = Def. b is a specifically dependent continuant and there are n &gt; 1 independent continuants c1, … cn which are not spatial regions are such that for all 1  i &lt; j  n, ci  and cj share no common parts, are such that for each 1  i  n, b s-depends_on ci at every time t during the course of b’s existence (axiom label in BFO2 Reference: [131-004])"@en ,
+                                "b is a specifically dependent continuant = Def. b is a continuant & there is some independent continuant c which is not a spatial region and which is such that b s-depends_on c at every time t during the course of b’s existence. (axiom label in BFO2 Reference: [050-003])"@en ;
+                obo:IAO_0000412 obo:envo.owl ;
+                rdfs:label "specifically dependent continuant"@en .
+
+
+###  http://purl.obolibrary.org/obo/PATO_0000001
+obo:PATO_0000001 rdf:type owl:Class ;
+                 rdfs:subClassOf obo:BFO_0000020 ;
+                 obo:IAO_0000115 "A dependent entity that inheres in a bearer by virtue of how the bearer is related to other entities" ;
+                 obo:IAO_0000412 obo:envo.owl ;
+                 rdfs:label "quality" .
+
+
+###  http://purl.obolibrary.org/obo/PATO_0000051
+obo:PATO_0000051 rdf:type owl:Class ;
+                 rdfs:subClassOf obo:PATO_0001241 ;
+                 obo:IAO_0000115 "A quality of a single physical entity inhering in the bearer by virtue of the bearer's size or shape or structure." ;
+                 obo:IAO_0000412 obo:envo.owl ;
+                 rdfs:label "morphology" .
+
+
+###  http://purl.obolibrary.org/obo/PATO_0000052
+obo:PATO_0000052 rdf:type owl:Class ;
+                 rdfs:subClassOf obo:PATO_0000051 ;
+                 obo:IAO_0000115 "A morphological quality inhering in a bearer by virtue of the bearer's ratios of distances between its features (points, edges, surfaces and also holes etc)." ;
+                 oboInOwl:hasAlternativeId "PATO:0001647" ;
+                 oboInOwl:hasExactSynonym "relational shape quality" ;
+                 oboInOwl:hasOBONamespace "quality" ;
+                 oboInOwl:id "PATO:0000052" ;
+                 oboInOwl:inSubset <http://purl.obolibrary.org/obo/pato#attribute_slim> ;
+                 rdfs:comment "Shapes are invariant on size transformations. Shapes can be subdivided into 2D and 3D shapes, We can also make a distinction between shapes of complete self-connected objects, and shapes of parts of objects." ;
+                 rdfs:label "shape" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:PATO_0000052 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "A morphological quality inhering in a bearer by virtue of the bearer's ratios of distances between its features (points, edges, surfaces and also holes etc)." ;
+   oboInOwl:hasDbXref "PATOC:GVG"
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/PATO_0000117
+obo:PATO_0000117 rdf:type owl:Class ;
+                 rdfs:subClassOf obo:PATO_0000051 ;
+                 obo:IAO_0000115 "A morphology quality inhering in a bearer by virtue of the bearer's physical magnitude." ;
+                 obo:IAO_0000412 obo:envo.owl ;
+                 rdfs:label "size" .
+
+
+###  http://purl.obolibrary.org/obo/PATO_0000119
+obo:PATO_0000119 rdf:type owl:Class ;
+                 rdfs:subClassOf obo:PATO_0001708 ;
+                 obo:IAO_0000115 "A 1-D extent quality inhering in a bearer by virtue of the bearer's vertical dimension of extension." ;
+                 oboInOwl:hasOBONamespace "quality" ;
+                 oboInOwl:id "PATO:0000119" ;
+                 oboInOwl:inSubset <http://purl.obolibrary.org/obo/pato#attribute_slim> ,
+                                   <http://purl.obolibrary.org/obo/pato#scalar_slim> ;
+                 rdfs:label "height" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:PATO_0000119 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "A 1-D extent quality inhering in a bearer by virtue of the bearer's vertical dimension of extension." ;
+   oboInOwl:hasDbXref "PATOC:GVG"
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/PATO_0000122
+obo:PATO_0000122 rdf:type owl:Class ;
+                 rdfs:subClassOf obo:PATO_0001708 ;
+                 obo:IAO_0000115 "A 1-D extent quality which is equal to the distance between two points." ;
+                 obo:IAO_0000412 obo:envo.owl ;
+                 rdfs:label "length" .
+
+
+###  http://purl.obolibrary.org/obo/PATO_0000125
+obo:PATO_0000125 rdf:type owl:Class ;
+                 rdfs:subClassOf obo:PATO_0001018 ;
+                 obo:IAO_0000115 "A physical quality that inheres in a bearer by virtue of the proportion of the bearer's amount of matter." ;
+                 oboInOwl:hasOBONamespace "quality" ;
+                 oboInOwl:id "PATO:0000125" ;
+                 oboInOwl:inSubset <http://purl.obolibrary.org/obo/pato#attribute_slim> ,
+                                   <http://purl.obolibrary.org/obo/pato#relational_slim> ,
+                                   <http://purl.obolibrary.org/obo/pato#scalar_slim> ;
+                 rdfs:comment "For any biological use of PATO, the concept that should be used is 'mass' and not 'weight'. For example, increased weight of an organism." ;
+                 rdfs:label "mass" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:PATO_0000125 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "A physical quality that inheres in a bearer by virtue of the proportion of the bearer's amount of matter." ;
+   oboInOwl:hasDbXref "PATOC:GVG"
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/PATO_0000140
+obo:PATO_0000140 rdf:type owl:Class ;
+                 rdfs:subClassOf obo:PATO_0001018 ;
+                 obo:IAO_0000115 "A spatial quality inhering in a bearer by virtue of the bearer's spatial location relative to other objects in the vicinity." ;
+                 oboInOwl:hasAlternativeId "PATO:0001032" ,
+                                           "PATO:0001631" ;
+                 oboInOwl:hasExactSynonym "location" ,
+                                          "placement" ,
+                                          "relational spatial quality" ;
+                 oboInOwl:hasOBONamespace "quality" ;
+                 oboInOwl:id "PATO:0000140" ;
+                 oboInOwl:inSubset <http://purl.obolibrary.org/obo/pato#attribute_slim> ;
+                 rdfs:label "position" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:PATO_0000140 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "A spatial quality inhering in a bearer by virtue of the bearer's spatial location relative to other objects in the vicinity." ;
+   oboInOwl:hasDbXref "PATOC:GVG"
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/PATO_0000141
+obo:PATO_0000141 rdf:type owl:Class ;
+                 rdfs:subClassOf obo:PATO_0000051 ;
+                 obo:IAO_0000115 "A morphology quality inhering in a bearer by virtue of the bearer's relative position, shape, arrangements and connectivity of an organism's various parts; the pattern underlying its form." ;
+                 oboInOwl:hasAlternativeId "PATO:0001452" ;
+                 oboInOwl:hasBroadSynonym "conformation" ;
+                 oboInOwl:hasExactSynonym "relational structural quality" ;
+                 oboInOwl:hasOBONamespace "quality" ;
+                 oboInOwl:id "PATO:0000141" ;
+                 oboInOwl:inSubset <http://purl.obolibrary.org/obo/pato#attribute_slim> ;
+                 rdfs:label "structure" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:PATO_0000141 ;
+   owl:annotatedProperty oboInOwl:hasBroadSynonym ;
+   owl:annotatedTarget "conformation" ;
+   oboInOwl:hasDbXref "VT:1000738"
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:PATO_0000141 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "A morphology quality inhering in a bearer by virtue of the bearer's relative position, shape, arrangements and connectivity of an organism's various parts; the pattern underlying its form." ;
+   oboInOwl:hasDbXref "PATOC:GVG"
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/PATO_0000146
+obo:PATO_0000146 rdf:type owl:Class ;
+                 rdfs:subClassOf obo:PATO_0001018 ;
+                 obo:IAO_0000115 "A physical quality of the thermal energy of a system." ;
+                 oboInOwl:hasOBONamespace "quality" ;
+                 oboInOwl:id "PATO:0000146" ;
+                 oboInOwl:inSubset <http://purl.obolibrary.org/obo/pato#attribute_slim> ,
+                                   <http://purl.obolibrary.org/obo/pato#scalar_slim> ;
+                 rdfs:label "temperature" ;
+                 rdfs:seeAlso """ClimOO Ontology:
+https://openenergyplatform.org/ontology/oeo/OEO_00010453""" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:PATO_0000146 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "A physical quality of the thermal energy of a system." ;
+   oboInOwl:hasDbXref "PATOC:GVG"
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/PATO_0000411
+obo:PATO_0000411 rdf:type owl:Class ;
+                 rdfs:subClassOf obo:PATO_0000947 ;
+                 obo:IAO_0000115 "A shape quality inhering in a bearer by virtue of the bearer's being such that every part of the surface or the circumference is equidistant from the center." ;
+                 oboInOwl:hasOBONamespace "quality" ;
+                 oboInOwl:hasRelatedSynonym "round" ,
+                                            "rounded" ;
+                 oboInOwl:id "PATO:0000411" ;
+                 oboInOwl:inSubset <http://purl.obolibrary.org/obo/pato#cell_quality> ,
+                                   <http://purl.obolibrary.org/obo/pato#mpath_slim> ,
+                                   <http://purl.obolibrary.org/obo/pato#value_slim> ;
+                 rdfs:label "circular" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:PATO_0000411 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "A shape quality inhering in a bearer by virtue of the bearer's being such that every part of the surface or the circumference is equidistant from the center." ;
+   oboInOwl:hasDbXref "thefreedictionary.com:thefreedictionary.com"
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/PATO_0000918
+obo:PATO_0000918 rdf:type owl:Class ;
+                 rdfs:subClassOf obo:PATO_0001710 ;
+                 obo:IAO_0000115 "A 3-D extent quality inhering in a bearer by virtue of the bearer's amount of 3-dimensional space it occupies." ;
+                 oboInOwl:hasOBONamespace "quality" ;
+                 oboInOwl:id "PATO:0000918" ;
+                 oboInOwl:inSubset <http://purl.obolibrary.org/obo/pato#attribute_slim> ,
+                                   <http://purl.obolibrary.org/obo/pato#mpath_slim> ,
+                                   <http://purl.obolibrary.org/obo/pato#scalar_slim> ;
+                 rdfs:label "volume" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:PATO_0000918 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "A 3-D extent quality inhering in a bearer by virtue of the bearer's amount of 3-dimensional space it occupies." ;
+   oboInOwl:hasDbXref "PATOC:GVG"
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/PATO_0000947
+obo:PATO_0000947 rdf:type owl:Class ;
+                 rdfs:subClassOf obo:PATO_0002318 ;
+                 obo:IAO_0000115 "A spheroid quality inhering in a bearer by virtue of the bearer's being oval with two axes of symmetry, as produced by a conical section." ;
+                 oboInOwl:hasExactSynonym "ellipse-shaped" ,
+                                          "ellipsoid" ,
+                                          "elliptical" ;
+                 oboInOwl:hasOBONamespace "quality" ;
+                 oboInOwl:hasRelatedSynonym "oval" ,
+                                            "ovoid" ;
+                 oboInOwl:id "PATO:0000947" ;
+                 oboInOwl:inSubset <http://purl.obolibrary.org/obo/pato#cell_quality> ,
+                                   <http://purl.obolibrary.org/obo/pato#mpath_slim> ,
+                                   <http://purl.obolibrary.org/obo/pato#value_slim> ;
+                 rdfs:label "elliptic" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:PATO_0000947 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "A spheroid quality inhering in a bearer by virtue of the bearer's being oval with two axes of symmetry, as produced by a conical section." ;
+   oboInOwl:hasDbXref "PATOC:GVG"
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/PATO_0001018
+obo:PATO_0001018 rdf:type owl:Class ;
+                 rdfs:subClassOf obo:PATO_0001241 ;
+                 obo:IAO_0000115 "A quality of a physical entity that exists through action of continuants at the physical level of organisation in relation to other entities." ;
+                 oboInOwl:hasAlternativeId "PATO:0002079" ;
+                 oboInOwl:hasDbXref "Wikipedia:Physical_property" ;
+                 oboInOwl:hasExactSynonym "relational physical quality" ;
+                 oboInOwl:hasOBONamespace "quality" ;
+                 oboInOwl:id "PATO:0001018" ;
+                 oboInOwl:inSubset <http://purl.obolibrary.org/obo/pato#attribute_slim> ;
+                 rdfs:label "physical quality" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:PATO_0001018 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "A quality of a physical entity that exists through action of continuants at the physical level of organisation in relation to other entities." ;
+   oboInOwl:hasDbXref "PATOC:GVG"
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/PATO_0001199
+obo:PATO_0001199 rdf:type owl:Class ;
+                 rdfs:subClassOf obo:PATO_0000052 ;
+                 obo:IAO_0000115 "A shape quality inhering in a bearer by virtue of the bearer's being narrow, with the two opposite margins parallel." ;
+                 oboInOwl:hasOBONamespace "quality" ;
+                 oboInOwl:id "PATO:0001199" ;
+                 oboInOwl:inSubset <http://purl.obolibrary.org/obo/pato#cell_quality> ,
+                                   <http://purl.obolibrary.org/obo/pato#mpath_slim> ,
+                                   <http://purl.obolibrary.org/obo/pato#value_slim> ;
+                 rdfs:label "linear" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:PATO_0001199 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "A shape quality inhering in a bearer by virtue of the bearer's being narrow, with the two opposite margins parallel." ;
+   oboInOwl:hasDbXref "ISBN:0881923214"
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/PATO_0001241
+obo:PATO_0001241 rdf:type owl:Class ;
+                 rdfs:subClassOf obo:BFO_0000019 ,
+                                 obo:PATO_0000001 ;
+                 obo:IAO_0000115 "A quality which inheres in a continuant." ;
+                 obo:IAO_0000412 obo:envo.owl ;
+                 oboInOwl:hasExactSynonym "monadic quality of a continuant" ,
+                                          "multiply inhering quality of a physical entity" ,
+                                          "quality of a continuant" ,
+                                          "quality of a single physical entity" ,
+                                          "quality of an object" ,
+                                          "quality of continuant" ;
+                 oboInOwl:hasNarrowSynonym "monadic quality of an object" ,
+                                           "monadic quality of continuant" ;
+                 rdfs:label "physical object quality" .
+
+
+###  http://purl.obolibrary.org/obo/PATO_0001323
+obo:PATO_0001323 rdf:type owl:Class ;
+                 rdfs:subClassOf obo:PATO_0001709 ;
+                 obo:IAO_0000115 "A 2-D extent quality inhering in a bearer by virtue of the bearer's two dimensional extent." ;
+                 oboInOwl:hasOBONamespace "quality" ;
+                 oboInOwl:id "PATO:0001323" ;
+                 oboInOwl:inSubset <http://purl.obolibrary.org/obo/pato#attribute_slim> ,
+                                   <http://purl.obolibrary.org/obo/pato#mpath_slim> ,
+                                   <http://purl.obolibrary.org/obo/pato#scalar_slim> ;
+                 rdfs:label "area" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:PATO_0001323 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "A 2-D extent quality inhering in a bearer by virtue of the bearer's two dimensional extent." ;
+   oboInOwl:hasDbXref "Wikipedia:http://en.wikipedia.org/wiki/Area"
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/PATO_0001332
+obo:PATO_0001332 rdf:type owl:Class ;
+                 rdfs:subClassOf obo:PATO_0000051 ;
+                 obo:IAO_0000115 "A morphology quality inhering in a bearer by virtue of the bearer's lack of distinct morphology." ;
+                 oboInOwl:hasOBONamespace "quality" ;
+                 oboInOwl:id "PATO:0001332" ;
+                 oboInOwl:inSubset <http://purl.obolibrary.org/obo/pato#cell_quality> ,
+                                   <http://purl.obolibrary.org/obo/pato#mpath_slim> ,
+                                   <http://purl.obolibrary.org/obo/pato#value_slim> ;
+                 rdfs:label "amorphous" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:PATO_0001332 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "A morphology quality inhering in a bearer by virtue of the bearer's lack of distinct morphology." ;
+   oboInOwl:hasDbXref "PATOC:GVG"
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/PATO_0001334
+obo:PATO_0001334 rdf:type owl:Class ;
+                 rdfs:subClassOf obo:PATO_0001708 ;
+                 obo:IAO_0000115 "A length quality which is equal to the length of any straight line segment that passes through the center of a circle and whose endpoints are on the circular boundary." ;
+                 oboInOwl:hasOBONamespace "quality" ;
+                 oboInOwl:id "PATO:0001334" ;
+                 oboInOwl:inSubset <http://purl.obolibrary.org/obo/pato#attribute_slim> ,
+                                   <http://purl.obolibrary.org/obo/pato#mpath_slim> ,
+                                   <http://purl.obolibrary.org/obo/pato#scalar_slim> ;
+                 rdfs:label "diameter" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:PATO_0001334 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "A length quality which is equal to the length of any straight line segment that passes through the center of a circle and whose endpoints are on the circular boundary." ;
+   oboInOwl:hasDbXref "Wikipedia:http://en.wikipedia.org/wiki/Diameter"
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/PATO_0001412
+obo:PATO_0001412 rdf:type owl:Class ;
+                 rdfs:subClassOf obo:PATO_0000141 ;
+                 obo:IAO_0000115 "A structural quality inhering in a bearer by virtue of the bearer's lacking distinct structure." ;
+                 obo:RO_0002604 obo:PATO_0001411 ;
+                 oboInOwl:hasOBONamespace "quality" ;
+                 oboInOwl:id "PATO:0001412" ;
+                 oboInOwl:inSubset <http://purl.obolibrary.org/obo/pato#value_slim> ;
+                 rdfs:label "unstructured" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:PATO_0001412 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "A structural quality inhering in a bearer by virtue of the bearer's lacking distinct structure." ;
+   oboInOwl:hasDbXref "PATOC:GVG"
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/PATO_0001499
+obo:PATO_0001499 rdf:type owl:Class ;
+                 rdfs:subClassOf obo:PATO_0001865 ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty obo:RO_0015011 ;
+                                   owl:someValuesFrom obo:PATO_0000411
+                                 ] ;
+                 obo:IAO_0000115 "A spheroid quality inhering in a bearer by virtue of the bearer's resembling a ball (a sphere whose equatorial diameter is equal to the polar diameter)." ;
+                 oboInOwl:hasAlternativeId "PATO:0000408" ;
+                 oboInOwl:hasExactSynonym "globular" ;
+                 oboInOwl:hasOBONamespace "quality" ;
+                 oboInOwl:hasRelatedSynonym "rotund" ;
+                 oboInOwl:id "PATO:0001499" ;
+                 oboInOwl:inSubset <http://purl.obolibrary.org/obo/pato#cell_quality> ,
+                                   <http://purl.obolibrary.org/obo/pato#mpath_slim> ,
+                                   <http://purl.obolibrary.org/obo/pato#value_slim> ;
+                 rdfs:label "spherical" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:PATO_0001499 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "A spheroid quality inhering in a bearer by virtue of the bearer's resembling a ball (a sphere whose equatorial diameter is equal to the polar diameter)." ;
+   oboInOwl:hasDbXref "WordNet:WordNet"
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/PATO_0001546
+obo:PATO_0001546 rdf:type owl:Class ;
+                 rdfs:subClassOf obo:PATO_0002198 ;
+                 obo:IAO_0000115 "A physical quality inhering in a bearer by virtue of the bearer's exhibiting the physical characteristics of an entity characterized by particles arranged such that their shape and volume are relatively stable." ;
+                 oboInOwl:hasExactSynonym "solidity" ;
+                 oboInOwl:hasOBONamespace "quality" ;
+                 oboInOwl:id "PATO:0001546" ;
+                 oboInOwl:inSubset <http://purl.obolibrary.org/obo/pato#attribute_slim> ;
+                 rdfs:label "quality of a solid" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:PATO_0001546 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "A physical quality inhering in a bearer by virtue of the bearer's exhibiting the physical characteristics of an entity characterized by particles arranged such that their shape and volume are relatively stable." ;
+   oboInOwl:hasDbXref "Chemistry:http://chemistry.about.com/od/chemistryglossary/a/soliddefinition.htm"
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/PATO_0001547
+obo:PATO_0001547 rdf:type owl:Class ;
+                 rdfs:subClassOf obo:PATO_0002198 ;
+                 obo:IAO_0000115 "A physical quality inhering in a bearer by virtue of the bearer's exhibiting the physical characteristics of an entity consisting of particles that have neither a defined volume nor defined shape." ;
+                 oboInOwl:hasExactSynonym "gaseous" ;
+                 oboInOwl:hasOBONamespace "quality" ;
+                 oboInOwl:id "PATO:0001547" ;
+                 oboInOwl:inSubset <http://purl.obolibrary.org/obo/pato#attribute_slim> ;
+                 rdfs:label "quality of a gas" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:PATO_0001547 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "A physical quality inhering in a bearer by virtue of the bearer's exhibiting the physical characteristics of an entity consisting of particles that have neither a defined volume nor defined shape." ;
+   oboInOwl:hasDbXref "Chemistry:http://chemistry.about.com/od/chemistryglossary/a/gasdefinition.htm" ,
+                      "PATOC:GVG"
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/PATO_0001665
+obo:PATO_0001665 rdf:type owl:Class ;
+                 rdfs:subClassOf obo:PATO_0000140 ;
+                 obo:IAO_0000115 "A spatial pattern inhering in a bearer by virtue of the bearer's being located near a surface." ;
+                 oboInOwl:hasAlternativeId "PATO:0001471" ;
+                 oboInOwl:hasExactSynonym "superficial to" ;
+                 oboInOwl:hasOBONamespace "quality" ;
+                 oboInOwl:id "PATO:0001665" ;
+                 oboInOwl:inSubset <http://purl.obolibrary.org/obo/pato#mpath_slim> ,
+                                   <http://purl.obolibrary.org/obo/pato#relational_slim> ,
+                                   <http://purl.obolibrary.org/obo/pato#value_slim> ;
+                 rdfs:label "superficial" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:PATO_0001665 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "A spatial pattern inhering in a bearer by virtue of the bearer's being located near a surface." ;
+   oboInOwl:hasDbXref "Dictionary.com:Dictionary.com"
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/PATO_0001708
+obo:PATO_0001708 rdf:type owl:Class ;
+                 rdfs:subClassOf obo:PATO_0000117 ;
+                 obo:IAO_0000115 "A size quality inhering in an bearer by virtue of the bearer's extension in one dimension." ;
+                 obo:IAO_0000412 obo:envo.owl ;
+                 oboInOwl:hasExactSynonym "1-D size" ;
+                 rdfs:label "1-D extent" .
+
+
+###  http://purl.obolibrary.org/obo/PATO_0001709
+obo:PATO_0001709 rdf:type owl:Class ;
+                 rdfs:subClassOf obo:PATO_0000117 ;
+                 obo:IAO_0000115 "A size quality inhering in an bearer by virtue of the bearer's extension in two dimensions." ;
+                 oboInOwl:hasExactSynonym "2-D size" ;
+                 oboInOwl:hasOBONamespace "quality" ;
+                 oboInOwl:id "PATO:0001709" ;
+                 oboInOwl:inSubset <http://purl.obolibrary.org/obo/pato#attribute_slim> ;
+                 rdfs:label "2-D extent" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:PATO_0001709 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "A size quality inhering in an bearer by virtue of the bearer's extension in two dimensions." ;
+   oboInOwl:hasDbXref "PATOC:GVG"
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/PATO_0001710
+obo:PATO_0001710 rdf:type owl:Class ;
+                 rdfs:subClassOf obo:PATO_0000117 ;
+                 obo:IAO_0000115 "A size quality inhering in an bearer by virtue of the bearer's extension in three dimensions." ;
+                 oboInOwl:hasExactSynonym "3D size" ;
+                 oboInOwl:hasOBONamespace "quality" ;
+                 oboInOwl:id "PATO:0001710" ;
+                 oboInOwl:inSubset <http://purl.obolibrary.org/obo/pato#attribute_slim> ;
+                 rdfs:label "3-D extent" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:PATO_0001710 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "A size quality inhering in an bearer by virtue of the bearer's extension in three dimensions." ;
+   oboInOwl:hasDbXref "PATOC:GVG"
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/PATO_0001865
+obo:PATO_0001865 rdf:type owl:Class ;
+                 rdfs:subClassOf obo:PATO_0002007 ;
+                 obo:IAO_0000115 "A convex 3-D shape quality inhering in a bearer by virtue of the bearer's having a quadric surface in three dimensions obtained by rotating an ellipse about one of its principal axes. Includes spheres and oblate/prolate spheroids." ;
+                 oboInOwl:hasAlternativeId "PATO:0001864" ;
+                 oboInOwl:hasOBONamespace "quality" ;
+                 oboInOwl:hasRelatedSynonym "sphericality" ;
+                 oboInOwl:id "PATO:0001865" ;
+                 oboInOwl:inSubset <http://purl.obolibrary.org/obo/pato#cell_quality> ,
+                                   <http://purl.obolibrary.org/obo/pato#mpath_slim> ,
+                                   <http://purl.obolibrary.org/obo/pato#value_slim> ;
+                 rdfs:label "spheroid" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:PATO_0001865 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "A convex 3-D shape quality inhering in a bearer by virtue of the bearer's having a quadric surface in three dimensions obtained by rotating an ellipse about one of its principal axes. Includes spheres and oblate/prolate spheroids." ;
+   oboInOwl:hasDbXref "Wikipedia:http://en.wikipedia.org/wiki/Spheroid"
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/PATO_0001873
+obo:PATO_0001873 rdf:type owl:Class ;
+                 rdfs:subClassOf obo:PATO_0002007 ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty obo:RO_0015011 ;
+                                   owl:someValuesFrom obo:PATO_0000411
+                                 ] ;
+                 obo:IAO_0000115 "A convex 3-D shape quality inhering in a bearer by virtue of the bearer's exhibiting a consistently-sized round cross section." ;
+                 oboInOwl:hasAlternativeId "PATO:0001203" ;
+                 oboInOwl:hasExactSynonym "rod-like" ,
+                                          "rod-shaped" ;
+                 oboInOwl:hasNarrowSynonym "tubulate" ;
+                 oboInOwl:hasOBONamespace "quality" ;
+                 oboInOwl:id "PATO:0001873" ;
+                 oboInOwl:inSubset <http://purl.obolibrary.org/obo/pato#cell_quality> ,
+                                   <http://purl.obolibrary.org/obo/pato#value_slim> ;
+                 rdfs:label "cylindrical" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:PATO_0001873 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "A convex 3-D shape quality inhering in a bearer by virtue of the bearer's exhibiting a consistently-sized round cross section." ;
+   oboInOwl:hasDbXref "PATOC:MAH"
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/PATO_0002006
+obo:PATO_0002006 rdf:type owl:Class ;
+                 rdfs:subClassOf obo:PATO_0000052 ;
+                 obo:IAO_0000115 "A shape that inheres in a 2 dimensional entity, such as a cross section or projection of a 3 dimensional entity." ;
+                 oboInOwl:hasOBONamespace "quality" ;
+                 oboInOwl:hasRelatedSynonym "2-D projection" ,
+                                            "cross-sectional" ;
+                 oboInOwl:id "PATO:0002006" ;
+                 oboInOwl:inSubset <http://purl.obolibrary.org/obo/pato#attribute_slim> ;
+                 rdfs:label "2-D shape" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:PATO_0002006 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "A shape that inheres in a 2 dimensional entity, such as a cross section or projection of a 3 dimensional entity." ;
+   oboInOwl:hasDbXref "PATOC:CJM"
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/PATO_0002007
+obo:PATO_0002007 rdf:type owl:Class ;
+                 rdfs:subClassOf obo:PATO_0002266 ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty obo:RO_0015011 ;
+                                   owl:someValuesFrom obo:PATO_0002006
+                                 ] ;
+                 obo:IAO_0000115 "A complete three dimensional shape in which for every line connecting pair of points on the object is within the object. Or: a shape lacking cavities. Contrast: concave." ;
+                 obo:RO_0002604 obo:PATO_0002008 ;
+                 oboInOwl:hasDbXref "Image:http://upload.wikimedia.org/wikipedia/commons/0/06/Convex_polygon_illustration1.png" ;
+                 oboInOwl:hasOBONamespace "quality" ;
+                 oboInOwl:id "PATO:0002007" ;
+                 oboInOwl:inSubset <http://purl.obolibrary.org/obo/pato#attribute_slim> ;
+                 rdfs:comment """ClimOO Ontology:
+It seems revisions are required for this class. The axiomatization does not seem comply with the BFO model. We envision discussions with subject matter experts."""@en ,
+                              "Use this term or an is_a child of this term when the entire shape of the object is known." ;
+                 rdfs:label "convex 3-D shape" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:PATO_0002007 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "A complete three dimensional shape in which for every line connecting pair of points on the object is within the object. Or: a shape lacking cavities. Contrast: concave." ;
+   oboInOwl:hasDbXref "PATOC:CJM"
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/PATO_0002198
+obo:PATO_0002198 rdf:type owl:Class ;
+                 rdfs:subClassOf obo:PATO_0001018 ;
+                 obo:IAO_0000115 "A quality inhering in a bearer by virtue of its constitution." ;
+                 <http://purl.org/dc/terms/contributor> <https://orcid.org/0000-0002-2061-091X> ;
+                 oboInOwl:creation_date "2010-03-15T04:35:27Z" ;
+                 oboInOwl:hasOBONamespace "quality" ;
+                 oboInOwl:id "PATO:0002198" ;
+                 oboInOwl:inSubset <http://purl.obolibrary.org/obo/pato#attribute_slim> ;
+                 rdfs:label "quality of a substance" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:PATO_0002198 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "A quality inhering in a bearer by virtue of its constitution." ;
+   oboInOwl:hasDbXref "PATOC:GVG"
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/PATO_0002226
+obo:PATO_0002226 rdf:type owl:Class ;
+                 rdfs:subClassOf obo:PATO_0001873 ;
+                 obo:IAO_0000115 "A cylindrical shape quality inhering in a bearer by virtue of the bearer's being imperfectly cylindrical or approximately cylindrical." ;
+                 <http://purl.org/dc/terms/contributor> <https://orcid.org/0000-0002-2061-091X> ;
+                 oboInOwl:creation_date "2010-07-13T04:22:30Z" ;
+                 oboInOwl:hasOBONamespace "quality" ;
+                 oboInOwl:id "PATO:0002226" ;
+                 oboInOwl:inSubset <http://purl.obolibrary.org/obo/pato#value_slim> ;
+                 rdfs:label "subcylindrical" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:PATO_0002226 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "A cylindrical shape quality inhering in a bearer by virtue of the bearer's being imperfectly cylindrical or approximately cylindrical." ;
+   oboInOwl:hasDbXref "url:http://www.thefreedictionary.com/Subcylindrical"
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/PATO_0002266
+obo:PATO_0002266 rdf:type owl:Class ;
+                 rdfs:subClassOf obo:PATO_0000052 ;
+                 obo:IAO_0000115 "A shape that inheres in a 3 dimensional entity." ;
+                 <http://purl.org/dc/terms/contributor> <https://orcid.org/0000-0002-2061-091X> ;
+                 oboInOwl:creation_date "2010-10-05T12:31:16Z" ;
+                 oboInOwl:hasOBONamespace "quality" ;
+                 oboInOwl:id "PATO:0002266" ;
+                 rdfs:label "3-D shape" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:PATO_0002266 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "A shape that inheres in a 3 dimensional entity." ;
+   oboInOwl:hasDbXref "PATOC:OREGON"
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/PATO_0002309
+obo:PATO_0002309 rdf:type owl:Class ;
+                 rdfs:subClassOf obo:PATO_0002226 ;
+                 obo:IAO_0000115 "A convex 3-D shape quality inhering in a bearer by virtue of the bearer's exhibiting a by virtue of the bearer's exhibiting a consistently sized and approximately round cross-section along its length, which is many times larger than its diameter." ;
+                 <http://purl.org/dc/terms/contributor> <https://orcid.org/0000-0002-2061-091X> ;
+                 oboInOwl:creation_date "2011-09-09T04:50:10Z" ;
+                 oboInOwl:hasOBONamespace "quality" ;
+                 oboInOwl:id "PATO:0002309" ;
+                 oboInOwl:inSubset <http://purl.obolibrary.org/obo/pato#value_slim> ;
+                 rdfs:comment "Note that a fiber shaped object may take any circuitous or straight path through space (think of a length of string or rope)." ;
+                 rdfs:label "fiber shaped" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:PATO_0002309 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "A convex 3-D shape quality inhering in a bearer by virtue of the bearer's exhibiting a by virtue of the bearer's exhibiting a consistently sized and approximately round cross-section along its length, which is many times larger than its diameter." ;
+   oboInOwl:hasDbXref "PATOC:DC"
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/PATO_0002318
+obo:PATO_0002318 rdf:type owl:Class ;
+                 rdfs:subClassOf obo:PATO_0002006 ;
+                 obo:IAO_0000115 "A shape constituting a transition between a rectangle and a circle; a closed curve, of which the circle and ellipse are special cases, whose parametric equation is x = a.cos2/rt, y = b.cos2/rt" ;
+                 <http://purl.org/dc/terms/contributor> <https://orcid.org/0000-0002-2061-091X> ;
+                 oboInOwl:creation_date "2011-10-12T12:45:16Z" ;
+                 oboInOwl:hasExactSynonym "Lamé curve" ;
+                 oboInOwl:hasOBONamespace "quality" ;
+                 oboInOwl:id "PATO:0002318" ;
+                 rdfs:label "superelliptic" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:PATO_0002318 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "A shape constituting a transition between a rectangle and a circle; a closed curve, of which the circle and ellipse are special cases, whose parametric equation is x = a.cos2/rt, y = b.cos2/rt" ;
+   oboInOwl:hasDbXref "wiktionary:superellipse"
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/PATO_0005020
+obo:PATO_0005020 rdf:type owl:Class ;
+                 rdfs:subClassOf obo:PATO_0000052 ;
+                 obo:IAO_0000115 "A shape quality inhering on a bearer by virtue of a bearer's shape lacking in pattern or uniformity; for example, it may have sides of different lengths, different curvatures, or unequal angles." ;
+                 <http://purl.org/dc/terms/contributor> <https://orcid.org/0000-0003-3162-7490> ;
+                 oboInOwl:creation_date "2014-10-03T10:23:17Z" ;
+                 oboInOwl:hasOBONamespace "quality" ;
+                 oboInOwl:id "PATO:0005020" ;
+                 oboInOwl:inSubset <http://purl.obolibrary.org/obo/pato#value_slim> ;
+                 rdfs:label "irregularly shaped" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:PATO_0005020 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "A shape quality inhering on a bearer by virtue of a bearer's shape lacking in pattern or uniformity; for example, it may have sides of different lengths, different curvatures, or unequal angles." ;
+   oboInOwl:hasDbXref "PATOC:WD"
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/PATO_0080001
+obo:PATO_0080001 rdf:type owl:Class ;
+                 rdfs:subClassOf obo:PATO_0002198 ;
+                 obo:IAO_0000115 "A physical quality inhering in an entity exhibiting the physical charachteristics of a material that flows under applied force." ;
+                 oboInOwl:hasExactSynonym "fluidity" ;
+                 oboInOwl:hasOBONamespace "quality" ;
+                 oboInOwl:id "PATO:0080001" ;
+                 oboInOwl:inSubset <http://purl.obolibrary.org/obo/pato#attribute_slim> ;
+                 rdfs:label "quality of a fluid" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:PATO_0080001 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "A physical quality inhering in an entity exhibiting the physical charachteristics of a material that flows under applied force." ;
+   oboInOwl:hasDbXref "WikipediaVersioned:Fluid&oldid=1049126570"
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/PATO_0103000
+obo:PATO_0103000 rdf:type owl:Class ;
+                 rdfs:subClassOf obo:PATO_0000001 ;
+                 obo:IAO_0000115 "A quality of an entity that can be represented numerically, including anything that can be counted, measured, or given a numerical value." ;
+                 oboInOwl:created_by "https://orcid.org/0000-0001-8314-2140" ;
+                 oboInOwl:hasOBONamespace "quality" ;
+                 oboInOwl:id "PATO:0103000" ;
+                 rdfs:label "quantitative" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource obo:PATO_0103000 ;
+   owl:annotatedProperty obo:IAO_0000115 ;
+   owl:annotatedTarget "A quality of an entity that can be represented numerically, including anything that can be counted, measured, or given a numerical value." ;
+   oboInOwl:hasDbXref "https://libguides.macalester.edu/c.php?g=527786&p=3608639" ,
+                      "https://www.nnlm.gov/guides/data-glossary/quantitative-data"
+ ] .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi

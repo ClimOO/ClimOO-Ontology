@@ -1,0 +1,325 @@
+@prefix : <http://ClimOO/climoo/imports/sumso-imports#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://ClimOO/climoo/imports/sumso-imports> .
+
+<http://ClimOO/climoo/imports/sumso-imports> rdf:type owl:Ontology ;
+                                              owl:versionIRI <http://ClimOO/climoo/imports/sumso-imports#26-02-28> ;
+                                              <http://purl.org/dc/terms/description> """This file contains ClimOO ontology imports from the Sustainable Meat Systems Ontology (SuMSO). Imports have been manually collected and revised.
+
+Ontology source: SuMSO V1.0.1.
+https://raw.githubusercontent.com/gioUbbiali/Sustainable-Meat-Systems-Ontology/refs/heads/main/sumso.ttl"""@en ;
+                                              rdfs:seeAlso "https://w3id.org/sumso/repo" ;
+                                              owl:versionInfo "2026-02-28" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.obolibrary.org/obo/IAO_0000111
+<http://purl.obolibrary.org/obo/IAO_0000111> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000112
+<http://purl.obolibrary.org/obo/IAO_0000112> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000114
+<http://purl.obolibrary.org/obo/IAO_0000114> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000115
+<http://purl.obolibrary.org/obo/IAO_0000115> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000116
+<http://purl.obolibrary.org/obo/IAO_0000116> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000117
+<http://purl.obolibrary.org/obo/IAO_0000117> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000119
+<http://purl.obolibrary.org/obo/IAO_0000119> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000231
+<http://purl.obolibrary.org/obo/IAO_0000231> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000232
+<http://purl.obolibrary.org/obo/IAO_0000232> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0100001
+<http://purl.obolibrary.org/obo/IAO_0100001> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> rdf:type owl:AnnotationProperty .
+
+
+###  https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom
+<https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom> rdf:type owl:AnnotationProperty .
+
+
+###  https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity
+<https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://purl.obolibrary.org/obo/BFO_0000055
+<http://purl.obolibrary.org/obo/BFO_0000055> rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000059
+<http://purl.obolibrary.org/obo/BFO_0000059> rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000084
+<http://purl.obolibrary.org/obo/BFO_0000084> rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000117
+<http://purl.obolibrary.org/obo/BFO_0000117> rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000118
+<http://purl.obolibrary.org/obo/BFO_0000118> rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000138
+<http://purl.obolibrary.org/obo/BFO_0000138> rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://purl.obolibrary.org/obo/BFO_0000015
+<http://purl.obolibrary.org/obo/BFO_0000015> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000023
+<http://purl.obolibrary.org/obo/BFO_0000023> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/COB_0000082
+<http://purl.obolibrary.org/obo/COB_0000082> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000015> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A process that is initiated by an agent who intends to carry out a plan to achieve an objective through one or more actions as described in a plan specification."@en ;
+                                             rdfs:label "planned process"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000104
+<http://purl.obolibrary.org/obo/IAO_0000104> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/OBI_0000011
+<http://purl.obolibrary.org/obo/OBI_0000011> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://www.geneontology.org/formats/oboInOwl#ObsoleteClass> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "obsolete planned process" ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000112> "Injecting mice with a vaccine in order to test its efficacy" ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000122> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A process that realizes a plan which is the concretization of a plan specification."@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000116> "'Plan' includes a future direction sense. That can be problematic if plans are changed during their execution. There are however implicit contingencies for protocols that an agent has in his mind that can be considered part of the plan, even if the agent didn't have them in mind before. Therefore, a planned process can diverge from what the agent would have said the plan was before executing it, by adjusting to problems encountered during execution (e.g. choosing another reagent with equivalent properties, if the originally planned one has run out.)" ,
+                                                                                          "We are only considering successfully completed planned processes. A plan may be modified, and details added during execution. For a given planned process, the associated realized plan specification is the one encompassing all changes made during execution. This means that all processes in which an agent acts towards achieving some objectives is a planned process." ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "Bjoern Peters" ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000119> "branch derived" ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000231> <http://purl.obolibrary.org/obo/IAO_0000228> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000232> "6/11/9: Edited at workshop. Used to include: is initiated by an agent" ,
+                                                                                          "This class merges the previously separated objective driven process and planned process, as they the separation proved hard to maintain. (1/22/09, branch call)" ;
+                                             <http://purl.obolibrary.org/obo/IAO_0100001> <http://purl.obolibrary.org/obo/COB_0000035> ;
+                                             rdfs:label "obsolete planned process" ;
+                                             owl:deprecated "true"^^xsd:boolean .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#ObsoleteClass
+<http://www.geneontology.org/formats/oboInOwl#ObsoleteClass> rdf:type owl:Class .
+
+
+###  https://w3id.org/sumso#SuMSO_0000043
+<https://w3id.org/sumso#SuMSO_0000043> rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://purl.obolibrary.org/obo/COB_0000082> ,
+                                                       [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/COB_0000082>
+                                                                              [ rdf:type owl:Restriction ;
+                                                                                owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000117> ;
+                                                                                owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                                     owl:unionOf ( <https://www.w3id.org/sco#SCO_0000020>
+                                                                                                                   <https://www.w3id.org/sco#SCO_0000022>
+                                                                                                                 )
+                                                                                                   ]
+                                                                              ]
+                                                                            ) ;
+                                                         rdf:type owl:Class
+                                                       ] ;
+                                       rdfs:comment """ClimOO Ontology:
+OBI deprecated OBO_0000011(planned process) class in favor of COB_0000082 (planned process). To ensure consistency across ClimOO Ontology imports, we revised SuMSO imports, by updating classes that reuse OBO_0000011 class according to OBI updates. We also opened an issue on the SuMSO repository.
+
+http://purl.obolibrary.org/obo/COB_0000082 
+http://purl.obolibrary.org/obo/OBI_0000011
+
+https://github.com/gioUbbiali/Sustainable-Meat-Systems-Ontology/issues/3"""@en ,
+                                                    """Currently, SuMSO hierarchically position “activity” classes as subclasses of the “planned process” one. It also describes an activity having interactions as occurrent parts (at least one). Activities can equally have other activities as occurrent parts (sub-activities). 
+
+The position of the class in the hierarchy and the definition require revision. We envision having discussions with subject matter experts about whether an activity is not necessarily planned. We also plan to discuss if an activity requires to have at least two interactions as occurrent parts, to exist or if one is enough.  Similarly, we aim to converse regarding the possibility of introducing the term “action”. Our genuine understanding is that activities have actions as occurrent  parts that have interactions as occurrent  parts."""@en ,
+                                                    "Currently, SuMSO reuse classes addressing plan, plan specification, and planned process from the Ontology for Biomedical Investigations ((OBI) and the Information Artifact Ontology (IAO). The Industrial Ontology Foundry (IOF) and Common Core Ontologies (CCO) provide slightly different representations. We plan a deep revision of SuMSO-OBI-IAO representation, envisioning also alignment with those pertaining to IOF and CCO."@en ,
+                                                    "Currently, we include the possibility that an activity has as occurrent part (up to solely consist of) only one interaction. We leave open the discussion considering whether an activity requires to have as occurrent parts at least two interactions to exist instead of one."@en ,
+                                                    "Further implementations will cover representing plans and plan specifications related to this class, subclasses, and related ones."@en ,
+                                                    """SCO interprets agency in relation to interactions. As an activity is composed of interactions, our intuitive understanding is that the agency in an activity should be seen somehow as an integration of the agency(ies) pertaining to the interactions that are part of that activity.
+
+Proposal:
+complex system components that are agents in interactions are agents in the activity. Complex system components that are agents in the majority (if not all) interactions that are part of an activity may be considered by some means as the primary agent of the activity.
+
+We leave the discussion open, envisioning conversations with subject matter experts to clarify agency within activities."""@en ,
+                                                    "SuMSO must implement to cover classes representing the corresponding spatio-temporal regions and temporal intervals."@en ,
+                                                    "This definition requires revision. We envision having discussions with subject matter experts to improve it."@en ;
+                                       rdfs:label "complex system activity"@en ;
+                                       rdfs:seeAlso """See for possible implementations and alignments:
+
+https://www.ebi.ac.uk/ols4/ontologies/prov/classes/http%253A%252F%252Fwww.w3.org%252Fns%252Fprov%2523Activity 
+
+http://purl.obolibrary.org/obo/NCIT_C43431
+
+http://purl.obolibrary.org/obo/NCIT_C25404
+
+https://bioportal.bioontology.org/ontologies/STY?p=classes&conceptid=T052 
+
+https://bioportal.bioontology.org/ontologies/AURA?p=classes&conceptid=http%3A%2F%2Fwww.projecthalo.com%2Faura%23Activity
+
+https://spec.industrialontologies.org/ontology/core/Core/PlannedProcess 
+and subclasses in supply chain ontology and maintenance ontology (IOF ontologies), especially
+https://spec.industrialontologies.org/ontology/supplychain/SupplyChain/SupplyChainProcess"""@en ;
+                                       <http://www.w3.org/2004/02/skos/core#definition> "A planned process that has as occurrent parts some (at least one) interactions among complex system components or interactions between complex system components and complex system environment components that are causally concatenated to (seeks to) obtain a certain (often planned/desired) output/fulfill a certain (often planned/desired) function."@en ;
+                                       <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional> .
+
+
+###  https://w3id.org/sumso#SuMSO_0000050
+<https://w3id.org/sumso#SuMSO_0000050> rdf:type owl:Class ;
+                                       owl:equivalentClass [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/COB_0000082>
+                                                                                  [ rdf:type owl:Restriction ;
+                                                                                    owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000055> ;
+                                                                                    owl:someValuesFrom [ rdf:type owl:Restriction ;
+                                                                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000059> ;
+                                                                                                         owl:someValuesFrom [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/IAO_0000104>
+                                                                                                                                                   [ rdf:type owl:Restriction ;
+                                                                                                                                                     owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000084> ;
+                                                                                                                                                     owl:someValuesFrom <https://www.w3id.org/sco#SCO_0000028>
+                                                                                                                                                   ]
+                                                                                                                                                 ) ;
+                                                                                                                              rdf:type owl:Class
+                                                                                                                            ]
+                                                                                                       ]
+                                                                                  ]
+                                                                                  [ rdf:type owl:Restriction ;
+                                                                                    owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000118> ;
+                                                                                    owl:someValuesFrom <https://w3id.org/sumso#SuMSO_0000051>
+                                                                                  ]
+                                                                                ) ;
+                                                             rdf:type owl:Class
+                                                           ] ;
+                                       rdfs:subClassOf <http://purl.obolibrary.org/obo/COB_0000082> ;
+                                       rdfs:comment """ClimOO Ontology:
+OBI deprecated OBO_0000011(planned process) class in favor of COB_0000082 (planned process). To ensure consistency across ClimOO Ontology imports, we revised SuMSO imports, by updating classes that reuse OBO_0000011 class according to OBI updates. We also opened an issue on the SuMSO repository.
+
+http://purl.obolibrary.org/obo/COB_0000082 
+http://purl.obolibrary.org/obo/OBI_0000011
+
+https://github.com/gioUbbiali/Sustainable-Meat-Systems-Ontology/issues/3"""@en ,
+                                                    """Currently, SuMSO represents supply chains as part of complex systems. Supply chain activities are only complex system activities. 
+
+Depending on SCO implementations regarding system granularity, this class and related ones may be revised to represent the transversality and concatenation of supply chains across different systems. A possible tentative approach: we may create classes for complex system environment activities and supply chains may be considered having both system and system environment activities as concatenated occurrent parts."""@en ,
+                                                    "Currently, SuMSO reuse classes addressing plan, plan specification, and planned process from the Ontology for Biomedical Investigations ((OBI) and the Information Artifact Ontology (IAO). The Industrial Ontology Foundry (IOF) and Common Core Ontologies (CCO) provide slightly different representations. We plan a deep revision of SuMSO-OBI-IAO representation, envisioning also alignment with those pertaining to IOF and CCO."@en ,
+                                                    "Currently, we include the possibility that a supply chain has as occurrent part (up to solely consist of) only one interaction. We leave open the discussion considering whether a supply chain requires to have as occurrent parts at least two activities to exist instead of one."@en ,
+                                                    "SuMSO must implement to cover classes representing the corresponding spatio-temporal regions and temporal intervals."@en ;
+                                       rdfs:label "supply chain"@en ;
+                                       rdfs:seeAlso """See also:
+https://spec.industrialontologies.org/ontology/supplychain/SupplyChain/SupplyChainProcess"""@en ;
+                                       <http://www.w3.org/2004/02/skos/core#definition> "A planned process that has as proper occurrent parts some (at least one) supply chain activities that are causally concatenated and realize the plan that concretizes the plan specification that generically depends on at lest one complex system component. At least one of the outputs of the activity(-ies) that occurs before is an input for the activity(ies) that follows."@en ;
+                                       <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional> .
+
+
+###  https://w3id.org/sumso#SuMSO_0000051
+<https://w3id.org/sumso#SuMSO_0000051> rdf:type owl:Class ;
+                                       owl:equivalentClass [ owl:intersectionOf ( <https://w3id.org/sumso#SuMSO_0000043>
+                                                                                  [ rdf:type owl:Restriction ;
+                                                                                    owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000138> ;
+                                                                                    owl:someValuesFrom <https://w3id.org/sumso#SuMSO_0000050>
+                                                                                  ]
+                                                                                ) ;
+                                                             rdf:type owl:Class
+                                                           ] ;
+                                       rdfs:subClassOf <https://w3id.org/sumso#SuMSO_0000043> ;
+                                       rdfs:label "supply chain activity"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#definition> "A complex system activity that is an occurent part of a supply chain."@en ;
+                                       <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional> .
+
+
+###  https://w3id.org/sumso#SuMSO_0000053
+<https://w3id.org/sumso#SuMSO_0000053> rdf:type owl:Class ;
+                                       rdfs:subClassOf <https://w3id.org/sumso#SuMSO_0000169> ;
+                                       owl:disjointWith <https://w3id.org/sumso#SuMSO_0000159> ,
+                                                        <https://w3id.org/sumso#SuMSO_0000160> ;
+                                       rdfs:label "product-role"@en ;
+                                       rdfs:seeAlso """http://purl.allotrope.org/ontologies/role#AFRL_0000018 
+http://addictovocab.org/ADDICTO_0001113 
+http://addictovocab.org/ADDICTO_0001114""" ;
+                                       <http://www.w3.org/2004/02/skos/core#definition> "A role that inheres in a material entity by virtue of realizing in some supply chain activity wherein the bearer is a desired output of that supply chain activity according to the perspective of some corresponding supply chain(s) participants. A product is generally available for sale or purchase along those supply chains."@en ;
+                                       <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom> """https://spec.industrialontologies.org/ontology/core/Core/MaterialProductRole
+http://addictovocab.org/ADDICTO_0001112 
+http://purl.allotrope.org/ontologies/role#AFRL_0000360 
+http://purl.allotrope.org/ontologies/role#AFRL_0000543""" ;
+                                       <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://w3id.org/sumso#SuMSO_0000159
+<https://w3id.org/sumso#SuMSO_0000159> rdf:type owl:Class ;
+                                       rdfs:subClassOf <https://w3id.org/sumso#SuMSO_0000169> ;
+                                       owl:disjointWith <https://w3id.org/sumso#SuMSO_0000160> ;
+                                       rdfs:label "by-product-role"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#definition> "A role that inheres in a material entity by virtue of realizing in some supply chain activity wherein the bearer is an output of that supply chain activity and is perceived as lacking primary relevance according to the perspective of some corresponding supply chain(s) participants. A product may be available for sale or purchase along the corresponding supply chain(s)."@en ;
+                                       <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom> "http://purl.allotrope.org/ontologies/role#AFRL_0000359" ;
+                                       <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://w3id.org/sumso#SuMSO_0000160
+<https://w3id.org/sumso#SuMSO_0000160> rdf:type owl:Class ;
+                                       rdfs:subClassOf <https://w3id.org/sumso#SuMSO_0000169> ;
+                                       rdfs:label "waste-role"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#definition> "A role that inheres in a material entity by virtue of realizing in some supply chain activity wherein the bearer is an output of that supply chain activity and is discarded or not utilized further along the corresponding supply chain(s) because deemed undesirable or perceived as lacking utility or dangerous, according to the perspective of some participants of those supply chains."@en ;
+                                       <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom> "http://purl.obolibrary.org/obo/ENVO_01000665" ;
+                                       <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://w3id.org/sumso#SuMSO_0000169
+<https://w3id.org/sumso#SuMSO_0000169> rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000023> ;
+                                       rdfs:comment "Do not use this class directly. This class has been constructed as a grouping for supply chain outcome roles to assist class retrieval and visualization."@en ;
+                                       rdfs:label "supply chain outcome role"@en ;
+                                       <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/sco#SCO_0000020
+<https://www.w3id.org/sco#SCO_0000020> rdf:type owl:Class .
+
+
+###  https://www.w3id.org/sco#SCO_0000022
+<https://www.w3id.org/sco#SCO_0000022> rdf:type owl:Class .
+
+
+###  https://www.w3id.org/sco#SCO_0000028
+<https://www.w3id.org/sco#SCO_0000028> rdf:type owl:Class .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi

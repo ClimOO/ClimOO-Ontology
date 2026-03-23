@@ -228,8 +228,8 @@ rdf:type rdf:type owl:AnnotationProperty .
 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> rdf:type owl:AnnotationProperty .
 
 
-###  https://w3id.org/sco#SCO_0000039
-<https://w3id.org/sco#SCO_0000039> rdf:type owl:AnnotationProperty .
+###  https://www.w3id.org/sco#SCO_0000039
+<https://www.w3id.org/sco#SCO_0000039> rdf:type owl:AnnotationProperty .
 
 
 #################################################################
@@ -364,6 +364,10 @@ rdf:type rdf:type owl:AnnotationProperty .
 
 ###  http://purl.obolibrary.org/obo/BFO_0000165
 <http://purl.obolibrary.org/obo/BFO_0000165> rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000167
+<http://purl.obolibrary.org/obo/BFO_0000167> rdf:type owl:ObjectProperty .
 
 
 ###  http://purl.obolibrary.org/obo/BFO_0000176
@@ -3482,7 +3486,7 @@ A disposition whose realization leads the system to express sensitivity over res
    owl:annotatedSource <http://purl.unep.org/sdg/SDGIO_00000024> ;
    owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000118> ;
    owl:annotatedTarget "system vulnerability"@en ;
-   <https://w3id.org/sco#SCO_0000039> <https://w3id.org/sumso#SuMSO_0000052>
+   <https://www.w3id.org/sco#SCO_0000039> <https://w3id.org/sumso#SuMSO_0000052>
  ] .
 
 [ rdf:type owl:Axiom ;
@@ -3497,7 +3501,7 @@ A disposition whose realization leads the system to express sensitivity over res
    owl:annotatedProperty <http://www.w3.org/2004/02/skos/core#definition> ;
    owl:annotatedTarget """SuMSO definition:
 A disposition whose realization leads the system to express sensitivity over resilience to a certain perturbation to which it is exposed."""@en ;
-   <https://w3id.org/sco#SCO_0000039> <https://w3id.org/sumso#SuMSO_0000052>
+   <https://www.w3id.org/sco#SCO_0000039> <https://w3id.org/sumso#SuMSO_0000052>
  ] .
 
 
@@ -3537,7 +3541,7 @@ A disposition whose realization leads the system to persist in its stable state 
    owl:annotatedSource <http://purl.unep.org/sdg/SDGIO_00010021> ;
    owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000118> ;
    owl:annotatedTarget "system resilience"@en ;
-   <https://w3id.org/sco#SCO_0000039> <https://w3id.org/sumso#SuMSO_0000052>
+   <https://www.w3id.org/sco#SCO_0000039> <https://w3id.org/sumso#SuMSO_0000052>
  ] .
 
 [ rdf:type owl:Axiom ;
@@ -3545,7 +3549,7 @@ A disposition whose realization leads the system to persist in its stable state 
    owl:annotatedProperty <http://www.w3.org/2004/02/skos/core#definition> ;
    owl:annotatedTarget """SuMSO definition:
 A disposition whose realization leads the system to persist in its stable state of equilibrium in response to a perturbation."""@en ;
-   <https://w3id.org/sco#SCO_0000039> <https://w3id.org/sumso#SuMSO_0000052>
+   <https://www.w3id.org/sco#SCO_0000039> <https://w3id.org/sumso#SuMSO_0000052>
  ] .
 
 
@@ -4152,11 +4156,11 @@ we refrain from proceeding as such, choosing solely to not establish correspondi
 <https://w3id.org/sumso#SuMSO_0000029> rdf:type owl:Class ;
                                        rdfs:subClassOf [ owl:intersectionOf ( <https://www.w3id.org/climoo#ClimOO_0000047>
                                                                               [ rdf:type owl:Restriction ;
-                                                                                owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000057> ;
+                                                                                owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000167> ;
                                                                                 owl:someValuesFrom <https://w3id.org/sumso#SuMSO_0000024>
                                                                               ]
                                                                               [ rdf:type owl:Restriction ;
-                                                                                owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000057> ;
+                                                                                owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000167> ;
                                                                                 owl:someValuesFrom <https://w3id.org/sumso#SuMSO_0000031>
                                                                               ]
                                                                               [ rdf:type owl:Restriction ;
@@ -4606,7 +4610,7 @@ http://purl.obolibrary.org/obo/OMRSE_00000051""" ;
                                        rdfs:label "impact area"@en ;
                                        <http://www.w3.org/2004/02/skos/core#definition> "An objective specification that generically depends on some complex system component or complex system environment component and describes an intended process endpoint concerning the change that the complex system component or complex system environment component wishes to see in the related complex system, according to its perspective."@en ;
                                        <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> ;
-                                       <https://w3id.org/sco#SCO_0000039> <https://w3id.org/sumso#SuMSO_0000056> .
+                                       <https://www.w3id.org/sco#SCO_0000039> <https://w3id.org/sumso#SuMSO_0000056> .
 
 
 ###  https://w3id.org/sumso#SuMSO_0000086
@@ -4630,8 +4634,8 @@ https://scholar.harvard.edu/sen/publications/development-capability-expansion"""
                                        rdfs:label "complex system component well-being"@en ;
                                        <http://www.w3.org/2004/02/skos/core#definition> "A disposition whose realization leads the complex system component to freely choose among alternative combinations of valuable and considered-valuable functionings (doings and beings) that owns and among which it can opt to live a life worthy of value and that has the motive to value as a part of the complex system to which it belongs."@en ;
                                        <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> ;
-                                       <https://w3id.org/sco#SCO_0000039> <https://w3id.org/sumso#SuMSO_0000052> ,
-                                                                          <https://w3id.org/sumso#SuMSO_0000064> .
+                                       <https://www.w3id.org/sco#SCO_0000039> <https://w3id.org/sumso#SuMSO_0000052> ,
+                                                                              <https://w3id.org/sumso#SuMSO_0000064> .
 
 
 ###  https://w3id.org/sumso#SuMSO_0000087
@@ -4669,8 +4673,8 @@ http://aims.fao.org/aos/agrovoc/xDef_2a5186fd""" ,
 https://regenscore.org/""" ;
                                        <http://www.w3.org/2004/02/skos/core#definition> "A complex system component well-being that is bearered by an animal. Features related to animal welfare include freedom from hunger, thirst, discomfort, and any sort of harm or disease, access to adequate and salutary living spaces, clean water, and safe and nutritious food, freedom to express proper instinctive behaviors, freedom from distress and fear, absence of treatment with prohibited medications and substances, and a minimally painful demise."@en ;
                                        <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> ;
-                                       <https://w3id.org/sco#SCO_0000039> <https://w3id.org/sumso#SuMSO_0000052> ,
-                                                                          <https://w3id.org/sumso#SuMSO_0000056> .
+                                       <https://www.w3id.org/sco#SCO_0000039> <https://w3id.org/sumso#SuMSO_0000052> ,
+                                                                              <https://w3id.org/sumso#SuMSO_0000056> .
 
 
 ###  https://w3id.org/sumso#SuMSO_0000089
@@ -4709,8 +4713,8 @@ https://scholar.harvard.edu/sen/publications/development-capability-expansion"""
                                        rdfs:label "complex system well-being"@en ;
                                        <http://www.w3.org/2004/02/skos/core#definition> "A disposition whose realization leads all complex system components to choose freely and in an integrable manner among alternative combinations of valuable and considered-valuable functionings (doings and beings) that they interdependently own and among which they can opt to live a life worthy of value and that has the motive to value as a part of the complex system to which they belong."@en ;
                                        <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> ;
-                                       <https://w3id.org/sco#SCO_0000039> <https://w3id.org/sumso#SuMSO_0000052> ,
-                                                                          <https://w3id.org/sumso#SuMSO_0000064> .
+                                       <https://www.w3id.org/sco#SCO_0000039> <https://w3id.org/sumso#SuMSO_0000052> ,
+                                                                              <https://w3id.org/sumso#SuMSO_0000064> .
 
 
 ###  https://w3id.org/sumso#SuMSO_0000090
@@ -5011,6 +5015,12 @@ To represent variations of quality/realizable with respect to different processe
 
 ###  https://www.w3id.org/climoo#ClimOO_0000063
 <https://www.w3id.org/climoo#ClimOO_0000063> rdf:type owl:Class .
+
+
+###  https://www.w3id.org/climoo#ClimOO_0000206
+<https://www.w3id.org/climoo#ClimOO_0000206> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000023> ;
+                                             <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom> "https://w3id.org/sumso#SuMSO_0000159" .
 
 
 ###  https://www.w3id.org/sco#SCO_0000003

@@ -18,7 +18,7 @@
                                            <https://ClimOO/climoo/imports/iao-imports#2025-06-18> ,
                                            <https://www.w3id.org/sco/sco-b#v1.1.0/sco-b> ;
                                <http://purl.org/dc/terms/creator> "Giorgio A. Ubbiali" ;
-                               <http://purl.org/dc/terms/description> "ClimOO is a domain ontology, modeling (micro-)plastic pollution, climate change and their interrelation, with a primary focus on local South Tyrolean (Italy) agricultural production."@en ;
+                               <http://purl.org/dc/terms/description> "ClimOO Ontology is a domain ontology, modeling (micro-)plastic pollution, climate change and their interrelation, with a primary focus on local South Tyrolean (Italy) agricultural production."@en ;
                                <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0/" ;
                                <http://purl.org/dc/terms/title> "ClimOO Ontology"@en ;
                                rdfs:comment "This ontology version complemented by the SDC-Ontology imports constitutes the initial core ontological module that we presented to project stakeholders and on which we built up the ClimOO Ontology."@en ,
@@ -55,8 +55,7 @@ Documentation webpage: https://www.w3id.org/climoo/docs"""@en ,
 
 
 ###  https://www.commoncoreontologies.org/ont00001805
-<https://www.commoncoreontologies.org/ont00001805> rdf:type owl:AnnotationProperty ;
-                                                   rdfs:subPropertyOf <http://purl.obolibrary.org/obo/RO_0002501> .
+<https://www.commoncoreontologies.org/ont00001805> rdf:type owl:AnnotationProperty .
 
 
 ###  https://www.commoncoreontologies.org/ont00001819
@@ -64,8 +63,7 @@ Documentation webpage: https://www.w3id.org/climoo/docs"""@en ,
 
 
 ###  https://www.commoncoreontologies.org/ont00001888
-<https://www.commoncoreontologies.org/ont00001888> rdf:type owl:AnnotationProperty ;
-                                                   rdfs:subPropertyOf <http://purl.obolibrary.org/obo/RO_0002501> .
+<https://www.commoncoreontologies.org/ont00001888> rdf:type owl:AnnotationProperty .
 
 
 #################################################################
@@ -115,8 +113,16 @@ Documentation webpage: https://www.w3id.org/climoo/docs"""@en ,
 <https://www.commoncoreontologies.org/ont00001803> rdfs:subPropertyOf <http://purl.obolibrary.org/obo/RO_0002427> .
 
 
+###  https://www.commoncoreontologies.org/ont00001805
+<https://www.commoncoreontologies.org/ont00001805> rdfs:subPropertyOf <http://purl.obolibrary.org/obo/RO_0002501> .
+
+
 ###  https://www.commoncoreontologies.org/ont00001819
 <https://www.commoncoreontologies.org/ont00001819> rdfs:subPropertyOf <http://purl.obolibrary.org/obo/RO_0002418> .
+
+
+###  https://www.commoncoreontologies.org/ont00001888
+<https://www.commoncoreontologies.org/ont00001888> rdfs:subPropertyOf <http://purl.obolibrary.org/obo/RO_0002501> .
 
 
 ###  https://www.commoncoreontologies.org/ont00001917

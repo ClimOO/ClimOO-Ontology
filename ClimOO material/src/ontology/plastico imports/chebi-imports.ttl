@@ -1,0 +1,350 @@
+@prefix : <http://purl.obolibrary.org/obo/climoo/imports/chebi_imports#> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix oboInOwl: <http://www.geneontology.org/formats/oboInOwl#> .
+@base <http://purl.obolibrary.org/obo/climoo/imports/chebi_imports> .
+
+<http://purl.obolibrary.org/obo/climoo/imports/chebi_imports> rdf:type owl:Ontology ;
+                                                               owl:versionIRI <http://purl.obolibrary.org/obo/climoo/imports/chebi_imports#2026-02-23> ;
+                                                               rdfs:comment "OntoFox did not fletched parthood axioms over the polymer and copolymer classes. We manually re-added these axioms."@en ,
+                                                                            """This file contains ClimOO Ontology imports fletched from the Chemical Entities of Biological Interest Ontology (ChEBI) via OntoFox (https://ontofox.hegroup.org/index.php).
+
+Ontology source: https://ontobee.org/ontology/CHEBI"""@en ;
+                                                               rdfs:seeAlso """The related Ontofox imput file.
+https://github.com/ClimOO/ClimOO-Ontology/tree/main/ClimOO%20material/src/ontology/imports/plastico%20imports/chebi-imports-ontofox-26/02/23"""@en ,
+                                                                            "https://www.ebi.ac.uk/chebi/" ;
+                                                               owl:versionInfo "2026-02-23" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.obolibrary.org/obo/IAO_0000115
+obo:IAO_0000115 rdf:type owl:AnnotationProperty ;
+                rdfs:label "definition" .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000412
+obo:IAO_0000412 rdf:type owl:AnnotationProperty ;
+                rdfs:label "imported from"@en .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#hasAlternativeId
+oboInOwl:hasAlternativeId rdf:type owl:AnnotationProperty ;
+                          rdfs:label "has_alternative_id" .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#hasDbXref
+oboInOwl:hasDbXref rdf:type owl:AnnotationProperty ;
+                   rdfs:label "database_cross_reference" .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#hasExactSynonym
+oboInOwl:hasExactSynonym rdf:type owl:AnnotationProperty ;
+                         rdfs:label "has_exact_synonym" .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#hasOBONamespace
+oboInOwl:hasOBONamespace rdf:type owl:AnnotationProperty ;
+                         rdfs:label "has_obo_namespace" .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym
+oboInOwl:hasRelatedSynonym rdf:type owl:AnnotationProperty ;
+                           rdfs:label "has_related_synonym" .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#id
+oboInOwl:id rdf:type owl:AnnotationProperty .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#inSubset
+oboInOwl:inSubset rdf:type owl:AnnotationProperty ;
+                  rdfs:label "in_subset" .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://purl.obolibrary.org/obo/BFO_0000051
+obo:BFO_0000051 rdf:type owl:ObjectProperty ,
+                         owl:TransitiveProperty ;
+                rdfs:label "has part" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://purl.obolibrary.org/obo/CHEBI_23367
+obo:CHEBI_23367 rdf:type owl:Class ;
+                rdfs:subClassOf obo:CHEBI_24431 ;
+                obo:IAO_0000115 "Any constitutionally or isotopically distinct atom, molecule, ion, ion pair, radical, radical ion, complex, conformer etc., identifiable as a separately distinguishable entity." ;
+                obo:IAO_0000412 obo:chebi.owl ;
+                oboInOwl:hasExactSynonym "molecular entity" ;
+                oboInOwl:hasOBONamespace "chebi_ontology" ;
+                oboInOwl:hasRelatedSynonym "entidad molecular" ,
+                                           "entidades moleculares" ,
+                                           "entite moleculaire" ,
+                                           "molecular entities" ,
+                                           "molecular entity" ,
+                                           "molekulare Entitaet" ;
+                oboInOwl:id "CHEBI:23367" ;
+                oboInOwl:inSubset <http://purl.oboInOwllibrary.org/oboInOwl/chebi/3_STAR> ;
+                rdfs:label "molecular entity" .
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_24431
+obo:CHEBI_24431 rdf:type owl:Class ;
+                obo:IAO_0000115 "A chemical entity is a physical entity of interest in chemistry including molecular entities, parts thereof, and chemical substances." ;
+                obo:IAO_0000412 obo:chebi.owl ;
+                oboInOwl:hasOBONamespace "chebi_ontology" ;
+                oboInOwl:hasRelatedSynonym "chemical entity" ;
+                oboInOwl:id "CHEBI:24431" ;
+                oboInOwl:inSubset <http://purl.oboInOwllibrary.org/oboInOwl/chebi/3_STAR> ;
+                rdfs:label "chemical entity" .
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_24432
+obo:CHEBI_24432 rdf:type owl:Class ;
+                rdfs:subClassOf obo:CHEBI_50906 ;
+                obo:IAO_0000115 "A role played by the molecular entity or part thereof within a biological context." ;
+                obo:IAO_0000412 obo:chebi.owl ;
+                oboInOwl:hasOBONamespace "chebi_ontology" ;
+                oboInOwl:hasRelatedSynonym "biological function" ;
+                oboInOwl:id "CHEBI:24432" ;
+                oboInOwl:inSubset <http://purl.oboInOwllibrary.org/oboInOwl/chebi/3_STAR> ;
+                rdfs:label "biological role" .
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_33839
+obo:CHEBI_33839 rdf:type owl:Class ;
+                rdfs:subClassOf obo:CHEBI_23367 ;
+                obo:IAO_0000115 "A macromolecule is a molecule of high relative molecular mass, the structure of which essentially comprises the multiple repetition of units derived, actually or conceptually, from molecules of low relative molecular mass." ;
+                obo:IAO_0000412 obo:chebi.owl ;
+                oboInOwl:hasDbXref "wikipedia.en:Macromolecule" ;
+                oboInOwl:hasExactSynonym "macromolecule" ;
+                oboInOwl:hasOBONamespace "chebi_ontology" ;
+                oboInOwl:hasRelatedSynonym "macromolecule" ,
+                                           "macromolecules" ,
+                                           "polymer" ,
+                                           "polymer molecule" ,
+                                           "polymers" ;
+                oboInOwl:id "CHEBI:33839" ;
+                oboInOwl:inSubset <http://purl.oboInOwllibrary.org/oboInOwl/chebi/3_STAR> ;
+                rdfs:label "macromolecule" .
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_35703
+obo:CHEBI_35703 rdf:type owl:Class ;
+                rdfs:subClassOf obo:CHEBI_24432 ;
+                obo:IAO_0000115 "A xenobiotic (Greek, <em>xenos</em> \"foreign\"; <em>bios</em> \"life\") is a compound that is foreign to a living organism. Principal xenobiotics include: drugs, carcinogens and various compounds that have been introduced into the environment by artificial means." ;
+                obo:IAO_0000412 obo:chebi.owl ;
+                oboInOwl:hasAlternativeId "CHEBI:10074" ,
+                                          "CHEBI:27333" ;
+                oboInOwl:hasDbXref "kegg.compound:C06708" ,
+                                   "wikipedia.en:Xenobiotic" ;
+                oboInOwl:hasExactSynonym "Xenobiotic" ,
+                                         "xenobiotic" ,
+                                         "xenobiotics" ;
+                oboInOwl:hasOBONamespace "chebi_ontology" ;
+                oboInOwl:hasRelatedSynonym "Xenobiotic" ,
+                                           "xenobiotic" ,
+                                           "xenobiotic compounds" ,
+                                           "xenobiotics" ;
+                oboInOwl:id "CHEBI:35703" ;
+                oboInOwl:inSubset <http://purl.oboInOwllibrary.org/oboInOwl/chebi/3_STAR> ;
+                rdfs:label "xenobiotic" .
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_50906
+obo:CHEBI_50906 rdf:type owl:Class ;
+                obo:IAO_0000115 "A role is particular behaviour which a material entity may exhibit." ;
+                obo:IAO_0000412 obo:chebi.owl ;
+                oboInOwl:hasOBONamespace "chebi_ontology" ;
+                oboInOwl:id "CHEBI:50906" ;
+                oboInOwl:inSubset <http://purl.oboInOwllibrary.org/oboInOwl/chebi/3_STAR> ;
+                rdfs:label "role" .
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_51086
+obo:CHEBI_51086 rdf:type owl:Class ;
+                rdfs:subClassOf obo:CHEBI_50906 ;
+                obo:IAO_0000115 "A role played by the molecular entity or part thereof within a chemical context." ;
+                obo:IAO_0000412 obo:chebi.owl ;
+                oboInOwl:hasOBONamespace "chebi_ontology" ;
+                oboInOwl:id "CHEBI:51086" ;
+                oboInOwl:inSubset <http://purl.oboInOwllibrary.org/oboInOwl/chebi/3_STAR> ;
+                rdfs:label "chemical role" .
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_52211
+obo:CHEBI_52211 rdf:type owl:Class ;
+                rdfs:subClassOf obo:CHEBI_24432 ;
+                obo:IAO_0000115 "A biological role relating to the normal mechanisms and their interactions within a living system." ;
+                obo:IAO_0000412 obo:chebi.owl ;
+                oboInOwl:hasOBONamespace "chebi_ontology" ;
+                oboInOwl:id "CHEBI:52211" ;
+                oboInOwl:inSubset <http://purl.oboInOwllibrary.org/oboInOwl/chebi/1_STAR> ;
+                rdfs:label "physiological role" .
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_53310
+obo:CHEBI_53310 rdf:type owl:Class ;
+                rdfs:subClassOf obo:CHEBI_33839 ;
+                obo:IAO_0000115 "A macromolecule derived from two or more species of monomer." ;
+                obo:IAO_0000412 obo:chebi.owl ;
+                oboInOwl:hasAlternativeId "CHEBI:53178" ;
+                oboInOwl:hasOBONamespace "chebi_ontology" ;
+                oboInOwl:hasRelatedSynonym "co-polymer" ,
+                                           "co-polymers" ,
+                                           "copolymer" ,
+                                           "copolymers" ,
+                                           "heteropolymer" ,
+                                           "heteropolymers" ;
+                oboInOwl:id "CHEBI:53310" ;
+                oboInOwl:inSubset <http://purl.oboInOwllibrary.org/oboInOwl/chebi/3_STAR> ;
+                rdfs:label "copolymer macromolecule" .
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_59999
+obo:CHEBI_59999 rdf:type owl:Class ;
+                rdfs:subClassOf obo:CHEBI_24431 ;
+                obo:IAO_0000115 "A chemical substance is a portion of matter of constant composition, composed of molecular entities of the same type or of different types." ;
+                obo:IAO_0000412 obo:chebi.owl ;
+                oboInOwl:hasOBONamespace "chebi_ontology" ;
+                oboInOwl:hasRelatedSynonym "Chemische Substanz" ;
+                oboInOwl:id "CHEBI:59999" ;
+                oboInOwl:inSubset <http://purl.oboInOwllibrary.org/oboInOwl/chebi/3_STAR> ;
+                rdfs:label "chemical substance" .
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_60004
+obo:CHEBI_60004 rdf:type owl:Class ;
+                rdfs:subClassOf obo:CHEBI_59999 ;
+                obo:IAO_0000115 "A mixture is a chemical substance composed of multiple molecules, at least two of which are of a different kind." ;
+                obo:IAO_0000412 obo:chebi.owl ;
+                oboInOwl:hasOBONamespace "chebi_ontology" ;
+                oboInOwl:hasRelatedSynonym "Mischung" ;
+                oboInOwl:id "CHEBI:60004" ;
+                oboInOwl:inSubset <http://purl.oboInOwllibrary.org/oboInOwl/chebi/3_STAR> ;
+                rdfs:label "mixture" .
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_60027
+obo:CHEBI_60027 rdf:type owl:Class ;
+                rdfs:subClassOf obo:CHEBI_60004 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000051 ;
+                                  owl:someValuesFrom obo:CHEBI_33839
+                                ] ;
+                obo:IAO_0000115 "A polymer is a mixture, which is composed of macromolecules of different kinds and which may be differentiated by composition, length, degree of branching etc.." ;
+                obo:IAO_0000412 obo:chebi.owl ;
+                oboInOwl:hasDbXref "wikipedia.en:Polymer" ;
+                oboInOwl:hasOBONamespace "chebi_ontology" ;
+                oboInOwl:hasRelatedSynonym "Kunststoff" ,
+                                           "Polymer" ;
+                oboInOwl:id "CHEBI:60027" ;
+                oboInOwl:inSubset <http://purl.oboInOwllibrary.org/oboInOwl/chebi/3_STAR> ;
+                rdfs:label "polymer" .
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_60804
+obo:CHEBI_60804 rdf:type owl:Class ;
+                rdfs:subClassOf obo:CHEBI_60027 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000051 ;
+                                  owl:someValuesFrom obo:CHEBI_53310
+                                ] ;
+                obo:IAO_0000115 "A polymer, composed of copolymer macromolecules." ;
+                obo:IAO_0000412 obo:chebi.owl ;
+                oboInOwl:hasOBONamespace "chebi_ontology" ;
+                oboInOwl:hasRelatedSynonym "co-polymer" ,
+                                           "co-polymers" ,
+                                           "copolymers" ;
+                oboInOwl:id "CHEBI:60804" ;
+                oboInOwl:inSubset <http://purl.oboInOwllibrary.org/oboInOwl/chebi/3_STAR> ;
+                rdfs:label "copolymer" .
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_64909
+obo:CHEBI_64909 rdf:type owl:Class ;
+                rdfs:subClassOf obo:CHEBI_24432 ;
+                obo:IAO_0000115 "Any substance that causes disturbance to organisms by chemical reaction or other activity on the molecular scale, when a sufficient quantity is absorbed by the organism." ;
+                obo:IAO_0000412 obo:chebi.owl ;
+                oboInOwl:hasDbXref "wikipedia.en:Poison" ;
+                oboInOwl:hasOBONamespace "chebi_ontology" ;
+                oboInOwl:hasRelatedSynonym "poisonous agent" ,
+                                           "poisonous agents" ,
+                                           "poisonous substance" ,
+                                           "poisonous substances" ,
+                                           "poisons" ,
+                                           "toxic agent" ,
+                                           "toxic agents" ,
+                                           "toxic substance" ,
+                                           "toxic substances" ;
+                oboInOwl:id "CHEBI:64909" ;
+                oboInOwl:inSubset <http://purl.oboInOwllibrary.org/oboInOwl/chebi/3_STAR> ;
+                rdfs:label "poison" .
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_77853
+obo:CHEBI_77853 rdf:type owl:Class ;
+                rdfs:subClassOf obo:CHEBI_78298 ;
+                obo:IAO_0000115 "Any environmental contaminant that is resistant to environmental degradation through photolytic, biological or chemical processes. Such substances can have significant impact on health and the environment, as they persist in the environment, bioaccumulate in animal tissue and so biomagnify in food chains." ;
+                obo:IAO_0000412 obo:chebi.owl ;
+                oboInOwl:hasDbXref "wikipedia.en:Persistant_organic_pollutant" ;
+                oboInOwl:hasOBONamespace "chebi_ontology" ;
+                oboInOwl:hasRelatedSynonym "POP" ,
+                                           "POPs" ,
+                                           "persistent organic pollutants" ;
+                oboInOwl:id "CHEBI:77853" ;
+                oboInOwl:inSubset <http://purl.oboInOwllibrary.org/oboInOwl/chebi/3_STAR> ;
+                rdfs:label "persistent organic pollutant" .
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_78295
+obo:CHEBI_78295 rdf:type owl:Class ;
+                rdfs:subClassOf obo:CHEBI_52211 ;
+                obo:IAO_0000115 "A physiological role played by any substance that is distributed in foodstuffs. It includes materials derived from plants or animals, such as vitamins or minerals, as well as environmental contaminants." ;
+                obo:IAO_0000412 obo:chebi.owl ;
+                oboInOwl:hasOBONamespace "chebi_ontology" ;
+                oboInOwl:hasRelatedSynonym "dietary component" ,
+                                           "dietary components" ,
+                                           "food components" ;
+                oboInOwl:id "CHEBI:78295" ;
+                oboInOwl:inSubset <http://purl.oboInOwllibrary.org/oboInOwl/chebi/3_STAR> ;
+                rdfs:label "food component" .
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_78298
+obo:CHEBI_78298 rdf:type owl:Class ;
+                rdfs:subClassOf obo:CHEBI_51086 ;
+                obo:IAO_0000115 "Any minor or unwanted substance introduced into the environment that can have undesired effects." ;
+                obo:IAO_0000412 obo:chebi.owl ;
+                oboInOwl:hasOBONamespace "chebi_ontology" ;
+                oboInOwl:hasRelatedSynonym "environmental contaminants" ;
+                oboInOwl:id "CHEBI:78298" ;
+                oboInOwl:inSubset <http://purl.oboInOwllibrary.org/oboInOwl/chebi/3_STAR> ;
+                rdfs:label "environmental contaminant" .
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_78299
+obo:CHEBI_78299 rdf:type owl:Class ;
+                rdfs:subClassOf obo:CHEBI_78295 ,
+                                obo:CHEBI_78298 ;
+                obo:IAO_0000115 "Any unwanted chemical in food. The term includes agrochemicals and industrial chemicals that may contaminate foodstuffs during their production, transportation or storage." ;
+                obo:IAO_0000412 obo:chebi.owl ;
+                oboInOwl:hasOBONamespace "chebi_ontology" ;
+                oboInOwl:hasRelatedSynonym "environmental food contaminants" ;
+                oboInOwl:id "CHEBI:78299" ;
+                oboInOwl:inSubset <http://purl.oboInOwllibrary.org/oboInOwl/chebi/3_STAR> ;
+                rdfs:label "environmental food contaminant" .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
