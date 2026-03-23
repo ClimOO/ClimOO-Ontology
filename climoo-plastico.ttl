@@ -8,16 +8,16 @@
 
 <https://www.w3id.org/climoo/climoo-plastico> rdf:type owl:Ontology ;
                                                owl:versionIRI :V1.0.0 ;
-                                               owl:imports <https://raw.githubusercontent.com/ClimOO/ClimOO-Ontology/refs/heads/main/ClimOO%20material/src/ontology/plastico%20imports//bionik-imports.ttl> ,
-                                                           <http://ClimOO/climoo/imports/cco-imports#2026-02-27> ,
-                                                           <http://ClimOO/climoo/imports/envo-imports/envo-imports#2026-02-24> ,
-                                                           <http://ClimOO/climoo/imports/obi-imports#2026-02-27> ,
-                                                           <http://ClimOO/climoo/imports/sumso-imports#26-02-28> ,
-                                                           <http://purl.obolibrary.org/obo/climoo/imports/chebi_imports#2026-02-23> ,
-                                                           <http://purl.obolibrary.org/obo/climoo/imports/pato_imports#2026-02-24> ,
-                                                           <http://purl.obolibrary.org/obo/climoo/imports/ro-imports/ro-imports-merged#2026-02-28> ,
-                                                           <http://purl.obolibrary.org/obo/climoo/imports/sdgio-imports#2026-02-24> ,
-                                                           <https://ClimOO/climoo/imports/iao-imports#2026-02-27> ,
+                                               owl:imports <https://raw.githubusercontent.com/ClimOO/ClimOO-Ontology/refs/heads/main/ClimOO%20material/src/ontology/plastico%20imports/bionik-imports.ttl> ,
+                                                           <https://raw.githubusercontent.com/ClimOO/ClimOO-Ontology/refs/heads/main/ClimOO%20material/src/ontology/plastico%20imports/cco-imports.ttl> ,
+                                                           <https://raw.githubusercontent.com/ClimOO/ClimOO-Ontology/refs/heads/main/ClimOO%20material/src/ontology/plastico%20imports/envo-imports.ttl> ,
+                                                           <https://raw.githubusercontent.com/ClimOO/ClimOO-Ontology/refs/heads/main/ClimOO%20material/src/ontology/plastico%20imports/obi-imports.ttl> ,
+                                                           <https://raw.githubusercontent.com/ClimOO/ClimOO-Ontology/refs/heads/main/ClimOO%20material/src/ontology/plastico%20imports/sumso-imports.ttl> ,
+                                                           <https://raw.githubusercontent.com/ClimOO/ClimOO-Ontology/refs/heads/main/ClimOO%20material/src/ontology/plastico%20imports/chebi_imports.ttl> ,
+                                                           <https://raw.githubusercontent.com/ClimOO/ClimOO-Ontology/refs/heads/main/ClimOO%20material/src/ontology/plastico%20imports/pato_imports.ttl> ,
+                                                           <https://raw.githubusercontent.com/ClimOO/ClimOO-Ontology/refs/heads/main/ClimOO%20material/src/ontology/plastico%20imports/ro-imports-merged.ttl> ,
+                                                           <https://raw.githubusercontent.com/ClimOO/ClimOO-Ontology/refs/heads/main/ClimOO%20material/src/ontology/plastico%20imports/sdgio-imports.ttl> ,
+                                                           <https://raw.githubusercontent.com/ClimOO/ClimOO-Ontology/refs/heads/main/ClimOO%20material/src/ontology/plastico%20imports/iao-imports.ttl> ,
                                                            <https://www.w3id.org/sco/sco-b#v1.1.0/sco-b> ;
                                                <http://purl.org/dc/terms/contributor> "Giorgio A. Ubbiali" ,
                                                                                       "Ludger Jansen" ;
