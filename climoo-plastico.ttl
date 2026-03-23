@@ -8,7 +8,7 @@
 
 <https://www.w3id.org/climoo/climoo-plastico> rdf:type owl:Ontology ;
                                                owl:versionIRI :V1.0.0 ;
-                                               owl:imports <http://ClimOO/climoo/imports/bionik-imports#2026-02-23> ,
+                                               owl:imports <https://raw.githubusercontent.com/ClimOO/ClimOO-Ontology/refs/heads/main/ClimOO%20material/src/ontology/plastico%20imports//bionik-imports.ttl> ,
                                                            <http://ClimOO/climoo/imports/cco-imports#2026-02-27> ,
                                                            <http://ClimOO/climoo/imports/envo-imports/envo-imports#2026-02-24> ,
                                                            <http://ClimOO/climoo/imports/obi-imports#2026-02-27> ,
