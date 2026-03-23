@@ -1,0 +1,323 @@
+@prefix : <http://purl.obolibrary.org/obo/climoo/envo_imports/envo_piecesofplastic#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix oboInOwl: <http://www.geneontology.org/formats/oboInOwl#> .
+@base <http://purl.obolibrary.org/obo/climoo/envo_imports/envo_piecesofplastic> .
+
+<http://purl.obolibrary.org/obo/climoo/envo_imports/envo_piecesofplastic> rdf:type owl:Ontology ;
+                                                                           owl:versionIRI <http://purl.obolibrary.org/obo/climoo/envo_imports/envo_piecesofplastic#2026-02-24> ;
+                                                                           rdfs:comment """This file contains ClimOO Ontology imports fletched from the Environment Ontology (EnvO) via OntoFox (https://ontofox.hegroup.org/index.php).
+
+Ontology source: https://ontobee.org/ontology/ENVO"""@en ;
+                                                                           rdfs:seeAlso """The related Ontofox imput file.
+https://github.com/ClimOO/ClimOO-Ontology/tree/main/ClimOO%20material/src/ontology/imports/plastico%20imports/envo-imports-2-ontofox"""@en ,
+                                                                                        "https://github.com/EnvironmentOntology/envo" ;
+                                                                           owl:versionInfo "2026-02-24" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.obolibrary.org/obo/IAO_0000115
+obo:IAO_0000115 rdf:type owl:AnnotationProperty ;
+                rdfs:label "definition" .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000412
+obo:IAO_0000412 rdf:type owl:AnnotationProperty ;
+                rdfs:label "imported from"@en .
+
+
+###  http://purl.org/dc/elements/1.1/contributor
+dc:contributor rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/creator
+dc:creator rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/date
+dc:date rdf:type owl:AnnotationProperty .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#hasExactSynonym
+oboInOwl:hasExactSynonym rdf:type owl:AnnotationProperty ;
+                         rdfs:label "has_exact_synonym" .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym
+oboInOwl:hasNarrowSynonym rdf:type owl:AnnotationProperty ;
+                          rdfs:label "has_narrow_synonym" .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym
+oboInOwl:hasRelatedSynonym rdf:type owl:AnnotationProperty ;
+                           rdfs:label "has_related_synonym" .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#inSubset
+oboInOwl:inSubset rdf:type owl:AnnotationProperty ;
+                  rdfs:label "in_subset" .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#comment
+rdfs:comment rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#label
+rdfs:label rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://purl.obolibrary.org/obo/BFO_0000030
+obo:BFO_0000030 rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/ENVO_01000776
+obo:ENVO_01000776 rdf:type owl:Class ;
+                  rdfs:subClassOf obo:BFO_0000030 ;
+                  obo:IAO_0000115 "A mass of solid material which is primarily composed of plastic."@en ;
+                  obo:IAO_0000412 obo:envo.owl ;
+                  dc:contributor <https://orcid.org/0000-0002-2996-719X> ,
+                                 <https://orcid.org/0000-0002-8166-0486> ,
+                                 <https://orcid.org/0000-0003-1072-8081> ;
+                  oboInOwl:hasExactSynonym "Plastikstück"@de ,
+                                           "pedazo de plástico"@es ,
+                                           "pezzo di plastica"@it ;
+                  oboInOwl:inSubset "envoPlastics"@es ;
+                  rdfs:comment """ClimOO Ontology:
+We imported this hierarchy of EnvO classes with the purpose of including an alternative system of classification of plastic debris particles and mapping it with that proposed by Hartmann et al. (2019), covered within the ClimOO Ontology. The alignment applies only with regard to particle size as a matter of example.
+
+EnvO classes for plastic debris particles do not present axioms besides the subsumption relation to the “piece of plastic” class. Class meaning concerning particle size only resides within the definitions.
+
+We import the “piece of plastic” class without including the related axiomatization and subsume this class directly to BFO: object class, as we imported it solely for grouping purposes. It is not relevant for the alignment."""@en ;
+                  rdfs:label "piece of plastic"@en .
+
+
+###  http://purl.obolibrary.org/obo/ENVO_01000777
+obo:ENVO_01000777 rdf:type owl:Class ;
+                  rdfs:subClassOf obo:ENVO_06105010 ;
+                  obo:IAO_0000115 "A plastic pellet which is produced such that its size allows it to be rapidly melted and used as input for further downstream manufacturing processes."@en ;
+                  obo:IAO_0000412 obo:envo.owl ;
+                  dc:contributor <https://orcid.org/0000-0002-2996-719X> ,
+                                 <https://orcid.org/0000-0002-4366-3088> ;
+                  oboInOwl:inSubset "envoPlastics" ;
+                  rdfs:label "nurdle"@en .
+
+
+###  http://purl.obolibrary.org/obo/ENVO_01000944
+obo:ENVO_01000944 rdf:type owl:Class ;
+                  rdfs:subClassOf obo:ENVO_01000776 ;
+                  obo:IAO_0000115 "A piece of plastic which has a diameter less than five millimetres." ;
+                  obo:IAO_0000412 obo:envo.owl ;
+                  dc:contributor <https://orcid.org/0000-0002-2996-719X> ,
+                                 <https://orcid.org/0000-0002-8166-0486> ,
+                                 <https://orcid.org/0000-0003-1072-8081> ;
+                  oboInOwl:hasRelatedSynonym "microplastic" ;
+                  oboInOwl:inSubset "envoPlastics" ;
+                  rdfs:comment "This classification is based on the thresholds detailed in GESAMP report # 99 on recommendation from the SDG 14 indicator team. While the definition is in accordance with the common use of this term (as per GESAMP report # 99), alternative size classifications exist. Alternative classifications are a piece of plastic which is between 1 and 5 millimetres in diameter, a piece of plastic which has a diameter less than 1 millimetre, or a piece of plastic which has a diameter greater than 330 micrometres. The use of the word diameter in this case was understood to mean the generalised form of diameter, i.e. the largest distance between two points belonging to an object."@en ;
+                  rdfs:label "microplastic particle"@en .
+
+
+###  http://purl.obolibrary.org/obo/ENVO_01000945
+obo:ENVO_01000945 rdf:type owl:Class ;
+                  rdfs:subClassOf obo:ENVO_01000944 ;
+                  obo:IAO_0000115 "A microplastic particle which is the direct output of a manufacturing process." ;
+                  obo:IAO_0000412 obo:envo.owl ;
+                  dc:contributor <https://orcid.org/0000-0002-2996-719X> ,
+                                 <https://orcid.org/0000-0002-8166-0486> ,
+                                 <https://orcid.org/0000-0003-1072-8081> ;
+                  oboInOwl:hasExactSynonym "Primäres Mikroplastik"@de ,
+                                           "microplastica primaria"@it ,
+                                           "microplástico primario"@es ;
+                  oboInOwl:hasRelatedSynonym "microplastic" ;
+                  oboInOwl:inSubset "envoPlastics" ;
+                  rdfs:label "primary microplastic particle"@en .
+
+
+###  http://purl.obolibrary.org/obo/ENVO_01000946
+obo:ENVO_01000946 rdf:type owl:Class ;
+                  rdfs:subClassOf obo:ENVO_01000944 ;
+                  obo:IAO_0000115 "A microplastic particle which is derived from the breakdown of larger plastic debris." ;
+                  obo:IAO_0000412 obo:envo.owl ;
+                  dc:contributor <https://orcid.org/0000-0002-2996-719X> ,
+                                 <https://orcid.org/0000-0002-8166-0486> ,
+                                 <https://orcid.org/0000-0003-1072-8081> ;
+                  oboInOwl:hasExactSynonym "Sekundäres Mikroplastik"@de ,
+                                           "microplastica secondaria"@it ,
+                                           "microplástico secundario"@es ;
+                  oboInOwl:hasRelatedSynonym "microplastic" ;
+                  oboInOwl:inSubset "envoPlastics" ;
+                  rdfs:comment "The debris that make up the Great Pacific Garbage Patch constantly release microplastics as they break down." ;
+                  rdfs:label "secondary microplastic particle"@en .
+
+
+###  http://purl.obolibrary.org/obo/ENVO_06105006
+obo:ENVO_06105006 rdf:type owl:Class ;
+                  rdfs:subClassOf obo:ENVO_01000776 ;
+                  obo:IAO_0000115 "A piece of plastic which has a matrix- or sponge-like structure with numerous, hollow internal spaces."@en ;
+                  obo:IAO_0000412 obo:envo.owl ;
+                  dc:contributor <https://orcid.org/0000-0002-2996-719X> ,
+                                 <https://orcid.org/0000-0002-4366-3088> ,
+                                 <https://orcid.org/0000-0003-1072-8081> ;
+                  dc:creator <https://orcid.org/0000-0002-8166-0486> ;
+                  dc:date "2021-05-04T13:42:05Z"^^xsd:dateTime ;
+                  oboInOwl:hasExactSynonym "Plastikschaumstück"@de ,
+                                           "Schaumstoffstück"@de ;
+                  oboInOwl:inSubset "envoPlastics"@en ;
+                  rdfs:comment "Depending on the type of plastic used and the organisation of the foam, a piece of plastic foam can show elastic properties (even if the plastic it is made out of does not have elastic properties)."@en ;
+                  rdfs:label "piece of plastic foam"@en .
+
+
+###  http://purl.obolibrary.org/obo/ENVO_06105007
+obo:ENVO_06105007 rdf:type owl:Class ;
+                  rdfs:subClassOf obo:ENVO_01000776 ;
+                  obo:IAO_0000115 "A piece of plastic which is flexible, thin, and planar."@en ;
+                  obo:IAO_0000412 obo:envo.owl ;
+                  dc:contributor <https://orcid.org/0000-0002-2996-719X> ,
+                                 <https://orcid.org/0000-0003-1072-8081> ;
+                  dc:creator <https://orcid.org/0000-0002-8166-0486> ;
+                  dc:date "2021-05-04T13:58:27Z"^^xsd:dateTime ;
+                  oboInOwl:hasExactSynonym "Plastikfolie"@de ,
+                                           "pellicola di plastica"@it ,
+                                           "película de plástico"@es ;
+                  oboInOwl:hasNarrowSynonym "Kunststofffolie"@de ;
+                  oboInOwl:hasRelatedSynonym "plastic membrane"@en ,
+                                             "plastic sheet"@en ;
+                  oboInOwl:inSubset "envoPlastics"@en ;
+                  rdfs:comment "The edge can be either smooth or angular."@en ;
+                  rdfs:label "plastic film"@en .
+
+
+###  http://purl.obolibrary.org/obo/ENVO_06105008
+obo:ENVO_06105008 rdf:type owl:Class ;
+                  rdfs:subClassOf obo:ENVO_01000776 ;
+                  obo:IAO_0000115 "A piece of plastic which 1) is hard, 2) has an irregular shape, and 3) has broken off of a larger piece of plastic."@en ;
+                  obo:IAO_0000412 obo:envo.owl ;
+                  dc:contributor <https://orcid.org/0000-0002-2996-719X> ,
+                                 <https://orcid.org/0000-0003-1072-8081> ;
+                  dc:creator <https://orcid.org/0000-0002-8166-0486> ;
+                  dc:date "2021-05-04T14:37:37Z"^^xsd:dateTime ;
+                  oboInOwl:hasExactSynonym "Plastikfragment"@de ,
+                                           "fragmento de plástico"@es ,
+                                           "frammento di plastica"@it ,
+                                           "plastic flake"@en ,
+                                           "plastic granule"@en ;
+                  oboInOwl:inSubset "envoPlastics"@en ;
+                  rdfs:comment "To avoid ambiguity, we are being stricter with the \"has broken off of a larger piece of plastic\" aspect compared to the GESAMP report, which originally stated \"having appearance of being broken down from a larger piece of litter\"."@en ;
+                  rdfs:label "plastic fragment"@en .
+
+
+###  http://purl.obolibrary.org/obo/ENVO_06105009
+obo:ENVO_06105009 rdf:type owl:Class ;
+                  rdfs:subClassOf obo:ENVO_01000776 ;
+                  obo:IAO_0000115 "A piece of plastic which is linear and flexible."@en ;
+                  obo:IAO_0000412 obo:envo.owl ;
+                  dc:contributor <https://orcid.org/0000-0002-2996-719X> ,
+                                 <https://orcid.org/0000-0003-1072-8081> ;
+                  dc:creator <https://orcid.org/0000-0002-8166-0486> ;
+                  dc:date "2021-05-04T14:40:36Z"^^xsd:dateTime ;
+                  oboInOwl:hasExactSynonym "plastic fibre"@en ,
+                                           "plastic filament"@en ,
+                                           "plastic strand"@en ;
+                  oboInOwl:inSubset "envoPlastics"@en ;
+                  rdfs:label "plastic line"@en .
+
+
+###  http://purl.obolibrary.org/obo/ENVO_06105010
+obo:ENVO_06105010 rdf:type owl:Class ;
+                  rdfs:subClassOf obo:ENVO_01000776 ;
+                  obo:IAO_0000115 "A piece of plastic which is 1) hard, 2) has a smooth external surface, and 3) has a roughly spherical or granular shape."@en ;
+                  obo:IAO_0000412 obo:envo.owl ;
+                  dc:contributor <https://orcid.org/0000-0002-2996-719X> ,
+                                 <https://orcid.org/0000-0003-1072-8081> ;
+                  dc:creator <https://orcid.org/0000-0002-8166-0486> ;
+                  dc:date "2021-05-04T14:42:15Z"^^xsd:dateTime ;
+                  oboInOwl:hasExactSynonym "mermaid's tears"@en ,
+                                           "pellet de plástico"@es ,
+                                           "pellet di plastica"@it ,
+                                           "resin bead"@en ;
+                  oboInOwl:inSubset "envoPlastics"@en ;
+                  rdfs:label "plastic pellet"@en .
+
+
+###  http://purl.obolibrary.org/obo/ENVO_06105026
+obo:ENVO_06105026 rdf:type owl:Class ;
+                  rdfs:subClassOf obo:ENVO_06105006 ;
+                  obo:IAO_0000115 "A piece of plastic foam which has a near-spherical or granular shape."@en ;
+                  obo:IAO_0000412 obo:envo.owl ;
+                  dc:contributor <https://orcid.org/0000-0002-2996-719X> ,
+                                 <https://orcid.org/0000-0002-4366-3088> ,
+                                 <https://orcid.org/0000-0003-1072-8081> ;
+                  dc:creator <https://orcid.org/0000-0002-8166-0486> ;
+                  dc:date "2021-05-13T14:28:02Z"^^xsd:dateTime ;
+                  oboInOwl:inSubset "envoPlastics"@en ;
+                  rdfs:comment "These granules are usually white or opaque but can be any color."@en ;
+                  rdfs:label "granule of plastic foam"@en .
+
+
+###  http://purl.obolibrary.org/obo/ENVO_06105102
+obo:ENVO_06105102 rdf:type owl:Class ;
+                  rdfs:subClassOf obo:ENVO_01000776 ;
+                  obo:IAO_0000115 "A piece of plastic which is greater than 1 metre in its longest dimension."@en ;
+                  obo:IAO_0000412 obo:envo.owl ;
+                  dc:contributor <https://orcid.org/0000-0002-2996-719X> ,
+                                 <https://orcid.org/0000-0002-8166-0486> ;
+                  dc:creator <https://orcid.org/0000-0003-1072-8081> ;
+                  dc:date "2021-04-08T13:55:24Z"^^xsd:dateTime ;
+                  oboInOwl:inSubset "envoPlastics" ;
+                  rdfs:comment "This classification is based on the thresholds detailed in GESAMP report # 99 on recommendation from the SDG 14 indicator team."@en ;
+                  rdfs:label "megaplastic particle"@en .
+
+
+###  http://purl.obolibrary.org/obo/ENVO_06105103
+obo:ENVO_06105103 rdf:type owl:Class ;
+                  rdfs:subClassOf obo:ENVO_01000776 ;
+                  obo:IAO_0000115 "A piece of plastic which is between 25 and 1000 millimetres in its longest dimension."@en ;
+                  obo:IAO_0000412 obo:envo.owl ;
+                  dc:contributor <https://orcid.org/0000-0002-2996-719X> ,
+                                 <https://orcid.org/0000-0002-8166-0486> ;
+                  dc:creator <https://orcid.org/0000-0003-1072-8081> ;
+                  dc:date "2021-04-08T14:01:58Z"^^xsd:dateTime ;
+                  oboInOwl:inSubset "envoPlastics" ;
+                  rdfs:comment "This classification is based on the thresholds detailed in GESAMP report # 99 on recommendation from the SDG 14 indicator team. While the definition is in accordance with the common use of this term (as per GESAMP report # 99), alternative size classifications exist and are detailed in the same report. An alternative classification is a piece of plastic which is between 25 and 50 millimetres in its longest dimension."@en ;
+                  rdfs:label "macroplastic particle"@en .
+
+
+###  http://purl.obolibrary.org/obo/ENVO_06105104
+obo:ENVO_06105104 rdf:type owl:Class ;
+                  rdfs:subClassOf obo:ENVO_01000776 ;
+                  obo:IAO_0000115 "A piece of plastic which is between 5 and 25 millimetres in its longest dimension."@en ;
+                  obo:IAO_0000412 obo:envo.owl ;
+                  dc:contributor <https://orcid.org/0000-0002-2996-719X> ,
+                                 <https://orcid.org/0000-0002-8166-0486> ;
+                  dc:creator <https://orcid.org/0000-0003-1072-8081> ;
+                  dc:date "2021-04-08T14:04:53Z"^^xsd:dateTime ;
+                  oboInOwl:inSubset "envoPlastics" ;
+                  rdfs:comment "This classification is based on the thresholds detailed in GESAMP report # 99 on recommendation from the SDG 14 indicator team. While the definition is in accordance with the common use of this term (as per GESAMP report # 99), alternative size classifications exist. Alternatives classifications are a piece of plastic which is less than 25 millimetres in its longest dimension, or a piece of plastic which is between 1 and 25 millimetres in its longest dimension."@en ;
+                  rdfs:label "mesoplastic particle"@en .
+
+
+###  http://purl.obolibrary.org/obo/ENVO_06105105
+obo:ENVO_06105105 rdf:type owl:Class ;
+                  rdfs:subClassOf obo:ENVO_01000776 ;
+                  obo:IAO_0000115 "A piece of plastic which has a diameter less than 1 micrometre."@en ;
+                  obo:IAO_0000412 obo:envo.owl ;
+                  dc:contributor <https://orcid.org/0000-0002-2996-719X> ,
+                                 <https://orcid.org/0000-0002-8166-0486> ;
+                  dc:creator <https://orcid.org/0000-0003-1072-8081> ;
+                  dc:date "2021-04-08T14:07:41Z"^^xsd:dateTime ;
+                  oboInOwl:inSubset "envoPlastics" ;
+                  rdfs:comment "This classification is based on the thresholds detailed in GESAMP report # 99 on recommendation from the SDG 14 indicator team. While the definition is in accordance with the common use of this term (as per GESAMP report # 99), alternative size classifications exist. An alternative classification is a piece of plastic which has a diameter less than 100 nanometres. The GESAMP report states that it assumes a spherical shape for this size classification, which was understood to mean the generalised form of diameter, i.e. the largest distance between two points belonging to an object."@en ;
+                  rdfs:label "nanoplastic particle"@en .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi

@@ -1,0 +1,27 @@
+[URI of the OWL(RDF/XML) output file]
+http://purl.obolibrary.org/obo/climoo/imports/pato_imports
+
+[Source ontology]
+ENVO
+
+[Low level source term URIs]
+# terms
+http://purl.obolibrary.org/obo/PATO_0001241 #physical object quality
+http://purl.obolibrary.org/obo/PATO_0000122 #length
+http://purl.obolibrary.org/obo/PATO_0001708
+http://purl.obolibrary.org/obo/PATO_0000117
+http://purl.obolibrary.org/obo/PATO_0000051
+
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/PATO_0000051
+subClassOf http://purl.obolibrary.org/obo/PATO_0001241
+h
+
+[Source term retrieval setting]
+includeNoIntermediates
+
+[Source annotation URIs]
+includeAllAxioms
+
+###########################################

@@ -1,0 +1,134 @@
+@prefix : <http://purl.obolibrary.org/obo/climoo/imports/sdgio-imports#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://purl.obolibrary.org/obo/climoo/imports/sdgio-imports> .
+
+<http://purl.obolibrary.org/obo/climoo/imports/sdgio-imports> rdf:type owl:Ontology ;
+                                                               owl:versionIRI <http://purl.obolibrary.org/obo/climoo/imports/sdgio-imports#2026-02-24> ;
+                                                               rdfs:comment """This file contains ClimOO Ontology imports from the Sustinable Development Goals Interface Ontology (SDGIO). Imports were manually collected and revised.
+
+Ontology source: https://raw.githubusercontent.com/SDG-InterfaceOntology/sdgio/refs/heads/master/sdgio.owl"""@en ;
+                                                               owl:versionInfo "2026-02-24" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.obolibrary.org/obo/IAO_0000114
+<http://purl.obolibrary.org/obo/IAO_0000114> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000115
+<http://purl.obolibrary.org/obo/IAO_0000115> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000116
+<http://purl.obolibrary.org/obo/IAO_0000116> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000119
+<http://purl.obolibrary.org/obo/IAO_0000119> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.unep.org/sdg/SDGIO_00000064
+<http://purl.unep.org/sdg/SDGIO_00000064> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.unep.org/sdg/SDGIO_00000066
+<http://purl.unep.org/sdg/SDGIO_00000066> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.unep.org/sdg/SDGIO_00010058
+<http://purl.unep.org/sdg/SDGIO_00010058> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym
+<http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+rdf:type rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://purl.obolibrary.org/obo/BFO_0000054
+<http://purl.obolibrary.org/obo/BFO_0000054> rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://purl.obolibrary.org/obo/BFO_0000015
+<http://purl.obolibrary.org/obo/BFO_0000015> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000016
+<http://purl.obolibrary.org/obo/BFO_0000016> rdf:type owl:Class .
+
+
+###  http://purl.unep.org/sdg/SDGIO_00000014
+<http://purl.unep.org/sdg/SDGIO_00000014> rdf:type owl:Class ;
+                                          rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000015> ;
+                                          <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000428> ;
+                                          <http://purl.obolibrary.org/obo/IAO_0000115> "A process which is causally within or downstream of another process whose direct or indirect effects cause one or more entities to realise one or more of their dispositions." ;
+                                          <http://purl.obolibrary.org/obo/IAO_0000116> "The semantics of this class are being discussed and are very likely to change. Obsolescence is possible." ,
+                                                                                       """This class may be replaced by a class in EXO, pending a clarification on the scope of its meaning. Right now it is essentially the same as 'interaction'.
+https://github.com/SDG-InterfaceOntology/sdgio/issues/21""" ;
+                                          <http://purl.unep.org/sdg/SDGIO_00000064> "https://uneplive.unep.org/community/discussion/view/23253/exposure" ;
+                                          <http://purl.unep.org/sdg/SDGIO_00010058> "A process during which an entity is impacted by some agent or preceeding event." ;
+                                          <http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> "exposure" ;
+                                          rdfs:comment "Consider that when \"E died of exposure to P\", E died as an outcome of the processes which were initiated by E's participation in P, in which E's dispositions to react to P (or its parts or participants) were realised." ;
+                                          rdfs:label "exposure process"@en .
+
+
+###  http://purl.unep.org/sdg/SDGIO_00000020
+<http://purl.unep.org/sdg/SDGIO_00000020> rdf:type owl:Class ;
+                                          rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000016> ;
+                                          <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000125> ;
+                                          <http://purl.obolibrary.org/obo/IAO_0000115> "A disposition of a bearer to realise one or more of its vulnerabilities when participating in a process which exposes the bearer to a hazard or combination of hazards." ;
+                                          <http://purl.obolibrary.org/obo/IAO_0000116> "https://github.com/SDG-InterfaceOntology/sdgio/issues/22" ;
+                                          <http://purl.unep.org/sdg/SDGIO_00000064> "https://uneplive.unep.org/community/discussion/view/23229/risk" ;
+                                          <http://purl.unep.org/sdg/SDGIO_00010058> "The possibility that an entity's vulnerabilities will be realised when exposed to a hazard." ;
+                                          rdfs:comment "Risk is increased when harm or damage is realised and when an entity is likely to encounter a hazard in some process.  The probability of this disposition being realised can be assigned on the information or data level." ;
+                                          rdfs:label "risk"@en .
+
+
+###  http://purl.unep.org/sdg/SDGIO_00000024
+<http://purl.unep.org/sdg/SDGIO_00000024> rdf:type owl:Class ;
+                                          rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000016> ,
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000054> ;
+                                                            owl:someValuesFrom <http://purl.unep.org/sdg/SDGIO_00000014>
+                                                          ] ;
+                                          <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000428> ;
+                                          <http://purl.obolibrary.org/obo/IAO_0000115> "A disposition of an entity to undergo undesirable change in response to some exposure."@en ;
+                                          <http://purl.obolibrary.org/obo/IAO_0000116> "Note that the definition endorsed by the UN General Assembly references the conditions that increase susceptibility to the impacts of hazards, rather than the susceptibilities themselves. The links between vulnerability, exposure, risk, and hazard are being developed. This definition will be updated accordingly. The definition currently used could be used for 'susceptible' too. Vulnerable has negative connotations."@en ;
+                                          <http://purl.unep.org/sdg/SDGIO_00000066> "The conditions determined by physical, social, economic and environmental factors or processes which increase the susceptibility of an individual, a community, assets or systems to the impacts of hazards." ;
+                                          rdfs:label "vulnerability"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.unep.org/sdg/SDGIO_00000024> ;
+   owl:annotatedProperty <http://purl.unep.org/sdg/SDGIO_00000066> ;
+   owl:annotatedTarget "The conditions determined by physical, social, economic and environmental factors or processes which increase the susceptibility of an individual, a community, assets or systems to the impacts of hazards." ;
+   <http://purl.obolibrary.org/obo/IAO_0000119> "http://www.preventionweb.net/files/50683_oiewgreportenglish.pdf"
+ ] .
+
+
+###  http://purl.unep.org/sdg/SDGIO_00010021
+<http://purl.unep.org/sdg/SDGIO_00010021> rdf:type owl:Class ;
+                                          rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000016> ;
+                                          <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000125> ;
+                                          <http://purl.obolibrary.org/obo/IAO_0000115> "A disposition of an entity to recover its previous composition, qualities, and functionality following some perturbation."@en ;
+                                          <http://purl.unep.org/sdg/SDGIO_00000064> "https://uneplive.unep.org/community/discussion/view/23243/resilience" ;
+                                          rdfs:comment "This disposition is distinct from robustness, which pertains to an entity's ability to resist change when encountering perturbing forces."@en ;
+                                          rdfs:label "resilience"@en .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi

@@ -1,0 +1,54 @@
+[URI of the OWL(RDF/XML) output file]
+http://purl.obolibrary.org/obo/climoo/chebi_imports
+
+[Source ontology]
+CHEBI
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/CHEBI_51086
+http://purl.obolibrary.org/obo/CHEBI_78298
+includeAllChildren
+http://purl.obolibrary.org/obo/CHEBI_24432
+http://purl.obolibrary.org/obo/CHEBI_35703
+http://purl.obolibrary.org/obo/CHEBI_64909
+http://purl.obolibrary.org/obo/CHEBI_24431
+http://purl.obolibrary.org/obo/CHEBI_59999
+http://purl.obolibrary.org/obo/CHEBI_23367
+http://purl.obolibrary.org/obo/CHEBI_50906 #chebi role
+
+http://purl.obolibrary.org/obo/CHEBI_60027 #polymer
+http://purl.obolibrary.org/obo/CHEBI_60004 #mixture
+http://purl.obolibrary.org/obo/CHEBI_59999 #chemical substance
+http://purl.obolibrary.org/obo/CHEBI_33839 #macromolecule
+http://purl.obolibrary.org/obo/CHEBI_60804
+http://purl.obolibrary.org/obo/CHEBI_53310
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/CHEBI_24431
+http://purl.obolibrary.org/obo/CHEBI_23367
+subClassOf http://purl.obolibrary.org/obo/CHEBI_24431
+http://purl.obolibrary.org/obo/CHEBI_59999
+subClassOf http://purl.obolibrary.org/obo/CHEBI_24431
+http://purl.obolibrary.org/obo/CHEBI_24432
+subClassOf http://purl.obolibrary.org/obo/CHEBI_50906
+http://purl.obolibrary.org/obo/CHEBI_51086
+subClassOf http://purl.obolibrary.org/obo/CHEBI_50906
+http://purl.obolibrary.org/obo/CHEBI_60027 #polymer
+subClassOf http://purl.obolibrary.org/obo/CHEBI_60004 #mixture
+http://purl.obolibrary.org/obo/CHEBI_60004 #mixture
+subClassOf http://purl.obolibrary.org/obo/CHEBI_59999 #chemical substance
+http://purl.obolibrary.org/obo/CHEBI_59999 #chemical substance
+subClassOf http://purl.obolibrary.org/obo/CHEBI_24431
+http://purl.obolibrary.org/obo/CHEBI_33839 #macromolecule
+subClassOf http://purl.obolibrary.org/obo/CHEBI_23367
+http://purl.obolibrary.org/obo/CHEBI_60804
+subClassOf http://purl.obolibrary.org/obo/CHEBI_60027 #polymer
+http://purl.obolibrary.org/obo/CHEBI_53310
+subClassOf http://purl.obolibrary.org/obo/CHEBI_33839 #macromolecule
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Source annotation URIs]
+includeAllAxioms
+
+[Source annotation URIs to be excluded]

@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://ClimOO/climoo/imports/sumso-imports#26-02-28" uri="plastico%20imports/sumso-imports.ttl"/>
+    <uri id="Imports Wizard Entry" name="http://ClimOO/climoo/imports/obi-imports#2026-02-27" uri="plastico%20imports/obi-cob-ro-go-imports.ttl"/>
+    <uri id="Imports Wizard Entry" name="https://ClimOO/climoo/imports/iao-imports#2026-02-27" uri="plastico%20imports/iao-imports.ttl"/>
+    <uri id="Imports Wizard Entry" name="http://ClimOO/climoo/imports/cco-imports#2026-02-27" uri="plastico%20imports/cco-imports.ttl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/climoo/imports/ro-imports/ro-imports-merged#2026-02-28" uri="plastico%20imports/ro-imports-merged.ttl"/>
+    <uri id="Imports Wizard Entry" name="http://ClimOO/climoo/imports/envo-imports/envo-imports#2026-02-24" uri="plastico%20imports/envo-imports-merged.ttl"/>
+    <uri id="Imports Wizard Entry" name="http://ClimOO/climoo/imports/envo-imports#2026-02-24" uri="plastico%20imports/envo-imports-merged.ttl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/climoo/imports/sdgio-imports#2026-02-24" uri="plastico%20imports/sdgio-imports.ttl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/climoo/imports/pato_imports#2026-02-24" uri="plastico%20imports/pato-imports-merged.ttl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/climoo/imports/chebi_imports#2026-02-23" uri="plastico%20imports/chebi-imports.ttl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/climoo/imports/chebi_imports#2026-0-23" uri="plastico%20imports/chebi-imports.ttl"/>
+    <uri id="Imports Wizard Entry" name="http://ClimOO/climoo/imports/bionik-imports#2026-02-23" uri="plastico%20imports/bionik-imports.ttl"/>
+    <uri id="Imports Wizard Entry" name="http://ClimOO/climoo/imports/bionik-imports#2026-02-23" uri="PlasticO%20imports/bionik-imports.ttl"/>
     <uri id="Imports Wizard Entry" name="http://ClimOO/climoo/imports/pato-imports2#2025-08-12" uri="imports/pato-imports2.ttl"/>
     <uri id="Imports Wizard Entry" name="http://ClimOO/climoo/imports/sdgio-imports#2025-06-26" uri="imports/sdgio-imports.ttl"/>
     <uri id="Imports Wizard Entry" name="http://ClimOO/climoo/imports/envo-imports#2025-06-25" uri="imports/envo-imports.owl"/>

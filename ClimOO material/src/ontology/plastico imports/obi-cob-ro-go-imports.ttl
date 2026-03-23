@@ -1,0 +1,306 @@
+@prefix : <http://ClimOO/climoo/imports/obi-imports#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://ClimOO/climoo/imports/obi-imports> .
+
+<http://ClimOO/climoo/imports/obi-imports> rdf:type owl:Ontology ;
+                                            owl:versionIRI <http://ClimOO/climoo/imports/obi-imports#2026-02-27> ;
+                                            rdfs:seeAlso """This file contains ClimOO Ontology imports from the Ontology for Biomedical Investigations (OBI). Imports were manually collected and revised. it also includes some imports from GO, RO, and COB reused by OBI.
+
+Ontology source: 
+https://github.com/obi-ontology/obi/releases/tag/v2025-12-18"""@en ,
+                                                         "https://github.com/obi-ontology/obi/releases/tag/v2025-12-18" ;
+                                            owl:versionInfo "2026-02-27" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.obolibrary.org/obo/IAO_0000111
+<http://purl.obolibrary.org/obo/IAO_0000111> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000112
+<http://purl.obolibrary.org/obo/IAO_0000112> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000114
+<http://purl.obolibrary.org/obo/IAO_0000114> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000115
+<http://purl.obolibrary.org/obo/IAO_0000115> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000116
+<http://purl.obolibrary.org/obo/IAO_0000116> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000117
+<http://purl.obolibrary.org/obo/IAO_0000117> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000118
+<http://purl.obolibrary.org/obo/IAO_0000118> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000119
+<http://purl.obolibrary.org/obo/IAO_0000119> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000232
+<http://purl.obolibrary.org/obo/IAO_0000232> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000412
+<http://purl.obolibrary.org/obo/IAO_0000412> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://purl.obolibrary.org/obo/BFO_0000055
+<http://purl.obolibrary.org/obo/BFO_0000055> rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/COB_0000084
+<http://purl.obolibrary.org/obo/COB_0000084> rdf:type owl:ObjectProperty ;
+                                             rdfs:label "has plan"@en .
+
+
+###  http://purl.obolibrary.org/obo/OBI_0000293
+<http://purl.obolibrary.org/obo/OBI_0000293> rdf:type owl:ObjectProperty ;
+                                             rdfs:subPropertyOf <http://purl.obolibrary.org/obo/RO_0000057> ;
+                                             owl:inverseOf <http://purl.obolibrary.org/obo/OBI_0000295> ;
+                                             rdfs:domain <http://purl.obolibrary.org/obo/COB_0000035> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "has specified input" ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000112> "see is_input_of example_of_usage"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000122> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "The inverse property of is specified input of" ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000116> "8/17/09: specified inputs of one process are not necessarily specified inputs of a larger process that it is part of. This is in contrast to how 'has participant' works." ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Alan Ruttenberg"@en ,
+                                                                                          "PERSON: Bjoern Peters" ,
+                                                                                          "PERSON: Larry Hunter" ,
+                                                                                          "PERSON: Melanie Coutot" ;
+                                             rdfs:label "has specified input"@en .
+
+
+###  http://purl.obolibrary.org/obo/OBI_0000295
+<http://purl.obolibrary.org/obo/OBI_0000295> rdf:type owl:ObjectProperty ;
+                                             rdfs:subPropertyOf <http://purl.obolibrary.org/obo/RO_0000056> ;
+                                             rdfs:range <http://purl.obolibrary.org/obo/COB_0000035> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "is specified input of" ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000112> "some Autologous EBV(Epstein-Barr virus)-transformed B-LCL (B lymphocyte cell line) is_input_for instance of Chromum Release Assay described at https://wiki.cbil.upenn.edu/obiwiki/index.php/Chromium_Release_assay"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000122> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A relation between a completely executed planned process and a continuant participating in that process that is not created during the process. The presence of the continuant during the process is explicitly specified in the plan specification which the process realizes the concretization of." ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "Alan Ruttenberg"@en ,
+                                                                                          "PERSON:Bjoern Peters" ;
+                                             rdfs:label "is specified input of"@en .
+
+
+###  http://purl.obolibrary.org/obo/OBI_0000299
+<http://purl.obolibrary.org/obo/OBI_0000299> rdf:type owl:ObjectProperty ;
+                                             rdfs:subPropertyOf <http://purl.obolibrary.org/obo/RO_0000057> ;
+                                             owl:inverseOf <http://purl.obolibrary.org/obo/OBI_0000312> ;
+                                             rdfs:domain <http://purl.obolibrary.org/obo/COB_0000035> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "has specified output" ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000122> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "The inverse property of is specified output of" ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Alan Ruttenberg"@en ,
+                                                                                          "PERSON: Bjoern Peters" ,
+                                                                                          "PERSON: Larry Hunter" ,
+                                                                                          "PERSON: Melanie Courtot" ;
+                                             rdfs:label "has specified output"@en .
+
+
+###  http://purl.obolibrary.org/obo/OBI_0000312
+<http://purl.obolibrary.org/obo/OBI_0000312> rdf:type owl:ObjectProperty ;
+                                             rdfs:subPropertyOf <http://purl.obolibrary.org/obo/RO_0000056> ;
+                                             rdfs:range <http://purl.obolibrary.org/obo/COB_0000035> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "is specified output of" ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000122> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A relation between a completely executed planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of."@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "Alan Ruttenberg"@en ,
+                                                                                          "PERSON:Bjoern Peters" ;
+                                             rdfs:label "is specified output of"@en .
+
+
+###  http://purl.obolibrary.org/obo/OBI_0000417
+<http://purl.obolibrary.org/obo/OBI_0000417> rdf:type owl:ObjectProperty ;
+                                             owl:inverseOf <http://purl.obolibrary.org/obo/OBI_0000833> ;
+                                             rdfs:domain <http://purl.obolibrary.org/obo/COB_0000035> ;
+                                             rdfs:range <http://purl.obolibrary.org/obo/IAO_0000005> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "achieves_planned_objective" ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000112> "A cell sorting process achieves the objective specification 'material separation objective'" ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000120> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "This relation obtains between a planned process and a objective specification when the criteria specified in the objective specification are met at the end of the planned process."@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "BP, AR, PPPB branch" ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000119> "PPPB branch derived" ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000232> "modified according to email thread from 1/23/09 in accordince with DT and PPPB branch" ;
+                                             rdfs:label "achieves_planned_objective" .
+
+
+###  http://purl.obolibrary.org/obo/OBI_0000833
+<http://purl.obolibrary.org/obo/OBI_0000833> rdf:type owl:ObjectProperty ;
+                                             rdfs:domain <http://purl.obolibrary.org/obo/IAO_0000005> ;
+                                             rdfs:range <http://purl.obolibrary.org/obo/COB_0000035> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "objective_achieved_by" ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000122> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "This relation obtains between an objective specification and a planned process when the criteria specified in the objective specification are met at the end of the planned process."@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "OBI" ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000119> "OBI" ;
+                                             rdfs:label "objective_achieved_by" .
+
+
+###  http://purl.obolibrary.org/obo/RO_0000056
+<http://purl.obolibrary.org/obo/RO_0000056> rdf:type owl:ObjectProperty ,
+                                                     owl:FunctionalProperty ;
+                                            <http://purl.obolibrary.org/obo/IAO_0000115> "a relation between a continuant and a process, in which the continuant is somehow involved in the process"@en ;
+                                            rdfs:label "participates in"@en .
+
+
+###  http://purl.obolibrary.org/obo/RO_0000057
+<http://purl.obolibrary.org/obo/RO_0000057> rdf:type owl:ObjectProperty ;
+                                            <http://purl.obolibrary.org/obo/IAO_0000115> "a relation between a process and a continuant, in which the continuant is somehow involved in the process"@en ;
+                                            rdfs:label "has participant"@en .
+
+
+###  http://purl.obolibrary.org/obo/RO_0000059
+<http://purl.obolibrary.org/obo/RO_0000059> rdf:type owl:ObjectProperty ;
+                                            <http://purl.obolibrary.org/obo/IAO_0000115> "A relationship between a specifically dependent continuant and a generically dependent continuant, in which the generically dependent continuant depends on some independent continuant in virtue of the fact that the specifically dependent continuant also depends on that same independent continuant. Multiple specifically dependent continuants can concretize the same generically dependent continuant."@en ;
+                                            rdfs:label "concretizes"@en .
+
+
+###  http://purl.obolibrary.org/obo/RO_0002233
+<http://purl.obolibrary.org/obo/RO_0002233> rdf:type owl:ObjectProperty ;
+                                            rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000015> ;
+                                            <http://purl.obolibrary.org/obo/IAO_0000115> "p has input c iff: p is a process, c is a material entity, c is a participant in p, c is present at the start of p, and the state of c is modified during p." ;
+                                            rdfs:label "has input"@en .
+
+
+###  http://purl.obolibrary.org/obo/RO_0002234
+<http://purl.obolibrary.org/obo/RO_0002234> rdf:type owl:ObjectProperty ;
+                                            <http://purl.obolibrary.org/obo/IAO_0000115> "p has output c iff c is a participant in p, c is present at the end of p, and c is not present in the same state at the beginning of p." ;
+                                            rdfs:label "has output"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://purl.obolibrary.org/obo/BFO_0000015
+<http://purl.obolibrary.org/obo/BFO_0000015> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000017
+<http://purl.obolibrary.org/obo/BFO_0000017> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000040
+<http://purl.obolibrary.org/obo/BFO_0000040> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/COB_0000035
+<http://purl.obolibrary.org/obo/COB_0000035> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/COB_0000082> ,
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000055> ;
+                                                               owl:someValuesFrom <http://purl.obolibrary.org/obo/OBI_0000260>
+                                                             ] ;
+                                             owl:disjointWith <http://purl.obolibrary.org/obo/COB_0000083> ,
+                                                              <http://purl.obolibrary.org/obo/GO_0008150> ;
+                                             rdfs:label "completely executed planned process"@en .
+
+
+###  http://purl.obolibrary.org/obo/COB_0000082
+<http://purl.obolibrary.org/obo/COB_0000082> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000015> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A process that is initiated by an agent who intends to carry out a plan to achieve an objective through one or more actions as described in a plan specification."@en ;
+                                             rdfs:label "planned process"@en .
+
+
+###  http://purl.obolibrary.org/obo/COB_0000083
+<http://purl.obolibrary.org/obo/COB_0000083> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/COB_0000082> ;
+                                             rdfs:label "failed planned process"@en .
+
+
+###  http://purl.obolibrary.org/obo/COB_0000110
+<http://purl.obolibrary.org/obo/COB_0000110> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/COB_0000035> ,
+                                                             [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                                      owl:onProperty <http://purl.obolibrary.org/obo/OBI_0000293> ;
+                                                                                      owl:someValuesFrom <http://purl.obolibrary.org/obo/BFO_0000040>
+                                                                                    ]
+                                                                                    [ rdf:type owl:Restriction ;
+                                                                                      owl:onProperty <http://purl.obolibrary.org/obo/OBI_0000299> ;
+                                                                                      owl:someValuesFrom <http://purl.obolibrary.org/obo/BFO_0000040>
+                                                                                    ]
+                                                                                  ) ;
+                                                               rdf:type owl:Class
+                                                             ] ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A completely executed planned process that intends to output material entities from input material entities"@en ;
+                                             rdfs:label "material processing"@en .
+
+
+###  http://purl.obolibrary.org/obo/GO_0008150
+<http://purl.obolibrary.org/obo/GO_0008150> rdf:type owl:Class ;
+                                            rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000015> ;
+                                            <http://purl.obolibrary.org/obo/IAO_0000111> "biological_process" ;
+                                            <http://purl.obolibrary.org/obo/IAO_0000115> "A biological process is the execution of a genetically-encoded biological module or program. It consists of all the steps required to achieve the specific biological objective of the module. A biological process is accomplished by a particular set of molecular functions carried out by specific gene products (or macromolecular complexes), often in a highly regulated manner and in a particular temporal sequence." ;
+                                            <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/go.owl> ;
+                                            rdfs:comment """ClimOO Ontology:
+we excluded the parthood axiom \"BFO_0000051 (has part) some GO_0003674 (gene product or complex activity) as beyond ClimOO Ontology purposes.
+
+http://purl.obolibrary.org/obo/GO_0003674"""@en ;
+                                            rdfs:label "biological process"@en ,
+                                                       "biological_process" .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000005
+<http://purl.obolibrary.org/obo/IAO_0000005> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000104
+<http://purl.obolibrary.org/obo/IAO_0000104> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/OBI_0000260
+<http://purl.obolibrary.org/obo/OBI_0000260> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000017> ,
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty <http://purl.obolibrary.org/obo/RO_0000059> ;
+                                                               owl:someValuesFrom <http://purl.obolibrary.org/obo/IAO_0000104>
+                                                             ] ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "plan"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000112> "The plan of researcher X to perform an experiment according to a protocol." ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000125> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A plan is a realizable entity that is the inheres in a bearer who is committed to realizing it as a completely executed planned process."@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000116> "This class is included to make clear how the plan specification, the plan, and the planned process relate. OBI will however only subclass and work under the 'plan specification', and 'planned process' class, as we want to avoid to get deep into discussions of 'intend' etc." ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "AR, BP, JM, MC, PRS"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000119> "branch derived"@en ;
+                                             rdfs:label "plan"@en .
+
+
+###  http://purl.obolibrary.org/obo/OBI_0000456
+<http://purl.obolibrary.org/obo/OBI_0000456> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000005> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000111> "material transformation objective" ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000112> "The objective to create a mouse infected with LCM virus. The objective to create a defined solution of PBS." ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000122> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "an objective specifiction that creates an specific output object from input materials."@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: Bjoern Peters" ,
+                                                                                          "PERSON: Frank Gibson" ,
+                                                                                          "PERSON: Jennifer Fostel" ,
+                                                                                          "PERSON: Melanie Courtot" ,
+                                                                                          "PERSON: Philippe Rocca-Serra" ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000118> "artifact  creation objective"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000119> "GROUP: OBI PlanAndPlannedProcess Branch" ;
+                                             rdfs:label "material transformation objective"@en .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
