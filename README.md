@@ -7,7 +7,7 @@ This repository maintains the ClimOO Ontology. ClimOO Ontology is a domain refer
 
 The ClimOO Ontology is structured in a suite of nested ontological modules, namely PlasticO, AgriPlasticO, and ClimAg-PlasticO.
 
-- PlasticO extends [Sustainability Core Ontology (SCO)](https://github.com/gioUbbiali/Sustainability-Core-Ontology) and [Basic Formal Ontology (BFO)](https://github.com/BFO-ontology/BFO-2020) to represent polymer molecules, plastic materials, pieces of plastic and plastic objects, along with corresponding life cycles and pollution processes. Emphasis is also dedicated to relevant assessment devices and related data, especially with regard to sustainability.
+- [PlasticO](https://w3id.org/climoo/climoo-plastico) extends [Sustainability Core Ontology (SCO)](https://github.com/gioUbbiali/Sustainability-Core-Ontology) and [Basic Formal Ontology (BFO)](https://github.com/BFO-ontology/BFO-2020) to represent polymer molecules, plastic materials, pieces of plastic and plastic objects, along with corresponding life cycles and pollution processes. Emphasis is also dedicated to relevant assessment devices and related data, especially with regard to sustainability.
 - AgriPlasticO extends PlasticO representation to agricultural systems,focusing on agriplastics and related pollution.
 - ClimAg-PlasticO extends AgriPlasticO representation to interrelations between plastic pollution and climate change in such systems.
 
@@ -21,13 +21,10 @@ Currently, this repository hosts the initial working progress version of the Cli
 ClimOO materials can be found here:
 
 - [ClimOO materials-total](https://github.com/ClimOO/ClimOO-Ontology/tree/main/ClimOO%20material).
-- ClimOO V1.0.0 current release.
-- ClimOO Ontology: PlasticO module.
+- ClimOO Ontology: [PlasticO module](https://w3id.org/climoo/climoo-plastico).
 - ClimOO Ontology: AgriPlasticO module.
 - ClimOO Ontology: ClimAg-PlasticO module.
 - ClimOO Ontology (all module merged).
-- [ClimOO V1.0.0 final draft version prior to release](https://github.com/ClimOO/ClimOO-Ontology/tree/main/ClimOO%20material/src/ontology).
-- [ClimOO V1.0.0 imports from external ontologies](https://github.com/ClimOO/ClimOO-Ontology/tree/main/ClimOO%20material/src/ontology/imports).
 
 The most recent version of ClimOO can be always found here.
 
