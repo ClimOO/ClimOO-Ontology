@@ -10,7 +10,7 @@
                                                owl:versionIRI :V1.0.0 ;
                                                owl:imports <https://raw.githubusercontent.com/ClimOO/ClimOO-Ontology/refs/heads/main/ClimOO%20material/src/ontology/plastico%20imports/bionik-imports.ttl> ,
                                                            <https://raw.githubusercontent.com/ClimOO/ClimOO-Ontology/refs/heads/main/ClimOO%20material/src/ontology/plastico%20imports/cco-imports.ttl> ,
-                                                           <https://raw.githubusercontent.com/ClimOO/ClimOO-Ontology/refs/heads/main/ClimOO%20material/src/ontology/plastico%20imports/envo-imports.ttl> ,
+                                                           <https://raw.githubusercontent.com/ClimOO/ClimOO-Ontology/refs/heads/main/ClimOO%20material/src/ontology/plastico%20imports/envo-imports-merged.ttl> ,
                                                            <https://raw.githubusercontent.com/ClimOO/ClimOO-Ontology/refs/heads/main/ClimOO%20material/src/ontology/plastico%20imports/obi-cob-ro-go-imports.ttl> ,
                                                            <https://raw.githubusercontent.com/ClimOO/ClimOO-Ontology/refs/heads/main/ClimOO%20material/src/ontology/plastico%20imports/sumso-imports.ttl> ,
                                                            <https://raw.githubusercontent.com/ClimOO/ClimOO-Ontology/refs/heads/main/ClimOO%20material/src/ontology/plastico%20imports/chebi-imports.ttl> ,
