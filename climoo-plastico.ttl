@@ -10,14 +10,14 @@
                                                owl:versionIRI :V1.0.0 ;
                                                owl:imports <https://raw.githubusercontent.com/ClimOO/ClimOO-Ontology/refs/heads/main/ClimOO%20material/src/ontology/plastico%20imports/bionik-imports.ttl> ,
                                                            <https://raw.githubusercontent.com/ClimOO/ClimOO-Ontology/refs/heads/main/ClimOO%20material/src/ontology/plastico%20imports/cco-imports.ttl> ,
-                                                           <https://raw.githubusercontent.com/ClimOO/ClimOO-Ontology/refs/heads/main/ClimOO%20material/src/ontology/plastico%20imports/envo-imports-merged.ttl> ,
-                                                           <https://raw.githubusercontent.com/ClimOO/ClimOO-Ontology/refs/heads/main/ClimOO%20material/src/ontology/plastico%20imports/obi-cob-ro-go-imports.ttl> ,
-                                                           <https://raw.githubusercontent.com/ClimOO/ClimOO-Ontology/refs/heads/main/ClimOO%20material/src/ontology/plastico%20imports/sumso-imports.ttl> ,
                                                            <https://raw.githubusercontent.com/ClimOO/ClimOO-Ontology/refs/heads/main/ClimOO%20material/src/ontology/plastico%20imports/chebi-imports.ttl> ,
+                                                           <https://raw.githubusercontent.com/ClimOO/ClimOO-Ontology/refs/heads/main/ClimOO%20material/src/ontology/plastico%20imports/envo-imports-merged.ttl> ,
+                                                           <https://raw.githubusercontent.com/ClimOO/ClimOO-Ontology/refs/heads/main/ClimOO%20material/src/ontology/plastico%20imports/iao-imports.ttl> ,
+                                                           <https://raw.githubusercontent.com/ClimOO/ClimOO-Ontology/refs/heads/main/ClimOO%20material/src/ontology/plastico%20imports/obi-cob-ro-go-imports.ttl> ,
                                                            <https://raw.githubusercontent.com/ClimOO/ClimOO-Ontology/refs/heads/main/ClimOO%20material/src/ontology/plastico%20imports/pato-imports-merged.ttl> ,
                                                            <https://raw.githubusercontent.com/ClimOO/ClimOO-Ontology/refs/heads/main/ClimOO%20material/src/ontology/plastico%20imports/ro-imports-merged.ttl> ,
                                                            <https://raw.githubusercontent.com/ClimOO/ClimOO-Ontology/refs/heads/main/ClimOO%20material/src/ontology/plastico%20imports/sdgio-imports.ttl> ,
-                                                           <https://raw.githubusercontent.com/ClimOO/ClimOO-Ontology/refs/heads/main/ClimOO%20material/src/ontology/plastico%20imports/iao-imports.ttl> ,
+                                                           <https://raw.githubusercontent.com/ClimOO/ClimOO-Ontology/refs/heads/main/ClimOO%20material/src/ontology/plastico%20imports/sumso-imports.ttl> ,
                                                            <https://www.w3id.org/sco/sco-b#v1.1.0/sco-b> ;
                                                <http://purl.org/dc/terms/contributor> "Giorgio A. Ubbiali" ,
                                                                                       "Ludger Jansen" ;
@@ -220,7 +220,7 @@ https://www.commoncoreontologies.org/ont00000476"""@en .
                 <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "bio-based plastic"@en ,
                                                                                "bioplastic"@en ;
                 rdfs:label "portion of bio-based plastic material"@en ;
-                <http://www.w3.org/2004/02/skos/core#definition> "A portion of synthetic plastic material that is the main output of a bio-based plastic production process and is constituted by biobased polymer molecules."@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A portion of synthetic plastic material that is composed of biobased polymer molecules."@en ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
 
 
@@ -559,7 +559,7 @@ We envision implementing such definitions in accordance with regulation revision
 :ClimOO_0000117 rdf:type owl:Class ;
                 rdfs:subClassOf :ClimOO_0000205 ;
                 rdfs:label "portion of compostable synthetic plastic material"@en ;
-                <http://www.w3.org/2004/02/skos/core#definition> "A portion of biodegradable synthetic plastic material that is constituted by polymer molecules that bear a disposition to be degraded during a plastic composting process (compostability)."@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A portion of biodegradable synthetic plastic material that is copmosed of polymer molecules that bear a disposition to be degraded during a plastic composting process (compostability)."@en ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
 
 
@@ -638,7 +638,7 @@ We envision implementing such definitions in accordance with regulation revision
                                                      ]
                                 ] ;
                 rdfs:label "portion of copolymer-based synthetic material"@en ;
-                <http://www.w3.org/2004/02/skos/core#definition> "A portion of synthetic polymer-based material that is constituted of some synthetic copolymer molecules."@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A portion of synthetic polymer-based material that is composed of some synthetic copolymer molecules."@en ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
 
 
@@ -763,7 +763,7 @@ We envision implementing such definitions in accordance with regulation revision
                                                      ]
                                 ] ;
                 rdfs:label "portion of inorganic or hybrid polymer-based synthetic material"@en ;
-                <http://www.w3.org/2004/02/skos/core#definition> "A portion of synthetic polymer-based material that is constituted of inorganic or hybrid polymer molecules."@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A portion of synthetic polymer-based material that is composed of inorganic or hybrid polymer molecules."@en ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
 
 
@@ -986,7 +986,7 @@ We envision implementing such definitions in accordance with regulation revision
                                   owl:someValuesFrom :ClimOO_0000097
                                 ] ;
                 rdfs:label "piece of bio-based plastic"@en ;
-                <http://www.w3.org/2004/02/skos/core#definition> "A piece of synthetic plastic that is primarily made of bio-based plastic and the main output of a production process of a piece of bio-based plastic."@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A piece of synthetic plastic that is primarily made of bio-based plastic."@en ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
 
 
@@ -1014,7 +1014,7 @@ We envision implementing such definitions in accordance with regulation revision
                                   rdf:type owl:Class
                                 ] ;
                 rdfs:label "piece of biodegradable synthetic plastic"@en ;
-                <http://www.w3.org/2004/02/skos/core#definition> "A piece of synthetic plastic that is primarily made of biodegradable plastic and the main output of a production process of a piece of synthetic biodegradable plastic."@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A piece of synthetic plastic that is primarily made of biodegradable plastic."@en ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
 
 
@@ -1092,7 +1092,7 @@ We envision implementing such definitions in accordance with regulation revision
                                   owl:someValuesFrom :ClimOO_0000191
                                 ] ;
                 rdfs:label "piece of recyclable plastic"@en ;
-                <http://www.w3.org/2004/02/skos/core#definition> "A piece of synthetic plastic that is primarily made of recyclable plastic and the main output of a production process of a piece of recyclable plastic."@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A piece of synthetic plastic that is primarily made of recyclable plastic."@en ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
 
 
@@ -1104,7 +1104,7 @@ We envision implementing such definitions in accordance with regulation revision
                                   owl:someValuesFrom :ClimOO_0000197
                                 ] ;
                 rdfs:label "piece of recycled plastic"@en ;
-                <http://www.w3.org/2004/02/skos/core#definition> "A piece of synthetic plastic that is primarily made of recycled plastic and the main output of a production process of a piece of recycled plastic."@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A piece of synthetic plastic that is primarily made of recycled plastic."@en ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
 
 
@@ -2162,7 +2162,7 @@ Vert, M., Doi, Y., Hellwich, K.-H., Hess, M., Hodge, P., Kubisa, P., Rinaudo, M.
                                 ] ;
                 <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "recyclable plastic"@en ;
                 rdfs:label "portion of recyclable plastic material"@en ;
-                <http://www.w3.org/2004/02/skos/core#definition> "A portion of synthetic plastic material that is the main output of a production process of recyclable plastic materials and is constituted by recyclable polymer molecules."@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A portion of synthetic plastic material that is composed of recyclable polymer molecules."@en ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
 
 
@@ -2250,7 +2250,7 @@ Vert, M., Doi, Y., Hellwich, K.-H., Hess, M., Hodge, P., Kubisa, P., Rinaudo, M.
                 owl:disjointWith :ClimOO_0000222 ;
                 <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "recycled plastic"@en ;
                 rdfs:label "portion of recycled plastic material"@en ;
-                <http://www.w3.org/2004/02/skos/core#definition> "A portion of synthetic plastic material that is the main output of a production process of recycled plastic materials and is constituted by recycled polymer molecules."@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A portion of synthetic plastic material that is composed of recycled polymer molecules."@en ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
 
 
@@ -2386,7 +2386,7 @@ Vert, M., Doi, Y., Hellwich, K.-H., Hess, M., Hodge, P., Kubisa, P., Rinaudo, M.
 :ClimOO_0000202 rdf:type owl:Class ;
                 rdfs:subClassOf :ClimOO_0000265 ,
                                 [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
-                                                         owl:onProperty <http://purl.obolibrary.org/obo/RO_0000057> ;
+                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000167> ;
                                                          owl:someValuesFrom [ owl:intersectionOf ( [ owl:intersectionOf ( :ClimOO_0000211
                                                                                                                           [ rdf:type owl:Restriction ;
                                                                                                                             owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000178> ;
@@ -2444,7 +2444,7 @@ http://purl.obolibrary.org/obo/ENVO_02000200"""@en ,
                              "This class axiomatization requires revisions. Implementations are needed to further restrict the class coverage to cases of interest. Currently the model allows some undesirable cases, such as when pollutants released and acquired are not the same."@en ,
                              "We envision implementing this class by including references to specific sources and sinks. Correspondences with plastic debris sources/sinks can be clarified as well."@en ;
                 rdfs:label "release process of plastic debris-carried pollutants in the environment"@en ;
-                <http://www.w3.org/2004/02/skos/core#definition> "A transportation process that has some synthetic polymer-based material (generally synthetic plastic) composing some plastic debris and having some pollutants as part, as participant, and, as output, 1) that synthetic polymer-based material with a decreased level of those pollutants as part, and 2) some other portion(s) of material with an increased level of those pollutants (both compared to levels prior participating into that process)."@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A transportation process that has some portion of synthetic polymer-based material (generally synthetic plastic) composing some plastic debris and having some pollutants as part, as participant, and, as output, 1) that portion of synthetic polymer-based material with a decreased level of those pollutants as part, and 2) some other portion(s) of material with an increased level of those pollutants (both compared to levels prior participating into that process)."@en ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> ;
                 <https://www.w3id.org/sco#SCO_0000039> :ClimOO_0000072 ,
                                                        :ClimOO_0000073 ,
@@ -2512,7 +2512,7 @@ http://purl.obolibrary.org/obo/ENVO_02000200"""@en ,
                 <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "synthetic biodegradable plastic"@en ,
                                                                                "biodegradable plastic" ;
                 rdfs:label "portion of synthetic biodegradable plastic material"@en ;
-                <http://www.w3.org/2004/02/skos/core#definition> "A portion of plastic material that is constituted by polymer molecules that are both synthetic and biodegradable."@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A portion of plastic material that is copmosed of polymer molecules that are both synthetic and biodegradable."@en ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
 
 
@@ -2622,7 +2622,7 @@ http://purl.obolibrary.org/obo/ENVO_02000200"""@en ,
                                     ] ;
                 rdfs:subClassOf :ClimOO_0000246 ;
                 rdfs:label "portion of synthetic polymer-based material"@en ;
-                <http://www.w3.org/2004/02/skos/core#definition> "A portion of polymer-based material that is constituted by some synthetic polymer molecules. It is an output of a manufacturing process of synthetic polymer-based material. Synthetic polymers constitute the material matrix (frame)."@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A portion of polymer-based material that is composed of some synthetic polymer molecules. Synthetic polymers constitute the material matrix (frame)."@en ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
 
 
@@ -2753,7 +2753,7 @@ According to the current axiomatization and definition, this class may be a subc
                                                      ]
                                 ] ;
                 rdfs:label "portion of thermoplastic elastomer-based synthetic material"@en ;
-                <http://www.w3.org/2004/02/skos/core#definition> "A portion of synthetic polymer-based material that is mainly composed of synthetic inorganic or hybrid polymer molecules."@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A portion of synthetic polymer-based material that is composed of synthetic inorganic or hybrid polymer molecules."@en ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
 
 
@@ -2871,7 +2871,7 @@ According to the current axiomatization and definition, this class may be a subc
                 rdfs:subClassOf :ClimOO_0000248 ;
                 <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "virgin plastic"@en ;
                 rdfs:label "portion of virgin plastic material"@en ;
-                <http://www.w3.org/2004/02/skos/core#definition> "A portion of plastic material that has not been recycled. It is not a output of a production process of recycled plastic."@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A portion of plastic material that is composed by polymer molecules that have not been recycled."@en ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
 
 
@@ -3283,7 +3283,7 @@ See, for instance, ISO/TR 21960:2020Plastics — Environmental aspects — State
                 owl:disjointWith :ClimOO_0000249 ;
                 <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> "synthetic plastics"@en ;
                 rdfs:label "portion of synthetic plastic material"@en ;
-                <http://www.w3.org/2004/02/skos/core#definition> "A portion of plastic that is constituted by some synthetic polymer molecules."@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A portion of plastic that is composed of some synthetic polymer molecules."@en ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
 
 
@@ -3582,11 +3582,11 @@ We envision implementing such definitions in accordance with regulation revision
 :ClimOO_0000266 rdf:type owl:Class ;
                 rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000015> ,
                                 [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
-                                                         owl:onProperty <http://purl.obolibrary.org/obo/RO_0000057> ;
+                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000167> ;
                                                          owl:someValuesFrom :ClimOO_0000164
                                                        ]
                                                        [ rdf:type owl:Restriction ;
-                                                         owl:onProperty <http://purl.obolibrary.org/obo/RO_0000057> ;
+                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000167> ;
                                                          owl:someValuesFrom :ClimOO_0000166
                                                        ]
                                                        [ rdf:type owl:Restriction ;
@@ -4069,7 +4069,7 @@ See, for instance, https://www.iso.org/standard/77957.html"""@en ,
                 rdfs:subClassOf :ClimOO_0000265 ,
                                 [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/COB_0000035>
                                                        [ rdf:type owl:Restriction ;
-                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000057> ;
+                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000167> ;
                                                          owl:someValuesFrom :ClimOO_0000211
                                                        ]
                                                      ) ;
@@ -4088,7 +4088,7 @@ See, for instance, https://www.iso.org/standard/77957.html"""@en ,
 :ClimOO_0000283 rdf:type owl:Class ;
                 rdfs:subClassOf [ owl:intersectionOf ( :ClimOO_0000282
                                                        [ rdf:type owl:Restriction ;
-                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000057> ;
+                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000167> ;
                                                          owl:someValuesFrom :ClimOO_0000248
                                                        ]
                                                      ) ;
@@ -4108,7 +4108,7 @@ See, for instance, https://www.iso.org/standard/77957.html"""@en ,
                 rdfs:subClassOf :ClimOO_0000265 ,
                                 [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/COB_0000035>
                                                        [ rdf:type owl:Restriction ;
-                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000057> ;
+                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000167> ;
                                                          owl:someValuesFrom :ClimOO_0000150
                                                        ]
                                                      ) ;
@@ -4127,7 +4127,7 @@ See, for instance, https://www.iso.org/standard/77957.html"""@en ,
 :ClimOO_0000285 rdf:type owl:Class ;
                 rdfs:subClassOf :ClimOO_0000284 ,
                                 [ rdf:type owl:Restriction ;
-                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000057> ;
+                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000167> ;
                                   owl:someValuesFrom :ClimOO_0000153
                                 ] ,
                                 [ rdf:type owl:Restriction ;
@@ -4143,7 +4143,7 @@ See, for instance, https://www.iso.org/standard/77957.html"""@en ,
 :ClimOO_0000286 rdf:type owl:Class ;
                 rdfs:subClassOf :ClimOO_0000285 ,
                                 [ rdf:type owl:Restriction ;
-                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000057> ;
+                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000167> ;
                                   owl:someValuesFrom :ClimOO_0000153
                                 ] ,
                                 [ rdf:type owl:Restriction ;
@@ -4250,6 +4250,18 @@ https://w3id.org/sumso#SuMSO_0000051""" ;
                 rdfs:subClassOf :ClimOO_0000182 ;
                 rdfs:label "synthetic polymerization process"@en ;
                 <http://www.w3.org/2004/02/skos/core#definition> "A polymerization process that is human-driven and has some synthetic polymer molecules as output."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo#ClimOO_0000291
+:ClimOO_0000291 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000285 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000167> ;
+                                  owl:someValuesFrom :ClimOO_0000163
+                                ] ;
+                rdfs:label "transportation process of a plastic debris particle"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A transportation process that concerns a plastic debris particle."@en ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
 
 
