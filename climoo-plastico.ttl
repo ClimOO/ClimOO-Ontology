@@ -2282,7 +2282,7 @@ http://purl.obolibrary.org/obo/ENVO_02000200"""@en ,
                 <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "synthetic biodegradable plastic"@en ,
                                                                                "biodegradable plastic" ;
                 rdfs:label "portion of synthetic biodegradable plastic material"@en ;
-                <http://www.w3.org/2004/02/skos/core#definition> "A portion of plastic material that is copmosed of polymer molecules that are both synthetic and biodegradable."@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A portion of plastic material that is composed of polymer molecules that are both synthetic and biodegradable."@en ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
 
 
