@@ -17,7 +17,6 @@
                                                            <https://raw.githubusercontent.com/ClimOO/ClimOO-Ontology/refs/heads/main/ClimOO%20material/src/ontology/plastico%20imports/pato-imports-merged.ttl> ,
                                                            <https://raw.githubusercontent.com/ClimOO/ClimOO-Ontology/refs/heads/main/ClimOO%20material/src/ontology/plastico%20imports/ro-imports-merged.ttl> ,
                                                            <https://raw.githubusercontent.com/ClimOO/ClimOO-Ontology/refs/heads/main/ClimOO%20material/src/ontology/plastico%20imports/sdgio-imports.ttl> ,
-                                                           <https://raw.githubusercontent.com/ClimOO/ClimOO-Ontology/refs/heads/main/ClimOO%20material/src/ontology/plastico%20imports/sumso-imports.ttl> ,
                                                            <https://www.w3id.org/sco/sco-b#v1.1.0/sco-b> ;
                                                <http://purl.org/dc/terms/contributor> "Giorgio A. Ubbiali" ,
                                                                                       "Ludger Jansen" ;
@@ -184,20 +183,6 @@ We aligned CCO and IAO classes according to SuMSO model."""@en .
                                                                                         ]
                                                                                       )
                                                                         ] .
-
-
-###  https://w3id.org/sumso#SuMSO_0000160
-<https://w3id.org/sumso#SuMSO_0000160> owl:equivalentClass [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/ENVO_01000665>
-                                                                                  [ rdf:type owl:Restriction ;
-                                                                                    owl:onProperty <http://purl.obolibrary.org/obo/RO_0000081> ;
-                                                                                    owl:someValuesFrom [ rdf:type owl:Restriction ;
-                                                                                                         owl:onProperty <http://purl.obolibrary.org/obo/RO_0002353> ;
-                                                                                                         owl:someValuesFrom <https://w3id.org/sumso#SuMSO_0000051>
-                                                                                                       ]
-                                                                                  ]
-                                                                                ) ;
-                                                             rdf:type owl:Class
-                                                           ] .
 
 
 ###  https://www.w3id.org/climoo#ClimOO_0000097
@@ -2248,11 +2233,11 @@ http://purl.obolibrary.org/obo/ENVO_02000200"""@en ,
                                                        ]
                                                        [ rdf:type owl:Restriction ;
                                                          owl:onProperty <http://purl.obolibrary.org/obo/RO_0000087> ;
-                                                         owl:someValuesFrom [ rdf:type owl:Class ;
-                                                                              owl:unionOf ( <https://w3id.org/sumso#SuMSO_0000159>
-                                                                                            <https://w3id.org/sumso#SuMSO_0000160>
-                                                                                          )
-                                                                            ]
+                                                         owl:someValuesFrom <http://purl.obolibrary.org/obo/ENVO_01000665>
+                                                       ]
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://purl.obolibrary.org/obo/RO_0002353> ;
+                                                         owl:someValuesFrom :ClimOO_0000278
                                                        ]
                                                      ) ;
                                   rdf:type owl:Class
@@ -2263,10 +2248,10 @@ http://purl.obolibrary.org/obo/ENVO_02000200"""@en ,
                                 ] ;
                 rdfs:comment "An upper-level class concerning residues included in polymer materials other than plastics can be added as needed."@en ,
                              "Here the focus is on the actual molecules that are residual molecules incorporated into the plastic materials. If the need arises for a more meso- or macroscopical representation of residues, the ClimOO Ontology will implement the current model."@en ,
-                             "References to molecules that are accidentally incorporated but are not an output of the manufacturing process can be added if needed."@en ,
+                             "References to molecules that are accidentally incorporated but are not an output or are consideraed asby-product of the manufacturing process can be added if needed."@en ,
                              "References to molecules that are not incorporated yet can be added if needed."@en ;
                 rdfs:label "residue molecule of synthetic plastic manufacturing"@en ;
-                <http://www.w3.org/2004/02/skos/core#definition> "A molecule that is a waste or byproduct of some plastic manufacturing process (is an output and bearer some waste or byproduct role) and is incorporated into some synthetic plastic material."@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A molecule that is a waste of some plastic manufacturing process and is incorporated into some portion of synthetic plastic material."@en ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
 
 
