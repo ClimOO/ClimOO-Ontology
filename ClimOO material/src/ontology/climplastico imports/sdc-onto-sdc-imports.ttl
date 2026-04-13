@@ -1,0 +1,427 @@
+@prefix : <http://ClimOO/climoo/imports/sdc-ontology-imports/sdc-ontology-sdc-imports#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://ClimOO/climoo/imports/sdc-ontology-imports/sdc-ontology-sdc-imports> .
+
+<http://ClimOO/climoo/imports/sdc-ontology-imports/sdc-ontology-sdc-imports> rdf:type owl:Ontology ;
+                                                                              owl:versionIRI <http://ClimOO/climoo/imports/sdc-ontology-imports/sdc-ontology-sdc-imports#2026-04-08> ;
+                                                                              rdfs:comment """This file contains ClimOO Ontology imports from the Sustainable Development and Climate ontology (SDC ontology) (specifically dependent continuant hierarchy of BFO). It also contains some imports reused by SDC ontology from the Common Core Ontologies (CCO). Imports were manually collected and revised.
+
+Ontology source: https://raw.githubusercontent.com/hbabaie1/Sustainable-Development-and-Climate-SDC-ontology/refs/heads/main/SDC_v1.owl"""@en ;
+                                                                              rdfs:seeAlso "https://github.com/hbabaie1/Sustainable-Development-and-Climate-SDC-ontology/tree/main" ;
+                                                                              owl:versionInfo "2026-04-08" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.obolibrary.org/obo/IAO_0000115
+<http://purl.obolibrary.org/obo/IAO_0000115> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/source
+<http://purl.org/dc/elements/1.1/source> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#hasDbXref
+<http://www.geneontology.org/formats/oboInOwl#hasDbXref> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#hasOBONamespace
+<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym
+<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#id
+<http://www.geneontology.org/formats/oboInOwl#id> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#inSubset
+<http://www.geneontology.org/formats/oboInOwl#inSubset> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/definition_source
+<http://www.ontologyrepository.com/CommonCoreOntologies/definition_source> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/is_curated_in_ontology
+<http://www.ontologyrepository.com/CommonCoreOntologies/is_curated_in_ontology> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://purl.obolibrary.org/obo/pato#directly_associated_with
+<http://purl.obolibrary.org/obo/pato#directly_associated_with> rdf:type owl:ObjectProperty .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/is_input_of
+<http://www.ontologyrepository.com/CommonCoreOntologies/is_input_of> rdf:type owl:ObjectProperty .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/is_output_of
+<http://www.ontologyrepository.com/CommonCoreOntologies/is_output_of> rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://purl.obolibrary.org/obo/BFO_0000016
+<http://purl.obolibrary.org/obo/BFO_0000016> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000019
+<http://purl.obolibrary.org/obo/BFO_0000019> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000023
+<http://purl.obolibrary.org/obo/BFO_0000023> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/PATO_0000001
+<http://purl.obolibrary.org/obo/PATO_0000001> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/PATO_0001303
+<http://purl.obolibrary.org/obo/PATO_0001303> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/PATO_0000001> ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000115> "A quality inhering in a bearer by virtue of the bearer's disposition to varying or changing." ;
+                                              <http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> "quality" ;
+                                              <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> "variability of a physical quality" ;
+                                              <http://www.geneontology.org/formats/oboInOwl#id> "PATO:0001303" ;
+                                              <http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/pato#attribute_slim> ;
+                                              rdfs:label "variability" .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/PATO_0001303> ;
+   owl:annotatedProperty <http://purl.obolibrary.org/obo/IAO_0000115> ;
+   owl:annotatedTarget "A quality inhering in a bearer by virtue of the bearer's disposition to varying or changing." ;
+   <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "Dictionary:http://dictionary.reference.com/"
+ ] .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/Amount
+<http://www.ontologyrepository.com/CommonCoreOntologies/Amount> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000019> ;
+                                                                <http://www.ontologyrepository.com/CommonCoreOntologies/definition_source> "http://en.wiktionary.org/wiki/amount" ;
+                                                                <http://www.ontologyrepository.com/CommonCoreOntologies/is_curated_in_ontology> "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/QualityOntology"^^xsd:anyURI ;
+                                                                rdfs:label "Amount"@en ;
+                                                                <http://www.w3.org/2004/02/skos/core#definition> "A Quality that inheres in a bearer in virtue of the total, aggregate or sum of a number of discrete items or material the entity contains as parts."@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/Temperature
+<http://www.ontologyrepository.com/CommonCoreOntologies/Temperature> rdf:type owl:Class ;
+                                                                     rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000019> ;
+                                                                     <http://www.ontologyrepository.com/CommonCoreOntologies/is_curated_in_ontology> "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/QualityOntology"^^xsd:anyURI ;
+                                                                     rdfs:label "Temperature"@en ;
+                                                                     <http://www.w3.org/2004/02/skos/core#definition> "A Quality that inheres in a bearer in virtue of its thermal energy."@en .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Amount_of_River_Discharge
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Amount_of_River_Discharge> rdf:type owl:Class ;
+                                                                                                            rdfs:subClassOf <http://www.ontologyrepository.com/CommonCoreOntologies/Amount> ;
+                                                                                                            rdfs:label "Amount of River Discharge" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Anthropogenic_Activity
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Anthropogenic_Activity> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Availability
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Availability> rdf:type owl:Class ;
+                                                                                               rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000019> ;
+                                                                                               rdfs:label "Availability" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Climate
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Climate> rdf:type owl:Class ;
+                                                                                          rdfs:subClassOf <http://purl.obolibrary.org/obo/PATO_0001303> ;
+                                                                                          rdfs:label "Climate" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Climate-related_Hazardous_Role
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Climate-related_Hazardous_Role> rdf:type owl:Class ;
+                                                                                                                 rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Hazard_Role> ;
+                                                                                                                 rdfs:label "Climate-related Hazardous Role" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Climate-related_Risk
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Climate-related_Risk> rdf:type owl:Class ;
+                                                                                                       rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Risk> ;
+                                                                                                       rdfs:label "Climate-related Risk" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Climate_Event
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Climate_Event> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Content
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Content> rdf:type owl:Class ;
+                                                                                          rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000019> .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Ecosystem_Functioning
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Ecosystem_Functioning> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Environmental_Variability
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Environmental_Variability> rdf:type owl:Class ;
+                                                                                                            rdfs:subClassOf <http://purl.obolibrary.org/obo/PATO_0001303> ;
+                                                                                                            <http://purl.org/dc/elements/1.1/source> "ENVO" ;
+                                                                                                            rdfs:label "Environmental Variability" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Freshwater_Availability
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Freshwater_Availability> rdf:type owl:Class ;
+                                                                                                          rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Water_Availability> ;
+                                                                                                          rdfs:label "Freshwater Availability" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Global_Mean_Surface_Temperature
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Global_Mean_Surface_Temperature> rdf:type owl:Class ;
+                                                                                                                  rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Global_Surface_Temperature> ;
+                                                                                                                  rdfs:label "Global Mean Surface Temperature" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Global_Surface_Temperature
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Global_Surface_Temperature> rdf:type owl:Class ;
+                                                                                                             rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Surface_Temperature> ;
+                                                                                                             rdfs:label "Global Surface Temperature" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Hazard_Role
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Hazard_Role> rdf:type owl:Class ;
+                                                                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000023> ;
+                                                                                              rdfs:label "Hazard Role" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Human-caused_Climate_Change
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Human-caused_Climate_Change> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Interannual_Variability_of_Precipitation
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Interannual_Variability_of_Precipitation> rdf:type owl:Class ;
+                                                                                                                           rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Variability_of_Precipitation> ;
+                                                                                                                           rdfs:label "Interannual Variability of Precipitation" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Land_Freshwater_Availability
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Land_Freshwater_Availability> rdf:type owl:Class ;
+                                                                                                               rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Freshwater_Availability> ;
+                                                                                                               rdfs:label "Land Freshwater Availability" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Moisture
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Moisture> rdf:type owl:Class ;
+                                                                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000019> ;
+                                                                                           rdfs:label "Moisture" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Precipitation_Amount
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Precipitation_Amount> rdf:type owl:Class ;
+                                                                                                       rdfs:subClassOf <http://www.ontologyrepository.com/CommonCoreOntologies/Amount> ;
+                                                                                                       rdfs:label "Precipitation Amount" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Precipitation_Variability
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Precipitation_Variability> rdf:type owl:Class ;
+                                                                                                            rdfs:subClassOf <http://purl.obolibrary.org/obo/PATO_0001303> ;
+                                                                                                            rdfs:label "Precipitation Variability" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Rainfall_Variability
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Rainfall_Variability> rdf:type owl:Class ;
+                                                                                                       rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Variability_of_Precipitation> ,
+                                                                                                                       [ rdf:type owl:Restriction ;
+                                                                                                                         owl:onProperty <http://www.ontologyrepository.com/CommonCoreOntologies/is_output_of> ;
+                                                                                                                         owl:someValuesFrom <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Increase_in_El_Niño–Southern_Oscillation>
+                                                                                                                       ] ;
+                                                                                                       rdfs:label "Rainfall Variability" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Risk
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Risk> rdf:type owl:Class ;
+                                                                                       rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000016> ;
+                                                                                       rdfs:label "Risk" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Safety
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Safety> rdf:type owl:Class ;
+                                                                                         rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000016> .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Scarcity
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Scarcity> rdf:type owl:Class ;
+                                                                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000016> ;
+                                                                                           rdfs:comment "Scarcity" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Seasonality
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Seasonality> rdf:type owl:Class ;
+                                                                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/PATO_0001303> ;
+                                                                                              rdfs:label "Seasonality" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Seasonality_of_Precipitation
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Seasonality_of_Precipitation> rdf:type owl:Class ;
+                                                                                                               rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Seasonality> ;
+                                                                                                               rdfs:label "Seasonality of Precipitation" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Seasonality_of_River_Discharge
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Seasonality_of_River_Discharge> rdf:type owl:Class ;
+                                                                                                                 rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Seasonality> ;
+                                                                                                                 rdfs:label "Seasonality of River Discharge" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Security
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Security> rdf:type owl:Class ;
+                                                                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000016> ;
+                                                                                           rdfs:label "Security" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Soil_Carbon_Content
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Soil_Carbon_Content> rdf:type owl:Class ;
+                                                                                                      rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Content> ;
+                                                                                                      rdfs:label "Soil Carbon Content" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Soil_Moisture
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Soil_Moisture> rdf:type owl:Class ;
+                                                                                                rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Moisture> ,
+                                                                                                                [ rdf:type owl:Restriction ;
+                                                                                                                  owl:onProperty <http://www.ontologyrepository.com/CommonCoreOntologies/is_input_of> ;
+                                                                                                                  owl:someValuesFrom <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Anthropogenic_Activity>
+                                                                                                                ] ,
+                                                                                                                [ rdf:type owl:Restriction ;
+                                                                                                                  owl:onProperty <http://www.ontologyrepository.com/CommonCoreOntologies/is_input_of> ;
+                                                                                                                  owl:someValuesFrom <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Ecosystem_Functioning>
+                                                                                                                ] ;
+                                                                                                rdfs:label "Soil Moisture" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Soil_Security
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Soil_Security> rdf:type owl:Class ;
+                                                                                                rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Security> ;
+                                                                                                rdfs:label "Soil Security" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Soil_Water_Availability
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Soil_Water_Availability> rdf:type owl:Class ;
+                                                                                                          rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Water_Availability> ;
+                                                                                                          rdfs:label "Soil Water Availability" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Sub-seasonal_Precipitation_Variability
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Sub-seasonal_Precipitation_Variability> rdf:type owl:Class ;
+                                                                                                                         rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Precipitation_Variability> ,
+                                                                                                                                         [ rdf:type owl:Restriction ;
+                                                                                                                                           owl:onProperty <http://www.ontologyrepository.com/CommonCoreOntologies/is_output_of> ;
+                                                                                                                                           owl:someValuesFrom <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Human-caused_Climate_Change>
+                                                                                                                                         ] ;
+                                                                                                                         rdfs:label "Sub-seasonal Precipitation Variability" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Surface_Temperature
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Surface_Temperature> rdf:type owl:Class ;
+                                                                                                      rdfs:subClassOf <http://www.ontologyrepository.com/CommonCoreOntologies/Temperature> ;
+                                                                                                      rdfs:label "Surface Temperature" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Surface_Water_Availability
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Surface_Water_Availability> rdf:type owl:Class ;
+                                                                                                             rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Water_Availability> ;
+                                                                                                             rdfs:label "Surface Water Availability" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Variability_of_Precipitation
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Variability_of_Precipitation> rdf:type owl:Class ;
+                                                                                                               rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Environmental_Variability> ;
+                                                                                                               rdfs:label "Variability of Precipitation" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Variability_of_River_Discharge
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Variability_of_River_Discharge> rdf:type owl:Class ;
+                                                                                                                 rdfs:subClassOf <http://purl.obolibrary.org/obo/PATO_0001303> ;
+                                                                                                                 rdfs:label "Variability of River Discharge" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Very_Dry_Weather
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Very_Dry_Weather> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Very_Wet_Weather
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Very_Wet_Weather> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Warm_Climate
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Warm_Climate> rdf:type owl:Class ;
+                                                                                               rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Climate> ,
+                                                                                                               [ rdf:type owl:Restriction ;
+                                                                                                                 owl:onProperty <http://purl.obolibrary.org/obo/pato#directly_associated_with> ;
+                                                                                                                 owl:someValuesFrom <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Very_Dry_Weather>
+                                                                                                               ] ,
+                                                                                                               [ rdf:type owl:Restriction ;
+                                                                                                                 owl:onProperty <http://purl.obolibrary.org/obo/pato#directly_associated_with> ;
+                                                                                                                 owl:someValuesFrom <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Very_Wet_Weather>
+                                                                                                               ] ,
+                                                                                                               [ rdf:type owl:Restriction ;
+                                                                                                                 owl:onProperty <http://www.ontologyrepository.com/CommonCoreOntologies/is_input_of> ;
+                                                                                                                 owl:someValuesFrom <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Climate_Event>
+                                                                                                               ] ;
+                                                                                               rdfs:label "Warm Climate" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Water_Availability
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Water_Availability> rdf:type owl:Class ;
+                                                                                                     rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Availability> ;
+                                                                                                     rdfs:label "Water Availability" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Water_Quantity
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Water_Quantity> rdf:type owl:Class ;
+                                                                                                 rdfs:subClassOf <http://www.ontologyrepository.com/CommonCoreOntologies/Amount> ;
+                                                                                                 rdfs:label "Water Quantity" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Water_Safety
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Water_Safety> rdf:type owl:Class ;
+                                                                                               rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Safety> ;
+                                                                                               rdfs:label "Water Safety" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Water_Scarcity
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Water_Scarcity> rdf:type owl:Class ;
+                                                                                                 rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Scarcity> ;
+                                                                                                 rdfs:label "Water Scarcity" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Water_Security
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Water_Security> rdf:type owl:Class ;
+                                                                                                 rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Security> ;
+                                                                                                 rdfs:label "Water Security" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Weather
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Weather> rdf:type owl:Class ;
+                                                                                          rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Environmental_Variability> ;
+                                                                                          rdfs:label "Weather" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Increase_in_El_Niño–Southern_Oscillation
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Increase_in_El_Niño–Southern_Oscillation> rdf:type owl:Class .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi

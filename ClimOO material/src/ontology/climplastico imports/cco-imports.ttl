@@ -1,0 +1,698 @@
+@prefix : <http://www.semanticweb.org/f.u./ontologies/2026/3/untitled-ontology-330/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/f.u./ontologies/2026/3/untitled-ontology-330/> .
+
+<http://ClimOO/climoo/imports/cco-imports> rdf:type owl:Ontology ;
+                                            owl:versionIRI <http://ClimOO/climoo/imports/cco-imports#2026-04-09> ;
+                                            <http://purl.org/dc/terms/description> """This file contains ClimOO Ontology imports from the Common Core Ontology suite (CCO). Imports were manually collected and revised.
+
+Ontology source: CCO 1.7.
+https://github.com/CommonCoreOntology/CommonCoreOntologies/releases/tag/v1.7-2024-11-03"""@en ;
+                                            rdfs:comment """Two new releases of CCO, CCO 1.7 and CCO 2.0, have been made available in November 2024. CCO 2.0 provides a new IRI schema. SCO, ClimOO upper-level ontology, imports from a former release. CCO 1.5. Aiming to conform with SCO, ClimOO currently reuses CCO imports in compliance with SCO. As soon as updates are made available for those resources, ClimOO will align accordingly. 
+
+https://github.com/CommonCoreOntology/CommonCoreOntologies/releases
+https://w3id.org/sco/repo"""@en ;
+                                            rdfs:seeAlso "https://github.com/CommonCoreOntology/CommonCoreOntologies" ;
+                                            owl:versionInfo "2026-02-27" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/identifier
+<http://purl.org/dc/elements/1.1/identifier> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/definition_source
+<http://www.ontologyrepository.com/CommonCoreOntologies/definition_source> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/is_curated_in_ontology
+<http://www.ontologyrepository.com/CommonCoreOntologies/is_curated_in_ontology> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#altLabel
+<http://www.w3.org/2004/02/skos/core#altLabel> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#example
+<http://www.w3.org/2004/02/skos/core#example> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#scopeNote
+<http://www.w3.org/2004/02/skos/core#scopeNote> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://purl.obolibrary.org/obo/BFO_0000056
+<http://purl.obolibrary.org/obo/BFO_0000056> rdf:type owl:ObjectProperty ;
+                                             owl:inverseOf <http://purl.obolibrary.org/obo/BFO_0000057> ;
+                                             rdfs:domain [ rdf:type owl:Class ;
+                                                           owl:unionOf ( <http://purl.obolibrary.org/obo/BFO_0000020>
+                                                                         <http://purl.obolibrary.org/obo/BFO_0000031>
+                                                                         [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/BFO_0000004>
+                                                                                                [ rdf:type owl:Class ;
+                                                                                                  owl:complementOf <http://purl.obolibrary.org/obo/BFO_0000006>
+                                                                                                ]
+                                                                                              ) ;
+                                                                           rdf:type owl:Class
+                                                                         ]
+                                                                       )
+                                                         ] ;
+                                             rdfs:range <http://purl.obolibrary.org/obo/BFO_0000015> ;
+                                             <http://purl.org/dc/elements/1.1/identifier> "250-BFO" ;
+                                             rdfs:label "participates in"@en ;
+                                             <http://www.w3.org/2004/02/skos/core#definition> "(Elucidation) participates in holds between some b that is either a specifically dependent continuant or generically dependent continuant or independent continuant that is not a spatial region & some process p such that b participates in p some way"@en ;
+                                             <http://www.w3.org/2004/02/skos/core#scopeNote> "Users that require more sophisticated representations of time are encouraged to import a temporal extension of BFO-Core provided by the BFO development team. See documentation for guidance: <https://github.com/BFO-ontology/BFO-2020/tree/master/src/owl/profiles/temporal%20extensions>"@en .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000057
+<http://purl.obolibrary.org/obo/BFO_0000057> rdf:type owl:ObjectProperty ;
+                                             rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000015> ;
+                                             rdfs:range [ rdf:type owl:Class ;
+                                                          owl:unionOf ( <http://purl.obolibrary.org/obo/BFO_0000020>
+                                                                        <http://purl.obolibrary.org/obo/BFO_0000031>
+                                                                        [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/BFO_0000004>
+                                                                                               [ rdf:type owl:Class ;
+                                                                                                 owl:complementOf <http://purl.obolibrary.org/obo/BFO_0000006>
+                                                                                               ]
+                                                                                             ) ;
+                                                                          rdf:type owl:Class
+                                                                        ]
+                                                                      )
+                                                        ] ;
+                                             <http://purl.org/dc/elements/1.1/identifier> "248-BFO" ;
+                                             rdfs:label "has participant"@en ;
+                                             <http://www.w3.org/2004/02/skos/core#definition> "p has participant c =Def c participates in p"@en ;
+                                             <http://www.w3.org/2004/02/skos/core#scopeNote> "Users that require more sophisticated representations of time are encouraged to import a temporal extension of BFO-Core provided by the BFO development team. See documentation for guidance: <https://github.com/BFO-ontology/BFO-2020/tree/master/src/owl/profiles/temporal%20extensions>"@en .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000101
+<http://purl.obolibrary.org/obo/BFO_0000101> rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000196
+<http://purl.obolibrary.org/obo/BFO_0000196> rdf:type owl:ObjectProperty .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/affects
+<http://www.ontologyrepository.com/CommonCoreOntologies/affects> rdf:type owl:ObjectProperty ;
+                                                                 rdfs:subPropertyOf <http://purl.obolibrary.org/obo/BFO_0000057> ;
+                                                                 owl:inverseOf <http://www.ontologyrepository.com/CommonCoreOntologies/is_affected_by> ;
+                                                                 rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000015> ;
+                                                                 rdfs:range <http://purl.obolibrary.org/obo/BFO_0000002> ;
+                                                                 <http://www.ontologyrepository.com/CommonCoreOntologies/is_curated_in_ontology> "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/ExtendedRelationOntology"^^xsd:anyURI ;
+                                                                 rdfs:label "affects"@en ;
+                                                                 <http://www.w3.org/2004/02/skos/core#definition> "x affects y iff x is an instance of Process and y is an instance of Continuant, and x influences y in some manner, most often by producing a change in y."@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/caused_by
+<http://www.ontologyrepository.com/CommonCoreOntologies/caused_by> rdf:type owl:ObjectProperty ;
+                                                                   owl:inverseOf <http://www.ontologyrepository.com/CommonCoreOntologies/is_cause_of> ;
+                                                                   rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000003> ;
+                                                                   rdfs:range <http://purl.obolibrary.org/obo/BFO_0000003> ;
+                                                                   <http://www.ontologyrepository.com/CommonCoreOntologies/is_curated_in_ontology> "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/ExtendedRelationOntology"^^xsd:anyURI ;
+                                                                   rdfs:label "caused by"@en ;
+                                                                   <http://www.w3.org/2004/02/skos/core#definition> "x caused_by y iff x and y are instances of Occurrent, and x is a consequence of y."@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/has_input
+<http://www.ontologyrepository.com/CommonCoreOntologies/has_input> rdf:type owl:ObjectProperty ;
+                                                                   rdfs:subPropertyOf <http://purl.obolibrary.org/obo/BFO_0000057> ;
+                                                                   owl:inverseOf <http://www.ontologyrepository.com/CommonCoreOntologies/is_input_of> ;
+                                                                   rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000015> ;
+                                                                   rdfs:range <http://purl.obolibrary.org/obo/BFO_0000002> ;
+                                                                   <http://www.ontologyrepository.com/CommonCoreOntologies/is_curated_in_ontology> "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/ExtendedRelationOntology"^^xsd:anyURI ;
+                                                                   rdfs:label "has input"@en ;
+                                                                   <http://www.w3.org/2004/02/skos/core#definition> "y has_input x iff x is an instance of Continuant and y is an instance of Process, such that the presence of x at the beginning of y is a necessary condition for the start of y."@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/has_output
+<http://www.ontologyrepository.com/CommonCoreOntologies/has_output> rdf:type owl:ObjectProperty ;
+                                                                    rdfs:subPropertyOf <http://purl.obolibrary.org/obo/BFO_0000057> ;
+                                                                    owl:inverseOf <http://www.ontologyrepository.com/CommonCoreOntologies/is_output_of> ;
+                                                                    rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000015> ;
+                                                                    rdfs:range <http://purl.obolibrary.org/obo/BFO_0000002> ;
+                                                                    <http://www.ontologyrepository.com/CommonCoreOntologies/definition_source> "https://en.wikipedia.org/w/index.php?title=IPO_model&oldid=1024398398"^^xsd:anyURI ;
+                                                                    <http://www.ontologyrepository.com/CommonCoreOntologies/is_curated_in_ontology> "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/ExtendedRelationOntology"^^xsd:anyURI ;
+                                                                    rdfs:label "has output"@en ;
+                                                                    <http://www.w3.org/2004/02/skos/core#definition> "y has_output x iff x is an instance of Continuant and y is an instance of Process, such that the presence of x at the end of y is a necessary condition for the completion of y."@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/is_affected_by
+<http://www.ontologyrepository.com/CommonCoreOntologies/is_affected_by> rdf:type owl:ObjectProperty .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/is_cause_of
+<http://www.ontologyrepository.com/CommonCoreOntologies/is_cause_of> rdf:type owl:ObjectProperty ;
+                                                                     rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000003> ;
+                                                                     rdfs:range <http://purl.obolibrary.org/obo/BFO_0000003> ;
+                                                                     <http://www.ontologyrepository.com/CommonCoreOntologies/is_curated_in_ontology> "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/ExtendedRelationOntology"^^xsd:anyURI ;
+                                                                     rdfs:label "is cause of"@en ;
+                                                                     <http://www.w3.org/2004/02/skos/core#definition> "x is_cause_of y iff x and y are instances of Occurrent, and y is a consequence of x."@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/is_input_of
+<http://www.ontologyrepository.com/CommonCoreOntologies/is_input_of> rdf:type owl:ObjectProperty ;
+                                                                     rdfs:subPropertyOf <http://purl.obolibrary.org/obo/BFO_0000056> ;
+                                                                     rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000002> ;
+                                                                     rdfs:range <http://purl.obolibrary.org/obo/BFO_0000015> ;
+                                                                     <http://www.ontologyrepository.com/CommonCoreOntologies/is_curated_in_ontology> "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/ExtendedRelationOntology"^^xsd:anyURI ;
+                                                                     rdfs:label "is input of"@en ;
+                                                                     <http://www.w3.org/2004/02/skos/core#definition> "x is_input_of y iff x is an instance of Continuant and y is an instance of Process, such that the presence of x at the beginning of y is a necessary condition for the start of y."@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/is_output_of
+<http://www.ontologyrepository.com/CommonCoreOntologies/is_output_of> rdf:type owl:ObjectProperty ;
+                                                                      rdfs:subPropertyOf <http://purl.obolibrary.org/obo/BFO_0000056> ;
+                                                                      rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000002> ;
+                                                                      rdfs:range <http://purl.obolibrary.org/obo/BFO_0000015> ;
+                                                                      <http://www.ontologyrepository.com/CommonCoreOntologies/is_curated_in_ontology> "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/ExtendedRelationOntology"^^xsd:anyURI ;
+                                                                      rdfs:label "is output of"@en ;
+                                                                      <http://www.w3.org/2004/02/skos/core#definition> "x is_output_of y iff x is an instance of Continuant and y is an instance of Process, such that the presence of x at the end of y is a necessary condition for the completion of y."@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/process_started_by
+<http://www.ontologyrepository.com/CommonCoreOntologies/process_started_by> rdf:type owl:ObjectProperty ;
+                                                                            rdfs:subPropertyOf <http://www.ontologyrepository.com/CommonCoreOntologies/caused_by> ;
+                                                                            owl:inverseOf <http://www.ontologyrepository.com/CommonCoreOntologies/process_starts> ;
+                                                                            <http://www.ontologyrepository.com/CommonCoreOntologies/is_curated_in_ontology> "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/ExtendedRelationOntology"^^xsd:anyURI ;
+                                                                            rdfs:label "process started by"@en ;
+                                                                            <http://www.w3.org/2004/02/skos/core#definition> "x process_started_by y iff x and y are instances of processes, and x is caused_by y, and i is an instance of a temporal instant, and r is an instant of a temporal interval, and x has starting instance i, and y occurs on r, and r interval contains i."@en ;
+                                                                            <http://www.w3.org/2004/02/skos/core#scopeNote> "A process x is started by another process y when y causes x while y is still occurring."@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/process_starts
+<http://www.ontologyrepository.com/CommonCoreOntologies/process_starts> rdf:type owl:ObjectProperty ;
+                                                                        rdfs:subPropertyOf <http://www.ontologyrepository.com/CommonCoreOntologies/is_cause_of> ;
+                                                                        <http://www.ontologyrepository.com/CommonCoreOntologies/is_curated_in_ontology> "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/ExtendedRelationOntology"^^xsd:anyURI ;
+                                                                        rdfs:label "process starts"@en ;
+                                                                        <http://www.w3.org/2004/02/skos/core#definition> "x process_starts y iff x and y are instances of processes, and x is_cause_of y, and i is an instance of a temporal instant, and r is an instant of a temporal interval, and y has starting instance i, and x occurs on r, and r interval contains i."@en ;
+                                                                        <http://www.w3.org/2004/02/skos/core#scopeNote> "A process x starts another process y when x causes y while x is still occurring."@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://purl.obolibrary.org/obo/BFO_0000002
+<http://purl.obolibrary.org/obo/BFO_0000002> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000003
+<http://purl.obolibrary.org/obo/BFO_0000003> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000004
+<http://purl.obolibrary.org/obo/BFO_0000004> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000006
+<http://purl.obolibrary.org/obo/BFO_0000006> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000015
+<http://purl.obolibrary.org/obo/BFO_0000015> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000016
+<http://purl.obolibrary.org/obo/BFO_0000016> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000017
+<http://purl.obolibrary.org/obo/BFO_0000017> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000019
+<http://purl.obolibrary.org/obo/BFO_0000019> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000020
+<http://purl.obolibrary.org/obo/BFO_0000020> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000023
+<http://purl.obolibrary.org/obo/BFO_0000023> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000031
+<http://purl.obolibrary.org/obo/BFO_0000031> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000034
+<http://purl.obolibrary.org/obo/BFO_0000034> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000144
+<http://purl.obolibrary.org/obo/BFO_0000144> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000003> ;
+                                             <http://www.ontologyrepository.com/CommonCoreOntologies/is_curated_in_ontology> "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/EventOntology"^^xsd:anyURI ;
+                                             rdfs:label "Process Profile"@en ;
+                                             <http://www.w3.org/2004/02/skos/core#definition> "An occurrent that is an occurrent part of some process by virtue of the rate, or pattern, or amplitude of change in an attribute of one or more participants of said process."@en ;
+                                             <http://www.w3.org/2004/02/skos/core#example> "On a somewhat higher level of complexity are what we shall call rate process profiles, which are the targets of selective abstraction focused not on determinate quality magnitudes plotted over time, but rather on certain ratios between these magnitudes and elapsed times. A speed process profile, for example, is represented by a graph plotting against time the ratio of distance covered per unit of time. Since rates may change, and since such changes, too, may have rates of change, we have to deal here with a hierarchy of process profile universals at successive levels; One important sub-family of rate process profiles is illustrated by the beat or frequency profiles of cyclical processes, illustrated by the 60 beats per minute beating process of John’s heart, or the 120 beats per minute drumming process involved in one of John’s performances in a rock band, and so on. Each such process includes what we shall call a beat process profile instance as part, a subtype of rate process profile in which the salient ratio is not distance covered but rather number of beat cycles per unit of time. Each beat process profile instance instantiates the determinable universal beat process profile. But it also instantiates multiple more specialized universals at lower levels of generality, selected from rate process profilebeat process profileregular beat process profile3 bpm beat process profile4 bpm beat process profileirregular beat process profileincreasing beat process profileand so on.In the case of a regular beat process profile, a rate can be assigned in the simplest possible fashion by dividing the number of cycles by the length of the temporal region occupied by the beating process profile as a whole. Irregular process profiles of this sort, for example as identified in the clinic, or in the readings on an aircraft instrument panel, are often of diagnostic significance.; The simplest type of process profiles are what we shall call ‘quality process profiles’, which are the process profiles which serve as the foci of the sort of selective abstraction that is involved when measurements are made of changes in single qualities, as illustrated, for example, by process profiles of mass, temperature, aortic pressure, and so on."@en ;
+                                             <http://www.w3.org/2004/02/skos/core#scopeNote> "b process_profile_of c holds when b proper_occurrent_part_of c& there is some proper_occurrent_part d of c which has no parts in common with b & is mutually dependent on b& is such that b, c and d occupy the same temporal region (axiom label in BFO2 Reference: [094-005])"@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/Change
+<http://www.ontologyrepository.com/CommonCoreOntologies/Change> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000015> ;
+                                                                <http://www.ontologyrepository.com/CommonCoreOntologies/is_curated_in_ontology> "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/EventOntology"^^xsd:anyURI ;
+                                                                rdfs:label "Change"@en ;
+                                                                <http://www.w3.org/2004/02/skos/core#definition> "A Process in which some independent continuant endures and 1) one or more of the dependent entities it bears increase or decrease in intensity, 2) the entity begins to bear some dependent entity or 3) the entity ceases to bear some dependent entity."@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/DamagedStasis
+<http://www.ontologyrepository.com/CommonCoreOntologies/DamagedStasis> rdf:type owl:Class ;
+                                                                       rdfs:subClassOf <http://www.ontologyrepository.com/CommonCoreOntologies/StasisOfSpecificallyDependentContinuant> ;
+                                                                       <http://www.ontologyrepository.com/CommonCoreOntologies/definition_source> "http://www.thefreedictionary.com/damaged" ;
+                                                                       <http://www.ontologyrepository.com/CommonCoreOntologies/is_curated_in_ontology> "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/EventOntology"^^xsd:anyURI ;
+                                                                       rdfs:label "Damaged Stasis"@en ;
+                                                                       <http://www.w3.org/2004/02/skos/core#altLabel> "Compromised"@en ,
+                                                                                                                      "Damaged"@en ,
+                                                                                                                      "Injured"@en ;
+                                                                       <http://www.w3.org/2004/02/skos/core#definition> "A Stasis of Specifically Dependent Continuant in which some Independent Continuant bears a Quality or Realizable Entity that has suffered impairment (i.e., a decrease or loss) due to a previous action or event such that the Independent Continuant is now of lesser value, usefulness, or functionality."@en ;
+                                                                       <http://www.w3.org/2004/02/skos/core#scopeNote> "This class can be used to instantiate instances that might otherwise be treated by defined classes such as Damaged Vehicle or Wounded Person. The Independent Continuant and Quality or Realizable Entity are participants of the stasis which can in turn be related to the temporal interval via the occurs on property. "@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/DecreaseOfDependentContinuant
+<http://www.ontologyrepository.com/CommonCoreOntologies/DecreaseOfDependentContinuant> rdf:type owl:Class ;
+                                                                                       rdfs:subClassOf <http://www.ontologyrepository.com/CommonCoreOntologies/Change> ;
+                                                                                       <http://www.ontologyrepository.com/CommonCoreOntologies/is_curated_in_ontology> "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/EventOntology"^^xsd:anyURI ;
+                                                                                       rdfs:label "Decrease of Dependent Continuant"@en ;
+                                                                                       <http://www.w3.org/2004/02/skos/core#definition> "A Change in which some Independent Continuant has a decrease in the level of some Dependent Continuant that it bears."@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/DecreaseOfDisposition
+<http://www.ontologyrepository.com/CommonCoreOntologies/DecreaseOfDisposition> rdf:type owl:Class ;
+                                                                               rdfs:subClassOf <http://www.ontologyrepository.com/CommonCoreOntologies/DecreaseOfRealizableEntity> ;
+                                                                               <http://www.ontologyrepository.com/CommonCoreOntologies/is_curated_in_ontology> "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/EventOntology"^^xsd:anyURI ;
+                                                                               rdfs:label "Decrease of Disposition"@en ;
+                                                                               <http://www.w3.org/2004/02/skos/core#definition> "A Decrease of Realizable Entity in which some Independent Continuant has a decrease of some Disposition it bears."@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/DecreaseOfFunction
+<http://www.ontologyrepository.com/CommonCoreOntologies/DecreaseOfFunction> rdf:type owl:Class ;
+                                                                            rdfs:subClassOf <http://www.ontologyrepository.com/CommonCoreOntologies/DecreaseOfDisposition> ;
+                                                                            <http://www.ontologyrepository.com/CommonCoreOntologies/is_curated_in_ontology> "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/EventOntology"^^xsd:anyURI ;
+                                                                            rdfs:label "Decrease of Function"@en ;
+                                                                            <http://www.w3.org/2004/02/skos/core#definition> "A Decrease of Disposition in which some Independent Continuant has a decrease of some Function that it bears."@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/DecreaseOfGenericallyDependentContinuant
+<http://www.ontologyrepository.com/CommonCoreOntologies/DecreaseOfGenericallyDependentContinuant> rdf:type owl:Class ;
+                                                                                                  rdfs:subClassOf <http://www.ontologyrepository.com/CommonCoreOntologies/DecreaseOfDependentContinuant> ;
+                                                                                                  <http://www.ontologyrepository.com/CommonCoreOntologies/is_curated_in_ontology> "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/EventOntology"^^xsd:anyURI ;
+                                                                                                  rdfs:comment "For the most part Generically Dependent Continuants do not inhere in their bearers over some continuous scale. The primary exception is religion and this class allows annotation of those cases where an Agent is described as becoming less religious. Other cases would include the decrease of an organization's bearing of some objective."@en ;
+                                                                                                  rdfs:label "Decrease of Generically Dependent Continuant"@en ;
+                                                                                                  <http://www.w3.org/2004/02/skos/core#definition> "A Decrease of Dependent Continuant in which some Independent Continuant has a decrease in the level of a Generically Dependent Continuant that it bears."@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/DecreaseOfQuality
+<http://www.ontologyrepository.com/CommonCoreOntologies/DecreaseOfQuality> rdf:type owl:Class ;
+                                                                           rdfs:subClassOf <http://www.ontologyrepository.com/CommonCoreOntologies/DecreaseOfSpecificallyDependentContinuant> ;
+                                                                           <http://www.ontologyrepository.com/CommonCoreOntologies/is_curated_in_ontology> "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/EventOntology"^^xsd:anyURI ;
+                                                                           rdfs:label "Decrease of Quality"@en ;
+                                                                           <http://www.w3.org/2004/02/skos/core#definition> "A Decrease of Specifically Dependent Continuant in which some Independent Continuant has a decrease of some Quality that it bears."@en ;
+                                                                           <http://www.w3.org/2004/02/skos/core#example> "Weight Loss, Decreasing Temperature, decreasing color intensity, loss of structural integrity" .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/DecreaseOfRealizableEntity
+<http://www.ontologyrepository.com/CommonCoreOntologies/DecreaseOfRealizableEntity> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf <http://www.ontologyrepository.com/CommonCoreOntologies/DecreaseOfSpecificallyDependentContinuant> ;
+                                                                                    <http://www.ontologyrepository.com/CommonCoreOntologies/is_curated_in_ontology> "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/EventOntology"^^xsd:anyURI ;
+                                                                                    rdfs:label "Decrease of Realizable Entity"@en ;
+                                                                                    <http://www.w3.org/2004/02/skos/core#definition> "A Decrease of Specifically Dependent Continuant in which some Independent Continuant has a decrease of some Realizable Entity that it bears."@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/DecreaseOfRole
+<http://www.ontologyrepository.com/CommonCoreOntologies/DecreaseOfRole> rdf:type owl:Class ;
+                                                                        rdfs:subClassOf <http://www.ontologyrepository.com/CommonCoreOntologies/DecreaseOfRealizableEntity> ;
+                                                                        <http://www.ontologyrepository.com/CommonCoreOntologies/is_curated_in_ontology> "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/EventOntology"^^xsd:anyURI ;
+                                                                        rdfs:label "Decrease of Role"@en ;
+                                                                        <http://www.w3.org/2004/02/skos/core#definition> "A Decrease of Realizable Entity in which some Independent Continuant has a decrease of some Role that it bears."@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/DecreaseOfSpecificallyDependentContinuant
+<http://www.ontologyrepository.com/CommonCoreOntologies/DecreaseOfSpecificallyDependentContinuant> rdf:type owl:Class ;
+                                                                                                   rdfs:subClassOf <http://www.ontologyrepository.com/CommonCoreOntologies/DecreaseOfDependentContinuant> ;
+                                                                                                   <http://www.ontologyrepository.com/CommonCoreOntologies/is_curated_in_ontology> "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/EventOntology"^^xsd:anyURI ;
+                                                                                                   rdfs:label "Decrease of Specifically Dependent Continuant"@en ;
+                                                                                                   <http://www.w3.org/2004/02/skos/core#definition> "A Decrease of Dependent Continuant in which some Independent Continuant has a decrease in some Specifically Dependent Continuant that it bears."@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/GainOfDependentContinuant
+<http://www.ontologyrepository.com/CommonCoreOntologies/GainOfDependentContinuant> rdf:type owl:Class ;
+                                                                                   rdfs:subClassOf <http://www.ontologyrepository.com/CommonCoreOntologies/Change> ;
+                                                                                   <http://www.ontologyrepository.com/CommonCoreOntologies/is_curated_in_ontology> "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/EventOntology"^^xsd:anyURI ;
+                                                                                   rdfs:label "Gain of Dependent Continuant"@en ;
+                                                                                   <http://www.w3.org/2004/02/skos/core#definition> "A Change in which an Independent Continuant becomes the bearer or carrier of some Dependent Continuant."@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/GainOfDisposition
+<http://www.ontologyrepository.com/CommonCoreOntologies/GainOfDisposition> rdf:type owl:Class ;
+                                                                           rdfs:subClassOf <http://www.ontologyrepository.com/CommonCoreOntologies/GainOfRealizableEntity> ,
+                                                                                           [ rdf:type owl:Restriction ;
+                                                                                             owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000057> ;
+                                                                                             owl:someValuesFrom [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/BFO_0000004>
+                                                                                                                                       [ rdf:type owl:Restriction ;
+                                                                                                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000196> ;
+                                                                                                                                         owl:someValuesFrom <http://purl.obolibrary.org/obo/BFO_0000016>
+                                                                                                                                       ]
+                                                                                                                                     ) ;
+                                                                                                                  rdf:type owl:Class
+                                                                                                                ]
+                                                                                           ] ;
+                                                                           <http://www.ontologyrepository.com/CommonCoreOntologies/is_curated_in_ontology> "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/EventOntology"^^xsd:anyURI ;
+                                                                           rdfs:comment "This class should be used to demarcate the start of the temporal interval (through the BFO 'occupies temporal region' property) that the Entity bears the Disposition."@en ;
+                                                                           rdfs:label "Gain of Disposition"@en ;
+                                                                           <http://www.w3.org/2004/02/skos/core#definition> "A Gain of Realizable Entity in which some Independent Continuant becomes the bearer of some Disposition."@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/GainOfFunction
+<http://www.ontologyrepository.com/CommonCoreOntologies/GainOfFunction> rdf:type owl:Class ;
+                                                                        rdfs:subClassOf <http://www.ontologyrepository.com/CommonCoreOntologies/GainOfDisposition> ,
+                                                                                        [ rdf:type owl:Restriction ;
+                                                                                          owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000057> ;
+                                                                                          owl:someValuesFrom [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/BFO_0000004>
+                                                                                                                                    [ rdf:type owl:Restriction ;
+                                                                                                                                      owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000196> ;
+                                                                                                                                      owl:someValuesFrom <http://purl.obolibrary.org/obo/BFO_0000034>
+                                                                                                                                    ]
+                                                                                                                                  ) ;
+                                                                                                               rdf:type owl:Class
+                                                                                                             ]
+                                                                                        ] ;
+                                                                        <http://www.ontologyrepository.com/CommonCoreOntologies/is_curated_in_ontology> "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/EventOntology"^^xsd:anyURI ;
+                                                                        rdfs:comment "This class should be used to demarcate the start of the temporal interval (through the BFO 'occupies temporal region' property) that the Entity bears the Function."@en ;
+                                                                        rdfs:label "Gain of Function"@en ;
+                                                                        <http://www.w3.org/2004/02/skos/core#definition> "A Gain of Disposition in which some Independent Continuant becomes the bearer of some Function."@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/GainOfGenericallyDependentContinuant
+<http://www.ontologyrepository.com/CommonCoreOntologies/GainOfGenericallyDependentContinuant> rdf:type owl:Class ;
+                                                                                              rdfs:subClassOf <http://www.ontologyrepository.com/CommonCoreOntologies/GainOfDependentContinuant> ,
+                                                                                                              [ rdf:type owl:Restriction ;
+                                                                                                                owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000057> ;
+                                                                                                                owl:someValuesFrom [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/BFO_0000004>
+                                                                                                                                                          [ rdf:type owl:Restriction ;
+                                                                                                                                                            owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000101> ;
+                                                                                                                                                            owl:someValuesFrom <http://purl.obolibrary.org/obo/BFO_0000031>
+                                                                                                                                                          ]
+                                                                                                                                                        ) ;
+                                                                                                                                     rdf:type owl:Class
+                                                                                                                                   ]
+                                                                                                              ] ;
+                                                                                              <http://www.ontologyrepository.com/CommonCoreOntologies/is_curated_in_ontology> "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/EventOntology"^^xsd:anyURI ;
+                                                                                              rdfs:label "Gain of Generically Dependent Continuant"@en ;
+                                                                                              <http://www.w3.org/2004/02/skos/core#definition> "A Gain of Dependent Continuant wherein some Independent Continuant becomes the carrier of some Generically Dependent Continuant."@en ;
+                                                                                              <http://www.w3.org/2004/02/skos/core#example> "A Person forms a Plan, A Person is initiated into a Religion, A photgraphic image is produced." .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/GainOfQuality
+<http://www.ontologyrepository.com/CommonCoreOntologies/GainOfQuality> rdf:type owl:Class ;
+                                                                       rdfs:subClassOf <http://www.ontologyrepository.com/CommonCoreOntologies/GainOfSpecificallyDependentContinuant> ,
+                                                                                       [ rdf:type owl:Restriction ;
+                                                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000057> ;
+                                                                                         owl:someValuesFrom [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/BFO_0000004>
+                                                                                                                                   [ rdf:type owl:Restriction ;
+                                                                                                                                     owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000196> ;
+                                                                                                                                     owl:someValuesFrom <http://purl.obolibrary.org/obo/BFO_0000019>
+                                                                                                                                   ]
+                                                                                                                                 ) ;
+                                                                                                              rdf:type owl:Class
+                                                                                                            ]
+                                                                                       ] ;
+                                                                       <http://www.ontologyrepository.com/CommonCoreOntologies/is_curated_in_ontology> "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/EventOntology"^^xsd:anyURI ;
+                                                                       rdfs:label "Gain of Quality"@en ;
+                                                                       <http://www.w3.org/2004/02/skos/core#definition> "A Gain of Specifically Dependent Continuant in which an Independent Continuant becomes the bearer of some Quality."@en ;
+                                                                       <http://www.w3.org/2004/02/skos/core#example> "A person becoming pregnant." .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/GainOfRealizableEntity
+<http://www.ontologyrepository.com/CommonCoreOntologies/GainOfRealizableEntity> rdf:type owl:Class ;
+                                                                                rdfs:subClassOf <http://www.ontologyrepository.com/CommonCoreOntologies/GainOfSpecificallyDependentContinuant> ,
+                                                                                                [ rdf:type owl:Restriction ;
+                                                                                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000057> ;
+                                                                                                  owl:someValuesFrom [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/BFO_0000004>
+                                                                                                                                            [ rdf:type owl:Restriction ;
+                                                                                                                                              owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000196> ;
+                                                                                                                                              owl:someValuesFrom <http://purl.obolibrary.org/obo/BFO_0000017>
+                                                                                                                                            ]
+                                                                                                                                          ) ;
+                                                                                                                       rdf:type owl:Class
+                                                                                                                     ]
+                                                                                                ] ;
+                                                                                <http://www.ontologyrepository.com/CommonCoreOntologies/is_curated_in_ontology> "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/EventOntology"^^xsd:anyURI ;
+                                                                                rdfs:label "Gain of Realizable Entity"@en ;
+                                                                                <http://www.w3.org/2004/02/skos/core#definition> "A Gain of Specifically Dependent Continuant in which some Independent Continuant becomes the bearer of some Realizable Entity."@en ;
+                                                                                <http://www.w3.org/2004/02/skos/core#example> "An informant becomes unreliable (disposition), A person begins to speak French (function), a person becomes a welder (role)." .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/GainOfRole
+<http://www.ontologyrepository.com/CommonCoreOntologies/GainOfRole> rdf:type owl:Class ;
+                                                                    rdfs:subClassOf <http://www.ontologyrepository.com/CommonCoreOntologies/GainOfRealizableEntity> ,
+                                                                                    [ rdf:type owl:Restriction ;
+                                                                                      owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000057> ;
+                                                                                      owl:someValuesFrom [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/BFO_0000004>
+                                                                                                                                [ rdf:type owl:Restriction ;
+                                                                                                                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000196> ;
+                                                                                                                                  owl:someValuesFrom <http://purl.obolibrary.org/obo/BFO_0000023>
+                                                                                                                                ]
+                                                                                                                              ) ;
+                                                                                                           rdf:type owl:Class
+                                                                                                         ]
+                                                                                    ] ;
+                                                                    <http://www.ontologyrepository.com/CommonCoreOntologies/is_curated_in_ontology> "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/EventOntology"^^xsd:anyURI ;
+                                                                    rdfs:comment "This class should be used to demarcate the start of the temporal interval (through the occurs_on property) that the Entity bears the Role."@en ;
+                                                                    rdfs:label "Gain of Role"@en ;
+                                                                    <http://www.w3.org/2004/02/skos/core#definition> "A Gain of Realizable Entity in which some Independent Continuant becomes bearer of some Role."@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/GainOfSpecificallyDependentContinuant
+<http://www.ontologyrepository.com/CommonCoreOntologies/GainOfSpecificallyDependentContinuant> rdf:type owl:Class ;
+                                                                                               rdfs:subClassOf <http://www.ontologyrepository.com/CommonCoreOntologies/GainOfDependentContinuant> ,
+                                                                                                               [ rdf:type owl:Restriction ;
+                                                                                                                 owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000057> ;
+                                                                                                                 owl:someValuesFrom [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/BFO_0000004>
+                                                                                                                                                           [ rdf:type owl:Restriction ;
+                                                                                                                                                             owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000196> ;
+                                                                                                                                                             owl:someValuesFrom <http://purl.obolibrary.org/obo/BFO_0000020>
+                                                                                                                                                           ]
+                                                                                                                                                         ) ;
+                                                                                                                                      rdf:type owl:Class
+                                                                                                                                    ]
+                                                                                                               ] ;
+                                                                                               <http://www.ontologyrepository.com/CommonCoreOntologies/is_curated_in_ontology> "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/EventOntology"^^xsd:anyURI ;
+                                                                                               rdfs:label "Gain of Specifically Dependent Continuant"@en ;
+                                                                                               <http://www.w3.org/2004/02/skos/core#definition> "A Gain of Dependent Continuant in which some Independent Continuant becomes the bearer of some Specifically Dependent Continuant."@en ;
+                                                                                               <http://www.w3.org/2004/02/skos/core#example> "A Person becomes pregnant (gain of quality), A person becomes forgetful (gain of disposition), A vehicle becomes amphibious (gain of function), A Person becomes a Database Administrator (gain of role)." .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/IncreaseOfDependentContinuant
+<http://www.ontologyrepository.com/CommonCoreOntologies/IncreaseOfDependentContinuant> rdf:type owl:Class ;
+                                                                                       rdfs:subClassOf <http://www.ontologyrepository.com/CommonCoreOntologies/Change> ;
+                                                                                       <http://www.ontologyrepository.com/CommonCoreOntologies/is_curated_in_ontology> "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/EventOntology"^^xsd:anyURI ;
+                                                                                       rdfs:label "Increase of Dependent Continuant"@en ;
+                                                                                       <http://www.w3.org/2004/02/skos/core#definition> "A Change in which some Independent Continuant has an increase in the level of some Dependent Continuant that it bears."@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/IncreaseOfDisposition
+<http://www.ontologyrepository.com/CommonCoreOntologies/IncreaseOfDisposition> rdf:type owl:Class ;
+                                                                               rdfs:subClassOf <http://www.ontologyrepository.com/CommonCoreOntologies/IncreaseOfRealizableEntity> ;
+                                                                               <http://www.ontologyrepository.com/CommonCoreOntologies/is_curated_in_ontology> "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/EventOntology"^^xsd:anyURI ;
+                                                                               rdfs:label "Increase of Disposition"@en ;
+                                                                               <http://www.w3.org/2004/02/skos/core#definition> "An Increase of Realizable Entity in which some Independent Continuant has an increase of some Disposition that it bears."@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/IncreaseOfFunction
+<http://www.ontologyrepository.com/CommonCoreOntologies/IncreaseOfFunction> rdf:type owl:Class ;
+                                                                            rdfs:subClassOf <http://www.ontologyrepository.com/CommonCoreOntologies/IncreaseOfDisposition> ;
+                                                                            <http://www.ontologyrepository.com/CommonCoreOntologies/is_curated_in_ontology> "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/EventOntology"^^xsd:anyURI ;
+                                                                            rdfs:label "Increase of Function"@en ;
+                                                                            <http://www.w3.org/2004/02/skos/core#definition> "An Increase of Disposition in which some Independent Continuant has an increase of some Function that it bears."@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/IncreaseOfGenericallyDependentContinuant
+<http://www.ontologyrepository.com/CommonCoreOntologies/IncreaseOfGenericallyDependentContinuant> rdf:type owl:Class ;
+                                                                                                  rdfs:subClassOf <http://www.ontologyrepository.com/CommonCoreOntologies/IncreaseOfDependentContinuant> ;
+                                                                                                  <http://www.ontologyrepository.com/CommonCoreOntologies/is_curated_in_ontology> "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/EventOntology"^^xsd:anyURI ;
+                                                                                                  rdfs:label "Increase of Generically Dependent Continuant"@en ;
+                                                                                                  <http://www.w3.org/2004/02/skos/core#definition> "An Increase of Dependent Continuant in which some Independent Continuant has an increase of some Generically Dependent Continuant that it bears."@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/IncreaseOfQuality
+<http://www.ontologyrepository.com/CommonCoreOntologies/IncreaseOfQuality> rdf:type owl:Class ;
+                                                                           rdfs:subClassOf <http://www.ontologyrepository.com/CommonCoreOntologies/IncreaseOfSpecificallyDependentContinuant> ;
+                                                                           <http://www.ontologyrepository.com/CommonCoreOntologies/is_curated_in_ontology> "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/EventOntology"^^xsd:anyURI ;
+                                                                           rdfs:label "Increase of Quality"@en ;
+                                                                           <http://www.w3.org/2004/02/skos/core#definition> "An Increase of Specifically Dependent Continuant in which some Indpendent Continuant has an increase of some Quality that it bears."@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/IncreaseOfRealizableEntity
+<http://www.ontologyrepository.com/CommonCoreOntologies/IncreaseOfRealizableEntity> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf <http://www.ontologyrepository.com/CommonCoreOntologies/IncreaseOfSpecificallyDependentContinuant> ;
+                                                                                    <http://www.ontologyrepository.com/CommonCoreOntologies/is_curated_in_ontology> "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/EventOntology"^^xsd:anyURI ;
+                                                                                    rdfs:label "Increase of Realizable Entity"@en ;
+                                                                                    <http://www.w3.org/2004/02/skos/core#definition> "An Increase of Specifically Dependent Continuant in which some Independent Continuant has an increase of some Realizable Entity that it bears."@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/IncreaseOfRole
+<http://www.ontologyrepository.com/CommonCoreOntologies/IncreaseOfRole> rdf:type owl:Class ;
+                                                                        rdfs:subClassOf <http://www.ontologyrepository.com/CommonCoreOntologies/IncreaseOfRealizableEntity> ;
+                                                                        <http://www.ontologyrepository.com/CommonCoreOntologies/is_curated_in_ontology> "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/EventOntology"^^xsd:anyURI ;
+                                                                        rdfs:label "Increase of Role"@en ;
+                                                                        <http://www.w3.org/2004/02/skos/core#definition> "An Increase of Realizable Entity in which some Independent Continuant has an increase of some Role that it bears."@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/IncreaseOfSpecificallyDependentContinuant
+<http://www.ontologyrepository.com/CommonCoreOntologies/IncreaseOfSpecificallyDependentContinuant> rdf:type owl:Class ;
+                                                                                                   rdfs:subClassOf <http://www.ontologyrepository.com/CommonCoreOntologies/IncreaseOfDependentContinuant> ;
+                                                                                                   <http://www.ontologyrepository.com/CommonCoreOntologies/is_curated_in_ontology> "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/EventOntology"^^xsd:anyURI ;
+                                                                                                   rdfs:label "Increase of Specifically Dependent Continuant"@en ;
+                                                                                                   <http://www.w3.org/2004/02/skos/core#definition> "An Increase of Dependent Continuant in which some Independent Continuant has an increase of some Specifically Dependent Continuant that it bears."@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/LossOfDependentContinuant
+<http://www.ontologyrepository.com/CommonCoreOntologies/LossOfDependentContinuant> rdf:type owl:Class ;
+                                                                                   rdfs:subClassOf <http://www.ontologyrepository.com/CommonCoreOntologies/Change> ;
+                                                                                   <http://www.ontologyrepository.com/CommonCoreOntologies/is_curated_in_ontology> "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/EventOntology"^^xsd:anyURI ;
+                                                                                   rdfs:label "Loss of Dependent Continuant"@en ;
+                                                                                   <http://www.w3.org/2004/02/skos/core#definition> "A Change in which some Independent Continuant ceases to be the bearer or carrier of some Dependent Continuant."@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/LossOfDisposition
+<http://www.ontologyrepository.com/CommonCoreOntologies/LossOfDisposition> rdf:type owl:Class ;
+                                                                           rdfs:subClassOf <http://www.ontologyrepository.com/CommonCoreOntologies/LossOfRealizableEntity> ;
+                                                                           <http://www.ontologyrepository.com/CommonCoreOntologies/is_curated_in_ontology> "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/EventOntology"^^xsd:anyURI ;
+                                                                           rdfs:label "Loss of Disposition"@en ;
+                                                                           <http://www.w3.org/2004/02/skos/core#definition> "A Loss of Realizable Entity in which some Independent Continuant ceases to be the bearer of some Disposition."@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/LossOfFunction
+<http://www.ontologyrepository.com/CommonCoreOntologies/LossOfFunction> rdf:type owl:Class ;
+                                                                        rdfs:subClassOf <http://www.ontologyrepository.com/CommonCoreOntologies/LossOfDisposition> ;
+                                                                        <http://www.ontologyrepository.com/CommonCoreOntologies/is_curated_in_ontology> "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/EventOntology"^^xsd:anyURI ;
+                                                                        rdfs:label "Loss of Function"@en ;
+                                                                        <http://www.w3.org/2004/02/skos/core#definition> "A Loss of Disposition in which some Independent Continuant ceases to be the bearer of some Function."@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/LossOfGenericallyDependentContinuant
+<http://www.ontologyrepository.com/CommonCoreOntologies/LossOfGenericallyDependentContinuant> rdf:type owl:Class ;
+                                                                                              rdfs:subClassOf <http://www.ontologyrepository.com/CommonCoreOntologies/LossOfDependentContinuant> ;
+                                                                                              <http://www.ontologyrepository.com/CommonCoreOntologies/is_curated_in_ontology> "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/EventOntology"^^xsd:anyURI ;
+                                                                                              rdfs:label "Loss of Generically Dependent Continuant"@en ;
+                                                                                              <http://www.w3.org/2004/02/skos/core#definition> "A Loss of Dependent Continuant in which some Independent Continuant ceases to be the carrier of some Generically Dependent Continuant."@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/LossOfQuality
+<http://www.ontologyrepository.com/CommonCoreOntologies/LossOfQuality> rdf:type owl:Class ;
+                                                                       rdfs:subClassOf <http://www.ontologyrepository.com/CommonCoreOntologies/LossOfSpecificallyDependentContinuant> ;
+                                                                       <http://www.ontologyrepository.com/CommonCoreOntologies/is_curated_in_ontology> "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/EventOntology"^^xsd:anyURI ;
+                                                                       rdfs:label "Loss of Quality"@en ;
+                                                                       <http://www.w3.org/2004/02/skos/core#definition> "A Loss of Specifically Dependent Continuant in which some Independent Continuant ceases to be the bearer of some Quality."@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/LossOfRealizableEntity
+<http://www.ontologyrepository.com/CommonCoreOntologies/LossOfRealizableEntity> rdf:type owl:Class ;
+                                                                                rdfs:subClassOf <http://www.ontologyrepository.com/CommonCoreOntologies/LossOfSpecificallyDependentContinuant> ;
+                                                                                <http://www.ontologyrepository.com/CommonCoreOntologies/is_curated_in_ontology> "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/EventOntology"^^xsd:anyURI ;
+                                                                                rdfs:label "Loss of Realizable Entity"@en ;
+                                                                                <http://www.w3.org/2004/02/skos/core#definition> "A Loss of Specifically Dependent Continuant in which some Independent Continuant ceases to be the bearer of some Realizable Entity."@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/LossOfRole
+<http://www.ontologyrepository.com/CommonCoreOntologies/LossOfRole> rdf:type owl:Class ;
+                                                                    rdfs:subClassOf <http://www.ontologyrepository.com/CommonCoreOntologies/LossOfRealizableEntity> ;
+                                                                    <http://www.ontologyrepository.com/CommonCoreOntologies/is_curated_in_ontology> "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/EventOntology"^^xsd:anyURI ;
+                                                                    rdfs:label "Loss of Role"@en ;
+                                                                    <http://www.w3.org/2004/02/skos/core#definition> "A Loss of Realizable Entity in which some Independent Continuant ceases to be the bearer of some Role."@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/LossOfSpecificallyDependentContinuant
+<http://www.ontologyrepository.com/CommonCoreOntologies/LossOfSpecificallyDependentContinuant> rdf:type owl:Class ;
+                                                                                               rdfs:subClassOf <http://www.ontologyrepository.com/CommonCoreOntologies/LossOfDependentContinuant> ;
+                                                                                               <http://www.ontologyrepository.com/CommonCoreOntologies/is_curated_in_ontology> "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/EventOntology"^^xsd:anyURI ;
+                                                                                               rdfs:label "Loss of Specifically Dependent Continuant"@en ;
+                                                                                               <http://www.w3.org/2004/02/skos/core#definition> "A Loss of Dependent Continuant in which some Independent Continuant ceases to be the bearer of some Specifically Dependent Continuant."@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/Stasis
+<http://www.ontologyrepository.com/CommonCoreOntologies/Stasis> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000015> ;
+                                                                <http://www.ontologyrepository.com/CommonCoreOntologies/is_curated_in_ontology> "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/EventOntology"^^xsd:anyURI ;
+                                                                rdfs:label "Stasis"@en ;
+                                                                <http://www.w3.org/2004/02/skos/core#definition> "A Process in which one or more Independent Continuants endure in an unchanging condition."@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/StasisOfDisposition
+<http://www.ontologyrepository.com/CommonCoreOntologies/StasisOfDisposition> rdf:type owl:Class ;
+                                                                             rdfs:subClassOf <http://www.ontologyrepository.com/CommonCoreOntologies/StasisOfRealizableEntity> ;
+                                                                             <http://www.ontologyrepository.com/CommonCoreOntologies/is_curated_in_ontology> "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/EventOntology"^^xsd:anyURI ;
+                                                                             rdfs:label "Stasis of Disposition"@en ;
+                                                                             <http://www.w3.org/2004/02/skos/core#definition> "A Stasis of Realizable Entity in which some Independent Continuant bears some Disposition that remains unchanged during a Temporal Interval."@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/StasisOfFunction
+<http://www.ontologyrepository.com/CommonCoreOntologies/StasisOfFunction> rdf:type owl:Class ;
+                                                                          rdfs:subClassOf <http://www.ontologyrepository.com/CommonCoreOntologies/StasisOfRealizableEntity> ;
+                                                                          <http://www.ontologyrepository.com/CommonCoreOntologies/is_curated_in_ontology> "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/EventOntology"^^xsd:anyURI ;
+                                                                          rdfs:label "Stasis of Function"@en ;
+                                                                          <http://www.w3.org/2004/02/skos/core#definition> "A Stasis of Realizable Entity in which some Independent Continuant bears some Function that remains unchanged during a Temporal Interval."@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/StasisOfGenericallyDependentContinuant
+<http://www.ontologyrepository.com/CommonCoreOntologies/StasisOfGenericallyDependentContinuant> rdf:type owl:Class ;
+                                                                                                rdfs:subClassOf <http://www.ontologyrepository.com/CommonCoreOntologies/Stasis> ;
+                                                                                                <http://www.ontologyrepository.com/CommonCoreOntologies/is_curated_in_ontology> "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/EventOntology"^^xsd:anyURI ;
+                                                                                                rdfs:label "Stasis of Generically Dependent Continuant"@en ;
+                                                                                                <http://www.w3.org/2004/02/skos/core#definition> "A Stasis in which some Independent Continuant bears some Generically Dependent Continuant that remains unchanged during a Temporal Interval."@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/StasisOfQuality
+<http://www.ontologyrepository.com/CommonCoreOntologies/StasisOfQuality> rdf:type owl:Class ;
+                                                                         rdfs:subClassOf <http://www.ontologyrepository.com/CommonCoreOntologies/StasisOfSpecificallyDependentContinuant> ;
+                                                                         <http://www.ontologyrepository.com/CommonCoreOntologies/is_curated_in_ontology> "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/EventOntology"^^xsd:anyURI ;
+                                                                         rdfs:label "Stasis of Quality"@en ;
+                                                                         <http://www.w3.org/2004/02/skos/core#definition> "A Stasis of Specifically Dependent Continuant in which some Independent Continuant bears some Quality that remains unchanged during a Temporal Interval."@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/StasisOfRealizableEntity
+<http://www.ontologyrepository.com/CommonCoreOntologies/StasisOfRealizableEntity> rdf:type owl:Class ;
+                                                                                  rdfs:subClassOf <http://www.ontologyrepository.com/CommonCoreOntologies/StasisOfSpecificallyDependentContinuant> ;
+                                                                                  <http://www.ontologyrepository.com/CommonCoreOntologies/is_curated_in_ontology> "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/EventOntology"^^xsd:anyURI ;
+                                                                                  rdfs:label "Stasis of Realizable Entity"@en ;
+                                                                                  <http://www.w3.org/2004/02/skos/core#definition> "A Stasis of Specifically Dependent Continuant in which some Independent Continuant bears some Realizable Entity that remains unchanged during a Temporal Interval."@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/StasisOfRole
+<http://www.ontologyrepository.com/CommonCoreOntologies/StasisOfRole> rdf:type owl:Class ;
+                                                                      rdfs:subClassOf <http://www.ontologyrepository.com/CommonCoreOntologies/StasisOfRealizableEntity> ;
+                                                                      <http://www.ontologyrepository.com/CommonCoreOntologies/is_curated_in_ontology> "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/EventOntology"^^xsd:anyURI ;
+                                                                      rdfs:label "Stasis of Role"@en ;
+                                                                      <http://www.w3.org/2004/02/skos/core#definition> "A Stasis of Realizable Entity in which some Independent Continuant bears some Role that remains unchanged during a Temporal Interval."@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/StasisOfSpecificallyDependentContinuant
+<http://www.ontologyrepository.com/CommonCoreOntologies/StasisOfSpecificallyDependentContinuant> rdf:type owl:Class ;
+                                                                                                 rdfs:subClassOf <http://www.ontologyrepository.com/CommonCoreOntologies/Stasis> ;
+                                                                                                 <http://www.ontologyrepository.com/CommonCoreOntologies/is_curated_in_ontology> "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/EventOntology"^^xsd:anyURI ;
+                                                                                                 rdfs:label "Stasis of Specifically Dependent Continuant"@en ;
+                                                                                                 <http://www.w3.org/2004/02/skos/core#definition> "A Stasis in which some Independent Continuant bears some Specifically Dependent Continuant that remains unchanged during a Temporal Interval."@en .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi

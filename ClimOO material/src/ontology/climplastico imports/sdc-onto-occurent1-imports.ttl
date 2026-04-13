@@ -1,0 +1,693 @@
+@prefix : <http://ClimOO/climoo/imports/sdc-ontology-imports/sdc-ontology-occurent1-imports#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://ClimOO/climoo/imports/sdc-ontology-imports/sdc-ontology-occurent1-imports#> .
+
+<http://ClimOO/climoo/imports/sdc-ontology-imports/sdc-ontology-occurent1-imports> rdf:type owl:Ontology ;
+                                                                                    owl:versionIRI <http://ClimOO/climoo/imports/sdc-ontology-imports/sdc-ontology-occurent1-imports#2026-04-09> ;
+                                                                                    rdfs:comment """This file contains ClimOO Ontology imports from the Sustainable Development and Climate ontology (SDC ontology) (occurent hierarchy of BFO). It also contains some imports reused by SDC ontology from the Common Core Ontologie (CCO). Imports were manually collected and revised.
+
+Ontology source: https://raw.githubusercontent.com/hbabaie1/Sustainable-Development-and-Climate-SDC-ontology/refs/heads/main/SDC_v1.owl"""@en ;
+                                                                                    rdfs:seeAlso "https://github.com/hbabaie1/Sustainable-Development-and-Climate-SDC-ontology/tree/main" ;
+                                                                                    owl:versionInfo "2026-04-09" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/definition_source
+<http://www.ontologyrepository.com/CommonCoreOntologies/definition_source> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/is_curated_in_ontology
+<http://www.ontologyrepository.com/CommonCoreOntologies/is_curated_in_ontology> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#altLabel
+<http://www.w3.org/2004/02/skos/core#altLabel> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://purl.obolibrary.org/obo/BFO_0000055
+<http://purl.obolibrary.org/obo/BFO_0000055> rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/RO_0002212
+<http://purl.obolibrary.org/obo/RO_0002212> rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/RO_0002213
+<http://purl.obolibrary.org/obo/RO_0002213> rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/RO_0002336
+<http://purl.obolibrary.org/obo/RO_0002336> rdf:type owl:ObjectProperty .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/affects
+<http://www.ontologyrepository.com/CommonCoreOntologies/affects> rdf:type owl:ObjectProperty .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/has_output
+<http://www.ontologyrepository.com/CommonCoreOntologies/has_output> rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://purl.obolibrary.org/obo/BFO_0000015
+<http://purl.obolibrary.org/obo/BFO_0000015> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000038
+<http://purl.obolibrary.org/obo/BFO_0000038> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000144
+<http://purl.obolibrary.org/obo/BFO_0000144> rdf:type owl:Class .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/Frequency
+<http://www.ontologyrepository.com/CommonCoreOntologies/Frequency> rdf:type owl:Class ;
+                                                                   rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000144> ;
+                                                                   <http://www.ontologyrepository.com/CommonCoreOntologies/definition_source> "https://en.wikipedia.org/w/index.php?title=Frequency&oldid=1062800545"^^xsd:anyURI ;
+                                                                   <http://www.ontologyrepository.com/CommonCoreOntologies/is_curated_in_ontology> "http://www.ontologyrepository.com/CommonCoreOntologies/Mid/EventOntology"^^xsd:anyURI ;
+                                                                   rdfs:label "Frequency"@en ;
+                                                                   <http://www.w3.org/2004/02/skos/core#altLabel> "Temporal Frequency"@en ;
+                                                                   <http://www.w3.org/2004/02/skos/core#definition> "A Process Profile that is characterized by the number of repetitive processes during a particular time period."@en .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/NaturalProcess
+<http://www.ontologyrepository.com/CommonCoreOntologies/NaturalProcess> rdf:type owl:Class .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/Stasis
+<http://www.ontologyrepository.com/CommonCoreOntologies/Stasis> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Abnormal_Soil_Moisture_Deficit
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Abnormal_Soil_Moisture_Deficit> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Afforestaton
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Afforestaton> rdf:type owl:Class ;
+                                                                                               rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Land_Physical_Process> ;
+                                                                                               rdfs:label "Afforestation" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Arctic_Warming
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Arctic_Warming> rdf:type owl:Class ;
+                                                                                                 rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Ocean_Physical_Process> ;
+                                                                                                 rdfs:label "Arctic Warming" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Atlantic_Meridional_Overtuning_Circulation
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Atlantic_Meridional_Overtuning_Circulation> rdf:type owl:Class ;
+                                                                                                                             rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Ocean_Circulation> ;
+                                                                                                                             rdfs:label "Atlantic Meridional Overtuning Circulation" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Atmospheric_Circulation
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Atmospheric_Circulation> rdf:type owl:Class ;
+                                                                                                          rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Atmospheric_Physical_Process> ;
+                                                                                                          rdfs:label "Atmospheric Circulation" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Atmospheric_Physical_Process
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Atmospheric_Physical_Process> rdf:type owl:Class ;
+                                                                                                               rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Climate_System_Process> ;
+                                                                                                               rdfs:label "Atmospheric Physical Process" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Climate-related_Carbon_Turnover_Process
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Climate-related_Carbon_Turnover_Process> rdf:type owl:Class ;
+                                                                                                                          rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Climate_System_Process> ;
+                                                                                                                          rdfs:label "Climate-related Carbon Turnover Process" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Climate_System_Process
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Climate_System_Process> rdf:type owl:Class ;
+                                                                                                         rdfs:subClassOf <http://www.ontologyrepository.com/CommonCoreOntologies/NaturalProcess> ;
+                                                                                                         rdfs:label "Climate System Process" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Cloud_Formation
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Cloud_Formation> rdf:type owl:Class ;
+                                                                                                  rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Atmospheric_Physical_Process> ;
+                                                                                                  rdfs:label "Cloud Formation" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Condensation
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Condensation> rdf:type owl:Class ;
+                                                                                               rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Atmospheric_Physical_Process> ;
+                                                                                               rdfs:label "Condensation" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Cryospheric_Physical_Process
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Cryospheric_Physical_Process> rdf:type owl:Class ;
+                                                                                                               rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Climate_System_Process> ;
+                                                                                                               rdfs:label "Cryospheric Physical Process" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Ecosystem_Photosynthesis
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Ecosystem_Photosynthesis> rdf:type owl:Class ;
+                                                                                                           rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Photosynthesis> ;
+                                                                                                           rdfs:label "Ecosystem Photosynthesis" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#El_Niño_Southern_Oscillation
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#El_Niño_Southern_Oscillation> rdf:type owl:Class ;
+                                                                                                               rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Oscillation> ;
+                                                                                                               rdfs:label "El Niño Southern Oscillation" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Energy_Security
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Energy_Security> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Erosion
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Erosion> rdf:type owl:Class ;
+                                                                                          rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Land_Physical_Process> ;
+                                                                                          rdfs:label "Erosion" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Evaporation
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Evaporation> rdf:type owl:Class ;
+                                                                                              rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Atmospheric_Physical_Process> ,
+                                                                                                              [ rdf:type owl:Restriction ;
+                                                                                                                owl:onProperty <http://purl.obolibrary.org/obo/RO_0002336> ;
+                                                                                                                owl:someValuesFrom <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Global_Warming>
+                                                                                                              ] ,
+                                                                                                              [ rdf:type owl:Restriction ;
+                                                                                                                owl:onProperty <http://www.ontologyrepository.com/CommonCoreOntologies/affects> ;
+                                                                                                                owl:someValuesFrom <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Surface_Water_Availability>
+                                                                                                              ] ;
+                                                                                              rdfs:label "Evaporation" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Evapotranspiration
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Evapotranspiration> rdf:type owl:Class ;
+                                                                                                     rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Plant_Physical_Process> ;
+                                                                                                     rdfs:label "Evapotranspiration" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Exceeding_Dangerous_Heat_Threshold
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Exceeding_Dangerous_Heat_Threshold> rdf:type owl:Class ;
+                                                                                                                     rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000015> ;
+                                                                                                                     rdfs:label "Exceeding Dangerous Heat Threshold" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Excess_Evatranspiration
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Excess_Evatranspiration> rdf:type owl:Class ;
+                                                                                                          rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Evapotranspiration> ,
+                                                                                                                          [ rdf:type owl:Restriction ;
+                                                                                                                            owl:onProperty <http://www.ontologyrepository.com/CommonCoreOntologies/has_output> ;
+                                                                                                                            owl:someValuesFrom <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Abnormal_Soil_Moisture_Deficit>
+                                                                                                                          ] ;
+                                                                                                          rdfs:label "Excess Evatranspiration" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Exchange_of_CO2
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Exchange_of_CO2> rdf:type owl:Class ;
+                                                                                                  rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Atmospheric_Physical_Process> ;
+                                                                                                  rdfs:label "Exchange of CO2" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Exchange_of_Heat_with_the_Atmosphere
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Exchange_of_Heat_with_the_Atmosphere> rdf:type owl:Class ;
+                                                                                                                       rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Ocean_Physical_Process> ;
+                                                                                                                       rdfs:label "Exchange of Heat with the Atmosphere" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Flow
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Flow> rdf:type owl:Class ;
+                                                                                       rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Hydrospheric_Physical_Process> .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Food_Security
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Food_Security> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Freezing
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Freezing> rdf:type owl:Class ;
+                                                                                           rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Cryospheric_Physical_Process> ;
+                                                                                           rdfs:label "Freezing" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Frequency_of_Concurrent_Heatwaves_and_Drought
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Frequency_of_Concurrent_Heatwaves_and_Drought> rdf:type owl:Class ;
+                                                                                                                                rdfs:subClassOf <http://www.ontologyrepository.com/CommonCoreOntologies/Frequency> ;
+                                                                                                                                rdfs:label "Frequency of Concurrent Heatwaves and Drought" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Frequency_of_Drought
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Frequency_of_Drought> rdf:type owl:Class ;
+                                                                                                       rdfs:subClassOf <http://www.ontologyrepository.com/CommonCoreOntologies/Frequency> ;
+                                                                                                       rdfs:label "Frequency of Drought" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Frequency_of_Heatwave
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Frequency_of_Heatwave> rdf:type owl:Class ;
+                                                                                                        rdfs:subClassOf <http://www.ontologyrepository.com/CommonCoreOntologies/Frequency> ;
+                                                                                                        rdfs:label "Frequency of Heatwave" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Global_Warming
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Global_Warming> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Groundwater_Recharge
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Groundwater_Recharge> rdf:type owl:Class ;
+                                                                                                       rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Hydrospheric_Physical_Process> ,
+                                                                                                                       [ rdf:type owl:Restriction ;
+                                                                                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000055> ;
+                                                                                                                         owl:someValuesFrom <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Energy_Security>
+                                                                                                                       ] ,
+                                                                                                                       [ rdf:type owl:Restriction ;
+                                                                                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000055> ;
+                                                                                                                         owl:someValuesFrom <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Food_Security>
+                                                                                                                       ] ,
+                                                                                                                       [ rdf:type owl:Restriction ;
+                                                                                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000055> ;
+                                                                                                                         owl:someValuesFrom <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Water_Security>
+                                                                                                                       ] ;
+                                                                                                       rdfs:label "Groundwater Recharge" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Hemispheric-scale_Circulation
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Hemispheric-scale_Circulation> rdf:type owl:Class ;
+                                                                                                                rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Atmospheric_Circulation> ;
+                                                                                                                rdfs:label "Hemispheric-scale Circulation" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Higher_Evatranspiration
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Higher_Evatranspiration> rdf:type owl:Class ;
+                                                                                                          rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Evapotranspiration> ;
+                                                                                                          rdfs:label "Higher Evatranspiration" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Hydrospheric_Physical_Process
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Hydrospheric_Physical_Process> rdf:type owl:Class ;
+                                                                                                                rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Climate_System_Process> ;
+                                                                                                                rdfs:label "Hydrospheric Physical Process" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Increased_Groundwater_Availability
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Increased_Groundwater_Availability> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Increased_Soil_Moisture
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Increased_Soil_Moisture> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Increased_Surface_Water_Availability
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Increased_Surface_Water_Availability> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Infiltration
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Infiltration> rdf:type owl:Class ;
+                                                                                               rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Hydrospheric_Physical_Process> .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Lack_of_Runoff
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Lack_of_Runoff> rdf:type owl:Class ;
+                                                                                                 rdfs:subClassOf <http://www.ontologyrepository.com/CommonCoreOntologies/Stasis> ;
+                                                                                                 rdfs:label "Lack of Runoff" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Lack_of_Surface_Water
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Lack_of_Surface_Water> rdf:type owl:Class ;
+                                                                                                        rdfs:subClassOf <http://www.ontologyrepository.com/CommonCoreOntologies/Stasis> ;
+                                                                                                        rdfs:label "Lack of Surface Water" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Land_Freshwater_Availability
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Land_Freshwater_Availability> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Land_Physical_Process
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Land_Physical_Process> rdf:type owl:Class ;
+                                                                                                        rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Climate_System_Process> ;
+                                                                                                        rdfs:label "Land Physical Process" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Leaf_Photosynthesis
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Leaf_Photosynthesis> rdf:type owl:Class ;
+                                                                                                      rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Photosynthesis> ;
+                                                                                                      rdfs:label "Leaf Photosynthesis" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Leaf_Stomata_Closure
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Leaf_Stomata_Closure> rdf:type owl:Class ;
+                                                                                                       rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Plant_Physical_Process> ,
+                                                                                                                       [ rdf:type owl:Restriction ;
+                                                                                                                         owl:onProperty <http://purl.obolibrary.org/obo/RO_0002212> ;
+                                                                                                                         owl:someValuesFrom <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Plant_Transpiration>
+                                                                                                                       ] ,
+                                                                                                                       [ rdf:type owl:Restriction ;
+                                                                                                                         owl:onProperty <http://purl.obolibrary.org/obo/RO_0002213> ;
+                                                                                                                         owl:someValuesFrom <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Runoff>
+                                                                                                                       ] ,
+                                                                                                                       [ rdf:type owl:Restriction ;
+                                                                                                                         owl:onProperty <http://www.ontologyrepository.com/CommonCoreOntologies/affects> ;
+                                                                                                                         owl:someValuesFrom <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Land_Freshwater_Availability>
+                                                                                                                       ] ,
+                                                                                                                       [ rdf:type owl:Restriction ;
+                                                                                                                         owl:onProperty <http://www.ontologyrepository.com/CommonCoreOntologies/has_output> ;
+                                                                                                                         owl:someValuesFrom <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Increased_Soil_Moisture>
+                                                                                                                       ] ;
+                                                                                                       rdfs:label "Leaf Stomata Closure" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Long_Dry_Season
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Long_Dry_Season> rdf:type owl:Class ;
+                                                                                                  rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Season> ;
+                                                                                                  rdfs:label "Long Dry Season" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Melting
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Melting> rdf:type owl:Class ;
+                                                                                          rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Cryospheric_Physical_Process> ;
+                                                                                          rdfs:label "Melting" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Melting_of_Antarctic_Ice_Sheets
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Melting_of_Antarctic_Ice_Sheets> rdf:type owl:Class ;
+                                                                                                                  rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Melting_of_Ice_Sheets> ;
+                                                                                                                  rdfs:label "Melting of Antarctic Ice Sheets" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Melting_of_Arctic_Sea_Ice
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Melting_of_Arctic_Sea_Ice> rdf:type owl:Class ;
+                                                                                                            rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Melting_of_Ice_Sheets> ;
+                                                                                                            rdfs:label "Melting of Arctic Sea Ice" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Melting_of_Glaciers
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Melting_of_Glaciers> rdf:type owl:Class ;
+                                                                                                      rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Melting> ;
+                                                                                                      rdfs:label "Melting of Glaciers" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Melting_of_Greenland_Ice_Sheets
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Melting_of_Greenland_Ice_Sheets> rdf:type owl:Class ;
+                                                                                                                  rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Melting_of_Ice_Sheets> ;
+                                                                                                                  rdfs:label "Melting of Greenland Ice Sheets" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Melting_of_Ice_Sheets
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Melting_of_Ice_Sheets> rdf:type owl:Class ;
+                                                                                                        rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Melting> ;
+                                                                                                        rdfs:label "Melting of Ice Sheets" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Mid-Latitude_Storm_Track
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Mid-Latitude_Storm_Track> rdf:type owl:Class ;
+                                                                                                           rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Regional_Atmospheric_Circulation> ;
+                                                                                                           rdfs:label "Mid-Latitude Storm Track" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Monsoon
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Monsoon> rdf:type owl:Class ;
+                                                                                          rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Regional_Atmospheric_Circulation> ;
+                                                                                          rdfs:label "Monsoon" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#North_Atlantic_Oscillation
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#North_Atlantic_Oscillation> rdf:type owl:Class ;
+                                                                                                             rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Oscillation> ;
+                                                                                                             rdfs:label "North Atlantic Oscillation" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Nutrient_Retention
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Nutrient_Retention> rdf:type owl:Class ;
+                                                                                                     rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Land_Physical_Process> ;
+                                                                                                     rdfs:label "Nutrient Retention" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Ocean_Carbon_Sequestration
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Ocean_Carbon_Sequestration> rdf:type owl:Class ;
+                                                                                                             rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Ocean_Physical_Process> ;
+                                                                                                             rdfs:label "Ocean Carbon Sequestration" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Ocean_Circulation
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Ocean_Circulation> rdf:type owl:Class ;
+                                                                                                    rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Ocean_Physical_Process> ;
+                                                                                                    rdfs:label "Ocean Circulation" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Ocean_Current
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Ocean_Current> rdf:type owl:Class ;
+                                                                                                rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Ocean_Physical_Process> ;
+                                                                                                rdfs:label "Ocean Current" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Ocean_Physical_Process
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Ocean_Physical_Process> rdf:type owl:Class ;
+                                                                                                         rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Climate_System_Process> ;
+                                                                                                         rdfs:label "Ocean Physical Process" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Ocean_Warming
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Ocean_Warming> rdf:type owl:Class ;
+                                                                                                rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Ocean_Physical_Process> ;
+                                                                                                rdfs:label "Ocean Warming" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Ocean_Water_Acidification
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Ocean_Water_Acidification> rdf:type owl:Class ;
+                                                                                                            rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Ocean_Physical_Process> ;
+                                                                                                            rdfs:label "Ocean Water Acidification" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Oscillation
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Oscillation> rdf:type owl:Class ;
+                                                                                              rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Ocean_Physical_Process> ;
+                                                                                              rdfs:label "Oscillation" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Photosynthesis
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Photosynthesis> rdf:type owl:Class ;
+                                                                                                 rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Plant_Physical_Process> ;
+                                                                                                 rdfs:label "Photosynthesis" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Plant_CO2_Uptake
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Plant_CO2_Uptake> rdf:type owl:Class ;
+                                                                                                   rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Plant_Physical_Process> ;
+                                                                                                   rdfs:label "Plant CO2 Uptake" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Plant_Growth
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Plant_Growth> rdf:type owl:Class ;
+                                                                                               rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Plant_Physical_Process> ;
+                                                                                               rdfs:label "Plant Growth" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Plant_Physical_Process
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Plant_Physical_Process> rdf:type owl:Class ;
+                                                                                                         rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Land_Physical_Process> ;
+                                                                                                         rdfs:label "Plant Physical Process" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Plant_Transpiration
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Plant_Transpiration> rdf:type owl:Class ;
+                                                                                                      rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Plant_Physical_Process> ;
+                                                                                                      rdfs:label "Plant Transpiration" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Precipitation
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Precipitation> rdf:type owl:Class ;
+                                                                                                rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Atmospheric_Physical_Process> ,
+                                                                                                                [ rdf:type owl:Restriction ;
+                                                                                                                  owl:onProperty <http://www.ontologyrepository.com/CommonCoreOntologies/affects> ;
+                                                                                                                  owl:someValuesFrom <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Surface_Water_Availability>
+                                                                                                                ] ,
+                                                                                                                [ rdf:type owl:Restriction ;
+                                                                                                                  owl:onProperty <http://www.ontologyrepository.com/CommonCoreOntologies/has_output> ;
+                                                                                                                  owl:someValuesFrom <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Increased_Groundwater_Availability>
+                                                                                                                ] ,
+                                                                                                                [ rdf:type owl:Restriction ;
+                                                                                                                  owl:onProperty <http://www.ontologyrepository.com/CommonCoreOntologies/has_output> ;
+                                                                                                                  owl:someValuesFrom <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Increased_Surface_Water_Availability>
+                                                                                                                ] ;
+                                                                                                rdfs:label "Precipitation" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Precipitation_Frequency
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Precipitation_Frequency> rdf:type owl:Class ;
+                                                                                                          rdfs:subClassOf <http://www.ontologyrepository.com/CommonCoreOntologies/Frequency> ;
+                                                                                                          rdfs:label "Precipitation Frequency" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Regional_Atmospheric_Circulation
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Regional_Atmospheric_Circulation> rdf:type owl:Class ;
+                                                                                                                   rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Atmospheric_Circulation> ;
+                                                                                                                   rdfs:label "Regional Atmospheric Circulation" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Release_of_Greenhouse_Gases_from_Permafrost
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Release_of_Greenhouse_Gases_from_Permafrost> rdf:type owl:Class ;
+                                                                                                                              rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Cryospheric_Physical_Process> ;
+                                                                                                                              rdfs:label "Release of Greenhouse Gases from Permafrost" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Retreat_of_Glaciers
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Retreat_of_Glaciers> rdf:type owl:Class ;
+                                                                                                      rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Cryospheric_Physical_Process> ;
+                                                                                                      rdfs:label "Retreat of Glaciers" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#River_Physical_Process
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#River_Physical_Process> rdf:type owl:Class ;
+                                                                                                         rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Hydrospheric_Physical_Process> ;
+                                                                                                         rdfs:label "River Physical Process" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Runoff
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Runoff> rdf:type owl:Class ;
+                                                                                         rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Hydrospheric_Physical_Process> ;
+                                                                                         rdfs:label "Runoff" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Saltwater_Intrusion
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Saltwater_Intrusion> rdf:type owl:Class ;
+                                                                                                      rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Hydrospheric_Physical_Process> ;
+                                                                                                      rdfs:label "Saltwater Intrusion" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Saltwater_Intrusion_in_Coastal_Aquifers
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Saltwater_Intrusion_in_Coastal_Aquifers> rdf:type owl:Class ;
+                                                                                                                          rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Saltwater_Intrusion> ;
+                                                                                                                          rdfs:label "Saltwater Intrusion in Coastal Aquifers" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Saltwater_Intrusion_in_Coastal_Wetland
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Saltwater_Intrusion_in_Coastal_Wetland> rdf:type owl:Class ;
+                                                                                                                         rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Saltwater_Intrusion> ;
+                                                                                                                         rdfs:label "Satlwater Intrusion in Coastal Wetland" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Season
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Season> rdf:type owl:Class ;
+                                                                                         rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000038> ;
+                                                                                         rdfs:label "Season" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Soil_Carbon_Sequestration
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Soil_Carbon_Sequestration> rdf:type owl:Class ;
+                                                                                                            rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Land_Physical_Process> ;
+                                                                                                            rdfs:label "Soil Carbon Sequestration" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Stomatal_Regulation
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Stomatal_Regulation> rdf:type owl:Class ;
+                                                                                                      rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Plant_Physical_Process> ;
+                                                                                                      rdfs:label "Stomatal Regulation" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Subsurface_Runoff
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Subsurface_Runoff> rdf:type owl:Class ;
+                                                                                                    rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Runoff> ;
+                                                                                                    rdfs:label "Subsurface Runoff" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Summer
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Summer> rdf:type owl:Class ;
+                                                                                         rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Season> ;
+                                                                                         rdfs:label "Summer" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Surface_Runoff
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Surface_Runoff> rdf:type owl:Class ;
+                                                                                                 rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Runoff> ,
+                                                                                                                 [ rdf:type owl:Restriction ;
+                                                                                                                   owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000055> ;
+                                                                                                                   owl:someValuesFrom <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Energy_Security>
+                                                                                                                 ] ,
+                                                                                                                 [ rdf:type owl:Restriction ;
+                                                                                                                   owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000055> ;
+                                                                                                                   owl:someValuesFrom <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Food_Security>
+                                                                                                                 ] ,
+                                                                                                                 [ rdf:type owl:Restriction ;
+                                                                                                                   owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000055> ;
+                                                                                                                   owl:someValuesFrom <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Water_Security>
+                                                                                                                 ] ;
+                                                                                                 rdfs:label "Surface Runoff" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Surface_Water_Availability
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Surface_Water_Availability> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Surface_Water_Flow
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Surface_Water_Flow> rdf:type owl:Class ;
+                                                                                                     rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Water_Flow> ;
+                                                                                                     rdfs:label "Surface Water Flow" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Surface_Water_Runoff
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Surface_Water_Runoff> rdf:type owl:Class ;
+                                                                                                       rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#River_Physical_Process> ;
+                                                                                                       rdfs:label "Surface Water Runoff" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Thermal_Expansion
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Thermal_Expansion> rdf:type owl:Class ;
+                                                                                                    rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Ocean_Physical_Process> ;
+                                                                                                    rdfs:label "Thermal Expansion" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Thermal_Expansion_of_Ocean_Water
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Thermal_Expansion_of_Ocean_Water> rdf:type owl:Class ;
+                                                                                                                   rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Thermal_Expansion> ;
+                                                                                                                   rdfs:label "Thermal Expansion of Ocean Water" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Thermohaline_Circulation
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Thermohaline_Circulation> rdf:type owl:Class ;
+                                                                                                           rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Ocean_Circulation> ;
+                                                                                                           rdfs:label "Thermohaline Circulation" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Upwelling
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Upwelling> rdf:type owl:Class ;
+                                                                                            rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Ocean_Physical_Process> ;
+                                                                                            rdfs:label "Upwelling" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Warm_Season
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Warm_Season> rdf:type owl:Class ;
+                                                                                              rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Season> ;
+                                                                                              rdfs:label "Warm Season" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Warming
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Warming> rdf:type owl:Class ;
+                                                                                          rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Atmospheric_Physical_Process> ;
+                                                                                          rdfs:label "Warming" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Water_Flow
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Water_Flow> rdf:type owl:Class ;
+                                                                                             rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Hydrospheric_Physical_Process> ;
+                                                                                             rdfs:label "Water Flow" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Water_Security
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Water_Security> rdf:type owl:Class .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
