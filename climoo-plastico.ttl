@@ -356,7 +356,7 @@ We envision implementing such definitions in accordance with regulation revision
                                 ] ;
                 <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "biodegradable plastic"@en ;
                 rdfs:label "portion of biodegradable plastic material"@en ;
-                <http://www.w3.org/2004/02/skos/core#definition> "A portion of plastic material that is constituted by biodegradable polymer molecules, is the main input of a process of biodegradation of plastic, and is the main output of a production process of biodegradable plastic."@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A portion of plastic material that is constituted by biodegradable polymer molecules, is the main input of a process of biodegradation of plastic."@en ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
 
 
@@ -3497,7 +3497,7 @@ http://purl.obolibrary.org/obo/ENVO_06105125""" ;
                                     ] ;
                 rdfs:subClassOf :ClimOO_0000276 ;
                 rdfs:label "plastic manufacturing process"@en ;
-                <http://www.w3.org/2004/02/skos/core#definition> "A synthetic polymer-based material manufacturing process that has a primary output a portion of synthetic plastic."@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A synthetic polymer-based material manufacturing process that has as a primary output a portion of synthetic plastic."@en ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
 
 
