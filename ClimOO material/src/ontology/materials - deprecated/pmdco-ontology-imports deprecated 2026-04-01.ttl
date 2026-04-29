@@ -1,0 +1,1165 @@
+@prefix : <http://ClimOO/climoo/imports/pmdco-imports> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://ClimOO/climoo/imports/pmdco-imports> .
+
+<http://ClimOO/climoo/imports/pmdco-imports> rdf:type owl:Ontology ;
+                                                                          owl:versionIRI <http://ClimOO/climoo/imports/pmdco-imports#2026-03-02> ;
+                                            rdfs:seeAlso """This file contains ClimOO Ontology imports from the Platform MaterialDigital Core Ontology (PMDco). Imports were manually collected and revised. it also includes some imports from ChEBI, RO, UO, IAO, and OBI reused by PMDco.
+
+Ontology source: 
+https://github.com/materialdigital/core-ontology/releases/tag/v3.0.0-rc2"""@en ;
+                                            owl:versionInfo "2026-03-02" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.obolibrary.org/obo/IAO_0000112
+<http://purl.obolibrary.org/obo/IAO_0000112> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000115
+<http://purl.obolibrary.org/obo/IAO_0000115> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000116
+<http://purl.obolibrary.org/obo/IAO_0000116> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000119
+<http://purl.obolibrary.org/obo/IAO_0000119> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#hasExactSynonym
+<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#altLabel
+<http://www.w3.org/2004/02/skos/core#altLabel> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#example
+<http://www.w3.org/2004/02/skos/core#example> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/pmd/co/PMD_0000060
+<https://w3id.org/pmd/co/PMD_0000060> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/pmd/co/PMD_0001032
+<https://w3id.org/pmd/co/PMD_0001032> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/pmd/co/PMD_0050117
+<https://w3id.org/pmd/co/PMD_0050117> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://purl.obolibrary.org/obo/BFO_0000051
+<http://purl.obolibrary.org/obo/BFO_0000051> rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000054
+<http://purl.obolibrary.org/obo/BFO_0000054> rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000055
+<http://purl.obolibrary.org/obo/BFO_0000055> rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000039
+<http://purl.obolibrary.org/obo/IAO_0000039> rdf:type owl:ObjectProperty ;
+                                             rdfs:subPropertyOf <http://purl.obolibrary.org/obo/BFO_0000051> ;
+                                             rdf:type owl:FunctionalProperty ;
+                                             rdfs:range <http://purl.obolibrary.org/obo/IAO_0000003> ;
+                                             rdfs:label "has measurement unit label"@en .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000136
+<http://purl.obolibrary.org/obo/IAO_0000136> rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/OBI_0000293
+<http://purl.obolibrary.org/obo/OBI_0000293> rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/OBI_0000299
+<http://purl.obolibrary.org/obo/OBI_0000299> rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/OBI_0000417
+<http://purl.obolibrary.org/obo/OBI_0000417> rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/RO_0000052
+<http://purl.obolibrary.org/obo/RO_0000052> rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/RO_0000053
+<http://purl.obolibrary.org/obo/RO_0000053> rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/RO_0000056
+<http://purl.obolibrary.org/obo/RO_0000056> rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/RO_0000086
+<http://purl.obolibrary.org/obo/RO_0000086> rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/RO_0000087
+<http://purl.obolibrary.org/obo/RO_0000087> rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/RO_0000091
+<http://purl.obolibrary.org/obo/RO_0000091> rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/RO_0002353
+<http://purl.obolibrary.org/obo/RO_0002353> rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/RO_0009006
+<http://purl.obolibrary.org/obo/RO_0009006> rdf:type owl:ObjectProperty ;
+                                            owl:inverseOf <http://purl.obolibrary.org/obo/RO_0009007> ;
+                                            rdfs:range <http://purl.obolibrary.org/obo/BFO_0000020> ;
+                                            <http://purl.obolibrary.org/obo/IAO_0000112> "A mass measurement assay measures an material's mass characteristic. A radioactivity detection assay measures the amount of radiation (alpha, beta or gamma ray emmissions) coming from a material."@en ;
+                                            <http://purl.obolibrary.org/obo/IAO_0000115> "A relation between an assay and a characteristic, in which the assay generates a data item which is a measure of a characteristic."@en ;
+                                            rdfs:label "assay measures characteristic"@en .
+
+
+###  http://purl.obolibrary.org/obo/RO_0009007
+<http://purl.obolibrary.org/obo/RO_0009007> rdf:type owl:ObjectProperty ;
+                                            rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000020> ;
+                                            <http://purl.obolibrary.org/obo/IAO_0000115> "Inverse of 'assay measures characteristic'"@en ;
+                                            rdfs:label "characteristic measured by assay"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://purl.obolibrary.org/obo/BFO_0000015
+<http://purl.obolibrary.org/obo/BFO_0000015> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000016
+<http://purl.obolibrary.org/obo/BFO_0000016> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000017
+<http://purl.obolibrary.org/obo/BFO_0000017> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000019
+<http://purl.obolibrary.org/obo/BFO_0000019> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000020
+<http://purl.obolibrary.org/obo/BFO_0000020> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000023
+<http://purl.obolibrary.org/obo/BFO_0000023> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000027
+<http://purl.obolibrary.org/obo/BFO_0000027> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000030
+<http://purl.obolibrary.org/obo/BFO_0000030> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000040
+<http://purl.obolibrary.org/obo/BFO_0000040> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_24431
+<http://purl.obolibrary.org/obo/CHEBI_24431> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_59999
+<http://purl.obolibrary.org/obo/CHEBI_59999> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_24431> ,
+                                                             <https://w3id.org/pmd/co/PMD_0000001> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A chemical substance is a portion of matter of constant composition, composed of molecular entities of the same type or of different types." ;
+                                             rdfs:comment "Frequently used for fluidic portions of matter and/or in the context of chemical reactions. Boundary to material not always sharp."@en ;
+                                             rdfs:label "chemical substance" .
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_60003
+<http://purl.obolibrary.org/obo/CHEBI_60003> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_59999> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A pure substance is a chemical substance composed of multiple molecules, which are all of the same kind." ;
+                                             rdfs:label "pure substance" ;
+                                             rdfs:seeAlso <http://purl.obolibrary.org/obo/CHEBI_60003> ;
+                                             <http://www.w3.org/2004/02/skos/core#example> "Pure water, a portion of iron atoms. In contrast, salt water 'has part' a portion of pure water and a portion of pure NaCl. Steel 'has part' a 'portion of pure iron', a 'portion of pure carbon' and possibly portions of other alloying- and impurity-elements."@en ;
+                                             <https://w3id.org/pmd/co/PMD_0000060> "true"^^xsd:boolean .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000003
+<http://purl.obolibrary.org/obo/IAO_0000003> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000005
+<http://purl.obolibrary.org/obo/IAO_0000005> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000027
+<http://purl.obolibrary.org/obo/IAO_0000027> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000033
+<http://purl.obolibrary.org/obo/IAO_0000033> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000104
+<http://purl.obolibrary.org/obo/IAO_0000104> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/OBI_0000011
+<http://purl.obolibrary.org/obo/OBI_0000011> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/OBI_0000067
+<http://purl.obolibrary.org/obo/OBI_0000067> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000023> ,
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty <http://purl.obolibrary.org/obo/RO_0000052> ;
+                                                               owl:someValuesFrom <http://purl.obolibrary.org/obo/BFO_0000040>
+                                                             ] ,
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000054> ;
+                                                               owl:allValuesFrom <http://purl.obolibrary.org/obo/OBI_0000070>
+                                                             ] ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000112> "When a specimen of blood is assayed for glucose concentration, the blood has the evaluant role. When measuring the mass of a mouse, the evaluant is the mouse. When measuring the time of DNA replication, the evaluant is the DNA. When measuring the intensity of light on a surface, the evaluant is the light source."@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "a role that inheres in a material entity that is realized in an assay in which data is generated about the bearer of the evaluant role"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000116> "Role call - 17nov-08: JF and MC think an evaluant role is always specified input of a process. Even in the case where we have an assay taking blood as evaluant and outputting blood, the blood is not the specified output at the end of the assay (the concentration of glucose in the blood is)"@en ,
+                                                                                          "examples of features that could be described in an evaluant: quality.... e.g. \"contains 10 pg/ml IL2\", or \"no glucose detected\")"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000119> "OBI" ;
+                                             rdfs:label "evaluant role"@en .
+
+
+###  http://purl.obolibrary.org/obo/OBI_0000070
+<http://purl.obolibrary.org/obo/OBI_0000070> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/OBI_0000011> ,
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000055> ;
+                                                               owl:someValuesFrom <http://purl.obolibrary.org/obo/OBI_0000067>
+                                                             ] ,
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty <http://purl.obolibrary.org/obo/OBI_0000293> ;
+                                                               owl:someValuesFrom [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/BFO_0000040>
+                                                                                                         [ rdf:type owl:Restriction ;
+                                                                                                           owl:onProperty <http://purl.obolibrary.org/obo/RO_0000087> ;
+                                                                                                           owl:someValuesFrom <http://purl.obolibrary.org/obo/OBI_0000067>
+                                                                                                         ]
+                                                                                                       ) ;
+                                                                                    rdf:type owl:Class
+                                                                                  ]
+                                                             ] ,
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty <http://purl.obolibrary.org/obo/OBI_0000299> ;
+                                                               owl:someValuesFrom [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/IAO_0000027>
+                                                                                                         [ rdf:type owl:Restriction ;
+                                                                                                           owl:onProperty <http://purl.obolibrary.org/obo/IAO_0000136> ;
+                                                                                                           owl:someValuesFrom [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/BFO_0000040>
+                                                                                                                                                     [ rdf:type owl:Restriction ;
+                                                                                                                                                       owl:onProperty <http://purl.obolibrary.org/obo/RO_0000087> ;
+                                                                                                                                                       owl:someValuesFrom <http://purl.obolibrary.org/obo/OBI_0000067>
+                                                                                                                                                     ]
+                                                                                                                                                   ) ;
+                                                                                                                                rdf:type owl:Class
+                                                                                                                              ]
+                                                                                                         ]
+                                                                                                       ) ;
+                                                                                    rdf:type owl:Class
+                                                                                  ]
+                                                             ] ,
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty <http://purl.obolibrary.org/obo/OBI_0000417> ;
+                                                               owl:someValuesFrom <http://purl.obolibrary.org/obo/IAO_0000005>
+                                                             ] ,
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty <http://purl.obolibrary.org/obo/RO_0009006> ;
+                                                               owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                    owl:unionOf ( <http://purl.obolibrary.org/obo/BFO_0000019>
+                                                                                                  <https://w3id.org/pmd/co/PMD_0000005>
+                                                                                                )
+                                                                                  ]
+                                                             ] ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000112> "Assay the wavelength of light emitted by excited Neon atoms. Count of geese flying over a house." ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A planned process that has the objective to produce information about a material entity (the evaluant) by examining it."@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000116> "12/3/12: BP: the reference to the 'physical examination' is included to point out that a prediction is not an assay, as that does not require physical examiniation." ,
+                                                                                          "Discussion on OBI call 2023-05-01 resulted in an agreement to revise the textual definition of 'assay'.  https://github.com/obi-ontology/obi/issues/1683." ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000119> "OBI branch derived"@en ;
+                                             rdfs:label "assay"@en .
+
+
+###  http://purl.obolibrary.org/obo/UO_0000000
+<http://purl.obolibrary.org/obo/UO_0000000> rdf:type owl:Class ;
+                                            rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000003> ;
+                                            rdfs:comment "\"A unit of measurement is a standardized quantity of a physical quality.\" [Wikipedia:Wikipedia]" ;
+                                            rdfs:label "unit" .
+
+
+###  http://purl.obolibrary.org/obo/UO_0000003
+<http://purl.obolibrary.org/obo/UO_0000003> rdf:type owl:Class ;
+                                            rdfs:subClassOf <http://purl.obolibrary.org/obo/UO_0000000> ;
+                                            <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "time derived unit" ;
+                                            rdfs:comment "\"A unit which is a standard measure of the dimension in which events occur in sequence.\" [Wikipedia:Wikipedia]" ;
+                                            rdfs:label "time unit" .
+
+
+###  http://purl.obolibrary.org/obo/UO_0000076
+<http://purl.obolibrary.org/obo/UO_0000076> rdf:type owl:Class ;
+                                            rdfs:subClassOf <http://purl.obolibrary.org/obo/UO_1000076> ;
+                                            <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "(x)" ,
+                                                                                                           "chi" ;
+                                            rdfs:comment "\"A concentration unit which denotes the number of moles of solute as a proportion of the total number of moles in a solution.\" [Wikipedia:Wikipedia]" ;
+                                            rdfs:label "mole fraction" .
+
+
+###  http://purl.obolibrary.org/obo/UO_0000163
+<http://purl.obolibrary.org/obo/UO_0000163> rdf:type owl:Class ;
+                                            rdfs:subClassOf <http://purl.obolibrary.org/obo/UO_1000163> ;
+                                            <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "w/w" ,
+                                                                                                           "weight-weight percentage" ;
+                                            rdfs:comment "\"A dimensionless concentration unit which denotes the mass of a substance in a mixture as a percentage of the mass of the entire mixture.\" [Wikipedia:Wikipedia]" ;
+                                            rdfs:label "mass percentage" .
+
+
+###  http://purl.obolibrary.org/obo/UO_0000164
+<http://purl.obolibrary.org/obo/UO_0000164> rdf:type owl:Class ;
+                                            rdfs:subClassOf <http://purl.obolibrary.org/obo/UO_1000164> ;
+                                            <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "(w/v)" ,
+                                                                                                           "weight-volume percentage" ;
+                                            rdfs:comment "\"A dimensionless concentration unit which denotes the mass of the substance in a mixture as a percentage of the volume of the entire mixture.\" [UOC:GVG]" ;
+                                            rdfs:label "mass volume percentage" .
+
+
+###  http://purl.obolibrary.org/obo/UO_1000076
+<http://purl.obolibrary.org/obo/UO_1000076> rdf:type owl:Class ;
+                                            rdfs:subClassOf <http://purl.obolibrary.org/obo/UO_0000000> ;
+                                            rdfs:label "mole fraction based unit" .
+
+
+###  http://purl.obolibrary.org/obo/UO_1000163
+<http://purl.obolibrary.org/obo/UO_1000163> rdf:type owl:Class ;
+                                            rdfs:subClassOf <http://purl.obolibrary.org/obo/UO_0000000> ;
+                                            rdfs:label "mass percentage based unit" .
+
+
+###  http://purl.obolibrary.org/obo/UO_1000164
+<http://purl.obolibrary.org/obo/UO_1000164> rdf:type owl:Class ;
+                                            rdfs:subClassOf <http://purl.obolibrary.org/obo/UO_0000000> ;
+                                            rdfs:label "mass volume percentage based unit" .
+
+
+###  https://w3id.org/pmd/co/PMD_0000000
+<https://w3id.org/pmd/co/PMD_0000000> rdf:type owl:Class ;
+                                      rdfs:subClassOf [ owl:intersectionOf ( <https://w3id.org/pmd/co/PMD_0000001>
+                                                                             [ rdf:type owl:Restriction ;
+                                                                               owl:onProperty <http://purl.obolibrary.org/obo/RO_0000053> ;
+                                                                               owl:someValuesFrom <https://w3id.org/pmd/co/PMD_0000005>
+                                                                             ]
+                                                                             [ rdf:type owl:Restriction ;
+                                                                               owl:onProperty <http://purl.obolibrary.org/obo/RO_0000086> ;
+                                                                               owl:someValuesFrom <https://w3id.org/pmd/co/PMD_0020131>
+                                                                             ]
+                                                                             [ rdf:type owl:Restriction ;
+                                                                               owl:onProperty <http://purl.obolibrary.org/obo/RO_0002353> ;
+                                                                               owl:someValuesFrom <http://purl.obolibrary.org/obo/BFO_0000015>
+                                                                             ]
+                                                                           ) ;
+                                                        rdf:type owl:Class
+                                                      ] ;
+                                      rdfs:comment "Instances of Portions Of Matter whose shape is relevant for their dispostion to participate in a manufacturing process may be (subclasses of) objects that bear a 'blank role' in the context of the manufacturing process."@en ,
+                                                   """Material is defined in terms of the three main perspectives that material specifications rely on: the structure of the material (\"intensive quality\"), the performance of the material (\"behavoiral material property\") and the processing the material must have undergone (\"output of some process\").
+
+When defining specific materials/material taxonomies, these three aspects shall be taken into account in the aristotelian (\"per genus et differentiam\") as differentiation."""@en ,
+                                                   "The sum of portions of matter of the same type form a portion of matter of that type."@en ;
+                                      rdfs:label "Material"@de ,
+                                                 "material"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#altLabel> "Portion of Material"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "A Material is a Portion Of Matter that may participate in some Manifacturing Process and whose shape is not relevant for its participation in the Manifacuring Process."@en ;
+                                      <https://w3id.org/pmd/co/PMD_0000060> "true"^^xsd:boolean .
+
+
+###  https://w3id.org/pmd/co/PMD_0000001
+<https://w3id.org/pmd/co/PMD_0000001> rdf:type owl:Class ;
+                                      rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000040> ;
+                                      rdfs:comment """It is also representing a distinct physical or conceptual part of a material or substance.
+
+The open energy ontology OEO defines portion of matter as a subclass of object aggregate, which implies countability. Our portion is not (precisely) countable and thus bearer of intensive properties."""@en ,
+                                                   """Lome explanation for portion of matter: \"What is a molecule cluster at the cellular level? Contrary to the molecular level, at the cellular level of granularity the boundary of each molecule is outside of the level of granular focus. What forms a discontinuous cluster of countable individual molecules and thus bona fide objects at the molecular level, is a continuous and non-countable molecular substance at coarser levels of
+granularity. At these coarser levels, the individual molecules cannot be differentiated and demarcated anymore and the cluster as a whole possesses only fiat inner boundaries.\""""@en ;
+                                      rdfs:label "portion of matter"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "A material entity that is not demarcated by any physical discontinuities. At some finer level of granularity it is an object aggregate, at some coarser level of granularity it is a fiat object part,but at this level of granularity it is neither."@en ;
+                                      <https://w3id.org/pmd/co/PMD_0000060> "true"^^xsd:boolean .
+
+
+###  https://w3id.org/pmd/co/PMD_0000002
+<https://w3id.org/pmd/co/PMD_0000002> rdf:type owl:Class ;
+                                      rdfs:subClassOf <https://w3id.org/pmd/co/PMD_0000000> ;
+                                      rdfs:comment "We recognize that some of the materials in the subclasses also occur naturally. However, these are not within the scope of our consideration for technical use."@en ;
+                                      rdfs:label "engineered material"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "An Engineered Material is a Material that is output of a Manufacturing Process."@en ;
+                                      <https://w3id.org/pmd/co/PMD_0000060> "true"^^xsd:boolean .
+
+
+###  https://w3id.org/pmd/co/PMD_0000005
+<https://w3id.org/pmd/co/PMD_0000005> rdf:type owl:Class ;
+                                      rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000017> ,
+                                                      [ rdf:type owl:Restriction ;
+                                                        owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000054> ;
+                                                        owl:someValuesFrom <https://w3id.org/pmd/co/PMD_0000950>
+                                                      ] ,
+                                                      [ rdf:type owl:Restriction ;
+                                                        owl:onProperty <http://purl.obolibrary.org/obo/RO_0000052> ;
+                                                        owl:someValuesFrom [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/BFO_0000040>
+                                                                                                  [ rdf:type owl:Restriction ;
+                                                                                                    owl:onProperty <http://purl.obolibrary.org/obo/RO_0000056> ;
+                                                                                                    owl:someValuesFrom <http://purl.obolibrary.org/obo/BFO_0000015>
+                                                                                                  ]
+                                                                                                ) ;
+                                                                             rdf:type owl:Class
+                                                                           ]
+                                                      ] ;
+                                      rdfs:comment """Technical materials are complex object aggregates. The properties that are determined for those object aggregates are intrinsically associated with the methodologies employed in the measurement process. This is in contrast to typical 'physical' properties, which like e.g. mass that can be determined to high accuracy independently of the measurement process. 
+As a consequence, the behavoiral material properties in the ontology are differeciated according to their measurement method, e.g. Brinell hardness and Vickers hardness are different types of indentation hardness rather than different measures/quantification (GDC) of the materials property 'indentation hardness'.
+ The 'unit idenifieres' of such properties (e.g. \"HV1\", \"HV10\", \"HBW\") are strictly speaking not units but rather references to the measurement methodology used to determine a numeric value that quantifies the property."""@en ;
+                                      rdfs:label "behavioral material property"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> """A property is a material trait in terms of the kind and magnitude of response to a specific imposed stimulus. Generally, definitions of properties are made independent of material shape and size.
+
+(Callister, W.D., Rethwisch, D.G., Materials Science and Engineering, Wiley, 2014)
+
+We only deal with intensive (system-size independent) materrial properties. Extensive properties that depend on the testpiece/specimen/probe size should be found in the respective testing method modules."""@en ;
+                                      <https://w3id.org/pmd/co/PMD_0000060> "true"^^xsd:boolean .
+
+
+###  https://w3id.org/pmd/co/PMD_0000013
+<https://w3id.org/pmd/co/PMD_0000013> rdf:type owl:Class ;
+                                      rdfs:subClassOf [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/IAO_0000033>
+                                                                             [ rdf:type owl:Restriction ;
+                                                                               owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000051> ;
+                                                                               owl:someValuesFrom <http://purl.obolibrary.org/obo/IAO_0000027>
+                                                                             ]
+                                                                           ) ;
+                                                        rdf:type owl:Class
+                                                      ] ;
+                                      rdfs:label "parameter specification"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "A directive information entity that specifies a parameter required or produced by a workflow function, including its intended role, position, and constraints."@en .
+
+
+###  https://w3id.org/pmd/co/PMD_0000014
+<https://w3id.org/pmd/co/PMD_0000014> rdf:type owl:Class ;
+                                      rdfs:subClassOf <https://w3id.org/pmd/co/PMD_0000013> ;
+                                      rdfs:label "input specification"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "A parameter specification that prescribes a data item required as input for the execution of a workflow function."@en .
+
+
+###  https://w3id.org/pmd/co/PMD_0000015
+<https://w3id.org/pmd/co/PMD_0000015> rdf:type owl:Class ;
+                                      rdfs:subClassOf <https://w3id.org/pmd/co/PMD_0000013> ;
+                                      rdfs:label "output specification"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "A parameter specification that prescribes a data item intended to be produced as output by the execution of a workflow function."@en .
+
+
+###  https://w3id.org/pmd/co/PMD_0000525
+<https://w3id.org/pmd/co/PMD_0000525> rdf:type owl:Class ;
+                                      rdfs:subClassOf <https://w3id.org/pmd/co/PMD_0000855> ;
+                                      rdfs:label "Atomkraftmikroskop"@de ,
+                                                 "atomic force microscope"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "An Atomic Force Microscope (AFM) is a Measuring Device that maps the surface topography of materials at the nanoscale by scanning it with a mechanical probe."@en ,
+                                                                                       "Ein Atomkraftmikroskop (AFM) ist ein Messgerät, das die Oberflächentopographie von Materialien im Nanobereich durch Abtasten mit einer mechanischen Sonde kartiert."@de .
+
+
+###  https://w3id.org/pmd/co/PMD_0000557
+<https://w3id.org/pmd/co/PMD_0000557> rdf:type owl:Class ;
+                                      rdfs:subClassOf <https://w3id.org/pmd/co/PMD_0000602> ;
+                                      rdfs:label "Chromatographiesystem"@de ,
+                                                 "chromatography system"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "A device used for separating mixtures into individual components using a chromatographic column and a mobile phase."@en ,
+                                                                                       "Ein Gerät zur Trennung von Gemischen in einzelne Komponenten unter Verwendung einer chromatographischen Säule und einer mobilen Phase."@de .
+
+
+###  https://w3id.org/pmd/co/PMD_0000602
+<https://w3id.org/pmd/co/PMD_0000602> rdf:type owl:Class ;
+                                      rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000030> ;
+                                      rdfs:label "Gerät"@de ,
+                                                 "device"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "A physical or virtual entity used to perform a specific function or task, often involving measurement, manipulation, or analysis of materials."@en ,
+                                                                                       "Ein physisches oder virtuelles Objekt, das verwendet wird, um eine bestimmte Funktion oder Aufgabe auszuführen, häufig im Zusammenhang mit der Messung, Manipulation oder Analyse von Materialien."@de ;
+                                      <https://w3id.org/pmd/co/PMD_0000060> "true"^^xsd:boolean .
+
+
+###  https://w3id.org/pmd/co/PMD_0000624
+<https://w3id.org/pmd/co/PMD_0000624> rdf:type owl:Class ;
+                                      rdfs:subClassOf <https://w3id.org/pmd/co/PMD_0000855> ;
+                                      <http://purl.obolibrary.org/obo/IAO_0000119> "“Electron microscope.” Merriam-Webster.com Dictionary, Merriam-Webster, https://www.merriam-webster.com/dictionary/electron%20microscope. Accessed 24 Nov. 2022."@en ;
+                                      rdfs:label "Elektronenmikroskop"@de ,
+                                                 "electron microscope"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "A device that uses a beam of electrons to create high-resolution images of a sample's surface or structure."@en ,
+                                                                                       "An electron-optical instrument in which a beam of electrons is used to produce an enlarged image of a minute object."@en ,
+                                                                                       "Ein Gerät, das einen Elektronenstrahl verwendet, um hochauflösende Bilder der Oberfläche oder Struktur einer Probe zu erstellen."@de .
+
+
+###  https://w3id.org/pmd/co/PMD_0000657
+<https://w3id.org/pmd/co/PMD_0000657> rdf:type owl:Class ;
+                                      rdfs:subClassOf <https://w3id.org/pmd/co/PMD_0000557> ;
+                                      rdfs:label "Gaschromatographiesystem"@de ,
+                                                 "gas chromatography system"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "A device used for separating and analyzing compounds in a gas mixture using a chromatographic column."@en ,
+                                                                                       "Ein Gerät zur Trennung und Analyse von Verbindungen in einem Gasgemisch unter Verwendung einer chromatographischen Säule."@de .
+
+
+###  https://w3id.org/pmd/co/PMD_0000659
+<https://w3id.org/pmd/co/PMD_0000659> rdf:type owl:Class ;
+                                      rdfs:subClassOf <https://w3id.org/pmd/co/PMD_0000557> ;
+                                      rdfs:label "Gelpermeations-Chromatographiesystem"@de ,
+                                                 "gel permeation chromatography system"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "A device used for separating and analyzing polymers based on their molecular size using gel permeation chromatography."@en ,
+                                                                                       "Ein Gerät zur Trennung und Analyse von Polymeren basierend auf ihrer Molekülgröße durch Gelpermeationschromatographie."@de .
+
+
+###  https://w3id.org/pmd/co/PMD_0000778
+<https://w3id.org/pmd/co/PMD_0000778> rdf:type owl:Class ;
+                                      rdfs:subClassOf <http://purl.obolibrary.org/obo/OBI_0000011> ;
+                                      <http://purl.obolibrary.org/obo/IAO_0000112> "Mixing two fluids. Adding salt into water. Injecting a mouse with PBS." ;
+                                      rdfs:label "material combination" ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "A material processing with the objective to combine two or more material entities as input into a single material entity as output."@en .
+
+
+###  https://w3id.org/pmd/co/PMD_0000784
+<https://w3id.org/pmd/co/PMD_0000784> rdf:type owl:Class ;
+                                      rdfs:subClassOf <https://w3id.org/pmd/co/PMD_0000557> ;
+                                      rdfs:label "Hochleistungsflüssigkeitschromatographiesystem"@de ,
+                                                 "high performance liquid chromatography system"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "A device used for separating, identifying, and quantifying compounds in liquid samples through high performance liquid chromatography."@en ,
+                                                                                       "Ein Gerät zur Trennung, Identifizierung und Quantifizierung von Verbindungen in Flüssigkeitsproben durch Hochleistungsflüssigkeitschromatographie."@de .
+
+
+###  https://w3id.org/pmd/co/PMD_0000785
+<https://w3id.org/pmd/co/PMD_0000785> rdf:type owl:Class ;
+                                      rdfs:subClassOf <https://w3id.org/pmd/co/PMD_0000657> ;
+                                      rdfs:label "Hochtemperatur-Gaschromatographiesystem"@de ,
+                                                 "high temperature gas chromatography system"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "A device used for separating and analyzing compounds in a gas mixture at high temperatures using a chromatographic column."@en ,
+                                                                                       "Ein Gerät zur Trennung und Analyse von Verbindungen in einem Gasgemisch bei hohen Temperaturen unter Verwendung einer chromatographischen Säule."@de .
+
+
+###  https://w3id.org/pmd/co/PMD_0000796
+<https://w3id.org/pmd/co/PMD_0000796> rdf:type owl:Class ;
+                                      rdfs:subClassOf <https://w3id.org/pmd/co/PMD_0000557> ;
+                                      rdfs:label "Ionenaustausch-Chromatographiesystem"@de ,
+                                                 "ion exchange chromatography system"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "A device used for separating ions in a sample using ion exchange resins in a chromatographic column."@en ,
+                                                                                       "Ein Gerät zur Trennung von Ionen in einer Probe unter Verwendung von Ionenaustauschharzen in einer chromatographischen Säule."@de .
+
+
+###  https://w3id.org/pmd/co/PMD_0000797
+<https://w3id.org/pmd/co/PMD_0000797> rdf:type owl:Class ;
+                                      rdfs:subClassOf <https://w3id.org/pmd/co/PMD_0000855> ;
+                                      rdfs:label "Ionenmikroskop"@de ,
+                                                 "ion microscope"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "A device that uses ions to create high-resolution images of the surface or structure of a sample."@en ,
+                                                                                       "Ein Gerät, das Ionen verwendet, um hochauflösende Bilder der Oberfläche oder Struktur einer Probe zu erstellen."@de .
+
+
+###  https://w3id.org/pmd/co/PMD_0000833
+<https://w3id.org/pmd/co/PMD_0000833> rdf:type owl:Class ;
+                                      owl:equivalentClass [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/OBI_0000011>
+                                                                                 [ rdf:type owl:Restriction ;
+                                                                                   owl:onProperty <http://purl.obolibrary.org/obo/OBI_0000293> ;
+                                                                                   owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                                        owl:unionOf ( <http://purl.obolibrary.org/obo/BFO_0000027>
+                                                                                                                      <http://purl.obolibrary.org/obo/BFO_0000030>
+                                                                                                                    )
+                                                                                                      ]
+                                                                                 ]
+                                                                                 [ rdf:type owl:Restriction ;
+                                                                                   owl:onProperty <http://purl.obolibrary.org/obo/OBI_0000299> ;
+                                                                                   owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                                        owl:unionOf ( <http://purl.obolibrary.org/obo/BFO_0000027>
+                                                                                                                      <http://purl.obolibrary.org/obo/BFO_0000030>
+                                                                                                                    )
+                                                                                                      ]
+                                                                                 ]
+                                                                               ) ;
+                                                            rdf:type owl:Class
+                                                          ] ;
+                                      rdfs:subClassOf <http://purl.obolibrary.org/obo/OBI_0000011> ,
+                                                      [ rdf:type owl:Restriction ;
+                                                        owl:onProperty <http://purl.obolibrary.org/obo/OBI_0000293> ;
+                                                        owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                             owl:unionOf ( <http://purl.obolibrary.org/obo/BFO_0000027>
+                                                                                           <http://purl.obolibrary.org/obo/BFO_0000030>
+                                                                                         )
+                                                                           ]
+                                                      ] ,
+                                                      [ rdf:type owl:Restriction ;
+                                                        owl:onProperty <http://purl.obolibrary.org/obo/OBI_0000299> ;
+                                                        owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                             owl:unionOf ( <http://purl.obolibrary.org/obo/BFO_0000027>
+                                                                                           <http://purl.obolibrary.org/obo/BFO_0000030>
+                                                                                         )
+                                                                           ]
+                                                      ] ;
+                                      rdfs:comment """Manufacturing processes alternate qualities of materials, i.e., a value specification of some quality of a material entity, which is a specified input to the process, cannot be the same as a value specification of the same quality of another material entity, which is a specified output of the process. 
+
+Unfortunately is is not possible to write down such axiom based on OWL. Semi-working solution are the temporally qualified continuants + SPARQL constrains."""@en ;
+                                      rdfs:label "Herstellungsprozess"@de ,
+                                                 "manufacturing process"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> """A planned process that is driven by the primary intent to transform objects
+A manufacturing process is always a transformative process."""@en ,
+                                                                                       "Ein geplannter Prozess, der von der primären Absicht angetrieben wird, Objekte zu transformieren. Ein Herstellungsprozess ist immer ein Transformationsprozess."@de ;
+                                      <https://w3id.org/pmd/co/PMD_0000060> "true"^^xsd:boolean .
+
+
+###  https://w3id.org/pmd/co/PMD_0000835
+<https://w3id.org/pmd/co/PMD_0000835> rdf:type owl:Class ;
+                                      rdfs:subClassOf <https://w3id.org/pmd/co/PMD_0000602> ;
+                                      rdfs:label "Massenspektrometer"@de ,
+                                                 "mass spectrometer"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "A device used to measure the mass-to-charge ratio of ions to identify and quantify compounds in a sample."@en ,
+                                                                                       "Ein Gerät zur Messung des Massen-zu-Ladung-Verhältnisses von Ionen zur Identifizierung und Quantifizierung von Verbindungen in einer Probe."@de .
+
+
+###  https://w3id.org/pmd/co/PMD_0000855
+<https://w3id.org/pmd/co/PMD_0000855> rdf:type owl:Class ;
+                                      rdfs:subClassOf <https://w3id.org/pmd/co/PMD_0000602> ;
+                                      rdfs:label "Mikroskop"@de ,
+                                                 "microscope"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "A device used to magnify and view small objects or details that are not visible to the naked eye."@en ,
+                                                                                       "Ein Gerät zur Vergrößerung und Betrachtung kleiner Objekte oder Details, die mit bloßem Auge nicht sichtbar sind."@de .
+
+
+###  https://w3id.org/pmd/co/PMD_0000864
+<https://w3id.org/pmd/co/PMD_0000864> rdf:type owl:Class ;
+                                      rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000019> ;
+                                      rdfs:label "morphological property"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "A morphological property is a material property representing the characteristics of a material's structure, such as shape, size, and distribution of its features."@en ;
+                                      <https://w3id.org/pmd/co/PMD_0000060> "true"^^xsd:boolean .
+
+
+###  https://w3id.org/pmd/co/PMD_0000874
+<https://w3id.org/pmd/co/PMD_0000874> rdf:type owl:Class ;
+                                      rdfs:subClassOf <https://w3id.org/pmd/co/PMD_0000855> ;
+                                      rdfs:label "Optisches Mikroskop"@de ,
+                                                 "optical microscope"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "A microscope that uses visible light and lenses to magnify and view small objects or details."@en ,
+                                                                                       "Ein Mikroskop, das sichtbares Licht und Linsen verwendet, um kleine Objekte oder Details zu vergrößern und zu betrachten."@de .
+
+
+###  https://w3id.org/pmd/co/PMD_0000888
+<https://w3id.org/pmd/co/PMD_0000888> rdf:type owl:Class ;
+                                      rdfs:subClassOf <https://w3id.org/pmd/co/PMD_0000002> ;
+                                      <http://purl.obolibrary.org/obo/IAO_0000116> "Classified by morphology."@en ;
+                                      rdfs:label "polymer"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "A polymer is an engineered material that consists of many repeated subunits (monomers) to form long chains. The atoms within a polymer chain are bonded together by covalent bonds. The intermolecular forces between polymer chains are typically represented by Van der Waals forces and hydrogen bonds."@en ;
+                                      <https://w3id.org/pmd/co/PMD_0000060> "true"^^xsd:boolean .
+
+
+###  https://w3id.org/pmd/co/PMD_0000890
+<https://w3id.org/pmd/co/PMD_0000890> rdf:type owl:Class ;
+                                      rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000027> ;
+                                      rdfs:label "connected material entity aggregate"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "A material entity aggregate that is a mereological sum of separate material entities, which adhere to one another through chemical bonds or physical junctions that go beyond gravity."@en ;
+                                      <http://www.w3.org/2004/02/skos/core#example> "the atoms of a molecule, the molecules forming the membrane of a cell, the epidermis in a human body"@en ;
+                                      <https://w3id.org/pmd/co/PMD_0000060> "true"^^xsd:boolean .
+
+
+###  https://w3id.org/pmd/co/PMD_0000891
+<https://w3id.org/pmd/co/PMD_0000891> rdf:type owl:Class ;
+                                      rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000027> ;
+                                      rdfs:label "disconnected material entity aggregate"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "A material entity aggregate that is a mereological sum of scattered (i.e. spatially separated) material entities, which do not adhere to one another through chemical bonds or physical junctions but, instead, relate to one another merely on grounds of metric proximity. The material entities are separated from one another through space or through other material entities that do not belong to the group."@en ;
+                                      <http://www.w3.org/2004/02/skos/core#example> "a heap of stones, a colony of honeybees, a group of synapses, the trees of a forest, the canopy of a forest, the fish of a shoal, a group of commuters on the subway, the patients in a hospital"@en ;
+                                      <https://w3id.org/pmd/co/PMD_0000060> "true"^^xsd:boolean .
+
+
+###  https://w3id.org/pmd/co/PMD_0000893
+<https://w3id.org/pmd/co/PMD_0000893> rdf:type owl:Class ;
+                                      rdfs:subClassOf <https://w3id.org/pmd/co/PMD_0000891> ;
+                                      rdfs:label "powder"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "A powder is a dry, solid disconnected material entity aggragate composed of many very fine particles. These particles can flow freely when shaken or tilted."@en ;
+                                      <https://w3id.org/pmd/co/PMD_0000060> "true"^^xsd:boolean .
+
+
+###  https://w3id.org/pmd/co/PMD_0000922
+<https://w3id.org/pmd/co/PMD_0000922> rdf:type owl:Class ;
+                                      rdfs:subClassOf <https://w3id.org/pmd/co/PMD_0000624> ;
+                                      rdfs:label "Rasterelektronenmikroskop"@de ,
+                                                 "scanning electron microscope"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "A Scanning Electron Microscope (SEM) is a Measuring Device that produces high-resolution images of a sample surface by scanning it with a focused beam of electrons."@en ,
+                                                                                       "Ein Rasterelektronenmikroskop (REM) ist ein Messgerät, das hochauflösende Bilder einer Probenoberfläche erzeugt, indem es sie mit einem fokussierten Elektronenstrahl abtastet."@de .
+
+
+###  https://w3id.org/pmd/co/PMD_0000931
+<https://w3id.org/pmd/co/PMD_0000931> rdf:type owl:Class ;
+                                      rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000104> ;
+                                      rdfs:label "simulation method specification"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "A plan specification that specifies the method of creating a computational or physical model to replicate the behavior of a material or system under specific conditions."@en ;
+                                      <https://w3id.org/pmd/co/PMD_0000060> "true"^^xsd:boolean .
+
+
+###  https://w3id.org/pmd/co/PMD_0000950
+<https://w3id.org/pmd/co/PMD_0000950> rdf:type owl:Class ;
+                                      owl:equivalentClass [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/BFO_0000015>
+                                                                                 [ rdf:type owl:Restriction ;
+                                                                                   owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000055> ;
+                                                                                   owl:someValuesFrom [ owl:intersectionOf ( [ rdf:type owl:Class ;
+                                                                                                                               owl:unionOf ( <http://purl.obolibrary.org/obo/BFO_0000016>
+                                                                                                                                             <https://w3id.org/pmd/co/PMD_0000005>
+                                                                                                                                           )
+                                                                                                                             ]
+                                                                                                                             [ rdf:type owl:Restriction ;
+                                                                                                                               owl:onProperty <http://purl.obolibrary.org/obo/RO_0000052> ;
+                                                                                                                               owl:someValuesFrom <https://w3id.org/pmd/co/PMD_0000001>
+                                                                                                                             ]
+                                                                                                                           ) ;
+                                                                                                        rdf:type owl:Class
+                                                                                                      ]
+                                                                                 ]
+                                                                               ) ;
+                                                            rdf:type owl:Class
+                                                          ] ;
+                                      rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000015> ,
+                                                      [ rdf:type owl:Restriction ;
+                                                        owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000055> ;
+                                                        owl:someValuesFrom [ owl:intersectionOf ( [ rdf:type owl:Class ;
+                                                                                                    owl:unionOf ( <http://purl.obolibrary.org/obo/BFO_0000016>
+                                                                                                                  <https://w3id.org/pmd/co/PMD_0000005>
+                                                                                                                )
+                                                                                                  ]
+                                                                                                  [ rdf:type owl:Restriction ;
+                                                                                                    owl:onProperty <http://purl.obolibrary.org/obo/RO_0000052> ;
+                                                                                                    owl:someValuesFrom <https://w3id.org/pmd/co/PMD_0000001>
+                                                                                                  ]
+                                                                                                ) ;
+                                                                             rdf:type owl:Class
+                                                                           ]
+                                                      ] ;
+                                      rdfs:label "stimulating process"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "The stimulating process is a process describing the application of an external influence, such as force, heat, or radiation, to study material response."@en ;
+                                      <https://w3id.org/pmd/co/PMD_0000060> "true"^^xsd:boolean .
+
+
+###  https://w3id.org/pmd/co/PMD_0000963
+<https://w3id.org/pmd/co/PMD_0000963> rdf:type owl:Class ;
+                                      rdfs:subClassOf <https://w3id.org/pmd/co/PMD_0000557> ;
+                                      rdfs:label "supercritical fluid chromatography system"@en ,
+                                                 "Überkritisches Fluid-Chromatographiesystem"@de ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "A device used for separating and analyzing compounds using supercritical fluids as the mobile phase in chromatography."@en ,
+                                                                                       "Ein Gerät zur Trennung und Analyse von Verbindungen unter Verwendung von überkritischen Flüssigkeiten als mobile Phase in der Chromatographie."@de .
+
+
+###  https://w3id.org/pmd/co/PMD_0000990
+<https://w3id.org/pmd/co/PMD_0000990> rdf:type owl:Class ;
+                                      rdfs:subClassOf <https://w3id.org/pmd/co/PMD_0000557> ;
+                                      rdfs:label "Dünnschichtchromatographiesystem"@de ,
+                                                 "thin layer chromatography system"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "A device used for separating compounds in a sample using a thin layer of adsorbent material on a plate."@en ,
+                                                                                       "Ein Gerät zur Trennung von Verbindungen in einer Probe unter Verwendung einer dünnen Schicht adsorbierenden Materials auf einer Platte."@de .
+
+
+###  https://w3id.org/pmd/co/PMD_0020115
+<https://w3id.org/pmd/co/PMD_0020115> rdf:type owl:Class ;
+                                      rdfs:subClassOf <https://w3id.org/pmd/co/PMD_0000891> ;
+                                      rdfs:label "aerosol"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> """An aerosol is a disconnected material entity aggregate which:
+1. consists of some portion of matter whose aggregate state quality concretizes gasous and 
+2. consists of some portion of matter whose aggregate state quality concretises solid or liquid (TODO: express that this portion is also a disconnected material entity aggregate)"""@en ;
+                                      <https://w3id.org/pmd/co/PMD_0000060> "true"^^xsd:boolean .
+
+
+###  https://w3id.org/pmd/co/PMD_0020126
+<https://w3id.org/pmd/co/PMD_0020126> rdf:type owl:Class ;
+                                      rdfs:subClassOf <https://w3id.org/pmd/co/PMD_0000890> ;
+                                      rdfs:label "foam"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> """A foam is a material entity aggregate that conssists of some 'Composite Material' c. 
+The parts of c that bear the filler role are vacuum-filled or gas filled pores. 
+The parts of c that bear the matrix role consist of a material that is bearer of solid or liquid aggregate state. 
+One pore with its sourrounding matrix is called 'cell'. 
+Depending of the interconnectedness of the pores the foam is open- or closed-cell."""@en ;
+                                      <https://w3id.org/pmd/co/PMD_0000060> "true"^^xsd:boolean .
+
+
+###  https://w3id.org/pmd/co/PMD_0020131
+<https://w3id.org/pmd/co/PMD_0020131> rdf:type owl:Class ;
+                                      rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000019> ;
+                                      owl:disjointWith <https://w3id.org/pmd/co/PMD_0020148> ;
+                                      rdfs:label "intensive quality"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#altLabel> "Point property"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "An intensive quality is a qualty that inheres in only portion of matter and thus is independent of the bearers (system-) size."@en ;
+                                      <https://w3id.org/pmd/co/PMD_0000060> "true"^^xsd:boolean .
+
+
+###  https://w3id.org/pmd/co/PMD_0020148
+<https://w3id.org/pmd/co/PMD_0020148> rdf:type owl:Class ;
+                                      rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000019> ;
+                                      rdfs:label "extensive quality"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "An extensive quality is a qualty that inheres in only object or object aggregate or fiat object part or chemical entity and is dependent on the bearers (system-) size."@en ;
+                                      <https://w3id.org/pmd/co/PMD_0000060> "true"^^xsd:boolean .
+
+
+###  https://w3id.org/pmd/co/PMD_0025008
+<https://w3id.org/pmd/co/PMD_0025008> rdf:type owl:Class ;
+                                      rdfs:subClassOf <https://w3id.org/pmd/co/PMD_0000624> ;
+                                      rdfs:label "Transmissionselektronenmikroskop"@de ,
+                                                 "transmission electron microscope"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "A Transmission Electron Microscope (SEM) is a Measuring Device that produces high-resolution images of a sample's internal structure by transmitting electrons through the sample."@en ,
+                                                                                       "Ein Transmissionselektronenmikroskop (TEM) ist ein Messgerät, das hochauflösende Bilder der inneren Struktur einer Probe erzeugt, indem es Elektronen durch die Probe strahlt."@de .
+
+
+###  https://w3id.org/pmd/co/PMD_0050004
+<https://w3id.org/pmd/co/PMD_0050004> rdf:type owl:Class ;
+                                      rdfs:subClassOf <https://w3id.org/pmd/co/PMD_0000888> ;
+                                      rdfs:label "thermoplastics"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "A Thermoplastic is a Polymer that becomes moldable when heated and solidifies upon cooling."@en ;
+                                      <https://w3id.org/pmd/co/PMD_0000060> "true"^^xsd:boolean .
+
+
+###  https://w3id.org/pmd/co/PMD_0050005
+<https://w3id.org/pmd/co/PMD_0050005> rdf:type owl:Class ;
+                                      rdfs:subClassOf <https://w3id.org/pmd/co/PMD_0050004> ;
+                                      rdfs:label "polyethylene"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "Polyethylene is a Thermoplastic that is composed of repeating ethylene monomer units."@en ;
+                                      <https://w3id.org/pmd/co/PMD_0000060> "true"^^xsd:boolean ;
+                                      <https://w3id.org/pmd/co/PMD_0050117> "PE" .
+
+
+###  https://w3id.org/pmd/co/PMD_0050006
+<https://w3id.org/pmd/co/PMD_0050006> rdf:type owl:Class ;
+                                      rdfs:subClassOf <https://w3id.org/pmd/co/PMD_0050005> ;
+                                      rdfs:label "low-density polyethylene"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "Low-Density Polyethylene is a Polyethylene that is characterized by a branched molecular structure and low density."@en ;
+                                      <https://w3id.org/pmd/co/PMD_0000060> "true"^^xsd:boolean ;
+                                      <https://w3id.org/pmd/co/PMD_0050117> "PE-LD" .
+
+
+###  https://w3id.org/pmd/co/PMD_0050007
+<https://w3id.org/pmd/co/PMD_0050007> rdf:type owl:Class ;
+                                      rdfs:subClassOf <https://w3id.org/pmd/co/PMD_0050005> ;
+                                      rdfs:label "high-density polyethylene"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "High-Density Polyethylene is a Polyethylene that is characterized by a linear molecular structure and high density."@en ;
+                                      <https://w3id.org/pmd/co/PMD_0000060> "true"^^xsd:boolean ;
+                                      <https://w3id.org/pmd/co/PMD_0050117> "PE-HD" .
+
+
+###  https://w3id.org/pmd/co/PMD_0050008
+<https://w3id.org/pmd/co/PMD_0050008> rdf:type owl:Class ;
+                                      rdfs:subClassOf <https://w3id.org/pmd/co/PMD_0050005> ;
+                                      rdfs:label "linear low-density polyethylene"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "Linear Low-Density Polyethylene is a Polyethylene that is distinguished by its linear backbone with short-chain branching."@en ;
+                                      <https://w3id.org/pmd/co/PMD_0000060> "true"^^xsd:boolean ;
+                                      <https://w3id.org/pmd/co/PMD_0050117> "PE_LLD" .
+
+
+###  https://w3id.org/pmd/co/PMD_0050009
+<https://w3id.org/pmd/co/PMD_0050009> rdf:type owl:Class ;
+                                      rdfs:subClassOf <https://w3id.org/pmd/co/PMD_0050004> ;
+                                      rdfs:label "polypropylene"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "Polypropylene is a Thermoplastic that is composed of repeating propylene monomer units."@en ;
+                                      <https://w3id.org/pmd/co/PMD_0000060> "true"^^xsd:boolean ;
+                                      <https://w3id.org/pmd/co/PMD_0050117> "PP" .
+
+
+###  https://w3id.org/pmd/co/PMD_0050010
+<https://w3id.org/pmd/co/PMD_0050010> rdf:type owl:Class ;
+                                      rdfs:subClassOf <https://w3id.org/pmd/co/PMD_0050009> ;
+                                      rdfs:label "isotactic polypropylene"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "Isotactic Polypropylene is a Polypropylene in which all the methyl groups are aligned on the same side of the polymer chain."@en ;
+                                      <https://w3id.org/pmd/co/PMD_0000060> "true"^^xsd:boolean ;
+                                      <https://w3id.org/pmd/co/PMD_0050117> "iPP" .
+
+
+###  https://w3id.org/pmd/co/PMD_0050011
+<https://w3id.org/pmd/co/PMD_0050011> rdf:type owl:Class ;
+                                      rdfs:subClassOf <https://w3id.org/pmd/co/PMD_0050009> ;
+                                      rdfs:label "syndiotactic polypropylene"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "Syndiotactic Polypropylene is a Polypropylene in which the methyl groups alternate regularly along the polymer chain."@en ;
+                                      <https://w3id.org/pmd/co/PMD_0000060> "true"^^xsd:boolean ;
+                                      <https://w3id.org/pmd/co/PMD_0050117> "sPP" .
+
+
+###  https://w3id.org/pmd/co/PMD_0050012
+<https://w3id.org/pmd/co/PMD_0050012> rdf:type owl:Class ;
+                                      rdfs:subClassOf <https://w3id.org/pmd/co/PMD_0050009> ;
+                                      rdfs:label "atactic polypropylene"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "Atactic Polypropylene is a Polypropylene in which the methyl groups are randomly distributed along the polymer chain."@en ;
+                                      <https://w3id.org/pmd/co/PMD_0000060> "true"^^xsd:boolean ;
+                                      <https://w3id.org/pmd/co/PMD_0050117> "aPP" .
+
+
+###  https://w3id.org/pmd/co/PMD_0050013
+<https://w3id.org/pmd/co/PMD_0050013> rdf:type owl:Class ;
+                                      rdfs:subClassOf <https://w3id.org/pmd/co/PMD_0050004> ;
+                                      rdfs:label "polyvinyl chloride"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "Polyvinyl Chloride is a Thermoplastic that is formed by the polymerization of vinyl chloride monomers."@en ;
+                                      <https://w3id.org/pmd/co/PMD_0000060> "true"^^xsd:boolean ;
+                                      <https://w3id.org/pmd/co/PMD_0050117> "PVC" .
+
+
+###  https://w3id.org/pmd/co/PMD_0050014
+<https://w3id.org/pmd/co/PMD_0050014> rdf:type owl:Class ;
+                                      rdfs:subClassOf <https://w3id.org/pmd/co/PMD_0050013> ;
+                                      rdfs:label "rigid polyvinyl chloride"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "Rigid PVC is a Polyvinyl Chloride that is characterized by its stiffness and durability."@en ;
+                                      <https://w3id.org/pmd/co/PMD_0000060> "true"^^xsd:boolean ;
+                                      <https://w3id.org/pmd/co/PMD_0050117> "uPVC"@en .
+
+
+###  https://w3id.org/pmd/co/PMD_0050015
+<https://w3id.org/pmd/co/PMD_0050015> rdf:type owl:Class ;
+                                      rdfs:subClassOf <https://w3id.org/pmd/co/PMD_0050013> ;
+                                      rdfs:label "flexible polyvinyl chloride"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "Flexible PVC is a Polyvinyl Chloride that has been modified with plasticizers to impart flexibility."@en ;
+                                      <https://w3id.org/pmd/co/PMD_0000060> "true"^^xsd:boolean ;
+                                      <https://w3id.org/pmd/co/PMD_0050117> "fPVC" .
+
+
+###  https://w3id.org/pmd/co/PMD_0050016
+<https://w3id.org/pmd/co/PMD_0050016> rdf:type owl:Class ;
+                                      rdfs:subClassOf <https://w3id.org/pmd/co/PMD_0050004> ;
+                                      rdfs:label "polystyrene"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "Polystyrene is a Thermoplastic that is produced by the polymerization of styrene monomers."@en ;
+                                      <https://w3id.org/pmd/co/PMD_0000060> "true"^^xsd:boolean ;
+                                      <https://w3id.org/pmd/co/PMD_0050117> "PS" .
+
+
+###  https://w3id.org/pmd/co/PMD_0050017
+<https://w3id.org/pmd/co/PMD_0050017> rdf:type owl:Class ;
+                                      rdfs:subClassOf <https://w3id.org/pmd/co/PMD_0050016> ;
+                                      rdfs:label "general purpose polystyrene"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "General Purpose Polystyrene is a Polystyrene that is valued for its clarity and ease of processing."@en ;
+                                      <https://w3id.org/pmd/co/PMD_0000060> "true"^^xsd:boolean .
+
+
+###  https://w3id.org/pmd/co/PMD_0050018
+<https://w3id.org/pmd/co/PMD_0050018> rdf:type owl:Class ;
+                                      rdfs:subClassOf <https://w3id.org/pmd/co/PMD_0050016> ;
+                                      rdfs:label "high impact polystyrene"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "High Impact Polystyrene is a Polystyrene that is modified with rubber to improve its impact resistance."@en ;
+                                      <https://w3id.org/pmd/co/PMD_0000060> "true"^^xsd:boolean .
+
+
+###  https://w3id.org/pmd/co/PMD_0050019
+<https://w3id.org/pmd/co/PMD_0050019> rdf:type owl:Class ;
+                                      rdfs:subClassOf <https://w3id.org/pmd/co/PMD_0050004> ;
+                                      rdfs:label "polyethylene terephthalate"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "Polyethylene Terephthalate is a Thermoplastic that is synthesized from terephthalic acid and ethylene glycol."@en ;
+                                      <https://w3id.org/pmd/co/PMD_0000060> "true"^^xsd:boolean ;
+                                      <https://w3id.org/pmd/co/PMD_0050117> "PET" .
+
+
+###  https://w3id.org/pmd/co/PMD_0050020
+<https://w3id.org/pmd/co/PMD_0050020> rdf:type owl:Class ;
+                                      rdfs:subClassOf <https://w3id.org/pmd/co/PMD_0050019> ;
+                                      rdfs:label "amorphous polyethylene terephthalate"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "Amorphous PET is a Polyethylene Terephthalate that is characterized by a non-crystalline structure."@en ;
+                                      <https://w3id.org/pmd/co/PMD_0000060> "true"^^xsd:boolean ;
+                                      <https://w3id.org/pmd/co/PMD_0050117> "APET" .
+
+
+###  https://w3id.org/pmd/co/PMD_0050021
+<https://w3id.org/pmd/co/PMD_0050021> rdf:type owl:Class ;
+                                      rdfs:subClassOf <https://w3id.org/pmd/co/PMD_0050019> ;
+                                      rdfs:label "crystalline polyethylene terephthalate"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "Crystalline PET is a Polyethylene Terephthalate that is distinguished by its ordered, crystalline structure."@en ;
+                                      <https://w3id.org/pmd/co/PMD_0000060> "true"^^xsd:boolean ;
+                                      <https://w3id.org/pmd/co/PMD_0050117> "CPET" .
+
+
+###  https://w3id.org/pmd/co/PMD_0050022
+<https://w3id.org/pmd/co/PMD_0050022> rdf:type owl:Class ;
+                                      rdfs:subClassOf <https://w3id.org/pmd/co/PMD_0000888> ;
+                                      rdfs:label "thermosetting polymers"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "A Thermosetting Polymer is a Polymer that, once cured, irreversibly sets into a permanent shape."@en ;
+                                      <https://w3id.org/pmd/co/PMD_0000060> "true"^^xsd:boolean .
+
+
+###  https://w3id.org/pmd/co/PMD_0050023
+<https://w3id.org/pmd/co/PMD_0050023> rdf:type owl:Class ;
+                                      rdfs:subClassOf <https://w3id.org/pmd/co/PMD_0050022> ;
+                                      rdfs:label "epoxy resins"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "Epoxy Resins are Thermosetting Polymers that form rigid, cross-linked networks upon curing."@en ;
+                                      <https://w3id.org/pmd/co/PMD_0000060> "true"^^xsd:boolean .
+
+
+###  https://w3id.org/pmd/co/PMD_0050024
+<https://w3id.org/pmd/co/PMD_0050024> rdf:type owl:Class ;
+                                      rdfs:subClassOf <https://w3id.org/pmd/co/PMD_0050023> ;
+                                      rdfs:label "bisphenol a epoxy"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "Bisphenol A Epoxy is an Epoxy Resin that is formulated using bisphenol A to enhance its mechanical properties."@en ;
+                                      <https://w3id.org/pmd/co/PMD_0000060> "true"^^xsd:boolean .
+
+
+###  https://w3id.org/pmd/co/PMD_0050025
+<https://w3id.org/pmd/co/PMD_0050025> rdf:type owl:Class ;
+                                      rdfs:subClassOf <https://w3id.org/pmd/co/PMD_0050023> ;
+                                      rdfs:label "novolac epoxy"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "Novolac Epoxy is an Epoxy Resin that is based on novolac resins to provide improved thermal and chemical resistance."@en ;
+                                      <https://w3id.org/pmd/co/PMD_0000060> "true"^^xsd:boolean .
+
+
+###  https://w3id.org/pmd/co/PMD_0050026
+<https://w3id.org/pmd/co/PMD_0050026> rdf:type owl:Class ;
+                                      rdfs:subClassOf <https://w3id.org/pmd/co/PMD_0050022> ;
+                                      rdfs:label "phenolic resins"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "Phenolic Resins are Thermosetting Polymers formed by the reaction of phenol with formaldehyde."@en ;
+                                      <https://w3id.org/pmd/co/PMD_0000060> "true"^^xsd:boolean .
+
+
+###  https://w3id.org/pmd/co/PMD_0050027
+<https://w3id.org/pmd/co/PMD_0050027> rdf:type owl:Class ;
+                                      rdfs:subClassOf <https://w3id.org/pmd/co/PMD_0050026> ;
+                                      rdfs:label "phenol-formaldehyde resin"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "Phenol-Formaldehyde Resin is a Phenolic Resin that is synthesized from phenol and formaldehyde."@en ;
+                                      <https://w3id.org/pmd/co/PMD_0000060> "true"^^xsd:boolean .
+
+
+###  https://w3id.org/pmd/co/PMD_0050028
+<https://w3id.org/pmd/co/PMD_0050028> rdf:type owl:Class ;
+                                      rdfs:subClassOf <https://w3id.org/pmd/co/PMD_0050022> ;
+                                      rdfs:label "melamine formaldehyde"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "Melamine Formaldehyde is a Thermosetting Polymer produced from melamine and formaldehyde, known for its high hardness."@en ;
+                                      <https://w3id.org/pmd/co/PMD_0000060> "true"^^xsd:boolean .
+
+
+###  https://w3id.org/pmd/co/PMD_0050029
+<https://w3id.org/pmd/co/PMD_0050029> rdf:type owl:Class ;
+                                      rdfs:subClassOf <https://w3id.org/pmd/co/PMD_0050022> ;
+                                      rdfs:label "urea formaldehyde"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "Urea Formaldehyde is a Thermosetting Polymer formed from urea and formaldehyde, commonly used in adhesives and molding compounds."@en ;
+                                      <https://w3id.org/pmd/co/PMD_0000060> "true"^^xsd:boolean .
+
+
+###  https://w3id.org/pmd/co/PMD_0050030
+<https://w3id.org/pmd/co/PMD_0050030> rdf:type owl:Class ;
+                                      rdfs:subClassOf <https://w3id.org/pmd/co/PMD_0000888> ;
+                                      rdfs:label "elastomers"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "An Elastomer is a Polymer that exhibits elasticity by returning to its original shape after deformation."@en ;
+                                      <https://w3id.org/pmd/co/PMD_0000060> "true"^^xsd:boolean .
+
+
+###  https://w3id.org/pmd/co/PMD_0050031
+<https://w3id.org/pmd/co/PMD_0050031> rdf:type owl:Class ;
+                                      rdfs:subClassOf <https://w3id.org/pmd/co/PMD_0050030> ;
+                                      rdfs:label "natural rubber"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "Natural Rubber is an Elastomer that is derived from the latex of rubber trees."@en ;
+                                      <https://w3id.org/pmd/co/PMD_0000060> "true"^^xsd:boolean .
+
+
+###  https://w3id.org/pmd/co/PMD_0050032
+<https://w3id.org/pmd/co/PMD_0050032> rdf:type owl:Class ;
+                                      rdfs:subClassOf <https://w3id.org/pmd/co/PMD_0050030> ;
+                                      rdfs:label "synthetic rubber"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "Synthetic Rubber is an Elastomer that is produced through chemical synthesis to mimic natural rubber’s properties."@en ;
+                                      <https://w3id.org/pmd/co/PMD_0000060> "true"^^xsd:boolean .
+
+
+###  https://w3id.org/pmd/co/PMD_0050033
+<https://w3id.org/pmd/co/PMD_0050033> rdf:type owl:Class ;
+                                      rdfs:subClassOf <https://w3id.org/pmd/co/PMD_0050032> ;
+                                      rdfs:label "styrene-butadiene rubber"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "Styrene-Butadiene Rubber is a Synthetic Rubber that is composed of styrene and butadiene to enhance abrasion resistance."@en ;
+                                      <https://w3id.org/pmd/co/PMD_0000060> "true"^^xsd:boolean .
+
+
+###  https://w3id.org/pmd/co/PMD_0050034
+<https://w3id.org/pmd/co/PMD_0050034> rdf:type owl:Class ;
+                                      rdfs:subClassOf <https://w3id.org/pmd/co/PMD_0050032> ;
+                                      rdfs:label "nitrile butadiene rubber"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "Nitrile Butadiene Rubber is a Synthetic Rubber that is formulated from acrylonitrile and butadiene to provide resistance to oils and chemicals."@en ;
+                                      <https://w3id.org/pmd/co/PMD_0000060> "true"^^xsd:boolean .
+
+
+###  https://w3id.org/pmd/co/PMD_0050035
+<https://w3id.org/pmd/co/PMD_0050035> rdf:type owl:Class ;
+                                      rdfs:subClassOf <https://w3id.org/pmd/co/PMD_0050032> ;
+                                      rdfs:label "ethylene propylene diene monomer"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "Ethylene Propylene Diene Monomer is a Synthetic Rubber produced from ethylene, propylene, and a diene monomer to offer excellent weather resistance."@en ;
+                                      <https://w3id.org/pmd/co/PMD_0000060> "true"^^xsd:boolean .
+
+
+###  https://w3id.org/pmd/co/PMD_0050036
+<https://w3id.org/pmd/co/PMD_0050036> rdf:type owl:Class ;
+                                      owl:equivalentClass [ owl:intersectionOf ( <https://w3id.org/pmd/co/PMD_0000888>
+                                                                                 [ rdf:type owl:Restriction ;
+                                                                                   owl:onProperty <http://purl.obolibrary.org/obo/RO_0000091> ;
+                                                                                   owl:someValuesFrom <https://w3id.org/pmd/co/PMD_0200001>
+                                                                                 ]
+                                                                               ) ;
+                                                            rdf:type owl:Class
+                                                          ] ;
+                                      rdfs:subClassOf <https://w3id.org/pmd/co/PMD_0000888> ,
+                                                      [ rdf:type owl:Restriction ;
+                                                        owl:onProperty <http://purl.obolibrary.org/obo/RO_0000091> ;
+                                                        owl:someValuesFrom <https://w3id.org/pmd/co/PMD_0200001>
+                                                      ] ;
+                                      rdfs:isDefinedBy <https://w3id.org/pmd/co/PMD_0200001> ;
+                                      rdfs:label "biodegradable polymers"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "Biodegradable Polymers are Polymers that have the biodegradability disposition. They can be decomposed by biological organisms into environmentally benign substances (carbon dioxide and methane, mineral salts or new biomass) in a non-harmful timescale."@en ;
+                                      <https://w3id.org/pmd/co/PMD_0000060> "true"^^xsd:boolean ;
+                                      <https://w3id.org/pmd/co/PMD_0001032> "https://github.com/materialdigital/core-ontology/issues/126" .
+
+
+###  https://w3id.org/pmd/co/PMD_0050037
+<https://w3id.org/pmd/co/PMD_0050037> rdf:type owl:Class ;
+                                      rdfs:subClassOf <https://w3id.org/pmd/co/PMD_0050036> ;
+                                      rdfs:label "polylactic acid"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "Polylactic Acid is a Biodegradable Polymer produced from renewable resources such as corn starch."@en ;
+                                      <https://w3id.org/pmd/co/PMD_0000060> "true"^^xsd:boolean .
+
+
+###  https://w3id.org/pmd/co/PMD_0050038
+<https://w3id.org/pmd/co/PMD_0050038> rdf:type owl:Class ;
+                                      rdfs:subClassOf <https://w3id.org/pmd/co/PMD_0050036> ;
+                                      rdfs:label "polyhydroxyalkanoates"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "Polyhydroxyalkanoates are Biodegradable Polymers that are biosynthesized by microorganisms from sugars or lipids."@en ;
+                                      <https://w3id.org/pmd/co/PMD_0000060> "true"^^xsd:boolean .
+
+
+###  https://w3id.org/pmd/co/PMD_0050039
+<https://w3id.org/pmd/co/PMD_0050039> rdf:type owl:Class ;
+                                      rdfs:subClassOf <https://w3id.org/pmd/co/PMD_0050036> ;
+                                      rdfs:label "polybutylene succinate"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "Polybutylene Succinate is a Biodegradable Polymer that is a thermoplastic polyester recognized for its compostability."@en ;
+                                      <https://w3id.org/pmd/co/PMD_0000060> "true"^^xsd:boolean .
+
+
+###  https://w3id.org/pmd/co/PMD_0060009
+<https://w3id.org/pmd/co/PMD_0060009> rdf:type owl:Class ;
+                                      rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0000027> ;
+                                      rdfs:label "specification datum"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "A data item that provides specification for entities" ;
+                                      <https://w3id.org/pmd/co/PMD_0000060> "true"^^xsd:boolean .
+
+
+###  https://w3id.org/pmd/co/PMD_0200001
+<https://w3id.org/pmd/co/PMD_0200001> rdf:type owl:Class ;
+                                      rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000016> ;
+                                      <http://purl.obolibrary.org/obo/IAO_0000119> "European Commission: Directorate-General for Research and Innovation, Biodegradability of plastics in the open environment, Publications Office of the European Union, 2021, https://data.europa.eu/doi/10.2777/690248" ;
+                                      rdfs:label "Biologische Abbaubarkeit"@de ,
+                                                 "biodegradabilty"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "\"[Biodegradabilty] [...] is understood as the microbial conversion of all its organic constituents to carbon dioxide (or carbon dioxide and methane in conditions where oxygen is not present), new microbial biomass and mineral salts, within a timescale short enough not to lead to lasting harm or accumulation in the open environment.\""@en ,
+                                                                                       "\"[Biologische Abbaubarkeit] [...] beschreibt die mikrobielle Umwandlung all seiner organischen Bestandteile in Kohlendioxid oder – unter sauerstofffreien Bedingungen – in Kohlendioxid und Methan, neue mikrobielle Biomasse und Mineralsalze verstanden, und zwar innerhalb eines Zeitraums, der so kurz ist, dass es nicht zu dauerhaften Schäden oder Anreicherungen in der offenen Umwelt kommt.\""@de ,
+                                                                                       "Biodegradability is a disposition of a material which specifies its capability to be fully microbially converted into inorganic end products (CO₂, CH₄, mineral salts, biomass) within an environmentally non-harmful timescale."@en ;
+                                      <https://w3id.org/pmd/co/PMD_0001032> "https://github.com/materialdigital/core-ontology/issues/126" .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi

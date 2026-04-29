@@ -4,20 +4,19 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://ClimOO/climoo/imports/cco-imports> .
+@base <http://ClimOO/climoo/imports/cco-imports#> .
 
 <http://ClimOO/climoo/imports/cco-imports> rdf:type owl:Ontology ;
                                             owl:versionIRI <http://ClimOO/climoo/imports/cco-imports#2026-02-27> ;
                                             <http://purl.org/dc/terms/description> """This file contains ClimOO Ontology imports from the Common Core Ontology suite (CCO). Imports were manually collected and revised.
 
-Ontology source: CCO 2.0.
-https://github.com/CommonCoreOntology/CommonCoreOntologies/releases/tag/v2.0-2024-11-06"""@en ;
-                                            rdfs:comment """TTwo new releases of CCO, CCO 1.7 and CCO 2.0, have been made available in November 2024. CCO 2.0 provides a new IRI schema. SCO, ClimOO upper-level ontology, imports from a former release. CCO 1.5. Similarly, SuMSO, another ontology extending SCO from which ClimOO reuses several backbone classes as backbone, imports from CCO 1.6. Aiming to conform with established sustainability ontologies, ClimOO currently reuses CCO imports in compliance with SCO. As soon as updates are made available for those resources, ClimOO will align accordingly. 
-ClimOO also reuses some classes from CCO that are not imported by SCO and SuMSO. Those imports have been fetched from CCO 1.7, where the IRI schema is still compliant with that imported by SCO and SuMSO.  
+Ontology source: CCO 1.7.
+https://github.com/CommonCoreOntology/CommonCoreOntologies/releases/tag/v1.7-2024-11-03"""@en ;
+                                            rdfs:comment """Two new releases of CCO, CCO 1.7 and CCO 2.0, have been made available in November 2024. CCO 2.0 provides a new IRI schema. SCO, ClimOO upper-level ontology, imports from a former release. CCO 1.5. Aiming to conform with SCO, ClimOO currently reuses CCO imports in compliance with SCO. As soon as updates are made available for those resources, ClimOO will align accordingly. 
+ClimOO also reuses some classes from CCO that are not imported by SCO and SuMSO. Those imports have been fetched from CCO 1.7, where the IRI schema is still compliant with that imported by SCO.  
 
 https://github.com/CommonCoreOntology/CommonCoreOntologies/releases
-https://github.com/gioUbbiali/Sustainability-Core-Ontology 
-https://github.com/gioUbbiali/Sustainable-Meat-Systems-Ontology"""@en ;
+https://w3id.org/sco/repo"""@en ;
                                             rdfs:seeAlso "https://github.com/CommonCoreOntology/CommonCoreOntologies" ;
                                             owl:versionInfo "2026-02-27" .
 

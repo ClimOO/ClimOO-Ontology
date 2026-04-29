@@ -7,8 +7,9 @@
 @base <https://www.w3id.org/climoo#> .
 
 <https://www.w3id.org/climoo/climoo-plastico> rdf:type owl:Ontology ;
-                                               owl:versionIRI :V1.0.0 ;
-                                               owl:imports <https://raw.githubusercontent.com/ClimOO/ClimOO-Ontology/refs/heads/main/ClimOO%20material/src/ontology/plastico%20imports/bionik-imports.ttl> ,
+                                               owl:versionIRI :plastico-v1.0.0 ;
+                                               owl:imports <http://ClimOO/climoo/imports/pmdco-imports#2026-04-01> ,
+                                                           <https://raw.githubusercontent.com/ClimOO/ClimOO-Ontology/refs/heads/main/ClimOO%20material/src/ontology/plastico%20imports/bionik-imports.ttl> ,
                                                            <https://raw.githubusercontent.com/ClimOO/ClimOO-Ontology/refs/heads/main/ClimOO%20material/src/ontology/plastico%20imports/cco-imports.ttl> ,
                                                            <https://raw.githubusercontent.com/ClimOO/ClimOO-Ontology/refs/heads/main/ClimOO%20material/src/ontology/plastico%20imports/chebi-imports.ttl> ,
                                                            <https://raw.githubusercontent.com/ClimOO/ClimOO-Ontology/refs/heads/main/ClimOO%20material/src/ontology/plastico%20imports/envo-imports-merged.ttl> ,
@@ -26,7 +27,7 @@
                                                <http://purl.org/dc/terms/title> "ClimOO Ontology - PlasticO module"@en ;
                                                owl:versionInfo "2026-02-25"@en ,
                                                                "V1.0.0."@en ;
-                                               <http://www.w3.org/2004/02/skos/core#note> """Repository: https://github.com/ClimOO/ClimOO-Ontology
+                                               <http://www.w3.org/2004/02/skos/core#note> """Repository: https://www.w3id.org/climoo/repo
 Documentation webpage: https://www.w3id.org/climoo/docs"""@en ,
                                                                                           "The most recent version of this file is available on GitHub at the following link: https://www.w3id.org/climoo/climoo-plastico."@en .
 
@@ -59,23 +60,7 @@ Documentation webpage: https://www.w3id.org/climoo/docs"""@en ,
 #################################################################
 
 ###  http://purl.obolibrary.org/obo/CHEBI_24431
-<http://purl.obolibrary.org/obo/CHEBI_24431> rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000040> ,
-                                                             [ rdf:type owl:Class ;
-                                                               owl:unionOf ( [ rdf:type owl:Class ;
-                                                                               owl:unionOf ( <http://purl.obolibrary.org/obo/RO_0002577>
-                                                                                             <https://www.w3id.org/sco#SCO_0000006>
-                                                                                           )
-                                                                             ]
-                                                                             [ rdf:type owl:Restriction ;
-                                                                               owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000176> ;
-                                                                               owl:someValuesFrom [ rdf:type owl:Class ;
-                                                                                                    owl:unionOf ( <http://purl.obolibrary.org/obo/RO_0002577>
-                                                                                                                  <https://www.w3id.org/sco#SCO_0000006>
-                                                                                                                )
-                                                                                                  ]
-                                                                             ]
-                                                                           )
-                                                             ] .
+<http://purl.obolibrary.org/obo/CHEBI_24431> rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000040> .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource <http://purl.obolibrary.org/obo/CHEBI_24431> ;
@@ -167,7 +152,8 @@ We aligned CCO and IAO classes according to SuMSO model."""@en .
 
 
 ###  http://www.semanticweb.org/bionik/portion_of_material
-<http://www.semanticweb.org/bionik/portion_of_material> rdfs:subClassOf [ rdf:type owl:Class ;
+<http://www.semanticweb.org/bionik/portion_of_material> rdfs:subClassOf <https://w3id.org/pmd/co/PMD_0000001> ,
+                                                                        [ rdf:type owl:Class ;
                                                                           owl:unionOf ( [ rdf:type owl:Class ;
                                                                                           owl:unionOf ( <http://purl.obolibrary.org/obo/RO_0002577>
                                                                                                         <https://www.w3id.org/sco#SCO_0000006>
@@ -183,6 +169,57 @@ We aligned CCO and IAO classes according to SuMSO model."""@en .
                                                                                         ]
                                                                                       )
                                                                         ] .
+
+
+###  https://w3id.org/pmd/co/PMD_0000888
+<https://w3id.org/pmd/co/PMD_0000888> owl:equivalentClass :ClimOO_0000246 ;
+                                      rdfs:comment """ClimOO Ontology comment:
+Till release 3.0.0-rc2, despite acknowledging the existence of natural polymer materials, PMDco focused the polymer classes on those of synthetic production. In the current release (3.0.0), PMDco changed the subsumption axiomatization of the “polymer” class from being a subclass of the “engineered material” class to the “material” class. We assume to extend its coverage to also include non-synthetic polymer materials (see included subclasses)and map accordingly. The definition of the PMDco “polymer” class, however, has not been changed yet, still referring to engineered materials."""@en .
+
+
+###  https://w3id.org/pmd/co/PMD_0050004
+<https://w3id.org/pmd/co/PMD_0050004> owl:equivalentClass :ClimOO_0000252 .
+
+
+###  https://w3id.org/pmd/co/PMD_0050006
+<https://w3id.org/pmd/co/PMD_0050006> rdfs:subClassOf :ClimOO_0000293 .
+
+
+###  https://w3id.org/pmd/co/PMD_0050007
+<https://w3id.org/pmd/co/PMD_0050007> rdfs:subClassOf :ClimOO_0000293 .
+
+
+###  https://w3id.org/pmd/co/PMD_0050008
+<https://w3id.org/pmd/co/PMD_0050008> rdfs:subClassOf :ClimOO_0000293 .
+
+
+###  https://w3id.org/pmd/co/PMD_0050022
+<https://w3id.org/pmd/co/PMD_0050022> owl:equivalentClass :ClimOO_0000251 .
+
+
+###  https://w3id.org/pmd/co/PMD_0050030
+<https://w3id.org/pmd/co/PMD_0050030> owl:equivalentClass :ClimOO_0000250 .
+
+
+###  https://w3id.org/pmd/co/PMD_0050037
+<https://w3id.org/pmd/co/PMD_0050037> rdfs:subClassOf :ClimOO_0000107 ;
+                                      rdfs:comment """ClimOO Ontology comment:
+We did not include the PMDco class for biodegradable polymers because PMDco erroneously refers to biodegradability in the portions of material and not to the constituting polymer molecules. We, however, imported PMDco “biodegradability” class and mapped it as equivalent to ClimOO “biodegradability” class. We also include the PMDco “polybutylene succinate” and “polylactic acid” classes, subclasses of and mapped as subclasses of the ClimOO “portion of biodegradable plastic” class. This aims to be an initial mapping till PMDco revises its class.
+See: https://w3id.org/pmd/co/PMD_0050036 
+https://w3id.org/pmd/co/PMD_0200001""" .
+
+
+###  https://w3id.org/pmd/co/PMD_0050039
+<https://w3id.org/pmd/co/PMD_0050039> rdfs:subClassOf :ClimOO_0000107 .
+
+
+###  https://w3id.org/pmd/co/PMD_0200001
+<https://w3id.org/pmd/co/PMD_0200001> owl:equivalentClass :ClimOO_0000104 ;
+                                      rdfs:comment """ClimOO Ontology comment:
+We did not include the PMDco class for biodegradable polymers because PMDco erroneously refers to biodegradability in the portions of material and not to the constituting polymer molecules. We, however, imported PMDco “biodegradability” class and mapped it as equivalent to ClimOO “biodegradability” class. We also include the PMDco “polybutylene succinate” and “polylactic acid” classes, subclasses of and mapped as subclasses of the ClimOO “portion of biodegradable plastic” class. This aims to be an initial mapping till PMDco revises its class.
+See: https://w3id.org/pmd/co/PMD_0050036 
+https://w3id.org/pmd/co/PMD_0050039
+https://w3id.org/pmd/co/PMD_0050037"""@en .
 
 
 ###  https://www.w3id.org/climoo#ClimOO_0000097
@@ -232,16 +269,9 @@ We aligned CCO and IAO classes according to SuMSO model."""@en .
                                       rdf:type owl:Class
                                     ] ;
                 rdfs:subClassOf :ClimOO_0000278 ,
-                                [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
-                                                         owl:onProperty <http://purl.obolibrary.org/obo/RO_0004008> ;
-                                                         owl:someValuesFrom :ClimOO_0000097
-                                                       ]
-                                                       [ rdf:type owl:Restriction ;
-                                                         owl:onProperty <http://purl.obolibrary.org/obo/RO_0004009> ;
-                                                         owl:someValuesFrom :ClimOO_0000100
-                                                       ]
-                                                     ) ;
-                                  rdf:type owl:Class
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://purl.obolibrary.org/obo/RO_0004009> ;
+                                  owl:someValuesFrom :ClimOO_0000100
                                 ] ;
                 rdfs:comment "Reference to fossil and nonfossil feedstocks, such asrenewable feedstock, fossil fuel feedstock, biomass feedstock, related roles, and specific types, such as petroleum and biomasses, can be added as needed."@en ;
                 rdfs:label "bio-based plastic manufacturing process"@en ;
@@ -260,7 +290,11 @@ We aligned CCO and IAO classes according to SuMSO model."""@en .
 
 ###  https://www.w3id.org/climoo#ClimOO_0000104
 :ClimOO_0000104 rdf:type owl:Class ;
-                rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000016> ;
+                rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000016> ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000054> ;
+                                  owl:allValuesFrom :ClimOO_0000263
+                                ] ;
                 rdfs:comment """Definitions of plastic properties, such as biodegradability and composability, and related processes, currently covered in the ClimOO Ontology, refer to existing policy standards. This aims to stress the significance of such regulations concerning defining such entities and, especially, the consequences in terms of pollution and sustainability interventions.
 
 It is noteworthy to mention that such standards present limitations. See, for instance, the work of Rayns et al. (2021), Steiner et al. (2022, 2024), concerning plastic biodegradability.
@@ -287,7 +321,7 @@ We envision implementing such definitions in accordance with regulation revision
                                 ] ;
                 <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "biodegradable plastic"@en ;
                 rdfs:label "portion of biodegradable plastic material"@en ;
-                <http://www.w3.org/2004/02/skos/core#definition> "A portion of plastic material that is constituted by biodegradable polymer molecules, is the main input of a process of biodegradation of plastic, and is the main output of a production process of biodegradable plastic."@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A portion of plastic material that is constituted by biodegradable polymer molecules, is the main input of a process of biodegradation of plastic."@en ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
 
 
@@ -337,20 +371,13 @@ We envision implementing such definitions in accordance with regulation revision
                                       rdf:type owl:Class
                                     ] ;
                 rdfs:subClassOf :ClimOO_0000278 ,
-                                [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
-                                                         owl:onProperty <http://purl.obolibrary.org/obo/RO_0004008> ;
-                                                         owl:someValuesFrom :ClimOO_0000205
-                                                       ]
-                                                       [ rdf:type owl:Restriction ;
-                                                         owl:onProperty <http://purl.obolibrary.org/obo/RO_0004009> ;
-                                                         owl:someValuesFrom [ owl:intersectionOf ( :ClimOO_0000109
-                                                                                                   :ClimOO_0000210
-                                                                                                 ) ;
-                                                                              rdf:type owl:Class
-                                                                            ]
-                                                       ]
-                                                     ) ;
-                                  rdf:type owl:Class
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://purl.obolibrary.org/obo/RO_0004009> ;
+                                  owl:someValuesFrom [ owl:intersectionOf ( :ClimOO_0000109
+                                                                            :ClimOO_0000210
+                                                                          ) ;
+                                                       rdf:type owl:Class
+                                                     ]
                                 ] ;
                 <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "production process of biodegradable plastic material"@en ;
                 rdfs:label "biodegradable synthetic plastic manufacturing process"@en ;
@@ -386,33 +413,7 @@ We envision implementing such definitions in accordance with regulation revision
                                                          ) ;
                                       rdf:type owl:Class
                                     ] ;
-                rdfs:subClassOf :ClimOO_0000113 ,
-                                [ owl:intersectionOf ( :ClimOO_0000113
-                                                       [ rdf:type owl:Restriction ;
-                                                         owl:onProperty <http://purl.obolibrary.org/obo/RO_0002233> ;
-                                                         owl:someValuesFrom [ owl:intersectionOf ( [ owl:intersectionOf ( :ClimOO_0000109
-                                                                                                                          :ClimOO_0000210
-                                                                                                                        ) ;
-                                                                                                     rdf:type owl:Class
-                                                                                                   ]
-                                                                                                   [ rdf:type owl:Restriction ;
-                                                                                                     owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000177> ;
-                                                                                                     owl:someValuesFrom [ owl:intersectionOf ( :ClimOO_0000205
-                                                                                                                                               [ rdf:type owl:Restriction ;
-                                                                                                                                                 owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000177> ;
-                                                                                                                                                 owl:someValuesFrom :ClimOO_0000145
-                                                                                                                                               ]
-                                                                                                                                             ) ;
-                                                                                                                          rdf:type owl:Class
-                                                                                                                        ]
-                                                                                                   ]
-                                                                                                 ) ;
-                                                                              rdf:type owl:Class
-                                                                            ]
-                                                       ]
-                                                     ) ;
-                                  rdf:type owl:Class
-                                ] ;
+                rdfs:subClassOf :ClimOO_0000113 ;
                 rdfs:label "biodegradation process of a piece of sythetic plastic"@en ;
                 <http://www.w3.org/2004/02/skos/core#definition> "A biodegradation of synthetic plastic that applies to some polymer molecules constituting some portion of plastic that composes some piece of biodegradable synthetic plastic."@en ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
@@ -439,26 +440,7 @@ We envision implementing such definitions in accordance with regulation revision
                                                          ) ;
                                       rdf:type owl:Class
                                     ] ;
-                rdfs:subClassOf :ClimOO_0000264 ,
-                                [ owl:intersectionOf ( :ClimOO_0000207
-                                                       [ rdf:type owl:Restriction ;
-                                                         owl:onProperty <http://purl.obolibrary.org/obo/RO_0002233> ;
-                                                         owl:someValuesFrom [ owl:intersectionOf ( [ owl:intersectionOf ( :ClimOO_0000109
-                                                                                                                          :ClimOO_0000210
-                                                                                                                        ) ;
-                                                                                                     rdf:type owl:Class
-                                                                                                   ]
-                                                                                                   [ rdf:type owl:Restriction ;
-                                                                                                     owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000177> ;
-                                                                                                     owl:someValuesFrom :ClimOO_0000205
-                                                                                                   ]
-                                                                                                 ) ;
-                                                                              rdf:type owl:Class
-                                                                            ]
-                                                       ]
-                                                     ) ;
-                                  rdf:type owl:Class
-                                ] ;
+                rdfs:subClassOf :ClimOO_0000264 ;
                 rdfs:label "biodegradation process of synthetic plastic"@en ;
                 <http://www.w3.org/2004/02/skos/core#definition> "A biodegradation of plastic that applies to some synthetic polymer molecules, constituting some portion of synthetic plastic (portion of biodegradable synthetic plastic). Packaging applications: 90% of the total polymer molecular weight must be degraded till mineralization into H2O, CO2, and mineral salts, in the presence of oxygen, and methane, H2O, CO2, and mineral salts, in the absence of oxygen, within the first 6 months (according to EU EN 13432, standardized laboratory test conditions). (See EU EN 13432, UNI EN ISO 20200, and Regulation - 2023/2055 - EN - EUR-Lex)."@en ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
@@ -809,31 +791,6 @@ We envision implementing such definitions in accordance with regulation revision
                                     ] ;
                 rdfs:subClassOf :ClimOO_0000237 ,
                                 [ rdf:type owl:Restriction ;
-                                  owl:onProperty <http://purl.obolibrary.org/obo/RO_0002234> ;
-                                  owl:someValuesFrom [ owl:intersectionOf ( [ owl:intersectionOf ( :ClimOO_0000211
-                                                                                                   [ rdf:type owl:Restriction ;
-                                                                                                     owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000176> ;
-                                                                                                     owl:someValuesFrom :ClimOO_0000230
-                                                                                                   ]
-                                                                                                 ) ;
-                                                                              rdf:type owl:Class
-                                                                            ]
-                                                                            [ rdf:type owl:Restriction ;
-                                                                              owl:onProperty <http://purl.obolibrary.org/obo/ENVO_02000200> ;
-                                                                              owl:someValuesFrom [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/CHEBI_24431>
-                                                                                                                        [ rdf:type owl:Restriction ;
-                                                                                                                          owl:onProperty <http://purl.obolibrary.org/obo/RO_0000087> ;
-                                                                                                                          owl:someValuesFrom <http://purl.obolibrary.org/obo/CHEBI_78298>
-                                                                                                                        ]
-                                                                                                                      ) ;
-                                                                                                   rdf:type owl:Class
-                                                                                                 ]
-                                                                            ]
-                                                                          ) ;
-                                                       rdf:type owl:Class
-                                                     ]
-                                ] ,
-                                [ rdf:type owl:Restriction ;
                                   owl:onProperty <http://purl.obolibrary.org/obo/RO_0002427> ;
                                   owl:someValuesFrom :ClimOO_0000137
                                 ] ;
@@ -845,7 +802,16 @@ We envision implementing such definitions in accordance with regulation revision
 
 ###  https://www.w3id.org/climoo#ClimOO_0000139
 :ClimOO_0000139 rdf:type owl:Class ;
-                rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000015> ;
+                rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000015> ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000117> ;
+                                  owl:someValuesFrom [ rdf:type owl:Class ;
+                                                       owl:unionOf ( <https://www.w3id.org/sco#SCO_0000007>
+                                                                     <https://www.w3id.org/sco#SCO_0000008>
+                                                                     <https://www.w3id.org/sco#SCO_0000009>
+                                                                   )
+                                                     ]
+                                ] ;
                 <http://purl.org/dc/terms/source> "Vert, M., Doi, Y., Hellwich, K.-H., Hess, M., Hodge, P., Kubisa, P., Rinaudo, M., & Schué, F. (2012). Terminology for biorelated polymers and applications (IUPAC Recommendations 2012). Pure Appl. Chem., 84(2), 377–410." ;
                 rdfs:comment """Definitions of plastic properties, such as biodegradability and composability, and related processes, currently covered in the ClimOO Ontology, refer to existing policy standards. This aims to stress the significance of such regulations concerning defining such entities and, especially, the consequences in terms of pollution and sustainability interventions.
 
@@ -870,6 +836,22 @@ We envision implementing such definitions in accordance with regulation revision
 ###  https://www.w3id.org/climoo#ClimOO_0000141
 :ClimOO_0000141 rdf:type owl:Class ;
                 rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_23367> ,
+                                [ rdf:type owl:Class ;
+                                  owl:unionOf ( [ rdf:type owl:Class ;
+                                                  owl:unionOf ( <http://purl.obolibrary.org/obo/RO_0002577>
+                                                                <https://www.w3id.org/sco#SCO_0000006>
+                                                              )
+                                                ]
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000176> ;
+                                                  owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                       owl:unionOf ( <http://purl.obolibrary.org/obo/RO_0002577>
+                                                                                     <https://www.w3id.org/sco#SCO_0000006>
+                                                                                   )
+                                                                     ]
+                                                ]
+                                              )
+                                ] ,
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty <http://purl.obolibrary.org/obo/RO_0000091> ;
                                   owl:someValuesFrom :ClimOO_0000123
@@ -1035,15 +1017,7 @@ We envision implementing such definitions in accordance with regulation revision
                                                          ) ;
                                       rdf:type owl:Class
                                     ] ;
-                rdfs:subClassOf :ClimOO_0000253 ,
-                                [ owl:intersectionOf ( :ClimOO_0000150
-                                                       [ rdf:type owl:Restriction ;
-                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000110> ;
-                                                         owl:someValuesFrom :ClimOO_0000248
-                                                       ]
-                                                     ) ;
-                                  rdf:type owl:Class
-                                ] ;
+                rdfs:subClassOf :ClimOO_0000150 ;
                 rdfs:label "piece of synthetic plastic"@en ;
                 <http://www.w3.org/2004/02/skos/core#definition> "A piece of plastic that is made of synthetic plastic."@en ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
@@ -1108,17 +1082,6 @@ We envision implementing such definitions in accordance with regulation revision
                                     ] ;
                 rdfs:subClassOf :ClimOO_0000271 ,
                                 [ rdf:type owl:Restriction ;
-                                  owl:onProperty <http://purl.obolibrary.org/obo/RO_0002233> ;
-                                  owl:someValuesFrom [ owl:intersectionOf ( :ClimOO_0000109
-                                                                            [ rdf:type owl:Restriction ;
-                                                                              owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000177> ;
-                                                                              owl:someValuesFrom :ClimOO_0000107
-                                                                            ]
-                                                                          ) ;
-                                                       rdf:type owl:Class
-                                                     ]
-                                ] ,
-                                [ rdf:type owl:Restriction ;
                                   owl:onProperty <http://purl.obolibrary.org/obo/RO_0002427> ;
                                   owl:someValuesFrom :ClimOO_0000264
                                 ] ;
@@ -1131,6 +1094,15 @@ We envision implementing such definitions in accordance with regulation revision
 ###  https://www.w3id.org/climoo#ClimOO_0000158
 :ClimOO_0000158 rdf:type owl:Class ;
                 rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000015> ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000117> ;
+                                  owl:someValuesFrom [ rdf:type owl:Class ;
+                                                       owl:unionOf ( <https://www.w3id.org/sco#SCO_0000007>
+                                                                     <https://www.w3id.org/sco#SCO_0000008>
+                                                                     <https://www.w3id.org/sco#SCO_0000009>
+                                                                   )
+                                                     ]
+                                ] ,
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty <http://purl.obolibrary.org/obo/RO_0002233> ;
                                   owl:someValuesFrom :ClimOO_0000153
@@ -1177,40 +1149,7 @@ We envision implementing such definitions in accordance with regulation revision
                                                          ) ;
                                       rdf:type owl:Class
                                     ] ;
-                rdfs:subClassOf :ClimOO_0000113 ,
-                                [ owl:intersectionOf ( :ClimOO_0000119
-                                                       [ rdf:type owl:Restriction ;
-                                                         owl:onProperty <http://purl.obolibrary.org/obo/RO_0002233> ;
-                                                         owl:someValuesFrom [ owl:intersectionOf ( [ owl:intersectionOf ( :ClimOO_0000109
-                                                                                                                          :ClimOO_0000210
-                                                                                                                        ) ;
-                                                                                                     rdf:type owl:Class
-                                                                                                   ]
-                                                                                                   [ rdf:type owl:Restriction ;
-                                                                                                     owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000177> ;
-                                                                                                     owl:someValuesFrom [ owl:intersectionOf ( :ClimOO_0000117
-                                                                                                                                               [ rdf:type owl:Restriction ;
-                                                                                                                                                 owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000177> ;
-                                                                                                                                                 owl:someValuesFrom [ owl:intersectionOf ( :ClimOO_0000146
-                                                                                                                                                                                           [ rdf:type owl:Restriction ;
-                                                                                                                                                                                             owl:onProperty <http://purl.obolibrary.org/obo/RO_0000087> ;
-                                                                                                                                                                                             owl:someValuesFrom <http://purl.obolibrary.org/obo/ENVO_01000665>
-                                                                                                                                                                                           ]
-                                                                                                                                                                                         ) ;
-                                                                                                                                                                      rdf:type owl:Class
-                                                                                                                                                                    ]
-                                                                                                                                               ]
-                                                                                                                                             ) ;
-                                                                                                                          rdf:type owl:Class
-                                                                                                                        ]
-                                                                                                   ]
-                                                                                                 ) ;
-                                                                              rdf:type owl:Class
-                                                                            ]
-                                                       ]
-                                                     ) ;
-                                  rdf:type owl:Class
-                                ] ;
+                rdfs:subClassOf :ClimOO_0000113 ;
                 rdfs:label "plastic composting process"@en ;
                 <http://www.w3.org/2004/02/skos/core#definition> "A composting process that applies to polymer molecules constituting portions of plastic of which some waste piece of biodegradable synthetic plastic, used as input or part of the input of this process, is made. Packaging applications: The pieces of biodegradable synthetic plastic must be broken down into particles smaller than 2 mm in their largest dimension within the first 12 weeks (according to EU EN 13432, standardized laboratory test conditions). Presence of heavy metals in the output compost must be below harmful levels with no negative consequences concerning agronomic value and plant growth ecotoxicity (See EU standard directly).  (See also UNI EN ISO 20200 and Regulation - 2023/2055 - EN - EUR-Lex)."@en ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
@@ -1227,9 +1166,21 @@ We envision implementing such definitions in accordance with regulation revision
                                       rdf:type owl:Class
                                     ] ;
                 rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000027> ,
-                                [ rdf:type owl:Restriction ;
-                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000172> ;
-                                  owl:someValuesFrom :ClimOO_0000163
+                                [ rdf:type owl:Class ;
+                                  owl:unionOf ( [ rdf:type owl:Class ;
+                                                  owl:unionOf ( <http://purl.obolibrary.org/obo/RO_0002577>
+                                                                <https://www.w3id.org/sco#SCO_0000006>
+                                                              )
+                                                ]
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000176> ;
+                                                  owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                       owl:unionOf ( <http://purl.obolibrary.org/obo/RO_0002577>
+                                                                                     <https://www.w3id.org/sco#SCO_0000006>
+                                                                                   )
+                                                                     ]
+                                                ]
+                                              )
                                 ] ;
                 <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "plastic debris agglomerate"@en ;
                 rdfs:comment "References to plastic debris aggregate formation and participation in pollution processes can be added as needed." ;
@@ -1267,25 +1218,7 @@ We envision implementing such definitions in accordance with regulation revision
                                                          ) ;
                                       rdf:type owl:Class
                                     ] ;
-                rdfs:subClassOf :ClimOO_0000275 ,
-                                [ rdf:type owl:Restriction ;
-                                  owl:onProperty <http://purl.obolibrary.org/obo/RO_0002233> ;
-                                  owl:someValuesFrom [ owl:intersectionOf ( :ClimOO_0000210
-                                                                            [ rdf:type owl:Restriction ;
-                                                                              owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000177> ;
-                                                                              owl:someValuesFrom [ owl:intersectionOf ( :ClimOO_0000246
-                                                                                                                        [ rdf:type owl:Restriction ;
-                                                                                                                          owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000177> ;
-                                                                                                                          owl:someValuesFrom :ClimOO_0000163
-                                                                                                                        ]
-                                                                                                                      ) ;
-                                                                                                   rdf:type owl:Class
-                                                                                                 ]
-                                                                            ]
-                                                                          ) ;
-                                                       rdf:type owl:Class
-                                                     ]
-                                ] ;
+                rdfs:subClassOf :ClimOO_0000275 ;
                 rdfs:label "plastic debris degradation process"@en ;
                 <http://www.w3.org/2004/02/skos/core#definition> "An polymer degradation process that leads some polymer molecules constituting some portion of polymer-based material composing some plastic debris to vary their physical and chemical qualities due to interactions with factors such as heat, light, or chemical entities, resulting in a decrease in their molecular weight."@en ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> ;
@@ -1477,22 +1410,7 @@ These classifications differentiate for the size range of micro-, macro-, and me
                                                          ) ;
                                       rdf:type owl:Class
                                     ] ;
-                rdfs:subClassOf :ClimOO_0000269 ,
-                                [ owl:intersectionOf ( :ClimOO_0000269
-                                                       [ rdf:type owl:Restriction ;
-                                                         owl:onProperty <http://purl.obolibrary.org/obo/RO_0002233> ;
-                                                         owl:someValuesFrom [ owl:intersectionOf ( :ClimOO_0000242
-                                                                                                   [ rdf:type owl:Restriction ;
-                                                                                                     owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000177> ;
-                                                                                                     owl:someValuesFrom :ClimOO_0000247
-                                                                                                   ]
-                                                                                                 ) ;
-                                                                              rdf:type owl:Class
-                                                                            ]
-                                                       ]
-                                                     ) ;
-                                  rdf:type owl:Class
-                                ] ;
+                rdfs:subClassOf :ClimOO_0000269 ;
                 <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "plastic weathering"@en ;
                 rdfs:label "plastic degradation process"@en ;
                 rdfs:seeAlso "http://purl.allotrope.org/ontologies/process#AFP_0003641" ;
@@ -1562,11 +1480,7 @@ We envision implementing such definitions in accordance with regulation revision
                                                          ) ;
                                       rdf:type owl:Class
                                     ] ;
-                rdfs:subClassOf :ClimOO_0000226 ,
-                                [ rdf:type owl:Restriction ;
-                                  owl:onProperty <http://purl.obolibrary.org/obo/RO_0004008> ;
-                                  owl:someValuesFrom :ClimOO_0000171
-                                ] ;
+                rdfs:subClassOf :ClimOO_0000226 ;
                 rdfs:comment "References to manufacturing processes of plastic objects made of specific type of plastics, such as recycled, virgin, biobased, and biodegradable can be added as needed."@en ;
                 rdfs:label "plastic object manufacturing process"@en ;
                 <http://www.w3.org/2004/02/skos/core#definition> "A manufacturing process of a piece of synthetic plastic that has a plastic object as the main output."@en ;
@@ -1665,29 +1579,7 @@ We envision implementing such definitions in accordance with regulation revision
                                                          ) ;
                                       rdf:type owl:Class
                                     ] ;
-                rdfs:subClassOf :ClimOO_0000214 ,
-                                [ owl:intersectionOf ( :ClimOO_0000214
-                                                       [ rdf:type owl:Restriction ;
-                                                         owl:onProperty <http://purl.obolibrary.org/obo/RO_0002234> ;
-                                                         owl:someValuesFrom [ owl:intersectionOf ( :ClimOO_0000248
-                                                                                                   [ rdf:type owl:Restriction ;
-                                                                                                     owl:onProperty <http://purl.obolibrary.org/obo/ENVO_02000200> ;
-                                                                                                     owl:someValuesFrom [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/CHEBI_24431>
-                                                                                                                                               [ rdf:type owl:Restriction ;
-                                                                                                                                                 owl:onProperty <http://purl.obolibrary.org/obo/RO_0000087> ;
-                                                                                                                                                 owl:someValuesFrom <http://purl.obolibrary.org/obo/CHEBI_78298>
-                                                                                                                                               ]
-                                                                                                                                             ) ;
-                                                                                                                          rdf:type owl:Class
-                                                                                                                        ]
-                                                                                                   ]
-                                                                                                 ) ;
-                                                                              rdf:type owl:Class
-                                                                            ]
-                                                       ]
-                                                     ) ;
-                                  rdf:type owl:Class
-                                ] ;
+                rdfs:subClassOf :ClimOO_0000214 ;
                 <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "synthetic plastic sorption of pollutants"@en ;
                 rdfs:comment "The focus is on synthetic plastics here."@en ;
                 rdfs:label "plastic sorption process of pollutants"@en ;
@@ -1712,6 +1604,15 @@ We envision implementing such definitions in accordance with regulation revision
                                                        ]
                                                      ) ;
                                   rdf:type owl:Class
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000117> ;
+                                  owl:someValuesFrom [ rdf:type owl:Class ;
+                                                       owl:unionOf ( <https://www.w3id.org/sco#SCO_0000007>
+                                                                     <https://www.w3id.org/sco#SCO_0000008>
+                                                                     <https://www.w3id.org/sco#SCO_0000009>
+                                                                   )
+                                                     ]
                                 ] ,
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty <http://purl.obolibrary.org/obo/RO_0002418> ;
@@ -1742,15 +1643,7 @@ We envision implementing such definitions in accordance with regulation revision
                                                          ) ;
                                       rdf:type owl:Class
                                     ] ;
-                rdfs:subClassOf :ClimOO_0000263 ,
-                                [ owl:intersectionOf ( :ClimOO_0000269
-                                                       [ rdf:type owl:Restriction ;
-                                                         owl:onProperty <http://purl.obolibrary.org/obo/RO_0002233> ;
-                                                         owl:someValuesFrom :ClimOO_0000109
-                                                       ]
-                                                     ) ;
-                                  rdf:type owl:Class
-                                ] ;
+                rdfs:subClassOf :ClimOO_0000263 ;
                 rdfs:comment """Definitions of plastic properties, such as biodegradability and composability, and related processes, currently covered in the ClimOO Ontology, refer to existing policy standards. This aims to stress the significance of such regulations concerning defining such entities and, especially, the consequences in terms of pollution and sustainability interventions.
 
 It is noteworthy to mention that such standards present limitations. See, for instance, the work of Rayns et al. (2021), Steiner et al. (2022, 2024), concerning plastic biodegradability.
@@ -1776,8 +1669,8 @@ We envision implementing such definitions in accordance with regulation revision
 
 ###  https://www.w3id.org/climoo#ClimOO_0000182
 :ClimOO_0000182 rdf:type owl:Class ;
-                rdfs:subClassOf [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/BFO_0000015>
-                                                       [ rdf:type owl:Restriction ;
+                rdfs:subClassOf <https://w3id.org/pmd/co/PMD_0010033> ,
+                                [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
                                                          owl:onProperty <http://purl.obolibrary.org/obo/RO_0004008> ;
                                                          owl:someValuesFrom :ClimOO_0000242
                                                        ]
@@ -1787,6 +1680,15 @@ We envision implementing such definitions in accordance with regulation revision
                                                        ]
                                                      ) ;
                                   rdf:type owl:Class
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000117> ;
+                                  owl:someValuesFrom [ rdf:type owl:Class ;
+                                                       owl:unionOf ( <https://www.w3id.org/sco#SCO_0000007>
+                                                                     <https://www.w3id.org/sco#SCO_0000008>
+                                                                     <https://www.w3id.org/sco#SCO_0000009>
+                                                                   )
+                                                     ]
                                 ] ;
                 <http://purl.org/dc/terms/source> """Compendium of polymer terminology and nomenclature: IUPAC recommendations, 2008. (2009). Choice (Middletown), 47(01), 47-0284-47–0284.
 
@@ -1814,20 +1716,13 @@ Vert, M., Doi, Y., Hellwich, K.-H., Hess, M., Hodge, P., Kubisa, P., Rinaudo, M.
                                       rdf:type owl:Class
                                     ] ;
                 rdfs:subClassOf :ClimOO_0000226 ,
-                                [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
-                                                         owl:onProperty <http://purl.obolibrary.org/obo/RO_0004008> ;
-                                                         owl:someValuesFrom :ClimOO_0000151
-                                                       ]
-                                                       [ rdf:type owl:Restriction ;
-                                                         owl:onProperty <http://purl.obolibrary.org/obo/RO_0004009> ;
-                                                         owl:someValuesFrom :ClimOO_0000191
-                                                       ]
-                                                     ) ;
-                                  rdf:type owl:Class
-                                ] ,
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty <http://purl.obolibrary.org/obo/RO_0002427> ;
                                   owl:someValuesFrom :ClimOO_0000193
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://purl.obolibrary.org/obo/RO_0004009> ;
+                                  owl:someValuesFrom :ClimOO_0000191
                                 ] ;
                 rdfs:label "manufacturing process of a piece of recyclable plastic"@en ;
                 <http://www.w3.org/2004/02/skos/core#definition> "A manufacturing process of a piece of synthetic plastic that has some portion of recyclable plastic as the main input and some piece of recyclable plastic as the main output."@en ;
@@ -1845,20 +1740,13 @@ Vert, M., Doi, Y., Hellwich, K.-H., Hess, M., Hodge, P., Kubisa, P., Rinaudo, M.
                                       rdf:type owl:Class
                                     ] ;
                 rdfs:subClassOf :ClimOO_0000226 ,
-                                [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
-                                                         owl:onProperty <http://purl.obolibrary.org/obo/RO_0004008> ;
-                                                         owl:someValuesFrom :ClimOO_0000152
-                                                       ]
-                                                       [ rdf:type owl:Restriction ;
-                                                         owl:onProperty <http://purl.obolibrary.org/obo/RO_0004009> ;
-                                                         owl:someValuesFrom :ClimOO_0000197
-                                                       ]
-                                                     ) ;
-                                  rdf:type owl:Class
-                                ] ,
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty <http://purl.obolibrary.org/obo/RO_0002427> ;
                                   owl:someValuesFrom :ClimOO_0000199
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://purl.obolibrary.org/obo/RO_0004009> ;
+                                  owl:someValuesFrom :ClimOO_0000197
                                 ] ;
                 rdfs:label "manufacturing process of a piece of recycled plastic"@en ;
                 <http://www.w3.org/2004/02/skos/core#definition> "A manufacturing process of a piece of synthetic plastic that has some portion of recycled plastic as the main input and some piece of recycled plastic as the main output."@en ;
@@ -1876,20 +1764,13 @@ Vert, M., Doi, Y., Hellwich, K.-H., Hess, M., Hodge, P., Kubisa, P., Rinaudo, M.
                                       rdf:type owl:Class
                                     ] ;
                 rdfs:subClassOf :ClimOO_0000226 ,
-                                [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
-                                                         owl:onProperty <http://purl.obolibrary.org/obo/RO_0004008> ;
-                                                         owl:someValuesFrom :ClimOO_0000145
-                                                       ]
-                                                       [ rdf:type owl:Restriction ;
-                                                         owl:onProperty <http://purl.obolibrary.org/obo/RO_0004009> ;
-                                                         owl:someValuesFrom :ClimOO_0000205
-                                                       ]
-                                                     ) ;
-                                  rdf:type owl:Class
-                                ] ,
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty <http://purl.obolibrary.org/obo/RO_0002427> ;
                                   owl:someValuesFrom :ClimOO_0000111
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://purl.obolibrary.org/obo/RO_0004009> ;
+                                  owl:someValuesFrom :ClimOO_0000205
                                 ] ;
                 rdfs:label "manufacturing process of a piece of synthetic biodegradable plastic"@en ;
                 <http://www.w3.org/2004/02/skos/core#definition> "A manufacturing process of a piece of synthetic plastic that has some portion of biodegradable plastic as the main input and some piece of biodegradable plastic as the main output."@en ;
@@ -1907,20 +1788,13 @@ Vert, M., Doi, Y., Hellwich, K.-H., Hess, M., Hodge, P., Kubisa, P., Rinaudo, M.
                                       rdf:type owl:Class
                                     ] ;
                 rdfs:subClassOf :ClimOO_0000226 ,
-                                [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
-                                                         owl:onProperty <http://purl.obolibrary.org/obo/RO_0004008> ;
-                                                         owl:someValuesFrom :ClimOO_0000143
-                                                       ]
-                                                       [ rdf:type owl:Restriction ;
-                                                         owl:onProperty <http://purl.obolibrary.org/obo/RO_0004009> ;
-                                                         owl:someValuesFrom :ClimOO_0000097
-                                                       ]
-                                                     ) ;
-                                  rdf:type owl:Class
-                                ] ,
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty <http://purl.obolibrary.org/obo/RO_0002427> ;
                                   owl:someValuesFrom :ClimOO_0000099
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://purl.obolibrary.org/obo/RO_0004009> ;
+                                  owl:someValuesFrom :ClimOO_0000097
                                 ] ;
                 rdfs:label "manufacturing process of piece of bio-based plastic"@en ;
                 <http://www.w3.org/2004/02/skos/core#definition> "A manufacturing process of a piece of synthetic plastic hat has some portion of bio-based plastic material as the main input and some piece of bio-based plastic as the main output."@en ;
@@ -1993,16 +1867,9 @@ Vert, M., Doi, Y., Hellwich, K.-H., Hess, M., Hodge, P., Kubisa, P., Rinaudo, M.
                                       rdf:type owl:Class
                                     ] ;
                 rdfs:subClassOf :ClimOO_0000278 ,
-                                [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
-                                                         owl:onProperty <http://purl.obolibrary.org/obo/RO_0004008> ;
-                                                         owl:someValuesFrom :ClimOO_0000191
-                                                       ]
-                                                       [ rdf:type owl:Restriction ;
-                                                         owl:onProperty <http://purl.obolibrary.org/obo/RO_0004009> ;
-                                                         owl:someValuesFrom :ClimOO_0000194
-                                                       ]
-                                                     ) ;
-                                  rdf:type owl:Class
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://purl.obolibrary.org/obo/RO_0004009> ;
+                                  owl:someValuesFrom :ClimOO_0000194
                                 ] ;
                 <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "production process of some recycled plastic material"@en ;
                 rdfs:label "recyclable plastic manufacturing process"@en ;
@@ -2020,15 +1887,7 @@ Vert, M., Doi, Y., Hellwich, K.-H., Hess, M., Hodge, P., Kubisa, P., Rinaudo, M.
                                                          ) ;
                                       rdf:type owl:Class
                                     ] ;
-                rdfs:subClassOf :ClimOO_0000210 ,
-                                [ owl:intersectionOf ( :ClimOO_0000210
-                                                       [ rdf:type owl:Restriction ;
-                                                         owl:onProperty <http://purl.obolibrary.org/obo/RO_0000091> ;
-                                                         owl:someValuesFrom :ClimOO_0000188
-                                                       ]
-                                                     ) ;
-                                  rdf:type owl:Class
-                                ] ;
+                rdfs:subClassOf :ClimOO_0000210 ;
                 rdfs:label "recyclable polymer molecule"@en ;
                 <http://www.w3.org/2004/02/skos/core#definition> "A synthetic polymer molecule that bears a disposition to be recycled (recyclability)."@en ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
@@ -2081,20 +1940,13 @@ Vert, M., Doi, Y., Hellwich, K.-H., Hess, M., Hodge, P., Kubisa, P., Rinaudo, M.
                                       rdf:type owl:Class
                                     ] ;
                 rdfs:subClassOf :ClimOO_0000278 ,
-                                [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
-                                                         owl:onProperty <http://purl.obolibrary.org/obo/RO_0004008> ;
-                                                         owl:someValuesFrom :ClimOO_0000197
-                                                       ]
-                                                       [ rdf:type owl:Restriction ;
-                                                         owl:onProperty <http://purl.obolibrary.org/obo/RO_0004009> ;
-                                                         owl:someValuesFrom :ClimOO_0000200
-                                                       ]
-                                                     ) ;
-                                  rdf:type owl:Class
-                                ] ,
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty <http://purl.obolibrary.org/obo/RO_0002427> ;
                                   owl:someValuesFrom :ClimOO_0000175
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://purl.obolibrary.org/obo/RO_0004009> ;
+                                  owl:someValuesFrom :ClimOO_0000200
                                 ] ;
                 <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "production process of some recyclable plastic material"@en ;
                 rdfs:label "recycled plastic manufacturing process"@en ;
@@ -2155,6 +2007,15 @@ Vert, M., Doi, Y., Hellwich, K.-H., Hess, M., Hodge, P., Kubisa, P., Rinaudo, M.
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000055> ;
                                   owl:someValuesFrom :ClimOO_0000188
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000117> ;
+                                  owl:someValuesFrom [ rdf:type owl:Class ;
+                                                       owl:unionOf ( <https://www.w3id.org/sco#SCO_0000007>
+                                                                     <https://www.w3id.org/sco#SCO_0000008>
+                                                                     <https://www.w3id.org/sco#SCO_0000009>
+                                                                   )
+                                                     ]
                                 ] ;
                 rdfs:comment "Reference to specific types of recycling processes, such as chemical recycling and mechanical recycling, can be added as needed."@en ;
                 rdfs:label "recycling process of synthetic polymer molecules"@en ;
@@ -2242,6 +2103,22 @@ http://purl.obolibrary.org/obo/ENVO_02000200"""@en ,
                                                      ) ;
                                   rdf:type owl:Class
                                 ] ,
+                                [ rdf:type owl:Class ;
+                                  owl:unionOf ( [ rdf:type owl:Class ;
+                                                  owl:unionOf ( <http://purl.obolibrary.org/obo/RO_0002577>
+                                                                <https://www.w3id.org/sco#SCO_0000006>
+                                                              )
+                                                ]
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000176> ;
+                                                  owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                       owl:unionOf ( <http://purl.obolibrary.org/obo/RO_0002577>
+                                                                                     <https://www.w3id.org/sco#SCO_0000006>
+                                                                                   )
+                                                                     ]
+                                                ]
+                                              )
+                                ] ,
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty <http://purl.obolibrary.org/obo/RO_0000086> ;
                                   owl:someValuesFrom <http://purl.obolibrary.org/obo/PATO_0000125>
@@ -2282,7 +2159,7 @@ http://purl.obolibrary.org/obo/ENVO_02000200"""@en ,
                 <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "synthetic biodegradable plastic"@en ,
                                                                                "biodegradable plastic" ;
                 rdfs:label "portion of synthetic biodegradable plastic material"@en ;
-                <http://www.w3.org/2004/02/skos/core#definition> "A portion of plastic material that is copmosed of polymer molecules that are both synthetic and biodegradable."@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A portion of plastic material that is composed of polymer molecules that are both synthetic and biodegradable."@en ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
 
 
@@ -2303,22 +2180,7 @@ http://purl.obolibrary.org/obo/ENVO_02000200"""@en ,
                                                          ) ;
                                       rdf:type owl:Class
                                     ] ;
-                rdfs:subClassOf :ClimOO_0000274 ,
-                                [ owl:intersectionOf ( :ClimOO_0000168
-                                                       [ rdf:type owl:Restriction ;
-                                                         owl:onProperty <http://purl.obolibrary.org/obo/RO_0002233> ;
-                                                         owl:someValuesFrom [ owl:intersectionOf ( :ClimOO_0000210
-                                                                                                   [ rdf:type owl:Restriction ;
-                                                                                                     owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000177> ;
-                                                                                                     owl:someValuesFrom :ClimOO_0000248
-                                                                                                   ]
-                                                                                                 ) ;
-                                                                              rdf:type owl:Class
-                                                                            ]
-                                                       ]
-                                                     ) ;
-                                  rdf:type owl:Class
-                                ] ;
+                rdfs:subClassOf :ClimOO_0000274 ;
                 <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "degradation of synthetic plastic"@en ;
                 rdfs:label "synthetic plastic degradation process"@en ;
                 <http://www.w3.org/2004/02/skos/core#definition> "A plastic degradation process applying to polymer molecules constituting some portion of synthetic plastic."@en ;
@@ -2340,18 +2202,6 @@ http://purl.obolibrary.org/obo/ENVO_02000200"""@en ,
                                       rdf:type owl:Class
                                     ] ;
                 rdfs:subClassOf :ClimOO_0000169 ,
-                                [ owl:intersectionOf ( :ClimOO_0000128
-                                                       [ rdf:type owl:Restriction ;
-                                                         owl:onProperty <http://purl.obolibrary.org/obo/RO_0002233> ;
-                                                         owl:someValuesFrom :ClimOO_0000153
-                                                       ]
-                                                       [ rdf:type owl:Restriction ;
-                                                         owl:onProperty <http://purl.obolibrary.org/obo/RO_0002234> ;
-                                                         owl:someValuesFrom <http://purl.obolibrary.org/obo/ENVO_06105008>
-                                                       ]
-                                                     ) ;
-                                  rdf:type owl:Class
-                                ] ,
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000117> ;
                                   owl:someValuesFrom :ClimOO_0000207
@@ -2409,6 +2259,22 @@ http://purl.obolibrary.org/obo/ENVO_02000200"""@en ,
                                                        ]
                                                      ) ;
                                   rdf:type owl:Class
+                                ] ,
+                                [ rdf:type owl:Class ;
+                                  owl:unionOf ( [ rdf:type owl:Class ;
+                                                  owl:unionOf ( <http://purl.obolibrary.org/obo/RO_0002577>
+                                                                <https://www.w3id.org/sco#SCO_0000006>
+                                                              )
+                                                ]
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000176> ;
+                                                  owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                       owl:unionOf ( <http://purl.obolibrary.org/obo/RO_0002577>
+                                                                                     <https://www.w3id.org/sco#SCO_0000006>
+                                                                                   )
+                                                                     ]
+                                                ]
+                                              )
                                 ] ,
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty <http://purl.obolibrary.org/obo/RO_0000086> ;
@@ -2595,6 +2461,15 @@ According to the current axiomatization and definition, this class may be a subc
                                   owl:someValuesFrom :ClimOO_0000150
                                 ] ,
                                 [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000117> ;
+                                  owl:someValuesFrom [ rdf:type owl:Class ;
+                                                       owl:unionOf ( <https://www.w3id.org/sco#SCO_0000007>
+                                                                     <https://www.w3id.org/sco#SCO_0000008>
+                                                                     <https://www.w3id.org/sco#SCO_0000009>
+                                                                   )
+                                                     ]
+                                ] ,
+                                [ rdf:type owl:Restriction ;
                                   owl:onProperty <http://purl.obolibrary.org/obo/RO_0002427> ;
                                   owl:someValuesFrom :ClimOO_0000277
                                 ] ;
@@ -2662,20 +2537,13 @@ According to the current axiomatization and definition, this class may be a subc
                                       rdf:type owl:Class
                                     ] ;
                 rdfs:subClassOf :ClimOO_0000277 ,
-                                [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
-                                                         owl:onProperty <http://purl.obolibrary.org/obo/RO_0004008> ;
-                                                         owl:someValuesFrom :ClimOO_0000153
-                                                       ]
-                                                       [ rdf:type owl:Restriction ;
-                                                         owl:onProperty <http://purl.obolibrary.org/obo/RO_0004009> ;
-                                                         owl:someValuesFrom :ClimOO_0000248
-                                                       ]
-                                                     ) ;
-                                  rdf:type owl:Class
-                                ] ,
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty <http://purl.obolibrary.org/obo/RO_0002427> ;
                                   owl:someValuesFrom :ClimOO_0000278
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://purl.obolibrary.org/obo/RO_0004009> ;
+                                  owl:someValuesFrom :ClimOO_0000248
                                 ] ;
                 rdfs:comment "To date, the ClimOO Ontology does not cover related classes for synthetic polymer-based materials, as out of the current scope. Implementations can go in this direction if needed."@en ;
                 rdfs:label "manufacturing process of a piece of synthetic plastic"@en ;
@@ -2762,21 +2630,6 @@ See, for instance, ISO/TR 21960:2020Plastics — Environmental aspects — State
                                     ] ;
                 rdfs:subClassOf :ClimOO_0000157 ,
                                 [ rdf:type owl:Restriction ;
-                                  owl:onProperty <http://purl.obolibrary.org/obo/RO_0002233> ;
-                                  owl:someValuesFrom [ owl:intersectionOf ( [ owl:intersectionOf ( :ClimOO_0000109
-                                                                                                   :ClimOO_0000210
-                                                                                                 ) ;
-                                                                              rdf:type owl:Class
-                                                                            ]
-                                                                            [ rdf:type owl:Restriction ;
-                                                                              owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000177> ;
-                                                                              owl:someValuesFrom :ClimOO_0000205
-                                                                            ]
-                                                                          ) ;
-                                                       rdf:type owl:Class
-                                                     ]
-                                ] ,
-                                [ rdf:type owl:Restriction ;
                                   owl:onProperty <http://purl.obolibrary.org/obo/RO_0002427> ;
                                   owl:someValuesFrom :ClimOO_0000113
                                 ] ;
@@ -2818,31 +2671,6 @@ See, for instance, ISO/TR 21960:2020Plastics — Environmental aspects — State
                                     ] ;
                 rdfs:subClassOf :ClimOO_0000214 ,
                                 [ rdf:type owl:Restriction ;
-                                  owl:onProperty <http://purl.obolibrary.org/obo/RO_0002234> ;
-                                  owl:someValuesFrom [ owl:intersectionOf ( :ClimOO_0000211
-                                                                            [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
-                                                                                                     owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000176> ;
-                                                                                                     owl:someValuesFrom :ClimOO_0000163
-                                                                                                   ]
-                                                                                                   [ rdf:type owl:Restriction ;
-                                                                                                     owl:onProperty <http://purl.obolibrary.org/obo/ENVO_02000200> ;
-                                                                                                     owl:someValuesFrom [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/CHEBI_24431>
-                                                                                                                                               [ rdf:type owl:Restriction ;
-                                                                                                                                                 owl:onProperty <http://purl.obolibrary.org/obo/RO_0000087> ;
-                                                                                                                                                 owl:someValuesFrom <http://purl.obolibrary.org/obo/CHEBI_78298>
-                                                                                                                                               ]
-                                                                                                                                             ) ;
-                                                                                                                          rdf:type owl:Class
-                                                                                                                        ]
-                                                                                                   ]
-                                                                                                 ) ;
-                                                                              rdf:type owl:Class
-                                                                            ]
-                                                                          ) ;
-                                                       rdf:type owl:Class
-                                                     ]
-                                ] ,
-                                [ rdf:type owl:Restriction ;
                                   owl:onProperty <http://purl.obolibrary.org/obo/RO_0002427> ;
                                   owl:someValuesFrom :ClimOO_0000266
                                 ] ;
@@ -2853,7 +2681,16 @@ See, for instance, ISO/TR 21960:2020Plastics — Environmental aspects — State
 
 ###  https://www.w3id.org/climoo#ClimOO_0000238
 :ClimOO_0000238 rdf:type owl:Class ;
-                rdfs:subClassOf <http://purl.obolibrary.org/obo/COB_0000035> ;
+                rdfs:subClassOf <http://purl.obolibrary.org/obo/COB_0000035> ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000117> ;
+                                  owl:someValuesFrom [ rdf:type owl:Class ;
+                                                       owl:unionOf ( <https://www.w3id.org/sco#SCO_0000007>
+                                                                     <https://www.w3id.org/sco#SCO_0000008>
+                                                                     <https://www.w3id.org/sco#SCO_0000009>
+                                                                   )
+                                                     ]
+                                ] ;
                 rdfs:comment "Extensions of the model will address 3R and 6R principles frameworks."@en ;
                 rdfs:label "plastic pollution prevention process"@en ;
                 <http://www.w3.org/2004/02/skos/core#definition> "A planned process that avoids the release of plastic debris particles into a plastic debris sink, suppressing some plastic pollution process."@en ;
@@ -2872,6 +2709,22 @@ See, for instance, ISO/TR 21960:2020Plastics — Environmental aspects — State
 ###  https://www.w3id.org/climoo#ClimOO_0000242
 :ClimOO_0000242 rdf:type owl:Class ;
                 rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_23367> ,
+                                [ rdf:type owl:Class ;
+                                  owl:unionOf ( [ rdf:type owl:Class ;
+                                                  owl:unionOf ( <http://purl.obolibrary.org/obo/RO_0002577>
+                                                                <https://www.w3id.org/sco#SCO_0000006>
+                                                              )
+                                                ]
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000176> ;
+                                                  owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                       owl:unionOf ( <http://purl.obolibrary.org/obo/RO_0002577>
+                                                                                     <https://www.w3id.org/sco#SCO_0000006>
+                                                                                   )
+                                                                     ]
+                                                ]
+                                              )
+                                ] ,
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty <http://purl.obolibrary.org/obo/RO_0000086> ;
                                   owl:someValuesFrom <http://purl.obolibrary.org/obo/PATO_0000125>
@@ -2962,6 +2815,22 @@ See, for instance, ISO/TR 21960:2020Plastics — Environmental aspects — State
                                                        ]
                                                      ) ;
                                   rdf:type owl:Class
+                                ] ,
+                                [ rdf:type owl:Class ;
+                                  owl:unionOf ( [ rdf:type owl:Class ;
+                                                  owl:unionOf ( <http://purl.obolibrary.org/obo/RO_0002577>
+                                                                <https://www.w3id.org/sco#SCO_0000006>
+                                                              )
+                                                ]
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000176> ;
+                                                  owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                       owl:unionOf ( <http://purl.obolibrary.org/obo/RO_0002577>
+                                                                                     <https://www.w3id.org/sco#SCO_0000006>
+                                                                                   )
+                                                                     ]
+                                                ]
+                                              )
                                 ] ,
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty <http://purl.obolibrary.org/obo/RO_0000091> ;
@@ -3063,7 +2932,7 @@ See, for instance, ISO/TR 21960:2020Plastics — Environmental aspects — State
                 rdfs:subClassOf :ClimOO_0000246 ;
                 <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> "thermoset polymer material"@en ,
                                                                                  "thermosetting polymer resin"@en ;
-                rdfs:label "portion of thermosetting material"@en ;
+                rdfs:label "portion of thermosetting polymer-based material"@en ;
                 rdfs:seeAlso "http://purl.obolibrary.org/obo/ENVO_06105005"@en ;
                 <http://www.w3.org/2004/02/skos/core#definition> "A portion of polymer-based material that bears a disposition to be thermoset (thermosetting disposition)."@en ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
@@ -3080,7 +2949,7 @@ See, for instance, ISO/TR 21960:2020Plastics — Environmental aspects — State
                                       rdf:type owl:Class
                                     ] ;
                 rdfs:subClassOf :ClimOO_0000246 ;
-                rdfs:label "portion of thermoplastic material"@en ;
+                rdfs:label "portion of thermoplastic polymer-based material"@en ;
                 rdfs:seeAlso "http://purl.obolibrary.org/obo/ENVO_06105003" ;
                 <http://www.w3.org/2004/02/skos/core#definition> "A portion of polymer-based material that bears a disposition to be thermoplastic (thermoplasticity)."@en ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
@@ -3133,6 +3002,22 @@ See, for instance, ISO/TR 21960:2020Plastics — Environmental aspects — State
                                                        ]
                                                      ) ;
                                   rdf:type owl:Class
+                                ] ,
+                                [ rdf:type owl:Class ;
+                                  owl:unionOf ( [ rdf:type owl:Class ;
+                                                  owl:unionOf ( <http://purl.obolibrary.org/obo/RO_0002577>
+                                                                <https://www.w3id.org/sco#SCO_0000006>
+                                                              )
+                                                ]
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000176> ;
+                                                  owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                       owl:unionOf ( <http://purl.obolibrary.org/obo/RO_0002577>
+                                                                                     <https://www.w3id.org/sco#SCO_0000006>
+                                                                                   )
+                                                                     ]
+                                                ]
+                                              )
                                 ] ,
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000110> ;
@@ -3257,7 +3142,20 @@ Reference to weight can be added as needed."""@en ,
 
 ###  https://www.w3id.org/climoo#ClimOO_0000263
 :ClimOO_0000263 rdf:type owl:Class ;
-                rdfs:subClassOf <http://purl.obolibrary.org/obo/GO_0008150> ;
+                rdfs:subClassOf <http://purl.obolibrary.org/obo/GO_0008150> ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000055> ;
+                                  owl:someValuesFrom :ClimOO_0000104
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000117> ;
+                                  owl:someValuesFrom [ rdf:type owl:Class ;
+                                                       owl:unionOf ( <https://www.w3id.org/sco#SCO_0000007>
+                                                                     <https://www.w3id.org/sco#SCO_0000008>
+                                                                     <https://www.w3id.org/sco#SCO_0000009>
+                                                                   )
+                                                     ]
+                                ] ;
                 rdfs:comment """Definitions of plastic properties, such as biodegradability and composability, and related processes, currently covered in the ClimOO Ontology, refer to existing policy standards. This aims to stress the significance of such regulations concerning defining such entities and, especially, the consequences in terms of pollution and sustainability interventions.
 
 It is noteworthy to mention that such standards present limitations. See, for instance, the work of Rayns et al. (2021), Steiner et al. (2022, 2024), concerning plastic biodegradability.
@@ -3285,21 +3183,7 @@ We envision implementing such definitions in accordance with regulation revision
                                                          ) ;
                                       rdf:type owl:Class
                                     ] ;
-                rdfs:subClassOf [ owl:intersectionOf ( :ClimOO_0000168
-                                                       [ rdf:type owl:Restriction ;
-                                                         owl:onProperty <http://purl.obolibrary.org/obo/RO_0002233> ;
-                                                         owl:someValuesFrom [ owl:intersectionOf ( :ClimOO_0000109
-                                                                                                   [ rdf:type owl:Restriction ;
-                                                                                                     owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000177> ;
-                                                                                                     owl:someValuesFrom :ClimOO_0000107
-                                                                                                   ]
-                                                                                                 ) ;
-                                                                              rdf:type owl:Class
-                                                                            ]
-                                                       ]
-                                                     ) ;
-                                  rdf:type owl:Class
-                                ] ;
+                rdfs:subClassOf :ClimOO_0000168 ;
                 rdfs:comment "To date, the ClimOO ontology does not restrict such classes to solely refer to wasted plastics. Implementations may extend the current representation in such a direction, if needed. The only exception is the “plastic composting process” class, given that the aimed specific focus on composting of waste plastics."@en ,
                              "We primarily focused on biodegradability in relation to synthetic plastics, related polymers and items. Reference to biodegradability concerning plastics more in general, for instance in relation to natural plastics, or in relation to polymer-based materials can be added as needed."@en ;
                 rdfs:label "biodegradation process of plastic"@en ;
@@ -3309,7 +3193,16 @@ We envision implementing such definitions in accordance with regulation revision
 
 ###  https://www.w3id.org/climoo#ClimOO_0000265
 :ClimOO_0000265 rdf:type owl:Class ;
-                rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000015> ;
+                rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000015> ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000117> ;
+                                  owl:someValuesFrom [ rdf:type owl:Class ;
+                                                       owl:unionOf ( <https://www.w3id.org/sco#SCO_0000007>
+                                                                     <https://www.w3id.org/sco#SCO_0000008>
+                                                                     <https://www.w3id.org/sco#SCO_0000009>
+                                                                   )
+                                                     ]
+                                ] ;
                 rdfs:comment "According to EnvO, we consider this class as provisional. We envision implementations."@en ;
                 rdfs:label "transportation process"@en ;
                 <http://www.w3.org/2004/02/skos/core#definition> "A process during which material entities are displaced from a location and moved either to a new location or back to the original location."@en ;
@@ -3330,6 +3223,15 @@ We envision implementing such definitions in accordance with regulation revision
                                                        ]
                                                      ) ;
                                   rdf:type owl:Class
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000117> ;
+                                  owl:someValuesFrom [ rdf:type owl:Class ;
+                                                       owl:unionOf ( <https://www.w3id.org/sco#SCO_0000007>
+                                                                     <https://www.w3id.org/sco#SCO_0000008>
+                                                                     <https://www.w3id.org/sco#SCO_0000009>
+                                                                   )
+                                                     ]
                                 ] ;
                 rdfs:comment "Implementations will expand current representation to distinguish intentional from unintentional plastic pollution processes."@en ;
                 rdfs:label "plastic pollution process"@en ;
@@ -3379,7 +3281,16 @@ We envision implementing such definitions in accordance with regulation revision
                                                          ) ;
                                       rdf:type owl:Class
                                     ] ;
-                rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000015> ;
+                rdfs:subClassOf <https://w3id.org/pmd/co/PMD_0010034> ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000117> ;
+                                  owl:someValuesFrom [ rdf:type owl:Class ;
+                                                       owl:unionOf ( <https://www.w3id.org/sco#SCO_0000007>
+                                                                     <https://www.w3id.org/sco#SCO_0000008>
+                                                                     <https://www.w3id.org/sco#SCO_0000009>
+                                                                   )
+                                                     ]
+                                ] ;
                 <http://purl.org/dc/terms/source> "https://w3id.org/pmd/co/PMD_0010034" ;
                 rdfs:label "thermosetting polymer curing process"@en ;
                 rdfs:seeAlso "http://purl.obolibrary.org/obo/CHMO_0001480" ;
@@ -3389,7 +3300,16 @@ We envision implementing such definitions in accordance with regulation revision
 
 ###  https://www.w3id.org/climoo#ClimOO_0000269
 :ClimOO_0000269 rdf:type owl:Class ;
-                rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000015> ;
+                rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000015> ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000117> ;
+                                  owl:someValuesFrom [ rdf:type owl:Class ;
+                                                       owl:unionOf ( <https://www.w3id.org/sco#SCO_0000007>
+                                                                     <https://www.w3id.org/sco#SCO_0000008>
+                                                                     <https://www.w3id.org/sco#SCO_0000009>
+                                                                   )
+                                                     ]
+                                ] ;
                 rdfs:comment """Definitions of plastic properties, such as biodegradability and composability, and related processes, currently covered in the ClimOO Ontology, refer to existing policy standards. This aims to stress the significance of such regulations concerning defining such entities and, especially, the consequences in terms of pollution and sustainability interventions.
 
 It is noteworthy to mention that such standards present limitations. See, for instance, the work of Rayns et al. (2021), Steiner et al. (2022, 2024), concerning plastic biodegradability.
@@ -3425,29 +3345,7 @@ We envision implementing such definitions in accordance with regulation revision
                                                          ) ;
                                       rdf:type owl:Class
                                     ] ;
-                rdfs:subClassOf :ClimOO_0000275 ,
-                                [ owl:intersectionOf ( :ClimOO_0000207
-                                                       [ rdf:type owl:Restriction ;
-                                                         owl:onProperty <http://purl.obolibrary.org/obo/RO_0002233> ;
-                                                         owl:someValuesFrom [ owl:intersectionOf ( :ClimOO_0000210
-                                                                                                   [ rdf:type owl:Restriction ;
-                                                                                                     owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000177> ;
-                                                                                                     owl:someValuesFrom [ owl:intersectionOf ( :ClimOO_0000248
-                                                                                                                                               [ rdf:type owl:Restriction ;
-                                                                                                                                                 owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000177> ;
-                                                                                                                                                 owl:someValuesFrom :ClimOO_0000153
-                                                                                                                                               ]
-                                                                                                                                             ) ;
-                                                                                                                          rdf:type owl:Class
-                                                                                                                        ]
-                                                                                                   ]
-                                                                                                 ) ;
-                                                                              rdf:type owl:Class
-                                                                            ]
-                                                       ]
-                                                     ) ;
-                                  rdf:type owl:Class
-                                ] ;
+                rdfs:subClassOf :ClimOO_0000275 ;
                 rdfs:label "degradation process of a piece of synthetic plastic"@en ;
                 <http://www.w3.org/2004/02/skos/core#definition> "A plastic degradation process applying to polymer molecules constituting some portion of synthetic plastic that composes some piece of synthetic plastic."@en ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
@@ -3463,6 +3361,15 @@ We envision implementing such definitions in accordance with regulation revision
                                                        ]
                                                      ) ;
                                   rdf:type owl:Class
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000117> ;
+                                  owl:someValuesFrom [ rdf:type owl:Class ;
+                                                       owl:unionOf ( <https://www.w3id.org/sco#SCO_0000007>
+                                                                     <https://www.w3id.org/sco#SCO_0000008>
+                                                                     <https://www.w3id.org/sco#SCO_0000009>
+                                                                   )
+                                                     ]
                                 ] ,
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty <http://purl.obolibrary.org/obo/RO_0002427> ;
@@ -3503,28 +3410,6 @@ We envision implementing such definitions in accordance with regulation revision
                                     ] ;
                 rdfs:subClassOf :ClimOO_0000236 ,
                                 [ rdf:type owl:Restriction ;
-                                  owl:onProperty <http://purl.obolibrary.org/obo/RO_0002233> ;
-                                  owl:someValuesFrom [ owl:intersectionOf ( [ owl:intersectionOf ( :ClimOO_0000109
-                                                                                                   :ClimOO_0000210
-                                                                                                 ) ;
-                                                                              rdf:type owl:Class
-                                                                            ]
-                                                                            [ rdf:type owl:Restriction ;
-                                                                              owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000177> ;
-                                                                              owl:someValuesFrom [ owl:intersectionOf ( :ClimOO_0000205
-                                                                                                                        [ rdf:type owl:Restriction ;
-                                                                                                                          owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000177> ;
-                                                                                                                          owl:someValuesFrom :ClimOO_0000145
-                                                                                                                        ]
-                                                                                                                      ) ;
-                                                                                                   rdf:type owl:Class
-                                                                                                 ]
-                                                                            ]
-                                                                          ) ;
-                                                       rdf:type owl:Class
-                                                     ]
-                                ] ,
-                                [ rdf:type owl:Restriction ;
                                   owl:onProperty <http://purl.obolibrary.org/obo/RO_0002427> ;
                                   owl:someValuesFrom :ClimOO_0000112
                                 ] ;
@@ -3539,6 +3424,15 @@ We envision implementing such definitions in accordance with regulation revision
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000117> ;
                                   owl:someValuesFrom :ClimOO_0000269
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000117> ;
+                                  owl:someValuesFrom [ rdf:type owl:Class ;
+                                                       owl:unionOf ( <https://www.w3id.org/sco#SCO_0000007>
+                                                                     <https://www.w3id.org/sco#SCO_0000008>
+                                                                     <https://www.w3id.org/sco#SCO_0000009>
+                                                                   )
+                                                     ]
                                 ] ,
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty <http://purl.obolibrary.org/obo/RO_0002233> ;
@@ -3571,18 +3465,7 @@ We envision implementing such definitions in accordance with regulation revision
                                                          ) ;
                                       rdf:type owl:Class
                                     ] ;
-                rdfs:subClassOf :ClimOO_0000269 ,
-                                [ rdf:type owl:Restriction ;
-                                  owl:onProperty <http://purl.obolibrary.org/obo/RO_0002233> ;
-                                  owl:someValuesFrom [ owl:intersectionOf ( :ClimOO_0000210
-                                                                            [ rdf:type owl:Restriction ;
-                                                                              owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000177> ;
-                                                                              owl:someValuesFrom :ClimOO_0000211
-                                                                            ]
-                                                                          ) ;
-                                                       rdf:type owl:Class
-                                                     ]
-                                ] ;
+                rdfs:subClassOf :ClimOO_0000269 ;
                 rdfs:label "synthetic polymer-based material degradation process"@en ;
                 <http://www.w3.org/2004/02/skos/core#definition> "An process that leads some synthetic polymer molecules constituting some portion of synthetic polymer-bsed material to vary their physical and chemical qualities due to interactions with factors such as heat, light, or chemical entities, resulting in a decrease in their molecular weight."@en ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
@@ -3612,25 +3495,7 @@ We envision implementing such definitions in accordance with regulation revision
                                                          ) ;
                                       rdf:type owl:Class
                                     ] ;
-                rdfs:subClassOf :ClimOO_0000274 ,
-                                [ rdf:type owl:Restriction ;
-                                  owl:onProperty <http://purl.obolibrary.org/obo/RO_0002233> ;
-                                  owl:someValuesFrom [ owl:intersectionOf ( :ClimOO_0000210
-                                                                            [ rdf:type owl:Restriction ;
-                                                                              owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000177> ;
-                                                                              owl:someValuesFrom [ owl:intersectionOf ( :ClimOO_0000211
-                                                                                                                        [ rdf:type owl:Restriction ;
-                                                                                                                          owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000177> ;
-                                                                                                                          owl:someValuesFrom :ClimOO_0000150
-                                                                                                                        ]
-                                                                                                                      ) ;
-                                                                                                   rdf:type owl:Class
-                                                                                                 ]
-                                                                            ]
-                                                                          ) ;
-                                                       rdf:type owl:Class
-                                                     ]
-                                ] ;
+                rdfs:subClassOf :ClimOO_0000274 ;
                 rdfs:label "degradation process of a piece of synthetic polymer-based material"@en ;
                 <http://www.w3.org/2004/02/skos/core#definition> "A degradation process of a piece of synthetic polymer-based material that leads some synthetic polymer molecules constituting some portion of synthetic polymer-bsed material composing some piece of syntehtic polymer-based material to vary their physical and chemical qualities due to interactions with factors such as heat, light, or chemical entities, resulting in a decrease in their molecular weight."@en ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
@@ -3642,6 +3507,15 @@ We envision implementing such definitions in accordance with regulation revision
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000117> ;
                                   owl:someValuesFrom :ClimOO_0000290
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000117> ;
+                                  owl:someValuesFrom [ rdf:type owl:Class ;
+                                                       owl:unionOf ( <https://www.w3id.org/sco#SCO_0000007>
+                                                                     <https://www.w3id.org/sco#SCO_0000008>
+                                                                     <https://www.w3id.org/sco#SCO_0000009>
+                                                                   )
+                                                     ]
                                 ] ,
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty <http://purl.obolibrary.org/obo/RO_0002418> ;
@@ -3666,20 +3540,22 @@ http://purl.obolibrary.org/obo/ENVO_06105125""" ;
                                       rdf:type owl:Class
                                     ] ;
                 rdfs:subClassOf <http://purl.obolibrary.org/obo/COB_0000110> ,
-                                [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
-                                                         owl:onProperty <http://purl.obolibrary.org/obo/RO_0004008> ;
-                                                         owl:someValuesFrom :ClimOO_0000150
-                                                       ]
-                                                       [ rdf:type owl:Restriction ;
-                                                         owl:onProperty <http://purl.obolibrary.org/obo/RO_0004009> ;
-                                                         owl:someValuesFrom :ClimOO_0000211
-                                                       ]
-                                                     ) ;
-                                  rdf:type owl:Class
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000117> ;
+                                  owl:someValuesFrom [ rdf:type owl:Class ;
+                                                       owl:unionOf ( <https://www.w3id.org/sco#SCO_0000007>
+                                                                     <https://www.w3id.org/sco#SCO_0000008>
+                                                                     <https://www.w3id.org/sco#SCO_0000009>
+                                                                   )
+                                                     ]
                                 ] ,
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty <http://purl.obolibrary.org/obo/RO_0002427> ;
                                   owl:someValuesFrom :ClimOO_0000276
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://purl.obolibrary.org/obo/RO_0004009> ;
+                                  owl:someValuesFrom :ClimOO_0000211
                                 ] ;
                 rdfs:label "manufacturing process of a piece of synthetic polymer-based material"@en ;
                 <http://www.w3.org/2004/02/skos/core#definition> "A material processing that has as a primary input some portion of synthetic polymer-based material and as a primary output a piece of synthetic polymer-based material."@en ;
@@ -3698,7 +3574,7 @@ http://purl.obolibrary.org/obo/ENVO_06105125""" ;
                                     ] ;
                 rdfs:subClassOf :ClimOO_0000276 ;
                 rdfs:label "plastic manufacturing process"@en ;
-                <http://www.w3.org/2004/02/skos/core#definition> "A synthetic polymer-based material manufacturing process that has a primary output a portion of synthetic plastic."@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A synthetic polymer-based material manufacturing process that has as a primary output a portion of synthetic plastic."@en ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
 
 
@@ -3714,6 +3590,15 @@ http://purl.obolibrary.org/obo/ENVO_06105125""" ;
                                                                             ]
                                                                           ) ;
                                                        rdf:type owl:Class
+                                                     ]
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000117> ;
+                                  owl:someValuesFrom [ rdf:type owl:Class ;
+                                                       owl:unionOf ( <https://www.w3id.org/sco#SCO_0000007>
+                                                                     <https://www.w3id.org/sco#SCO_0000008>
+                                                                     <https://www.w3id.org/sco#SCO_0000009>
+                                                                   )
                                                      ]
                                 ] ,
                                 [ rdf:type owl:Restriction ;
@@ -3789,6 +3674,15 @@ See, for instance, https://www.iso.org/standard/77957.html"""@en ,
                                   rdf:type owl:Class
                                 ] ,
                                 [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000117> ;
+                                  owl:someValuesFrom [ rdf:type owl:Class ;
+                                                       owl:unionOf ( <https://www.w3id.org/sco#SCO_0000007>
+                                                                     <https://www.w3id.org/sco#SCO_0000008>
+                                                                     <https://www.w3id.org/sco#SCO_0000009>
+                                                                   )
+                                                     ]
+                                ] ,
+                                [ rdf:type owl:Restriction ;
                                   owl:onProperty <http://purl.obolibrary.org/obo/RO_0002427> ;
                                   owl:someValuesFrom :ClimOO_0000276
                                 ] ;
@@ -3826,6 +3720,15 @@ See, for instance, https://www.iso.org/standard/77957.html"""@en ,
                                                        ]
                                                      ) ;
                                   rdf:type owl:Class
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000117> ;
+                                  owl:someValuesFrom [ rdf:type owl:Class ;
+                                                       owl:unionOf ( <https://www.w3id.org/sco#SCO_0000007>
+                                                                     <https://www.w3id.org/sco#SCO_0000008>
+                                                                     <https://www.w3id.org/sco#SCO_0000009>
+                                                                   )
+                                                     ]
                                 ] ,
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty <http://purl.obolibrary.org/obo/RO_0002427> ;
@@ -3909,6 +3812,67 @@ See, for instance, https://www.iso.org/standard/77957.html"""@en ,
                                 ] ;
                 rdfs:label "usage process of some piece of synthetic plastic"@en ;
                 <http://www.w3.org/2004/02/skos/core#definition> "A planned process that involves some piece of synthetic polymer-based material employed for some purpose."@en .
+
+
+###  https://www.w3id.org/climoo#ClimOO_0000293
+:ClimOO_0000293 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000211 ,
+                                :ClimOO_0000252 ;
+                rdfs:comment "A portion of thermoplastic polymer-based material produced by polymerization of ethylene monomers including further crosslinking and modifications using other comonomers ( with exclusion of ultra-high molecular polyethylene)."@en ,
+                             """This class has been created to overcome shortcomings of the PMD:polyethylene class axiomatization (inclusion of ChEBI:polymerization monomer; modelling monomers in terms of role instead of their disposition to polymerize). Subclasses of the PMD:polyethylene class have been included as subclasses of this class.
+
+We plan to deprecate this class and reuse the PMDco class as soon as this latter is revised."""@en ;
+                rdfs:label "portion of polyethylene"@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional> .
+
+
+###  https://www.w3id.org/climoo#ClimOO_0000294
+:ClimOO_0000294 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000295 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000057> ;
+                                  owl:someValuesFrom :ClimOO_0000253
+                                ] ;
+                rdfs:label "plastic weathering"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A weathering process of a piece of synthetic polymer-based material that applies to a piece of plastic."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional> .
+
+
+###  https://www.w3id.org/climoo#ClimOO_0000295
+:ClimOO_0000295 rdf:type owl:Class ;
+                rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000015> ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000057> ;
+                                  owl:someValuesFrom :ClimOO_0000150
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000117> ;
+                                  owl:someValuesFrom [ rdf:type owl:Class ;
+                                                       owl:unionOf ( <https://www.w3id.org/sco#SCO_0000007>
+                                                                     <https://www.w3id.org/sco#SCO_0000008>
+                                                                     <https://www.w3id.org/sco#SCO_0000009>
+                                                                   )
+                                                     ]
+                                ] ;
+                <http://purl.org/dc/terms/source> "http://dx.doi.org/10.1351/PAC-REC-10-12-04" ;
+                rdfs:label "weathering process of a piece of synthetic polymer-based material"@en ;
+                rdfs:seeAlso """http://purl.obolibrary.org/obo/ENVO_06105119 
+http://purl.obolibrary.org/obo/ENVO_06105126""" ;
+                <http://www.w3.org/2004/02/skos/core#comment> "References to weatherability can be included as needed."@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A process driven by natural forces that applies to a piece of synthetic polymer-based material and results in changing appearance or mechanical properties of that piece."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional> .
+
+
+###  https://www.w3id.org/climoo#ClimOO_0000296
+:ClimOO_0000296 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000295 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000057> ;
+                                  owl:someValuesFrom :ClimOO_0000163
+                                ] ;
+                rdfs:label "plastic debris weathering"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A weathering process of a piece of synthetic polymer-based material that applies to a plastic debris particle."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional> .
 
 
 #################################################################
@@ -4025,6 +3989,14 @@ UNI EN ISO 24187:2023 - Principles for the analysis of microplastics present in 
 Work to align representations of plans and plan specifications between IAO and CCO is required. We envision discussions with subject matter experts.
 See https://www.commoncoreontologies.org/ont00000974
 https://www.commoncoreontologies.org/ont00000476"""@en .
+
+
+<https://w3id.org/pmd/co/PMD_0000890> <http://www.w3.org/2004/02/skos/core#comment> """ClimOO Ontology comment:
+We included this class for possible implementations. Subclasses can be specified, for instance, for plastics, as needed."""@en .
+
+
+<https://w3id.org/pmd/co/PMD_0000891> <http://www.w3.org/2004/02/skos/core#comment> """ClimOO Ontology comment:
+We included this class for possible implementations. Subclasses can be specified, for instance, for plastics, as needed."""@en .
 
 
 ###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi

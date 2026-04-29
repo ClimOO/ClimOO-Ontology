@@ -1,0 +1,1027 @@
+@prefix : <http://ClimOO/climoo/imports/sdc-ontology-imports/sdc-ontology-occurent3imports#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://ClimOO/climoo/imports/sdc-ontology-imports/sdc-ontology-occurent3imports> .
+
+<http://ClimOO/climoo/imports/sdc-ontology-imports/sdc-ontology-occurent3imports> rdf:type owl:Ontology ;
+                                                                                   owl:versionIRI <http://ClimOO/climoo/imports/sdc-ontology-imports/sdc-ontology-occurent3-imports#2026-04-13> ;
+                                                                                   rdfs:comment """This file contains ClimOO Ontology imports from the Sustainable Development and Climate ontology (SDC ontology) (occurent hierarchy of BFO). It also contains some imports reused by SDC ontology from the Common Core Ontologie (CCO). Imports were manually collected and revised.
+
+Ontology source: https://raw.githubusercontent.com/hbabaie1/Sustainable-Development-and-Climate-SDC-ontology/refs/heads/main/SDC_v1.owl"""@en ;
+                                                                                   rdfs:seeAlso "https://github.com/hbabaie1/Sustainable-Development-and-Climate-SDC-ontology/tree/main" ;
+                                                                                   owl:versionInfo "2026-04-13" .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://purl.obolibrary.org/obo/BFO_0000055
+<http://purl.obolibrary.org/obo/BFO_0000055> rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/RO_0002211
+<http://purl.obolibrary.org/obo/RO_0002211> rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/RO_0002212
+<http://purl.obolibrary.org/obo/RO_0002212> rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/RO_0002213
+<http://purl.obolibrary.org/obo/RO_0002213> rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/RO_0002411
+<http://purl.obolibrary.org/obo/RO_0002411> rdf:type owl:ObjectProperty .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/affects
+<http://www.ontologyrepository.com/CommonCoreOntologies/affects> rdf:type owl:ObjectProperty .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/has_output
+<http://www.ontologyrepository.com/CommonCoreOntologies/has_output> rdf:type owl:ObjectProperty .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/occurs_at
+<http://www.ontologyrepository.com/CommonCoreOntologies/occurs_at> rdf:type owl:ObjectProperty .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/occurs_on
+<http://www.ontologyrepository.com/CommonCoreOntologies/occurs_on> rdf:type owl:ObjectProperty .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/process_preceded_by
+<http://www.ontologyrepository.com/CommonCoreOntologies/process_preceded_by> rdf:type owl:ObjectProperty .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/process_precedes
+<http://www.ontologyrepository.com/CommonCoreOntologies/process_precedes> rdf:type owl:ObjectProperty .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/process_started_by
+<http://www.ontologyrepository.com/CommonCoreOntologies/process_started_by> rdf:type owl:ObjectProperty .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/process_starts
+<http://www.ontologyrepository.com/CommonCoreOntologies/process_starts> rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/Change
+<http://www.ontologyrepository.com/CommonCoreOntologies/Change> rdf:type owl:Class .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/DecreaseOfQuality
+<http://www.ontologyrepository.com/CommonCoreOntologies/DecreaseOfQuality> rdf:type owl:Class .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/IncreaseOfQuality
+<http://www.ontologyrepository.com/CommonCoreOntologies/IncreaseOfQuality> rdf:type owl:Class .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/LossOfQuality
+<http://www.ontologyrepository.com/CommonCoreOntologies/LossOfQuality> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Atmospheric_Change
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Atmospheric_Change> rdf:type owl:Class ;
+                                                                                                     rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Change_in_Climate_System> ;
+                                                                                                     rdfs:label "Atmospheric Change" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Biospheric_Change
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Biospheric_Change> rdf:type owl:Class ;
+                                                                                                    rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Change_in_Climate_System> ;
+                                                                                                    rdfs:label "Biospheric Change" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#CO2_Fertilization_of_Photosynthesis
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#CO2_Fertilization_of_Photosynthesis> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Change_in_Atmospheric_Temperature
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Change_in_Atmospheric_Temperature> rdf:type owl:Class ;
+                                                                                                                    rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Atmospheric_Change> ;
+                                                                                                                    rdfs:label "Change in Atmospheric Temperature" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Change_in_Climate_System
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Change_in_Climate_System> rdf:type owl:Class ;
+                                                                                                           rdfs:subClassOf <http://www.ontologyrepository.com/CommonCoreOntologies/Change> ;
+                                                                                                           rdfs:label "Change in Climate System" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Change_in_Glacier_Mass_Balance
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Change_in_Glacier_Mass_Balance> rdf:type owl:Class ;
+                                                                                                                 rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Cryospheric_Change> ,
+                                                                                                                                 [ rdf:type owl:Restriction ;
+                                                                                                                                   owl:onProperty <http://purl.obolibrary.org/obo/RO_0002411> ;
+                                                                                                                                   owl:someValuesFrom <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Sea_Level_Rise>
+                                                                                                                                 ] ,
+                                                                                                                                 [ rdf:type owl:Restriction ;
+                                                                                                                                   owl:onProperty <http://www.ontologyrepository.com/CommonCoreOntologies/affects> ;
+                                                                                                                                   owl:someValuesFrom <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Water_Supply>
+                                                                                                                                 ] ;
+                                                                                                                 rdfs:label "Change in Glacier Mass Balance" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Change_in_Global_Biogeochemical_Cycles
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Change_in_Global_Biogeochemical_Cycles> rdf:type owl:Class ;
+                                                                                                                         rdfs:subClassOf <http://www.ontologyrepository.com/CommonCoreOntologies/Change> ;
+                                                                                                                         rdfs:label "Change in Global Biogeochemical Cycles" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Change_in_Incoming_Solar_Radiation
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Change_in_Incoming_Solar_Radiation> rdf:type owl:Class ;
+                                                                                                                     rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#External_Natural_Change> ;
+                                                                                                                     rdfs:label "Change in Incoming Solar Radiation" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Change_in_Precipitation_Pattern
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Change_in_Precipitation_Pattern> rdf:type owl:Class ;
+                                                                                                                  rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Atmospheric_Change> ,
+                                                                                                                                  [ rdf:type owl:Restriction ;
+                                                                                                                                    owl:onProperty <http://www.ontologyrepository.com/CommonCoreOntologies/affects> ;
+                                                                                                                                    owl:someValuesFrom <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Food_Production_System>
+                                                                                                                                  ] ,
+                                                                                                                                  [ rdf:type owl:Restriction ;
+                                                                                                                                    owl:onProperty <http://www.ontologyrepository.com/CommonCoreOntologies/affects> ;
+                                                                                                                                    owl:someValuesFrom <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Land_Ecosystem>
+                                                                                                                                  ] ,
+                                                                                                                                  [ rdf:type owl:Restriction ;
+                                                                                                                                    owl:onProperty <http://www.ontologyrepository.com/CommonCoreOntologies/affects> ;
+                                                                                                                                    owl:someValuesFrom <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Species_Distribution>
+                                                                                                                                  ] ,
+                                                                                                                                  [ rdf:type owl:Restriction ;
+                                                                                                                                    owl:onProperty <http://www.ontologyrepository.com/CommonCoreOntologies/process_starts> ;
+                                                                                                                                    owl:someValuesFrom <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Terrestrial_Carbon_Cycle>
+                                                                                                                                  ] ;
+                                                                                                                  rdfs:label "Change in Precipitation Pattern" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Change_in_Sea_Ice_Extent
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Change_in_Sea_Ice_Extent> rdf:type owl:Class ;
+                                                                                                           rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Cryospheric_Change> ,
+                                                                                                                           [ rdf:type owl:Restriction ;
+                                                                                                                             owl:onProperty <http://purl.obolibrary.org/obo/RO_0002411> ;
+                                                                                                                             owl:someValuesFrom <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Hemispheric-scale_Circulation>
+                                                                                                                           ] ;
+                                                                                                           rdfs:label "Change in Sea Ice Extent" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Change_in_Species_Distribution
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Change_in_Species_Distribution> rdf:type owl:Class ;
+                                                                                                                 rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Biospheric_Change> ;
+                                                                                                                 rdfs:label "Change in Species Distribution" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Change_in_Terrestrial_Water_Storage
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Change_in_Terrestrial_Water_Storage> rdf:type owl:Class ;
+                                                                                                                      rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Hydrospheric_Change> ;
+                                                                                                                      rdfs:label "Change in Terrestrial Water Storage" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Change_in_Water_Reservoir
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Change_in_Water_Reservoir> rdf:type owl:Class ;
+                                                                                                            rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Terrestrial_Water_Change> ;
+                                                                                                            rdfs:label "Change in Water Reservoir" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Change_in_Water_Storage_on_Land
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Change_in_Water_Storage_on_Land> rdf:type owl:Class ;
+                                                                                                                  rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Hydrospheric_Change> ;
+                                                                                                                  rdfs:label "Change in Water Storage on Land" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Change_in_the_Frequency_of_Extreme_Events
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Change_in_the_Frequency_of_Extreme_Events> rdf:type owl:Class ;
+                                                                                                                            rdfs:subClassOf <http://www.ontologyrepository.com/CommonCoreOntologies/Change> ;
+                                                                                                                            rdfs:label "Change in the Frequency of Extreme Events" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Change_in_the_Global_Water_Cycle
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Change_in_the_Global_Water_Cycle> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Change_in_the_Seasonality_of_Sea_Ice
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Change_in_the_Seasonality_of_Sea_Ice> rdf:type owl:Class ;
+                                                                                                                       rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Cryospheric_Change> ,
+                                                                                                                                       [ rdf:type owl:Restriction ;
+                                                                                                                                         owl:onProperty <http://purl.obolibrary.org/obo/RO_0002213> ;
+                                                                                                                                         owl:someValuesFrom <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Hemispheric-scale_Circulation>
+                                                                                                                                       ] ,
+                                                                                                                                       [ rdf:type owl:Restriction ;
+                                                                                                                                         owl:onProperty <http://purl.obolibrary.org/obo/RO_0002411> ;
+                                                                                                                                         owl:someValuesFrom <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Hemispheric-scale_Circulation>
+                                                                                                                                       ] ;
+                                                                                                                       rdfs:label "Change in the Seasonality of Sea Ice" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Change_in_the_Severity_of_Extreme_Events
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Change_in_the_Severity_of_Extreme_Events> rdf:type owl:Class ;
+                                                                                                                           rdfs:subClassOf <http://www.ontologyrepository.com/CommonCoreOntologies/Change> ;
+                                                                                                                           rdfs:label "Change in the Severity of Extreme Events" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Change_in_the_Thickness_of_Sea_Ice
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Change_in_the_Thickness_of_Sea_Ice> rdf:type owl:Class ;
+                                                                                                                     rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Cryospheric_Change> ,
+                                                                                                                                     [ rdf:type owl:Restriction ;
+                                                                                                                                       owl:onProperty <http://purl.obolibrary.org/obo/RO_0002411> ;
+                                                                                                                                       owl:someValuesFrom <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Hemispheric-scale_Circulation>
+                                                                                                                                     ] ;
+                                                                                                                     rdfs:label "Change in the Thickness of Sea Ice" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Climate-related_Change_in_Groundwater_Recharge
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Climate-related_Change_in_Groundwater_Recharge> rdf:type owl:Class ;
+                                                                                                                                 rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Hydrospheric_Change> ;
+                                                                                                                                 rdfs:label "Climate-related Change in Groundwater Recharge" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Climate_Change
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Climate_Change> rdf:type owl:Class ;
+                                                                                                 rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Change_in_Climate_System> ,
+                                                                                                                 [ rdf:type owl:Restriction ;
+                                                                                                                   owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000055> ;
+                                                                                                                   owl:someValuesFrom <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Reduced_Human_Health>
+                                                                                                                 ] ,
+                                                                                                                 [ rdf:type owl:Restriction ;
+                                                                                                                   owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000055> ;
+                                                                                                                   owl:someValuesFrom <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Risk_to_Food_Security>
+                                                                                                                 ] ,
+                                                                                                                 [ rdf:type owl:Restriction ;
+                                                                                                                   owl:onProperty <http://purl.obolibrary.org/obo/RO_0002211> ;
+                                                                                                                   owl:someValuesFrom <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Change_in_Species_Distribution>
+                                                                                                                 ] ,
+                                                                                                                 [ rdf:type owl:Restriction ;
+                                                                                                                   owl:onProperty <http://purl.obolibrary.org/obo/RO_0002213> ;
+                                                                                                                   owl:someValuesFrom <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Coastal_Erosion>
+                                                                                                                 ] ,
+                                                                                                                 [ rdf:type owl:Restriction ;
+                                                                                                                   owl:onProperty <http://purl.obolibrary.org/obo/RO_0002213> ;
+                                                                                                                   owl:someValuesFrom <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Extreme_Event>
+                                                                                                                 ] ,
+                                                                                                                 [ rdf:type owl:Restriction ;
+                                                                                                                   owl:onProperty <http://purl.obolibrary.org/obo/RO_0002213> ;
+                                                                                                                   owl:someValuesFrom <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Wildfire>
+                                                                                                                 ] ,
+                                                                                                                 [ rdf:type owl:Restriction ;
+                                                                                                                   owl:onProperty <http://www.ontologyrepository.com/CommonCoreOntologies/affects> ;
+                                                                                                                   owl:someValuesFrom <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Solid_Terrestrial_Water>
+                                                                                                                 ] ,
+                                                                                                                 [ rdf:type owl:Restriction ;
+                                                                                                                   owl:onProperty <http://www.ontologyrepository.com/CommonCoreOntologies/affects> ;
+                                                                                                                   owl:someValuesFrom <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Water>
+                                                                                                                 ] ,
+                                                                                                                 [ rdf:type owl:Restriction ;
+                                                                                                                   owl:onProperty <http://www.ontologyrepository.com/CommonCoreOntologies/has_output> ;
+                                                                                                                   owl:someValuesFrom <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Low_Global_Water_Security>
+                                                                                                                 ] ,
+                                                                                                                 [ rdf:type owl:Restriction ;
+                                                                                                                   owl:onProperty <http://www.ontologyrepository.com/CommonCoreOntologies/has_output> ;
+                                                                                                                   owl:someValuesFrom <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Low_Water_Availability>
+                                                                                                                 ] ,
+                                                                                                                 [ rdf:type owl:Restriction ;
+                                                                                                                   owl:onProperty <http://www.ontologyrepository.com/CommonCoreOntologies/process_starts> ;
+                                                                                                                   owl:someValuesFrom <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Change_in_the_Global_Water_Cycle>
+                                                                                                                 ] ,
+                                                                                                                 [ rdf:type owl:Restriction ;
+                                                                                                                   owl:onProperty <http://www.ontologyrepository.com/CommonCoreOntologies/process_starts> ;
+                                                                                                                   owl:someValuesFrom <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Decrease_in_Water_Supply>
+                                                                                                                 ] ,
+                                                                                                                 [ rdf:type owl:Restriction ;
+                                                                                                                   owl:onProperty <http://www.ontologyrepository.com/CommonCoreOntologies/process_starts> ;
+                                                                                                                   owl:someValuesFrom <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Decrease_of_Water_Availability>
+                                                                                                                 ] ,
+                                                                                                                 [ rdf:type owl:Restriction ;
+                                                                                                                   owl:onProperty <http://www.ontologyrepository.com/CommonCoreOntologies/process_starts> ;
+                                                                                                                   owl:someValuesFrom <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Increase_in_Ecological_Drought>
+                                                                                                                 ] ;
+                                                                                                 rdfs:label "Climate Change" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Coastal_Erosion
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Coastal_Erosion> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Cryospheric_Change
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Cryospheric_Change> rdf:type owl:Class ;
+                                                                                                     rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Change_in_Climate_System> ;
+                                                                                                     rdfs:label "Cryospheric Change" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Decrease_in_GHG_Emissions
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Decrease_in_GHG_Emissions> rdf:type owl:Class ;
+                                                                                                            rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Atmospheric_Change> ;
+                                                                                                            rdfs:label "Decrease in GHG Emissions" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Decrease_in_Oxygen_Content_in_Upper_Ocean_Water
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Decrease_in_Oxygen_Content_in_Upper_Ocean_Water> rdf:type owl:Class ;
+                                                                                                                                  rdfs:subClassOf <http://www.ontologyrepository.com/CommonCoreOntologies/DecreaseOfQuality> ;
+                                                                                                                                  rdfs:label "Decrease in Oxygen Content in Upper Ocean Water" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Decrease_in_Water_Supply
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Decrease_in_Water_Supply> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Decrease_of_Water_Availability
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Decrease_of_Water_Availability> rdf:type owl:Class ;
+                                                                                                                 rdfs:subClassOf <http://www.ontologyrepository.com/CommonCoreOntologies/DecreaseOfQuality> ,
+                                                                                                                                 [ rdf:type owl:Restriction ;
+                                                                                                                                   owl:onProperty <http://purl.obolibrary.org/obo/RO_0002212> ;
+                                                                                                                                   owl:someValuesFrom <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Energy_Production>
+                                                                                                                                 ] ,
+                                                                                                                                 [ rdf:type owl:Restriction ;
+                                                                                                                                   owl:onProperty <http://purl.obolibrary.org/obo/RO_0002212> ;
+                                                                                                                                   owl:someValuesFrom <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Food_Production>
+                                                                                                                                 ] ,
+                                                                                                                                 [ rdf:type owl:Restriction ;
+                                                                                                                                   owl:onProperty <http://www.ontologyrepository.com/CommonCoreOntologies/has_output> ;
+                                                                                                                                   owl:someValuesFrom <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Decreased_Water_Availability>
+                                                                                                                                 ] ,
+                                                                                                                                 [ rdf:type owl:Restriction ;
+                                                                                                                                   owl:onProperty <http://www.ontologyrepository.com/CommonCoreOntologies/has_output> ;
+                                                                                                                                   owl:someValuesFrom <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Low_Water_Supply>
+                                                                                                                                 ] ;
+                                                                                                                 rdfs:label "Decrease of Water Availability" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Decrease_of_Water_Availability_in_the_Dry_Season
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Decrease_of_Water_Availability_in_the_Dry_Season> rdf:type owl:Class ;
+                                                                                                                                   rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Decrease_of_Water_Availability> ,
+                                                                                                                                                   [ rdf:type owl:Restriction ;
+                                                                                                                                                     owl:onProperty <http://www.ontologyrepository.com/CommonCoreOntologies/process_started_by> ;
+                                                                                                                                                     owl:someValuesFrom <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Human-caused_Climate_Change>
+                                                                                                                                                   ] ,
+                                                                                                                                                   [ rdf:type owl:Restriction ;
+                                                                                                                                                     owl:onProperty <http://www.ontologyrepository.com/CommonCoreOntologies/process_started_by> ;
+                                                                                                                                                     owl:someValuesFrom <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Increase_of_Evatranspiration>
+                                                                                                                                                   ] ;
+                                                                                                                                   rdfs:label "Decrease of Water Availability in the Dry Season" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Decreased_Glacial_Mass
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Decreased_Glacial_Mass> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Decreased_Water_Availability
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Decreased_Water_Availability> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Deforestation
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Deforestation> rdf:type owl:Class ;
+                                                                                                rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Land_Cover_Change> ,
+                                                                                                                [ rdf:type owl:Restriction ;
+                                                                                                                  owl:onProperty <http://purl.obolibrary.org/obo/RO_0002212> ;
+                                                                                                                  owl:someValuesFrom <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Evapotranspiration>
+                                                                                                                ] ,
+                                                                                                                [ rdf:type owl:Restriction ;
+                                                                                                                  owl:onProperty <http://purl.obolibrary.org/obo/RO_0002212> ;
+                                                                                                                  owl:someValuesFrom <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Precipitation>
+                                                                                                                ] ,
+                                                                                                                [ rdf:type owl:Restriction ;
+                                                                                                                  owl:onProperty <http://purl.obolibrary.org/obo/RO_0002213> ;
+                                                                                                                  owl:someValuesFrom <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Runoff>
+                                                                                                                ] ;
+                                                                                                rdfs:label "Deforestation" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Depletion_of_Glacial_Mass
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Depletion_of_Glacial_Mass> rdf:type owl:Class ;
+                                                                                                            rdfs:subClassOf <http://www.ontologyrepository.com/CommonCoreOntologies/DecreaseOfQuality> ,
+                                                                                                                            [ rdf:type owl:Restriction ;
+                                                                                                                              owl:onProperty <http://www.ontologyrepository.com/CommonCoreOntologies/has_output> ;
+                                                                                                                              owl:someValuesFrom <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Decreased_Glacial_Mass>
+                                                                                                                            ] ;
+                                                                                                            rdfs:label "Depletion of Glacial Mass" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Depletion_of_Groundwater_Storage
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Depletion_of_Groundwater_Storage> rdf:type owl:Class ;
+                                                                                                                   rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Groundwater_Depletion> ;
+                                                                                                                   rdfs:label "Depletion of Groundwater Storage" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Drought
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Drought> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Ecosystem_Photosynthesis
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Ecosystem_Photosynthesis> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Energy_Production
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Energy_Production> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Evapotranspiration
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Evapotranspiration> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#External_Natural_Change
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#External_Natural_Change> rdf:type owl:Class ;
+                                                                                                          rdfs:subClassOf <http://www.ontologyrepository.com/CommonCoreOntologies/Change> ;
+                                                                                                          rdfs:label "External Natural Change" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Extreme_Event
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Extreme_Event> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Extreme_Weather_Event
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Extreme_Weather_Event> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Food_Production
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Food_Production> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Food_Production_System
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Food_Production_System> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Geospheric_Change
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Geospheric_Change> rdf:type owl:Class ;
+                                                                                                    rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Change_in_Climate_System> ;
+                                                                                                    rdfs:label "Geospheric Change" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Glacial_Isostatic_Adjustment
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Glacial_Isostatic_Adjustment> rdf:type owl:Class ;
+                                                                                                               rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Cryospheric_Change> ;
+                                                                                                               rdfs:label "Glacial Isostatic Adjustment" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Glacial_Mass_Loss
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Glacial_Mass_Loss> rdf:type owl:Class ;
+                                                                                                    rdfs:subClassOf <http://www.ontologyrepository.com/CommonCoreOntologies/LossOfQuality> ;
+                                                                                                    rdfs:label "Glacial Mass Loss" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Groundwater_Depletion
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Groundwater_Depletion> rdf:type owl:Class ;
+                                                                                                        rdfs:subClassOf <http://www.ontologyrepository.com/CommonCoreOntologies/DecreaseOfQuality> ,
+                                                                                                                        [ rdf:type owl:Restriction ;
+                                                                                                                          owl:onProperty <http://www.ontologyrepository.com/CommonCoreOntologies/process_started_by> ;
+                                                                                                                          owl:someValuesFrom <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Groundwater_Withdrawal_for_Irrigation>
+                                                                                                                        ] ;
+                                                                                                        rdfs:label "Groundwater Depletion" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Groundwater_Withdrawal_for_Irrigation
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Groundwater_Withdrawal_for_Irrigation> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Hemispheric-scale_Circulation
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Hemispheric-scale_Circulation> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Human-caused_Climate_Change
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Human-caused_Climate_Change> rdf:type owl:Class ;
+                                                                                                              rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Climate_Change> ,
+                                                                                                                              [ rdf:type owl:Restriction ;
+                                                                                                                                owl:onProperty <http://purl.obolibrary.org/obo/RO_0002213> ;
+                                                                                                                                owl:someValuesFrom <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Intense_Precipitation>
+                                                                                                                              ] ,
+                                                                                                                              [ rdf:type owl:Restriction ;
+                                                                                                                                owl:onProperty <http://www.ontologyrepository.com/CommonCoreOntologies/process_starts> ;
+                                                                                                                                owl:someValuesFrom <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Increase_in_Agricultural_Drought>
+                                                                                                                              ] ,
+                                                                                                                              [ rdf:type owl:Restriction ;
+                                                                                                                                owl:onProperty <http://www.ontologyrepository.com/CommonCoreOntologies/process_starts> ;
+                                                                                                                                owl:someValuesFrom <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Increase_in_Ecological_Drought>
+                                                                                                                              ] ,
+                                                                                                                              [ rdf:type owl:Restriction ;
+                                                                                                                                owl:onProperty <http://www.ontologyrepository.com/CommonCoreOntologies/process_starts> ;
+                                                                                                                                owl:someValuesFrom <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Increase_in_River_Floods_on_Land_Areas>
+                                                                                                                              ] ,
+                                                                                                                              [ rdf:type owl:Restriction ;
+                                                                                                                                owl:onProperty <http://www.ontologyrepository.com/CommonCoreOntologies/process_starts> ;
+                                                                                                                                owl:someValuesFrom <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Increase_in_Sub-seasonal_Precipitation_Variability>
+                                                                                                                              ] ;
+                                                                                                              rdfs:label "Human-caused Climate Change" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Human-induced_Increase_in_Greenhouse_Gas_Concentration
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Human-induced_Increase_in_Greenhouse_Gas_Concentration> rdf:type owl:Class ;
+                                                                                                                                         rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Increase_of_Greenhouse_Gas_Concentration> ,
+                                                                                                                                                         [ rdf:type owl:Restriction ;
+                                                                                                                                                           owl:onProperty <http://purl.obolibrary.org/obo/RO_0002213> ;
+                                                                                                                                                           owl:someValuesFrom <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Extreme_Weather_Event>
+                                                                                                                                                         ] ,
+                                                                                                                                                         [ rdf:type owl:Restriction ;
+                                                                                                                                                           owl:onProperty <http://purl.obolibrary.org/obo/RO_0002213> ;
+                                                                                                                                                           owl:someValuesFrom <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Increase_in_Temperature>
+                                                                                                                                                         ] ;
+                                                                                                                                         rdfs:label "Human-induced Increase in Greenhouse Gas Concentration" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Hydrological_Drought
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Hydrological_Drought> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Hydrospheric_Change
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Hydrospheric_Change> rdf:type owl:Class ;
+                                                                                                      rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Change_in_Climate_System> ;
+                                                                                                      rdfs:label "Hydrospheric Change" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Improve_Land_and_Soil_Quality
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Improve_Land_and_Soil_Quality> rdf:type owl:Class ;
+                                                                                                                rdfs:subClassOf <http://www.ontologyrepository.com/CommonCoreOntologies/IncreaseOfQuality> ;
+                                                                                                                rdfs:label "Improve Land and Soil Quality" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Increase_in_Agricultural_Drought
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Increase_in_Agricultural_Drought> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Increase_in_Atmospheric_CO2_Concentration
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Increase_in_Atmospheric_CO2_Concentration> rdf:type owl:Class ;
+                                                                                                                            rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Increase_of_Greenhouse_Gas_Concentration> ,
+                                                                                                                                            [ rdf:type owl:Restriction ;
+                                                                                                                                              owl:onProperty <http://purl.obolibrary.org/obo/RO_0002213> ;
+                                                                                                                                              owl:someValuesFrom <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Leaf_Photosynthesis>
+                                                                                                                                            ] ,
+                                                                                                                                            [ rdf:type owl:Restriction ;
+                                                                                                                                              owl:onProperty <http://purl.obolibrary.org/obo/RO_0002213> ;
+                                                                                                                                              owl:someValuesFrom <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Plant_Growth>
+                                                                                                                                            ] ,
+                                                                                                                                            [ rdf:type owl:Restriction ;
+                                                                                                                                              owl:onProperty <http://www.ontologyrepository.com/CommonCoreOntologies/affects> ;
+                                                                                                                                              owl:someValuesFrom <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Water-use_Efficiency>
+                                                                                                                                            ] ,
+                                                                                                                                            [ rdf:type owl:Restriction ;
+                                                                                                                                              owl:onProperty <http://www.ontologyrepository.com/CommonCoreOntologies/process_precedes> ;
+                                                                                                                                              owl:someValuesFrom <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Increase_in_Land_Carbon_Storage>
+                                                                                                                                            ] ,
+                                                                                                                                            [ rdf:type owl:Restriction ;
+                                                                                                                                              owl:onProperty <http://www.ontologyrepository.com/CommonCoreOntologies/process_precedes> ;
+                                                                                                                                              owl:someValuesFrom <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Partial_Closure_of_Leaf_Stomata>
+                                                                                                                                            ] ;
+                                                                                                                            rdfs:label "Increase in Atmospheric CO2 Concentration" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Increase_in_Atmospheric_Water_Demand
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Increase_in_Atmospheric_Water_Demand> rdf:type owl:Class ;
+                                                                                                                       rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Increase_of_Atmospheric_Evaporative_Demand> ;
+                                                                                                                       rdfs:label "Increase in Atmospheric Water Demand" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Increase_in_Drought_Frequency
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Increase_in_Drought_Frequency> rdf:type owl:Class ;
+                                                                                                                rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Atmospheric_Change> ;
+                                                                                                                rdfs:label "Increase in Drought Frequency" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Increase_in_Drought_Severity
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Increase_in_Drought_Severity> rdf:type owl:Class ;
+                                                                                                               rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Atmospheric_Change> ;
+                                                                                                               rdfs:label "Increase in Drought Severity" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Increase_in_Ecological_Drought
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Increase_in_Ecological_Drought> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Increase_in_Interannual_Variability_of_Precipitation
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Increase_in_Interannual_Variability_of_Precipitation> rdf:type owl:Class ;
+                                                                                                                                       rdfs:subClassOf <http://www.ontologyrepository.com/CommonCoreOntologies/IncreaseOfQuality> ,
+                                                                                                                                                       [ rdf:type owl:Restriction ;
+                                                                                                                                                         owl:onProperty <http://www.ontologyrepository.com/CommonCoreOntologies/occurs_at> ;
+                                                                                                                                                         owl:someValuesFrom <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Northern_Hemisphere_Extratropics>
+                                                                                                                                                       ] ,
+                                                                                                                                                       [ rdf:type owl:Restriction ;
+                                                                                                                                                         owl:onProperty <http://www.ontologyrepository.com/CommonCoreOntologies/occurs_at> ;
+                                                                                                                                                         owl:someValuesFrom <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Northern_Hemisphere_Tropics>
+                                                                                                                                                       ] ,
+                                                                                                                                                       [ rdf:type owl:Restriction ;
+                                                                                                                                                         owl:onProperty <http://www.ontologyrepository.com/CommonCoreOntologies/occurs_at> ;
+                                                                                                                                                         owl:someValuesFrom <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Southern_Hemisphere_Extratropics>
+                                                                                                                                                       ] ,
+                                                                                                                                                       [ rdf:type owl:Restriction ;
+                                                                                                                                                         owl:onProperty <http://www.ontologyrepository.com/CommonCoreOntologies/occurs_at> ;
+                                                                                                                                                         owl:someValuesFrom <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Southern_Hemisphere_Tropics>
+                                                                                                                                                       ] ,
+                                                                                                                                                       [ rdf:type owl:Restriction ;
+                                                                                                                                                         owl:onProperty <http://www.ontologyrepository.com/CommonCoreOntologies/occurs_on> ;
+                                                                                                                                                         owl:someValuesFrom <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Summer>
+                                                                                                                                                       ] ,
+                                                                                                                                                       [ rdf:type owl:Restriction ;
+                                                                                                                                                         owl:onProperty <http://www.ontologyrepository.com/CommonCoreOntologies/occurs_on> ;
+                                                                                                                                                         owl:someValuesFrom <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Warm_Season>
+                                                                                                                                                       ] ;
+                                                                                                                                       rdfs:label "Increase in Interannual Variability of Precipitation" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Increase_in_Land_Carbon_Storage
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Increase_in_Land_Carbon_Storage> rdf:type owl:Class ;
+                                                                                                                  rdfs:subClassOf <http://www.ontologyrepository.com/CommonCoreOntologies/IncreaseOfQuality> ,
+                                                                                                                                  [ rdf:type owl:Restriction ;
+                                                                                                                                    owl:onProperty <http://www.ontologyrepository.com/CommonCoreOntologies/process_preceded_by> ;
+                                                                                                                                    owl:someValuesFrom <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#CO2_Fertilization_of_Photosynthesis>
+                                                                                                                                  ] ,
+                                                                                                                                  [ rdf:type owl:Restriction ;
+                                                                                                                                    owl:onProperty <http://www.ontologyrepository.com/CommonCoreOntologies/process_preceded_by> ;
+                                                                                                                                    owl:someValuesFrom <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Increase_in_Water_Use_Efficiency>
+                                                                                                                                  ] ;
+                                                                                                                  rdfs:label "Increase in Land Carbon Storage" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Increase_in_Plant_Biomass
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Increase_in_Plant_Biomass> rdf:type owl:Class ;
+                                                                                                            rdfs:subClassOf <http://www.ontologyrepository.com/CommonCoreOntologies/IncreaseOfQuality> ,
+                                                                                                                            [ rdf:type owl:Restriction ;
+                                                                                                                              owl:onProperty <http://purl.obolibrary.org/obo/RO_0002213> ;
+                                                                                                                              owl:someValuesFrom <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Ecosystem_Photosynthesis>
+                                                                                                                            ] ,
+                                                                                                                            [ rdf:type owl:Restriction ;
+                                                                                                                              owl:onProperty <http://www.ontologyrepository.com/CommonCoreOntologies/affects> ;
+                                                                                                                              owl:someValuesFrom <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Transpiration_Rate>
+                                                                                                                            ] ,
+                                                                                                                            [ rdf:type owl:Restriction ;
+                                                                                                                              owl:onProperty <http://www.ontologyrepository.com/CommonCoreOntologies/process_precedes> ;
+                                                                                                                              owl:someValuesFrom <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Net_Increase_in_Water_Use_Efficiency>
+                                                                                                                            ] ;
+                                                                                                            rdfs:label "Increase in Plant Biomass" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Increase_in_River_Floods_on_Land_Areas
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Increase_in_River_Floods_on_Land_Areas> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Increase_in_Sub-seasonal_Precipitation_Variability
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Increase_in_Sub-seasonal_Precipitation_Variability> rdf:type owl:Class ;
+                                                                                                                                     rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Atmospheric_Change> ,
+                                                                                                                                                     [ rdf:type owl:Restriction ;
+                                                                                                                                                       owl:onProperty <http://www.ontologyrepository.com/CommonCoreOntologies/has_output> ;
+                                                                                                                                                       owl:someValuesFrom <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Increased_Daily_Mean_Precipitation_Intensity>
+                                                                                                                                                     ] ,
+                                                                                                                                                     [ rdf:type owl:Restriction ;
+                                                                                                                                                       owl:onProperty <http://www.ontologyrepository.com/CommonCoreOntologies/has_output> ;
+                                                                                                                                                       owl:someValuesFrom <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Increased_Sub-seasonal_Precipitation_Variability>
+                                                                                                                                                     ] ,
+                                                                                                                                                     [ rdf:type owl:Restriction ;
+                                                                                                                                                       owl:onProperty <http://www.ontologyrepository.com/CommonCoreOntologies/has_output> ;
+                                                                                                                                                       owl:someValuesFrom <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Reduced_Rainy_Days>
+                                                                                                                                                     ] ;
+                                                                                                                                     rdfs:label "Increase in Sub-seasonal Precipitation Variability" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Increase_in_Surface_CO2_Concentration
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Increase_in_Surface_CO2_Concentration> rdf:type owl:Class ;
+                                                                                                                        rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Increase_of_Greenhouse_Gas_Concentration> ,
+                                                                                                                                        [ rdf:type owl:Restriction ;
+                                                                                                                                          owl:onProperty <http://www.ontologyrepository.com/CommonCoreOntologies/process_precedes> ;
+                                                                                                                                          owl:someValuesFrom <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Increase_in_Plant_Biomass>
+                                                                                                                                        ] ,
+                                                                                                                                        [ rdf:type owl:Restriction ;
+                                                                                                                                          owl:onProperty <http://www.ontologyrepository.com/CommonCoreOntologies/process_precedes> ;
+                                                                                                                                          owl:someValuesFrom <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Stomatal_Regulation>
+                                                                                                                                        ] ;
+                                                                                                                        rdfs:label "Increase in Surface CO2 Concentration" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Increase_in_Temperature
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Increase_in_Temperature> rdf:type owl:Class ;
+                                                                                                          rdfs:subClassOf <http://www.ontologyrepository.com/CommonCoreOntologies/IncreaseOfQuality> ;
+                                                                                                          rdfs:label "Increase in Temperature" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Increase_in_Water_Use_Efficiency
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Increase_in_Water_Use_Efficiency> rdf:type owl:Class ;
+                                                                                                                   rdfs:subClassOf <http://www.ontologyrepository.com/CommonCoreOntologies/IncreaseOfQuality> ;
+                                                                                                                   rdfs:label "Increase in Water Use Efficiency" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Increase_in_the_Frequency_of_Extreme_Sea_Level_Events
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Increase_in_the_Frequency_of_Extreme_Sea_Level_Events> rdf:type owl:Class ;
+                                                                                                                                        rdfs:subClassOf <http://www.ontologyrepository.com/CommonCoreOntologies/IncreaseOfQuality> ;
+                                                                                                                                        rdfs:label "Increase in the Frequency of Extreme Sea Level Events" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Increase_of_Aridity
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Increase_of_Aridity> rdf:type owl:Class ;
+                                                                                                      rdfs:subClassOf <http://www.ontologyrepository.com/CommonCoreOntologies/IncreaseOfQuality> ,
+                                                                                                                      [ rdf:type owl:Restriction ;
+                                                                                                                        owl:onProperty <http://www.ontologyrepository.com/CommonCoreOntologies/affects> ;
+                                                                                                                        owl:someValuesFrom <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Food_Production_System>
+                                                                                                                      ] ,
+                                                                                                                      [ rdf:type owl:Restriction ;
+                                                                                                                        owl:onProperty <http://www.ontologyrepository.com/CommonCoreOntologies/affects> ;
+                                                                                                                        owl:someValuesFrom <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Land_Ecosystem>
+                                                                                                                      ] ,
+                                                                                                                      [ rdf:type owl:Restriction ;
+                                                                                                                        owl:onProperty <http://www.ontologyrepository.com/CommonCoreOntologies/affects> ;
+                                                                                                                        owl:someValuesFrom <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Species_Distribution>
+                                                                                                                      ] ,
+                                                                                                                      [ rdf:type owl:Restriction ;
+                                                                                                                        owl:onProperty <http://www.ontologyrepository.com/CommonCoreOntologies/process_starts> ;
+                                                                                                                        owl:someValuesFrom <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Terrestrial_Carbon_Cycle>
+                                                                                                                      ] ;
+                                                                                                      rdfs:label "Increase of Aridity" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Increase_of_Atmospheric_Evaporative_Demand
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Increase_of_Atmospheric_Evaporative_Demand> rdf:type owl:Class ;
+                                                                                                                             rdfs:subClassOf <http://www.ontologyrepository.com/CommonCoreOntologies/IncreaseOfQuality> ,
+                                                                                                                                             [ rdf:type owl:Restriction ;
+                                                                                                                                               owl:onProperty <http://www.ontologyrepository.com/CommonCoreOntologies/process_precedes> ;
+                                                                                                                                               owl:someValuesFrom <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Drought>
+                                                                                                                                             ] ;
+                                                                                                                             rdfs:label "Increase of Atmospheric Evaporative Demand" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Increase_of_Evatranspiration
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Increase_of_Evatranspiration> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Increase_of_Greenhouse_Gas_Concentration
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Increase_of_Greenhouse_Gas_Concentration> rdf:type owl:Class ;
+                                                                                                                           rdfs:subClassOf <http://www.ontologyrepository.com/CommonCoreOntologies/IncreaseOfQuality> ,
+                                                                                                                                           [ rdf:type owl:Restriction ;
+                                                                                                                                             owl:onProperty <http://purl.obolibrary.org/obo/RO_0002213> ;
+                                                                                                                                             owl:someValuesFrom <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Increase_in_Temperature>
+                                                                                                                                           ] ,
+                                                                                                                                           [ rdf:type owl:Restriction ;
+                                                                                                                                             owl:onProperty <http://www.ontologyrepository.com/CommonCoreOntologies/has_output> ;
+                                                                                                                                             owl:someValuesFrom <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Increased_Plant_Water-use_Efficiency>
+                                                                                                                                           ] ;
+                                                                                                                           rdfs:label "Increase of Greenhouse Gas Concentration" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Increase_of_Precipitation_Amount
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Increase_of_Precipitation_Amount> rdf:type owl:Class ;
+                                                                                                                   rdfs:subClassOf <http://www.ontologyrepository.com/CommonCoreOntologies/IncreaseOfQuality> ,
+                                                                                                                                   [ rdf:type owl:Restriction ;
+                                                                                                                                     owl:onProperty <http://www.ontologyrepository.com/CommonCoreOntologies/process_starts> ;
+                                                                                                                                     owl:someValuesFrom <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Increased_Runoff>
+                                                                                                                                   ] ;
+                                                                                                                   rdfs:label "Increase of Precipitation Amount" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Increase_of_Precipitation_Intensity
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Increase_of_Precipitation_Intensity> rdf:type owl:Class ;
+                                                                                                                      rdfs:subClassOf <http://www.ontologyrepository.com/CommonCoreOntologies/IncreaseOfQuality> ,
+                                                                                                                                      [ rdf:type owl:Restriction ;
+                                                                                                                                        owl:onProperty <http://www.ontologyrepository.com/CommonCoreOntologies/process_starts> ;
+                                                                                                                                        owl:someValuesFrom <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Increased_Runoff>
+                                                                                                                                      ] ;
+                                                                                                                      rdfs:label "Increase of Precipitation Intensity" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Increased_Daily_Mean_Precipitation_Intensity
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Increased_Daily_Mean_Precipitation_Intensity> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Increased_Plant_Water-use_Efficiency
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Increased_Plant_Water-use_Efficiency> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Increased_Runoff
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Increased_Runoff> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Increased_Sub-seasonal_Precipitation_Variability
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Increased_Sub-seasonal_Precipitation_Variability> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Intense_Precipitation
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Intense_Precipitation> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Land_Cover_Change
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Land_Cover_Change> rdf:type owl:Class ;
+                                                                                                    rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Geospheric_Change> ,
+                                                                                                                    [ rdf:type owl:Restriction ;
+                                                                                                                      owl:onProperty <http://purl.obolibrary.org/obo/RO_0002213> ;
+                                                                                                                      owl:someValuesFrom <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Regional_Change_in_River_Floods>
+                                                                                                                    ] ;
+                                                                                                    rdfs:label "Land Cover Change" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Land_Ecosystem
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Land_Ecosystem> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Large-scale_Deforestation
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Large-scale_Deforestation> rdf:type owl:Class ;
+                                                                                                            rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Deforestation> ,
+                                                                                                                            [ rdf:type owl:Restriction ;
+                                                                                                                              owl:onProperty <http://purl.obolibrary.org/obo/RO_0002212> ;
+                                                                                                                              owl:someValuesFrom <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Evapotranspiration>
+                                                                                                                            ] ,
+                                                                                                                            [ rdf:type owl:Restriction ;
+                                                                                                                              owl:onProperty <http://purl.obolibrary.org/obo/RO_0002212> ;
+                                                                                                                              owl:someValuesFrom <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Precipitation>
+                                                                                                                            ] ,
+                                                                                                                            [ rdf:type owl:Restriction ;
+                                                                                                                              owl:onProperty <http://purl.obolibrary.org/obo/RO_0002213> ;
+                                                                                                                              owl:someValuesFrom <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Runoff>
+                                                                                                                            ] ;
+                                                                                                            rdfs:label "Large-scale Deforestation" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Leaf_Photosynthesis
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Leaf_Photosynthesis> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Loss_of_Ice_Mass
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Loss_of_Ice_Mass> rdf:type owl:Class ;
+                                                                                                   rdfs:subClassOf <http://www.ontologyrepository.com/CommonCoreOntologies/LossOfQuality> ;
+                                                                                                   rdfs:label "Loss of Ice Mass" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Loss_of_Water-use_Efficiency
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Loss_of_Water-use_Efficiency> rdf:type owl:Class ;
+                                                                                                               rdfs:subClassOf <http://www.ontologyrepository.com/CommonCoreOntologies/LossOfQuality> ;
+                                                                                                               rdfs:label "Loss of Water-use Efficiency" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Low_Global_Water_Security
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Low_Global_Water_Security> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Low_Water_Availability
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Low_Water_Availability> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Low_Water_Supply
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Low_Water_Supply> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Marine_Organism
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Marine_Organism> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Net_Increase_in_Water_Use_Efficiency
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Net_Increase_in_Water_Use_Efficiency> rdf:type owl:Class ;
+                                                                                                                       rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Increase_in_Water_Use_Efficiency> ;
+                                                                                                                       rdfs:label "Net Increase in Water Use Efficiency" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Northern_Hemisphere_Extratropics
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Northern_Hemisphere_Extratropics> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Northern_Hemisphere_Tropics
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Northern_Hemisphere_Tropics> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Ocean_Acidification
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Ocean_Acidification> rdf:type owl:Class ;
+                                                                                                      rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Oceanic_Change> ,
+                                                                                                                      [ rdf:type owl:Restriction ;
+                                                                                                                        owl:onProperty <http://www.ontologyrepository.com/CommonCoreOntologies/affects> ;
+                                                                                                                        owl:someValuesFrom <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Marine_Organism>
+                                                                                                                      ] ,
+                                                                                                                      [ rdf:type owl:Restriction ;
+                                                                                                                        owl:onProperty <http://www.ontologyrepository.com/CommonCoreOntologies/affects> ;
+                                                                                                                        owl:someValuesFrom <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Seafood>
+                                                                                                                      ] ;
+                                                                                                      rdfs:label "Ocean Acidification" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Oceanic_Change
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Oceanic_Change> rdf:type owl:Class ;
+                                                                                                 rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Hydrospheric_Change> ;
+                                                                                                 rdfs:label "Oceanic Change" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Partial_Closure_of_Leaf_Stomata
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Partial_Closure_of_Leaf_Stomata> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Plant_Growth
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Plant_Growth> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Precipitation
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Precipitation> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Reduced_Human_Health
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Reduced_Human_Health> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Reduced_Rainy_Days
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Reduced_Rainy_Days> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Reduction_in_Water_Supply
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Reduction_in_Water_Supply> rdf:type owl:Class ;
+                                                                                                            rdfs:subClassOf <http://www.ontologyrepository.com/CommonCoreOntologies/DecreaseOfQuality> ,
+                                                                                                                            [ rdf:type owl:Restriction ;
+                                                                                                                              owl:onProperty <http://www.ontologyrepository.com/CommonCoreOntologies/process_starts> ;
+                                                                                                                              owl:someValuesFrom <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Hydrological_Drought>
+                                                                                                                            ] ;
+                                                                                                            rdfs:label "Reduction in Water Supply" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Regional_Change_in_River_Floods
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Regional_Change_in_River_Floods> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Rise_of_Global_Temperature
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Rise_of_Global_Temperature> rdf:type owl:Class ;
+                                                                                                             rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Increase_in_Temperature> ;
+                                                                                                             rdfs:label "Rise of Global Temperature" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Risk_to_Food_Security
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Risk_to_Food_Security> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Runoff
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Runoff> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Sea_Level_Rise
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Sea_Level_Rise> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Seafood
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Seafood> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Solid_Terrestrial_Water
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Solid_Terrestrial_Water> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Southern_Hemisphere_Extratropics
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Southern_Hemisphere_Extratropics> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Southern_Hemisphere_Tropics
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Southern_Hemisphere_Tropics> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Species_Distribution
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Species_Distribution> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Stomatal_Regulation
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Stomatal_Regulation> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Storm_Surge
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Storm_Surge> rdf:type owl:Class ;
+                                                                                              rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Oceanic_Change> ;
+                                                                                              rdfs:label "Storm Surge" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Summer
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Summer> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Terrestrial_Carbon_Cycle
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Terrestrial_Carbon_Cycle> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Terrestrial_Water_Change
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Terrestrial_Water_Change> rdf:type owl:Class ;
+                                                                                                           rdfs:subClassOf <http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Hydrospheric_Change> ;
+                                                                                                           rdfs:label "Terrestrial Water Change" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Transpiration_Rate
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Transpiration_Rate> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Warm_Season
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Warm_Season> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Water
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Water> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Water-use_Efficiency
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Water-use_Efficiency> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Water_Cycle_Change
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Water_Cycle_Change> rdf:type owl:Class ;
+                                                                                                     rdfs:subClassOf <http://www.ontologyrepository.com/CommonCoreOntologies/Change> ;
+                                                                                                     rdfs:label "Water Cycle Change" .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Water_Supply
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Water_Supply> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Wildfire
+<http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Wildfire> rdf:type owl:Class .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
