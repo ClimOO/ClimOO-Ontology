@@ -60,23 +60,7 @@ Documentation webpage: https://www.w3id.org/climoo/docs"""@en ,
 #################################################################
 
 ###  http://purl.obolibrary.org/obo/CHEBI_24431
-<http://purl.obolibrary.org/obo/CHEBI_24431> rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000040> ,
-                                                             [ rdf:type owl:Class ;
-                                                               owl:unionOf ( [ rdf:type owl:Class ;
-                                                                               owl:unionOf ( <http://purl.obolibrary.org/obo/RO_0002577>
-                                                                                             <https://www.w3id.org/sco#SCO_0000006>
-                                                                                           )
-                                                                             ]
-                                                                             [ rdf:type owl:Restriction ;
-                                                                               owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000176> ;
-                                                                               owl:someValuesFrom [ rdf:type owl:Class ;
-                                                                                                    owl:unionOf ( <http://purl.obolibrary.org/obo/RO_0002577>
-                                                                                                                  <https://www.w3id.org/sco#SCO_0000006>
-                                                                                                                )
-                                                                                                  ]
-                                                                             ]
-                                                                           )
-                                                             ] .
+<http://purl.obolibrary.org/obo/CHEBI_24431> rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000040> .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource <http://purl.obolibrary.org/obo/CHEBI_24431> ;
@@ -185,25 +169,6 @@ We aligned CCO and IAO classes according to SuMSO model."""@en .
                                                                                         ]
                                                                                       )
                                                                         ] .
-
-
-###  https://w3id.org/pmd/co/PMD_0000001
-<https://w3id.org/pmd/co/PMD_0000001> rdfs:subClassOf [ rdf:type owl:Class ;
-                                                        owl:unionOf ( [ rdf:type owl:Class ;
-                                                                        owl:unionOf ( <http://purl.obolibrary.org/obo/RO_0002577>
-                                                                                      <https://www.w3id.org/sco#SCO_0000006>
-                                                                                    )
-                                                                      ]
-                                                                      [ rdf:type owl:Restriction ;
-                                                                        owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000176> ;
-                                                                        owl:someValuesFrom [ rdf:type owl:Class ;
-                                                                                             owl:unionOf ( <http://purl.obolibrary.org/obo/RO_0002577>
-                                                                                                           <https://www.w3id.org/sco#SCO_0000006>
-                                                                                                         )
-                                                                                           ]
-                                                                      ]
-                                                                    )
-                                                      ] .
 
 
 ###  https://w3id.org/pmd/co/PMD_0000888
@@ -871,6 +836,22 @@ We envision implementing such definitions in accordance with regulation revision
 ###  https://www.w3id.org/climoo#ClimOO_0000141
 :ClimOO_0000141 rdf:type owl:Class ;
                 rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_23367> ,
+                                [ rdf:type owl:Class ;
+                                  owl:unionOf ( [ rdf:type owl:Class ;
+                                                  owl:unionOf ( <http://purl.obolibrary.org/obo/RO_0002577>
+                                                                <https://www.w3id.org/sco#SCO_0000006>
+                                                              )
+                                                ]
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000176> ;
+                                                  owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                       owl:unionOf ( <http://purl.obolibrary.org/obo/RO_0002577>
+                                                                                     <https://www.w3id.org/sco#SCO_0000006>
+                                                                                   )
+                                                                     ]
+                                                ]
+                                              )
+                                ] ,
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty <http://purl.obolibrary.org/obo/RO_0000091> ;
                                   owl:someValuesFrom :ClimOO_0000123
@@ -1184,7 +1165,23 @@ We envision implementing such definitions in accordance with regulation revision
                                                          ) ;
                                       rdf:type owl:Class
                                     ] ;
-                rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000027> ;
+                rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000027> ,
+                                [ rdf:type owl:Class ;
+                                  owl:unionOf ( [ rdf:type owl:Class ;
+                                                  owl:unionOf ( <http://purl.obolibrary.org/obo/RO_0002577>
+                                                                <https://www.w3id.org/sco#SCO_0000006>
+                                                              )
+                                                ]
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000176> ;
+                                                  owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                       owl:unionOf ( <http://purl.obolibrary.org/obo/RO_0002577>
+                                                                                     <https://www.w3id.org/sco#SCO_0000006>
+                                                                                   )
+                                                                     ]
+                                                ]
+                                              )
+                                ] ;
                 <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "plastic debris agglomerate"@en ;
                 rdfs:comment "References to plastic debris aggregate formation and participation in pollution processes can be added as needed." ;
                 rdfs:label "plastic debris aggregate"@en ;
@@ -2106,6 +2103,22 @@ http://purl.obolibrary.org/obo/ENVO_02000200"""@en ,
                                                      ) ;
                                   rdf:type owl:Class
                                 ] ,
+                                [ rdf:type owl:Class ;
+                                  owl:unionOf ( [ rdf:type owl:Class ;
+                                                  owl:unionOf ( <http://purl.obolibrary.org/obo/RO_0002577>
+                                                                <https://www.w3id.org/sco#SCO_0000006>
+                                                              )
+                                                ]
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000176> ;
+                                                  owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                       owl:unionOf ( <http://purl.obolibrary.org/obo/RO_0002577>
+                                                                                     <https://www.w3id.org/sco#SCO_0000006>
+                                                                                   )
+                                                                     ]
+                                                ]
+                                              )
+                                ] ,
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty <http://purl.obolibrary.org/obo/RO_0000086> ;
                                   owl:someValuesFrom <http://purl.obolibrary.org/obo/PATO_0000125>
@@ -2246,6 +2259,22 @@ http://purl.obolibrary.org/obo/ENVO_02000200"""@en ,
                                                        ]
                                                      ) ;
                                   rdf:type owl:Class
+                                ] ,
+                                [ rdf:type owl:Class ;
+                                  owl:unionOf ( [ rdf:type owl:Class ;
+                                                  owl:unionOf ( <http://purl.obolibrary.org/obo/RO_0002577>
+                                                                <https://www.w3id.org/sco#SCO_0000006>
+                                                              )
+                                                ]
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000176> ;
+                                                  owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                       owl:unionOf ( <http://purl.obolibrary.org/obo/RO_0002577>
+                                                                                     <https://www.w3id.org/sco#SCO_0000006>
+                                                                                   )
+                                                                     ]
+                                                ]
+                                              )
                                 ] ,
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty <http://purl.obolibrary.org/obo/RO_0000086> ;
@@ -2680,6 +2709,22 @@ See, for instance, ISO/TR 21960:2020Plastics — Environmental aspects — State
 ###  https://www.w3id.org/climoo#ClimOO_0000242
 :ClimOO_0000242 rdf:type owl:Class ;
                 rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_23367> ,
+                                [ rdf:type owl:Class ;
+                                  owl:unionOf ( [ rdf:type owl:Class ;
+                                                  owl:unionOf ( <http://purl.obolibrary.org/obo/RO_0002577>
+                                                                <https://www.w3id.org/sco#SCO_0000006>
+                                                              )
+                                                ]
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000176> ;
+                                                  owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                       owl:unionOf ( <http://purl.obolibrary.org/obo/RO_0002577>
+                                                                                     <https://www.w3id.org/sco#SCO_0000006>
+                                                                                   )
+                                                                     ]
+                                                ]
+                                              )
+                                ] ,
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty <http://purl.obolibrary.org/obo/RO_0000086> ;
                                   owl:someValuesFrom <http://purl.obolibrary.org/obo/PATO_0000125>
@@ -2770,6 +2815,22 @@ See, for instance, ISO/TR 21960:2020Plastics — Environmental aspects — State
                                                        ]
                                                      ) ;
                                   rdf:type owl:Class
+                                ] ,
+                                [ rdf:type owl:Class ;
+                                  owl:unionOf ( [ rdf:type owl:Class ;
+                                                  owl:unionOf ( <http://purl.obolibrary.org/obo/RO_0002577>
+                                                                <https://www.w3id.org/sco#SCO_0000006>
+                                                              )
+                                                ]
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000176> ;
+                                                  owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                       owl:unionOf ( <http://purl.obolibrary.org/obo/RO_0002577>
+                                                                                     <https://www.w3id.org/sco#SCO_0000006>
+                                                                                   )
+                                                                     ]
+                                                ]
+                                              )
                                 ] ,
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty <http://purl.obolibrary.org/obo/RO_0000091> ;
@@ -2941,6 +3002,22 @@ See, for instance, ISO/TR 21960:2020Plastics — Environmental aspects — State
                                                        ]
                                                      ) ;
                                   rdf:type owl:Class
+                                ] ,
+                                [ rdf:type owl:Class ;
+                                  owl:unionOf ( [ rdf:type owl:Class ;
+                                                  owl:unionOf ( <http://purl.obolibrary.org/obo/RO_0002577>
+                                                                <https://www.w3id.org/sco#SCO_0000006>
+                                                              )
+                                                ]
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000176> ;
+                                                  owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                       owl:unionOf ( <http://purl.obolibrary.org/obo/RO_0002577>
+                                                                                     <https://www.w3id.org/sco#SCO_0000006>
+                                                                                   )
+                                                                     ]
+                                                ]
+                                              )
                                 ] ,
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000110> ;
@@ -3749,6 +3826,55 @@ We plan to deprecate this class and reuse the PMDco class as soon as this latter
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional> .
 
 
+###  https://www.w3id.org/climoo#ClimOO_0000294
+:ClimOO_0000294 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000295 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000057> ;
+                                  owl:someValuesFrom :ClimOO_0000253
+                                ] ;
+                rdfs:label "plastic weathering"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A weathering process of a piece of synthetic polymer-based material that applies to a piece of plastic."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional> .
+
+
+###  https://www.w3id.org/climoo#ClimOO_0000295
+:ClimOO_0000295 rdf:type owl:Class ;
+                rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000015> ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000057> ;
+                                  owl:someValuesFrom :ClimOO_0000150
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000117> ;
+                                  owl:someValuesFrom [ rdf:type owl:Class ;
+                                                       owl:unionOf ( <https://www.w3id.org/sco#SCO_0000007>
+                                                                     <https://www.w3id.org/sco#SCO_0000008>
+                                                                     <https://www.w3id.org/sco#SCO_0000009>
+                                                                   )
+                                                     ]
+                                ] ;
+                <http://purl.org/dc/terms/source> "http://dx.doi.org/10.1351/PAC-REC-10-12-04" ;
+                rdfs:label "weathering process of a piece of synthetic polymer-based material"@en ;
+                rdfs:seeAlso """http://purl.obolibrary.org/obo/ENVO_06105119 
+http://purl.obolibrary.org/obo/ENVO_06105126""" ;
+                <http://www.w3.org/2004/02/skos/core#comment> "References to weatherability can be included as needed."@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A process driven by natural forces that applies to a piece of synthetic polymer-based material and results in changing appearance or mechanical properties of that piece."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional> .
+
+
+###  https://www.w3id.org/climoo#ClimOO_0000296
+:ClimOO_0000296 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000295 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000057> ;
+                                  owl:someValuesFrom :ClimOO_0000163
+                                ] ;
+                rdfs:label "plastic debris weathering"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A weathering process of a piece of synthetic polymer-based material that applies to a plastic debris particle."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional> .
+
+
 #################################################################
 #    Individuals
 #################################################################
@@ -3863,6 +3989,14 @@ UNI EN ISO 24187:2023 - Principles for the analysis of microplastics present in 
 Work to align representations of plans and plan specifications between IAO and CCO is required. We envision discussions with subject matter experts.
 See https://www.commoncoreontologies.org/ont00000974
 https://www.commoncoreontologies.org/ont00000476"""@en .
+
+
+<https://w3id.org/pmd/co/PMD_0000890> <http://www.w3.org/2004/02/skos/core#comment> """ClimOO Ontology comment:
+We included this class for possible implementations. Subclasses can be specified, for instance, for plastics, as needed."""@en .
+
+
+<https://w3id.org/pmd/co/PMD_0000891> <http://www.w3.org/2004/02/skos/core#comment> """ClimOO Ontology comment:
+We included this class for possible implementations. Subclasses can be specified, for instance, for plastics, as needed."""@en .
 
 
 ###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
