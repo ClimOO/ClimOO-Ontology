@@ -69,9 +69,6 @@ owl:minQualifiedCardinality rdf:type owl:AnnotationProperty .
 #    Object Properties
 #################################################################
 
-###  http://www.ontologyrepository.com/CommonCoreOntologies/process_starts
-<http://www.ontologyrepository.com/CommonCoreOntologies/process_starts> rdf:type owl:ObjectProperty .
-
 
 #################################################################
 #    Classes
@@ -1471,6 +1468,10 @@ http://purl.obolibrary.org/obo/ENVO_1000745""" ;
                        [ rdf:type owl:Restriction ;
                          owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000176> ;
                          owl:someValuesFrom :atmosphere
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty <http://purl.obolibrary.org/obo/RO_0002353> ;
+                         owl:someValuesFrom :Cloud_Formation
                        ] ;
        rdfs:label "cloud"@en ;
        <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
@@ -1478,11 +1479,7 @@ http://purl.obolibrary.org/obo/ENVO_1000745""" ;
 
 ###  https://www.w3id.org/climoo/climoo-sdc2#Cloud_Formation
 :Cloud_Formation rdf:type owl:Class ;
-                 rdfs:subClassOf :ClimOO_0000320 ,
-                                 [ rdf:type owl:Restriction ;
-                                   owl:onProperty <http://purl.obolibrary.org/obo/RO_0002234> ;
-                                   owl:someValuesFrom :Cloud
-                                 ] ;
+                 rdfs:subClassOf :ClimOO_0000320 ;
                  rdfs:label "cloud formation"@en ;
                  <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional> .
 
@@ -2777,10 +2774,6 @@ revisions may specify axioms with respect to cryospheric and more generally hydr
                                       [ rdf:type owl:Restriction ;
                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000057> ;
                                         owl:someValuesFrom :Water
-                                      ] ,
-                                      [ rdf:type owl:Restriction ;
-                                        owl:onProperty <http://purl.obolibrary.org/obo/RO_0002212> ;
-                                        owl:someValuesFrom :Plant_Transpiration
                                       ] ;
                       rdfs:label "leaf stomata closure"@en ;
                       <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional> .
@@ -2910,10 +2903,6 @@ revisions may specify axioms with respect to cryospheric and more generally hydr
                                  [ rdf:type owl:Restriction ;
                                    owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000057> ;
                                    owl:someValuesFrom :Snow
-                                 ] ,
-                                 [ rdf:type owl:Restriction ;
-                                   owl:onProperty <http://purl.obolibrary.org/obo/RO_0002213> ;
-                                   owl:someValuesFrom :Streamflow
                                  ] ,
                                  [ rdf:type owl:Restriction ;
                                    owl:onProperty <http://purl.obolibrary.org/obo/RO_0002234> ;
