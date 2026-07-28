@@ -8,11 +8,11 @@
 
 <https://www.w3id.org/climoo/climoo-sdc2> rdf:type owl:Ontology ;
                                            owl:versionIRI :sdc2-v1.0.0 ;
-                                           owl:imports <http://ClimOO/climoo/climoo-sdc2/imports/cco-imports#2026-05-29> ,
-                                                       <http://ClimOO/climoo/climoo-sdc2/imports/pato-imports#2026-05-27> ,
-                                                       <http://ClimOO/climoo/climoo-sdc2/imports/pmdco-imports#2026-07-20> ,
-                                                       <http://ClimOO/climoo/climoo-sdc2/imports/ro-imports#2026-05-29> ,
-                                                       <http://ClimOO/climoo/climoo-sdc2/imports/sdc-ontology-imports/sdc-ontology-gdc-imports#2026-04-08> ,
+                                           owl:imports <https://raw.githubusercontent.com/ClimOO/ClimOO-Ontology/refs/heads/main/ClimOO%20material/src/ontology/sdc2%20imports/cco-imports.ttl> ,
+                                                       <https://raw.githubusercontent.com/ClimOO/ClimOO-Ontology/refs/heads/main/ClimOO%20material/src/ontology/sdc2%20imports/pato-imports.ttl> ,
+                                                       <https://raw.githubusercontent.com/ClimOO/ClimOO-Ontology/refs/heads/main/ClimOO%20material/src/ontology/sdc2%20imports/pmdco-imports.ttl> ,
+                                                       <https://raw.githubusercontent.com/ClimOO/ClimOO-Ontology/refs/heads/main/ClimOO%20material/src/ontology/sdc2%20imports/ro-imports.ttl> ,
+                                                       <https://raw.githubusercontent.com/ClimOO/ClimOO-Ontology/refs/heads/main/ClimOO%20material/src/ontology/sdc2%20imports/sdc-onto-regulations-imports.ttl> ,
                                                        <https://www.w3id.org/sco/sco-b#v1.1.0/sco-b> ;
                                            <http://purl.org/dc/terms/contributor> "Giorgio A. Ubbiali" ,
                                                                                   "Ludger Jansen" ;
