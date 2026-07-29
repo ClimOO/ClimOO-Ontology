@@ -66,11 +66,6 @@ owl:minQualifiedCardinality rdf:type owl:AnnotationProperty .
 
 
 #################################################################
-#    Object Properties
-#################################################################
-
-
-#################################################################
 #    Classes
 #################################################################
 
@@ -619,7 +614,7 @@ _:genid37 rdf:type owl:Restriction ;
                                     ] ;
                 rdfs:subClassOf <http://www.ontologyrepository.com/CommonCoreOntologies/MeasurementInformationContentEntity> ;
                 rdfs:label "climate variability - measurement"@en ;
-                <http://www.w3.org/2004/02/skos/core#definition> "An information content entity that is a measurement of the deviations of climate over a period of time from the long-term climate statistics for the corresponding calendar period.An information content entity that is a measurement of the deviations of climate over a period of time from the long-term climate statistics for the corresponding calendar period."@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "An information content entity that is a measurement of the deviations of climate over a period of time from the long-term climate statistics for the corresponding calendar period."@en ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom> "https://unterm.un.org/unterm2/en/view/e0be578f-2cfc-401c-b536-7d5de7fe8559" ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> ;
                 <https://www.w3id.org/sco#SCO_0000039> :ClimOO_0000306 ,
@@ -3127,7 +3122,7 @@ We envision discussions with subject matter experts on whether this class is cor
 ###  https://www.w3id.org/climoo/climoo-sdc2#Photosynthesis
 :Photosynthesis rdf:type owl:Class ;
                 rdfs:subClassOf :Plant_Physical_Process ;
-                rdfs:label "photosynthesis"@en ;
+                rdfs:label "plant photosynthesis"@en ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional> .
 
 
