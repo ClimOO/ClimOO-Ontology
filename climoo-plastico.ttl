@@ -1454,28 +1454,26 @@ We envision implementing such definitions in accordance with regulation revision
 
 ###  https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000171
 :ClimOO_0000171 rdf:type owl:Class ;
-                owl:equivalentClass [ owl:intersectionOf ( :ClimOO_0000153
-                                                           [ rdf:type owl:Restriction ;
-                                                             owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000196> ;
-                                                             owl:someValuesFrom <http://purl.obolibrary.org/obo/BFO_0000034>
-                                                           ]
-                                                         ) ;
-                                      rdf:type owl:Class
-                                    ] ;
-                rdfs:subClassOf :ClimOO_0000153 ;
-                <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "plastic item"@en ;
+                rdfs:subClassOf [ owl:intersectionOf ( :ClimOO_0000253
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000196> ;
+                                                         owl:someValuesFrom <http://purl.obolibrary.org/obo/BFO_0000034>
+                                                       ]
+                                                     ) ;
+                                  rdf:type owl:Class
+                                ] ;
                 <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> "plastic artifact"@en ;
                 rdfs:comment "Further details concerning stakeholders and objective and action specifications can be added to the axiomatixation of this class, as needed."@en ,
                              "References to objects made of other synthetic polymer-based materials can be included if needed."@en ;
                 rdfs:label "plastic object"@en ;
-                <http://www.w3.org/2004/02/skos/core#definition> "A piece of synthetic plastic that bears some function(s)."@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A piece of plastic that bears some function(s)."@en ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource :ClimOO_0000171 ;
    owl:annotatedProperty <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> ;
    owl:annotatedTarget "plastic artifact"@en ;
-   rdfs:comment "We use the term \"piece of plastic\" to describe any BFO:object that is made from plastic, whereas we use the term \"plastic object\" for those that hold a designated function."@en
+   rdfs:comment "We use the term \"piece of plastic\" to describe any BFO:object that is made from plastic, whereas we use the term \"plastic object\" for those that hold a designated function. The term “plastic artifact” is a narrow synonym. This characterization may be revised on the basis of real-world data, as needed."@en
  ] .
 
 
@@ -3882,6 +3880,22 @@ http://purl.obolibrary.org/obo/ENVO_06105126""" ;
                 rdfs:label "plastic debris weathering"@en ;
                 <http://www.w3.org/2004/02/skos/core#definition> "A weathering process of a piece of synthetic polymer-based material that applies to a plastic debris particle."@en ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional> .
+
+
+###  https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000363
+:ClimOO_0000363 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000171 ,
+                                [ owl:intersectionOf ( :ClimOO_0000171
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000110> ;
+                                                         owl:someValuesFrom :ClimOO_0000248
+                                                       ]
+                                                     ) ;
+                                  rdf:type owl:Class
+                                ] ;
+                rdfs:comment "A plastic object that is made of synthetic plastic."@en ;
+                rdfs:label "synthetic plastic object"@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
 
 
 #################################################################
