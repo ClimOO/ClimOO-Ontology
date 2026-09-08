@@ -1836,7 +1836,7 @@ The original model seems primarily to refer to this class and subclasses for hum
 
 ###  https://www.w3id.org/climoo/climoo-sdc2#Emission_of_Non-CO2_Greenhouse_Gas
 :Emission_of_Non-CO2_Greenhouse_Gas rdf:type owl:Class ;
-                                    rdfs:subClassOf :ClimOO_0000320 ,
+                                    rdfs:subClassOf :Emission_of_Greenhouse_Gas ,
                                                     [ rdf:type owl:Restriction ;
                                                       owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000167> ;
                                                       owl:someValuesFrom [ owl:intersectionOf ( :Greenhouse_Gas
@@ -1855,7 +1855,7 @@ The original model seems primarily to refer to this class and subclasses for hum
 
 ###  https://www.w3id.org/climoo/climoo-sdc2#Emission_of_Ozone-depleting_Substances
 :Emission_of_Ozone-depleting_Substances rdf:type owl:Class ;
-                                        rdfs:subClassOf :ClimOO_0000320 ,
+                                        rdfs:subClassOf :Emission_of_Greenhouse_Gas ,
                                                         _:genid254 ;
                                         rdfs:comment """ClimOO Ontology comment:
 The original model seems primarily to refer to this class and subclasses for human-driven phenomena. However, the terminology used and the presence of a specific “Human-induced Greenhouse Gas Emission” class seem to indicate a broader applicability. We included these classes as having a broader applicability beyond human-driven phenomena, and created specific human-focused classes. Implementation may follow."""@en ;
@@ -1882,7 +1882,7 @@ this axiom is provisional. Reference to other types of ozone depleting substance
 
 ###  https://www.w3id.org/climoo/climoo-sdc2#Emission_of_Tropospheric_Ozone_Precursors
 :Emission_of_Tropospheric_Ozone_Precursors rdf:type owl:Class ;
-                                           rdfs:subClassOf :ClimOO_0000320 ,
+                                           rdfs:subClassOf :Emission_of_Greenhouse_Gas ,
                                                            _:genid259 ;
                                            rdfs:comment """ClimOO Ontology comment:
 The original model seems primarily to refer to this class and subclasses for human-driven phenomena. However, the terminology used and the presence of a specific “Human-induced Greenhouse Gas Emission” class seem to indicate a broader applicability. We included these classes as having a broader applicability beyond human-driven phenomena, and created specific human-focused classes. Implementation may follow."""@en ;
@@ -3257,9 +3257,13 @@ For the current purposes of the ClimOO ontology suite, we imported only the firs
 ###  https://www.w3id.org/climoo/climoo-sdc2#Release_of_Greenhouse_Gases_from_Permafrost
 :Release_of_Greenhouse_Gases_from_Permafrost rdf:type owl:Class ;
                                              rdfs:subClassOf :Cryospheric_Physical_Process ,
-                                                             [ rdf:type owl:Restriction ;
-                                                               owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000057> ;
-                                                               owl:someValuesFrom :Greenhouse_Gas
+                                                             [ owl:intersectionOf ( :Emission_of_Greenhouse_Gas
+                                                                                    [ rdf:type owl:Restriction ;
+                                                                                      owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000057> ;
+                                                                                      owl:someValuesFrom :Greenhouse_Gas
+                                                                                    ]
+                                                                                  ) ;
+                                                               rdf:type owl:Class
                                                              ] ;
                                              rdfs:label "release of greenhouse gases from permafrost"@en ;
                                              <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional> .

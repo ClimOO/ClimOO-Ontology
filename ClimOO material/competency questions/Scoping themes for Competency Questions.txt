@@ -1,3 +1,0 @@
-Scoping themes for Competency Questions (CQs)
-This is a list of the main themes employed in scoping the Competency Questions (CQs) to structure and validate the ClimOO Ontology:
-- Types and characteristics of plastics and microplastics.- Origins of plastic particles.- Products of the corruption of plastic items, where they go.- Extent of plastics and microplastics in agriculture, today.- Threats of plastic pollution in agriculture related to climate.- Possible climate-neutral alternative to plastics.
