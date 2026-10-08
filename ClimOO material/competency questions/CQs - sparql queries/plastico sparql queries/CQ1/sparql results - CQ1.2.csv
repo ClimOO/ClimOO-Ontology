@@ -1,0 +1,27 @@
+subClass,label,definition
+https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000098,bio-based plastic object,A plastic object that is primarily made of bio-based plastic.
+https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000108,biodegradable plastic object,A plastic object that is primarily made of biodegradable plastic.
+https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000116,compostable plastic object,A plastic object that is primarily made of compostable plastic.
+https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000133,macro-particle of plastic,A piece of plastic that is 1 cm or more in its largest dimension.
+https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000134,mega-particle of plastic,A piece of plastic that is greater than 1 meter in its largest dimension.
+https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000135,meso-particle of plastic,A piece of plastic that is between 1 and 10 mm in its largest dimension.
+https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000136,micro-particle of plastic,A piece of plastic that is between 1 and 1000 µm in its largest dimension.
+https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000142,nano-particle of plastic,A piece of plastic that is between 1 and 1000 nm in its largest dimension.
+https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000143,piece of bio-based plastic,A piece of synthetic plastic that is primarily made of bio-based plastic.
+https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000144,piece of biodegradable plastic,A piece of plastic that is primarily made of biodegradable plastic.
+https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000145,piece of biodegradable synthetic plastic,A piece of synthetic plastic that is primarily made of biodegradable plastic.
+https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000146,piece of compostable synthetic plastic,A piece of biodegradable plastic that is primarily made of compostable plastic.
+https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000151,piece of recyclable plastic,A piece of synthetic plastic that is primarily made of recyclable plastic.
+https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000152,piece of recycled plastic,A piece of synthetic plastic that is primarily made of recycled plastic.
+https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000153,piece of synthetic plastic,A piece of plastic that is made of synthetic plastic.
+https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000155,piece of virgin plastic,A piece of synthetic plastic that is primarily made of virgin plastic.
+https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000255,plastic film,"A piece of synthetic plastic which is flexible, thin, and planar."
+https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000256,plastic fragment,A piece of plastic that is an output of a plastic fragmentation process.
+https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000257,plastic line,A piece of plastic which is linear and flexible.
+https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000259,plastic nurdle,A plastic pellet that is manufactured in such a way that its size enables quick melting thereby making it usable for further downstream manufacturing processes.
+https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000171,plastic object,A piece of plastic that bears some function(s).
+https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000258,plastic pellet,"A piece of solid (at room temperature) synthetic plastic which is 1) hard, 2) has a smooth external surface, and 3) has a roughly spherical or granular shape."
+https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000192,recyclable plastic object,A plastic object that is primarily made of recyclable plastic.
+https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000198,recycled plastic object,A plastic object that is primarily made of recycled plastic.
+https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000363,synthetic plastic object,None
+https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000223,virgin plastic object,A plastic object that is primarily made of virgin plastic.

@@ -1,0 +1,147 @@
+# CQ1: What is a climate system? And its components?
+
+# Description: This CQ requires assessing whether there is a class for climate systems and one for climate system components, and identifying the related definitions and perspectives according to which it is defined. In addition, it can be equally assessed which types of climate system components exist. 
+
+# In order to retrieve all subclasses, ensure you run the SPARQL queries in an environment where automatic reasoners can run first. This is necessary because SPARQL queries would not recognize classes that include the subclass axiom as part of more complex axioms and would retrieve only classes where the subclass axiom is directly expressed as an independent triple in the ontology. SPARQL queries do not automatically interpret OWL restrictions and detect only explicit triples.
+# We generated and exported a TTL file containing inferred axioms of ClimOO-SDC2 by HermiT 1.4.3.456 via Protégé, and then performed SPARQL queries against this file. The runner scripts load this file. The inferred ontology file contains all annotations, classes
+# The inferred ontology file also contains all annotations, classes, and object properties from the ClimOO imports. Please ignore such materials and refer directly to the ontology file in the main repo directory for accurate details.
+# The TTL file is findable into the same directory of this file, at the link: https://github.com/ClimOO/ClimOO-Ontology/tree/main/ClimOO%20material/competency%20questions/CQs%20-%20sparql%20queries/climoo-sdc2%20sparql%20queries/CQ1/climoo-sdc2-inferred-hierarchies-2026-09-14.ttl
+
+# SPARQL query 1.1
+PREFIX ClimOO: <https://www.w3id.org/climoo/climoo-sdc2#>
+PREFIX SCO: <https://www.w3id.org/sco#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+
+
+SELECT ?class ?definition ?perspective ?perspectiveLabel ?perspectiveDescription
+WHERE {
+    ?class a owl:Class ;
+           skos:definition ?definition;
+           SCO:SCO_0000039 ?perspective ;
+           rdfs:label ?x .
+
+               OPTIONAL {
+        ?perspective rdfs:label ?perspectiveLabel .
+    }
+    OPTIONAL {
+        ?perspective dcterms:description ?perspectiveDescription .
+    }
+  FILTER(str(?x) = "climate system")
+           
+}
+
+# The query can be split into two queries: first, asking whether there is a class for climate system and what its definition is, and then asking which perspectives are involved, if any are specified. In this way, the results are more elegant, avoiding SPARQL from repeating the class IRI and definition for each perspective. 
+
+# SPARQL query 1.1.1
+
+PREFIX ClimOO: <https://www.w3id.org/climoo/climoo-sdc2#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+
+SELECT ?class ?definition
+WHERE {
+    ?class a owl:Class ;
+           skos:definition ?definition;
+           rdfs:label ?x .
+  FILTER(str(?x) = "climate system")
+           
+}
+
+# SPARQL query 1.1.2
+
+PREFIX ClimOO: <https://www.w3id.org/climoo/climoo-sdc2#>
+PREFIX SCO: <https://www.w3id.org/sco#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+
+SELECT ?perspective ?perspectiveLabel ?perspectiveDescription
+WHERE {
+    ClimOO:ClimOO_0000301 SCO:SCO_0000039 ?perspective .
+    ?perspective rdfs:label ?perspectiveLabel .
+   OPTIONAL {
+        ?perspective dcterms:description ?perspectiveDescription .
+    }
+}
+
+# SPARQL query 1.2
+
+PREFIX ClimOO: <https://www.w3id.org/climoo/climoo-sdc2#>
+PREFIX SCO: <https://www.w3id.org/sco#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+
+
+SELECT ?class ?definition ?perspective ?perspectiveLabel ?perspectiveDescription
+WHERE {
+    ?class a owl:Class ;
+           skos:definition ?definition;
+           SCO:SCO_0000039 ?perspective ;
+           rdfs:label ?x .
+
+               OPTIONAL {
+        ?perspective rdfs:label ?perspectiveLabel .
+    }
+    OPTIONAL {
+        ?perspective dcterms:description ?perspectiveDescription .
+    }
+  FILTER(str(?x) = "climate system component")
+           
+}
+
+# The query can be split into two queries: first, asking whether there is a class for climate system component and what its definition is, and then asking which perspectives are involved, if any are specified. In this way, the results are more elegant, avoiding SPARQL from repeating the class IRI and definition for each perspective. 
+
+# SPARQL query 1.2.1
+
+PREFIX ClimOO: <https://www.w3id.org/climoo/climoo-sdc2#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+
+SELECT ?class ?definition
+WHERE {
+    ?class a owl:Class ;
+           skos:definition ?definition;
+           rdfs:label ?x .
+  FILTER(str(?x) = "climate system component")
+           
+}
+
+# SPARQL query 1.2.2
+
+PREFIX ClimOO: <https://www.w3id.org/climoo/climoo-sdc2#>
+PREFIX SCO: <https://www.w3id.org/sco#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+
+SELECT ?perspective ?perspectiveLabel ?perspectiveDescription
+WHERE {
+    ClimOO:ClimOO_0000302 SCO:SCO_0000039 ?perspective .
+    ?perspective rdfs:label ?perspectiveLabel .
+   OPTIONAL {
+        ?perspective dcterms:description ?perspectiveDescription .
+    }
+}
+
+# SPARQL query 1.3
+
+PREFIX ClimOO: <https://www.w3id.org/climoo/climoo-sdc2#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT ?subClass ?label ?definition
+WHERE {
+  ?subClass rdfs:subClassOf+ ClimOO:ClimOO_0000302 .
+  OPTIONAL { ?subClass rdfs:label ?label }
+  OPTIONAL { ?subClass skos:definition ?definition }
+  
+}
+ORDER BY ?label
+

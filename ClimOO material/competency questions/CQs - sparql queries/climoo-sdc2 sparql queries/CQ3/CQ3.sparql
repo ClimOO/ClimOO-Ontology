@@ -1,0 +1,23 @@
+# CQ3: What types of GHG emissions exist?
+
+# Description: This CQ requires assessing which types of GHG emissions exist.
+
+# In order to retrieve all subclasses, ensure you run the SPARQL queries in an environment where automatic reasoners can run first.  This is necessary because SPARQL queries would not recognize classes that include the subclass axiom as part of more complex axioms and would retrieve only classes where the subclass axiom is directly expressed as an independent triple in the ontology. SPARQL queries do not automatically interpret OWL restrictions and detect only explicit triples.
+# We generated and exported a TTL file containing inferred axioms of ClimOO-SDC2 by HermiT 1.4.3.456 via Protégé, and then performed SPARQL queries against this file. The runner scripts load this file.
+# The inferred ontology file also contains all annotations, classes, and object properties from the ClimOO imports. Please ignore such materials and refer directly to the ontology file in the main repo directory for accurate details.
+# The TTL file is findable into the same directory of this file, at the link: https://github.com/ClimOO/ClimOO-Ontology/tree/main/ClimOO%20material/competency%20questions/CQs%20-%20sparql%20queries/climoo-sdc2%20sparql%20queries/CQ3/climoo-sdc2-inferred-hierarchies-2026-09-12.ttl
+
+# SPARQL query 3
+PREFIX ClimOO: <https://www.w3id.org/climoo/climoo-sdc2#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT ?subClass ?label ?definition
+WHERE {
+  ?subClass rdfs:subClassOf+ ClimOO:Emission_of_Greenhouse_Gas .
+  OPTIONAL { ?subClass rdfs:label ?label }
+  OPTIONAL { ?subClass skos:definition ?definition }
+  
+}
+ORDER BY ?label
+

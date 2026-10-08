@@ -1,0 +1,33 @@
+# CQ1: What is the life cycle of plastic objects?
+
+# Description: This CQ requires assessing wheter there are classes for the processes constituting the life cycle of a plastic object. We currently focus on the main processes of manufacturing, usage, transportation, and disposal, as indicated by stakeholders.
+
+# In order to retrieve all subclasses, ensure you run the SPARQL queries in an environment where automatic reasoners can run first.  This is necessary because SPARQL queries would not recognize classes that include the subclass axiom as part of more complex axioms and would retrieve only classes where the subclass axiom is directly expressed as an independent triple in the ontology. SPARQL queries do not automatically interpret OWL restrictions and detect only explicit triples.
+# We generated and exported a TTL file containing inferred axioms of PlasticO by HermiT 1.4.3.456 via Protégé, and then performed SPARQL queries against this file. The runner scripts load this file.
+# The TTL file is findable into the directory of PlasticO CQ1, at the link: https://github.com/ClimOO/ClimOO-Ontology/tree/main/ClimOO%20material/competency%20questions/CQs%20-%20sparql%20queries/plastico%20sparql%20queries/CQ1/climoo-plastico-inferred-hierarchies-2026-09-11.ttl
+
+
+# SPARQL query 3
+
+PREFIX ClimOO: <https://www.w3id.org/climoo/climoo-plastico#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+
+SELECT ?class ?label ?definition 
+WHERE {
+    ?class a owl:Class ;
+           skos:definition ?definition;
+           rdfs:label ?label .
+  FILTER
+    (str(?label) = ?x)
+   
+   VALUES ?x {
+    "plastic object manufacturing process"
+    "transportation process of a plastic object"
+    "plastic object usage process"
+    "disposal process of a plastic object"
+  } 
+           
+}

@@ -1,0 +1,4 @@
+perspective,perspectiveLabel,perspectiveDescription
+https://www.w3id.org/climoo/climoo-sdc2#ClimOO_0000306,"IPCC perspective on weather, climate, and climate change","This owl:NamedIndividual tracks the perspectives of the Intergovernmental Panel on Climate Change (IPCC) on weather, climate, and climate change according to which this ontology has been built."
+https://www.w3id.org/climoo/climoo-sdc2#ClimOO_0000307,"WMO perspective on weather, climate, and climate change","This owl:NamedIndividual tracks the perspectives of the World Metereological Organization (WMO) on weather, climat, and climate change according to which this ontology has been built."
+https://www.w3id.org/climoo/climoo-sdc2#ClimOO_0000308,"ClimOO project perspective on weather, climate, and climate change",This owl:NamedIndividual tracks the perspectives of ClimOO project participants according to which this ontology has been built.

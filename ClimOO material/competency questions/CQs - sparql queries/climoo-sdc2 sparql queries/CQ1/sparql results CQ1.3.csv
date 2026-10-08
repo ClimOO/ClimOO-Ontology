@@ -1,0 +1,7 @@
+subClass,label,definition
+https://www.w3id.org/climoo/climoo-sdc2#ClimOO_0000309,climate system agent,An climate system component that is an agent in an interaction among climate system components or in an interaction between climate system components and climate system environment components.
+https://www.w3id.org/climoo/climoo-sdc2#atmosphere,portion of atmosphere,None
+https://www.w3id.org/climoo/climoo-sdc2#Biosphere,portion of biosphere,None
+https://www.w3id.org/climoo/climoo-sdc2#Cryosphere,portion of cryosphere,None
+https://www.w3id.org/climoo/climoo-sdc2#Geosphere,portion of geosphere,None
+https://www.w3id.org/climoo/climoo-sdc2#Hydrosphere,portion of hydrosphere,None

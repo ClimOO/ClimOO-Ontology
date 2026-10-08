@@ -3767,7 +3767,7 @@ See, for instance, https://www.iso.org/standard/77957.html"""@en ,
                 rdfs:subClassOf :ClimOO_0000285 ,
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000167> ;
-                                  owl:someValuesFrom :ClimOO_0000153
+                                  owl:someValuesFrom :ClimOO_0000171
                                 ] ,
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty <http://purl.obolibrary.org/obo/RO_0002427> ;

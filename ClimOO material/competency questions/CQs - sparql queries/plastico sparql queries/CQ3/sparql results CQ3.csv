@@ -1,0 +1,5 @@
+class,label,definition
+https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000172,plastic object manufacturing process,A manufacturing process of a piece of synthetic plastic that has a plastic object as the main output.
+https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000173,plastic object usage process,A usage process of some piece of synthetic polymer-based material where at least one of the involved pieces of synthetic polymer-based material is a plastic object employed for a purpose.
+https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000281,disposal process of a plastic object,"A disposal process of a piece of plastic' that applies to some plastic object deemed to be waste, resulting in its removal and demise."
+https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000286,transportation process of a plastic object,A transportation process that concerns a piece of synthetic plastic.

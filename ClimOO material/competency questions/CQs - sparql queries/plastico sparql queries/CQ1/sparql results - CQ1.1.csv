@@ -1,0 +1,12 @@
+subClass,label,definition
+https://w3id.org/pmd/co/PMD_0050039,polybutylene succinate,"biodegradable thermoplastic polymer polyester that is synthesized via the polycondensation of succinic acid and 1,4-butanediol"
+https://w3id.org/pmd/co/PMD_0050037,polylactic acid,biodegradable thermoplastic polymer produced from renewable resources such as corn starch
+https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000097,portion of bio-based plastic material,A portion of synthetic plastic material that is composed of biobased polymer molecules.
+https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000107,portion of biodegradable plastic material,"A portion of plastic material that is constituted by biodegradable polymer molecules, is the main input of a process of biodegradation of plastic."
+https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000117,portion of compostable synthetic plastic material,A portion of biodegradable synthetic plastic material that is copmosed of polymer molecules that bear a disposition to be degraded during a plastic composting process (compostability).
+https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000249,portion of natural plastic material,A potion of plastic that is constituted of polymer molecules produced by processes whose agents do not include humans or their technologies.
+https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000191,portion of recyclable plastic material,A portion of synthetic plastic material that is composed of recyclable polymer molecules.
+https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000197,portion of recycled plastic material,A portion of synthetic plastic material that is composed of recycled polymer molecules.
+https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000205,portion of synthetic biodegradable plastic material,A portion of plastic material that is composed of polymer molecules that are both synthetic and biodegradable.
+https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000248,portion of synthetic plastic material,A portion of plastic that is composed of some synthetic polymer molecules.
+https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000222,portion of virgin plastic material,A portion of plastic material that is composed by polymer molecules that have not been recycled.

@@ -1799,7 +1799,7 @@ We envision discussions with subject matter experts and implementations."""@en ;
 
 ###  https://www.w3id.org/climoo/climoo-sdc2#Emission_of_Aerosols
 :Emission_of_Aerosols rdf:type owl:Class ;
-                      rdfs:subClassOf :ClimOO_0000356 ;
+                      rdfs:subClassOf :Emission_of_Non-CO2_Greenhouse_Gas ;
                       rdfs:comment """ClimOO Ontology comment:
 The original model seems primarily to refer to this class and subclasses for human-driven phenomena. However, the terminology used and the presence of a specific “Human-induced Greenhouse Gas Emission” class seem to indicate a broader applicability. We included these classes as having a broader applicability beyond human-driven phenomena, and created specific human-focused classes. Implementation may follow."""@en ;
                       rdfs:label "emission of aerosols"@en ;
@@ -3260,7 +3260,7 @@ For the current purposes of the ClimOO ontology suite, we imported only the firs
                                                              [ owl:intersectionOf ( :Emission_of_Greenhouse_Gas
                                                                                     [ rdf:type owl:Restriction ;
                                                                                       owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000057> ;
-                                                                                      owl:someValuesFrom :Greenhouse_Gas
+                                                                                      owl:someValuesFrom :Permafrost
                                                                                     ]
                                                                                   ) ;
                                                                rdf:type owl:Class

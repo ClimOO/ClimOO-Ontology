@@ -1,0 +1,37 @@
+# CQ5: What is a source of plastic debris?
+
+# Description: This CQ requires assessing whether there is a class for plastic debris sources and identifying the related definition. As the SPARQL query shows that this class is characterized with respect to a corresponding role class, we queried the ontology for this role class too.
+
+# SPARQL query 5
+
+PREFIX ClimOO: <https://www.w3id.org/climoo/climoo-plastico#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+
+SELECT ?class ?definition 
+WHERE {
+    ?class a owl:Class ;
+           skos:definition ?definition;
+           rdfs:label ?x .
+  FILTER(str(?x) = "plastic debris source")
+           
+}
+
+# SPARQL query 5 (plastic debris source role) 
+
+PREFIX ClimOO: <https://www.w3id.org/climoo/climoo-plastico#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+
+SELECT ?class ?definition 
+WHERE {
+    ?class a owl:Class ;
+           skos:definition ?definition;
+           rdfs:label ?x .
+  FILTER(str(?x) = "plastic debris source role")
+           
+}

@@ -1,0 +1,65 @@
+# CQ2: What is climate?
+
+# Description: This CQ requires assessing whether there is a class for climate and identifying the related definition and perspectives according to which it is defined.
+
+# SPARQL query 2
+
+PREFIX ClimOO: <https://www.w3id.org/climoo/climoo-sdc2#>
+PREFIX SCO: <https://www.w3id.org/sco#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+
+
+SELECT ?class ?definition ?perspective ?perspectiveLabel ?perspectiveDescription
+WHERE {
+    ?class a owl:Class ;
+           skos:definition ?definition;
+           SCO:SCO_0000039 ?perspective ;
+           rdfs:label ?x .
+
+               OPTIONAL {
+        ?perspective rdfs:label ?perspectiveLabel .
+    }
+    OPTIONAL {
+        ?perspective dcterms:description ?perspectiveDescription .
+    }
+  FILTER(str(?x) = "climate")
+           
+}
+
+# The query can be split into two queries: first, asking whether there is a class for climate and what its definition is, and then asking which perspectives are involved, if any are specified. In this way, the results are more elegant, avoiding SPARQL from repeating the class IRI and definition for each perspective. 
+
+# SPARQL query 2.1
+
+PREFIX ClimOO: <https://www.w3id.org/climoo/climoo-sdc2#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+
+SELECT ?class ?definition
+WHERE {
+    ?class a owl:Class ;
+           skos:definition ?definition;
+           rdfs:label ?x .
+  FILTER(str(?x) = "climate")
+           
+}
+
+# SPARQL query 2.2
+
+PREFIX ClimOO: <https://www.w3id.org/climoo/climoo-sdc2#>
+PREFIX SCO: <https://www.w3id.org/sco#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+
+SELECT ?perspective ?perspectiveLabel ?perspectiveDescription
+WHERE {
+    ClimOO:ClimOO_0000297 SCO:SCO_0000039 ?perspective .
+    ?perspective rdfs:label ?perspectiveLabel .
+   OPTIONAL {
+        ?perspective dcterms:description ?perspectiveDescription .
+    }
+}

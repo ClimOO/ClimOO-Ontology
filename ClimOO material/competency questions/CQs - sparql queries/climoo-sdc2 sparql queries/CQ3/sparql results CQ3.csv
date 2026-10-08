@@ -1,0 +1,12 @@
+subClass,label,definition
+https://www.w3id.org/climoo/climoo-sdc2#Emission_of_CO2,emission of CO2,None
+https://www.w3id.org/climoo/climoo-sdc2#Emission_of_Aerosols,emission of aerosols,None
+https://www.w3id.org/climoo/climoo-sdc2#Emission_of_Non-CO2_Greenhouse_Gas,emission of non-CO2 greenhouse gas,None
+https://www.w3id.org/climoo/climoo-sdc2#Emission_of_Ozone-depleting_Substances,emission of ozone-depleting substances,None
+https://www.w3id.org/climoo/climoo-sdc2#Emission_of_Tropospheric_Ozone_Precursors,emission of tropospheric ozone precursors,None
+https://www.w3id.org/climoo/climoo-sdc2#ClimOO_0000336,human-induced emission of aerosols,None
+https://www.w3id.org/climoo/climoo-sdc2#ClimOO_0000356,human-induced emission of non-CO2 greenhouse gas,None
+https://www.w3id.org/climoo/climoo-sdc2#ClimOO_0000357,human-induced emission of ozone-depleting substances,None
+https://www.w3id.org/climoo/climoo-sdc2#ClimOO_0000358,human-induced emission of tropospheric ozone precursors,None
+https://www.w3id.org/climoo/climoo-sdc2#Human-induced_Greenhouse_Gas_Emission,human-induced greenhouse gas emission,None
+https://www.w3id.org/climoo/climoo-sdc2#Release_of_Greenhouse_Gases_from_Permafrost,release of greenhouse gases from permafrost,None

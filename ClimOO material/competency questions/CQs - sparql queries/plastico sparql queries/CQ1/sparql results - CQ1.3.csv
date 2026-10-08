@@ -1,0 +1,15 @@
+subClass,label,definition
+https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000127,film debris particle,"A plastic debris particle that is flexible, thin, and planar."
+https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000132,linear plastic debris particle,A plastic debris particle that is linear and flexible.
+https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000233,macroplastic particle - Hartmann et al. (2019) classification,A plastic debris particle that is between 1 cm and 1 m in its largest dimension.
+https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000232,mesoplastic particle - Hartmann et al. (2019) classification,A plastic debris particle that is between 1 and 10 mm in its largest dimension.
+https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000230,microplastic particle - Hartmann et al. (2019) classification,A plastic debris particle that is between 1 and 1000 µm in its largest dimension.
+https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000261,nanoplastic particle - Hartmann et al. (2019) classification,A plastic debris particle that is between 1 and 1000 nm in its largest dimension.
+https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000231,plastic debris particle - Hartmann et al. (2019) size classification,None
+https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000174,plastic pellet debris particle,A plastic pellet that has been released into an environmental material.
+https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000177,plastic surface coating debris particle,"A debris particle of polymer composite-based synthetic material that is or derives from some plastic-based surface coatings, such as paints, and has been released into some environmental material."
+https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000262,primary microplastic particle,"A microplastic debris particle that was, at the origin, intentionally designed and produced of this size (1-1000 µm)."
+https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000260,secondary microplastic particle,A microplastic debris particle that derives from a fragmentation process occurring in an environment (no human intention involved) or results from the usage of some items made of polymer-based materials.
+https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000204,submicron plastic debris particle,A nanoplastic particle that is between 100 and 1000 nm in its largest dimension.
+https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000219,tire wear and road particle,A tire wear particle that is aggregated with some road particles.
+https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000220,tire wear particle,A debris particle of polymer composite-based synthetic material that is an output of the abrasion process of vehicle tires during driving (vehicle motion).

@@ -1,0 +1,6 @@
+perspective,perspectiveLabel,perspectiveDescription
+https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000072,ClimOO project perspective on plastics,This owl:NamedIndividual tracks the perspectives of ClimOO project participants according to which this ontology has been built.
+https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000073,Hartmann et al. (2019) perspective on microplastics,This owl:NamedIndividual tracks the framework view proposed by Hartmann et al. (2019).
+https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000074,Rochman et al. (2019) perspective on microplastics,This owl:NamedIndividual tracks the framework view proposed by Rochman et al. (2019).
+https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000075,Perspective of GESAMP 2019 report on microplastics,This owl:NamedIndividual tracks the framework view proposed by the 2019 GESAMP report.
+https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000228,"European Union and Italy perspective on plastics, plastic pollution, biodegradability, and compostability",This owl:NamedIndividual aims to track current view endorsed by the Europeen Union.
