@@ -6,7 +6,7 @@
 # Manual comparison of the query results can follow.
 
 # # The SPARQL query runner used for the other queries does not work with the SPARQL form DESCRIBE. 
-# Thus, we performed the queries against the local version of PlasticO, using the SPARQL Executor plug-in for Visual Studio Code, on Giorgio A. Ubbiali's laptop. 
+# Thus, we performed the queries against the local version of PlasticO, using the SPARQL notebook plug-in for Visual Studio Code, on Giorgio A. Ubbiali's laptop. 
 # Results have been collected in a markdown file, findable in the same directory as this file.
 
 # SPARQL query 2.1
