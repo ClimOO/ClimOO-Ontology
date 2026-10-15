@@ -10,7 +10,7 @@
 
 <http://purl.obolibrary.org/obo/climoo/imports/pato_imports> rdf:type owl:Ontology ;
                                                               owl:versionIRI <http://purl.obolibrary.org/obo/climoo/imports/pato_imports#2026-02-24> ;
-                                                              rdfs:comment """This file contains ClimOO Ontology imports fletched from the Phenotype And Trait Ontology (PATO) via OntoFox (https://ontofox.hegroup.org/index.php). This file also contains additional ClimOO Ontology imports that have been manually fletched from PATO.
+                                                              rdfs:comment """This file contains ClimOO Ontology suite imports fletched from the Phenotype And Trait Ontology (PATO) via OntoFox (https://ontofox.hegroup.org/index.php). This file also contains additional ClimOO Ontology imports that have been manually fletched from PATO.
 
 Ontology source: https://ontobee.org/ontology/PATO"""@en ,
                                                                            "This file contains additional ClimOO Ontology imports from the Phenotype And Trait Ontology (PATO). These imports have been manually fletched from PATO."@en ;

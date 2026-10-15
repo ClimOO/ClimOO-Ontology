@@ -8,7 +8,7 @@
 
 <http://ClimOO/climoo/imports/obi-imports> rdf:type owl:Ontology ;
                                             owl:versionIRI <http://ClimOO/climoo/imports/obi-imports#2026-02-27> ;
-                                            rdfs:seeAlso """This file contains ClimOO Ontology imports from the Ontology for Biomedical Investigations (OBI). Imports were manually collected and revised. it also includes some imports from GO, RO, and COB reused by OBI.
+                                            rdfs:seeAlso """This file contains ClimOO Ontology suite imports from the Ontology for Biomedical Investigations (OBI). Imports were manually collected and revised. it also includes some imports from GO, RO, and COB reused by OBI.
 
 Ontology source: 
 https://github.com/obi-ontology/obi/releases/tag/v2025-12-18"""@en ,

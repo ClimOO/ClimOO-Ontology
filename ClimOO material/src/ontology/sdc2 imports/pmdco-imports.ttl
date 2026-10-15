@@ -8,7 +8,7 @@
 
 <http://ClimOO/climoo/climoo-sdc2/imports/pmdco-imports> rdf:type owl:Ontology ;
                                                           owl:versionIRI <http://ClimOO/climoo/climoo-sdc2/imports/pmdco-imports#2026-07-20> ;
-                                                          rdfs:seeAlso """This file contains ClimOO Ontology imports from the Platform MaterialDigital Core Ontology (PMDco). Imports were manually collected and revised.
+                                                          rdfs:seeAlso """This file contains ClimOO Ontology suite imports from the Platform MaterialDigital Core Ontology (PMDco). Imports were manually collected and revised.
 Ontology source: 
 https://github.com/materialdigital/core-ontology/releases/tag/v3.0.0"""@en ;
                                                           owl:versionInfo "2026-07-20" .

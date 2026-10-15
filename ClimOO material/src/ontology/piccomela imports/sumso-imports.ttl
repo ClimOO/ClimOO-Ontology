@@ -1,0 +1,449 @@
+@prefix : <http://ClimOO/climoo/climoo-piccomela/imports/sumso-imports#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://ClimOO/climoo/climoo-piccomela/imports/sumso-imports#> .
+
+<http://ClimOO/climoo/climoo-piccomela/imports/sumso-imports#> rdf:type owl:Ontology ;
+                                                                owl:versionIRI <http://ClimOO/climoo/climoo-piccomela/imports/sumso-imports#26-10-09> ;
+                                                                <http://purl.org/dc/terms/description> """This file contains ClimOO ontology suite imports from the Sustainable Meat Systems Ontology (SuMSO). Imports have been manually collected and revised.
+
+Ontology source: SuMSO V1.0.1.
+https://w3id.org/sumso"""@en ;
+                                                                rdfs:seeAlso "https://w3id.org/sumso/repo" ;
+                                                                owl:versionInfo "2026-10-09" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> rdf:type owl:AnnotationProperty .
+
+
+###  https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity
+<https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://purl.obolibrary.org/obo/BFO_0000057
+<http://purl.obolibrary.org/obo/BFO_0000057> rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000117
+<http://purl.obolibrary.org/obo/BFO_0000117> rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000137
+<http://purl.obolibrary.org/obo/BFO_0000137> rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000167
+<http://purl.obolibrary.org/obo/BFO_0000167> rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000176
+<http://purl.obolibrary.org/obo/BFO_0000176> rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000178
+<http://purl.obolibrary.org/obo/BFO_0000178> rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000184
+<http://purl.obolibrary.org/obo/BFO_0000184> rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/RO_0000087
+<http://purl.obolibrary.org/obo/RO_0000087> rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/RO_0000091
+<http://purl.obolibrary.org/obo/RO_0000091> rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/RO_0002163
+<http://purl.obolibrary.org/obo/RO_0002163> rdf:type owl:ObjectProperty .
+
+
+###  https://www.w3id.org/sco#SCO_0000037
+<https://www.w3id.org/sco#SCO_0000037> rdf:type owl:ObjectProperty .
+
+
+###  https://www.w3id.org/sco#SCO_0000038
+<https://www.w3id.org/sco#SCO_0000038> rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://w3id.org/sumso#SuMSO_0000004
+<https://w3id.org/sumso#SuMSO_0000004> rdf:type owl:Class ;
+                                       rdfs:subClassOf <https://www.w3id.org/sco#SCO_0000015> ;
+                                       rdfs:comment """ClimOO Ontology comment:
+we excluded the axiom referring to well-being as outside the current ClimOO scope. This can be re-added as needed."""@en ,
+                                                    """Here, the term “food” is used genuinely in a broad and over-comprehensive sense. 
+To delve more into the meanings of “food”, we refer to Borghini et al. (2021) and Borghini and Piras (2020,2021).
+
+
+Borghini, A., Piras, N., & Serini, B. (2021). From philosophy to ontology: Rethinking food concepts. In CEUR Workshop Proceedings. JOWO Joint Ontology Workshops Episode VII. CEUR-WS. https://air.unimi.it/retrieve/handle/2434/897444/1953096/paper6-IFOW.pdf
+
+Borghini, A., & Piras, N. (2020). Food and Foods. Toward a Definition. Rivista Italiana Di Filosofia Del Linguaggio. https://doi.org/10.4396/SFL2019ES06
+
+Borghini, Andrea, & Piras, N. (2021). On Interpreting Something as Food. Food Ethics, 6(1), 1. https://doi.org/10.1007/s41055-020-00082-5"""@en ;
+                                       rdfs:label "food system"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#definition> "A complex system that pertains to food, to some extent."@en ;
+                                       <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://w3id.org/sumso#SuMSO_0000018
+<https://w3id.org/sumso#SuMSO_0000018> rdf:type owl:Class ;
+                                       rdfs:subClassOf <https://www.w3id.org/sco#SCO_0000012> ,
+                                                       [ owl:intersectionOf ( <https://www.w3id.org/sco#SCO_0000012>
+                                                                              [ rdf:type owl:Restriction ;
+                                                                                owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000178> ;
+                                                                                owl:someValuesFrom <https://w3id.org/sumso#SuMSO_0000031>
+                                                                              ]
+                                                                              [ rdf:type owl:Restriction ;
+                                                                                owl:onProperty <http://purl.obolibrary.org/obo/RO_0002163> ;
+                                                                                owl:someValuesFrom <https://w3id.org/sumso#SuMSO_0000004>
+                                                                              ]
+                                                                              [ rdf:type owl:Restriction ;
+                                                                                owl:onProperty <http://purl.obolibrary.org/obo/RO_0002163> ;
+                                                                                owl:allValuesFrom <https://w3id.org/sumso#SuMSO_0000004>
+                                                                              ]
+                                                                            ) ;
+                                                         rdf:type owl:Class
+                                                       ] ;
+                                       rdfs:label "food system environment"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#definition> "A complex system environment that surrounds and is distinct and disjoint from a food system."@en ;
+                                       <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://w3id.org/sumso#SuMSO_0000022
+<https://w3id.org/sumso#SuMSO_0000022> rdf:type owl:Class ;
+                                       owl:equivalentClass [ owl:intersectionOf ( <https://www.w3id.org/sco#SCO_0000031>
+                                                                                  [ rdf:type owl:Restriction ;
+                                                                                    owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000137> ;
+                                                                                    owl:someValuesFrom <https://w3id.org/sumso#SuMSO_0000004>
+                                                                                  ]
+                                                                                ) ;
+                                                             rdf:type owl:Class
+                                                           ] ;
+                                       rdfs:subClassOf <https://www.w3id.org/sco#SCO_0000031> ;
+                                       rdfs:label "food system boundary"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#definition> "A complex system boundary of a food system."@en ;
+                                       <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://w3id.org/sumso#SuMSO_0000023
+<https://w3id.org/sumso#SuMSO_0000023> rdf:type owl:Class ;
+                                       rdfs:subClassOf <https://www.w3id.org/sco#SCO_0000032> ;
+                                       rdfs:label "food system spatial region"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#definition> "A complex system spatial region of a food system."@en ;
+                                       <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://w3id.org/sumso#SuMSO_0000024
+<https://w3id.org/sumso#SuMSO_0000024> rdf:type owl:Class ;
+                                       owl:equivalentClass [ owl:intersectionOf ( <https://www.w3id.org/sco#SCO_0000028>
+                                                                                  [ rdf:type owl:Restriction ;
+                                                                                    owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000176> ;
+                                                                                    owl:someValuesFrom <https://w3id.org/sumso#SuMSO_0000004>
+                                                                                  ]
+                                                                                ) ;
+                                                             rdf:type owl:Class
+                                                           ] ;
+                                       rdfs:subClassOf <https://www.w3id.org/sco#SCO_0000028> ;
+                                       rdfs:comment """Currently, SuMSO refers to food systems as covering different components. Following SCO, meat system components present perspectives.
+Nevertheless, we may want to restrict perspectives to living beings.
+A possible option may be the exclusion of the following axioms, in order to remove the necessary condition of having a perspective from “food systems component” class.
+
+'system component' and ('has disposition' some perspective) 
+
+'system component' and ('is carrier of' some 'perspective information content entity') 
+
+we refrain from proceeding as such, choosing solely to not establish corresponding \"perspective\" classes for food system components which are generally recognized as non-living entities. We envision discussions with subject matter experts."""@en ;
+                                       rdfs:label "food system component"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#definition> "A complex system component that belongs to a food system."@en ;
+                                       <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://w3id.org/sumso#SuMSO_0000025
+<https://w3id.org/sumso#SuMSO_0000025> rdf:type owl:Class ;
+                                       owl:equivalentClass [ owl:intersectionOf ( <https://w3id.org/sumso#SuMSO_0000024>
+                                                                                  [ rdf:type owl:Restriction ;
+                                                                                    owl:onProperty <https://www.w3id.org/sco#SCO_0000038> ;
+                                                                                    owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                                         owl:unionOf ( <https://w3id.org/sumso#SuMSO_0000027>
+                                                                                                                       <https://w3id.org/sumso#SuMSO_0000029>
+                                                                                                                     )
+                                                                                                       ]
+                                                                                  ]
+                                                                                ) ;
+                                                             rdf:type owl:Class
+                                                           ] ;
+                                       rdfs:subClassOf <https://www.w3id.org/sco#SCO_0000034> ;
+                                       rdfs:label "food system agent"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#definition> "A food system component that is an agent in an interaction among food system components or in an interaction between food system components and food system environment components."@en ;
+                                       <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://w3id.org/sumso#SuMSO_0000026
+<https://w3id.org/sumso#SuMSO_0000026> rdf:type owl:Class ;
+                                       owl:equivalentClass [ owl:intersectionOf ( <https://w3id.org/sumso#SuMSO_0000024>
+                                                                                  [ rdf:type owl:Restriction ;
+                                                                                    owl:onProperty <http://purl.obolibrary.org/obo/RO_0000087> ;
+                                                                                    owl:someValuesFrom <https://www.w3id.org/sco#SCO_0000018>
+                                                                                  ]
+                                                                                ) ;
+                                                             rdf:type owl:Class
+                                                           ] ;
+                                       rdfs:subClassOf <https://www.w3id.org/sco#SCO_0000036> ;
+                                       rdfs:label "food system stakeholder"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#definition> "A food system component with a stakeholder role."@en ;
+                                       <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://w3id.org/sumso#SuMSO_0000027
+<https://w3id.org/sumso#SuMSO_0000027> rdf:type owl:Class ;
+                                       rdfs:subClassOf <https://www.w3id.org/sco#SCO_0000022> ,
+                                                       [ owl:intersectionOf ( <https://www.w3id.org/sco#SCO_0000022>
+                                                                              [ rdf:type owl:Restriction ;
+                                                                                owl:onProperty <https://www.w3id.org/sco#SCO_0000037> ;
+                                                                                owl:someValuesFrom <https://w3id.org/sumso#SuMSO_0000025>
+                                                                              ]
+                                                                              [ rdf:type owl:Restriction ;
+                                                                                owl:onProperty <https://www.w3id.org/sco#SCO_0000037> ;
+                                                                                owl:allValuesFrom <https://w3id.org/sumso#SuMSO_0000025>
+                                                                              ]
+                                                                            ) ;
+                                                         rdf:type owl:Class
+                                                       ] ,
+                                                       [ owl:intersectionOf ( <https://www.w3id.org/sco#SCO_0000022>
+                                                                              [ rdf:type owl:Restriction ;
+                                                                                owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000167> ;
+                                                                                owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+                                                                                owl:onClass <https://w3id.org/sumso#SuMSO_0000024>
+                                                                              ]
+                                                                            ) ;
+                                                         rdf:type owl:Class
+                                                       ] ;
+                                       owl:disjointWith <https://w3id.org/sumso#SuMSO_0000028> ,
+                                                        <https://w3id.org/sumso#SuMSO_0000029> ;
+                                       rdfs:label "interaction among food system components"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#definition> "An interaction among complex system components that occurs among at least two food system components of a food system."@en ;
+                                       <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://w3id.org/sumso#SuMSO_0000028
+<https://w3id.org/sumso#SuMSO_0000028> rdf:type owl:Class ;
+                                       rdfs:subClassOf <https://www.w3id.org/sco#SCO_0000021> ,
+                                                       [ owl:intersectionOf ( <https://www.w3id.org/sco#SCO_0000021>
+                                                                              [ rdf:type owl:Restriction ;
+                                                                                owl:onProperty <https://www.w3id.org/sco#SCO_0000037> ;
+                                                                                owl:someValuesFrom <https://w3id.org/sumso#SuMSO_0000032>
+                                                                              ]
+                                                                              [ rdf:type owl:Restriction ;
+                                                                                owl:onProperty <https://www.w3id.org/sco#SCO_0000037> ;
+                                                                                owl:allValuesFrom <https://w3id.org/sumso#SuMSO_0000032>
+                                                                              ]
+                                                                            ) ;
+                                                         rdf:type owl:Class
+                                                       ] ,
+                                                       [ owl:intersectionOf ( <https://www.w3id.org/sco#SCO_0000021>
+                                                                              [ rdf:type owl:Restriction ;
+                                                                                owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000167> ;
+                                                                                owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+                                                                                owl:onClass <https://w3id.org/sumso#SuMSO_0000031>
+                                                                              ]
+                                                                            ) ;
+                                                         rdf:type owl:Class
+                                                       ] ;
+                                       owl:disjointWith <https://w3id.org/sumso#SuMSO_0000029> ;
+                                       rdfs:label "interaction among food system environment components"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#definition> "An interaction among complex system environment components that occurs among at least two food system environment components."@en ;
+                                       <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://w3id.org/sumso#SuMSO_0000029
+<https://w3id.org/sumso#SuMSO_0000029> rdf:type owl:Class ;
+                                       rdfs:subClassOf <https://www.w3id.org/sco#SCO_0000020> ,
+                                                       [ owl:intersectionOf ( <https://www.w3id.org/sco#SCO_0000020>
+                                                                              [ rdf:type owl:Restriction ;
+                                                                                owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000167> ;
+                                                                                owl:someValuesFrom <https://w3id.org/sumso#SuMSO_0000024>
+                                                                              ]
+                                                                              [ rdf:type owl:Restriction ;
+                                                                                owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000167> ;
+                                                                                owl:someValuesFrom <https://w3id.org/sumso#SuMSO_0000031>
+                                                                              ]
+                                                                              [ rdf:type owl:Restriction ;
+                                                                                owl:onProperty <https://www.w3id.org/sco#SCO_0000037> ;
+                                                                                owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                                     owl:unionOf ( <https://w3id.org/sumso#SuMSO_0000025>
+                                                                                                                   <https://w3id.org/sumso#SuMSO_0000032>
+                                                                                                                 )
+                                                                                                   ]
+                                                                              ]
+                                                                              [ rdf:type owl:Restriction ;
+                                                                                owl:onProperty <https://www.w3id.org/sco#SCO_0000037> ;
+                                                                                owl:allValuesFrom [ rdf:type owl:Class ;
+                                                                                                    owl:unionOf ( <https://w3id.org/sumso#SuMSO_0000025>
+                                                                                                                  <https://w3id.org/sumso#SuMSO_0000032>
+                                                                                                                )
+                                                                                                  ]
+                                                                              ]
+                                                                            ) ;
+                                                         rdf:type owl:Class
+                                                       ] ;
+                                       rdfs:label "interaction between food system components and food system environment components"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#definition> "An interaction between complex system components and complex system environment components that occurs between at least one food system component and one food system environment component where the latter belongs to the food system environment of the food system to which the food system component belongs."@en ;
+                                       <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://w3id.org/sumso#SuMSO_0000030
+<https://w3id.org/sumso#SuMSO_0000030> rdf:type owl:Class ;
+                                       rdfs:subClassOf <https://www.w3id.org/sco#SCO_0000010> ,
+                                                       [ owl:intersectionOf ( <https://www.w3id.org/sco#SCO_0000010>
+                                                                              [ rdf:type owl:Restriction ;
+                                                                                owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000057> ;
+                                                                                owl:someValuesFrom <https://w3id.org/sumso#SuMSO_0000004>
+                                                                              ]
+                                                                            ) ;
+                                                         rdf:type owl:Class
+                                                       ] ;
+                                       rdfs:comment """ClimOO Ontology comment:
+we excluded the axiom referring to food supply chains as outside the current ClimOO scope. This can be re-added as needed."""@en ;
+                                       rdfs:label "food system development"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#definition> "The complex system development of a food system."@en ;
+                                       <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional> .
+
+
+###  https://w3id.org/sumso#SuMSO_0000031
+<https://w3id.org/sumso#SuMSO_0000031> rdf:type owl:Class ;
+                                       owl:equivalentClass [ owl:intersectionOf ( <https://www.w3id.org/sco#SCO_0000026>
+                                                                                  [ rdf:type owl:Restriction ;
+                                                                                    owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000176> ;
+                                                                                    owl:someValuesFrom <https://w3id.org/sumso#SuMSO_0000018>
+                                                                                  ]
+                                                                                ) ;
+                                                             rdf:type owl:Class
+                                                           ] ;
+                                       rdfs:subClassOf <https://www.w3id.org/sco#SCO_0000026> ;
+                                       rdfs:label "food system environment component"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#definition> "A complex system evironment component that belongs to the complex system environment of a food system."@en ;
+                                       <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://w3id.org/sumso#SuMSO_0000032
+<https://w3id.org/sumso#SuMSO_0000032> rdf:type owl:Class ;
+                                       owl:equivalentClass [ owl:intersectionOf ( <https://w3id.org/sumso#SuMSO_0000031>
+                                                                                  [ rdf:type owl:Restriction ;
+                                                                                    owl:onProperty <https://www.w3id.org/sco#SCO_0000038> ;
+                                                                                    owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                                         owl:unionOf ( <https://w3id.org/sumso#SuMSO_0000028>
+                                                                                                                       <https://w3id.org/sumso#SuMSO_0000029>
+                                                                                                                     )
+                                                                                                       ]
+                                                                                  ]
+                                                                                ) ;
+                                                             rdf:type owl:Class
+                                                           ] ;
+                                       rdfs:subClassOf <https://www.w3id.org/sco#SCO_0000033> ;
+                                       rdfs:label "food system environment agent"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#definition> "A food system environment component that is an agent in an interaction among food system environment components or in an interaction between food system components and food system environment components."@en ;
+                                       <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://w3id.org/sumso#SuMSO_0000037
+<https://w3id.org/sumso#SuMSO_0000037> rdf:type owl:Class ;
+                                       owl:equivalentClass [ owl:intersectionOf ( <https://www.w3id.org/sco#SCO_0000023>
+                                                                                  [ rdf:type owl:Restriction ;
+                                                                                    owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000184> ;
+                                                                                    owl:someValuesFrom <https://w3id.org/sumso#SuMSO_0000004>
+                                                                                  ]
+                                                                                  [ rdf:type owl:Restriction ;
+                                                                                    owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000184> ;
+                                                                                    owl:allValuesFrom <https://w3id.org/sumso#SuMSO_0000004>
+                                                                                  ]
+                                                                                ) ;
+                                                             rdf:type owl:Class
+                                                           ] ;
+                                       rdfs:subClassOf <https://www.w3id.org/sco#SCO_0000023> ;
+                                       rdfs:label "food system history"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#definition> "The complex system history of a food system."@en ;
+                                       <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/sco#SCO_0000010
+<https://www.w3id.org/sco#SCO_0000010> rdf:type owl:Class .
+
+
+###  https://www.w3id.org/sco#SCO_0000012
+<https://www.w3id.org/sco#SCO_0000012> rdf:type owl:Class .
+
+
+###  https://www.w3id.org/sco#SCO_0000015
+<https://www.w3id.org/sco#SCO_0000015> rdf:type owl:Class .
+
+
+###  https://www.w3id.org/sco#SCO_0000018
+<https://www.w3id.org/sco#SCO_0000018> rdf:type owl:Class .
+
+
+###  https://www.w3id.org/sco#SCO_0000020
+<https://www.w3id.org/sco#SCO_0000020> rdf:type owl:Class .
+
+
+###  https://www.w3id.org/sco#SCO_0000021
+<https://www.w3id.org/sco#SCO_0000021> rdf:type owl:Class .
+
+
+###  https://www.w3id.org/sco#SCO_0000022
+<https://www.w3id.org/sco#SCO_0000022> rdf:type owl:Class .
+
+
+###  https://www.w3id.org/sco#SCO_0000023
+<https://www.w3id.org/sco#SCO_0000023> rdf:type owl:Class .
+
+
+###  https://www.w3id.org/sco#SCO_0000026
+<https://www.w3id.org/sco#SCO_0000026> rdf:type owl:Class .
+
+
+###  https://www.w3id.org/sco#SCO_0000028
+<https://www.w3id.org/sco#SCO_0000028> rdf:type owl:Class .
+
+
+###  https://www.w3id.org/sco#SCO_0000031
+<https://www.w3id.org/sco#SCO_0000031> rdf:type owl:Class .
+
+
+###  https://www.w3id.org/sco#SCO_0000032
+<https://www.w3id.org/sco#SCO_0000032> rdf:type owl:Class .
+
+
+###  https://www.w3id.org/sco#SCO_0000033
+<https://www.w3id.org/sco#SCO_0000033> rdf:type owl:Class .
+
+
+###  https://www.w3id.org/sco#SCO_0000034
+<https://www.w3id.org/sco#SCO_0000034> rdf:type owl:Class .
+
+
+###  https://www.w3id.org/sco#SCO_0000036
+<https://www.w3id.org/sco#SCO_0000036> rdf:type owl:Class .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi

@@ -502,7 +502,7 @@ We envision implementing such definitions in accordance with regulation revision
                 rdfs:subClassOf :ClimOO_0000205 ,
                                 :ClimOO_0000366 ;
                 rdfs:label "portion of compostable synthetic plastic material"@en ;
-                <http://www.w3.org/2004/02/skos/core#comment> """Despite not being recommended (Arp et al. 2015), we include asserted multi-inheritance for this class in order to ensure model consistency. We envision implementing the model in this regard.
+                <http://www.w3.org/2004/02/skos/core#comment> """Despite not being recommended (Arp et al. 2015), we included asserted multi-inheritance for this class in order to ensure model consistency. We envision implementing the model in this regard.
 
 Arp, R., Smith, B., & Spear, A. D. (2015). Building ontologies with Basic Formal Ontology. Massachusetts Institute of Technology."""@en ;
                 <http://www.w3.org/2004/02/skos/core#definition> "A portion of biodegradable synthetic plastic material that is composed of polymer molecules that bear a disposition to be degraded during a plastic composting process (compostability)."@en ;

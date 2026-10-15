@@ -8,7 +8,7 @@
 
 <http://ClimOO/climoo/climoo-sdc2/imports/cco-imports> rdf:type owl:Ontology ;
                                                         owl:versionIRI <http://ClimOO/climoo/climoo-sdc2/imports/cco-imports#2026-05-29> ;
-                                                        <http://purl.org/dc/terms/description> """This file contains ClimOO Ontology imports from the Common Core Ontology suite (CCO). Imports were manually collected and revised.
+                                                        <http://purl.org/dc/terms/description> """This file contains ClimOO Ontology suite imports from the Common Core Ontology suite (CCO). Imports were manually collected and revised.
 
 Ontology source: CCO 1.7.
 https://github.com/CommonCoreOntology/CommonCoreOntologies/releases/tag/v1.7-2024-11-03"""@en ;

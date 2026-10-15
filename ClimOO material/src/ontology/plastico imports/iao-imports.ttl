@@ -8,7 +8,7 @@
 
 <https://ClimOO/climoo/imports/iao-imports> rdf:type owl:Ontology ;
                                              owl:versionIRI <https://ClimOO/climoo/imports/iao-imports#2026-02-27> ;
-                                             rdfs:comment """This file contains ClimOO Ontology imports from the Information Artifact Ontology (IAO). Imports were manually collected and revised.
+                                             rdfs:comment """This file contains ClimOO Ontology suite imports from the Information Artifact Ontology (IAO). Imports were manually collected and revised.
 
 Ontology source: IAO 2022-11-07
 https://github.com/information-artifact-ontology/IAO/releases/tag/v2022-11-07"""@en ;

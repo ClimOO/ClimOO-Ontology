@@ -12,7 +12,7 @@
 
 <http://purl.obolibrary.org/obo/climoo/ro_imports> rdf:type owl:Ontology ;
                                                     owl:versionIRI <http://purl.obolibrary.org/obo/climoo/imports/ro_imports#2026-02-28> ;
-                                                    rdfs:comment """This file contains ClimOO Ontology imports fletched from the Relation Ontology (RO) via OntoFox (https://ontofox.hegroup.org/index.php).
+                                                    rdfs:comment """This file contains ClimOO Ontology suite imports fletched from the Relation Ontology (RO) via OntoFox (https://ontofox.hegroup.org/index.php).
 
 Ontology source: https://ontobee.org/ontology/RO"""@en ,
                                                                  "We manually curated imports fletched via OntoFox, by deleting those not needed for ClimOO Ontology purposes."@en ;
