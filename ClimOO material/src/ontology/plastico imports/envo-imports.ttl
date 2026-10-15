@@ -9,7 +9,7 @@
 <http://ClimOO/climoo/imports/envo-imports> rdf:type owl:Ontology ;
                                              owl:versionIRI <http://ClimOO/climoo/imports/envo-imports#2026-02-24> ;
                                              owl:imports <http://purl.obolibrary.org/obo/climoo/envo_imports/envo_piecesofplastic#2026-02-24> ;
-                                             rdfs:comment """This file contains ClimOO Ontology imports from the Environmental Ontology (EnvO). It also contains some imports reused by EnvO from the Relation Ontology. Imports were manually collected and revised.
+                                             rdfs:comment """This file contains ClimOO Ontology suite imports from the Environmental Ontology (EnvO). It also contains some imports reused by EnvO from the Relation Ontology. Imports were manually collected and revised.
 
 Ontology source: http://purl.obolibrary.org/obo/envo.owl
 Other ontology sources: https://oborel.github.io/"""@en ;

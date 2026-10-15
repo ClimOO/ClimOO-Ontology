@@ -11,7 +11,7 @@
 
 <http://purl.obolibrary.org/obo/climoo/envo_imports/envo_piecesofplastic> rdf:type owl:Ontology ;
                                                                            owl:versionIRI <http://purl.obolibrary.org/obo/climoo/envo_imports/envo_piecesofplastic#2026-02-24> ;
-                                                                           rdfs:comment """This file contains ClimOO Ontology imports fletched from the Environment Ontology (EnvO) via OntoFox (https://ontofox.hegroup.org/index.php).
+                                                                           rdfs:comment """This file contains ClimOO Ontology suite imports fletched from the Environment Ontology (EnvO) via OntoFox (https://ontofox.hegroup.org/index.php).
 
 Ontology source: https://ontobee.org/ontology/ENVO"""@en ;
                                                                            rdfs:seeAlso """The related Ontofox imput file.

@@ -8,7 +8,7 @@
 
 <http://ClimOO/climoo/imports/envo-imports/envo-imports> rdf:type owl:Ontology ;
                                                           owl:versionIRI <http://ClimOO/climoo/imports/envo-imports/envo-imports#2026-02-24> ;
-                                                          rdfs:comment """This file contains ClimOO Ontology imports fletched from the Environment Ontology (EnvO) via OntoFox (https://ontofox.hegroup.org/index.php), merged into a unique file. This file also contains some ClimOO Ontology imports from the Environmental Ontology (EnvO) and some imports, reused by this ontology, from the Relation Ontology (RO) that were manually collected and revised.
+                                                          rdfs:comment """This file contains ClimOO Ontology suite imports fletched from the Environment Ontology (EnvO) via OntoFox (https://ontofox.hegroup.org/index.php), merged into a unique file. This file also contains some ClimOO Ontology imports from the Environmental Ontology (EnvO) and some imports, reused by this ontology, from the Relation Ontology (RO) that were manually collected and revised.
 
 Ontology source: https://ontobee.org/ontology/ENVO http://purl.obolibrary.org/obo/envo.owl
 Other ontology sources: https://oborel.github.io/"""@en ;

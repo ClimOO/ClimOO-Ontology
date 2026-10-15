@@ -8,7 +8,7 @@
 
 <http://ClimOO/climoo/imports/sumso-imports> rdf:type owl:Ontology ;
                                               owl:versionIRI <http://ClimOO/climoo/imports/sumso-imports#26-02-28> ;
-                                              <http://purl.org/dc/terms/description> """This file contains ClimOO ontology imports from the Sustainable Meat Systems Ontology (SuMSO). Imports have been manually collected and revised.
+                                              <http://purl.org/dc/terms/description> """This file contains ClimOO Ontology suite imports from the Sustainable Meat Systems Ontology (SuMSO). Imports have been manually collected and revised.
 
 Ontology source: SuMSO V1.0.1.
 https://raw.githubusercontent.com/gioUbbiali/Sustainable-Meat-Systems-Ontology/refs/heads/main/sumso.ttl"""@en ;

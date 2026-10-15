@@ -224,10 +224,14 @@ https://w3id.org/pmd/co/PMD_0050037"""@en .
 
 ###  https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000097
 :ClimOO_0000097 rdf:type owl:Class ;
-                rdfs:subClassOf :ClimOO_0000248 ,
-                                [ rdf:type owl:Restriction ;
-                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000110> ;
-                                  owl:someValuesFrom :ClimOO_0000100
+                rdfs:subClassOf :ClimOO_0000369 ,
+                                [ owl:intersectionOf ( :ClimOO_0000248
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000110> ;
+                                                         owl:someValuesFrom :ClimOO_0000100
+                                                       ]
+                                                     ) ;
+                                  rdf:type owl:Class
                                 ] ;
                 <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "bio-based plastic"@en ,
                                                                                "bioplastic"@en ;
@@ -238,17 +242,11 @@ https://w3id.org/pmd/co/PMD_0050037"""@en .
 
 ###  https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000098
 :ClimOO_0000098 rdf:type owl:Class ;
-                rdfs:subClassOf [ owl:intersectionOf ( :ClimOO_0000143
+                rdfs:subClassOf :ClimOO_0000363 ,
+                                [ owl:intersectionOf ( :ClimOO_0000143
                                                        [ rdf:type owl:Restriction ;
-                                                         owl:onProperty <http://purl.obolibrary.org/obo/RO_0000085> ;
-                                                         owl:someValuesFrom [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/BFO_0000034>
-                                                                                                   [ rdf:type owl:Restriction ;
-                                                                                                     owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000054> ;
-                                                                                                     owl:someValuesFrom :ClimOO_0000173
-                                                                                                   ]
-                                                                                                 ) ;
-                                                                              rdf:type owl:Class
-                                                                            ]
+                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000196> ;
+                                                         owl:someValuesFrom <http://purl.obolibrary.org/obo/BFO_0000034>
                                                        ]
                                                      ) ;
                                   rdf:type owl:Class
@@ -314,10 +312,14 @@ We envision implementing such definitions in accordance with regulation revision
 
 ###  https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000107
 :ClimOO_0000107 rdf:type owl:Class ;
-                rdfs:subClassOf :ClimOO_0000247 ,
-                                [ rdf:type owl:Restriction ;
-                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000110> ;
-                                  owl:someValuesFrom :ClimOO_0000109
+                rdfs:subClassOf :ClimOO_0000364 ,
+                                [ owl:intersectionOf ( :ClimOO_0000247
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000110> ;
+                                                         owl:someValuesFrom :ClimOO_0000109
+                                                       ]
+                                                     ) ;
+                                  rdf:type owl:Class
                                 ] ;
                 <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "biodegradable plastic"@en ;
                 rdfs:label "portion of biodegradable plastic material"@en ;
@@ -327,17 +329,11 @@ We envision implementing such definitions in accordance with regulation revision
 
 ###  https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000108
 :ClimOO_0000108 rdf:type owl:Class ;
-                rdfs:subClassOf [ owl:intersectionOf ( :ClimOO_0000145
+                rdfs:subClassOf :ClimOO_0000171 ,
+                                [ owl:intersectionOf ( :ClimOO_0000144
                                                        [ rdf:type owl:Restriction ;
-                                                         owl:onProperty <http://purl.obolibrary.org/obo/RO_0000085> ;
-                                                         owl:someValuesFrom [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/BFO_0000034>
-                                                                                                   [ rdf:type owl:Restriction ;
-                                                                                                     owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000054> ;
-                                                                                                     owl:someValuesFrom :ClimOO_0000173
-                                                                                                   ]
-                                                                                                 ) ;
-                                                                              rdf:type owl:Class
-                                                                            ]
+                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000196> ;
+                                                         owl:someValuesFrom <http://purl.obolibrary.org/obo/BFO_0000034>
                                                        ]
                                                      ) ;
                                   rdf:type owl:Class
@@ -492,20 +488,9 @@ We envision implementing such definitions in accordance with regulation revision
 ###  https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000116
 :ClimOO_0000116 rdf:type owl:Class ;
                 rdfs:subClassOf :ClimOO_0000108 ,
-                                [ owl:intersectionOf ( :ClimOO_0000146
-                                                       [ rdf:type owl:Restriction ;
-                                                         owl:onProperty <http://purl.obolibrary.org/obo/RO_0000085> ;
-                                                         owl:someValuesFrom [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/BFO_0000034>
-                                                                                                   [ rdf:type owl:Restriction ;
-                                                                                                     owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000054> ;
-                                                                                                     owl:someValuesFrom :ClimOO_0000173
-                                                                                                   ]
-                                                                                                 ) ;
-                                                                              rdf:type owl:Class
-                                                                            ]
-                                                       ]
-                                                     ) ;
-                                  rdf:type owl:Class
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000196> ;
+                                  owl:someValuesFrom <http://purl.obolibrary.org/obo/BFO_0000034>
                                 ] ;
                 rdfs:label "compostable plastic object"@en ;
                 <http://www.w3.org/2004/02/skos/core#definition> "A plastic object that is primarily made of compostable plastic."@en ;
@@ -514,9 +499,13 @@ We envision implementing such definitions in accordance with regulation revision
 
 ###  https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000117
 :ClimOO_0000117 rdf:type owl:Class ;
-                rdfs:subClassOf :ClimOO_0000205 ;
+                rdfs:subClassOf :ClimOO_0000205 ,
+                                :ClimOO_0000366 ;
                 rdfs:label "portion of compostable synthetic plastic material"@en ;
-                <http://www.w3.org/2004/02/skos/core#definition> "A portion of biodegradable synthetic plastic material that is copmosed of polymer molecules that bear a disposition to be degraded during a plastic composting process (compostability)."@en ;
+                <http://www.w3.org/2004/02/skos/core#comment> """Despite not being recommended (Arp et al. 2015), we included asserted multi-inheritance for this class in order to ensure model consistency. We envision implementing the model in this regard.
+
+Arp, R., Smith, B., & Spear, A. D. (2015). Building ontologies with Basic Formal Ontology. Massachusetts Institute of Technology."""@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A portion of biodegradable synthetic plastic material that is composed of polymer molecules that bear a disposition to be degraded during a plastic composting process (compostability)."@en ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
 
 
@@ -879,10 +868,14 @@ We envision implementing such definitions in accordance with regulation revision
 
 ###  https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000143
 :ClimOO_0000143 rdf:type owl:Class ;
-                rdfs:subClassOf :ClimOO_0000153 ,
-                                [ rdf:type owl:Restriction ;
-                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000110> ;
-                                  owl:someValuesFrom :ClimOO_0000097
+                rdfs:subClassOf :ClimOO_0000374 ,
+                                [ owl:intersectionOf ( :ClimOO_0000153
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000110> ;
+                                                         owl:someValuesFrom :ClimOO_0000097
+                                                       ]
+                                                     ) ;
+                                  rdf:type owl:Class
                                 ] ;
                 rdfs:label "piece of bio-based plastic"@en ;
                 <http://www.w3.org/2004/02/skos/core#definition> "A piece of synthetic plastic that is primarily made of bio-based plastic."@en ;
@@ -891,10 +884,14 @@ We envision implementing such definitions in accordance with regulation revision
 
 ###  https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000144
 :ClimOO_0000144 rdf:type owl:Class ;
-                rdfs:subClassOf :ClimOO_0000253 ,
-                                [ rdf:type owl:Restriction ;
-                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000110> ;
-                                  owl:someValuesFrom :ClimOO_0000107
+                rdfs:subClassOf :ClimOO_0000371 ,
+                                [ owl:intersectionOf ( :ClimOO_0000253
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000110> ;
+                                                         owl:someValuesFrom :ClimOO_0000107
+                                                       ]
+                                                     ) ;
+                                  rdf:type owl:Class
                                 ] ;
                 rdfs:label "piece of biodegradable plastic"@en ;
                 <http://www.w3.org/2004/02/skos/core#definition> "A piece of plastic that is primarily made of biodegradable plastic."@en ;
@@ -903,8 +900,9 @@ We envision implementing such definitions in accordance with regulation revision
 
 ###  https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000145
 :ClimOO_0000145 rdf:type owl:Class ;
-                rdfs:subClassOf :ClimOO_0000144 ,
-                                [ owl:intersectionOf ( :ClimOO_0000153
+                rdfs:subClassOf :ClimOO_0000372 ,
+                                [ owl:intersectionOf ( :ClimOO_0000144
+                                                       :ClimOO_0000153
                                                        [ rdf:type owl:Restriction ;
                                                          owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000110> ;
                                                          owl:someValuesFrom :ClimOO_0000205
@@ -919,13 +917,18 @@ We envision implementing such definitions in accordance with regulation revision
 
 ###  https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000146
 :ClimOO_0000146 rdf:type owl:Class ;
-                rdfs:subClassOf :ClimOO_0000145 ,
-                                [ rdf:type owl:Restriction ;
-                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000110> ;
-                                  owl:someValuesFrom :ClimOO_0000117
+                rdfs:subClassOf :ClimOO_0000373 ,
+                                [ owl:intersectionOf ( :ClimOO_0000145
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000110> ;
+                                                         owl:someValuesFrom :ClimOO_0000117
+                                                       ]
+                                                     ) ;
+                                  rdf:type owl:Class
                                 ] ;
                 rdfs:label "piece of compostable synthetic plastic"@en ;
-                <http://www.w3.org/2004/02/skos/core#definition> "A piece of biodegradable plastic that is primarily made of compostable plastic."@en ;
+                <http://www.w3.org/2004/02/skos/core#comment> "We currently did not include a general class for pieces of compostable polymer-based materials or plastics. Implementations can follow as needed."@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A piece of synthetic biodegradable plastic that is primarily made of compostable plastic."@en ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
 
 
@@ -986,9 +989,13 @@ We envision implementing such definitions in accordance with regulation revision
 ###  https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000151
 :ClimOO_0000151 rdf:type owl:Class ;
                 rdfs:subClassOf :ClimOO_0000153 ,
-                                [ rdf:type owl:Restriction ;
-                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000110> ;
-                                  owl:someValuesFrom :ClimOO_0000191
+                                [ owl:intersectionOf ( :ClimOO_0000377
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000110> ;
+                                                         owl:someValuesFrom :ClimOO_0000191
+                                                       ]
+                                                     ) ;
+                                  rdf:type owl:Class
                                 ] ;
                 rdfs:label "piece of recyclable plastic"@en ;
                 <http://www.w3.org/2004/02/skos/core#definition> "A piece of synthetic plastic that is primarily made of recyclable plastic."@en ;
@@ -997,11 +1004,16 @@ We envision implementing such definitions in accordance with regulation revision
 
 ###  https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000152
 :ClimOO_0000152 rdf:type owl:Class ;
-                rdfs:subClassOf :ClimOO_0000153 ,
-                                [ rdf:type owl:Restriction ;
-                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000110> ;
-                                  owl:someValuesFrom :ClimOO_0000197
+                rdfs:subClassOf :ClimOO_0000376 ,
+                                [ owl:intersectionOf ( :ClimOO_0000153
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000110> ;
+                                                         owl:someValuesFrom :ClimOO_0000197
+                                                       ]
+                                                     ) ;
+                                  rdf:type owl:Class
                                 ] ;
+                owl:disjointWith :ClimOO_0000155 ;
                 rdfs:label "piece of recycled plastic"@en ;
                 <http://www.w3.org/2004/02/skos/core#definition> "A piece of synthetic plastic that is primarily made of recycled plastic."@en ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
@@ -1037,10 +1049,14 @@ We envision implementing such definitions in accordance with regulation revision
 
 ###  https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000155
 :ClimOO_0000155 rdf:type owl:Class ;
-                rdfs:subClassOf :ClimOO_0000153 ,
-                                [ rdf:type owl:Restriction ;
-                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000110> ;
-                                  owl:someValuesFrom :ClimOO_0000222
+                rdfs:subClassOf :ClimOO_0000375 ,
+                                [ owl:intersectionOf ( :ClimOO_0000153
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000110> ;
+                                                         owl:someValuesFrom :ClimOO_0000222
+                                                       ]
+                                                     ) ;
+                                  rdf:type owl:Class
                                 ] ;
                 rdfs:label "piece of virgin plastic"@en ;
                 <http://www.w3.org/2004/02/skos/core#definition> "A piece of synthetic plastic that is primarily made of virgin plastic."@en ;
@@ -1466,6 +1482,7 @@ We envision implementing such definitions in accordance with regulation revision
                 rdfs:comment "Further details concerning stakeholders and objective and action specifications can be added to the axiomatixation of this class, as needed."@en ,
                              "References to objects made of other synthetic polymer-based materials can be included if needed."@en ;
                 rdfs:label "plastic object"@en ;
+                <http://www.w3.org/2004/02/skos/core#comment> "We envision implementation of this hierarchy to deepen the characterization of the different types of plastic objects."@en ;
                 <http://www.w3.org/2004/02/skos/core#definition> "A piece of plastic that bears some function(s)."@en ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
 
@@ -1830,10 +1847,14 @@ Vert, M., Doi, Y., Hellwich, K.-H., Hess, M., Hodge, P., Kubisa, P., Rinaudo, M.
 
 ###  https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000191
 :ClimOO_0000191 rdf:type owl:Class ;
-                rdfs:subClassOf :ClimOO_0000248 ,
-                                [ rdf:type owl:Restriction ;
-                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000110> ;
-                                  owl:someValuesFrom :ClimOO_0000194
+                rdfs:subClassOf :ClimOO_0000367 ,
+                                [ owl:intersectionOf ( :ClimOO_0000248
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000110> ;
+                                                         owl:someValuesFrom :ClimOO_0000194
+                                                       ]
+                                                     ) ;
+                                  rdf:type owl:Class
                                 ] ;
                 <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "recyclable plastic"@en ;
                 rdfs:label "portion of recyclable plastic material"@en ;
@@ -1843,17 +1864,11 @@ Vert, M., Doi, Y., Hellwich, K.-H., Hess, M., Hodge, P., Kubisa, P., Rinaudo, M.
 
 ###  https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000192
 :ClimOO_0000192 rdf:type owl:Class ;
-                rdfs:subClassOf [ owl:intersectionOf ( :ClimOO_0000151
+                rdfs:subClassOf :ClimOO_0000363 ,
+                                [ owl:intersectionOf ( :ClimOO_0000151
                                                        [ rdf:type owl:Restriction ;
-                                                         owl:onProperty <http://purl.obolibrary.org/obo/RO_0000085> ;
-                                                         owl:someValuesFrom [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/BFO_0000034>
-                                                                                                   [ rdf:type owl:Restriction ;
-                                                                                                     owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000054> ;
-                                                                                                     owl:someValuesFrom :ClimOO_0000173
-                                                                                                   ]
-                                                                                                 ) ;
-                                                                              rdf:type owl:Class
-                                                                            ]
+                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000196> ;
+                                                         owl:someValuesFrom <http://purl.obolibrary.org/obo/BFO_0000034>
                                                        ]
                                                      ) ;
                                   rdf:type owl:Class
@@ -1902,10 +1917,14 @@ Vert, M., Doi, Y., Hellwich, K.-H., Hess, M., Hodge, P., Kubisa, P., Rinaudo, M.
 
 ###  https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000197
 :ClimOO_0000197 rdf:type owl:Class ;
-                rdfs:subClassOf :ClimOO_0000248 ,
-                                [ rdf:type owl:Restriction ;
-                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000110> ;
-                                  owl:someValuesFrom :ClimOO_0000200
+                rdfs:subClassOf :ClimOO_0000368 ,
+                                [ owl:intersectionOf ( :ClimOO_0000248
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000110> ;
+                                                         owl:someValuesFrom :ClimOO_0000200
+                                                       ]
+                                                     ) ;
+                                  rdf:type owl:Class
                                 ] ;
                 owl:disjointWith :ClimOO_0000222 ;
                 <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "recycled plastic"@en ;
@@ -1916,17 +1935,11 @@ Vert, M., Doi, Y., Hellwich, K.-H., Hess, M., Hodge, P., Kubisa, P., Rinaudo, M.
 
 ###  https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000198
 :ClimOO_0000198 rdf:type owl:Class ;
-                rdfs:subClassOf [ owl:intersectionOf ( :ClimOO_0000152
+                rdfs:subClassOf :ClimOO_0000363 ,
+                                [ owl:intersectionOf ( :ClimOO_0000152
                                                        [ rdf:type owl:Restriction ;
-                                                         owl:onProperty <http://purl.obolibrary.org/obo/RO_0000085> ;
-                                                         owl:someValuesFrom [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/BFO_0000034>
-                                                                                                   [ rdf:type owl:Restriction ;
-                                                                                                     owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000054> ;
-                                                                                                     owl:someValuesFrom :ClimOO_0000173
-                                                                                                   ]
-                                                                                                 ) ;
-                                                                              rdf:type owl:Class
-                                                                            ]
+                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000196> ;
+                                                         owl:someValuesFrom <http://purl.obolibrary.org/obo/BFO_0000034>
                                                        ]
                                                      ) ;
                                   rdf:type owl:Class
@@ -2150,8 +2163,9 @@ http://purl.obolibrary.org/obo/ENVO_02000200"""@en ,
 
 ###  https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000205
 :ClimOO_0000205 rdf:type owl:Class ;
-                rdfs:subClassOf :ClimOO_0000107 ,
-                                [ owl:intersectionOf ( :ClimOO_0000248
+                rdfs:subClassOf :ClimOO_0000365 ,
+                                [ owl:intersectionOf ( :ClimOO_0000107
+                                                       :ClimOO_0000248
                                                        [ rdf:type owl:Restriction ;
                                                          owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000110> ;
                                                          owl:someValuesFrom [ owl:intersectionOf ( :ClimOO_0000109
@@ -2487,26 +2501,24 @@ According to the current axiomatization and definition, this class may be a subc
 
 ###  https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000222
 :ClimOO_0000222 rdf:type owl:Class ;
-                rdfs:subClassOf :ClimOO_0000248 ;
+                rdfs:subClassOf :ClimOO_0000248 ,
+                                :ClimOO_0000370 ;
                 <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "virgin plastic"@en ;
                 rdfs:label "portion of virgin plastic material"@en ;
+                <http://www.w3.org/2004/02/skos/core#comment> """Despite not being recommended (Arp et al. 2015), we include asserted multi-inheritance for this class in order to ensure model consistency. We envision implementing the model in this regard.
+
+Arp, R., Smith, B., & Spear, A. D. (2015). Building ontologies with Basic Formal Ontology. Massachusetts Institute of Technology."""@en ;
                 <http://www.w3.org/2004/02/skos/core#definition> "A portion of plastic material that is composed by polymer molecules that have not been recycled."@en ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
 
 
 ###  https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000223
 :ClimOO_0000223 rdf:type owl:Class ;
-                rdfs:subClassOf [ owl:intersectionOf ( :ClimOO_0000155
+                rdfs:subClassOf :ClimOO_0000363 ,
+                                [ owl:intersectionOf ( :ClimOO_0000155
                                                        [ rdf:type owl:Restriction ;
-                                                         owl:onProperty <http://purl.obolibrary.org/obo/RO_0000085> ;
-                                                         owl:someValuesFrom [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/BFO_0000034>
-                                                                                                   [ rdf:type owl:Restriction ;
-                                                                                                     owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000054> ;
-                                                                                                     owl:someValuesFrom :ClimOO_0000173
-                                                                                                   ]
-                                                                                                 ) ;
-                                                                              rdf:type owl:Class
-                                                                            ]
+                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000196> ;
+                                                         owl:someValuesFrom <http://purl.obolibrary.org/obo/BFO_0000034>
                                                        ]
                                                      ) ;
                                   rdf:type owl:Class
@@ -3030,11 +3042,11 @@ See, for instance, ISO/TR 21960:2020Plastics — Environmental aspects — State
                                   owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000110> ;
                                   owl:someValuesFrom :ClimOO_0000246
                                 ] ;
-                rdfs:comment """ClimOO Ontology comment:
-Reference to weight can be added as needed."""@en ,
-                             "Implementations require to address composition threshold. We envision discussion with subject matter experts."@en ,
+                rdfs:comment "Implementations require to address composition threshold. We envision discussion with subject matter experts."@en ,
+                             "Reference to weight can be added as needed."@en ,
                              "We intend this class, and subclasses, as denoting generic identifiable causally unitary bona fide portions of (made of) plastic materials. This could be a fragment of natural or synthetic plastic material, or a plastic object, such as a plastic bottle."@en ;
                 rdfs:label "piece of polymer-based material"@en ;
+                <http://www.w3.org/2004/02/skos/core#comment> "We did not include classes for polymer-based objects. The representation can be extended in this regard as needed, using plastic object classes as a reference template."@en ;
                 <http://www.w3.org/2004/02/skos/core#definition> "An object that is made of some portion of polymer-based material." ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> ;
                 <https://www.w3id.org/sco#SCO_0000039> :ClimOO_0000072 ,
@@ -3884,17 +3896,221 @@ http://purl.obolibrary.org/obo/ENVO_06105126""" ;
 
 ###  https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000363
 :ClimOO_0000363 rdf:type owl:Class ;
-                rdfs:subClassOf :ClimOO_0000171 ,
-                                [ owl:intersectionOf ( :ClimOO_0000171
+                rdfs:subClassOf [ owl:intersectionOf ( :ClimOO_0000171
                                                        [ rdf:type owl:Restriction ;
                                                          owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000110> ;
                                                          owl:someValuesFrom :ClimOO_0000248
+                                                       ]
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000196> ;
+                                                         owl:someValuesFrom <http://purl.obolibrary.org/obo/BFO_0000034>
                                                        ]
                                                      ) ;
                                   rdf:type owl:Class
                                 ] ;
                 rdfs:comment "A plastic object that is made of synthetic plastic."@en ;
                 rdfs:label "synthetic plastic object"@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000364
+:ClimOO_0000364 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000246 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000110> ;
+                                  owl:someValuesFrom :ClimOO_0000109
+                                ] ;
+                rdfs:label "portion of biodegradable polymer-based material"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A portion of polymer-based material that is constituted by biodegradable polymer molecules that are the main input of a process of polymer biodegradation."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000365
+:ClimOO_0000365 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000364 ,
+                                [ owl:intersectionOf ( :ClimOO_0000211
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000110> ;
+                                                         owl:someValuesFrom [ owl:intersectionOf ( :ClimOO_0000109
+                                                                                                   :ClimOO_0000210
+                                                                                                 ) ;
+                                                                              rdf:type owl:Class
+                                                                            ]
+                                                       ]
+                                                     ) ;
+                                  rdf:type owl:Class
+                                ] ;
+                rdfs:label "portion of synthetic biodegradable polymer-based material"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A portion of polymer-based material that is constituted by polymer molecules that are both synthetic and biodegradable."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000366
+:ClimOO_0000366 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000365 ;
+                rdfs:label "portion of synthetic compostable polymer-based material"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A portion of synthetic biodegradable polymer-based material that is composed of polymer molecules that bear a disposition to be degraded during a plastic composting process (compostability)."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000367
+:ClimOO_0000367 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000211 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000110> ;
+                                  owl:someValuesFrom :ClimOO_0000194
+                                ] ;
+                rdfs:label "portion of recyclable polymer-based material"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A portion of synthetic polymer-based material that is composed of recyclable polymer molecules."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000368
+:ClimOO_0000368 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000211 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000110> ;
+                                  owl:someValuesFrom :ClimOO_0000200
+                                ] ;
+                owl:disjointWith :ClimOO_0000370 ;
+                rdfs:label "portion of recycled polymer-based material"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A portion of synthetic polymer-based material that is composed of recycled polymer molecules."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000369
+:ClimOO_0000369 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000211 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000110> ;
+                                  owl:someValuesFrom :ClimOO_0000100
+                                ] ;
+                rdfs:label "portion of biopolymer-based material"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A portion of synthetic polymer-based material that is composed of biobased polymer molecules."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000370
+:ClimOO_0000370 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000211 ;
+                rdfs:label "portion of vergin polymer-based material"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A portion of polymer-based material that is composed by polymer molecules that have not been recycled."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000371
+:ClimOO_0000371 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000254 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000110> ;
+                                  owl:someValuesFrom :ClimOO_0000364
+                                ] ;
+                rdfs:label "piece of biodegradable polymer-based material"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A piece of polymer-based material that is primarily made of biodegradable polymer-based material."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000372
+:ClimOO_0000372 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000371 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000110> ;
+                                  owl:someValuesFrom :ClimOO_0000365
+                                ] ;
+                rdfs:label "piece of biodegradable synthetic polymer-based material"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A piece of synthetic polymer-based material that is primarily made of biodegradable polymer-based material."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000373
+:ClimOO_0000373 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000372 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000110> ;
+                                  owl:someValuesFrom :ClimOO_0000366
+                                ] ;
+                rdfs:label "piece of compostable synthetic polymer-based material"@en ;
+                <http://www.w3.org/2004/02/skos/core#comment> "We currently did not include a general class for pieces of compostable polymer-based materials or plastics. Implementations can follow as needed."@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A piece of synthetic polymer-based material that is primarily made of compostable polymer-based material."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000374
+:ClimOO_0000374 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000150 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000110> ;
+                                  owl:someValuesFrom :ClimOO_0000369
+                                ] ;
+                rdfs:label "piece of bio-based polymer-based material"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A piece of synthetic polymer-based material that is primarily made of biopolymer-based material."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000375
+:ClimOO_0000375 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000150 ;
+                owl:disjointWith :ClimOO_0000376 ;
+                rdfs:label "piece of virgin polymer-based material"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A piece of synthetic polymer-based material that is primarily made of virgin polymer-based material."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000376
+:ClimOO_0000376 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000150 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000110> ;
+                                  owl:someValuesFrom :ClimOO_0000368
+                                ] ;
+                rdfs:label "piece of recycled polymer-based material"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A piece of synthetic polymer-based material that is primarily made of recycled polymer-based material."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000377
+:ClimOO_0000377 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000150 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000110> ;
+                                  owl:someValuesFrom :ClimOO_0000367
+                                ] ;
+                rdfs:label "piece of recyclable polymer-based material"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A piece of synthetic polymer-based material that is primarily made of recyclable polymer-based material."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000378
+:ClimOO_0000378 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000108 ,
+                                [ owl:intersectionOf ( :ClimOO_0000145
+                                                       :ClimOO_0000363
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000196> ;
+                                                         owl:someValuesFrom <http://purl.obolibrary.org/obo/BFO_0000034>
+                                                       ]
+                                                     ) ;
+                                  rdf:type owl:Class
+                                ] ;
+                rdfs:label "biodegradable synthetic plastic object"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A synthetic plastic object that is primarily made of biodegradable plastic."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000379
+:ClimOO_0000379 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000116 ,
+                                [ owl:intersectionOf ( :ClimOO_0000146
+                                                       :ClimOO_0000378
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000196> ;
+                                                         owl:someValuesFrom <http://purl.obolibrary.org/obo/BFO_0000034>
+                                                       ]
+                                                     ) ;
+                                  rdf:type owl:Class
+                                ] ;
+                rdfs:label "compostable synthetic plastic object"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A synthetic plastic object that is primarily made of compostable plastic."@en ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
 
 

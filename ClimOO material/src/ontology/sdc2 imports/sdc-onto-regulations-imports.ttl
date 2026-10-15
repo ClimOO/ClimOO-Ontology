@@ -8,7 +8,7 @@
 
 <http://ClimOO/climoo/climoo-sdc2/imports/sdc-ontology-imports/sdc-ontology-gdc-imports> rdf:type owl:Ontology ;
                                                                                           owl:versionIRI <http://ClimOO/climoo/climoo-sdc2/imports/sdc-ontology-imports/sdc-ontology-gdc-imports#2026-04-08> ;
-                                                                                          rdfs:comment """This file contains ClimOO Ontology imports from the Sustainable Development and Climate ontology (SDC ontology) (generically dependent continuant hierarchy of BFO). It also contains some imports reused by SDC ontology from the Common Core Ontologies (CCO). Imports were manually collected and revised.
+                                                                                          rdfs:comment """This file contains ClimOO Ontology suite imports from the Sustainable Development and Climate ontology (SDC ontology) (generically dependent continuant hierarchy of BFO). It also contains some imports reused by SDC ontology from the Common Core Ontologies (CCO). Imports were manually collected and revised.
 
 Ontology source: https://raw.githubusercontent.com/hbabaie1/Sustainable-Development-and-Climate-SDC-ontology/refs/heads/main/SDC_v1.owl"""@en ;
                                                                                           rdfs:seeAlso "https://github.com/hbabaie1/Sustainable-Development-and-Climate-SDC-ontology/tree/main" ;

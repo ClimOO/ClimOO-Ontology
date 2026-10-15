@@ -8,7 +8,7 @@
 
 <http://ClimOO/climoo/imports/bionik-imports> rdf:type owl:Ontology ;
                                                owl:versionIRI <http://ClimOO/climoo/imports/bionik-imports#2026-02-23> ;
-                                               rdfs:comment """This file contains ClimOO Ontology imports from the Biomimetics Core Ontology.
+                                               rdfs:comment """This file contains ClimOO Ontology suite imports from the Biomimetics Core Ontology.
 Imports were manually collected and revised.
 
 Ontology source: https://raw.githubusercontent.com/BiomimeticsOntologies/BiomimeticsCore/refs/heads/main/Showcase2025/SHOWCASE2025release.owl"""@en ;

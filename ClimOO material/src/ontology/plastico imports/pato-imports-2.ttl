@@ -11,7 +11,7 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://ClimOO/climoo/imports/pato-imports2">
         <owl:versionIRI rdf:resource="http://ClimOO/climoo/imports/pato-imports2#2026-02-24"/>
-        <rdfs:comment xml:lang="en">This file contains additional ClimOO Ontology imports from the Phenotype And Trait Ontology (PATO). These imports have been manually fletched from PATO.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This file contains additional ClimOO Ontology suite imports from the Phenotype And Trait Ontology (PATO). These imports have been manually fletched from PATO.</rdfs:comment>
         <rdfs:seeAlso>https://github.com/pato-ontology/pato/</rdfs:seeAlso>
         <owl:versionInfo>2026-02-24</owl:versionInfo>
     </owl:Ontology>

@@ -95,7 +95,7 @@ Bibliography
 • Heylighen, F., Cilliers, P., & Gershenson, C. (2006). Complexity and Philosophy. arXiv [Cs.CC]. 
 
 • Mitchell, M. (2009). Complexity: A Guided Tour. Oxford University Press."""@en ;
-                <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "has supersystemat some time"@en ;
+                <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "has supersystem at some time"@en ;
                 rdfs:comment """A subsystem is always a system that is a system component of another system, that, in turn, is intended as a supersystem for that first system. Whether interpreting a system as a super/subsystem or a component of another system depends on the perspective and the system scales used to analyze that system of interest.
 
 We currently do not include direct reference to perspectives and system scales in the definition. Nevertheless, we strongly suggest expressing the perspective and system scales of reference by annotating axioms that cover this object property with the annotation property “according to the perspective” https://www.w3id.org/sco#SCO_0000039. 
@@ -3122,9 +3122,13 @@ See http://purl.obolibrary.org/obo/ENVO_01001633""" ;
 ###  https://www.w3id.org/climoo#ClimOO_0000079
 :ClimOO_0000079 rdf:type owl:Class ;
                 rdfs:subClassOf <http://purl.obolibrary.org/obo/ENVO_00000077> ,
-                                [ rdf:type owl:Restriction ;
-                                  owl:onProperty :ClimOO_0000076 ;
-                                  owl:someValuesFrom <https://w3id.org/sumso#SuMSO_0000004>
+                                [ rdf:type owl:Class ;
+                                  owl:unionOf ( <https://w3id.org/sumso#SuMSO_0000004>
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :ClimOO_0000076 ;
+                                                  owl:someValuesFrom <https://w3id.org/sumso#SuMSO_0000004>
+                                                ]
+                                              )
                                 ] ;
                 owl:disjointWith :ClimOO_0000084 ;
                 rdfs:comment """The terms “food system”, “agricultural system”, and “agrifood system” are often used slightly interchangeably. Here, for ClimOO ontology purposes, we use these terms as follows. A food system is a complex system dedicated to food for humans. An agricultural system is a complex system dedicated to agriculture. An agrifood system is an agricultural system that is specifically dedicated to food production for humans. Not all agricultural systems are dedicated to food production for humans. Some are, for instance, dedicated to food production for animals. Not all food systems include agricultural activities. 
@@ -4377,7 +4381,7 @@ We envision implementing such definitions in accordance with regulation revision
 
 ###  https://www.w3id.org/climoo#ClimOO_0000138
 :ClimOO_0000138 rdf:type owl:Class ;
-                owl:equivalentClass _:genid1162 ;
+                owl:equivalentClass _:genid1165 ;
                 rdfs:subClassOf :ClimOO_0000237 ,
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty <http://purl.obolibrary.org/obo/RO_0002234> ;
@@ -4417,7 +4421,7 @@ We envision implementing such definitions in accordance with regulation revision
                 <http://www.w3.org/2004/02/skos/core#definition> "A synthetic polymer-based material sorption of pollutants that has as output some synthetic polymer-based material that composes some microplastic debris particle with an increased level of pollutants as part (compared to levels prior to participating in that process)."@en ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
 
-_:genid1162 owl:intersectionOf ( :ClimOO_0000237
+_:genid1165 owl:intersectionOf ( :ClimOO_0000237
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty <http://purl.obolibrary.org/obo/RO_0002234> ;
                                     owl:someValuesFrom [ owl:intersectionOf ( [ owl:intersectionOf ( :ClimOO_0000211
@@ -4453,7 +4457,7 @@ _:genid1162 owl:intersectionOf ( :ClimOO_0000237
 [ rdf:type owl:Axiom ;
    owl:annotatedSource :ClimOO_0000138 ;
    owl:annotatedProperty owl:equivalentClass ;
-   owl:annotatedTarget _:genid1162 ;
+   owl:annotatedTarget _:genid1165 ;
    rdfs:comment "We currently include a reference to the two systems of classification covered by the ClimOO Ontology, concerning microplastic debris. We envision revisions of this axiom following the inclusion of further systems of classification."@en
  ] .
 
@@ -4632,7 +4636,7 @@ _:genid1162 owl:intersectionOf ( :ClimOO_0000237
 ###  https://www.w3id.org/climoo#ClimOO_0000150
 :ClimOO_0000150 rdf:type owl:Class ;
                 rdfs:subClassOf <http://purl.obolibrary.org/obo/ENVO_01001686> ,
-                                _:genid1229 ,
+                                _:genid1232 ,
                                 [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
                                                          owl:onProperty <http://purl.obolibrary.org/obo/RO_0000086> ;
                                                          owl:someValuesFrom <http://purl.obolibrary.org/obo/PATO_0000052>
@@ -4652,8 +4656,8 @@ _:genid1162 owl:intersectionOf ( :ClimOO_0000237
                                                      ) ;
                                   rdf:type owl:Class
                                 ] ,
-                                _:genid1244 ,
-                                _:genid1250 ,
+                                _:genid1247 ,
+                                _:genid1253 ,
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty <http://purl.obolibrary.org/obo/RO_0000091> ;
                                   owl:someValuesFrom <https://www.commoncoreontologies.org/ont00000378>
@@ -4669,7 +4673,7 @@ _:genid1162 owl:intersectionOf ( :ClimOO_0000237
                                                        :ClimOO_0000075 ,
                                                        :ClimOO_0000228 .
 
-_:genid1229 owl:intersectionOf ( <http://purl.obolibrary.org/obo/ENVO_00003074>
+_:genid1232 owl:intersectionOf ( <http://purl.obolibrary.org/obo/ENVO_00003074>
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty <http://purl.obolibrary.org/obo/RO_0002473> ;
                                     owl:someValuesFrom :ClimOO_0000211
@@ -4677,7 +4681,7 @@ _:genid1229 owl:intersectionOf ( <http://purl.obolibrary.org/obo/ENVO_00003074>
                                 ) ;
              rdf:type owl:Class .
 
-_:genid1244 rdf:type owl:Restriction ;
+_:genid1247 rdf:type owl:Restriction ;
              owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000178> ;
              owl:someValuesFrom [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/BFO_0000146>
                                                        [ rdf:type owl:Restriction ;
@@ -4688,21 +4692,21 @@ _:genid1244 rdf:type owl:Restriction ;
                                   rdf:type owl:Class
                                 ] .
 
-_:genid1250 rdf:type owl:Restriction ;
+_:genid1253 rdf:type owl:Restriction ;
              owl:onProperty <http://purl.obolibrary.org/obo/RO_0000086> ;
              owl:someValuesFrom <http://purl.obolibrary.org/obo/PATO_0000125> .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource :ClimOO_0000150 ;
    owl:annotatedProperty rdfs:subClassOf ;
-   owl:annotatedTarget _:genid1229 ;
+   owl:annotatedTarget _:genid1232 ;
    rdfs:comment "BFO “continuant part” is not a transitive object property. User may incorporate transitivity to specify the chain of composition between polymers, plastic/polymers-based material, and related pieces and objects of plastic/polymers-based material, as needed."@en
  ] .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource :ClimOO_0000150 ;
    owl:annotatedProperty rdfs:subClassOf ;
-   owl:annotatedTarget _:genid1244 ;
+   owl:annotatedTarget _:genid1247 ;
    rdfs:comment "We aim to establishing an initial account of plastic item surfaces in order to support the representation of pollutants sorption/release. We envision implementations."@en ;
    <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional>
  ] .
@@ -4710,7 +4714,7 @@ _:genid1250 rdf:type owl:Restriction ;
 [ rdf:type owl:Axiom ;
    owl:annotatedSource :ClimOO_0000150 ;
    owl:annotatedProperty rdfs:subClassOf ;
-   owl:annotatedTarget _:genid1250 ;
+   owl:annotatedTarget _:genid1253 ;
    rdfs:comment """ClimOO Ontology developer comment:
 Reference to weight can be added as needed."""@en
  ] .
@@ -4844,7 +4848,7 @@ Reference to weight can be added as needed."""@en
                                       rdf:type owl:Class
                                     ] ;
                 rdfs:subClassOf <http://purl.obolibrary.org/obo/GO_0008150> ,
-                                _:genid1283 ,
+                                _:genid1286 ,
                                 [ owl:intersectionOf ( :ClimOO_0000170
                                                        [ rdf:type owl:Restriction ;
                                                          owl:onProperty <http://purl.obolibrary.org/obo/RO_0002233> ;
@@ -4869,7 +4873,7 @@ Reference to weight can be added as needed."""@en
                 <http://www.w3.org/2004/02/skos/core#definition> "A plastic mineralization process that is mediated by living organisms."@en ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
 
-_:genid1283 owl:intersectionOf ( :ClimOO_0000170
+_:genid1286 owl:intersectionOf ( :ClimOO_0000170
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000057> ;
                                     owl:someValuesFrom <http://purl.obolibrary.org/obo/PCO_0000031>
@@ -4880,7 +4884,7 @@ _:genid1283 owl:intersectionOf ( :ClimOO_0000170
 [ rdf:type owl:Axiom ;
    owl:annotatedSource :ClimOO_0000157 ;
    owl:annotatedProperty rdfs:subClassOf ;
-   owl:annotatedTarget _:genid1283 ;
+   owl:annotatedTarget _:genid1286 ;
    rdfs:comment "Currently, we mantain this axiom referring generally to organismal entities."@en ;
    <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional>
  ] .
@@ -5053,7 +5057,7 @@ We envision implementing such definitions in accordance with regulation revision
                                   owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000117> ;
                                   owl:someValuesFrom :ClimOO_0000161
                                 ] ,
-                                _:genid1352 ,
+                                _:genid1355 ,
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty <http://purl.obolibrary.org/obo/RO_0002233> ;
                                   owl:someValuesFrom :ClimOO_0000163
@@ -5071,14 +5075,14 @@ We envision implementing such definitions in accordance with regulation revision
                                                        :ClimOO_0000075 ,
                                                        :ClimOO_0000228 .
 
-_:genid1352 rdf:type owl:Restriction ;
+_:genid1355 rdf:type owl:Restriction ;
              owl:onProperty <http://purl.obolibrary.org/obo/RO_0002213> ;
              owl:someValuesFrom :ClimOO_0000202 .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource :ClimOO_0000162 ;
    owl:annotatedProperty rdfs:subClassOf ;
-   owl:annotatedTarget _:genid1352 ;
+   owl:annotatedTarget _:genid1355 ;
    rdfs:comment "We envision further discussions with matter subject experts to confirm the correctness of this axiom."@en ;
    <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional>
  ] .
@@ -5086,9 +5090,9 @@ _:genid1352 rdf:type owl:Restriction ;
 
 ###  https://www.w3id.org/climoo#ClimOO_0000163
 :ClimOO_0000163 rdf:type owl:Class ;
-                owl:equivalentClass _:genid1356 ;
+                owl:equivalentClass _:genid1359 ;
                 rdfs:subClassOf :ClimOO_0000150 ,
-                                _:genid1378 ;
+                                _:genid1381 ;
                 <http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> "synthetic polymer debris"@en ;
                 <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "plastic debris, plastic litter"@en ;
                 rdfs:comment "Classification systems for plastic debris vary, especially according to particle size. For instance, EnvO considers 5 mm as the upper-level threshold to define microplastic particles, as this is a commonly recognized size edge in discussions on microplastic litter. Nevertheless, this is merely an operative definition, and there is no complete consensus on employing it (Hartmann et al., 2019). Hartmann et al. (2019) propose a range of 1-1000 micrometers. The ClimOO ontology includes EnvO classification of plastic debris particles and complements and maps it with that proposed by Hartmann et al. (2019). These classifications differentiate for the size range of micro-, macro-, and meso-plastic particles. The shared size ranges for mega- and nano-plastic particles. This is also intended to be an initial guideline to align and map different classification systems."@en ,
@@ -5102,7 +5106,7 @@ _:genid1352 rdf:type owl:Restriction ;
                                                        :ClimOO_0000075 ,
                                                        :ClimOO_0000228 .
 
-_:genid1356 owl:intersectionOf ( <http://purl.obolibrary.org/obo/ENVO_01001687>
+_:genid1359 owl:intersectionOf ( <http://purl.obolibrary.org/obo/ENVO_01001687>
                                   :ClimOO_0000150
                                   [ rdf:type owl:Class ;
                                     owl:complementOf [ rdf:type owl:Restriction ;
@@ -5142,7 +5146,7 @@ _:genid1356 owl:intersectionOf ( <http://purl.obolibrary.org/obo/ENVO_01001687>
                                 ) ;
              rdf:type owl:Class .
 
-_:genid1378 owl:intersectionOf ( <http://purl.obolibrary.org/obo/ENVO_01001687>
+_:genid1381 owl:intersectionOf ( <http://purl.obolibrary.org/obo/ENVO_01001687>
                                   [ rdf:type owl:Class ;
                                     owl:complementOf [ rdf:type owl:Restriction ;
                                                        owl:onProperty <http://purl.obolibrary.org/obo/RO_0000085> ;
@@ -5184,7 +5188,7 @@ _:genid1378 owl:intersectionOf ( <http://purl.obolibrary.org/obo/ENVO_01001687>
 [ rdf:type owl:Axiom ;
    owl:annotatedSource :ClimOO_0000163 ;
    owl:annotatedProperty owl:equivalentClass ;
-   owl:annotatedTarget _:genid1356 ;
+   owl:annotatedTarget _:genid1359 ;
    rdfs:comment "Plastic debris refers to any piece of synthetic polymer-based material that has already been released into an environment. Thus, it is part of that environment."@en ;
    <https://www.w3id.org/sco#SCO_0000039> :ClimOO_0000073
  ] .
@@ -5192,7 +5196,7 @@ _:genid1378 owl:intersectionOf ( <http://purl.obolibrary.org/obo/ENVO_01001687>
 [ rdf:type owl:Axiom ;
    owl:annotatedSource :ClimOO_0000163 ;
    owl:annotatedProperty rdfs:subClassOf ;
-   owl:annotatedTarget _:genid1378 ;
+   owl:annotatedTarget _:genid1381 ;
    rdfs:comment "Ontology implementations can extend the modelling of environmental persistence concerning pieces and materials made of plastics and synthetic polymers."@en
  ] .
 
@@ -5362,7 +5366,7 @@ We envision implementing such definitions in accordance with regulation revision
 
 ###  https://www.w3id.org/climoo#ClimOO_0000171
 :ClimOO_0000171 rdf:type owl:Class ;
-                owl:equivalentClass _:genid1434 ;
+                owl:equivalentClass _:genid1437 ;
                 rdfs:subClassOf :ClimOO_0000153 ,
                                 [ owl:intersectionOf ( :ClimOO_0000153
                                                        [ rdf:type owl:Restriction ;
@@ -5389,7 +5393,7 @@ We envision implementing such definitions in accordance with regulation revision
                 <http://www.w3.org/2004/02/skos/core#definition> "A piece of synthetic plastic that at a certain time bears some function(s), according to some perspectives, that realizes in some plastic object usage process that concretizes some stakeholder's objective(s)."@en ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
 
-_:genid1434 owl:intersectionOf ( :ClimOO_0000153
+_:genid1437 owl:intersectionOf ( :ClimOO_0000153
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty <http://purl.obolibrary.org/obo/RO_0000085> ;
                                     owl:someValuesFrom [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/BFO_0000034>
@@ -5407,7 +5411,7 @@ _:genid1434 owl:intersectionOf ( :ClimOO_0000153
 [ rdf:type owl:Axiom ;
    owl:annotatedSource :ClimOO_0000171 ;
    owl:annotatedProperty owl:equivalentClass ;
-   owl:annotatedTarget _:genid1434 ;
+   owl:annotatedTarget _:genid1437 ;
    rdfs:comment "Further details concerning stakeholders and objective and action specifications can be added as needed."@en
  ] .
 
@@ -5643,19 +5647,19 @@ _:genid1434 owl:intersectionOf ( :ClimOO_0000153
 ###  https://www.w3id.org/climoo#ClimOO_0000179
 :ClimOO_0000179 rdf:type owl:Class ;
                 rdfs:subClassOf <http://purl.obolibrary.org/obo/ENVO_02000178> ,
-                                _:genid1536 ;
+                                _:genid1539 ;
                 rdfs:label "pollution prevention"@en ;
                 <http://www.w3.org/2004/02/skos/core#definition> "An anthropogenic modulation of pollution that leads to avoiding the release of pollutants in an environmental material, according to some stakeholder goals and perspectives."@en ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
 
-_:genid1536 rdf:type owl:Restriction ;
+_:genid1539 rdf:type owl:Restriction ;
              owl:onProperty <http://purl.obolibrary.org/obo/RO_0002212> ;
              owl:someValuesFrom <http://purl.obolibrary.org/obo/ENVO_02500036> .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource :ClimOO_0000179 ;
    owl:annotatedProperty rdfs:subClassOf ;
-   owl:annotatedTarget _:genid1536 ;
+   owl:annotatedTarget _:genid1539 ;
    rdfs:comment "Currently, the axiomatization of this class covers reference to the RO “negatively regulates” object property. Revisions may provide this axiom with more specific and suitable object properties."@en
  ] .
 
@@ -6145,12 +6149,12 @@ Vert, M., Doi, Y., Hellwich, K.-H., Hess, M., Hodge, P., Kubisa, P., Rinaudo, M.
                                                      ) ;
                                   rdf:type owl:Class
                                 ] ,
-                                _:genid1661 ;
+                                _:genid1664 ;
                 rdfs:label "recycling process of synthetic polymers"@en ;
                 <http://www.w3.org/2004/02/skos/core#definition> "A waste recycling process that applies to some recyclable polymers, constituting the synthetic polymer-based material, composing some waste pieces of synthetic polymer-based material."@en ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
 
-_:genid1661 owl:intersectionOf ( :ClimOO_0000179
+_:genid1664 owl:intersectionOf ( :ClimOO_0000179
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty <http://purl.obolibrary.org/obo/RO_0002212> ;
                                     owl:someValuesFrom <http://purl.obolibrary.org/obo/ENVO_02500040>
@@ -6161,7 +6165,7 @@ _:genid1661 owl:intersectionOf ( :ClimOO_0000179
 [ rdf:type owl:Axiom ;
    owl:annotatedSource :ClimOO_0000201 ;
    owl:annotatedProperty rdfs:subClassOf ;
-   owl:annotatedTarget _:genid1661 ;
+   owl:annotatedTarget _:genid1664 ;
    rdfs:comment "We envision further discussions with matter subject experts to confirm the correctness of this axiom."@en ;
    <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional>
  ] .
@@ -6170,7 +6174,7 @@ _:genid1661 owl:intersectionOf ( :ClimOO_0000179
 ###  https://www.w3id.org/climoo#ClimOO_0000202
 :ClimOO_0000202 rdf:type owl:Class ;
                 rdfs:subClassOf <http://purl.obolibrary.org/obo/ENVO_03000010> ,
-                                _:genid1666 ,
+                                _:genid1669 ,
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty <http://purl.obolibrary.org/obo/RO_0002427> ;
                                   owl:someValuesFrom <http://purl.obolibrary.org/obo/ENVO_02500040>
@@ -6186,7 +6190,7 @@ _:genid1661 owl:intersectionOf ( :ClimOO_0000179
                                                        :ClimOO_0000075 ,
                                                        :ClimOO_0000228 .
 
-_:genid1666 owl:intersectionOf ( <http://purl.obolibrary.org/obo/ENVO_02500036>
+_:genid1669 owl:intersectionOf ( <http://purl.obolibrary.org/obo/ENVO_02500036>
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000057> ;
                                     owl:someValuesFrom [ owl:intersectionOf ( [ owl:intersectionOf ( :ClimOO_0000211
@@ -6262,7 +6266,7 @@ _:genid1666 owl:intersectionOf ( <http://purl.obolibrary.org/obo/ENVO_02500036>
 [ rdf:type owl:Axiom ;
    owl:annotatedSource :ClimOO_0000202 ;
    owl:annotatedProperty rdfs:subClassOf ;
-   owl:annotatedTarget _:genid1666 ;
+   owl:annotatedTarget _:genid1669 ;
    rdfs:comment "This axiom requires revisions. Implementations are needed to further restrict the class coverage to cases of interest. Currently the model allows some undesirable cases, such as when pollutants released and acquired are not the same."@en ,
                 "We envision implementing this representation by including references to specific sources and sinks. Correspondences with plastic debris sources/sinks can be clarified as well."@en ,
                 """ClimOO Ontology developer comment:
@@ -6501,33 +6505,33 @@ https://w3id.org/sumso#SuMSO_0000053"""@en ;
                                                      ) ;
                                   rdf:type owl:Class
                                 ] ,
-                                _:genid1783 ,
-                                _:genid1785 ;
+                                _:genid1786 ,
+                                _:genid1788 ;
                 rdfs:comment "From a material science perspective (which is the one we have to refer to for classifying plastics and polymers) plastic materials are constituted by polymers that are thermosetting and thermoplastic, and not, for instance, by elastic polymers. There exist, however, some synthetic combinations, such as thermoplastic elastomer-based synthetic materials, that are composed by polymers presenting both elastic and plastic properties. Strictly speaking, the last are not plastics (material science perspective). However, these materials are included in the count of debris (from an environmental perspective which is the one we have to refer to for classifying debris and pollution). So, the ClimOO Ontology accounts for these two perspectives, modeling differences and interconnection."@en ,
                              "Implementations require to address references to composition threshold. We envision discussion with subject matter experts."@en ;
                 rdfs:label "synthetic polymer-based material"@en ;
                 <http://www.w3.org/2004/02/skos/core#definition> "A manufactured material that is mainly composed of some synthetic polymers and is an output of a manufacturing process of synthetic polymer-based material. Synthetic polymers constitute the material matrix (frame)."@en ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
 
-_:genid1783 rdf:type owl:Restriction ;
+_:genid1786 rdf:type owl:Restriction ;
              owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000110> ;
              owl:someValuesFrom :ClimOO_0000210 .
 
-_:genid1785 rdf:type owl:Restriction ;
+_:genid1788 rdf:type owl:Restriction ;
              owl:onProperty <http://purl.obolibrary.org/obo/RO_0000086> ;
              owl:someValuesFrom <http://purl.obolibrary.org/obo/PATO_0000125> .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource :ClimOO_0000211 ;
    owl:annotatedProperty rdfs:subClassOf ;
-   owl:annotatedTarget _:genid1783 ;
+   owl:annotatedTarget _:genid1786 ;
    rdfs:comment "BFO “continuant part” is not a transitive object property. User may incorporate transitivity to specify the chain of composition between polymers, plastic/polymers-based material, and related pieces and objects of plastic/polymers-based material, as needed."@en
  ] .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource :ClimOO_0000211 ;
    owl:annotatedProperty rdfs:subClassOf ;
-   owl:annotatedTarget _:genid1785 ;
+   owl:annotatedTarget _:genid1788 ;
    rdfs:comment """ClimOO Ontology developer comment:
 Reference to weight can be added as needed."""@en
  ] .
@@ -6572,7 +6576,7 @@ Reference to weight can be added as needed."""@en
 ###  https://www.w3id.org/climoo#ClimOO_0000214
 :ClimOO_0000214 rdf:type owl:Class ;
                 rdfs:subClassOf <http://purl.obolibrary.org/obo/ENVO_03000010> ,
-                                _:genid1793 ;
+                                _:genid1796 ;
                 <http://purl.org/dc/terms/source> "Fu, L., Li, J., Wang, G., Luan, Y., & Dai, W. (2021). Adsorption behavior of organic pollutants on microplastics. Ecotoxicology and Environmental Safety, 217, 112207. https://doi.org/10.1016/j.ecoenv.2021.112207" ;
                 rdfs:comment "Reference to specific types of sorption, such as absorption and adsorption, can be added as needed."@en ,
                              """Implementations will consider extending this representation to model the relation with environmental pollution as well.
@@ -6586,7 +6590,7 @@ According to the current axiomatization and definition, this class may be a subc
                                                        :ClimOO_0000075 ,
                                                        :ClimOO_0000228 .
 
-_:genid1793 rdf:type owl:Restriction ;
+_:genid1796 rdf:type owl:Restriction ;
              owl:onProperty <http://purl.obolibrary.org/obo/RO_0002234> ;
              owl:someValuesFrom [ owl:intersectionOf ( :ClimOO_0000211
                                                        [ rdf:type owl:Restriction ;
@@ -6607,7 +6611,7 @@ _:genid1793 rdf:type owl:Restriction ;
 [ rdf:type owl:Axiom ;
    owl:annotatedSource :ClimOO_0000214 ;
    owl:annotatedProperty rdfs:subClassOf ;
-   owl:annotatedTarget _:genid1793 ;
+   owl:annotatedTarget _:genid1796 ;
    rdfs:comment "We envision implementing this representation by including references to specific sources and sinks. Correspondences with plastic debris sources/sinks can be clarified as well."@en
  ] .
 
@@ -6799,20 +6803,20 @@ This class could be implement to track transformation processes broadly understo
                                                      ) ;
                                   rdf:type owl:Class
                                 ] ,
-                                _:genid1844 ;
+                                _:genid1847 ;
                 rdfs:comment "To date, the ClimOO Ontology does not cover related classes for synthetic polymer-based materials, as out of the current scope. Implementations can go in this direction if needed."@en ;
                 rdfs:label "production process of a piece of synthetic plastic"@en ;
                 <http://www.w3.org/2004/02/skos/core#definition> "A manufacturing process that has some synthetic plastic as the main input and some piece of synthetic plastic as the main output." ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
 
-_:genid1844 rdf:type owl:Restriction ;
+_:genid1847 rdf:type owl:Restriction ;
              owl:onProperty <http://purl.obolibrary.org/obo/RO_0002427> ;
              owl:someValuesFrom :ClimOO_0000227 .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource :ClimOO_0000226 ;
    owl:annotatedProperty rdfs:subClassOf ;
-   owl:annotatedTarget _:genid1844 ;
+   owl:annotatedTarget _:genid1847 ;
    rdfs:comment "A class for production processes of polymer-based materials and be added as needed, and axiomatization can follow as for the other production process classes."@en
  ] .
 
@@ -6939,7 +6943,7 @@ https://w3id.org/sumso#SuMSO_0000053"""@en ;
 
 ###  https://www.w3id.org/climoo#ClimOO_0000237
 :ClimOO_0000237 rdf:type owl:Class ;
-                owl:equivalentClass _:genid1859 ;
+                owl:equivalentClass _:genid1862 ;
                 rdfs:subClassOf :ClimOO_0000214 ,
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty <http://purl.obolibrary.org/obo/RO_0002234> ;
@@ -6974,7 +6978,7 @@ https://w3id.org/sumso#SuMSO_0000053"""@en ;
                 <http://www.w3.org/2004/02/skos/core#definition> "A synthetic polymer-based material sorption of pollutants that has as output some synthetic polymer-based material that composes some plastic debris particle with an increased level of pollutants as part (compared to levels prior to participating in that process)."@en ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
 
-_:genid1859 owl:intersectionOf ( :ClimOO_0000214
+_:genid1862 owl:intersectionOf ( :ClimOO_0000214
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty <http://purl.obolibrary.org/obo/RO_0002234> ;
                                     owl:someValuesFrom [ owl:intersectionOf ( :ClimOO_0000211
@@ -7006,7 +7010,7 @@ _:genid1859 owl:intersectionOf ( :ClimOO_0000214
 [ rdf:type owl:Axiom ;
    owl:annotatedSource :ClimOO_0000237 ;
    owl:annotatedProperty owl:equivalentClass ;
-   owl:annotatedTarget _:genid1859 ;
+   owl:annotatedTarget _:genid1862 ;
    rdfs:comment "We currently include a reference to the two systems of classification covered by the ClimOO Ontology, concerning microplastic debris. We envision revisions of this axiom following the inclusion of further systems of classification."@en
  ] .
 
@@ -7014,19 +7018,19 @@ _:genid1859 owl:intersectionOf ( :ClimOO_0000214
 ###  https://www.w3id.org/climoo#ClimOO_0000238
 :ClimOO_0000238 rdf:type owl:Class ;
                 rdfs:subClassOf :ClimOO_0000179 ,
-                                _:genid1890 ;
+                                _:genid1893 ;
                 rdfs:label "plastic pollution prevention"@en ;
                 <http://www.w3.org/2004/02/skos/core#definition> "A pollution prevention process that leads to avoiding the release and accumulation of plastic debris particles in an environmental material, according to some stakeholder goals and perspectives."@en ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
 
-_:genid1890 rdf:type owl:Restriction ;
+_:genid1893 rdf:type owl:Restriction ;
              owl:onProperty <http://purl.obolibrary.org/obo/RO_0002212> ;
              owl:someValuesFrom <http://purl.obolibrary.org/obo/ENVO_02500040> .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource :ClimOO_0000238 ;
    owl:annotatedProperty rdfs:subClassOf ;
-   owl:annotatedTarget _:genid1890 ;
+   owl:annotatedTarget _:genid1893 ;
    rdfs:comment "Currently, the axiomatization of this class covers reference to the RO “negatively regulates” object property. Revisions may provide this axiom with more specific and suitable object properties."@en
  ] .
 

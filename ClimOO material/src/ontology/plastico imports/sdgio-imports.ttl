@@ -8,7 +8,7 @@
 
 <http://purl.obolibrary.org/obo/climoo/imports/sdgio-imports> rdf:type owl:Ontology ;
                                                                owl:versionIRI <http://purl.obolibrary.org/obo/climoo/imports/sdgio-imports#2026-02-24> ;
-                                                               rdfs:comment """This file contains ClimOO Ontology imports from the Sustinable Development Goals Interface Ontology (SDGIO). Imports were manually collected and revised.
+                                                               rdfs:comment """This file contains ClimOO Ontology suite imports from the Sustinable Development Goals Interface Ontology (SDGIO). Imports were manually collected and revised.
 
 Ontology source: https://raw.githubusercontent.com/SDG-InterfaceOntology/sdgio/refs/heads/master/sdgio.owl"""@en ;
                                                                owl:versionInfo "2026-02-24" .
