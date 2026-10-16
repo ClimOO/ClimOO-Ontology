@@ -951,7 +951,7 @@ http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#
 ###  https://www.w3id.org/climoo/climoo-sdc2#ClimOO_0000319
 :ClimOO_0000319 rdf:type owl:Class ;
                 rdfs:subClassOf <https://www.w3id.org/sco#SCO_0000010> ,
-                                [ owl:intersectionOf ( <https://www.w3id.org/sco#SCO_0000002>
+                                [ owl:intersectionOf ( <https://www.w3id.org/sco#SCO_0000010>
                                                        [ rdf:type owl:Restriction ;
                                                          owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000167> ;
                                                          owl:someValuesFrom :ClimOO_0000298

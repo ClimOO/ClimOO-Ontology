@@ -10,8 +10,7 @@
                                                 owl:versionIRI :piccomela-v1.0.0 ;
                                                 owl:imports <https://raw.githubusercontent.com/ClimOO/ClimOO-Ontology/refs/heads/main/ClimOO%20material/src/ontology/piccomela%20imports/sumso-imports.ttl> ,
                                                             <https://www.w3id.org/climoo/climoo-picco#picco-v1.0.0> ;
-                                                <http://purl.org/dc/terms/contributor> "Giorgio A. Ubbiali" ,
-                                                                                       "Ludger Jansen" ;
+                                                <http://purl.org/dc/terms/contributor> "Ludger Jansen; Giorgio A. Ubbiali" ;
                                                 <http://purl.org/dc/terms/creator> "Giorgio A. Ubbiali" ;
                                                 <http://purl.org/dc/terms/description> "ClimOO Ontology is a reference ontology, modeling plastics, (micro-)plastic pollution, climate change, and their interrelation, with a primary focus on agricultural systems. The ClimOO Ontology is structured in a suite of nested ontological modules. The PICCOmela module applies the Plastics Interconnecting with Climate Change Ontology (PICCO) module to agriculture systems, especially to apple production. The main use case of reference is the local agricultural production of apple in South Tyrol (Italy)."@en ;
                                                 <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0/" ;
@@ -219,7 +218,11 @@ We extend the domain and range of this object property to â€œsystem environmentâ
 
 ###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000016
 :ClimOO_0000016 rdf:type owl:Class ;
-                rdfs:subClassOf <https://www.w3id.org/sco#SCO_0000032> ;
+                rdfs:subClassOf <https://www.w3id.org/sco#SCO_0000032> ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000111> ;
+                                  owl:someValuesFrom <https://www.w3id.org/climoo/climoo-sdc2#ClimOO_0000311>
+                                ] ;
                 rdfs:label "agricultural system spatial region"@en ;
                 <http://www.w3.org/2004/02/skos/core#definition> "A complex system spatial region of an agricultural system."@en ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
@@ -261,6 +264,7 @@ We extend the domain and range of this object property to â€œsystem environmentâ
                                                      ) ;
                                   rdf:type owl:Class
                                 ] ;
+                owl:disjointWith :ClimOO_0000364 ;
                 rdfs:label "agricultural system environment"@en ;
                 <http://www.w3.org/2004/02/skos/core#definition> "An complex system environment that surrounds and is distinct and disjoint from an agricultural system."@en ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
@@ -316,9 +320,14 @@ We extend the domain and range of this object property to â€œsystem environmentâ
                                                          ) ;
                                       rdf:type owl:Class
                                     ] ;
-                rdfs:subClassOf <https://www.w3id.org/sco#SCO_0000023> ;
+                rdfs:subClassOf <https://www.w3id.org/sco#SCO_0000023> ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000118> ;
+                                  owl:someValuesFrom <https://www.w3id.org/climoo/climoo-sdc2#ClimOO_0000315>
+                                ] ;
+                owl:disjointWith :ClimOO_0000052 ;
                 rdfs:label "agricultural system history"@en ;
-                <http://www.w3.org/2004/02/skos/core#definition> " The comlex system history of an agricultural system."@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "The complex system history of an agricultural system."@en ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
 
 
@@ -423,11 +432,15 @@ We extend the domain and range of this object property to â€œsystem environmentâ
 :ClimOO_0000052 rdf:type owl:Class ;
                 rdfs:subClassOf [ owl:intersectionOf ( <https://www.w3id.org/sco#SCO_0000010>
                                                        [ rdf:type owl:Restriction ;
-                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000057> ;
+                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000167> ;
                                                          owl:someValuesFrom :ClimOO_0000364
                                                        ]
                                                      ) ;
                                   rdf:type owl:Class
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000118> ;
+                                  owl:someValuesFrom <https://www.w3id.org/climoo/climoo-sdc2#ClimOO_0000319>
                                 ] ;
                 rdfs:label "agricultural system development"@en ;
                 <http://www.w3.org/2004/02/skos/core#definition> " The complex system development of an agricultural system."@en ;
@@ -437,6 +450,38 @@ We extend the domain and range of this object property to â€œsystem environmentâ
 ###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000364
 :ClimOO_0000364 rdf:type owl:Class ;
                 rdfs:subClassOf <https://www.w3id.org/sco#SCO_0000015> ,
+                                [ owl:intersectionOf ( <https://www.w3id.org/sco#SCO_0000015>
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000110> ;
+                                                         owl:someValuesFrom :ClimOO_0000028
+                                                       ]
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000111> ;
+                                                         owl:someValuesFrom :ClimOO_0000012
+                                                       ]
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000166> ;
+                                                         owl:someValuesFrom :ClimOO_0000052
+                                                       ]
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000185> ;
+                                                         owl:someValuesFrom :ClimOO_0000036
+                                                       ]
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000211> ;
+                                                         owl:someValuesFrom :ClimOO_0000016
+                                                       ]
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://purl.obolibrary.org/obo/RO_0002163> ;
+                                                         owl:someValuesFrom :ClimOO_0000024
+                                                       ]
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000185> ;
+                                                         owl:allValuesFrom :ClimOO_0000036
+                                                       ]
+                                                     ) ;
+                                  rdf:type owl:Class
+                                ] ,
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty :ClimOO_0000366 ;
                                   owl:someValuesFrom <https://www.w3id.org/climoo/climoo-sdc2#ClimOO_0000298>
@@ -507,7 +552,7 @@ The agricultural system class may be considered a potential subclass of the SuMS
 :ClimOO_0000370 rdf:type owl:Class ;
                 rdfs:subClassOf :ClimOO_0000016 ;
                 rdfs:label "apple farming system spatial region"@en ;
-                <http://www.w3.org/2004/02/skos/core#definition> "A agricultural system spatial region of an apple farming system."@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "An agricultural system spatial region of an apple farming system."@en ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
 
 
@@ -524,7 +569,7 @@ The agricultural system class may be considered a potential subclass of the SuMS
                 rdfs:subClassOf :ClimOO_0000020 ;
                 owl:disjointWith :ClimOO_0000373 ;
                 rdfs:label "apple farming system environment component"@en ;
-                <http://www.w3.org/2004/02/skos/core#definition> "A agricultural system environment component that belongs to the agricultural system environment of an apple farming system."@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "An agricultural system environment component that belongs to the agricultural system environment of an apple farming system."@en ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
 
 
@@ -547,6 +592,7 @@ The agricultural system class may be considered a potential subclass of the SuMS
                                                      ) ;
                                   rdf:type owl:Class
                                 ] ;
+                owl:disjointWith :ClimOO_0000380 ;
                 rdfs:label "apple farming system environment"@en ;
                 <http://www.w3.org/2004/02/skos/core#definition> "An agricultural system environment that surrounds and is distinct and disjoint from an apple farming system."@en ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
@@ -564,7 +610,7 @@ The agricultural system class may be considered a potential subclass of the SuMS
                                     ] ;
                 rdfs:subClassOf :ClimOO_0000028 ;
                 rdfs:label "apple farming system component"@en ;
-                <http://www.w3.org/2004/02/skos/core#definition> "A agricultural system component that belongs to an apple farming system."@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "An agricultural system component that belongs to an apple farming system."@en ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
 
 
@@ -603,8 +649,9 @@ The agricultural system class may be considered a potential subclass of the SuMS
                                       rdf:type owl:Class
                                     ] ;
                 rdfs:subClassOf :ClimOO_0000036 ;
+                owl:disjointWith :ClimOO_0000379 ;
                 rdfs:label "apple farming system history"@en ;
-                <http://www.w3.org/2004/02/skos/core#definition> " The comlex system history of an apple farming system."@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "The agricultural system history of an apple farming system."@en ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
 
 
@@ -614,11 +661,11 @@ The agricultural system class may be considered a potential subclass of the SuMS
                                 [ owl:intersectionOf ( :ClimOO_0000040
                                                        [ rdf:type owl:Restriction ;
                                                          owl:onProperty <https://www.w3id.org/sco#SCO_0000037> ;
-                                                         owl:someValuesFrom :ClimOO_0000040
+                                                         owl:someValuesFrom :ClimOO_0000004
                                                        ]
                                                        [ rdf:type owl:Restriction ;
                                                          owl:onProperty <https://www.w3id.org/sco#SCO_0000037> ;
-                                                         owl:allValuesFrom :ClimOO_0000040
+                                                         owl:allValuesFrom :ClimOO_0000004
                                                        ]
                                                      ) ;
                                   rdf:type owl:Class
@@ -709,23 +756,367 @@ The agricultural system class may be considered a potential subclass of the SuMS
                 rdfs:subClassOf :ClimOO_0000052 ,
                                 [ owl:intersectionOf ( :ClimOO_0000052
                                                        [ rdf:type owl:Restriction ;
-                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000057> ;
+                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000167> ;
                                                          owl:someValuesFrom :ClimOO_0000380
                                                        ]
                                                      ) ;
                                   rdf:type owl:Class
                                 ] ;
                 rdfs:label "apple farming system development"@en ;
-                <http://www.w3.org/2004/02/skos/core#definition> " The agricultural system development of an apple farming system."@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "The agricultural system development of an apple farming system."@en ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
 
 
 ###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000380
 :ClimOO_0000380 rdf:type owl:Class ;
-                rdfs:subClassOf :ClimOO_0000364 ;
+                rdfs:subClassOf :ClimOO_0000364 ,
+                                [ owl:intersectionOf ( :ClimOO_0000364
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000110> ;
+                                                         owl:someValuesFrom :ClimOO_0000373
+                                                       ]
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000111> ;
+                                                         owl:someValuesFrom :ClimOO_0000369
+                                                       ]
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000166> ;
+                                                         owl:someValuesFrom :ClimOO_0000379
+                                                       ]
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000185> ;
+                                                         owl:someValuesFrom :ClimOO_0000375
+                                                       ]
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000211> ;
+                                                         owl:someValuesFrom :ClimOO_0000370
+                                                       ]
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://purl.obolibrary.org/obo/RO_0002163> ;
+                                                         owl:someValuesFrom :ClimOO_0000372
+                                                       ]
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000185> ;
+                                                         owl:allValuesFrom :ClimOO_0000375
+                                                       ]
+                                                     ) ;
+                                  rdf:type owl:Class
+                                ] ;
                 rdfs:label "apple farming system"@en ;
                 <http://www.w3.org/2004/02/skos/core#definition> "An agricultural system where humans grow, produce, and harvest apples for retail and consumption."@en ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom> "http://purl.obolibrary.org/obo/ENVO_01001246" ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000381
+:ClimOO_0000381 rdf:type owl:Class ;
+                owl:equivalentClass [ owl:intersectionOf ( :ClimOO_0000387
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <https://www.w3id.org/sco#SCO_0000038> ;
+                                                             owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                  owl:unionOf ( :ClimOO_0000390
+                                                                                                :ClimOO_0000392
+                                                                                              )
+                                                                                ]
+                                                           ]
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ] ;
+                rdfs:subClassOf :ClimOO_0000367 ;
+                rdfs:label "apple orchard system agent"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "An apple orchard system component that is an agent in an interaction among apple orchard system components or in an interaction between apple orchard system components and apple orchard system environment components."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000382
+:ClimOO_0000382 rdf:type owl:Class ;
+                owl:equivalentClass [ owl:intersectionOf ( :ClimOO_0000387
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://purl.obolibrary.org/obo/RO_0000087> ;
+                                                             owl:someValuesFrom <https://www.w3id.org/sco#SCO_0000018>
+                                                           ]
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ] ;
+                rdfs:subClassOf :ClimOO_0000368 ;
+                rdfs:label "apple orchard system stakeholder"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "An apple orchard system component with a stakeholder role."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000383
+:ClimOO_0000383 rdf:type owl:Class ;
+                owl:equivalentClass [ owl:intersectionOf ( :ClimOO_0000369
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000137> ;
+                                                             owl:someValuesFrom :ClimOO_0000394
+                                                           ]
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ] ;
+                rdfs:subClassOf :ClimOO_0000369 ;
+                rdfs:label "apple orchard system boundary"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "An apple farming system boundary of an apple orchard system."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000384
+:ClimOO_0000384 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000370 ;
+                rdfs:label "apple orchard system spatial region"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A apple farming system spatial region of an apple orchard system."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000385
+:ClimOO_0000385 rdf:type owl:Class ;
+                owl:equivalentClass [ owl:intersectionOf ( :ClimOO_0000371
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000176> ;
+                                                             owl:someValuesFrom :ClimOO_0000386
+                                                           ]
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ] ;
+                rdfs:subClassOf :ClimOO_0000371 ;
+                owl:disjointWith :ClimOO_0000387 ;
+                rdfs:label "apple orchard system environment component"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "An apple farming system environment component that belongs to the apple farming system environment of an apple orchard system."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000386
+:ClimOO_0000386 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000372 ,
+                                [ owl:intersectionOf ( :ClimOO_0000372
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000178> ;
+                                                         owl:someValuesFrom :ClimOO_0000385
+                                                       ]
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://purl.obolibrary.org/obo/RO_0002163> ;
+                                                         owl:someValuesFrom :ClimOO_0000394
+                                                       ]
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://purl.obolibrary.org/obo/RO_0002163> ;
+                                                         owl:allValuesFrom :ClimOO_0000394
+                                                       ]
+                                                     ) ;
+                                  rdf:type owl:Class
+                                ] ;
+                rdfs:label "apple orchard system environment"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "An apple farming system environment that surrounds and is distinct and disjoint from an apple orchard system."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000387
+:ClimOO_0000387 rdf:type owl:Class ;
+                owl:equivalentClass [ owl:intersectionOf ( :ClimOO_0000373
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000176> ;
+                                                             owl:someValuesFrom :ClimOO_0000394
+                                                           ]
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ] ;
+                rdfs:subClassOf :ClimOO_0000373 ;
+                rdfs:label "apple orchard system component"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "An apple farming system component that belongs to an apple orchard system."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000388
+:ClimOO_0000388 rdf:type owl:Class ;
+                owl:equivalentClass [ owl:intersectionOf ( :ClimOO_0000385
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <https://www.w3id.org/sco#SCO_0000038> ;
+                                                             owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                  owl:unionOf ( :ClimOO_0000391
+                                                                                                :ClimOO_0000392
+                                                                                              )
+                                                                                ]
+                                                           ]
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ] ;
+                rdfs:subClassOf :ClimOO_0000374 ;
+                rdfs:label "apple orchard system environment agent"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "An apple orchard system environment component that is an agent in an interaction among apple orchard system environment components or in an interaction between apple orchard system components and apple orchard system environment components."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000389
+:ClimOO_0000389 rdf:type owl:Class ;
+                owl:equivalentClass [ owl:intersectionOf ( :ClimOO_0000375
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000184> ;
+                                                             owl:someValuesFrom :ClimOO_0000394
+                                                           ]
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000184> ;
+                                                             owl:allValuesFrom :ClimOO_0000394
+                                                           ]
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ] ;
+                rdfs:subClassOf :ClimOO_0000375 ;
+                owl:disjointWith :ClimOO_0000393 ;
+                rdfs:label "apple orchard system history"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> " The agricultural system history of an apple orchard system."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000390
+:ClimOO_0000390 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000376 ,
+                                [ owl:intersectionOf ( :ClimOO_0000376
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <https://www.w3id.org/sco#SCO_0000037> ;
+                                                         owl:someValuesFrom :ClimOO_0000381
+                                                       ]
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <https://www.w3id.org/sco#SCO_0000037> ;
+                                                         owl:allValuesFrom :ClimOO_0000381
+                                                       ]
+                                                     ) ;
+                                  rdf:type owl:Class
+                                ] ,
+                                [ owl:intersectionOf ( :ClimOO_0000376
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000167> ;
+                                                         owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+                                                         owl:onClass :ClimOO_0000387
+                                                       ]
+                                                     ) ;
+                                  rdf:type owl:Class
+                                ] ;
+                owl:disjointWith :ClimOO_0000391 ,
+                                 :ClimOO_0000392 ;
+                rdfs:label "interaction among apple orchard system components"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "An interaction among apple farming system components that occurs among at least two apple orchard system components of an apple orchard system."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000391
+:ClimOO_0000391 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000377 ,
+                                [ owl:intersectionOf ( :ClimOO_0000377
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <https://www.w3id.org/sco#SCO_0000037> ;
+                                                         owl:someValuesFrom :ClimOO_0000388
+                                                       ]
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <https://www.w3id.org/sco#SCO_0000037> ;
+                                                         owl:allValuesFrom :ClimOO_0000388
+                                                       ]
+                                                     ) ;
+                                  rdf:type owl:Class
+                                ] ,
+                                [ owl:intersectionOf ( :ClimOO_0000377
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000167> ;
+                                                         owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+                                                         owl:onClass :ClimOO_0000385
+                                                       ]
+                                                     ) ;
+                                  rdf:type owl:Class
+                                ] ;
+                owl:disjointWith :ClimOO_0000392 ;
+                rdfs:label "interaction among apple orchard system environment components"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "An interaction among apple farming system environment components that occurs among at least two apple orchard system environment components of an apple orchard system."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000392
+:ClimOO_0000392 rdf:type owl:Class ;
+                rdfs:subClassOf [ owl:intersectionOf ( :ClimOO_0000378
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000167> ;
+                                                         owl:someValuesFrom :ClimOO_0000385
+                                                       ]
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000167> ;
+                                                         owl:someValuesFrom :ClimOO_0000387
+                                                       ]
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <https://www.w3id.org/sco#SCO_0000037> ;
+                                                         owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                              owl:unionOf ( :ClimOO_0000381
+                                                                                            :ClimOO_0000388
+                                                                                          )
+                                                                            ]
+                                                       ]
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <https://www.w3id.org/sco#SCO_0000037> ;
+                                                         owl:allValuesFrom [ rdf:type owl:Class ;
+                                                                             owl:unionOf ( :ClimOO_0000381
+                                                                                           :ClimOO_0000388
+                                                                                         )
+                                                                           ]
+                                                       ]
+                                                     ) ;
+                                  rdf:type owl:Class
+                                ] ;
+                rdfs:label "interaction between apple orchard system components and apple orchard system environment components"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "An interaction between apple farming system components and apple farming system environment components that occurs between at least one apple orchard system component and one apple orchard system environment component where the latter belongs to the environment of the apple orchard system to which the apple orchard system component belongs."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000393
+:ClimOO_0000393 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000379 ,
+                                [ owl:intersectionOf ( :ClimOO_0000379
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000167> ;
+                                                         owl:someValuesFrom :ClimOO_0000394
+                                                       ]
+                                                     ) ;
+                                  rdf:type owl:Class
+                                ] ;
+                rdfs:label "apple orchard system development"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "The apple farming system development of an apple orchard system."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000394
+:ClimOO_0000394 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000380 ,
+                                [ owl:intersectionOf ( :ClimOO_0000380
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000110> ;
+                                                         owl:someValuesFrom :ClimOO_0000387
+                                                       ]
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000111> ;
+                                                         owl:someValuesFrom :ClimOO_0000383
+                                                       ]
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000166> ;
+                                                         owl:someValuesFrom :ClimOO_0000393
+                                                       ]
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000185> ;
+                                                         owl:someValuesFrom :ClimOO_0000389
+                                                       ]
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000211> ;
+                                                         owl:someValuesFrom :ClimOO_0000384
+                                                       ]
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://purl.obolibrary.org/obo/RO_0002163> ;
+                                                         owl:someValuesFrom :ClimOO_0000386
+                                                       ]
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000185> ;
+                                                         owl:allValuesFrom :ClimOO_0000389
+                                                       ]
+                                                     ) ;
+                                  rdf:type owl:Class
+                                ] ;
+                rdfs:comment "We currently include abandoned orchards in the scope of this class, while we exclude systems of wild apple trees. Implementations may revise the model as needed."@en ;
+                rdfs:label "apple orchard"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "An apple farming system predominantly composed of apple trees (they are the focus of interest), intentionally maintained by humans for apple production."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom> "http://purl.obolibrary.org/obo/ENVO_00000115" ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
 
 
