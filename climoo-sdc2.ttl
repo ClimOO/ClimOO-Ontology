@@ -660,7 +660,18 @@ _:genid37 rdf:type owl:Restriction ;
                                                          ) ;
                                       rdf:type owl:Class
                                     ] ;
-                rdfs:subClassOf <https://www.w3id.org/sco#SCO_0000028> ;
+                rdfs:subClassOf <https://www.w3id.org/sco#SCO_0000028> ,
+                                [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000101> ;
+                                                         owl:someValuesFrom <https://www.w3id.org/sco#SCO_0000004>
+                                                       ]
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://purl.obolibrary.org/obo/RO_0000091> ;
+                                                         owl:someValuesFrom :ClimOO_0000395
+                                                       ]
+                                                     ) ;
+                                  rdf:type owl:Class
+                                ] ;
                 owl:disjointWith :ClimOO_0000312 ;
                 rdfs:comment "Reference to stakeholders of climate systems can be added as needed."@en ;
                 rdfs:label "climate system component"@en ;
@@ -806,7 +817,18 @@ http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#
                                                          ) ;
                                       rdf:type owl:Class
                                     ] ;
-                rdfs:subClassOf <https://www.w3id.org/sco#SCO_0000026> ;
+                rdfs:subClassOf <https://www.w3id.org/sco#SCO_0000026> ,
+                                [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000101> ;
+                                                         owl:someValuesFrom <https://www.w3id.org/sco#SCO_0000004>
+                                                       ]
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://purl.obolibrary.org/obo/RO_0000091> ;
+                                                         owl:someValuesFrom :ClimOO_0000397
+                                                       ]
+                                                     ) ;
+                                  rdf:type owl:Class
+                                ] ;
                 rdfs:label "climate system environment component"@en ;
                 <http://www.w3.org/2004/02/skos/core#definition> "A complex system environment component that belongs to the complex system environment of a climate system."@en ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
@@ -1407,6 +1429,109 @@ http://purl.obolibrary.org/obo/ENVO_1000745""" ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
 
 
+###  https://www.w3id.org/climoo/climoo-sdc2#ClimOO_0000395
+:ClimOO_0000395 rdf:type owl:Class ;
+                owl:equivalentClass [ owl:intersectionOf ( <https://www.w3id.org/sco#SCO_0000016>
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://purl.obolibrary.org/obo/RO_0000092> ;
+                                                             owl:someValuesFrom :ClimOO_0000302
+                                                           ]
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ] ;
+                rdfs:subClassOf <https://www.w3id.org/sco#SCO_0000016> ,
+                                [ owl:intersectionOf ( <https://www.w3id.org/sco#SCO_0000016>
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000059> ;
+                                                         owl:someValuesFrom <https://www.w3id.org/sco#SCO_0000004>
+                                                       ]
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://www.ontologyrepository.com/CommonCoreOntologies/is_subject_of> ;
+                                                         owl:someValuesFrom <https://www.w3id.org/sco#SCO_0000004>
+                                                       ]
+                                                     ) ;
+                                  rdf:type owl:Class
+                                ] ;
+                rdfs:label "climate system component perspective"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A perspective that is bearered by a climate system component."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-sdc2#ClimOO_0000396
+:ClimOO_0000396 rdf:type owl:Class ;
+                rdfs:subClassOf <https://www.w3id.org/sco#SCO_0000030> ,
+                                [ owl:intersectionOf ( :ClimOO_0000395
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000059> ;
+                                                         owl:someValuesFrom <https://www.w3id.org/sco#SCO_0000040>
+                                                       ]
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://www.ontologyrepository.com/CommonCoreOntologies/is_subject_of> ;
+                                                         owl:someValuesFrom <https://www.w3id.org/sco#SCO_0000040>
+                                                       ]
+                                                     ) ;
+                                  rdf:type owl:Class
+                                ] ;
+                rdfs:label "climate system stakeholder perspective"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A stakeholder perspective that is bearered by a climate system stakeholder."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-sdc2#ClimOO_0000397
+:ClimOO_0000397 rdf:type owl:Class ;
+                owl:equivalentClass [ owl:intersectionOf ( <https://www.w3id.org/sco#SCO_0000016>
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://purl.obolibrary.org/obo/RO_0000092> ;
+                                                             owl:someValuesFrom :ClimOO_0000312
+                                                           ]
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ] ;
+                rdfs:subClassOf <https://www.w3id.org/sco#SCO_0000016> ,
+                                [ owl:intersectionOf ( <https://www.w3id.org/sco#SCO_0000016>
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000059> ;
+                                                         owl:someValuesFrom <https://www.w3id.org/sco#SCO_0000004>
+                                                       ]
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://www.ontologyrepository.com/CommonCoreOntologies/is_subject_of> ;
+                                                         owl:someValuesFrom <https://www.w3id.org/sco#SCO_0000004>
+                                                       ]
+                                                     ) ;
+                                  rdf:type owl:Class
+                                ] ;
+                rdfs:label "climate system environment component perspective"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A perspective that is bearered by a climate system environment component."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-sdc2#ClimOO_0000398
+:ClimOO_0000398 rdf:type owl:Class ;
+                owl:equivalentClass [ owl:intersectionOf ( :ClimOO_0000302
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty <http://purl.obolibrary.org/obo/RO_0000087> ;
+                                                             owl:someValuesFrom <https://www.w3id.org/sco#SCO_0000018>
+                                                           ]
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ] ;
+                rdfs:subClassOf <https://www.w3id.org/sco#SCO_0000036> ,
+                                [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000101> ;
+                                                         owl:someValuesFrom <https://www.w3id.org/sco#SCO_0000040>
+                                                       ]
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://purl.obolibrary.org/obo/RO_0000091> ;
+                                                         owl:someValuesFrom :ClimOO_0000396
+                                                       ]
+                                                     ) ;
+                                  rdf:type owl:Class
+                                ] ;
+                rdfs:label "climate system stakeholder"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A climate system component with a stakeholder role."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
 ###  https://www.w3id.org/climoo/climoo-sdc2#Climate-related_Carbon_Turnover_Process
 :Climate-related_Carbon_Turnover_Process rdf:type owl:Class ;
                                          rdfs:subClassOf <http://www.ontologyrepository.com/CommonCoreOntologies/NaturalProcess> ,
@@ -1856,13 +1981,13 @@ The original model seems primarily to refer to this class and subclasses for hum
 ###  https://www.w3id.org/climoo/climoo-sdc2#Emission_of_Ozone-depleting_Substances
 :Emission_of_Ozone-depleting_Substances rdf:type owl:Class ;
                                         rdfs:subClassOf :Emission_of_Greenhouse_Gas ,
-                                                        _:genid254 ;
+                                                        _:genid299 ;
                                         rdfs:comment """ClimOO Ontology comment:
 The original model seems primarily to refer to this class and subclasses for human-driven phenomena. However, the terminology used and the presence of a specific “Human-induced Greenhouse Gas Emission” class seem to indicate a broader applicability. We included these classes as having a broader applicability beyond human-driven phenomena, and created specific human-focused classes. Implementation may follow."""@en ;
                                         rdfs:label "emission of ozone-depleting substances"@en ;
                                         <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional> .
 
-_:genid254 rdf:type owl:Restriction ;
+_:genid299 rdf:type owl:Restriction ;
             owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000167> ;
             owl:someValuesFrom [ rdf:type owl:Class ;
                                  owl:unionOf ( :Chloroflurocarbon
@@ -1873,7 +1998,7 @@ _:genid254 rdf:type owl:Restriction ;
 [ rdf:type owl:Axiom ;
    owl:annotatedSource :Emission_of_Ozone-depleting_Substances ;
    owl:annotatedProperty rdfs:subClassOf ;
-   owl:annotatedTarget _:genid254 ;
+   owl:annotatedTarget _:genid299 ;
    rdfs:comment """ClimOO Ontology comment:
 this axiom is provisional. Reference to other types of ozone depleting substance should be added."""@en ;
    <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional>
@@ -1883,13 +2008,13 @@ this axiom is provisional. Reference to other types of ozone depleting substance
 ###  https://www.w3id.org/climoo/climoo-sdc2#Emission_of_Tropospheric_Ozone_Precursors
 :Emission_of_Tropospheric_Ozone_Precursors rdf:type owl:Class ;
                                            rdfs:subClassOf :Emission_of_Greenhouse_Gas ,
-                                                           _:genid259 ;
+                                                           _:genid304 ;
                                            rdfs:comment """ClimOO Ontology comment:
 The original model seems primarily to refer to this class and subclasses for human-driven phenomena. However, the terminology used and the presence of a specific “Human-induced Greenhouse Gas Emission” class seem to indicate a broader applicability. We included these classes as having a broader applicability beyond human-driven phenomena, and created specific human-focused classes. Implementation may follow."""@en ;
                                            rdfs:label "emission of tropospheric ozone precursors"@en ;
                                            <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional> .
 
-_:genid259 rdf:type owl:Restriction ;
+_:genid304 rdf:type owl:Restriction ;
             owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000167> ;
             owl:someValuesFrom [ rdf:type owl:Class ;
                                  owl:unionOf ( :Methane
@@ -1900,7 +2025,7 @@ _:genid259 rdf:type owl:Restriction ;
 [ rdf:type owl:Axiom ;
    owl:annotatedSource :Emission_of_Tropospheric_Ozone_Precursors ;
    owl:annotatedProperty rdfs:subClassOf ;
-   owl:annotatedTarget _:genid259 ;
+   owl:annotatedTarget _:genid304 ;
    rdfs:comment """ClimOO Ontology comment:
 this axiom is provisional. Reference to other types of tropospheric ozone precursors should be added."""@en ;
    <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional>
@@ -2479,11 +2604,11 @@ See https://www.w3id.org/climoo/climoo-sdc2#Change_in_Climate_System and https:/
 ###  https://www.w3id.org/climoo/climoo-sdc2#Hydrospheric_Physical_Process
 :Hydrospheric_Physical_Process rdf:type owl:Class ;
                                rdfs:subClassOf <http://www.ontologyrepository.com/CommonCoreOntologies/NaturalProcess> ,
-                                               _:genid348 ;
+                                               _:genid393 ;
                                rdfs:label "hydrospheric physical process"@en ;
                                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional> .
 
-_:genid348 owl:intersectionOf ( :ClimOO_0000304
+_:genid393 owl:intersectionOf ( :ClimOO_0000304
                                  [ rdf:type owl:Restriction ;
                                    owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000057> ;
                                    owl:someValuesFrom :Hydrologic_Material_Entity
@@ -2494,7 +2619,7 @@ _:genid348 owl:intersectionOf ( :ClimOO_0000304
 [ rdf:type owl:Axiom ;
    owl:annotatedSource :Hydrospheric_Physical_Process ;
    owl:annotatedProperty rdfs:subClassOf ;
-   owl:annotatedTarget _:genid348 ;
+   owl:annotatedTarget _:genid393 ;
    rdfs:comment """ClimOO Ontology comment:
 revisions may specify axioms with respect to cryospheric and more generally hydrospheric material entities."""@en
  ] .
