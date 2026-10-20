@@ -1452,6 +1452,7 @@ http://purl.obolibrary.org/obo/ENVO_1000745""" ;
                                                      ) ;
                                   rdf:type owl:Class
                                 ] ;
+                rdfs:comment "We currently do not include classes for perspectives of specific climate system components. This can be implemented as needed. Similar considerations apply to components of climate subsystems."@en ;
                 rdfs:label "climate system component perspective"@en ;
                 <http://www.w3.org/2004/02/skos/core#definition> "A perspective that is bearered by a climate system component."@en ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
