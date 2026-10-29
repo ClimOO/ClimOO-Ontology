@@ -89,7 +89,39 @@ https://w3id.org/sumso"""@en ;
 
 ###  https://w3id.org/sumso#SuMSO_0000004
 <https://w3id.org/sumso#SuMSO_0000004> rdf:type owl:Class ;
-                                       rdfs:subClassOf <https://www.w3id.org/sco#SCO_0000015> ;
+                                       rdfs:subClassOf <https://www.w3id.org/sco#SCO_0000015> ,
+                                                       [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                                owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000110> ;
+                                                                                owl:someValuesFrom <https://w3id.org/sumso#SuMSO_0000024>
+                                                                              ]
+                                                                              [ rdf:type owl:Restriction ;
+                                                                                owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000111> ;
+                                                                                owl:someValuesFrom <https://w3id.org/sumso#SuMSO_0000022>
+                                                                              ]
+                                                                              [ rdf:type owl:Restriction ;
+                                                                                owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000166> ;
+                                                                                owl:someValuesFrom <https://w3id.org/sumso#SuMSO_0000030>
+                                                                              ]
+                                                                              [ rdf:type owl:Restriction ;
+                                                                                owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000185> ;
+                                                                                owl:someValuesFrom <https://w3id.org/sumso#SuMSO_0000037>
+                                                                              ]
+                                                                              [ rdf:type owl:Restriction ;
+                                                                                owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000211> ;
+                                                                                owl:someValuesFrom <https://w3id.org/sumso#SuMSO_0000023>
+                                                                              ]
+                                                                              [ rdf:type owl:Restriction ;
+                                                                                owl:onProperty <http://purl.obolibrary.org/obo/RO_0002163> ;
+                                                                                owl:someValuesFrom <https://w3id.org/sumso#SuMSO_0000018>
+                                                                              ]
+                                                                              [ rdf:type owl:Restriction ;
+                                                                                owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000185> ;
+                                                                                owl:allValuesFrom <https://w3id.org/sumso#SuMSO_0000037>
+                                                                              ]
+                                                                            ) ;
+                                                         rdf:type owl:Class
+                                                       ] ;
+                                       owl:disjointWith <https://w3id.org/sumso#SuMSO_0000018> ;
                                        rdfs:comment """ClimOO Ontology comment:
 we excluded the axiom referring to well-being as outside the current ClimOO scope. This can be re-added as needed."""@en ,
                                                     """Here, the term “food” is used genuinely in a broad and over-comprehensive sense. 
@@ -164,7 +196,19 @@ Borghini, Andrea, & Piras, N. (2021). On Interpreting Something as Food. Food Et
                                                                                 ) ;
                                                              rdf:type owl:Class
                                                            ] ;
-                                       rdfs:subClassOf <https://www.w3id.org/sco#SCO_0000028> ;
+                                       rdfs:subClassOf <https://www.w3id.org/sco#SCO_0000028> ,
+                                                       [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                                owl:onProperty <http://purl.obolibrary.org/obo/RO_0000091> ;
+                                                                                owl:someValuesFrom <https://w3id.org/sumso#SuMSO_0000038>
+                                                                              ]
+                                                                              [ rdf:type owl:Restriction ;
+                                                                                owl:onProperty <http://purl.obolibrary.org/obo/RO_0010002> ;
+                                                                                owl:someValuesFrom <https://www.w3id.org/sco#SCO_0000004>
+                                                                              ]
+                                                                            ) ;
+                                                         rdf:type owl:Class
+                                                       ] ;
+                                       owl:disjointWith <https://w3id.org/sumso#SuMSO_0000031> ;
                                        rdfs:comment """Currently, SuMSO refers to food systems as covering different components. Following SCO, meat system components present perspectives.
 Nevertheless, we may want to restrict perspectives to living beings.
 A possible option may be the exclusion of the following axioms, in order to remove the necessary condition of having a perspective from “food systems component” class.
@@ -194,6 +238,7 @@ we refrain from proceeding as such, choosing solely to not establish correspondi
                                                              rdf:type owl:Class
                                                            ] ;
                                        rdfs:subClassOf <https://www.w3id.org/sco#SCO_0000034> ;
+                                       owl:disjointWith <https://w3id.org/sumso#SuMSO_0000032> ;
                                        rdfs:label "food system agent"@en ;
                                        <http://www.w3.org/2004/02/skos/core#definition> "A food system component that is an agent in an interaction among food system components or in an interaction between food system components and food system environment components."@en ;
                                        <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
@@ -209,7 +254,18 @@ we refrain from proceeding as such, choosing solely to not establish correspondi
                                                                                 ) ;
                                                              rdf:type owl:Class
                                                            ] ;
-                                       rdfs:subClassOf <https://www.w3id.org/sco#SCO_0000036> ;
+                                       rdfs:subClassOf <https://www.w3id.org/sco#SCO_0000036> ,
+                                                       [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                                owl:onProperty <http://purl.obolibrary.org/obo/RO_0000091> ;
+                                                                                owl:someValuesFrom <https://w3id.org/sumso#SuMSO_0000035>
+                                                                              ]
+                                                                              [ rdf:type owl:Restriction ;
+                                                                                owl:onProperty <http://purl.obolibrary.org/obo/RO_0010002> ;
+                                                                                owl:someValuesFrom <https://www.w3id.org/sco#SCO_0000040>
+                                                                              ]
+                                                                            ) ;
+                                                         rdf:type owl:Class
+                                                       ] ;
                                        rdfs:label "food system stakeholder"@en ;
                                        <http://www.w3.org/2004/02/skos/core#definition> "A food system component with a stakeholder role."@en ;
                                        <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
@@ -317,7 +373,7 @@ we refrain from proceeding as such, choosing solely to not establish correspondi
                                        rdfs:subClassOf <https://www.w3id.org/sco#SCO_0000010> ,
                                                        [ owl:intersectionOf ( <https://www.w3id.org/sco#SCO_0000010>
                                                                               [ rdf:type owl:Restriction ;
-                                                                                owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000057> ;
+                                                                                owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000167> ;
                                                                                 owl:someValuesFrom <https://w3id.org/sumso#SuMSO_0000004>
                                                                               ]
                                                                             ) ;
@@ -340,7 +396,18 @@ we excluded the axiom referring to food supply chains as outside the current Cli
                                                                                 ) ;
                                                              rdf:type owl:Class
                                                            ] ;
-                                       rdfs:subClassOf <https://www.w3id.org/sco#SCO_0000026> ;
+                                       rdfs:subClassOf <https://www.w3id.org/sco#SCO_0000026> ,
+                                                       [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                                owl:onProperty <http://purl.obolibrary.org/obo/RO_0000091> ;
+                                                                                owl:someValuesFrom <https://w3id.org/sumso#SuMSO_0000034>
+                                                                              ]
+                                                                              [ rdf:type owl:Restriction ;
+                                                                                owl:onProperty <http://purl.obolibrary.org/obo/RO_0010002> ;
+                                                                                owl:someValuesFrom <https://www.w3id.org/sco#SCO_0000004>
+                                                                              ]
+                                                                            ) ;
+                                                         rdf:type owl:Class
+                                                       ] ;
                                        rdfs:label "food system environment component"@en ;
                                        <http://www.w3.org/2004/02/skos/core#definition> "A complex system evironment component that belongs to the complex system environment of a food system."@en ;
                                        <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
@@ -366,6 +433,63 @@ we excluded the axiom referring to food supply chains as outside the current Cli
                                        <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
 
 
+###  https://w3id.org/sumso#SuMSO_0000034
+<https://w3id.org/sumso#SuMSO_0000034> rdf:type owl:Class ;
+                                       owl:equivalentClass [ owl:intersectionOf ( <https://www.w3id.org/sco#SCO_0000016>
+                                                                                  [ rdf:type owl:Restriction ;
+                                                                                    owl:onProperty <http://purl.obolibrary.org/obo/RO_0000092> ;
+                                                                                    owl:someValuesFrom <https://w3id.org/sumso#SuMSO_0000031>
+                                                                                  ]
+                                                                                ) ;
+                                                             rdf:type owl:Class
+                                                           ] ;
+                                       rdfs:subClassOf <https://www.w3id.org/sco#SCO_0000016> ,
+                                                       [ owl:intersectionOf ( <https://www.w3id.org/sco#SCO_0000016>
+                                                                              [ rdf:type owl:Restriction ;
+                                                                                owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000059> ;
+                                                                                owl:someValuesFrom <https://www.w3id.org/sco#SCO_0000004>
+                                                                              ]
+                                                                              [ rdf:type owl:Restriction ;
+                                                                                owl:onProperty <http://www.ontologyrepository.com/CommonCoreOntologies/is_subject_of> ;
+                                                                                owl:someValuesFrom <https://www.w3id.org/sco#SCO_0000004>
+                                                                              ]
+                                                                            ) ;
+                                                         rdf:type owl:Class
+                                                       ] ;
+                                       owl:disjointWith <https://w3id.org/sumso#SuMSO_0000038> ;
+                                       rdfs:label "food system environment component perspective"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#definition> "A perspective that is bearered by a food system environment component."@en ;
+                                       <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://w3id.org/sumso#SuMSO_0000035
+<https://w3id.org/sumso#SuMSO_0000035> rdf:type owl:Class ;
+                                       owl:equivalentClass [ owl:intersectionOf ( <https://www.w3id.org/sco#SCO_0000030>
+                                                                                  [ rdf:type owl:Restriction ;
+                                                                                    owl:onProperty <http://purl.obolibrary.org/obo/RO_0000092> ;
+                                                                                    owl:someValuesFrom <https://w3id.org/sumso#SuMSO_0000026>
+                                                                                  ]
+                                                                                ) ;
+                                                             rdf:type owl:Class
+                                                           ] ;
+                                       rdfs:subClassOf <https://www.w3id.org/sco#SCO_0000030> ,
+                                                       [ owl:intersectionOf ( <https://w3id.org/sumso#SuMSO_0000038>
+                                                                              [ rdf:type owl:Restriction ;
+                                                                                owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000059> ;
+                                                                                owl:someValuesFrom <https://www.w3id.org/sco#SCO_0000040>
+                                                                              ]
+                                                                              [ rdf:type owl:Restriction ;
+                                                                                owl:onProperty <http://www.ontologyrepository.com/CommonCoreOntologies/is_subject_of> ;
+                                                                                owl:someValuesFrom <https://www.w3id.org/sco#SCO_0000040>
+                                                                              ]
+                                                                            ) ;
+                                                         rdf:type owl:Class
+                                                       ] ;
+                                       rdfs:label "food system stakeholder perspective"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#definition> "A stakeholder perspective that is bearered by a food system stakeholder."@en ;
+                                       <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
 ###  https://w3id.org/sumso#SuMSO_0000037
 <https://w3id.org/sumso#SuMSO_0000037> rdf:type owl:Class ;
                                        owl:equivalentClass [ owl:intersectionOf ( <https://www.w3id.org/sco#SCO_0000023>
@@ -386,6 +510,38 @@ we excluded the axiom referring to food supply chains as outside the current Cli
                                        <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
 
 
+###  https://w3id.org/sumso#SuMSO_0000038
+<https://w3id.org/sumso#SuMSO_0000038> rdf:type owl:Class ;
+                                       owl:equivalentClass [ owl:intersectionOf ( <https://www.w3id.org/sco#SCO_0000016>
+                                                                                  [ rdf:type owl:Restriction ;
+                                                                                    owl:onProperty <http://purl.obolibrary.org/obo/RO_0000092> ;
+                                                                                    owl:someValuesFrom <https://w3id.org/sumso#SuMSO_0000024>
+                                                                                  ]
+                                                                                ) ;
+                                                             rdf:type owl:Class
+                                                           ] ;
+                                       rdfs:subClassOf <https://www.w3id.org/sco#SCO_0000016> ,
+                                                       [ owl:intersectionOf ( <https://www.w3id.org/sco#SCO_0000016>
+                                                                              [ rdf:type owl:Restriction ;
+                                                                                owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000059> ;
+                                                                                owl:someValuesFrom <https://www.w3id.org/sco#SCO_0000004>
+                                                                              ]
+                                                                              [ rdf:type owl:Restriction ;
+                                                                                owl:onProperty <http://www.ontologyrepository.com/CommonCoreOntologies/is_subject_of> ;
+                                                                                owl:someValuesFrom <https://www.w3id.org/sco#SCO_0000004>
+                                                                              ]
+                                                                            ) ;
+                                                         rdf:type owl:Class
+                                                       ] ;
+                                       rdfs:label "food system component perspective"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#definition> "A perspective that is bearered by a food system component."@en ;
+                                       <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/sco#SCO_0000004
+<https://www.w3id.org/sco#SCO_0000004> rdf:type owl:Class .
+
+
 ###  https://www.w3id.org/sco#SCO_0000010
 <https://www.w3id.org/sco#SCO_0000010> rdf:type owl:Class .
 
@@ -396,6 +552,10 @@ we excluded the axiom referring to food supply chains as outside the current Cli
 
 ###  https://www.w3id.org/sco#SCO_0000015
 <https://www.w3id.org/sco#SCO_0000015> rdf:type owl:Class .
+
+
+###  https://www.w3id.org/sco#SCO_0000016
+<https://www.w3id.org/sco#SCO_0000016> rdf:type owl:Class .
 
 
 ###  https://www.w3id.org/sco#SCO_0000018
@@ -426,6 +586,10 @@ we excluded the axiom referring to food supply chains as outside the current Cli
 <https://www.w3id.org/sco#SCO_0000028> rdf:type owl:Class .
 
 
+###  https://www.w3id.org/sco#SCO_0000030
+<https://www.w3id.org/sco#SCO_0000030> rdf:type owl:Class .
+
+
 ###  https://www.w3id.org/sco#SCO_0000031
 <https://www.w3id.org/sco#SCO_0000031> rdf:type owl:Class .
 
@@ -445,5 +609,8 @@ we excluded the axiom referring to food supply chains as outside the current Cli
 ###  https://www.w3id.org/sco#SCO_0000036
 <https://www.w3id.org/sco#SCO_0000036> rdf:type owl:Class .
 
+
+###  https://www.w3id.org/sco#SCO_0000040
+<https://www.w3id.org/sco#SCO_0000040> rdf:type owl:Class .
 
 ###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi

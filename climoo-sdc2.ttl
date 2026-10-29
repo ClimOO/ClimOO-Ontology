@@ -311,6 +311,7 @@ See https://www.w3id.org/climoo/climoo-sdc2#Change_in_Climate_System and https:/
     rdfs:subClassOf :Short-lived_Gas ;
     <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "potion of CO"@en ;
     rdfs:label "portion of carbon monoxide"@en ;
+    rdfs:seeAlso "http://purl.obolibrary.org/obo/CHEBI_17245" ;
     <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
 
 
@@ -358,6 +359,7 @@ We envision discussions with subject matter experts and implementations concerni
                 rdfs:subClassOf :Well-mixed_Greenhouse_Gas ;
                 <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "CO2"@en ;
                 rdfs:label "portion of carbon dioxide"@en ;
+                rdfs:seeAlso "http://purl.obolibrary.org/obo/CHEBI_16526; http://purl.obolibrary.org/obo/ENVO_01000451 and subclasses."@en ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
 
 
@@ -629,6 +631,7 @@ _:genid37 rdf:type owl:Restriction ;
                                   owl:someValuesFrom :ClimOO_0000304
                                 ] ;
                 rdfs:label "climate variability - process profile"@en ;
+                rdfs:seeAlso "http://purl.obolibrary.org/obo/ENVO_01001081" ;
                 <http://www.w3.org/2004/02/skos/core#definition> "A process profile that is an occurrent part of some climate system process and is measured by some climate variability - measurement."@en ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom> "https://unterm.un.org/unterm2/en/view/e0be578f-2cfc-401c-b536-7d5de7fe8559" ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> ;
@@ -775,7 +778,7 @@ http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#
                                                          ) ;
                                       rdf:type owl:Class
                                     ] ;
-                rdfs:subClassOf :ClimOO_0000302 ;
+                rdfs:subClassOf :ClimOO_0000309 ;
                 owl:disjointWith :ClimOO_0000314 ;
                 rdfs:label "climate system agent"@en ;
                 <http://www.w3.org/2004/02/skos/core#definition> "An climate system component that is an agent in an interaction among climate system components or in an interaction between climate system components and climate system environment components."@en ;
@@ -1929,6 +1932,7 @@ We envision discussions with subject matter experts and implementations."""@en ;
                       rdfs:comment """ClimOO Ontology comment:
 The original model seems primarily to refer to this class and subclasses for human-driven phenomena. However, the terminology used and the presence of a specific “Human-induced Greenhouse Gas Emission” class seem to indicate a broader applicability. We included these classes as having a broader applicability beyond human-driven phenomena, and created specific human-focused classes. Implementation may follow."""@en ;
                       rdfs:label "emission of aerosols"@en ;
+                      rdfs:seeAlso "http://purl.obolibrary.org/obo/ENVO_00010505 and subclasses."@en ;
                       <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional> .
 
 
@@ -1957,6 +1961,8 @@ The original model seems primarily to refer to this class and subclasses for hum
                             rdfs:comment """ClimOO Ontology comment:
 The original model seems primarily to refer to this class and subclasses for human-driven phenomena. However, the terminology used and the presence of a specific “Human-induced Greenhouse Gas Emission” class seem to indicate a broader applicability. We included these classes as having a broader applicability beyond human-driven phenomena, and created specific human-focused classes. Implementation may follow."""@en ;
                             rdfs:label "emission of greenhouse gas"@en ;
+                            rdfs:seeAlso """http://purl.obolibrary.org/obo/CHEBI_76413;
+http://purl.obolibrary.org/obo/ENVO_02500004; http://purl.obolibrary.org/obo/ENVO_03000092 and subclasses."""@en ;
                             <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional> .
 
 
@@ -3037,6 +3043,7 @@ revisions may specify axioms with respect to cryospheric and more generally hydr
 :Methane rdf:type owl:Class ;
          rdfs:subClassOf :Well-mixed_Greenhouse_Gas ;
          rdfs:label "portion of methane"@en ;
+         rdfs:seeAlso "http://purl.obolibrary.org/obo/CHEBI_16183" ;
          <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
 
 

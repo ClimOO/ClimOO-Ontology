@@ -1,0 +1,418 @@
+@prefix : <http://purl.obolibrary.org/obo/climoo/climoo-sdc2/chebi_imports#> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix chemrof: <https://w3id.org/chemrof/> .
+@prefix oboInOwl: <http://www.geneontology.org/formats/oboInOwl#> .
+@base <http://purl.obolibrary.org/obo/climoo/climoo-sdc2/chebi_imports#> .
+
+<http://purl.obolibrary.org/obo/climoo/climoo-sdc2/chebi_imports> rdf:type owl:Ontology ;
+                                                                   owl:versionIRI <http://purl.obolibrary.org/obo/climoo/climoo-sdc2/chebi_imports/2026-10-29> ;
+                                                                   rdfs:comment """This file contains ClimOO Ontology suite imports fletched from the Chemical Entities of Biological Interest Ontology (ChEBI) via OntoFox (https://ontofox.hegroup.org/index.php).
+
+Ontology source: https://ontobee.org/ontology/CHEBI"""@en ;
+                                                                   rdfs:seeAlso """The related Ontofox imput file.
+https://github.com/ClimOO/ClimOO-Ontology/tree/main/ClimOO%20material/src/ontology/imports/sdc2%20imports/chebi-imports-ontofox-26/10/29"""@en ,
+                                                                                "https://www.ebi.ac.uk/chebi/" ;
+                                                                   owl:versionInfo "2026-10-29" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.obolibrary.org/obo/IAO_0000115
+obo:IAO_0000115 rdf:type owl:AnnotationProperty ;
+                rdfs:label "definition" .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000412
+obo:IAO_0000412 rdf:type owl:AnnotationProperty ;
+                rdfs:label "imported from"@en .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#hasAlternativeId
+oboInOwl:hasAlternativeId rdf:type owl:AnnotationProperty ;
+                          rdfs:label "has_alternative_id" .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#hasDbXref
+oboInOwl:hasDbXref rdf:type owl:AnnotationProperty ;
+                   rdfs:label "database_cross_reference" .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#hasExactSynonym
+oboInOwl:hasExactSynonym rdf:type owl:AnnotationProperty ;
+                         rdfs:label "has_exact_synonym" .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#hasOBONamespace
+oboInOwl:hasOBONamespace rdf:type owl:AnnotationProperty ;
+                         rdfs:label "has_obo_namespace" .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym
+oboInOwl:hasRelatedSynonym rdf:type owl:AnnotationProperty ;
+                           rdfs:label "has_related_synonym" .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#id
+oboInOwl:id rdf:type owl:AnnotationProperty .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#inSubset
+oboInOwl:inSubset rdf:type owl:AnnotationProperty ;
+                  rdfs:label "in_subset" .
+
+
+###  https://w3id.org/chemrof/charge
+chemrof:charge rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/chemrof/generalized_empirical_formula
+chemrof:generalized_empirical_formula rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/chemrof/inchi_key_string
+chemrof:inchi_key_string rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/chemrof/inchi_string
+chemrof:inchi_string rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/chemrof/mass
+chemrof:mass rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/chemrof/monoisotopic_mass
+chemrof:monoisotopic_mass rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/chemrof/smiles_string
+chemrof:smiles_string rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://purl.obolibrary.org/obo/BFO_0000051
+obo:BFO_0000051 rdf:type owl:ObjectProperty ,
+                         owl:TransitiveProperty ;
+                rdfs:label "has part" .
+
+
+###  http://purl.obolibrary.org/obo/RO_0000087
+obo:RO_0000087 rdf:type owl:ObjectProperty ;
+               rdfs:label "has role" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://purl.obolibrary.org/obo/CHEBI_23367
+obo:CHEBI_23367 rdf:type owl:Class ;
+                rdfs:subClassOf obo:CHEBI_24431 ;
+                obo:IAO_0000115 "Any constitutionally or isotopically distinct atom, molecule, ion, ion pair, radical, radical ion, complex, conformer etc., identifiable as a separately distinguishable entity." ;
+                obo:IAO_0000412 obo:chebi.owl ;
+                oboInOwl:hasExactSynonym "molecular entity" ;
+                oboInOwl:hasOBONamespace "chebi_ontology" ;
+                oboInOwl:hasRelatedSynonym "entidad molecular" ,
+                                           "entidades moleculares" ,
+                                           "entite moleculaire" ,
+                                           "molecular entities" ,
+                                           "molecular entity" ,
+                                           "molekulare Entitaet" ;
+                oboInOwl:id "CHEBI:23367" ;
+                oboInOwl:inSubset <http://purl.oboInOwllibrary.org/oboInOwl/chebi/3_STAR> ;
+                rdfs:label "molecular entity" .
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_24431
+obo:CHEBI_24431 rdf:type owl:Class ;
+                obo:IAO_0000115 "A chemical entity is a physical entity of interest in chemistry including molecular entities, parts thereof, and chemical substances." ;
+                obo:IAO_0000412 obo:chebi.owl ;
+                oboInOwl:hasOBONamespace "chebi_ontology" ;
+                oboInOwl:hasRelatedSynonym "chemical entity" ;
+                oboInOwl:id "CHEBI:24431" ;
+                oboInOwl:inSubset <http://purl.oboInOwllibrary.org/oboInOwl/chebi/3_STAR> ;
+                rdfs:label "chemical entity" .
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_24432
+obo:CHEBI_24432 rdf:type owl:Class ;
+                rdfs:subClassOf obo:CHEBI_50906 ;
+                obo:IAO_0000115 "A role played by the molecular entity or part thereof within a biological context." ;
+                obo:IAO_0000412 obo:chebi.owl ;
+                oboInOwl:hasOBONamespace "chebi_ontology" ;
+                oboInOwl:hasRelatedSynonym "biological function" ;
+                oboInOwl:id "CHEBI:24432" ;
+                oboInOwl:inSubset <http://purl.oboInOwllibrary.org/oboInOwl/chebi/3_STAR> ;
+                rdfs:label "biological role" .
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_25555
+obo:CHEBI_25555 rdf:type owl:Class ;
+                rdfs:subClassOf obo:CHEBI_25585 ,
+                                obo:CHEBI_33300 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:RO_0000087 ;
+                                  owl:someValuesFrom obo:CHEBI_33937
+                                ] ;
+                obo:IAO_0000412 obo:chebi.owl ;
+                oboInOwl:hasDbXref "webelements:N" ;
+                oboInOwl:hasExactSynonym "nitrogen" ;
+                oboInOwl:hasOBONamespace "chebi_ontology" ;
+                oboInOwl:hasRelatedSynonym "7N" ,
+                                           "N" ,
+                                           "Stickstoff" ,
+                                           "azote" ,
+                                           "nitrogen" ,
+                                           "nitrogeno" ;
+                oboInOwl:id "CHEBI:25555" ;
+                oboInOwl:inSubset <http://purl.oboInOwllibrary.org/oboInOwl/chebi/3_STAR> ;
+                rdfs:label "nitrogen atom" ;
+                chemrof:charge 0 ;
+                chemrof:generalized_empirical_formula "N" ;
+                chemrof:inchi_key_string "QJGQUHMNIGDVPM-UHFFFAOYSA-N" ;
+                chemrof:inchi_string "InChI=1S/N" ;
+                chemrof:mass 14.007 ;
+                chemrof:monoisotopic_mass 14.00307 ;
+                chemrof:smiles_string "[N]" .
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_25585
+obo:CHEBI_25585 rdf:type owl:Class ;
+                rdfs:subClassOf obo:CHEBI_33250 ;
+                obo:IAO_0000412 obo:chebi.owl ;
+                oboInOwl:hasExactSynonym "nonmetal" ;
+                oboInOwl:hasOBONamespace "chebi_ontology" ;
+                oboInOwl:hasRelatedSynonym "Nichtmetall" ,
+                                           "Nichtmetalle" ,
+                                           "no metal" ,
+                                           "no metales" ,
+                                           "non-metal" ,
+                                           "non-metaux" ,
+                                           "nonmetal" ,
+                                           "nonmetals" ;
+                oboInOwl:id "CHEBI:25585" ;
+                oboInOwl:inSubset <http://purl.oboInOwllibrary.org/oboInOwl/chebi/3_STAR> ;
+                rdfs:label "nonmetal atom" .
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_33250
+obo:CHEBI_33250 rdf:type owl:Class ;
+                rdfs:subClassOf obo:CHEBI_24431 ;
+                obo:IAO_0000115 "A chemical entity constituting the smallest component of an element having the chemical properties of the element." ;
+                obo:IAO_0000412 obo:chebi.owl ;
+                oboInOwl:hasAlternativeId "CHEBI:22671" ,
+                                          "CHEBI:23907" ;
+                oboInOwl:hasExactSynonym "atom" ;
+                oboInOwl:hasOBONamespace "chebi_ontology" ;
+                oboInOwl:hasRelatedSynonym "atom" ,
+                                           "atome" ,
+                                           "atomo" ,
+                                           "atoms" ,
+                                           "atomus" ,
+                                           "element" ,
+                                           "elements" ;
+                oboInOwl:id "CHEBI:33250" ;
+                oboInOwl:inSubset <http://purl.oboInOwllibrary.org/oboInOwl/chebi/3_STAR> ;
+                rdfs:comment """ClimOO ontology comment:
+We excluded axioms referring to electron and atomic nucleus classes as beyond the scope of ClimOO."""@en ;
+                rdfs:label "atom" .
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_33284
+obo:CHEBI_33284 rdf:type owl:Class ;
+                rdfs:subClassOf obo:CHEBI_78295 ;
+                obo:IAO_0000115 "A nutrient is a food component that an organism uses to survive and grow." ;
+                obo:IAO_0000412 obo:chebi.owl ;
+                oboInOwl:hasOBONamespace "chebi_ontology" ;
+                oboInOwl:hasRelatedSynonym "nutrients" ;
+                oboInOwl:id "CHEBI:33284" ;
+                oboInOwl:inSubset <http://purl.oboInOwllibrary.org/oboInOwl/chebi/3_STAR> ;
+                rdfs:label "nutrient" .
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_33300
+obo:CHEBI_33300 rdf:type owl:Class ;
+                rdfs:subClassOf obo:CHEBI_33560 ;
+                obo:IAO_0000115 "Any p-block element atom that is in group 15 of the periodic table: nitrogen, phosphorus, arsenic, antimony and bismuth." ;
+                obo:IAO_0000412 obo:chebi.owl ;
+                oboInOwl:hasExactSynonym "pnictogens" ;
+                oboInOwl:hasOBONamespace "chebi_ontology" ;
+                oboInOwl:hasRelatedSynonym "group 15 elements" ,
+                                           "group V elements" ,
+                                           "nitrogenoideos" ,
+                                           "nitrogenoides" ,
+                                           "pnictogene" ,
+                                           "pnictogenes" ,
+                                           "pnictogens" ;
+                oboInOwl:id "CHEBI:33300" ;
+                oboInOwl:inSubset <http://purl.oboInOwllibrary.org/oboInOwl/chebi/3_STAR> ;
+                rdfs:label "pnictogen" .
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_33306
+obo:CHEBI_33306 rdf:type owl:Class ;
+                rdfs:subClassOf obo:CHEBI_33560 ;
+                obo:IAO_0000412 obo:chebi.owl ;
+                oboInOwl:hasExactSynonym "group 14 elements" ;
+                oboInOwl:hasOBONamespace "chebi_ontology" ;
+                oboInOwl:hasRelatedSynonym "carbon group element" ,
+                                           "carbon group elements" ,
+                                           "carbonoides" ,
+                                           "cristallogene" ,
+                                           "cristallogenes" ,
+                                           "group 14 elements" ,
+                                           "group IV elements" ;
+                oboInOwl:id "CHEBI:33306" ;
+                oboInOwl:inSubset <http://purl.oboInOwllibrary.org/oboInOwl/chebi/3_STAR> ;
+                rdfs:label "carbon group element atom" .
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_33318
+obo:CHEBI_33318 rdf:type owl:Class ;
+                rdfs:subClassOf obo:CHEBI_33250 ;
+                obo:IAO_0000115 "An atom belonging to one of the main groups (found in the s- and p- blocks) of the periodic table." ;
+                obo:IAO_0000412 obo:chebi.owl ;
+                oboInOwl:hasExactSynonym "main group elements" ;
+                oboInOwl:hasOBONamespace "chebi_ontology" ;
+                oboInOwl:hasRelatedSynonym "Hauptgruppenelement" ,
+                                           "Hauptgruppenelemente" ,
+                                           "main group element" ,
+                                           "main group elements" ;
+                oboInOwl:id "CHEBI:33318" ;
+                oboInOwl:inSubset <http://purl.oboInOwllibrary.org/oboInOwl/chebi/3_STAR> ;
+                rdfs:label "main group element atom" .
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_33560
+obo:CHEBI_33560 rdf:type owl:Class ;
+                rdfs:subClassOf obo:CHEBI_33318 ;
+                obo:IAO_0000115 "Any main group element atom belonging to the p-block of the periodic table." ;
+                obo:IAO_0000412 obo:chebi.owl ;
+                oboInOwl:hasOBONamespace "chebi_ontology" ;
+                oboInOwl:hasRelatedSynonym "p-block element" ,
+                                           "p-block elements" ;
+                oboInOwl:id "CHEBI:33560" ;
+                oboInOwl:inSubset <http://purl.oboInOwllibrary.org/oboInOwl/chebi/3_STAR> ;
+                rdfs:label "p-block element atom" .
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_33579
+obo:CHEBI_33579 rdf:type owl:Class ;
+                rdfs:subClassOf obo:CHEBI_23367 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000051 ;
+                                  owl:someValuesFrom obo:CHEBI_33318
+                                ] ;
+                obo:IAO_0000115 "A molecular entity containing one or more atoms from any of groups 1, 2, 13, 14, 15, 16, 17, and 18 of the periodic table." ;
+                obo:IAO_0000412 obo:chebi.owl ;
+                oboInOwl:hasOBONamespace "chebi_ontology" ;
+                oboInOwl:hasRelatedSynonym "main group compounds" ,
+                                           "main group molecular entities" ;
+                oboInOwl:id "CHEBI:33579" ;
+                oboInOwl:inSubset <http://purl.oboInOwllibrary.org/oboInOwl/chebi/3_STAR> ;
+                rdfs:label "main group molecular entity" .
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_33582
+obo:CHEBI_33582 rdf:type owl:Class ;
+                rdfs:subClassOf obo:CHEBI_33675 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000051 ;
+                                  owl:someValuesFrom obo:CHEBI_33306
+                                ] ;
+                obo:IAO_0000412 obo:chebi.owl ;
+                oboInOwl:hasOBONamespace "chebi_ontology" ;
+                oboInOwl:hasRelatedSynonym "carbon group molecular entities" ,
+                                           "carbon group molecular entity" ;
+                oboInOwl:id "CHEBI:33582" ;
+                oboInOwl:inSubset <http://purl.oboInOwllibrary.org/oboInOwl/chebi/3_STAR> ;
+                rdfs:label "carbon group molecular entity" .
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_33675
+obo:CHEBI_33675 rdf:type owl:Class ;
+                rdfs:subClassOf obo:CHEBI_33579 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000051 ;
+                                  owl:someValuesFrom obo:CHEBI_33560
+                                ] ;
+                obo:IAO_0000115 "A main group molecular entity that contains one or more atoms of a p-block element." ;
+                obo:IAO_0000412 obo:chebi.owl ;
+                oboInOwl:hasOBONamespace "chebi_ontology" ;
+                oboInOwl:hasRelatedSynonym "p-block compounds" ,
+                                           "p-block molecular entities" ,
+                                           "p-block molecular entitiy" ;
+                oboInOwl:id "CHEBI:33675" ;
+                oboInOwl:inSubset <http://purl.oboInOwllibrary.org/oboInOwl/chebi/3_STAR> ;
+                rdfs:label "p-block molecular entity" .
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_33937
+obo:CHEBI_33937 rdf:type owl:Class ;
+                rdfs:subClassOf obo:CHEBI_33284 ;
+                obo:IAO_0000115 "Any nutrient required in large quantities by organisms throughout their life in order to orchestrate a range of physiological functions. Macronutrients are usually chemical elements (carbon, hydrogen, nitrogen, oxygen, phosphorus and sulfur) that humans consume in the largest quantities. Calcium, sodium, magnesium and potassium are sometimes included as macronutrients because they are required in relatively large quantities compared with other vitamins and minerals." ;
+                obo:IAO_0000412 obo:chebi.owl ;
+                oboInOwl:hasOBONamespace "chebi_ontology" ;
+                oboInOwl:hasRelatedSynonym "macronutrients" ;
+                oboInOwl:id "CHEBI:33937" ;
+                oboInOwl:inSubset <http://purl.oboInOwllibrary.org/oboInOwl/chebi/3_STAR> ;
+                rdfs:label "macronutrient" .
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_50906
+obo:CHEBI_50906 rdf:type owl:Class ;
+                obo:IAO_0000115 "A role is particular behaviour which a material entity may exhibit." ;
+                obo:IAO_0000412 obo:chebi.owl ;
+                oboInOwl:hasOBONamespace "chebi_ontology" ;
+                oboInOwl:id "CHEBI:50906" ;
+                oboInOwl:inSubset <http://purl.oboInOwllibrary.org/oboInOwl/chebi/3_STAR> ;
+                rdfs:label "role" .
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_52211
+obo:CHEBI_52211 rdf:type owl:Class ;
+                rdfs:subClassOf obo:CHEBI_24432 ;
+                obo:IAO_0000115 "A biological role relating to the normal mechanisms and their interactions within a living system." ;
+                obo:IAO_0000412 obo:chebi.owl ;
+                oboInOwl:hasOBONamespace "chebi_ontology" ;
+                oboInOwl:id "CHEBI:52211" ;
+                oboInOwl:inSubset <http://purl.oboInOwllibrary.org/oboInOwl/chebi/1_STAR> ;
+                rdfs:label "physiological role" .
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_59999
+obo:CHEBI_59999 rdf:type owl:Class ;
+                rdfs:subClassOf obo:CHEBI_24431 ;
+                obo:IAO_0000115 "A chemical substance is a portion of matter of constant composition, composed of molecular entities of the same type or of different types." ;
+                obo:IAO_0000412 obo:chebi.owl ;
+                oboInOwl:hasOBONamespace "chebi_ontology" ;
+                oboInOwl:hasRelatedSynonym "Chemische Substanz" ;
+                oboInOwl:id "CHEBI:59999" ;
+                oboInOwl:inSubset <http://purl.oboInOwllibrary.org/oboInOwl/chebi/3_STAR> ;
+                rdfs:label "chemical substance" .
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_78295
+obo:CHEBI_78295 rdf:type owl:Class ;
+                rdfs:subClassOf obo:CHEBI_52211 ;
+                obo:IAO_0000115 "A physiological role played by any substance that is distributed in foodstuffs. It includes materials derived from plants or animals, such as vitamins or minerals, as well as environmental contaminants." ;
+                obo:IAO_0000412 obo:chebi.owl ;
+                oboInOwl:hasOBONamespace "chebi_ontology" ;
+                oboInOwl:hasRelatedSynonym "dietary component" ,
+                                           "dietary components" ,
+                                           "food components" ;
+                oboInOwl:id "CHEBI:78295" ;
+                oboInOwl:inSubset <http://purl.oboInOwllibrary.org/oboInOwl/chebi/3_STAR> ;
+                rdfs:label "food component" .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
