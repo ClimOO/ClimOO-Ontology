@@ -9,7 +9,9 @@
 <https://www.w3id.org/climoo/climoo-sdc2> rdf:type owl:Ontology ;
                                            owl:versionIRI :sdc2-v1.0.0 ;
                                            owl:imports <https://raw.githubusercontent.com/ClimOO/ClimOO-Ontology/refs/heads/main/ClimOO%20material/src/ontology/sdc2%20imports/cco-imports.ttl> ,
+                                                       <https://raw.githubusercontent.com/ClimOO/ClimOO-Ontology/refs/heads/main/ClimOO%20material/src/ontology/sdc2%20imports/chebi-imports.ttl> ,
                                                        <https://raw.githubusercontent.com/ClimOO/ClimOO-Ontology/refs/heads/main/ClimOO%20material/src/ontology/sdc2%20imports/pato-imports.ttl> ,
+                                                       <https://raw.githubusercontent.com/ClimOO/ClimOO-Ontology/refs/heads/main/ClimOO%20material/src/ontology/sdc2%20imports/pato-imports2.ttl> ,
                                                        <https://raw.githubusercontent.com/ClimOO/ClimOO-Ontology/refs/heads/main/ClimOO%20material/src/ontology/sdc2%20imports/pmdco-imports.ttl> ,
                                                        <https://raw.githubusercontent.com/ClimOO/ClimOO-Ontology/refs/heads/main/ClimOO%20material/src/ontology/sdc2%20imports/ro-imports.ttl> ,
                                                        <https://raw.githubusercontent.com/ClimOO/ClimOO-Ontology/refs/heads/main/ClimOO%20material/src/ontology/sdc2%20imports/sdc-onto-regulations-imports.ttl> ,
@@ -4328,6 +4330,35 @@ Gunderson, L. H., & Holling, C. S. (2002). Panarchy: Understanding Transformatio
 Holling, C. S. (1973). Resilience and Stability of Ecological Systems. Annu. Rev. Ecol. Syst., 4, 1–23.
 Van Meerbeek, K., Jucker, T., & Svenning, J.-C. (2021). Unifying the concepts of stability and resilience in ecology. J. Ecol., 109(9), 3114–3132."""@en .
 
+
+###  http://purl.obolibrary.org/obo/CHEBI_24431
+<http://purl.obolibrary.org/obo/CHEBI_24431> rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000040> .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/CHEBI_24431> ;
+   owl:annotatedProperty rdfs:subClassOf ;
+   owl:annotatedTarget <http://purl.obolibrary.org/obo/BFO_0000040> ;
+   rdfs:comment """We included this axiom in accordance to the ChEBI-BFO alignment, findable here: https://ftp.ebi.ac.uk/pub/databases/chebi/archive/chebi_legacy/ontology/chebi-in-bfo.owl 
+
+Source: https://ftp.ebi.ac.uk/pub/databases/chebi/archive/chebi_legacy/ontology/
+
+Reference: Hastings J, De Matos P, Dekker A, Ennis M, Harsha B, Kale N, et al. The ChEBI reference database and ontology for biologically relevant chemistry: enhancements for 2013. Nucleic Acids Res. 2012 Nov 23;41(D1):D456–63."""@en
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_50906
+<http://purl.obolibrary.org/obo/CHEBI_50906> rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000017> .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/CHEBI_50906> ;
+   owl:annotatedProperty rdfs:subClassOf ;
+   owl:annotatedTarget <http://purl.obolibrary.org/obo/BFO_0000017> ;
+   rdfs:comment """We included this axiom in accordance to the ChEBI-BFO alignment, findable here: https://ftp.ebi.ac.uk/pub/databases/chebi/archive/chebi_legacy/ontology/chebi-in-bfo.owl 
+
+Source: https://ftp.ebi.ac.uk/pub/databases/chebi/archive/chebi_legacy/ontology/
+
+Reference: Hastings J, De Matos P, Dekker A, Ennis M, Harsha B, Kale N, et al. The ChEBI reference database and ontology for biologically relevant chemistry: enhancements for 2013. Nucleic Acids Res. 2012 Nov 23;41(D1):D456–63."""@en
+ ] .
 
 #################################################################
 #    Individuals
