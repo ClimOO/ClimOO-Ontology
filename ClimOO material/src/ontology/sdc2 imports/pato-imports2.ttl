@@ -15,7 +15,7 @@
 
 Ontology source: http://purl.obolibrary.org/obo/pato.owl"""@en ;
                                                                   rdfs:seeAlso """The related Ontofox imput file.
-https://github.com/ClimOO/ClimOO-Ontology/tree/main/ClimOO%20material/src/ontology/imports/sdc2%20imports2/pato-imports-ontofox-26/10/29"""@en ,
+https://github.com/ClimOO/ClimOO-Ontology/tree/main/ClimOO%20material/src/ontology/imports/sdc2%20imports/pato-imports2-ontofox-26/10/29"""@en ,
                                                                                "https://github.com/pato-ontology/pato/" ;
                                                                   owl:versionInfo "2026-10-29" .
 
