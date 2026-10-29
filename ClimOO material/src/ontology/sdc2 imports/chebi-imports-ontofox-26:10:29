@@ -1,0 +1,63 @@
+[URI of the OWL(RDF/XML) output file]
+http://purl.obolibrary.org/obo/climoo/climoo-sdc2/chebi_imports
+
+[Source ontology]
+CHEBI
+
+[Low level source term URIs]
+
+http://purl.obolibrary.org/obo/CHEBI_24431
+http://purl.obolibrary.org/obo/CHEBI_59999
+http://purl.obolibrary.org/obo/CHEBI_23367
+
+http://purl.obolibrary.org/obo/CHEBI_33582
+http://purl.obolibrary.org/obo/CHEBI_33250
+http://purl.obolibrary.org/obo/CHEBI_33306
+http://purl.obolibrary.org/obo/CHEBI_25555
+
+http://purl.obolibrary.org/obo/CHEBI_33937
+http://purl.obolibrary.org/obo/CHEBI_33284
+http://purl.obolibrary.org/obo/CHEBI_78295
+http://purl.obolibrary.org/obo/CHEBI_52211
+http://purl.obolibrary.org/obo/CHEBI_24432
+http://purl.obolibrary.org/obo/CHEBI_50906
+
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/CHEBI_24431
+
+http://purl.obolibrary.org/obo/CHEBI_23367
+subClassOf http://purl.obolibrary.org/obo/CHEBI_24431
+
+http://purl.obolibrary.org/obo/CHEBI_59999
+subClassOf http://purl.obolibrary.org/obo/CHEBI_24431
+
+http://purl.obolibrary.org/obo/CHEBI_33582
+subClassOf http://purl.obolibrary.org/obo/CHEBI_23367
+
+http://purl.obolibrary.org/obo/CHEBI_33306
+subClassOf http://purl.obolibrary.org/obo/CHEBI_33250
+
+http://purl.obolibrary.org/obo/CHEBI_33250
+subClassOf http://purl.obolibrary.org/obo/CHEBI_24431
+
+http://purl.obolibrary.org/obo/CHEBI_25555
+subClassOf http://purl.obolibrary.org/obo/CHEBI_33318
+
+http://purl.obolibrary.org/obo/CHEBI_33582
+subClassOf http://purl.obolibrary.org/obo/CHEBI_33250
+
+http://purl.obolibrary.org/obo/CHEBI_33937
+subClassOf http://purl.obolibrary.org/obo/CHEBI_50906
+
+http://purl.obolibrary.org/obo/CHEBI_33937
+subClassOf http://purl.obolibrary.org/obo/CHEBI_33284
+
+
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Source annotation URIs]
+includeAllAxioms
+
+[Source annotation URIs to be excluded]
