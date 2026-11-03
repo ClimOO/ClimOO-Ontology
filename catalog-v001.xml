@@ -12,8 +12,7 @@
     <uri id="Imports Wizard Entry" name="https://www.w3id.org/climoo#V1.0.0" uri="http://w3id.org/climoo/climoo-plastico"/>
     <uri id="Imports Wizard Entry" name="http://ClimOO/climoo/imports/pmdco-imports#2026-04-01" uri="ClimOO%20material/src/ontology/plastico%20imports/pmdco-ontology-imports.ttl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1781885685898" name="http://ClimOO/climoo/climoo-sdc2/imports/pato-imports" uri="ClimOO%20material/src/ontology/sdc2%20imports/pato-imports.ttl"/>
-        <uri id="Automatically generated entry, Timestamp=1781885685898" name="http://ClimOO/climoo/imports/pato-imports2" uri="ClimOO%20material/src/ontology/plastico%20imports/pato-imports-2.ttl"/>
-        <uri id="Automatically generated entry, Timestamp=1781885685898" name="https://www.w3id.org/climoo/climoo-plastico" uri="docs/ontology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1793701794648" name="http://ClimOO/climoo/climoo-sdc2/imports/pato-imports" uri="ClimOO%20material/src/ontology/sdc2%20imports/pato-imports.ttl"/>
+        <uri id="Automatically generated entry, Timestamp=1793701794648" name="http://ClimOO/climoo/imports/pato-imports2" uri="ClimOO%20material/src/ontology/plastico%20imports/pato-imports-2.ttl"/>
     </group>
 </catalog>
