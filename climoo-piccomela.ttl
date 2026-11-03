@@ -8,14 +8,14 @@
 
 <https://www.w3id.org/climoo/climoo-piccomela> rdf:type owl:Ontology ;
                                                 owl:versionIRI :piccomela-v1.0.0 ;
-                                                owl:imports <https://raw.githubusercontent.com/ClimOO/ClimOO-Ontology/refs/heads/main/ClimOO%20material/src/ontology/piccomela%20imports/sumso-imports.ttl> ,
-                                                            <https://raw.githubusercontent.com/ClimOO/ClimOO-Ontology/refs/heads/main/ClimOO%20material/src/ontology/piccomela%20imports/cco-imports.ttl> ,
+                                                owl:imports <https://raw.githubusercontent.com/ClimOO/ClimOO-Ontology/refs/heads/main/ClimOO%20material/src/ontology/piccomela%20imports/cco-imports.ttl> ,
                                                             <https://raw.githubusercontent.com/ClimOO/ClimOO-Ontology/refs/heads/main/ClimOO%20material/src/ontology/piccomela%20imports/chebi-imports.ttl> ,
                                                             <https://raw.githubusercontent.com/ClimOO/ClimOO-Ontology/refs/heads/main/ClimOO%20material/src/ontology/piccomela%20imports/cob-envo-pco-ncbitaxon-imports.ttl> ,
                                                             <https://raw.githubusercontent.com/ClimOO/ClimOO-Ontology/refs/heads/main/ClimOO%20material/src/ontology/piccomela%20imports/foodon-ncbitaxon-uberon-pato-cob-po-imports.ttl> ,
                                                             <https://raw.githubusercontent.com/ClimOO/ClimOO-Ontology/refs/heads/main/ClimOO%20material/src/ontology/piccomela%20imports/iao-imports.ttl> ,
                                                             <https://raw.githubusercontent.com/ClimOO/ClimOO-Ontology/refs/heads/main/ClimOO%20material/src/ontology/piccomela%20imports/pato-imports.ttl> ,
-                                                            <https://raw.githubusercontent.com/ClimOO/ClimOO-Ontology/refs/heads/main/ClimOO%20material/src/ontology/piccomela%20imports/transformon-imports.ttl> ,                                                           
+                                                            <https://raw.githubusercontent.com/ClimOO/ClimOO-Ontology/refs/heads/main/ClimOO%20material/src/ontology/piccomela%20imports/sumso-imports.ttl> ,
+                                                            <https://raw.githubusercontent.com/ClimOO/ClimOO-Ontology/refs/heads/main/ClimOO%20material/src/ontology/piccomela%20imports/transformon-imports.ttl> ,
                                                             <https://www.w3id.org/climoo/climoo-picco#picco-v1.0.0> ;
                                                 <http://purl.org/dc/terms/contributor> "Ludger Jansen; Giorgio A. Ubbiali" ;
                                                 <http://purl.org/dc/terms/creator> "Giorgio A. Ubbiali" ;
@@ -171,6 +171,109 @@ We extend the domain and range of this object property to “system environment�
 #################################################################
 #    Classes
 #################################################################
+
+###  http://purl.obolibrary.org/obo/BFO_0000015
+<http://purl.obolibrary.org/obo/BFO_0000015> owl:equivalentClass <http://www.w3.org/ns/prov#Activity> .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/BFO_0000015> ;
+   owl:annotatedProperty owl:equivalentClass ;
+   owl:annotatedTarget <http://www.w3.org/ns/prov#Activity> ;
+   rdfs:comment """ClimOO Ontology comment:
+We mapped PROVO and BFO classes in compliance with the PROVO-BFO alignment, which can be found at the following link: https://github.com/BFO-Mappings/PROV-to-BFO 
+
+Bibliographic reference: Prudhomme, T., De Colle, G., Liebers, A., Sculley, A., Xie, P., Cohen, S., & Beverley, J. A semantic approach to mapping the Provenance Ontology to Basic Formal Ontology. Sci Data 12, 282 (2025). https://doi.org/10.1038/s41597-025-04580-1"""@en
+ ] .
+
+
+###  http://www.w3.org/ns/prov#Entity
+<http://www.w3.org/ns/prov#Entity> rdfs:subClassOf _:genid30 .
+
+_:genid30 rdf:type owl:Class ;
+           owl:unionOf ( <http://purl.obolibrary.org/obo/BFO_0000020>
+                         <http://purl.obolibrary.org/obo/BFO_0000031>
+                         [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/BFO_0000004>
+                                                [ rdf:type owl:Class ;
+                                                  owl:complementOf <http://purl.obolibrary.org/obo/BFO_0000006>
+                                                ]
+                                              ) ;
+                           rdf:type owl:Class
+                         ]
+                       ) .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://www.w3.org/ns/prov#Entity> ;
+   owl:annotatedProperty rdfs:subClassOf ;
+   owl:annotatedTarget _:genid30 ;
+   rdfs:comment """ClimOO Ontology comment:
+We mapped PROVO and BFO classes in compliance with the PROVO-BFO alignment, which can be found at the following link: https://github.com/BFO-Mappings/PROV-to-BFO 
+
+Bibliographic reference: Prudhomme, T., De Colle, G., Liebers, A., Sculley, A., Xie, P., Cohen, S., & Beverley, J. A semantic approach to mapping the Provenance Ontology to Basic Formal Ontology. Sci Data 12, 282 (2025). https://doi.org/10.1038/s41597-025-04580-1"""@en
+ ] .
+
+
+###  http://www.w3.org/ns/sosa/Procedure
+<http://www.w3.org/ns/sosa/Procedure> rdfs:subClassOf _:genid39 .
+
+_:genid39 owl:intersectionOf ( <http://www.ontologyrepository.com/CommonCoreOntologies/DirectiveInformationContentEntity>
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://www.ontologyrepository.com/CommonCoreOntologies/prescribes> ;
+                                  owl:someValuesFrom <http://opendata.inrae.fr/PO2/core/Process>
+                                ]
+                              ) ;
+           rdf:type owl:Class .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://www.w3.org/ns/sosa/Procedure> ;
+   owl:annotatedProperty rdfs:subClassOf ;
+   owl:annotatedTarget _:genid39 ;
+   rdfs:comment """ClimOO Ontology comment:
+We mapped SSN/SOSA and BFO classes in compliance with the SSN/SOSA-BFO alignment, which can be found at the following link: https://github.com/BFO-Mappings/SSN-to-BFO"""@en
+ ] .
+
+
+###  http://www.w3.org/ns/sosa/System
+<http://www.w3.org/ns/sosa/System> rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000040> .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://www.w3.org/ns/sosa/System> ;
+   owl:annotatedProperty rdfs:subClassOf ;
+   owl:annotatedTarget <http://purl.obolibrary.org/obo/BFO_0000040> ;
+   rdfs:comment """ClimOO Ontology comment:
+We mapped SSN/SOSA and BFO classes in compliance with the SSN/SOSA-BFO alignment, which can be found at the following link: https://github.com/BFO-Mappings/SSN-to-BFO"""@en
+ ] .
+
+
+###  http://www.w3.org/ns/ssn/Property
+<http://www.w3.org/ns/ssn/Property> owl:equivalentClass _:genid45 .
+
+_:genid45 rdf:type owl:Class ;
+           owl:unionOf ( <http://purl.obolibrary.org/obo/BFO_0000020>
+                         <http://purl.obolibrary.org/obo/BFO_0000144>
+                       ) .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://www.w3.org/ns/ssn/Property> ;
+   owl:annotatedProperty owl:equivalentClass ;
+   owl:annotatedTarget _:genid45 ;
+   rdfs:comment """ClimOO Ontology comment:
+We mapped SSN/SOSA and BFO classes in compliance with the SSN/SOSA-BFO alignment, which can be found at the following link: https://github.com/BFO-Mappings/SSN-to-BFO"""@en
+ ] .
+
+
+###  https://w3id.org/iadopt/ont/Entity
+<https://w3id.org/iadopt/ont/Entity> rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000001> .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <https://w3id.org/iadopt/ont/Entity> ;
+   owl:annotatedProperty rdfs:subClassOf ;
+   owl:annotatedTarget <http://purl.obolibrary.org/obo/BFO_0000001> ;
+   rdfs:comment """ClimOO Ontology comment:
+I-ADOPT defines the class “entity” as “an object or process that has a role in an observation,” while BFO defines this class as “anything that exists or has existed or will exist.” I-ADOPT class presents a narrower coverage compared to the BFO class, resulting in mapping the first as a subclass of the other. We established this mapping after discussion with and approval from a TransformON designer and curator.
+https://github.com/bfo-ontology/BFO-2020
+https://i-adopt.github.io/ontology/index.html#/Entity"""@en
+ ] .
+
 
 ###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000004
 :ClimOO_0000004 rdf:type owl:Class ;
@@ -578,7 +681,7 @@ We extend the domain and range of this object property to “system environment�
                                                      ) ;
                                   rdf:type owl:Class
                                 ] ,
-                                _:genid167 ;
+                                _:genid188 ;
                 rdfs:comment "We currently focus our system of analysis on activities up to harvesting activities in the agricultural supply chains."@en ,
                              """We included the SuMSO food system classes to provide users with an initial reference backbone hierarchy in case they need to model the relation between agricultural and food systems. 
 
@@ -589,14 +692,14 @@ The agricultural system class may be considered a potential subclass of the SuMS
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom> "http://purl.obolibrary.org/obo/ENVO_0000007; http://purl.obolibrary.org/obo/ENVO_01001246" ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
 
-_:genid167 rdf:type owl:Restriction ;
+_:genid188 rdf:type owl:Restriction ;
             owl:onProperty :ClimOO_0000366 ;
             owl:someValuesFrom <https://www.w3id.org/climoo/climoo-sdc2#ClimOO_0000298> .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource :ClimOO_0000364 ;
    owl:annotatedProperty rdfs:subClassOf ;
-   owl:annotatedTarget _:genid167 ;
+   owl:annotatedTarget _:genid188 ;
    rdfs:comment "We envision implementations to characterize the relations between these systems  with respect to components, interactions, boundaries, development, and history."@en
  ] .
 
