@@ -12,7 +12,7 @@
 
 Ontology source: CCO 1.7.
 https://github.com/CommonCoreOntology/CommonCoreOntologies/releases/tag/v1.7-2024-11-03"""@en ;
-                                            rdfs:comment """Two new releases of CCO, CCO 1.7 and CCO 2.0, have been made available in November 2024. CCO 2.0 provides a new IRI schema. SCO, ClimOO upper-level ontology, imports from a former release. CCO 1.5. Aiming to conform with SCO, ClimOO currently reuses CCO imports in compliance with SCO. As soon as updates are made available for those resources, ClimOO will align accordingly. 
+                                            rdfs:comment """Two new releases of CCO, CCO 1.7 and CCO 2.0, have been made available in November 2024. CCO 2.0 provides a new IRI schema. SCO, ClimOO upper-level ontology, imports from a former release, CCO 1.5. Aiming to conform with SCO, ClimOO currently reuses CCO imports reused in SCO. As soon as updates are made available for those resources, ClimOO will align accordingly. 
 ClimOO also reuses some classes from CCO that are not imported by SCO and SuMSO. Those imports have been fetched from CCO 1.7, where the IRI schema is still compliant with that imported by SCO.  
 
 https://github.com/CommonCoreOntology/CommonCoreOntologies/releases

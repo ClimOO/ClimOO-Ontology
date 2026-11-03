@@ -1,0 +1,1649 @@
+@prefix : <http://www.semanticweb.org/f.u./ontologies/2026/9/untitled-ontology-528/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/f.u./ontologies/2026/9/untitled-ontology-528/> .
+
+<https://ClimOO/climoo/climoo-piccomela/imports/foodon-ncbitaxon-uberon-pato-cob-po-imports> rdf:type owl:Ontology ;
+                                                                                              owl:versionIRI <https://ClimOO/climoo/climoo-piccomela/imports/foodon-ncbitaxon-uberon-pato-cob-po-imports#2026-11-02> ;
+                                                                                              rdfs:comment """This file contains ClimOO Ontology suite imports from Food Ontology (FoodOn), Core Ontology for Biology and Biomedicine (COB), Uber Anatomy Ontology (UBERON), Plant Ontology (PO), Phenotype And Trait Ontology (PATO), and NCBI organismal classification (NCBITaxon). Imports were manually collected and revised.
+
+Ontology source: http://purl.obolibrary.org/obo/foodon.owl"""@en ;
+                                                                                              rdfs:seeAlso """http://purl.obolibrary.org/obo/uberon.owl
+http://purl.obolibrary.org/obo/po.owl
+http://purl.obolibrary.org/obo/cob.owl 
+http://purl.obolibrary.org/obo/ncbitaxon.owl
+http://purl.obolibrary.org/obo/pato.owl""" ;
+                                                                                              owl:versionInfo "2026-11-02" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.obolibrary.org/obo/IAO_0000114
+<http://purl.obolibrary.org/obo/IAO_0000114> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000115
+<http://purl.obolibrary.org/obo/IAO_0000115> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000116
+<http://purl.obolibrary.org/obo/IAO_0000116> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000117
+<http://purl.obolibrary.org/obo/IAO_0000117> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000118
+<http://purl.obolibrary.org/obo/IAO_0000118> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000119
+<http://purl.obolibrary.org/obo/IAO_0000119> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000412
+<http://purl.obolibrary.org/obo/IAO_0000412> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/contributor
+<http://purl.org/dc/elements/1.1/contributor> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/date
+<http://purl.org/dc/terms/date> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/rightsHolder
+<http://purl.org/dc/terms/rightsHolder> rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.org/image
+<http://schema.org/image> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#created_by
+<http://www.geneontology.org/formats/oboInOwl#created_by> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#creation_date
+<http://www.geneontology.org/formats/oboInOwl#creation_date> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#hasAlternativeId
+<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym
+<http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#hasDbXref
+<http://www.geneontology.org/formats/oboInOwl#hasDbXref> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#hasExactSynonym
+<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym
+<http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#hasOBONamespace
+<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym
+<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#hasSynonym
+<http://www.geneontology.org/formats/oboInOwl#hasSynonym> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#id
+<http://www.geneontology.org/formats/oboInOwl#id> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#inSubset
+<http://www.geneontology.org/formats/oboInOwl#inSubset> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://purl.obolibrary.org/obo/RO_0000053
+<http://purl.obolibrary.org/obo/RO_0000053> rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/RO_0000086
+<http://purl.obolibrary.org/obo/RO_0000086> rdf:type owl:ObjectProperty .
+
+
+###  http://purl.obolibrary.org/obo/RO_0001000
+<http://purl.obolibrary.org/obo/RO_0001000> rdf:type owl:ObjectProperty ;
+                                            <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000125> ;
+                                            <http://purl.obolibrary.org/obo/IAO_0000115> "a relation between two distinct material entities, the new entity and the old entity, in which the new entity begins to exist when the old entity ceases to exist, and the new entity inherits the significant portion of the matter of the old entity"@en ;
+                                            <http://purl.obolibrary.org/obo/IAO_0000118> "derives_from"@en ;
+                                            <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/ro.owl> ;
+                                            rdfs:label "derives from"@en .
+
+
+###  http://purl.obolibrary.org/obo/RO_0002160
+<http://purl.obolibrary.org/obo/RO_0002160> rdf:type owl:ObjectProperty ;
+                                            rdfs:label "only in taxon" ,
+                                                       "only_in_taxon" .
+
+
+###  http://purl.obolibrary.org/obo/RO_0002162
+<http://purl.obolibrary.org/obo/RO_0002162> rdf:type owl:ObjectProperty ;
+                                            <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000125> ;
+                                            <http://purl.obolibrary.org/obo/IAO_0000115> "x is in taxon y if an only if y is an organism, and the relationship between x and y is one of: part of (reflexive), developmentally preceded by, derives from, secreted by, expressed." ;
+                                            <http://purl.obolibrary.org/obo/IAO_0000119> <http://www.ncbi.nlm.nih.gov/pubmed/17921072> ,
+                                                                                         <http://www.ncbi.nlm.nih.gov/pubmed/20973947> ;
+                                            <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/ro.owl> ;
+                                            rdfs:label "in taxon" .
+
+
+###  http://purl.obolibrary.org/obo/RO_0002202
+<http://purl.obolibrary.org/obo/RO_0002202> rdf:type owl:ObjectProperty ,
+                                                     owl:TransitiveProperty ;
+                                            rdfs:label "develops from"@en ,
+                                                       "develops_from" .
+
+
+###  http://purl.obolibrary.org/obo/RO_0002350
+<http://purl.obolibrary.org/obo/RO_0002350> rdf:type owl:ObjectProperty ;
+                                            <http://purl.obolibrary.org/obo/IAO_0000115> "is member of is a mereological relation between a item and a collection." ;
+                                            <http://purl.obolibrary.org/obo/IAO_0000118> "is member of" ,
+                                                                                         "member part of" ;
+                                            <http://purl.obolibrary.org/obo/IAO_0000119> "SIO" ;
+                                            <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/ro.owl> ;
+                                            rdfs:label "member of"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://purl.obolibrary.org/obo/BFO_0000040
+<http://purl.obolibrary.org/obo/BFO_0000040> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/COB_0000022
+<http://purl.obolibrary.org/obo/COB_0000022> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/UBERON_0000465> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "A material entity that is a maximal functionally integrated unit that develops from a program encoded in a genome"@en ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/cob.owl> ;
+                                             rdfs:label "organism"@en .
+
+
+###  http://purl.obolibrary.org/obo/FOODON_00001002
+<http://purl.obolibrary.org/obo/FOODON_00001002> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <http://purl.obolibrary.org/obo/FOODON_00002403> ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000115> "Food material for humans and animals which is processed with the intention that it be consumable as a whole or added to other food products."@en ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000117> "Damion Dooley"@en ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000118> "Foodon product type"@en ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000119> "https://en.wikipedia.org/wiki/Food"^^xsd:anyURI ;
+                                                 rdfs:comment "The FoodOn \"food product\" class is provided as a branch under which new food product categories and food products themselves can be placed. Here classes are provided to differentiate a food product by its food composition, processing and/or consumption characteristics. This avoids brand name products but it may include generic food dish categories. It has a much greater depth and polyhierarchy than other agency product type schemes have in an effort to group related products together.  The upper level basis of this tree originated in the environment ontology (ENVO) and from the US Code of Federal Regulations."@en ;
+                                                 rdfs:label "food product"@en .
+
+
+###  http://purl.obolibrary.org/obo/FOODON_00001015
+<http://purl.obolibrary.org/obo/FOODON_00001015> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <http://purl.obolibrary.org/obo/FOODON_00001002> ,
+                                                                 <http://purl.obolibrary.org/obo/FOODON_00004331> ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000122> ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000115> "A food product which has as a defining ingredient some plant material."@en ;
+                                                 <http://purl.org/dc/elements/1.1/contributor> <https://orcid.org/0000-0002-8844-9165> ;
+                                                 rdfs:label "plant food product"@en .
+
+
+###  http://purl.obolibrary.org/obo/FOODON_00001057
+<http://purl.obolibrary.org/obo/FOODON_00001057> rdf:type owl:Class ;
+                                                 owl:equivalentClass [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/FOODON_00001261>
+                                                                                            [ rdf:type owl:Restriction ;
+                                                                                              owl:onProperty <http://purl.obolibrary.org/obo/RO_0001000> ;
+                                                                                              owl:someValuesFrom <http://purl.obolibrary.org/obo/FOODON_03411140>
+                                                                                            ]
+                                                                                          ) ;
+                                                                       rdf:type owl:Class
+                                                                     ] ;
+                                                 rdfs:subClassOf <http://purl.obolibrary.org/obo/FOODON_00001261> ,
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty <http://purl.obolibrary.org/obo/RO_0001000> ;
+                                                                   owl:someValuesFrom <http://purl.obolibrary.org/obo/FOODON_03411140>
+                                                                 ] ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000115> "A food product derived from plant fruit."@en ;
+                                                 rdfs:comment """ClimOO Ontology comment:
+We exclude the axiom towards the “fruit or fruit product (us cfr)” as beyond the purposes of ClimOO. We did not intend to alter the original FoodOn model but to maintain ClimOO hierarchies compact and focused on features relevant for the domain. This axiom can be readded as needed. We envision discussions with FoodOn curators to accommodate models.                                            
+
+The Excluded axiom:
+rdfs:subClassOf [ rdf:type owl:Restriction ;
+owl:onProperty <http://purl.obolibrary.org/obo/RO_0002350> ;
+owl:someValuesFrom <http://purl.obolibrary.org/obo/FOODON_03400143>
+                                                                 ] ;"""@en ;
+                                                 rdfs:label "plant fruit food product"@en .
+
+
+###  http://purl.obolibrary.org/obo/FOODON_00001158
+<http://purl.obolibrary.org/obo/FOODON_00001158> rdf:type owl:Class ;
+                                                 owl:equivalentClass [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/FOODON_00001057>
+                                                                                            [ rdf:type owl:Restriction ;
+                                                                                              owl:onProperty <http://purl.obolibrary.org/obo/RO_0001000> ;
+                                                                                              owl:someValuesFrom <http://purl.obolibrary.org/obo/PO_0030110>
+                                                                                            ]
+                                                                                          ) ;
+                                                                       rdf:type owl:Class
+                                                                     ] ;
+                                                 rdfs:subClassOf <http://purl.obolibrary.org/obo/FOODON_00001057> ,
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty <http://purl.obolibrary.org/obo/RO_0001000> ;
+                                                                   owl:someValuesFrom <http://purl.obolibrary.org/obo/PO_0030110>
+                                                                 ] ;
+                                                 <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "pomes"@en ;
+                                                 rdfs:label "pomaceous fruit food product"@en .
+
+
+###  http://purl.obolibrary.org/obo/FOODON_00001261
+<http://purl.obolibrary.org/obo/FOODON_00001261> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <http://purl.obolibrary.org/obo/FOODON_00001015> ,
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty <http://purl.obolibrary.org/obo/RO_0001000> ;
+                                                                   owl:someValuesFrom <http://purl.obolibrary.org/obo/FOODON_03411579>
+                                                                 ] ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000115> "A plant food product which derives from one or more vegetables."@en ;
+                                                 rdfs:comment """ClimOO Ontology comment:
+We exclude the axiom towards the “vegetable or vegetable product (us cfr)” as beyond the purposes of ClimOO. We did not intend to alter the original FoodOn model but to maintain ClimOO hierarchies compact and focused on features relevant for the domain. This axiom can be readded as needed. We envision discussions with FoodOn curators to accommodate models.
+
+The excluded axiom: 
+
+rdfs:subClassOf [ rdf:type owl:Restriction ;
+owl:onProperty <http://purl.obolibrary.org/obo/RO_0002350> ;
+owl:someValuesFrom <http://purl.obolibrary.org/obo/FOODON_03400152>
+                                                                 ] ;"""@en ,
+                                                              "FAO definition for vegetable: \"Vegetables are plants cultivated both as field crops and garden crops, both in the open and under glass.\" and also: \"Vegetables are grouped according to botanic characteristics as follows: leafy or stem vegetables (e.g., cabbage); fruit-bearing vegetables (e.g., melons); flower vegetables (e.g., cauliflowers); root, bulb and tuberous vegetables (e.g., onion); leguminous vegetables (e.g., green peas); other vegetables (e.g., green maize and mushrooms).\""@en ;
+                                                 rdfs:label "vegetable food product"@en ;
+                                                 rdfs:seeAlso <https://www.fao.org/economic/the-statistics-division-ess/methodology/methodology-systems/crops-statistics-concepts-definitions-and-classifications/en/> .
+
+
+###  http://purl.obolibrary.org/obo/FOODON_00001611
+<http://purl.obolibrary.org/obo/FOODON_00001611> rdf:type owl:Class ;
+                                                 owl:equivalentClass [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/FOODON_00001158>
+                                                                                            [ rdf:type owl:Restriction ;
+                                                                                              owl:onProperty <http://purl.obolibrary.org/obo/RO_0001000> ;
+                                                                                              owl:someValuesFrom <http://purl.obolibrary.org/obo/FOODON_00002473>
+                                                                                            ]
+                                                                                          ) ;
+                                                                       rdf:type owl:Class
+                                                                     ] ;
+                                                 rdfs:subClassOf <http://purl.obolibrary.org/obo/FOODON_00001158> ,
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty <http://purl.obolibrary.org/obo/RO_0001000> ;
+                                                                   owl:someValuesFrom <http://purl.obolibrary.org/obo/FOODON_00002473>
+                                                                 ] ;
+                                                 rdfs:label "apple food product"@en .
+
+
+###  http://purl.obolibrary.org/obo/FOODON_00002403
+<http://purl.obolibrary.org/obo/FOODON_00002403> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000040> ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000115> "Any substance that can be consumed by an organism to satisfy nutritional or other health needs, or to provide a social or organoleptic food experience"@en ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000119> <https://en.wikipedia.org/wiki/Food> ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/ons.owl> ;
+                                                 <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "food"@en ,
+                                                                                                                "foodstuff"@en ;
+                                                 <http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym> "nourishment"@en ,
+                                                                                                                 "sustenance"@en ;
+                                                 rdfs:comment "This class is the top of FOODON's main food product hierarchy which is described in the https://www.foodon.org website, and can be searched in lookup services like https://www.ebi.ac.uk/ols/"@en ;
+                                                 rdfs:label "food material"@en .
+
+
+###  http://purl.obolibrary.org/obo/FOODON_00002454
+<http://purl.obolibrary.org/obo/FOODON_00002454> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <http://purl.obolibrary.org/obo/FOODON_00002403> ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000428> ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000115> "Food material which has been categorized by a characteristic such as granularity or temperature."@en ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000117> "Damion Dooley"@en ;
+                                                 rdfs:comment "This term was renamed from \"food product by quality\" to align better with COB \"characteristic\" label, and as well to disambiguate from other use of \"quality\" as a food grading. This term is useful for tasks like food inspection where little prior knowledge of how the food came to be is available. Some terms like \"food (frozen)\"are both a quality descriptor and the output of a process."@en ;
+                                                 rdfs:label "food material by characteristic"@en .
+
+
+###  http://purl.obolibrary.org/obo/FOODON_00002473
+<http://purl.obolibrary.org/obo/FOODON_00002473> rdf:type owl:Class ;
+                                                 owl:equivalentClass [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/PO_0030110>
+                                                                                            [ rdf:type owl:Restriction ;
+                                                                                              owl:onProperty <http://purl.obolibrary.org/obo/RO_0002162> ;
+                                                                                              owl:someValuesFrom <http://purl.obolibrary.org/obo/NCBITaxon_3750>
+                                                                                            ]
+                                                                                          ) ;
+                                                                       rdf:type owl:Class
+                                                                     ] ;
+                                                 rdfs:subClassOf <http://purl.obolibrary.org/obo/FOODON_03310788> ,
+                                                                 <http://purl.obolibrary.org/obo/PO_0030110> ,
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty <http://purl.obolibrary.org/obo/RO_0002162> ;
+                                                                   owl:someValuesFrom <http://purl.obolibrary.org/obo/NCBITaxon_3750>
+                                                                 ] ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000122> ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000115> "A pome fruit of an apple tree (Malus domestica)."@en ;
+                                                 <http://purl.org/dc/terms/contributor> <https://orcid.org/0000-0002-8844-9165> ;
+                                                 rdfs:comment "A whole apple may include a stem."@en ;
+                                                 rdfs:label "apple"@en ;
+                                                 rdfs:seeAlso "https://www-atlasobscura-com.cdn.ampproject.org/c/s/www.atlasobscura.com/articles/heritage-appalachian-apples.amp" .
+
+
+###  http://purl.obolibrary.org/obo/FOODON_00002559
+<http://purl.obolibrary.org/obo/FOODON_00002559> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <http://purl.obolibrary.org/obo/FOODON_03411245> ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000122> ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000115> "The Red Delicious is a clone of apple cultigen, now comprising more than 50 cultivars, first recognized in Madison County, Iowa, in 1880"@en ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000117> <https://orcid.org/0000-0002-8844-9165> ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000119> "https://en.wikipedia.org/wiki/Red_Delicious"^^xsd:anyURI ;
+                                                 <http://purl.org/dc/terms/date> "2019-04-13T16:47:39Z"^^xsd:dateTime ;
+                                                 rdfs:label "Red Delicious apple tree"@en .
+
+
+###  http://purl.obolibrary.org/obo/FOODON_00002560
+<http://purl.obolibrary.org/obo/FOODON_00002560> rdf:type owl:Class ;
+                                                 owl:equivalentClass [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/FOODON_00002473>
+                                                                                            [ rdf:type owl:Restriction ;
+                                                                                              owl:onProperty <http://purl.obolibrary.org/obo/RO_0002162> ;
+                                                                                              owl:someValuesFrom <http://purl.obolibrary.org/obo/FOODON_00002559>
+                                                                                            ]
+                                                                                          ) ;
+                                                                       rdf:type owl:Class
+                                                                     ] ;
+                                                 rdfs:subClassOf <http://purl.obolibrary.org/obo/FOODON_00002473> ,
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty <http://purl.obolibrary.org/obo/RO_0002162> ;
+                                                                   owl:someValuesFrom <http://purl.obolibrary.org/obo/FOODON_00002559>
+                                                                 ] ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000122> ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000115> "A pome fruit of a Red Deliciousapple tree cultivar."@en ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000119> "https://en.wikipedia.org/wiki/Red_Delicious"^^xsd:anyURI ,
+                                                                                              "https://en.wikipedia.org/wiki/Red_Delicious" ;
+                                                 <http://purl.org/dc/terms/contributor> <https://orcid.org/0000-0002-8844-9165> ;
+                                                 <http://purl.org/dc/terms/date> "2019-04-13T17:08:41"^^xsd:dateTime ;
+                                                 rdfs:label "Red Delicious apple"@en .
+
+
+###  http://purl.obolibrary.org/obo/FOODON_00002852
+<http://purl.obolibrary.org/obo/FOODON_00002852> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <http://purl.obolibrary.org/obo/FOODON_03411245> ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000122> ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000115> "The Granny Smith is a tip-bearing apple cultivar, which originated in Australia in 1868. The tree is thought to be a hybrid of Malus sylvestris, the European wild apple, with the North American apple Malus pumila as the polleniser."@en ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000117> <http://orcid.org/0000-0002-8844-9165> ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000119> <https://en.wikipedia.org/wiki/Granny_Smith> ;
+                                                 <http://purl.org/dc/terms/date> "2019-08-07T19:29:34Z"^^xsd:dateTime ;
+                                                 rdfs:label "Granny Smith apple tree"@en .
+
+
+###  http://purl.obolibrary.org/obo/FOODON_00002853
+<http://purl.obolibrary.org/obo/FOODON_00002853> rdf:type owl:Class ;
+                                                 owl:equivalentClass [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/FOODON_00002473>
+                                                                                            [ rdf:type owl:Restriction ;
+                                                                                              owl:onProperty <http://purl.obolibrary.org/obo/RO_0002162> ;
+                                                                                              owl:someValuesFrom <http://purl.obolibrary.org/obo/FOODON_00002852>
+                                                                                            ]
+                                                                                          ) ;
+                                                                       rdf:type owl:Class
+                                                                     ] ;
+                                                 rdfs:subClassOf <http://purl.obolibrary.org/obo/FOODON_00002473> ,
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty <http://purl.obolibrary.org/obo/RO_0002162> ;
+                                                                   owl:someValuesFrom <http://purl.obolibrary.org/obo/FOODON_00002852>
+                                                                 ] ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000115> "A pome fruit of a Granny Smith apple tree cultivar."@en ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000119> <https://en.wikipedia.org/wiki/Granny_Smith> ,
+                                                                                              "https://en.wikipedia.org/wiki/Granny_Smith" ;
+                                                 <http://purl.org/dc/terms/contributor> <https://orcid.org/0000-0002-8844-9165> ;
+                                                 <http://purl.org/dc/terms/date> "2019-08-07T19:34:52"^^xsd:dateTime ;
+                                                 <http://schema.org/image> <https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Granny_smith_and_cross_section.jpg/640px-Granny_smith_and_cross_section.jpg> ;
+                                                 rdfs:label "Granny Smith apple"@en .
+
+
+###  http://purl.obolibrary.org/obo/FOODON_00002861
+<http://purl.obolibrary.org/obo/FOODON_00002861> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <http://purl.obolibrary.org/obo/FOODON_03411245> ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000122> ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000115> "The Fuji apple is an apple hybrid developed by growers at Tohoku Research Station in Fujisaki, Aomori, Japan, in the late 1930s, and brought to market in 1962. It originated as a cross between two American apple varieties — the Red Delicious and old Virginia Ralls Genet (sometimes cited as \"Rawls Jennet\") apples."@en ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000117> <http://orcid.org/0000-0002-8844-9165> ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000119> <https://en.wikipedia.org/wiki/Fuji_(apple)> ;
+                                                 <http://purl.org/dc/terms/date> "2019-08-07T20:35:58Z"^^xsd:dateTime ;
+                                                 rdfs:label "Fuji apple tree"@en .
+
+
+###  http://purl.obolibrary.org/obo/FOODON_00002862
+<http://purl.obolibrary.org/obo/FOODON_00002862> rdf:type owl:Class ;
+                                                 owl:equivalentClass [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/FOODON_00002473>
+                                                                                            [ rdf:type owl:Restriction ;
+                                                                                              owl:onProperty <http://purl.obolibrary.org/obo/RO_0002162> ;
+                                                                                              owl:someValuesFrom <http://purl.obolibrary.org/obo/FOODON_00002861>
+                                                                                            ]
+                                                                                          ) ;
+                                                                       rdf:type owl:Class
+                                                                     ] ;
+                                                 rdfs:subClassOf <http://purl.obolibrary.org/obo/FOODON_00002473> ,
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty <http://purl.obolibrary.org/obo/RO_0002162> ;
+                                                                   owl:someValuesFrom <http://purl.obolibrary.org/obo/FOODON_00002861>
+                                                                 ] ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000122> ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000115> "A pome fruit of a Fuji apple tree cultivar."@en ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000119> <https://en.wikipedia.org/wiki/Fuji_(apple)> ,
+                                                                                              "https://en.wikipedia.org/wiki/Fuji_(apple)" ;
+                                                 <http://purl.org/dc/terms/contributor> <https://orcid.org/0000-0002-8844-9165> ;
+                                                 <http://purl.org/dc/terms/date> "2019-08-07T20:37:28"^^xsd:dateTime ;
+                                                 <http://schema.org/image> <https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Rosaceae_Malus_pumila_Malus_pumila_Var_domestica_Apples_Fuji.jpg/576px-Rosaceae_Malus_pumila_Malus_pumila_Var_domestica_Apples_Fuji.jpg> ;
+                                                 rdfs:label "Fuji apple"@en .
+
+
+###  http://purl.obolibrary.org/obo/FOODON_00002972
+<http://purl.obolibrary.org/obo/FOODON_00002972> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <http://purl.obolibrary.org/obo/FOODON_03411245> ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000122> ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000115> "The Tango apple, or SweeTango (brand name) or 'Minneiska', is a cultivar of apple, and is a hybrid of two other apples (the 'Honeycrisp' and the 'Minnewashta')."@en ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000117> <http://orcid.org/0000-0002-8844-9165> ,
+                                                                                              <https://orcid.org/0000-0002-1107-9135> ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000119> <https://en.wikipedia.org/wiki/SweeTango> ;
+                                                 <http://purl.org/dc/terms/date> "2019-08-11T22:55:18Z"^^xsd:dateTime ;
+                                                 <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "Minneiska apple tree"@en ;
+                                                 rdfs:label "Tango apple tree"@en .
+
+
+###  http://purl.obolibrary.org/obo/FOODON_00002973
+<http://purl.obolibrary.org/obo/FOODON_00002973> rdf:type owl:Class ;
+                                                 owl:equivalentClass [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/FOODON_00002473>
+                                                                                            [ rdf:type owl:Restriction ;
+                                                                                              owl:onProperty <http://purl.obolibrary.org/obo/RO_0001000> ;
+                                                                                              owl:someValuesFrom <http://purl.obolibrary.org/obo/FOODON_00002972>
+                                                                                            ]
+                                                                                          ) ;
+                                                                       rdf:type owl:Class
+                                                                     ] ;
+                                                 rdfs:subClassOf <http://purl.obolibrary.org/obo/FOODON_00002473> ,
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty <http://purl.obolibrary.org/obo/RO_0001000> ;
+                                                                   owl:someValuesFrom <http://purl.obolibrary.org/obo/FOODON_00002972>
+                                                                 ] ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000122> ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000115> "An apple harvested from a Tango apple tree cultivar."@en ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000119> <https://en.wikipedia.org/wiki/SweeTango> ;
+                                                 <http://purl.org/dc/terms/contributor> <https://orcid.org/0000-0002-1107-9135> ,
+                                                                                        <https://orcid.org/0000-0002-8844-9165> ;
+                                                 <http://purl.org/dc/terms/date> "2019-08-11T22:59:19Z"^^xsd:dateTime ;
+                                                 <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "Minneiska"@en ,
+                                                                                                                "SweeTango"@en ;
+                                                 rdfs:label "Tango apple"@en .
+
+
+###  http://purl.obolibrary.org/obo/FOODON_00003125
+<http://purl.obolibrary.org/obo/FOODON_00003125> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <http://purl.obolibrary.org/obo/FOODON_03411599> ,
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty <http://purl.obolibrary.org/obo/RO_0002162> ;
+                                                                   owl:someValuesFrom <http://purl.obolibrary.org/obo/NCBITaxon_3749>
+                                                                 ] ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000115> "Malus is a genus of about 30–55 species[3] of small deciduous trees or shrubs in the family Rosaceae, including the domesticated orchard apple (M. pumila syn. M. domestica) – also known as the eating apple, cooking apple, or culinary apple. The other species are commonly known as crabapples, crab apples, crabtrees or wild apples"@en ;
+                                                 <http://purl.org/dc/terms/contributor> <https://orcid.org/0000-0002-8844-9165> ;
+                                                 <http://purl.org/dc/terms/date> "2019-08-25T15:37:56Z"^^xsd:dateTime ;
+                                                 rdfs:label "Malus group"@en .
+
+
+###  http://purl.obolibrary.org/obo/FOODON_00003348
+<http://purl.obolibrary.org/obo/FOODON_00003348> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <http://purl.obolibrary.org/obo/FOODON_00002473> ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000115> "A pome fruit of a Gala apple tree cultivar."@en ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000117> <http://orcid.org/0000-0002-8844-9165> ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000119> "https://en.wikipedia.org/wiki/Gala_(apple)" ;
+                                                 <http://purl.org/dc/terms/date> "2020-06-06T00:48:34"^^xsd:dateTime ;
+                                                 <http://schema.org/image> <https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Malus-Gala.jpg/604px-Malus-Gala.jpg> ;
+                                                 rdfs:label "Gala apple"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/FOODON_00003348> ;
+   owl:annotatedProperty <http://schema.org/image> ;
+   owl:annotatedTarget <https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Malus-Gala.jpg/604px-Malus-Gala.jpg> ;
+   <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by-sa/2.0/de/deed.en> ;
+   <http://purl.org/dc/terms/rightsHolder> "Sven Teschke"
+ ] .
+
+
+###  http://purl.obolibrary.org/obo/FOODON_00003519
+<http://purl.obolibrary.org/obo/FOODON_00003519> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <http://purl.obolibrary.org/obo/FOODON_00002473> ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000117> <http://orcid.org/0000-0002-8844-9165> ;
+                                                 <http://purl.org/dc/terms/date> "2020-11-10T06:04:20Z"^^xsd:dateTime ;
+                                                 rdfs:label "Honeycrisp apple"@en .
+
+
+###  http://purl.obolibrary.org/obo/FOODON_00003816
+<http://purl.obolibrary.org/obo/FOODON_00003816> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <http://purl.obolibrary.org/obo/FOODON_03315308> ,
+                                                                 <http://purl.obolibrary.org/obo/PO_0025496> ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000115> "An anatomical part of a plant that is consumed by humans or other animals as food."@en ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000117> <http://orcid.org/0000-0002-8844-9165> ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000119> "https://en.wikipedia.org/wiki/Vegetable" ;
+                                                 <http://purl.org/dc/terms/date> "2021-02-12T18:49:32"^^xsd:dateTime ;
+                                                 rdfs:label "vegetable"@en .
+
+
+###  http://purl.obolibrary.org/obo/FOODON_00004185
+<http://purl.obolibrary.org/obo/FOODON_00004185> rdf:type owl:Class ;
+                                                 owl:equivalentClass [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/PO_0030110>
+                                                                                            [ rdf:type owl:Restriction ;
+                                                                                              owl:onProperty <http://purl.obolibrary.org/obo/RO_0002162> ;
+                                                                                              owl:someValuesFrom <http://purl.obolibrary.org/obo/NCBITaxon_106567>
+                                                                                            ]
+                                                                                          ) ;
+                                                                       rdf:type owl:Class
+                                                                     ] ;
+                                                 rdfs:subClassOf <http://purl.obolibrary.org/obo/FOODON_00002473> ,
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty <http://purl.obolibrary.org/obo/RO_0002162> ;
+                                                                   owl:someValuesFrom <http://purl.obolibrary.org/obo/NCBITaxon_106567>
+                                                                 ] ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000115> "A pome fruit from a Malus sieversii tree."@en ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000117> <http://orcid.org/0000-0002-8844-9165> ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000119> "https://en.wikipedia.org/wiki/Malus_sieversii" ;
+                                                 <http://purl.org/dc/terms/contributor> <https://orcid.org/0000-0002-8844-9165> ;
+                                                 <http://purl.org/dc/terms/date> "2022-02-01T08:09:39Z"^^xsd:dateTime ,
+                                                                                 "2022-02-10T21:11:54Z"^^xsd:dateTime ;
+                                                 rdfs:label "Malus sieversii apple"@en .
+
+
+###  http://purl.obolibrary.org/obo/FOODON_00004186
+<http://purl.obolibrary.org/obo/FOODON_00004186> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <http://purl.obolibrary.org/obo/FOODON_00002473> ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000117> <http://orcid.org/0000-0002-8844-9165> ;
+                                                 <http://purl.org/dc/terms/date> "2022-02-01T08:13:15Z"^^xsd:dateTime ;
+                                                 rdfs:label "Pink apple"@en .
+
+
+###  http://purl.obolibrary.org/obo/FOODON_00004187
+<http://purl.obolibrary.org/obo/FOODON_00004187> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <http://purl.obolibrary.org/obo/FOODON_00004186> ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000115> "A whole Pink apple which is raw."@en ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000117> <http://orcid.org/0000-0002-8844-9165> ;
+                                                 <http://purl.org/dc/terms/date> "2022-02-01T08:13:25Z"^^xsd:dateTime ;
+                                                 rdfs:label "Pink apple (raw)"@en .
+
+
+###  http://purl.obolibrary.org/obo/FOODON_00004201
+<http://purl.obolibrary.org/obo/FOODON_00004201> rdf:type owl:Class ;
+                                                 owl:equivalentClass [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/FOODON_00002560>
+                                                                                            [ rdf:type owl:Restriction ;
+                                                                                              owl:onProperty <http://purl.obolibrary.org/obo/RO_0000086> ;
+                                                                                              owl:someValuesFrom <http://purl.obolibrary.org/obo/FOODON_00004348>
+                                                                                            ]
+                                                                                          ) ;
+                                                                       rdf:type owl:Class
+                                                                     ] ;
+                                                 rdfs:subClassOf <http://purl.obolibrary.org/obo/FOODON_00002560> ,
+                                                                 <http://purl.obolibrary.org/obo/FOODON_03301710> ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000115> "A raw Red Delicious apple."@en ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000117> <http://orcid.org/0000-0002-8844-9165> ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000119> "https://en.wikipedia.org/wiki/Red_Delicious" ;
+                                                 <http://purl.org/dc/terms/contributor> <https://orcid.org/0000-0002-8844-9165> ;
+                                                 <http://purl.org/dc/terms/date> "2022-02-17T19:34:52"^^xsd:dateTime ,
+                                                                                 "2022-02-17T21:17:02Z"^^xsd:dateTime ;
+                                                 rdfs:label "Red Delicious apple (raw)"@en .
+
+
+###  http://purl.obolibrary.org/obo/FOODON_00004202
+<http://purl.obolibrary.org/obo/FOODON_00004202> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <http://purl.obolibrary.org/obo/FOODON_00002473> ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000115> "A pome fruit of a Golden Delicious apple tree cultivar."@en ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000117> <http://orcid.org/0000-0002-8844-9165> ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000119> "https://en.wikipedia.org/wiki/Golden_Delicious" ;
+                                                 <http://purl.org/dc/terms/contributor> <https://orcid.org/0000-0002-8844-9165> ;
+                                                 <http://purl.org/dc/terms/date> "2022-02-17T19:34:52"^^xsd:dateTime ,
+                                                                                 "2022-02-17T21:20:11Z"^^xsd:dateTime ;
+                                                 rdfs:label "Golden Delicious apple"@en .
+
+
+###  http://purl.obolibrary.org/obo/FOODON_00004203
+<http://purl.obolibrary.org/obo/FOODON_00004203> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <http://purl.obolibrary.org/obo/FOODON_00004202> ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000115> "A whole raw Golden Delicious apple."@en ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000117> <http://orcid.org/0000-0002-8844-9165> ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000119> "https://en.wikipedia.org/wiki/Golden_Delicious" ;
+                                                 <http://purl.org/dc/terms/contributor> <https://orcid.org/0000-0002-8844-9165> ;
+                                                 <http://purl.org/dc/terms/date> "2022-02-17T19:34:52"^^xsd:dateTime ,
+                                                                                 "2022-02-17T21:24:06Z"^^xsd:dateTime ;
+                                                 <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "golden delicious apple"@en ;
+                                                 rdfs:label "Golden Delicious apple (raw)"@en .
+
+
+###  http://purl.obolibrary.org/obo/FOODON_00004204
+<http://purl.obolibrary.org/obo/FOODON_00004204> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <http://purl.obolibrary.org/obo/FOODON_00003348> ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000115> "A whole raw Gala apple."@en ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000117> <http://orcid.org/0000-0002-8844-9165> ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000119> "https://en.wikipedia.org/wiki/Gala_(apple)" ;
+                                                 <http://purl.org/dc/terms/contributor> <https://orcid.org/0000-0002-8844-9165> ;
+                                                 <http://purl.org/dc/terms/date> "2022-02-17T19:34:52"^^xsd:dateTime ,
+                                                                                 "2022-02-17T21:29:00Z"^^xsd:dateTime ;
+                                                 rdfs:label "Gala apple (raw)"@en .
+
+
+###  http://purl.obolibrary.org/obo/FOODON_00004205
+<http://purl.obolibrary.org/obo/FOODON_00004205> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <http://purl.obolibrary.org/obo/FOODON_00002862> ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000115> "A whole raw Fuji apple."@en ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000117> <http://orcid.org/0000-0002-8844-9165> ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000119> "https://en.wikipedia.org/wiki/Fuji_(apple)" ;
+                                                 <http://purl.org/dc/terms/contributor> <https://orcid.org/0000-0002-8844-9165> ;
+                                                 <http://purl.org/dc/terms/date> "2022-02-17T19:34:52"^^xsd:dateTime ,
+                                                                                 "2022-02-17T21:29:50Z"^^xsd:dateTime ;
+                                                 rdfs:label "Fuji apple (raw)"@en .
+
+
+###  http://purl.obolibrary.org/obo/FOODON_00004206
+<http://purl.obolibrary.org/obo/FOODON_00004206> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <http://purl.obolibrary.org/obo/FOODON_00002853> ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000115> "A whole raw Granny Smith apple."@en ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000117> <http://orcid.org/0000-0002-8844-9165> ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000119> "https://en.wikipedia.org/wiki/Granny_Smith" ;
+                                                 <http://purl.org/dc/terms/contributor> <https://orcid.org/0000-0002-8844-9165> ;
+                                                 <http://purl.org/dc/terms/date> "2022-02-17T19:34:52"^^xsd:dateTime ,
+                                                                                 "2022-02-17T21:30:42Z"^^xsd:dateTime ;
+                                                 rdfs:label "Granny Smith apple (raw)"@en .
+
+
+###  http://purl.obolibrary.org/obo/FOODON_00004331
+<http://purl.obolibrary.org/obo/FOODON_00004331> rdf:type owl:Class ;
+                                                 owl:equivalentClass [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/FOODON_03420116>
+                                                                                            [ rdf:type owl:Restriction ;
+                                                                                              owl:onProperty <http://purl.obolibrary.org/obo/RO_0002162> ;
+                                                                                              owl:someValuesFrom <http://purl.obolibrary.org/obo/NCBITaxon_33090>
+                                                                                            ]
+                                                                                          ) ;
+                                                                       rdf:type owl:Class
+                                                                     ] ;
+                                                 rdfs:subClassOf <http://purl.obolibrary.org/obo/FOODON_03420116> ,
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty <http://purl.obolibrary.org/obo/RO_0002162> ;
+                                                                   owl:someValuesFrom <http://purl.obolibrary.org/obo/NCBITaxon_33090>
+                                                                 ] ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000122> ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000115> "Anatomical or other piece(s) or substance derived from one or more plants."@en ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000117> <https://orcid.org/0000-0002-8844-9165> ;
+                                                 <http://purl.org/dc/terms/date> "2023-03-02T22:31:04Z"^^xsd:dateTime ;
+                                                 rdfs:label "plant material"@en .
+
+
+###  http://purl.obolibrary.org/obo/FOODON_00004348
+<http://purl.obolibrary.org/obo/FOODON_00004348> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <http://purl.obolibrary.org/obo/PATO_0001995> ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000115> "A characteristic of organism material which has a biochemical composition that closely resembles its harvested or subsequent biologically aged state."@en ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000117> <https://orcid.org/0000-0002-8844-9165> ;
+                                                 <http://purl.org/dc/terms/date> "2023-06-18T09:30:05Z"^^xsd:dateTime ;
+                                                 rdfs:comment "The definition allows for drying before harvest, and allows for cleaning, cutting, storing or trimming after harvest as long as harvested biological state is maintained."@en ,
+                                                              "The definition covers plant, animal and fungi material, and allows for drying before harvest, and allows for cleaning, cutting, storing or trimming after harvest as long as harvested biological state is maintained."@en ;
+                                                 rdfs:label "raw"@en .
+
+
+###  http://purl.obolibrary.org/obo/FOODON_00004607
+<http://purl.obolibrary.org/obo/FOODON_00004607> rdf:type owl:Class ;
+                                                 owl:equivalentClass [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/FOODON_00003519>
+                                                                                            [ rdf:type owl:Restriction ;
+                                                                                              owl:onProperty <http://purl.obolibrary.org/obo/RO_0000086> ;
+                                                                                              owl:someValuesFrom <http://purl.obolibrary.org/obo/FOODON_00004348>
+                                                                                            ]
+                                                                                          ) ;
+                                                                       rdf:type owl:Class
+                                                                     ] ;
+                                                 rdfs:subClassOf <http://purl.obolibrary.org/obo/FOODON_00003519> ,
+                                                                 <http://purl.obolibrary.org/obo/FOODON_03301710> ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000115> "A raw Honeycrisp apple."@en ;
+                                                 <http://purl.org/dc/terms/contributor> <https://orcid.org/0000-0001-5275-8866> ,
+                                                                                        <https://orcid.org/0000-0002-0995-0278> ,
+                                                                                        <https://orcid.org/0000-0002-8461-9745> ,
+                                                                                        <https://orcid.org/0000-0002-8844-9165> ,
+                                                                                        <https://orcid.org/0000-0003-3653-3805> ;
+                                                 <http://purl.org/dc/terms/date> "2024-03-06T10:00:11Z"^^xsd:dateTime ;
+                                                 rdfs:label "Honeycrisp apple (raw)"@en .
+
+
+###  http://purl.obolibrary.org/obo/FOODON_00004608
+<http://purl.obolibrary.org/obo/FOODON_00004608> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <http://purl.obolibrary.org/obo/FOODON_03411245> ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000115> "A Cosmic Crisp apple tree."@en ;
+                                                 <http://purl.org/dc/terms/contributor> <https://orcid.org/0000-0001-5275-8866> ,
+                                                                                        <https://orcid.org/0000-0002-0995-0278> ,
+                                                                                        <https://orcid.org/0000-0002-8461-9745> ,
+                                                                                        <https://orcid.org/0000-0002-8844-9165> ,
+                                                                                        <https://orcid.org/0000-0003-3653-3805> ;
+                                                 <http://purl.org/dc/terms/date> "2024-03-06T10:00:11Z"^^xsd:dateTime ;
+                                                 rdfs:label "Cosmic Crisp apple tree"@en .
+
+
+###  http://purl.obolibrary.org/obo/FOODON_00004609
+<http://purl.obolibrary.org/obo/FOODON_00004609> rdf:type owl:Class ;
+                                                 owl:equivalentClass [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/FOODON_00002473>
+                                                                                            [ rdf:type owl:Restriction ;
+                                                                                              owl:onProperty <http://purl.obolibrary.org/obo/RO_0002162> ;
+                                                                                              owl:someValuesFrom <http://purl.obolibrary.org/obo/FOODON_00004608>
+                                                                                            ]
+                                                                                          ) ;
+                                                                       rdf:type owl:Class
+                                                                     ] ;
+                                                 rdfs:subClassOf <http://purl.obolibrary.org/obo/FOODON_00002473> ,
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty <http://purl.obolibrary.org/obo/RO_0002162> ;
+                                                                   owl:someValuesFrom <http://purl.obolibrary.org/obo/FOODON_00004608>
+                                                                 ] ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000115> "A pome fruit of a Cosmic Crisp apple tree cultivar."@en ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000119> "https://en.wikipedia.org/wiki/Cosmic_Crisp" ,
+                                                                                              "https://pomiferous.com/applebyname/wa-38-id-8766" ;
+                                                 <http://purl.org/dc/terms/contributor> <https://orcid.org/0000-0001-5275-8866> ,
+                                                                                        <https://orcid.org/0000-0002-0995-0278> ,
+                                                                                        <https://orcid.org/0000-0002-8461-9745> ,
+                                                                                        <https://orcid.org/0000-0002-8844-9165> ,
+                                                                                        <https://orcid.org/0000-0003-3653-3805> ;
+                                                 <http://purl.org/dc/terms/date> "2024-03-06T10:00:11Z"^^xsd:dateTime ;
+                                                 rdfs:comment "Cosmic crisp apple is a cross between Honeycrisp and Enterprise apples. It is intended to have the texture and juiciness of the Honeycrisp, and the late-ripening behavior and long storage of the Enterprise."@en ;
+                                                 rdfs:label "Cosmic Crisp apple"@en .
+
+
+###  http://purl.obolibrary.org/obo/FOODON_00004610
+<http://purl.obolibrary.org/obo/FOODON_00004610> rdf:type owl:Class ;
+                                                 owl:equivalentClass [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/FOODON_00004609>
+                                                                                            [ rdf:type owl:Restriction ;
+                                                                                              owl:onProperty <http://purl.obolibrary.org/obo/RO_0000086> ;
+                                                                                              owl:someValuesFrom <http://purl.obolibrary.org/obo/FOODON_00004348>
+                                                                                            ]
+                                                                                          ) ;
+                                                                       rdf:type owl:Class
+                                                                     ] ;
+                                                 rdfs:subClassOf <http://purl.obolibrary.org/obo/FOODON_00004609> ,
+                                                                 <http://purl.obolibrary.org/obo/FOODON_03301710> ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000115> "A raw Cosmic Crisp apple."@en ;
+                                                 <http://purl.org/dc/terms/contributor> <https://orcid.org/0000-0001-5275-8866> ,
+                                                                                        <https://orcid.org/0000-0002-0995-0278> ,
+                                                                                        <https://orcid.org/0000-0002-8461-9745> ,
+                                                                                        <https://orcid.org/0000-0002-8844-9165> ,
+                                                                                        <https://orcid.org/0000-0003-3653-3805> ;
+                                                 <http://purl.org/dc/terms/date> "2024-03-06T10:00:11Z"^^xsd:dateTime ;
+                                                 rdfs:label "Cosmic Crisp apple (raw)"@en .
+
+
+###  http://purl.obolibrary.org/obo/FOODON_00004611
+<http://purl.obolibrary.org/obo/FOODON_00004611> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <http://purl.obolibrary.org/obo/FOODON_03411245> ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000115> "A SugarBee apple tree."@en ;
+                                                 <http://purl.org/dc/terms/contributor> <https://orcid.org/0000-0001-5275-8866> ,
+                                                                                        <https://orcid.org/0000-0002-0995-0278> ,
+                                                                                        <https://orcid.org/0000-0002-8461-9745> ,
+                                                                                        <https://orcid.org/0000-0002-8844-9165> ,
+                                                                                        <https://orcid.org/0000-0003-3653-3805> ;
+                                                 <http://purl.org/dc/terms/date> "2024-03-06T10:00:11Z"^^xsd:dateTime ;
+                                                 rdfs:label "SugarBee apple tree"@en .
+
+
+###  http://purl.obolibrary.org/obo/FOODON_00004612
+<http://purl.obolibrary.org/obo/FOODON_00004612> rdf:type owl:Class ;
+                                                 owl:equivalentClass [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/FOODON_00002473>
+                                                                                            [ rdf:type owl:Restriction ;
+                                                                                              owl:onProperty <http://purl.obolibrary.org/obo/RO_0002162> ;
+                                                                                              owl:someValuesFrom <http://purl.obolibrary.org/obo/FOODON_00004611>
+                                                                                            ]
+                                                                                          ) ;
+                                                                       rdf:type owl:Class
+                                                                     ] ;
+                                                 rdfs:subClassOf <http://purl.obolibrary.org/obo/FOODON_00002473> ,
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty <http://purl.obolibrary.org/obo/RO_0002162> ;
+                                                                   owl:someValuesFrom <http://purl.obolibrary.org/obo/FOODON_00004611>
+                                                                 ] ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000115> "A pome fruit of a SugarBee apple tree cultivar."@en ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000119> "https://pomiferous.com/applebyname/cn-121-id-8454" ;
+                                                 <http://purl.org/dc/terms/contributor> <https://orcid.org/0000-0001-5275-8866> ,
+                                                                                        <https://orcid.org/0000-0002-0995-0278> ,
+                                                                                        <https://orcid.org/0000-0002-8461-9745> ,
+                                                                                        <https://orcid.org/0000-0002-8844-9165> ,
+                                                                                        <https://orcid.org/0000-0003-3653-3805> ;
+                                                 <http://purl.org/dc/terms/date> "2024-03-06T10:00:11Z"^^xsd:dateTime ;
+                                                 rdfs:label "SugarBee apple"@en .
+
+
+###  http://purl.obolibrary.org/obo/FOODON_00004613
+<http://purl.obolibrary.org/obo/FOODON_00004613> rdf:type owl:Class ;
+                                                 owl:equivalentClass [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/FOODON_00004612>
+                                                                                            [ rdf:type owl:Restriction ;
+                                                                                              owl:onProperty <http://purl.obolibrary.org/obo/RO_0000086> ;
+                                                                                              owl:someValuesFrom <http://purl.obolibrary.org/obo/FOODON_00004348>
+                                                                                            ]
+                                                                                          ) ;
+                                                                       rdf:type owl:Class
+                                                                     ] ;
+                                                 rdfs:subClassOf <http://purl.obolibrary.org/obo/FOODON_00004612> ,
+                                                                 <http://purl.obolibrary.org/obo/FOODON_03301710> ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000115> "A raw SugarBee apple."@en ;
+                                                 <http://purl.org/dc/terms/contributor> <https://orcid.org/0000-0001-5275-8866> ,
+                                                                                        <https://orcid.org/0000-0002-0995-0278> ,
+                                                                                        <https://orcid.org/0000-0002-8461-9745> ,
+                                                                                        <https://orcid.org/0000-0002-8844-9165> ,
+                                                                                        <https://orcid.org/0000-0003-3653-3805> ;
+                                                 <http://purl.org/dc/terms/date> "2024-03-06T10:00:11Z"^^xsd:dateTime ;
+                                                 rdfs:label "SugarBee apple (raw)"@en .
+
+
+###  http://purl.obolibrary.org/obo/FOODON_00004614
+<http://purl.obolibrary.org/obo/FOODON_00004614> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <http://purl.obolibrary.org/obo/FOODON_03411245> ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000115> "A Scarlet Spur apple tree."@en ;
+                                                 <http://purl.org/dc/terms/contributor> <https://orcid.org/0000-0001-5275-8866> ,
+                                                                                        <https://orcid.org/0000-0002-0995-0278> ,
+                                                                                        <https://orcid.org/0000-0002-8461-9745> ,
+                                                                                        <https://orcid.org/0000-0002-8844-9165> ,
+                                                                                        <https://orcid.org/0000-0003-3653-3805> ;
+                                                 <http://purl.org/dc/terms/date> "2024-03-06T10:00:11Z"^^xsd:dateTime ;
+                                                 rdfs:label "Scarlet Spur apple tree"@en .
+
+
+###  http://purl.obolibrary.org/obo/FOODON_00004615
+<http://purl.obolibrary.org/obo/FOODON_00004615> rdf:type owl:Class ;
+                                                 owl:equivalentClass [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/FOODON_00002473>
+                                                                                            [ rdf:type owl:Restriction ;
+                                                                                              owl:onProperty <http://purl.obolibrary.org/obo/RO_0002162> ;
+                                                                                              owl:someValuesFrom <http://purl.obolibrary.org/obo/FOODON_00004614>
+                                                                                            ]
+                                                                                          ) ;
+                                                                       rdf:type owl:Class
+                                                                     ] ;
+                                                 rdfs:subClassOf <http://purl.obolibrary.org/obo/FOODON_00002473> ,
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty <http://purl.obolibrary.org/obo/RO_0002162> ;
+                                                                   owl:someValuesFrom <http://purl.obolibrary.org/obo/FOODON_00004614>
+                                                                 ] ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000115> "A pome fruit of a scarlet spur apple tree cultivar."@en ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000119> "https://tsesmelis.gr/en/trees/pome-fruits/apples/scarlet-spur-apple-variety-2/" ;
+                                                 <http://purl.org/dc/terms/contributor> <https://orcid.org/0000-0001-5275-8866> ,
+                                                                                        <https://orcid.org/0000-0002-0995-0278> ,
+                                                                                        <https://orcid.org/0000-0002-8461-9745> ,
+                                                                                        <https://orcid.org/0000-0002-8844-9165> ,
+                                                                                        <https://orcid.org/0000-0003-3653-3805> ;
+                                                 <http://purl.org/dc/terms/date> "2024-03-06T10:00:11Z"^^xsd:dateTime ;
+                                                 rdfs:label "Scarlet Spur apple"@en .
+
+
+###  http://purl.obolibrary.org/obo/FOODON_00004616
+<http://purl.obolibrary.org/obo/FOODON_00004616> rdf:type owl:Class ;
+                                                 owl:equivalentClass [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/FOODON_00004615>
+                                                                                            [ rdf:type owl:Restriction ;
+                                                                                              owl:onProperty <http://purl.obolibrary.org/obo/RO_0000086> ;
+                                                                                              owl:someValuesFrom <http://purl.obolibrary.org/obo/FOODON_00004348>
+                                                                                            ]
+                                                                                          ) ;
+                                                                       rdf:type owl:Class
+                                                                     ] ;
+                                                 rdfs:subClassOf <http://purl.obolibrary.org/obo/FOODON_00004615> ,
+                                                                 <http://purl.obolibrary.org/obo/FOODON_03301710> ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000115> "A raw Scarlet Spur apple."@en ;
+                                                 <http://purl.org/dc/terms/contributor> <https://orcid.org/0000-0001-5275-8866> ,
+                                                                                        <https://orcid.org/0000-0002-0995-0278> ,
+                                                                                        <https://orcid.org/0000-0002-8461-9745> ,
+                                                                                        <https://orcid.org/0000-0002-8844-9165> ,
+                                                                                        <https://orcid.org/0000-0003-3653-3805> ;
+                                                 <http://purl.org/dc/terms/date> "2024-03-06T10:00:11Z"^^xsd:dateTime ;
+                                                 rdfs:label "Scarlet Spur apple (raw)"@en .
+
+
+###  http://purl.obolibrary.org/obo/FOODON_00004617
+<http://purl.obolibrary.org/obo/FOODON_00004617> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <http://purl.obolibrary.org/obo/FOODON_03411245> ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000115> "An Envy apple tree."@en ;
+                                                 <http://purl.org/dc/terms/contributor> <https://orcid.org/0000-0001-5275-8866> ,
+                                                                                        <https://orcid.org/0000-0002-0995-0278> ,
+                                                                                        <https://orcid.org/0000-0002-8461-9745> ,
+                                                                                        <https://orcid.org/0000-0002-8844-9165> ,
+                                                                                        <https://orcid.org/0000-0003-3653-3805> ;
+                                                 <http://purl.org/dc/terms/date> "2024-03-06T10:00:11Z"^^xsd:dateTime ;
+                                                 rdfs:label "Envy apple tree"@en .
+
+
+###  http://purl.obolibrary.org/obo/FOODON_00004618
+<http://purl.obolibrary.org/obo/FOODON_00004618> rdf:type owl:Class ;
+                                                 owl:equivalentClass [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/FOODON_00002473>
+                                                                                            [ rdf:type owl:Restriction ;
+                                                                                              owl:onProperty <http://purl.obolibrary.org/obo/RO_0002162> ;
+                                                                                              owl:someValuesFrom <http://purl.obolibrary.org/obo/FOODON_00004617>
+                                                                                            ]
+                                                                                          ) ;
+                                                                       rdf:type owl:Class
+                                                                     ] ;
+                                                 rdfs:subClassOf <http://purl.obolibrary.org/obo/FOODON_00002473> ,
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty <http://purl.obolibrary.org/obo/RO_0002162> ;
+                                                                   owl:someValuesFrom <http://purl.obolibrary.org/obo/FOODON_00004617>
+                                                                 ] ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000115> "A pome fruit of an Envy apple tree cultivar."@en ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000119> "https://en.wikipedia.org/wiki/Envy_(apple)" ,
+                                                                                              "https://pomiferous.com/applebyname/scilate-id-5803" ;
+                                                 <http://purl.org/dc/terms/contributor> <https://orcid.org/0000-0001-5275-8866> ,
+                                                                                        <https://orcid.org/0000-0002-0995-0278> ,
+                                                                                        <https://orcid.org/0000-0002-8461-9745> ,
+                                                                                        <https://orcid.org/0000-0002-8844-9165> ,
+                                                                                        <https://orcid.org/0000-0003-3653-3805> ;
+                                                 <http://purl.org/dc/terms/date> "2024-03-06T10:00:11Z"^^xsd:dateTime ;
+                                                 rdfs:label "Envy apple"@en .
+
+
+###  http://purl.obolibrary.org/obo/FOODON_00004619
+<http://purl.obolibrary.org/obo/FOODON_00004619> rdf:type owl:Class ;
+                                                 owl:equivalentClass [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/FOODON_00004618>
+                                                                                            [ rdf:type owl:Restriction ;
+                                                                                              owl:onProperty <http://purl.obolibrary.org/obo/RO_0000086> ;
+                                                                                              owl:someValuesFrom <http://purl.obolibrary.org/obo/FOODON_00004348>
+                                                                                            ]
+                                                                                          ) ;
+                                                                       rdf:type owl:Class
+                                                                     ] ;
+                                                 rdfs:subClassOf <http://purl.obolibrary.org/obo/FOODON_00004618> ,
+                                                                 <http://purl.obolibrary.org/obo/FOODON_03301710> ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000115> "A raw Envy apple."@en ;
+                                                 <http://purl.org/dc/terms/contributor> <https://orcid.org/0000-0001-5275-8866> ,
+                                                                                        <https://orcid.org/0000-0002-0995-0278> ,
+                                                                                        <https://orcid.org/0000-0002-8461-9745> ,
+                                                                                        <https://orcid.org/0000-0002-8844-9165> ,
+                                                                                        <https://orcid.org/0000-0003-3653-3805> ;
+                                                 <http://purl.org/dc/terms/date> "2024-03-06T10:00:11Z"^^xsd:dateTime ;
+                                                 rdfs:label "Envy apple (raw)"@en .
+
+
+###  http://purl.obolibrary.org/obo/FOODON_00004620
+<http://purl.obolibrary.org/obo/FOODON_00004620> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <http://purl.obolibrary.org/obo/FOODON_03411245> ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000115> "An Aztec Fuji apple tree."@en ;
+                                                 <http://purl.org/dc/terms/contributor> <https://orcid.org/0000-0001-5275-8866> ,
+                                                                                        <https://orcid.org/0000-0002-0995-0278> ,
+                                                                                        <https://orcid.org/0000-0002-8461-9745> ,
+                                                                                        <https://orcid.org/0000-0002-8844-9165> ,
+                                                                                        <https://orcid.org/0000-0003-3653-3805> ;
+                                                 <http://purl.org/dc/terms/date> "2024-03-06T10:00:11Z"^^xsd:dateTime ;
+                                                 rdfs:label "Aztec Fuji apple tree"@en .
+
+
+###  http://purl.obolibrary.org/obo/FOODON_00004621
+<http://purl.obolibrary.org/obo/FOODON_00004621> rdf:type owl:Class ;
+                                                 owl:equivalentClass [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/FOODON_00002473>
+                                                                                            [ rdf:type owl:Restriction ;
+                                                                                              owl:onProperty <http://purl.obolibrary.org/obo/RO_0002162> ;
+                                                                                              owl:someValuesFrom <http://purl.obolibrary.org/obo/FOODON_00004620>
+                                                                                            ]
+                                                                                          ) ;
+                                                                       rdf:type owl:Class
+                                                                     ] ;
+                                                 rdfs:subClassOf <http://purl.obolibrary.org/obo/FOODON_00002473> ,
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty <http://purl.obolibrary.org/obo/RO_0002162> ;
+                                                                   owl:someValuesFrom <http://purl.obolibrary.org/obo/FOODON_00004620>
+                                                                 ] ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000115> "A pome fruit of an Aztec Fuji tree cultivar."@en ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000119> "https://pomiferous.com/applebyname/dt2-fuji-id-8739" ;
+                                                 <http://purl.org/dc/terms/contributor> <https://orcid.org/0000-0001-5275-8866> ,
+                                                                                        <https://orcid.org/0000-0002-0995-0278> ,
+                                                                                        <https://orcid.org/0000-0002-8461-9745> ,
+                                                                                        <https://orcid.org/0000-0002-8844-9165> ,
+                                                                                        <https://orcid.org/0000-0003-3653-3805> ;
+                                                 <http://purl.org/dc/terms/date> "2024-03-06T10:00:11Z"^^xsd:dateTime ;
+                                                 rdfs:label "Aztec Fuji apple"@en .
+
+
+###  http://purl.obolibrary.org/obo/FOODON_00004769
+<http://purl.obolibrary.org/obo/FOODON_00004769> rdf:type owl:Class ;
+                                                 owl:equivalentClass [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/FOODON_00004621>
+                                                                                            [ rdf:type owl:Restriction ;
+                                                                                              owl:onProperty <http://purl.obolibrary.org/obo/RO_0000086> ;
+                                                                                              owl:someValuesFrom <http://purl.obolibrary.org/obo/FOODON_00004348>
+                                                                                            ]
+                                                                                          ) ;
+                                                                       rdf:type owl:Class
+                                                                     ] ;
+                                                 rdfs:subClassOf <http://purl.obolibrary.org/obo/FOODON_00004621> ,
+                                                                 <http://purl.obolibrary.org/obo/FOODON_03301710> ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000115> "A raw Aztec Fuji apple."@en ;
+                                                 <http://purl.org/dc/terms/contributor> <https://orcid.org/0000-0001-5275-8866> ,
+                                                                                        <https://orcid.org/0000-0002-0995-0278> ,
+                                                                                        <https://orcid.org/0000-0002-8461-9745> ,
+                                                                                        <https://orcid.org/0000-0002-8844-9165> ,
+                                                                                        <https://orcid.org/0000-0003-3653-3805> ;
+                                                 <http://purl.org/dc/terms/date> "2024-05-28T17:37:25.59Z"^^xsd:dateTime ;
+                                                 rdfs:label "Aztec Fuji apple (raw)"@en .
+
+
+###  http://purl.obolibrary.org/obo/FOODON_03000493
+<http://purl.obolibrary.org/obo/FOODON_03000493> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <http://purl.obolibrary.org/obo/PATO_0001995> ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000115> "A characteristic of organism material which has undergone comminution or meat tenderizing, but which is otherwise unprocessed."@en ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000119> <https://www.fsis.usda.gov/sites/default/files/import/Product-Categorization.pdf> ;
+                                                 rdfs:comment "This is a peer of \"raw\", intended to catch the case where a material maintains nutritional characteristics despite certain kinds of processing which may affect other characteristics related to food safety, taste, etc."@en ;
+                                                 rdfs:label "raw (not intact)"@en .
+
+
+###  http://purl.obolibrary.org/obo/FOODON_03301710
+<http://purl.obolibrary.org/obo/FOODON_03301710> rdf:type owl:Class ;
+                                                 owl:equivalentClass [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/FOODON_00002473>
+                                                                                            [ rdf:type owl:Restriction ;
+                                                                                              owl:onProperty <http://purl.obolibrary.org/obo/RO_0000086> ;
+                                                                                              owl:someValuesFrom <http://purl.obolibrary.org/obo/FOODON_00004348>
+                                                                                            ]
+                                                                                          ) ;
+                                                                       rdf:type owl:Class
+                                                                     ] ;
+                                                 rdfs:subClassOf <http://purl.obolibrary.org/obo/FOODON_00002473> ,
+                                                                 <http://purl.obolibrary.org/obo/FOODON_03302008> ,
+                                                                 <http://purl.obolibrary.org/obo/FOODON_03304644> ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000428> ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000115> "An apple harvested from an apple tree. It may include a stem. It has not been subject to cooking or preservation processes other than cold storage or waxing."@en ;
+                                                 <http://purl.org/dc/terms/contributor> <https://orcid.org/0000-0002-8844-9165> ;
+                                                 <http://www.geneontology.org/formats/oboInOwl#hasDbXref> <https://bioregistry.io/reference/siren:F1710> ;
+                                                 rdfs:comment """SIREN DB annotation:
+* whole, natural shape FOODON:03430150
+* not heat-treated FOODON:03440003
+* fruit, peel present, core, pit or seed present FOODON:03420140"""@en ;
+                                                 rdfs:label "apple (raw)"@en .
+
+
+###  http://purl.obolibrary.org/obo/FOODON_03302008
+<http://purl.obolibrary.org/obo/FOODON_03302008> rdf:type owl:Class ;
+                                                 owl:equivalentClass [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/FOODON_03311126>
+                                                                                            [ rdf:type owl:Restriction ;
+                                                                                              owl:onProperty <http://purl.obolibrary.org/obo/RO_0001000> ;
+                                                                                              owl:someValuesFrom <http://purl.obolibrary.org/obo/FOODON_03411579>
+                                                                                            ]
+                                                                                          ) ;
+                                                                       rdf:type owl:Class
+                                                                     ] ;
+                                                 rdfs:subClassOf <http://purl.obolibrary.org/obo/FOODON_03311126> ,
+                                                                 <http://purl.obolibrary.org/obo/FOODON_03315308> ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000428> ;
+                                                 <http://www.geneontology.org/formats/oboInOwl#hasDbXref> <https://bioregistry.io/reference/siren:F2008> ;
+                                                 rdfs:comment """SIREN DB annotation:
+* solid FOODON:03430151
+* not heat-treated FOODON:03440003
+* part of plant FOODON:03420174"""@en ;
+                                                 rdfs:label "vegetable (raw)"@en .
+
+
+###  http://purl.obolibrary.org/obo/FOODON_03304644
+<http://purl.obolibrary.org/obo/FOODON_03304644> rdf:type owl:Class ;
+                                                 owl:equivalentClass [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/PO_0009001>
+                                                                                            [ rdf:type owl:Restriction ;
+                                                                                              owl:onProperty <http://purl.obolibrary.org/obo/RO_0000053> ;
+                                                                                              owl:someValuesFrom <http://purl.obolibrary.org/obo/FOODON_00004348>
+                                                                                            ]
+                                                                                          ) ;
+                                                                       rdf:type owl:Class
+                                                                     ] ;
+                                                 rdfs:subClassOf <http://purl.obolibrary.org/obo/FOODON_00002454> ,
+                                                                 <http://purl.obolibrary.org/obo/PO_0009001> ,
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty <http://purl.obolibrary.org/obo/RO_0000053> ;
+                                                                   owl:someValuesFrom <http://purl.obolibrary.org/obo/FOODON_00004348>
+                                                                 ] ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000428> ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000116> "Note that this allows for several kinds of fruit in one sample, e.g. \"some fruit (raw)\" allows \"apple (raw)\" and \"orange (raw)\"."@en ;
+                                                 <http://purl.org/dc/terms/contributor> <https://orcid.org/0000-0002-8844-9165> ;
+                                                 <http://www.geneontology.org/formats/oboInOwl#hasDbXref> <https://bioregistry.io/reference/siren:F4644> ;
+                                                 <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "fruit"@en ;
+                                                 rdfs:comment """SIREN DB annotation:
+* whole, natural shape FOODON:03430150
+* not heat-treated FOODON:03440003
+* fruit part FOODON:03420167"""@en ;
+                                                 rdfs:label "fruit (raw)"@en .
+
+
+###  http://purl.obolibrary.org/obo/FOODON_03310788
+<http://purl.obolibrary.org/obo/FOODON_03310788> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <http://purl.obolibrary.org/obo/FOODON_00001611> ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000122> ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000115> "A whole apple or some substance made from processed apple."@en ;
+                                                 <http://purl.org/dc/terms/contributor> <https://orcid.org/0000-0002-8844-9165> ;
+                                                 <http://www.geneontology.org/formats/oboInOwl#hasDbXref> <https://bioregistry.io/reference/siren:F10788> ;
+                                                 <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "apple"@en ;
+                                                 rdfs:label "apple (whole or pieces)"@en .
+
+
+###  http://purl.obolibrary.org/obo/FOODON_03311126
+<http://purl.obolibrary.org/obo/FOODON_03311126> rdf:type owl:Class ;
+                                                 owl:equivalentClass [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/FOODON_00002454>
+                                                                                            [ rdf:type owl:Restriction ;
+                                                                                              owl:onProperty <http://purl.obolibrary.org/obo/RO_0000086> ;
+                                                                                              owl:someValuesFrom <http://purl.obolibrary.org/obo/FOODON_00004348>
+                                                                                            ]
+                                                                                          ) ;
+                                                                       rdf:type owl:Class
+                                                                     ] ;
+                                                 rdfs:subClassOf <http://purl.obolibrary.org/obo/FOODON_00002454> ,
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty <http://purl.obolibrary.org/obo/RO_0000086> ;
+                                                                   owl:someValuesFrom <http://purl.obolibrary.org/obo/FOODON_00004348>
+                                                                 ] ,
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty <http://purl.obolibrary.org/obo/RO_0002162> ;
+                                                                   owl:someValuesFrom <http://purl.obolibrary.org/obo/COB_0000022>
+                                                                 ] ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000428> ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000115> "Food material which is raw."@en ;
+                                                 <http://www.geneontology.org/formats/oboInOwl#hasDbXref> <https://bioregistry.io/reference/siren:F11126> ;
+                                                 rdfs:comment """SIREN DB annotation:
+* not heat-treated FOODON:03440003"""@en ;
+                                                 rdfs:label "food (raw)"@en .
+
+
+###  http://purl.obolibrary.org/obo/FOODON_03315308
+<http://purl.obolibrary.org/obo/FOODON_03315308> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <http://purl.obolibrary.org/obo/FOODON_00001261> ,
+                                                                 [ rdf:type owl:Class ;
+                                                                   owl:unionOf ( <http://purl.obolibrary.org/obo/FOODON_00003816>
+                                                                                 [ rdf:type owl:Restriction ;
+                                                                                   owl:onProperty <http://purl.obolibrary.org/obo/RO_0001000> ;
+                                                                                   owl:someValuesFrom <http://purl.obolibrary.org/obo/FOODON_00003816>
+                                                                                 ]
+                                                                               )
+                                                                 ] ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000115> "A whole vegetable or some substance made from a processed vegetable."@en ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000119> "https://en.wikipedia.org/wiki/Vegetable" ;
+                                                 <http://purl.org/dc/terms/contributor> <https://orcid.org/0000-0001-5275-8866> ;
+                                                 <http://purl.org/dc/terms/date> "2022-04-13T09:20:12Z"^^xsd:dateTime ;
+                                                 <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "vegetable"@en ;
+                                                 rdfs:label "vegetable (whole or pieces)"@en .
+
+
+###  http://purl.obolibrary.org/obo/FOODON_03411140
+<http://purl.obolibrary.org/obo/FOODON_03411140> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <http://purl.obolibrary.org/obo/PO_0000003> ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000428> ;
+                                                 <http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://www.langual.org/langual_thesaurus.asp?termid=B1140> ;
+                                                 rdfs:label "fruit-producing plant"@en .
+
+
+###  http://purl.obolibrary.org/obo/FOODON_03411245
+<http://purl.obolibrary.org/obo/FOODON_03411245> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <http://purl.obolibrary.org/obo/FOODON_00003125> ,
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty <http://purl.obolibrary.org/obo/RO_0002162> ;
+                                                                   owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                        owl:unionOf ( <http://purl.obolibrary.org/obo/NCBITaxon_283210>
+                                                                                                      <http://purl.obolibrary.org/obo/NCBITaxon_3750>
+                                                                                                    )
+                                                                                      ]
+                                                                 ] ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000122> ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000115> "An apple tree (Malus pumila species in genus Malus), is cultivated worldwide as a fruit tree, providing sweet, edible fruit.  Malus pumila encompasses over 7,500 apple cultivars (https://en.wikipedia.org/wiki/List_of_apple_cultivars)."@en ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000119> "https://en.wikipedia.org/wiki/Apple"^^xsd:anyURI ;
+                                                 <http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://eol.org/pages/8097> ,
+                                                                                                          <http://www.ars-grin.gov/cgi-bin/npgs/html/taxon.pl?104681> ,
+                                                                                                          <http://www.langual.org/langual_thesaurus.asp?termid=B1245> ,
+                                                                                                          "MANSFELD:8860" ;
+                                                 <http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym> "Malus domestica Borkh." ;
+                                                 <http://www.geneontology.org/formats/oboInOwl#hasSynonym> "malus communis"@en ,
+                                                                                                           "malus domestica"@en ,
+                                                                                                           "pyrus malus"@en ;
+                                                 rdfs:comment "Malus pumila encompasses over 7,500 apple cultivars (https://en.wikipedia.org/wiki/List_of_apple_cultivars)."@en ;
+                                                 rdfs:label "apple tree"@en .
+
+
+###  http://purl.obolibrary.org/obo/FOODON_03411579
+<http://purl.obolibrary.org/obo/FOODON_03411579> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <http://purl.obolibrary.org/obo/PO_0000003> ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000428> ;
+                                                 <http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://www.langual.org/langual_thesaurus.asp?termid=B1579> ;
+                                                 rdfs:label "vegetable-producing plant"@en .
+
+
+###  http://purl.obolibrary.org/obo/FOODON_03411599
+<http://purl.obolibrary.org/obo/FOODON_03411599> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <http://purl.obolibrary.org/obo/FOODON_03411140> ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000122> ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000115> "A type of fruit produced by flowering plants in the subfamily *Maloideae* of the family *Rosaceae*."@en ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000117> <https://orcid.org/0000-0002-8844-9165> ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000119> <https://en.wikipedia.org/wiki/Pome> ;
+                                                 <http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://www.langual.org/langual_thesaurus.asp?termid=B1599> ;
+                                                 <http://www.geneontology.org/formats/oboInOwl#hasSynonym> "maloideae"@en ;
+                                                 rdfs:label "pome fruit plant"@en .
+
+
+###  http://purl.obolibrary.org/obo/FOODON_03415182
+<http://purl.obolibrary.org/obo/FOODON_03415182> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <http://purl.obolibrary.org/obo/FOODON_03411245> ;
+                                                 <http://purl.org/dc/terms/contributor> <https://orcid.org/0000-0002-8844-9165> ;
+                                                 <http://purl.org/dc/terms/date> "2025-01-30T11:37:15Z"^^xsd:dateTime ;
+                                                 rdfs:label "Gala apple tree"@en .
+
+
+###  http://purl.obolibrary.org/obo/FOODON_03420116
+<http://purl.obolibrary.org/obo/FOODON_03420116> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000040> ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000428> ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000115> "Material which is distinguished primarily by the organism(s) it derives from."@en ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000116> "This was renamed from \"part of organism\" (and from LanguaL's original \"part of plant or animal\") to encompass organism material that is produced by an animal or plant rather than \"part of\" it, such as an egg, and might not be countable per se, such as milk. Additionally the existing definition's \"from which a food product or its major ingredient is derived.\" was removed as an unnecessary constraint. [2023/03/02]"@en ;
+                                                 <http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://www.langual.org/langual_thesaurus.asp?termid=B0001> ,
+                                                                                                          <http://www.langual.org/langual_thesaurus.asp?termid=B1564> ,
+                                                                                                          <http://www.langual.org/langual_thesaurus.asp?termid=C0116> ;
+                                                 rdfs:comment "LanguaL curation note: \"e.g. *LEAF*, *ROOT OR TUBER*, *ORGAN MEAT*, *MILK* OR *EGG*; it also includes components of parts, such as *CREAM*, and extracts, concentrates or isolates, such as *PROTEIN EXTRACT* or *SUGAR*.\""@en ,
+                                                              "Old definition as of Feb 25, 2025: Anatomical or other part(s) or substances derived from plant or animal or fungal organisms."@en ;
+                                                 rdfs:label "organism material"@en .
+
+
+###  http://purl.obolibrary.org/obo/NCBITaxon_106549
+<http://purl.obolibrary.org/obo/NCBITaxon_106549> rdf:type owl:Class ;
+                                                  rdfs:subClassOf <http://purl.obolibrary.org/obo/NCBITaxon_3749> ;
+                                                  <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/ncbitaxon.owl> ;
+                                                  <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "shan jing zi" ;
+                                                  <http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym> "Malus baccata (L.) Borkh." ;
+                                                  rdfs:label "Malus baccata" .
+
+
+###  http://purl.obolibrary.org/obo/NCBITaxon_106559
+<http://purl.obolibrary.org/obo/NCBITaxon_106559> rdf:type owl:Class ;
+                                                  rdfs:subClassOf <http://purl.obolibrary.org/obo/NCBITaxon_3749> ;
+                                                  <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/ncbitaxon.owl> ;
+                                                  <http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym> "Malus mandshurica (Maxim.) Kom." ;
+                                                  rdfs:label "Malus mandshurica" ;
+                                                  rdfs:seeAlso <https://plants.usda.gov/plantguide/pdf/pg_mama37.pdf> ,
+                                                               <https://www.nrcs.usda.gov/Internet/FSE_PLANTMATERIALS/publications/ndpmcrb11922.pdf> .
+
+
+###  http://purl.obolibrary.org/obo/NCBITaxon_106567
+<http://purl.obolibrary.org/obo/NCBITaxon_106567> rdf:type owl:Class ;
+                                                  rdfs:subClassOf <http://purl.obolibrary.org/obo/NCBITaxon_3749> ;
+                                                  <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/ncbitaxon.owl> ;
+                                                  rdfs:label "Malus sieversii" .
+
+
+###  http://purl.obolibrary.org/obo/NCBITaxon_1437183
+<http://purl.obolibrary.org/obo/NCBITaxon_1437183> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <http://purl.obolibrary.org/obo/NCBITaxon_3398> ;
+                                                   <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/ncbitaxon.owl> ;
+                                                   rdfs:label "Mesangiospermae" .
+
+
+###  http://purl.obolibrary.org/obo/NCBITaxon_1437201
+<http://purl.obolibrary.org/obo/NCBITaxon_1437201> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <http://purl.obolibrary.org/obo/NCBITaxon_1437183> ;
+                                                   <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/ncbitaxon.owl> ;
+                                                   rdfs:label "Pentapetalae" .
+
+
+###  http://purl.obolibrary.org/obo/NCBITaxon_171637
+<http://purl.obolibrary.org/obo/NCBITaxon_171637> rdf:type owl:Class ;
+                                                  rdfs:subClassOf <http://purl.obolibrary.org/obo/NCBITaxon_3745> ;
+                                                  <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/ncbitaxon.owl> ;
+                                                  rdfs:label "Amygdaloideae" .
+
+
+###  http://purl.obolibrary.org/obo/NCBITaxon_2759
+<http://purl.obolibrary.org/obo/NCBITaxon_2759> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/NCBITaxon_283210
+<http://purl.obolibrary.org/obo/NCBITaxon_283210> rdf:type owl:Class ;
+                                                  rdfs:subClassOf <http://purl.obolibrary.org/obo/NCBITaxon_3749> ;
+                                                  <http://purl.obolibrary.org/obo/IAO_0000116> "\"Miller intended Malus pumila (from the Latin pumilus – small) to denote the Paradise Apple, a weak, low-growing form of M. domestica used as a rootstock, which he took to be a distinct species (Bean 1981). Until very recently it has been widely used for all forms of orchard apple (otherwise known as M. domestica), and sometimes also for their primary wild progenitor (for example by Juniper & Mabberley 2006; Grimshaw & Bayton 2009). While M. pumila is the earlier name, M. domestica has been conserved (Qian et al. 2010, Applequist 2017).\" - from https://treesandshrubsonline.org/articles/malus/malus-domestica/"@en ;
+                                                  <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/ncbitaxon.owl> ;
+                                                  <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "paradise apple" ;
+                                                  <http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym> "Malus pumila Mill." ,
+                                                                                                                  "Malus pumila P. Mill." ;
+                                                  rdfs:label "Malus pumila" .
+
+
+###  http://purl.obolibrary.org/obo/NCBITaxon_33090
+<http://purl.obolibrary.org/obo/NCBITaxon_33090> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <http://purl.obolibrary.org/obo/NCBITaxon_2759> ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/ncbitaxon.owl> ;
+                                                 <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "Chlorophyta/Embryophyta group" ,
+                                                                                                                "chlorophyte/embryophyte group" ,
+                                                                                                                "green plants" ,
+                                                                                                                "plants" ;
+                                                 rdfs:label "Viridiplantae" .
+
+
+###  http://purl.obolibrary.org/obo/NCBITaxon_3398
+<http://purl.obolibrary.org/obo/NCBITaxon_3398> rdf:type owl:Class ;
+                                                rdfs:subClassOf <http://purl.obolibrary.org/obo/NCBITaxon_58024> ;
+                                                <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/ncbitaxon.owl> ;
+                                                <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "angiosperms" ,
+                                                                                                               "flowering plants" ;
+                                                rdfs:label "Magnoliopsida" .
+
+
+###  http://purl.obolibrary.org/obo/NCBITaxon_3744
+<http://purl.obolibrary.org/obo/NCBITaxon_3744> rdf:type owl:Class ;
+                                                rdfs:subClassOf <http://purl.obolibrary.org/obo/NCBITaxon_91835> ;
+                                                <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/ncbitaxon.owl> ;
+                                                rdfs:label "Rosales" .
+
+
+###  http://purl.obolibrary.org/obo/NCBITaxon_3745
+<http://purl.obolibrary.org/obo/NCBITaxon_3745> rdf:type owl:Class ;
+                                                rdfs:subClassOf <http://purl.obolibrary.org/obo/NCBITaxon_3744> ;
+                                                <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/ncbitaxon.owl> ;
+                                                <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "rose family" ;
+                                                rdfs:label "Rosaceae" .
+
+
+###  http://purl.obolibrary.org/obo/NCBITaxon_3749
+<http://purl.obolibrary.org/obo/NCBITaxon_3749> rdf:type owl:Class ;
+                                                rdfs:subClassOf <http://purl.obolibrary.org/obo/NCBITaxon_721813> ;
+                                                <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/ncbitaxon.owl> ;
+                                                rdfs:label "Malus" .
+
+
+###  http://purl.obolibrary.org/obo/NCBITaxon_3750
+<http://purl.obolibrary.org/obo/NCBITaxon_3750> rdf:type owl:Class ;
+                                                rdfs:subClassOf <http://purl.obolibrary.org/obo/NCBITaxon_3749> ;
+                                                <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/ncbitaxon.owl> ;
+                                                <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "apple" ,
+                                                                                                               "apple tree" ,
+                                                                                                               "cultivated apple" ;
+                                                rdfs:label "Malus domestica" .
+
+
+###  http://purl.obolibrary.org/obo/NCBITaxon_58023
+<http://purl.obolibrary.org/obo/NCBITaxon_58023> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <http://purl.obolibrary.org/obo/NCBITaxon_33090> ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/ncbitaxon.owl> ;
+                                                 <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "vascular plants" ;
+                                                 rdfs:label "Tracheophyta" .
+
+
+###  http://purl.obolibrary.org/obo/NCBITaxon_58024
+<http://purl.obolibrary.org/obo/NCBITaxon_58024> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <http://purl.obolibrary.org/obo/NCBITaxon_78536> ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/ncbitaxon.owl> ;
+                                                 <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "seed plants" ;
+                                                 rdfs:label "Spermatophyta" .
+
+
+###  http://purl.obolibrary.org/obo/NCBITaxon_71275
+<http://purl.obolibrary.org/obo/NCBITaxon_71275> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <http://purl.obolibrary.org/obo/NCBITaxon_1437201> ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/ncbitaxon.owl> ;
+                                                 rdfs:label "rosids" .
+
+
+###  http://purl.obolibrary.org/obo/NCBITaxon_721813
+<http://purl.obolibrary.org/obo/NCBITaxon_721813> rdf:type owl:Class ;
+                                                  rdfs:subClassOf <http://purl.obolibrary.org/obo/NCBITaxon_171637> ;
+                                                  <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/ncbitaxon.owl> ;
+                                                  rdfs:label "Maleae" .
+
+
+###  http://purl.obolibrary.org/obo/NCBITaxon_78536
+<http://purl.obolibrary.org/obo/NCBITaxon_78536> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <http://purl.obolibrary.org/obo/NCBITaxon_58023> ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/ncbitaxon.owl> ;
+                                                 <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "euphyllophytes" ;
+                                                 rdfs:label "Euphyllophyta" .
+
+
+###  http://purl.obolibrary.org/obo/NCBITaxon_91835
+<http://purl.obolibrary.org/obo/NCBITaxon_91835> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <http://purl.obolibrary.org/obo/NCBITaxon_71275> ;
+                                                 <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/ncbitaxon.owl> ;
+                                                 rdfs:label "fabids" .
+
+
+###  http://purl.obolibrary.org/obo/PATO_0001241
+<http://purl.obolibrary.org/obo/PATO_0001241> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/PATO_0001995
+<http://purl.obolibrary.org/obo/PATO_0001995> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/PATO_0001241> ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000115> "A quality that inheres in an entire organism or part of an organism." ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/pato.owl> ;
+                                              rdfs:label "organismal quality" .
+
+
+###  http://purl.obolibrary.org/obo/PO_0000003
+<http://purl.obolibrary.org/obo/PO_0000003> rdf:type owl:Class ;
+                                            rdfs:subClassOf <http://purl.obolibrary.org/obo/FOODON_00004331> ,
+                                                            <http://purl.obolibrary.org/obo/PO_0009011> ;
+                                            <http://purl.obolibrary.org/obo/IAO_0000115> "A plant structure (PO:0005679) which is a whole organism." ;
+                                            <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/po.owl> ;
+                                            <http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> "genet (broad)" ,
+                                                                                                           "ramet (broad)" ;
+                                            <http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://www.langual.org/langual_thesaurus.asp?termid=B1347> ,
+                                                                                                     "FNA:4b610104-1bb0-4c6b-9bb9-e3cc61d11ac0" ,
+                                                                                                     "FNA:99508f62-7116-4e2b-90c0-19ff55ebd967" ,
+                                                                                                     "FNA:ba1b1bd5-75bd-4195-b11c-3aba08da08c2" ,
+                                                                                                     "FNA:c1ccca7d-2a98-4a9d-8603-c34b551935e0" ,
+                                                                                                     "FNA:e4dde193-57f7-4ab9-9d25-96b4ca0088ba" ,
+                                                                                                     "FNA:ec8c2064-2a67-43d7-8e14-aecfef5cf33b" ,
+                                                                                                     "FNA:f8f31520-e4bc-4430-9274-8dd3cee7ffd8" ,
+                                                                                                     "PO_GIT:538" ,
+                                                                                                     "PO_GIT:69" ;
+                                            <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "planta entera (Spanish, exact)" ,
+                                                                                                           "植物体全体 (Japanese, exact)" ;
+                                            <http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym> "bush (narrow)" ,
+                                                                                                            "frutex (narrow)" ,
+                                                                                                            "frutices (narrow, plural)" ,
+                                                                                                            "gametophyte (narrow)" ,
+                                                                                                            "herb (narrow)" ,
+                                                                                                            "liana (narrow)" ,
+                                                                                                            "prothalli (narrow, plural)" ,
+                                                                                                            "prothallium (narrow)" ,
+                                                                                                            "prothallus (narrow)" ,
+                                                                                                            "shrub (narrow)" ,
+                                                                                                            "sporophyte (narrow)" ,
+                                                                                                            "suffrutex (narrow)" ,
+                                                                                                            "suffrutices (narrow, plural)" ,
+                                                                                                            "tree (narrow)" ,
+                                                                                                            "vine (narrow)" ,
+                                                                                                            "woody clump (narrow)" ;
+                                            <http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> "plant_anatomy" ;
+                                            <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> "clonal colony (related)" ,
+                                                                                                             "colony (related)" ;
+                                            <http://www.geneontology.org/formats/oboInOwl#id> "PO:0000003" ;
+                                            <http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.oboInOwllibrary.org/oboInOwl/po#TraitNet> ,
+                                                                                                    <http://purl.oboInOwllibrary.org/oboInOwl/po#reference> ;
+                                            rdfs:comment "Examples include plant embryo (PO:0009009), megagametophyte (PO:0025279) and microgametophyte (PO:0025280)." ;
+                                            rdfs:label "whole plant" .
+
+
+###  http://purl.obolibrary.org/obo/PO_0009001
+<http://purl.obolibrary.org/obo/PO_0009001> rdf:type owl:Class ;
+                                            rdfs:subClassOf <http://purl.obolibrary.org/obo/PO_0025496> ,
+                                                            <http://purl.obolibrary.org/obo/UBERON_0001062> ;
+                                            <http://purl.obolibrary.org/obo/IAO_0000115> "A multi-tissue plant structure (PO:0025496) that develops from a gynoecium (PO:0009062), or a single carpel (PO:0009030), and at maturity may have as parts one or more seeds (PO:0009010)." ;
+                                            <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/po.owl> ;
+                                            <http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> "PO:0020067" ,
+                                                                                                            "PO:0020068" ,
+                                                                                                            "PO:0020069" ,
+                                                                                                            "PO:0020070" ,
+                                                                                                            "PO:0020071" ,
+                                                                                                            "PO:0020072" ,
+                                                                                                            "PO:0020073" ,
+                                                                                                            "PO:0020074" ,
+                                                                                                            "PO:0020076" ,
+                                                                                                            "PO:0020077" ,
+                                                                                                            "PO:0020078" ,
+                                                                                                            "PO:0020079" ,
+                                                                                                            "PO:0020080" ,
+                                                                                                            "PO:0020082" ,
+                                                                                                            "PO:0020083" ,
+                                                                                                            "PO:0020087" ,
+                                                                                                            "PO:0020107" ;
+                                            <http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> "aggregate fruit  (broad)" ,
+                                                                                                           "compound fruit  (broad)" ,
+                                                                                                           "dehiscent fruit  (broad)" ,
+                                                                                                           "diaspore  (broad)" ,
+                                                                                                           "indehiscent fruit  (broad)" ,
+                                                                                                           "multiple fruit  (broad)" ,
+                                                                                                           "propagule  (broad)" ;
+                                            <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "FNA:67fa41ae-b735-4d89-b5db-7631b873ef7a" ,
+                                                                                                     "FNA:c13b1312-1cc5-4ace-98e2-fde12aec09da" ,
+                                                                                                     "PO_GIT:76" ;
+                                            <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "frucht (exact, German)" ,
+                                                                                                           "fruto (exact, Spanish)" ,
+                                                                                                           "果実 (exact, Japanese)" ;
+                                            <http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym> "coenocarp (narrow)" ,
+                                                                                                            "syncarp (narrow)" ;
+                                            <http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> "plant_anatomy" ;
+                                            <http://www.geneontology.org/formats/oboInOwl#id> "PO:0009001" ;
+                                            <http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.oboInOwllibrary.org/oboInOwl/po#Angiosperm> ,
+                                                                                                    <http://purl.oboInOwllibrary.org/oboInOwl/po#Arabidopsis> ,
+                                                                                                    <http://purl.oboInOwllibrary.org/oboInOwl/po#Maize> ,
+                                                                                                    <http://purl.oboInOwllibrary.org/oboInOwl/po#Poaceae> ,
+                                                                                                    <http://purl.oboInOwllibrary.org/oboInOwl/po#Rice> ,
+                                                                                                    <http://purl.oboInOwllibrary.org/oboInOwl/po#TraitNet> ;
+                                            rdfs:comment """ClimOO Ontology comment:
+We exclude the axiom towards the “gynoecium” as beyond the purposes of ClimOO. We did not intend to alter the original FoodOn model but to maintain ClimOO hierarchies compact and focused on features relevant for the domain. This axiom can be readded as needed. We envision discussions with FoodOn curators to accommodate models.
+The excluded axiom:
+rdfs:subClassOf [ rdf:type owl:Restriction ;
+owl:onProperty <http://purl.obolibrary.org/obo/RO_0002202> ;
+owl:someValuesFrom <http://purl.obolibrary.org/obo/PO_0009062>
+                                                            ] ;"""@en ,
+                                                         "A fruit (PO:0009001) may contain additional plant structures (PO:0009011) that were part of a flower (PO:0009046) and mature along with the gynoecium, such as a receptacle (PO:0009064). A fruit may develop without fertilization in cases of parthenocarpy, apomixis, or other hormone-induced conditions and may not always contain seeds (PO:0009010). When annotating to fruit (PO:0009001) that are referred to as ‘multiple’, or ‘compound’, please annotate directly to the appropriate plant structure, such as receptacle, hypanthium (PO:0009065) or infructescence (PO:0006342). Fruits only occur in angiosperms." ;
+                                            rdfs:label "fruit" ;
+                                            rdfs:seeAlso "https://en.wikipedia.org/wiki/Fruit_anatomy"^^xsd:anyURI .
+
+
+###  http://purl.obolibrary.org/obo/PO_0009011
+<http://purl.obolibrary.org/obo/PO_0009011> rdf:type owl:Class ;
+                                            rdfs:subClassOf <http://purl.obolibrary.org/obo/PO_0025131> ;
+                                            <http://purl.obolibrary.org/obo/IAO_0000115> "A plant anatomical entity (PO:0025131) that is, or was, part of a plant, or was derived from a part of a plant." ;
+                                            <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/po.owl> ;
+                                            <http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://www.langual.org/langual_thesaurus.asp?termid=C0174> ,
+                                                                                                     "PO_GIT:57" ;
+                                            <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "estructura vegetal (Spanish, exact)" ,
+                                                                                                           "植物 構造 (Japanese, exact)" ;
+                                            <http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> "plant_anatomy" ;
+                                            <http://www.geneontology.org/formats/oboInOwl#id> "PO:0009011" ;
+                                            <http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.oboInOwllibrary.org/oboInOwl/po#TraitNet> ;
+                                            rdfs:comment "'Part' includes both proper parts and the whole plant. CARO:0000003 'connected anatomical structure' is defined as: Material anatomical entity that is a single connected structure with inherent 3D shape, generated by coordinated expression of the organism's own genome." ;
+                                            rdfs:label "plant structure" .
+
+
+###  http://purl.obolibrary.org/obo/PO_0025131
+<http://purl.obolibrary.org/obo/PO_0025131> rdf:type owl:Class ;
+                                            rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000040> ,
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:onProperty <http://purl.obolibrary.org/obo/RO_0002160> ;
+                                                              owl:someValuesFrom <http://purl.obolibrary.org/obo/NCBITaxon_33090>
+                                                            ] ;
+                                            <http://purl.obolibrary.org/obo/IAO_0000115> "An anatomical entity that is or was part of a plant." ;
+                                            <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/po.owl> ;
+                                            <http://www.geneontology.org/formats/oboInOwl#created_by> "rwalls" ;
+                                            <http://www.geneontology.org/formats/oboInOwl#creation_date> "2010-11-15T11:41:38Z" ;
+                                            <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PO_GIT:224" ;
+                                            <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "entidad anat&#243mica vegetal (Spanish, exact)" ,
+                                                                                                           "植物 解剖学（形態）的実体 (Japanese, exact)" ;
+                                            <http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> "plant_anatomy" ;
+                                            <http://www.geneontology.org/formats/oboInOwl#id> "PO:0025131" ;
+                                            rdfs:comment "Includes both material entities such as plant structures and immaterial entities such as plant anatomical spaces. CARO:0000000 'anatomical entity' is defined as: A part of a cellular organism that is either an immaterial entity or a material entity with granularity aboove the level of a protein complex.  Or, a substance produced by a cellular organism with granularity above the level of a protein complex.  Refers to BFO:0000004 'independent continuant'." ;
+                                            rdfs:label "plant anatomical entity" .
+
+
+###  http://purl.obolibrary.org/obo/PO_0025496
+<http://purl.obolibrary.org/obo/PO_0025496> rdf:type owl:Class ;
+                                            rdfs:subClassOf <http://purl.obolibrary.org/obo/PO_0009011> ;
+                                            <http://purl.obolibrary.org/obo/IAO_0000115> "A plant structure (PO:0009011) that has as parts two or more portions of plant tissue (PO:0009007) of at least two different types and which through specific morphogenetic processes forms a single structural unit demarcated by primarily bona-fide boundaries from other structural units of different types." ;
+                                            <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/po.owl> ;
+                                            <http://www.geneontology.org/formats/oboInOwl#created_by> "Laurel_Cooper" ;
+                                            <http://www.geneontology.org/formats/oboInOwl#creation_date> "2012-06-11T14:57:00Z" ;
+                                            <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PO_GIT:480" ;
+                                            <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "estructura vegetal con m&#250ltiples tejidos (Spanish, exact)" ,
+                                                                                                           "複数の組織からなる植物構造 (Japanese, exact)" ;
+                                            <http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> "plant_anatomy" ;
+                                            <http://www.geneontology.org/formats/oboInOwl#id> "PO:0025496" ;
+                                            rdfs:comment "Most multi-tissue plant structures have at least a small connection to other plant structures via a fiat boundary, such as where a leaf (PO:0025034) connects to a shoot axis (PO:0025029), a petal (PO:0009032) connects to a receptacle (PO:0009064), or a branch (PO:0025073) connects to a stem (PO:0009047).  Refers to CARO:0000055 multi-tissue structure, def'n: Anatomical structure that has as parts two or more portions of tissue of at least two different types, and which through specific morphogenetic processes, form a single distinct structural unit demarcated by bona-fide boundries from other structural units of differnt types." ;
+                                            rdfs:label "multi-tissue plant structure" .
+
+
+###  http://purl.obolibrary.org/obo/PO_0030108
+<http://purl.obolibrary.org/obo/PO_0030108> rdf:type owl:Class ;
+                                            rdfs:subClassOf <http://purl.obolibrary.org/obo/PO_0009001> ;
+                                            <http://purl.obolibrary.org/obo/IAO_0000115> "A fruit (PO:0009001) which at maturity comprises a fleshy endocarp (PO:0009086), fleshy mesocarp (PO:0009087), and fleshy exocarp (PO:0009085)." ;
+                                            <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/po.owl> ;
+                                            <http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> "indehiscent fruit  (broad)" ;
+                                            <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PO_GIT:652" ;
+                                            <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "bacca (exact)" ,
+                                                                                                           "baya (exact, Spanish)" ,
+                                                                                                           "beere (exact, German)" ,
+                                                                                                           "berry (exact)" ;
+                                            <http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym> "pyrine (narrow)" ;
+                                            <http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> "plant_anatomy" ;
+                                            <http://www.geneontology.org/formats/oboInOwl#id> "PO:0030108" ;
+                                            rdfs:comment "Examples: pepper (Capsicum annuum), papaya (Carica papaya), avocado (Persea americana), may apple (Podophyllum peltatum), date palm (Phoenix dactylifera), tomato (Solanum lycopersicum), potato (Solanum tuberosum), chocolate (Theobroma cacao), blueberry (Vaccinium spp.), and grape (Vitis vinifera)." ;
+                                            rdfs:label "berry fruit" .
+
+
+###  http://purl.obolibrary.org/obo/PO_0030110
+<http://purl.obolibrary.org/obo/PO_0030110> rdf:type owl:Class ;
+                                            owl:equivalentClass [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/PO_0030108>
+                                                                                       [ rdf:type owl:Restriction ;
+                                                                                         owl:onProperty <http://purl.obolibrary.org/obo/RO_0001000> ;
+                                                                                         owl:someValuesFrom <http://purl.obolibrary.org/obo/FOODON_03411599>
+                                                                                       ]
+                                                                                     ) ;
+                                                                  rdf:type owl:Class
+                                                                ] ;
+                                            rdfs:subClassOf <http://purl.obolibrary.org/obo/PO_0030108> ,
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:onProperty <http://purl.obolibrary.org/obo/RO_0001000> ;
+                                                              owl:someValuesFrom <http://purl.obolibrary.org/obo/FOODON_03411599>
+                                                            ] ;
+                                            <http://purl.obolibrary.org/obo/IAO_0000115> "A berry fruit (PO:0030108) which develops from an inferior gynoecium (PO:0009062) and at maturity comprises a fleshy exocarp (PO:0009085), fleshy mesocarp (PO:0009087), and hardened endocarp (PO:0009086) and has as a part a fleshy hypanthium (PO:0009065) which is indistinct from the exocarp (PO:0009085)." ;
+                                            <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/po.owl> ;
+                                            <http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> "indehiscent fruit  (broad)" ;
+                                            <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PO_GIT:652" ;
+                                            <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "apfelfrucht (exact, German)" ,
+                                                                                                           "kernfrucht (exact, German)" ,
+                                                                                                           "kernobst (exact, German)" ,
+                                                                                                           "pome (exact)" ,
+                                                                                                           "pomo (exact, Spanish)" ;
+                                            <http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> "plant_anatomy" ;
+                                            <http://www.geneontology.org/formats/oboInOwl#id> "PO:0030110" ;
+                                            rdfs:comment "A pome fruit (PO:0030110) is a specialized type of berry fruit (PO:0030108) which is encapsuled in persistent, accrescent receptacle (PO:0009064) and/or hypanthium (PO:0009065) tissue. Examples: Apple, crab apple, and pear (Malus spp. and Pyrus spp.)" ;
+                                            rdfs:label "pome fruit" .
+
+
+###  http://purl.obolibrary.org/obo/UBERON_0000465
+<http://purl.obolibrary.org/obo/UBERON_0000465> rdf:type owl:Class ;
+                                                rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000040> ,
+                                                                <http://purl.obolibrary.org/obo/UBERON_0001062> ;
+                                                <http://purl.obolibrary.org/obo/IAO_0000115> "Anatomical entity that has mass." ;
+                                                <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/cob.owl> ,
+                                                                                             <http://purl.obolibrary.org/obo/uberon.owl> ;
+                                                rdfs:label "material anatomical entity" .
+
+
+###  http://purl.obolibrary.org/obo/UBERON_0001062
+<http://purl.obolibrary.org/obo/UBERON_0001062> rdf:type owl:Class ;
+                                                <http://purl.obolibrary.org/obo/IAO_0000115> "Biological entity that is either an individual member of a biological species or constitutes the structural organization of an individual member of a biological species." ;
+                                                <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/cob.owl> ,
+                                                                                             <http://purl.obolibrary.org/obo/po.owl> ,
+                                                                                             <http://purl.obolibrary.org/obo/uberon.owl> ;
+                                                rdfs:label "anatomical entity" .
+
+
+###  http://purl.obolibrary.org/obo/FOODON:03415183
+<http://purl.obolibrary.org/obo/FOODON:03415183> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <http://purl.obolibrary.org/obo/FOODON_03411245> ;
+                                                 <http://purl.org/dc/terms/contributor> <https://orcid.org/0000-0002-8844-9165> ;
+                                                 <http://purl.org/dc/terms/date> "2025-01-30T11:55:10Z"^^xsd:dateTime ;
+                                                 rdfs:label "Golden Delicious apple tree"@en .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi

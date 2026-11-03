@@ -1,0 +1,113 @@
+@prefix : <http://purl.obolibrary.org/obo/climoo/climoo-piccomela/chebi_imports#> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix oboInOwl: <http://www.geneontology.org/formats/oboInOwl#> .
+@base <http://purl.obolibrary.org/obo/climoo/climoo-piccomela/chebi_imports#> .
+
+<http://purl.obolibrary.org/obo/climoo/climoo-piccomela/chebi_imports> rdf:type owl:Ontology ;
+                                                                        owl:versionIRI <http://purl.obolibrary.org/obo/climoo/climoo-piccomela/chebi_imports#2026-10-29> ;
+                                                                        rdfs:comment """This file contains ClimOO Ontology suite imports fletched from the Chemical Entities of Biological Interest Ontology (ChEBI) via OntoFox (https://ontofox.hegroup.org/index.php).
+
+Ontology source: https://ontobee.org/ontology/CHEBI"""@en ;
+                                                                        rdfs:seeAlso """The related Ontofox imput file.
+https://github.com/ClimOO/ClimOO-Ontology/tree/main/ClimOO%20material/src/ontology/imports/piccomela%20imports/chebi-imports-ontofox"""@en ,
+                                                                                     "https://www.ebi.ac.uk/chebi/" ;
+                                                                        owl:versionInfo "2026-10-29" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.obolibrary.org/obo/IAO_0000115
+obo:IAO_0000115 rdf:type owl:AnnotationProperty ;
+                rdfs:label "definition" .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000412
+obo:IAO_0000412 rdf:type owl:AnnotationProperty ;
+                rdfs:label "imported from"@en .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#hasDbXref
+oboInOwl:hasDbXref rdf:type owl:AnnotationProperty ;
+                   rdfs:label "database_cross_reference" .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#hasOBONamespace
+oboInOwl:hasOBONamespace rdf:type owl:AnnotationProperty ;
+                         rdfs:label "has_obo_namespace" .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym
+oboInOwl:hasRelatedSynonym rdf:type owl:AnnotationProperty ;
+                           rdfs:label "has_related_synonym" .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#id
+oboInOwl:id rdf:type owl:AnnotationProperty .
+
+
+###  http://www.geneontology.org/formats/oboInOwl#inSubset
+oboInOwl:inSubset rdf:type owl:AnnotationProperty ;
+                  rdfs:label "in_subset" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://purl.obolibrary.org/obo/CHEBI_33232
+obo:CHEBI_33232 rdf:type owl:Class ;
+                rdfs:subClassOf obo:CHEBI_50906 ;
+                obo:IAO_0000115 "Intended use of the molecular entity or part thereof by humans." ;
+                obo:IAO_0000412 obo:chebi.owl ;
+                oboInOwl:hasOBONamespace "chebi_ontology" ;
+                oboInOwl:id "CHEBI:33232" ;
+                oboInOwl:inSubset <http://purl.oboInOwllibrary.org/oboInOwl/chebi/3_STAR> ;
+                rdfs:label "application" .
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_33286
+obo:CHEBI_33286 rdf:type owl:Class ;
+                rdfs:subClassOf obo:CHEBI_33232 ;
+                obo:IAO_0000115 "An agrochemical is a substance that is used in agriculture or horticulture." ;
+                obo:IAO_0000412 obo:chebi.owl ;
+                oboInOwl:hasDbXref "wikipedia.en:Agrochemical" ;
+                oboInOwl:hasOBONamespace "chebi_ontology" ;
+                oboInOwl:hasRelatedSynonym "agrichemical" ,
+                                           "agrichemicals" ,
+                                           "agricultural chemicals" ,
+                                           "agrochemicals" ;
+                oboInOwl:id "CHEBI:33286" ;
+                oboInOwl:inSubset <http://purl.oboInOwllibrary.org/oboInOwl/chebi/3_STAR> ;
+                rdfs:label "agrochemical" .
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_33287
+obo:CHEBI_33287 rdf:type owl:Class ;
+                rdfs:subClassOf obo:CHEBI_33286 ;
+                obo:IAO_0000115 "A fertilizer is any substance that is added to soil or water to assist the growth of plants." ;
+                obo:IAO_0000412 obo:chebi.owl ;
+                oboInOwl:hasOBONamespace "chebi_ontology" ;
+                oboInOwl:hasRelatedSynonym "fertiliser" ,
+                                           "fertilizers" ;
+                oboInOwl:id "CHEBI:33287" ;
+                oboInOwl:inSubset <http://purl.oboInOwllibrary.org/oboInOwl/chebi/3_STAR> ;
+                rdfs:label "fertilizer" .
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_50906
+obo:CHEBI_50906 rdf:type owl:Class ;
+                obo:IAO_0000115 "A role is particular behaviour which a material entity may exhibit." ;
+                obo:IAO_0000412 obo:chebi.owl ;
+                oboInOwl:hasOBONamespace "chebi_ontology" ;
+                oboInOwl:id "CHEBI:50906" ;
+                oboInOwl:inSubset <http://purl.oboInOwllibrary.org/oboInOwl/chebi/3_STAR> ;
+                rdfs:label "role" .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
