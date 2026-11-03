@@ -1,0 +1,900 @@
+@prefix : <https://ClimOO/climoo/climoo-piccomela/imports/transformon-imports#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://ClimOO/climoo/climoo-piccomela/imports/transformon-imports> .
+
+<https://ClimOO/climoo/climoo-piccomela/imports/transformon-imports> rdf:type owl:Ontology ;
+                                                                      owl:versionIRI <https://ClimOO/climoo/climoo-piccomela/imports/transformon-imports#2026-11-03> ;
+                                                                      rdfs:comment """This file contains ClimOO Ontology suite imports fromPO2/TransformON. Imports were manually collected and revised.
+
+Ontology source: https://entrepot.recherche.data.gouv.fr/dataset.xhtml;jsessionid=167c7ec514a127900fbe86266dd1?persistentId=doi%3A10.57745%2FDWX7W6&version=&q=&fileTypeGroupFacet=&fileAccess=&fileSortField=size&tagPresort=true""" ;
+                                                                      owl:versionInfo "2026-11-03" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://opendata.inrae.fr/PO2/core/definitionStatus
+<http://opendata.inrae.fr/PO2/core/definitionStatus> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#altLabel
+<http://www.w3.org/2004/02/skos/core#altLabel> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#editorialNote
+<http://www.w3.org/2004/02/skos/core#editorialNote> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#exactMatch
+<http://www.w3.org/2004/02/skos/core#exactMatch> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#inScheme
+<http://www.w3.org/2004/02/skos/core#inScheme> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#note
+<http://www.w3.org/2004/02/skos/core#note> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#prefLabel
+<http://www.w3.org/2004/02/skos/core#prefLabel> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#scopeNote
+<http://www.w3.org/2004/02/skos/core#scopeNote> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://opendata.inrae.fr/PO2/Ontology/TransformON/c_1lRh7b
+<http://opendata.inrae.fr/PO2/Ontology/TransformON/c_1lRh7b> rdf:type owl:Class ;
+                                                             rdfs:subClassOf <http://opendata.inrae.fr/PO2/Ontology/TransformON/c_Ielc6T> ;
+                                                             <http://opendata.inrae.fr/PO2/core/definitionStatus> "validated" ;
+                                                             <http://www.w3.org/2004/02/skos/core#altLabel> "plant fiber"@en ,
+                                                                                                            "vegetal fiber"@en ,
+                                                                                                            "vegetal fibre"@en ;
+                                                             <http://www.w3.org/2004/02/skos/core#definition> "A portion of fibrous materials derived from plant cell walls, primarily composed of cellulose, hemicellulose, and lignin."@en ,
+                                                                                                              "Expansion cellulaire filiforme présente dans les végétaux, offrant des avantages nutritionnels et contribuant à la texture et à la structure des produits composites."@fr ;
+                                                             <http://www.w3.org/2004/02/skos/core#editorialNote> "SUBSTANCE::NON FOOD" ;
+                                                             <http://www.w3.org/2004/02/skos/core#inScheme> <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Main> ,
+                                                                                                            <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Non_food> ,
+                                                                                                            <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Substance> ;
+                                                             <http://www.w3.org/2004/02/skos/core#note> "" ;
+                                                             <http://www.w3.org/2004/02/skos/core#prefLabel> ""@de ,
+                                                                                                             ""@es ,
+                                                                                                             ""@it ,
+                                                                                                             "fibre végétale"@fr ,
+                                                                                                             "plant fibre"@en ;
+                                                             <http://www.w3.org/2004/02/skos/core#scopeNote> "https://www.sciencedirect.com/science/article/pii/S240584402405792X" .
+
+
+###  http://opendata.inrae.fr/PO2/Ontology/TransformON/c_2xmVeU
+<http://opendata.inrae.fr/PO2/Ontology/TransformON/c_2xmVeU> rdf:type owl:Class ;
+                                                             rdfs:subClassOf <http://opendata.inrae.fr/PO2/Ontology/TransformON/c_8pYbM1> ;
+                                                             <http://opendata.inrae.fr/PO2/core/definitionStatus> "validated" ;
+                                                             <http://www.w3.org/2004/02/skos/core#altLabel> "material processing"@en ,
+                                                                                                            "opération de traitement"@fr ;
+                                                             <http://www.w3.org/2004/02/skos/core#definition> "A specific activity or operation within a larger process that alters the physical, chemical, or biological properties of a material."@en ;
+                                                             <http://www.w3.org/2004/02/skos/core#editorialNote> "STEP" ;
+                                                             <http://www.w3.org/2004/02/skos/core#inScheme> <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Main> ,
+                                                                                                            <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Wastewater> ,
+                                                                                                            <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_drying> ;
+                                                             <http://www.w3.org/2004/02/skos/core#note> "" ;
+                                                             <http://www.w3.org/2004/02/skos/core#prefLabel> ""@de ,
+                                                                                                             ""@es ,
+                                                                                                             ""@it ,
+                                                                                                             "transformation step"@en ,
+                                                                                                             "étape de transformation"@fr ;
+                                                             <http://www.w3.org/2004/02/skos/core#scopeNote> """@en: A completely executed planned process that intends to output material entities from input material entities.
+""" .
+
+
+###  http://opendata.inrae.fr/PO2/Ontology/TransformON/c_3nl8ZH
+<http://opendata.inrae.fr/PO2/Ontology/TransformON/c_3nl8ZH> rdf:type owl:Class ;
+                                                             rdfs:subClassOf <http://opendata.inrae.fr/PO2/Ontology/TransformON/c_1lRh7b> ;
+                                                             <http://opendata.inrae.fr/PO2/core/definitionStatus> "draft" ;
+                                                             <http://www.w3.org/2004/02/skos/core#definition> "Fibre végétale naturelle issue du genre botanique Salix (le saule)."@fr ,
+                                                                                                              "The fibrous material derived from the bark of willow trees."@en ;
+                                                             <http://www.w3.org/2004/02/skos/core#editorialNote> "" ;
+                                                             <http://www.w3.org/2004/02/skos/core#inScheme> <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Main> ;
+                                                             <http://www.w3.org/2004/02/skos/core#note> "" ;
+                                                             <http://www.w3.org/2004/02/skos/core#prefLabel> ""@de ,
+                                                                                                             ""@es ,
+                                                                                                             ""@it ,
+                                                                                                             "fibre de saule"@fr ,
+                                                                                                             "salix fibre"@en ;
+                                                             <http://www.w3.org/2004/02/skos/core#scopeNote> "" .
+
+
+###  http://opendata.inrae.fr/PO2/Ontology/TransformON/c_3sCzqA
+<http://opendata.inrae.fr/PO2/Ontology/TransformON/c_3sCzqA> rdf:type owl:Class ;
+                                                             rdfs:subClassOf <http://opendata.inrae.fr/PO2/Ontology/TransformON/c_sR994TGG> ;
+                                                             <http://opendata.inrae.fr/PO2/core/definitionStatus> "validated" ;
+                                                             <http://www.w3.org/2004/02/skos/core#definition> "A substance that is produced through chemical or biochemical processes or has chemical or biochemical properties."@en ;
+                                                             <http://www.w3.org/2004/02/skos/core#editorialNote> "SUBSTANCE" ;
+                                                             <http://www.w3.org/2004/02/skos/core#inScheme> <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Main> ,
+                                                                                                            <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Substance> ;
+                                                             <http://www.w3.org/2004/02/skos/core#note> "" ;
+                                                             <http://www.w3.org/2004/02/skos/core#prefLabel> ""@de ,
+                                                                                                             ""@es ,
+                                                                                                             ""@it ,
+                                                                                                             "chemical or biochemical substance"@en ,
+                                                                                                             "substance chimique ou biochimique"@fr ;
+                                                             <http://www.w3.org/2004/02/skos/core#scopeNote> """@en: includes molecular entities and chemical species consisting of identical atoms (atomic chemical species) or molecules, ions, or radicals consisting of groups of different atoms, chemically or isotopically well defined and individually identifiable. 
+@fr: comprend les entités moléculaires et les espèces chimiques constituées d'atomes identiques (espèces chimiques atomiques) ou les molécules, ions ou radicaux constitués par des groupes d'atomes différents, bien définies chimiquement ou isotopiquement et pouvant être identifiées individuellement. 
+""" .
+
+
+###  http://opendata.inrae.fr/PO2/Ontology/TransformON/c_3tYUsm
+<http://opendata.inrae.fr/PO2/Ontology/TransformON/c_3tYUsm> rdf:type owl:Class ;
+                                                             rdfs:subClassOf <http://opendata.inrae.fr/PO2/Ontology/TransformON/c_1lRh7b> ;
+                                                             <http://opendata.inrae.fr/PO2/core/definitionStatus> "draft" ;
+                                                             <http://www.w3.org/2004/02/skos/core#altLabel> "sisal fiber"@en ;
+                                                             <http://www.w3.org/2004/02/skos/core#definition> "Fibre végétale naturelle extraite des feuilles de l'agave (Agave sisalana)."@fr ,
+                                                                                                              "The fibrous part extracted from Agave sisalana plant."@en ;
+                                                             <http://www.w3.org/2004/02/skos/core#editorialNote> "" ;
+                                                             <http://www.w3.org/2004/02/skos/core#inScheme> <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Main> ;
+                                                             <http://www.w3.org/2004/02/skos/core#note> "" ;
+                                                             <http://www.w3.org/2004/02/skos/core#prefLabel> ""@de ,
+                                                                                                             ""@es ,
+                                                                                                             ""@it ,
+                                                                                                             "fibre de sisal"@fr ,
+                                                                                                             "sisal fibre"@en ;
+                                                             <http://www.w3.org/2004/02/skos/core#scopeNote> "" .
+
+
+###  http://opendata.inrae.fr/PO2/Ontology/TransformON/c_67H0A6
+<http://opendata.inrae.fr/PO2/Ontology/TransformON/c_67H0A6> rdf:type owl:Class ;
+                                                             rdfs:subClassOf <http://opendata.inrae.fr/PO2/Ontology/TransformON/c_yZVmbJHG> ;
+                                                             <http://opendata.inrae.fr/PO2/core/definitionStatus> "validated" ;
+                                                             <http://www.w3.org/2004/02/skos/core#altLabel> "organic chemicals"@en ;
+                                                             <http://www.w3.org/2004/02/skos/core#definition> "A chemical compound that contains carbon and hydrogen, often with other elements such as oxygen, nitrogen, sulfur, or phosphorus."@en ;
+                                                             <http://www.w3.org/2004/02/skos/core#editorialNote> "SUBSTANCE" ;
+                                                             <http://www.w3.org/2004/02/skos/core#inScheme> <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Main> ,
+                                                                                                            <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Substance> ;
+                                                             <http://www.w3.org/2004/02/skos/core#note> "" ;
+                                                             <http://www.w3.org/2004/02/skos/core#prefLabel> ""@de ,
+                                                                                                             ""@es ,
+                                                                                                             ""@it ,
+                                                                                                             "composé organique"@fr ,
+                                                                                                             "organic compound"@en ;
+                                                             <http://www.w3.org/2004/02/skos/core#scopeNote> "@fr: Les composés organiques, c'est-à-dire les composés du carbone (à l'exception de quelques composés simples qui par tradition relèvent de la chimie minérale). Ces composés peuvent être naturels ou synthétiques. Ils ne doivent pas être condondus avec la matière organique, qui est la matière fabriquée par les êtres vivants (végétaux, animaux, champignons et autres décomposeurs dont micro-organismes). " .
+
+
+###  http://opendata.inrae.fr/PO2/Ontology/TransformON/c_6FT7zk
+<http://opendata.inrae.fr/PO2/Ontology/TransformON/c_6FT7zk> rdf:type owl:Class ;
+                                                             rdfs:subClassOf <http://opendata.inrae.fr/PO2/Ontology/TransformON/c_Ielc6T> ;
+                                                             <http://opendata.inrae.fr/PO2/core/definitionStatus> "validated" ;
+                                                             <http://www.w3.org/2004/02/skos/core#definition> "A natural fiber obtained from the fleece of sheep and other animals, composed primarily of keratin proteins."@en ;
+                                                             <http://www.w3.org/2004/02/skos/core#editorialNote> "SUBSTANCE::NON FOOD" ;
+                                                             <http://www.w3.org/2004/02/skos/core#inScheme> <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Main> ,
+                                                                                                            <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Non_food> ,
+                                                                                                            <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Substance> ;
+                                                             <http://www.w3.org/2004/02/skos/core#note> "" ;
+                                                             <http://www.w3.org/2004/02/skos/core#prefLabel> ""@de ,
+                                                                                                             ""@es ,
+                                                                                                             ""@it ,
+                                                                                                             "laine"@fr ,
+                                                                                                             "wool"@en ;
+                                                             <http://www.w3.org/2004/02/skos/core#scopeNote> "" .
+
+
+###  http://opendata.inrae.fr/PO2/Ontology/TransformON/c_8pYbM1
+<http://opendata.inrae.fr/PO2/Ontology/TransformON/c_8pYbM1> rdf:type owl:Class ;
+                                                             rdfs:subClassOf <http://opendata.inrae.fr/PO2/core/Step> ;
+                                                             <http://opendata.inrae.fr/PO2/core/definitionStatus> "validated" ;
+                                                             <http://www.w3.org/2004/02/skos/core#definition> "A deliberate and intentional action or operation within a larger process, designed to achieve a specific objective or outcome."@en ;
+                                                             <http://www.w3.org/2004/02/skos/core#editorialNote> "STEP" ;
+                                                             <http://www.w3.org/2004/02/skos/core#inScheme> <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Main> ;
+                                                             <http://www.w3.org/2004/02/skos/core#note> "" ;
+                                                             <http://www.w3.org/2004/02/skos/core#prefLabel> ""@de ,
+                                                                                                             ""@es ,
+                                                                                                             ""@it ,
+                                                                                                             "planned process step"@en ,
+                                                                                                             "étape de processus planifié"@fr ;
+                                                             <http://www.w3.org/2004/02/skos/core#scopeNote> "" .
+
+
+###  http://opendata.inrae.fr/PO2/Ontology/TransformON/c_9hqSfV
+<http://opendata.inrae.fr/PO2/Ontology/TransformON/c_9hqSfV> rdf:type owl:Class ;
+                                                             rdfs:subClassOf <http://opendata.inrae.fr/PO2/core/Component> ;
+                                                             <http://opendata.inrae.fr/PO2/core/definitionStatus> "validated" ;
+                                                             <http://www.w3.org/2004/02/skos/core#definition> "A physical entity or matter that is not alive and whose origin may be biological, mineral, or chemical."@en ,
+                                                                                                              "Entité matérielle qui n'est pas vivante et dont l'origine peut être biologique, minérale ou chimique."@fr ;
+                                                             <http://www.w3.org/2004/02/skos/core#editorialNote> "SUBSTANCE" ;
+                                                             <http://www.w3.org/2004/02/skos/core#inScheme> <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Drink> ,
+                                                                                                            <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Feed> ,
+                                                                                                            <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Food> ,
+                                                                                                            <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Food_additive> ,
+                                                                                                            <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Food_ingredient> ,
+                                                                                                            <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Main> ,
+                                                                                                            <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Non_food> ,
+                                                                                                            <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Substance> ;
+                                                             <http://www.w3.org/2004/02/skos/core#note> "" ;
+                                                             <http://www.w3.org/2004/02/skos/core#prefLabel> ""@de ,
+                                                                                                             ""@es ,
+                                                                                                             ""@it ,
+                                                                                                             "substance"@en ,
+                                                                                                             "substance"@fr ;
+                                                             <http://www.w3.org/2004/02/skos/core#scopeNote> "" .
+
+
+###  http://opendata.inrae.fr/PO2/Ontology/TransformON/c_C7XxWI
+<http://opendata.inrae.fr/PO2/Ontology/TransformON/c_C7XxWI> rdf:type owl:Class ;
+                                                             rdfs:subClassOf <http://opendata.inrae.fr/PO2/Ontology/TransformON/c_1lRh7b> ;
+                                                             <http://opendata.inrae.fr/PO2/core/definitionStatus> "validated" ;
+                                                             <http://www.w3.org/2004/02/skos/core#altLabel> "bast fiber"@en ,
+                                                                                                            "fibre de phloème"@fr ;
+                                                             <http://www.w3.org/2004/02/skos/core#definition> "A type of plant fibre extracted from the inner layer of the bark surrounding the stem of certain dicotyledonous plants (phloem tissu)."@en ,
+                                                                                                              "Type de fibre végétale extraite de l'écorce interne (liber) entourant la tige de certaines plantes dicotylédones."@fr ;
+                                                             <http://www.w3.org/2004/02/skos/core#editorialNote> "SUBSTANCE::NON FOOD" ;
+                                                             <http://www.w3.org/2004/02/skos/core#inScheme> <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Main> ,
+                                                                                                            <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Non_food> ,
+                                                                                                            <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Substance> ;
+                                                             <http://www.w3.org/2004/02/skos/core#note> "" ;
+                                                             <http://www.w3.org/2004/02/skos/core#prefLabel> ""@de ,
+                                                                                                             ""@es ,
+                                                                                                             ""@it ,
+                                                                                                             "bast fibre"@en ,
+                                                                                                             "fibre libérienne"@fr ;
+                                                             <http://www.w3.org/2004/02/skos/core#scopeNote> "" .
+
+
+###  http://opendata.inrae.fr/PO2/Ontology/TransformON/c_Ielc6T
+<http://opendata.inrae.fr/PO2/Ontology/TransformON/c_Ielc6T> rdf:type owl:Class ;
+                                                             rdfs:subClassOf <http://opendata.inrae.fr/PO2/Ontology/TransformON/c_V0bXYV> ;
+                                                             <http://opendata.inrae.fr/PO2/core/definitionStatus> "validated" ;
+                                                             <http://www.w3.org/2004/02/skos/core#altLabel> "biobased component"@en ,
+                                                                                                            "biosourced component"@en ;
+                                                             <http://www.w3.org/2004/02/skos/core#definition> "A substance or portion of material entity derived from living organisms, such as plants, animals, or microorganisms."@en ,
+                                                                                                              "Substance ou partie d'une entité matérielle issue d'organismes vivants, tels que les plantes, les animaux ou les micro-organismes."@fr ;
+                                                             <http://www.w3.org/2004/02/skos/core#editorialNote> "SUBSTANCE::NON FOOD" ;
+                                                             <http://www.w3.org/2004/02/skos/core#inScheme> <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Main> ,
+                                                                                                            <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Non_food> ,
+                                                                                                            <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Substance> ;
+                                                             <http://www.w3.org/2004/02/skos/core#note> "" ;
+                                                             <http://www.w3.org/2004/02/skos/core#prefLabel> ""@de ,
+                                                                                                             ""@es ,
+                                                                                                             ""@it ,
+                                                                                                             "biobased material"@en ,
+                                                                                                             "matériau biosourcé"@fr ;
+                                                             <http://www.w3.org/2004/02/skos/core#scopeNote> "" .
+
+
+###  http://opendata.inrae.fr/PO2/Ontology/TransformON/c_Kod608
+<http://opendata.inrae.fr/PO2/Ontology/TransformON/c_Kod608> rdf:type owl:Class ;
+                                                             rdfs:subClassOf <http://opendata.inrae.fr/PO2/Ontology/TransformON/c_hgHx9w> ;
+                                                             <http://opendata.inrae.fr/PO2/core/definitionStatus> "validated" ;
+                                                             <http://www.w3.org/2004/02/skos/core#altLabel> "glycan"@en ,
+                                                                                                            "polyholoside"@fr ,
+                                                                                                            "polyoside"@fr ;
+                                                             <http://www.w3.org/2004/02/skos/core#definition> "A large class of biomolecules composed of sugar units, typically consisting of long chains of monosaccharides linked by glycosidic bonds."@en ;
+                                                             <http://www.w3.org/2004/02/skos/core#editorialNote> "SUBSTANCE" ;
+                                                             <http://www.w3.org/2004/02/skos/core#inScheme> <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Main> ,
+                                                                                                            <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Substance> ;
+                                                             <http://www.w3.org/2004/02/skos/core#note> "" ;
+                                                             <http://www.w3.org/2004/02/skos/core#prefLabel> ""@de ,
+                                                                                                             ""@es ,
+                                                                                                             ""@it ,
+                                                                                                             "polysaccharide"@en ,
+                                                                                                             "polysaccharide"@fr ;
+                                                             <http://www.w3.org/2004/02/skos/core#scopeNote> "" .
+
+
+###  http://opendata.inrae.fr/PO2/Ontology/TransformON/c_OBCFXY
+<http://opendata.inrae.fr/PO2/Ontology/TransformON/c_OBCFXY> rdf:type owl:Class ;
+                                                             rdfs:subClassOf <http://opendata.inrae.fr/PO2/Ontology/TransformON/c_hSZde6> ;
+                                                             <http://opendata.inrae.fr/PO2/core/definitionStatus> "validated" ;
+                                                             <http://www.w3.org/2004/02/skos/core#definition> "The fibrous material  extracted from the plant Linum usitatissimum after a dew retting process."@en ;
+                                                             <http://www.w3.org/2004/02/skos/core#editorialNote> "SUBSTANCE::NON FOOD" ;
+                                                             <http://www.w3.org/2004/02/skos/core#inScheme> <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Main> ,
+                                                                                                            <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Non_food> ,
+                                                                                                            <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Substance> ;
+                                                             <http://www.w3.org/2004/02/skos/core#note> "" ;
+                                                             <http://www.w3.org/2004/02/skos/core#prefLabel> ""@de ,
+                                                                                                             ""@es ,
+                                                                                                             ""@it ,
+                                                                                                             "fibre de lin, rouie à la rosée"@fr ,
+                                                                                                             "flax fibre, dew retted"@en ;
+                                                             <http://www.w3.org/2004/02/skos/core#scopeNote> "" .
+
+
+###  http://opendata.inrae.fr/PO2/Ontology/TransformON/c_PjYjOv
+<http://opendata.inrae.fr/PO2/Ontology/TransformON/c_PjYjOv> rdf:type owl:Class ;
+                                                             rdfs:subClassOf <http://opendata.inrae.fr/PO2/Ontology/TransformON/c_C7XxWI> ,
+                                                                             <http://opendata.inrae.fr/PO2/Ontology/TransformON/c_hSZde6> ;
+                                                             <http://opendata.inrae.fr/PO2/core/definitionStatus> "validated" ;
+                                                             <http://www.w3.org/2004/02/skos/core#definition> "A type of natural fibre extracted from the phloem of the flax plant (Linum usitatissimum), used in textile production and other industrial applications."@en ;
+                                                             <http://www.w3.org/2004/02/skos/core#editorialNote> "SUBSTANCE::NON FOOD" ;
+                                                             <http://www.w3.org/2004/02/skos/core#inScheme> <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Main> ,
+                                                                                                            <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Non_food> ,
+                                                                                                            <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Substance> ;
+                                                             <http://www.w3.org/2004/02/skos/core#note> "" ;
+                                                             <http://www.w3.org/2004/02/skos/core#prefLabel> ""@de ,
+                                                                                                             ""@es ,
+                                                                                                             ""@it ,
+                                                                                                             "fibre libérienne de lin"@fr ,
+                                                                                                             "flax bast fibre"@en ;
+                                                             <http://www.w3.org/2004/02/skos/core#scopeNote> "" .
+
+
+###  http://opendata.inrae.fr/PO2/Ontology/TransformON/c_V0bXYV
+<http://opendata.inrae.fr/PO2/Ontology/TransformON/c_V0bXYV> rdf:type owl:Class ;
+                                                             rdfs:subClassOf <http://opendata.inrae.fr/PO2/Ontology/TransformON/c_3sCzqA> ;
+                                                             <http://opendata.inrae.fr/PO2/core/definitionStatus> "validated" ;
+                                                             <http://www.w3.org/2004/02/skos/core#altLabel> "matière"@fr ;
+                                                             <http://www.w3.org/2004/02/skos/core#definition> "A substance or material entity that has mass and occupies space by having volume."@en ,
+                                                                                                              "Substance ou entité matérielle qui possède une masse et un volume."@fr ;
+                                                             <http://www.w3.org/2004/02/skos/core#editorialNote> "SUBSTANCE::NON FOOD" ;
+                                                             <http://www.w3.org/2004/02/skos/core#inScheme> <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Main> ,
+                                                                                                            <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Non_food> ,
+                                                                                                            <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Substance> ;
+                                                             <http://www.w3.org/2004/02/skos/core#note> "" ;
+                                                             <http://www.w3.org/2004/02/skos/core#prefLabel> ""@de ,
+                                                                                                             ""@es ,
+                                                                                                             ""@it ,
+                                                                                                             "matter"@en ,
+                                                                                                             "matériau"@fr ;
+                                                             <http://www.w3.org/2004/02/skos/core#scopeNote> "" .
+
+
+###  http://opendata.inrae.fr/PO2/Ontology/TransformON/c_X9d8JM
+<http://opendata.inrae.fr/PO2/Ontology/TransformON/c_X9d8JM> rdf:type owl:Class ;
+                                                             rdfs:subClassOf <http://opendata.inrae.fr/PO2/Ontology/TransformON/c_V0bXYV> ;
+                                                             <http://opendata.inrae.fr/PO2/core/definitionStatus> "validated" ;
+                                                             <http://www.w3.org/2004/02/skos/core#definition> "A substance characterized by high electrical and thermal conductivity, typically having a shiny surface and being capable of being shaped or molded."@en ,
+                                                                                                              "Substance caractérisée par une conductivité électrique et thermique élevée, présentant généralement une surface brillante et pouvant être façonnée ou moulée."@fr ;
+                                                             <http://www.w3.org/2004/02/skos/core#editorialNote> "SUBSTANCE::NON FOOD" ;
+                                                             <http://www.w3.org/2004/02/skos/core#inScheme> <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Main> ,
+                                                                                                            <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Non_food> ,
+                                                                                                            <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Substance> ;
+                                                             <http://www.w3.org/2004/02/skos/core#note> "" ;
+                                                             <http://www.w3.org/2004/02/skos/core#prefLabel> ""@de ,
+                                                                                                             ""@es ,
+                                                                                                             ""@it ,
+                                                                                                             "metal"@en ,
+                                                                                                             "métal"@fr ;
+                                                             <http://www.w3.org/2004/02/skos/core#scopeNote> "" .
+
+
+###  http://opendata.inrae.fr/PO2/Ontology/TransformON/c_YjqYhO
+<http://opendata.inrae.fr/PO2/Ontology/TransformON/c_YjqYhO> rdf:type owl:Class ;
+                                                             rdfs:subClassOf <http://opendata.inrae.fr/PO2/Ontology/TransformON/c_2xmVeU> ;
+                                                             <http://opendata.inrae.fr/PO2/core/definitionStatus> "validated" ;
+                                                             <http://www.w3.org/2004/02/skos/core#altLabel> "packing process"@en ;
+                                                             <http://www.w3.org/2004/02/skos/core#definition> "The act of enclosing or protecting a product to preserve its quality, safety and appearance during storage, transportation and use."@en ;
+                                                             <http://www.w3.org/2004/02/skos/core#editorialNote> "STEP" ;
+                                                             <http://www.w3.org/2004/02/skos/core#inScheme> <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Main> ;
+                                                             <http://www.w3.org/2004/02/skos/core#note> "" ;
+                                                             <http://www.w3.org/2004/02/skos/core#prefLabel> ""@de ,
+                                                                                                             ""@es ,
+                                                                                                             ""@it ,
+                                                                                                             "emballage-conditionnement"@fr ,
+                                                                                                             "packaging"@en ;
+                                                             <http://www.w3.org/2004/02/skos/core#scopeNote> "" .
+
+
+###  http://opendata.inrae.fr/PO2/Ontology/TransformON/c_Yly1iu
+<http://opendata.inrae.fr/PO2/Ontology/TransformON/c_Yly1iu> rdf:type owl:Class ;
+                                                             rdfs:subClassOf <http://opendata.inrae.fr/PO2/Ontology/TransformON/c_C7XxWI> ,
+                                                                             <http://opendata.inrae.fr/PO2/Ontology/TransformON/c_pZjAQu> ;
+                                                             <http://opendata.inrae.fr/PO2/core/definitionStatus> "validated" ;
+                                                             <http://www.w3.org/2004/02/skos/core#definition> "A fibrous material extracted from the phloem of Cannabis sativa plants."@en ;
+                                                             <http://www.w3.org/2004/02/skos/core#editorialNote> "SUBSTANCE::NON FOOD" ;
+                                                             <http://www.w3.org/2004/02/skos/core#inScheme> <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Main> ,
+                                                                                                            <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Non_food> ,
+                                                                                                            <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Substance> ;
+                                                             <http://www.w3.org/2004/02/skos/core#note> "" ;
+                                                             <http://www.w3.org/2004/02/skos/core#prefLabel> ""@de ,
+                                                                                                             ""@es ,
+                                                                                                             ""@it ,
+                                                                                                             "fibre libérienne de chanvre"@fr ,
+                                                                                                             "hemp bast fibre"@en ;
+                                                             <http://www.w3.org/2004/02/skos/core#scopeNote> """@en: Depending on variety (or usage type) and planting density, bast fibres typically account for 20-30 % of the stalk.
+There are two types of bast fibres: 1)  Primary bast fibres - make up 70-90% of the bast. They are characterized by long length (up to 50 mm), high cellulose (50-70%) and low lignin (about 7%) content. These fibres are the most valuable part of the stalk. 2). Secondary bast fibres - comprise the remaining 10-30% of the bast fibres. They are shorter (approximately 2 mm), more lignified and hence of lower value for some applications (i.e. textile). Low stand density of hemp crop favours development of this type of bast fibre.
+""" .
+
+
+###  http://opendata.inrae.fr/PO2/Ontology/TransformON/c_aoSFxt
+<http://opendata.inrae.fr/PO2/Ontology/TransformON/c_aoSFxt> rdf:type owl:Class ;
+                                                             rdfs:subClassOf <http://opendata.inrae.fr/PO2/Ontology/TransformON/c_X9d8JM> ;
+                                                             <http://opendata.inrae.fr/PO2/core/definitionStatus> "validated" ;
+                                                             <http://www.w3.org/2004/02/skos/core#definition> "A lightweight, silvery-white chemical element with the symbol Al and atomic number 13."@en ;
+                                                             <http://www.w3.org/2004/02/skos/core#editorialNote> "SUBSTANCE::NON FOOD" ;
+                                                             <http://www.w3.org/2004/02/skos/core#inScheme> <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Main> ,
+                                                                                                            <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Non_food> ,
+                                                                                                            <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Substance> ;
+                                                             <http://www.w3.org/2004/02/skos/core#note> "" ;
+                                                             <http://www.w3.org/2004/02/skos/core#prefLabel> ""@de ,
+                                                                                                             ""@es ,
+                                                                                                             ""@it ,
+                                                                                                             "aluminium (metal)"@en ,
+                                                                                                             "aluminium (métal)"@fr ;
+                                                             <http://www.w3.org/2004/02/skos/core#scopeNote> "" .
+
+
+###  http://opendata.inrae.fr/PO2/Ontology/TransformON/c_bRBXz9
+<http://opendata.inrae.fr/PO2/Ontology/TransformON/c_bRBXz9> rdf:type owl:Class ;
+                                                             rdfs:subClassOf <http://opendata.inrae.fr/PO2/Ontology/TransformON/c_idmLS2> ;
+                                                             <http://opendata.inrae.fr/PO2/core/definitionStatus> "validated" ;
+                                                             <http://www.w3.org/2004/02/skos/core#altLabel> "caisse"@fr ,
+                                                                                                            "carton"@en ,
+                                                                                                            "case"@en ,
+                                                                                                            "crate"@en ;
+                                                             <http://www.w3.org/2004/02/skos/core#definition> "A type of container made of rigid or semi-rigid material used for storing, shipping, or carrying goods."@en ;
+                                                             <http://www.w3.org/2004/02/skos/core#editorialNote> """MATERIAL
+""" ;
+                                                             <http://www.w3.org/2004/02/skos/core#inScheme> <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Main> ;
+                                                             <http://www.w3.org/2004/02/skos/core#note> "" ;
+                                                             <http://www.w3.org/2004/02/skos/core#prefLabel> ""@de ,
+                                                                                                             ""@es ,
+                                                                                                             ""@it ,
+                                                                                                             "box"@en ,
+                                                                                                             "boîte"@fr ;
+                                                             <http://www.w3.org/2004/02/skos/core#scopeNote> "" .
+
+
+###  http://opendata.inrae.fr/PO2/Ontology/TransformON/c_bpLqsq
+<http://opendata.inrae.fr/PO2/Ontology/TransformON/c_bpLqsq> rdf:type owl:Class ;
+                                                             rdfs:subClassOf <http://opendata.inrae.fr/PO2/Ontology/TransformON/c_1lRh7b> ;
+                                                             <http://opendata.inrae.fr/PO2/core/definitionStatus> "validated" ;
+                                                             <http://www.w3.org/2004/02/skos/core#altLabel> "coconut fiber"@en ,
+                                                                                                            "coir"@en ;
+                                                             <http://www.w3.org/2004/02/skos/core#definition> "The fibrous material derived from the external shell of coconuts."@en ;
+                                                             <http://www.w3.org/2004/02/skos/core#editorialNote> "SUBSTANCE::NON FOOD" ;
+                                                             <http://www.w3.org/2004/02/skos/core#inScheme> <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Main> ,
+                                                                                                            <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Non_food> ,
+                                                                                                            <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Substance> ;
+                                                             <http://www.w3.org/2004/02/skos/core#note> "" ;
+                                                             <http://www.w3.org/2004/02/skos/core#prefLabel> ""@de ,
+                                                                                                             ""@es ,
+                                                                                                             ""@it ,
+                                                                                                             "coconut fibre"@en ,
+                                                                                                             "fibre de coco"@fr ;
+                                                             <http://www.w3.org/2004/02/skos/core#scopeNote> "" .
+
+
+###  http://opendata.inrae.fr/PO2/Ontology/TransformON/c_cr3HMj
+<http://opendata.inrae.fr/PO2/Ontology/TransformON/c_cr3HMj> rdf:type owl:Class ;
+                                                             rdfs:subClassOf <http://opendata.inrae.fr/PO2/Ontology/TransformON/c_1lRh7b> ;
+                                                             <http://opendata.inrae.fr/PO2/core/definitionStatus> "validated" ;
+                                                             <http://www.w3.org/2004/02/skos/core#altLabel> "jute fiber"@en ;
+                                                             <http://www.w3.org/2004/02/skos/core#definition> "Fibre végétale dérivée des tiges de jute (Corchorus capsularis)."@fr ,
+                                                                                                              "The fibrous parts derived from jute stems (Corchorus capsularis)."@en ;
+                                                             <http://www.w3.org/2004/02/skos/core#editorialNote> "SUBSTANCE::NON FOOD" ;
+                                                             <http://www.w3.org/2004/02/skos/core#inScheme> <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Main> ,
+                                                                                                            <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Non_food> ,
+                                                                                                            <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Substance> ;
+                                                             <http://www.w3.org/2004/02/skos/core#note> "" ;
+                                                             <http://www.w3.org/2004/02/skos/core#prefLabel> ""@de ,
+                                                                                                             ""@es ,
+                                                                                                             ""@it ,
+                                                                                                             "fibre de jute"@fr ,
+                                                                                                             "jute fibre"@en ;
+                                                             <http://www.w3.org/2004/02/skos/core#scopeNote> "" .
+
+
+###  http://opendata.inrae.fr/PO2/Ontology/TransformON/c_hSZde6
+<http://opendata.inrae.fr/PO2/Ontology/TransformON/c_hSZde6> rdf:type owl:Class ;
+                                                             rdfs:subClassOf <http://opendata.inrae.fr/PO2/Ontology/TransformON/c_1lRh7b> ;
+                                                             <http://opendata.inrae.fr/PO2/core/definitionStatus> "validated" ;
+                                                             <http://www.w3.org/2004/02/skos/core#altLabel> "flax fiber"@en ,
+                                                                                                            "flax stem fibre"@en ;
+                                                             <http://www.w3.org/2004/02/skos/core#definition> "Fibre végétale dérivée des tiges de la plante de lin."@fr ,
+                                                                                                              "The fibrous material derived from the stalks of the flax plant."@en ;
+                                                             <http://www.w3.org/2004/02/skos/core#editorialNote> "SUBSTANCE::NON FOOD" ;
+                                                             <http://www.w3.org/2004/02/skos/core#inScheme> <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Main> ,
+                                                                                                            <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Non_food> ,
+                                                                                                            <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Substance> ;
+                                                             <http://www.w3.org/2004/02/skos/core#note> "" ;
+                                                             <http://www.w3.org/2004/02/skos/core#prefLabel> ""@de ,
+                                                                                                             ""@es ,
+                                                                                                             ""@it ,
+                                                                                                             "fibre de lin"@fr ,
+                                                                                                             "flax fibre"@en ;
+                                                             <http://www.w3.org/2004/02/skos/core#scopeNote> "@fr:  Elle est utilisée pour produire des poudres végétales, des textiles, et des matériaux composites en raison de sa résistance et de sa durabilité. ::@en: It is used to produce plant powders, textiles, and composite materials due to its strength and durability." .
+
+
+###  http://opendata.inrae.fr/PO2/Ontology/TransformON/c_hgHx9w
+<http://opendata.inrae.fr/PO2/Ontology/TransformON/c_hgHx9w> rdf:type owl:Class ;
+                                                             rdfs:subClassOf <http://opendata.inrae.fr/PO2/Ontology/TransformON/c_67H0A6> ;
+                                                             <http://opendata.inrae.fr/PO2/core/definitionStatus> "validated" ;
+                                                             <http://www.w3.org/2004/02/skos/core#definition> "A biomolecule composed of carbon, hydrogen, and oxygen atoms, typically in a ratio of 1:2:1, playing a crucial role in energy storage and structural functions in living organisms."@en ;
+                                                             <http://www.w3.org/2004/02/skos/core#editorialNote> "SUBSTANCE" ;
+                                                             <http://www.w3.org/2004/02/skos/core#inScheme> <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Main> ,
+                                                                                                            <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Substance> ;
+                                                             <http://www.w3.org/2004/02/skos/core#note> "" ;
+                                                             <http://www.w3.org/2004/02/skos/core#prefLabel> ""@de ,
+                                                                                                             ""@es ,
+                                                                                                             ""@it ,
+                                                                                                             "carbohydrate"@en ,
+                                                                                                             "glucide"@fr ;
+                                                             <http://www.w3.org/2004/02/skos/core#scopeNote> "" .
+
+
+###  http://opendata.inrae.fr/PO2/Ontology/TransformON/c_idmLS2
+<http://opendata.inrae.fr/PO2/Ontology/TransformON/c_idmLS2> rdf:type owl:Class ;
+                                                             rdfs:subClassOf <http://opendata.inrae.fr/PO2/Ontology/TransformON/c_ubYyo4> ;
+                                                             <http://opendata.inrae.fr/PO2/core/definitionStatus> "validated" ;
+                                                             <http://www.w3.org/2004/02/skos/core#definition> "A device used to hold, store, or transport products, such as food, feed, bioproducts, or biowastes, in a controlled environment."@en ;
+                                                             <http://www.w3.org/2004/02/skos/core#editorialNote> """MATERIAL
+""" ;
+                                                             <http://www.w3.org/2004/02/skos/core#inScheme> <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Main> ;
+                                                             <http://www.w3.org/2004/02/skos/core#note> "" ;
+                                                             <http://www.w3.org/2004/02/skos/core#prefLabel> ""@de ,
+                                                                                                             ""@es ,
+                                                                                                             ""@it ,
+                                                                                                             "container"@en ,
+                                                                                                             "contenant"@fr ;
+                                                             <http://www.w3.org/2004/02/skos/core#scopeNote> "" .
+
+
+###  http://opendata.inrae.fr/PO2/Ontology/TransformON/c_kxgJAL
+<http://opendata.inrae.fr/PO2/Ontology/TransformON/c_kxgJAL> rdf:type owl:Class ;
+                                                             rdfs:subClassOf <http://opendata.inrae.fr/PO2/Ontology/TransformON/c_Ielc6T> ;
+                                                             <http://opendata.inrae.fr/PO2/core/definitionStatus> "validated" ;
+                                                             <http://www.w3.org/2004/02/skos/core#definition> "The solid organic material from trees and woody plants, composed primarily of cellulose, hemicellulose, and lignin."@en ;
+                                                             <http://www.w3.org/2004/02/skos/core#editorialNote> "SUBSTANCE::NON FOOD" ;
+                                                             <http://www.w3.org/2004/02/skos/core#inScheme> <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Main> ,
+                                                                                                            <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Non_food> ,
+                                                                                                            <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Substance> ;
+                                                             <http://www.w3.org/2004/02/skos/core#note> "" ;
+                                                             <http://www.w3.org/2004/02/skos/core#prefLabel> ""@de ,
+                                                                                                             ""@es ,
+                                                                                                             ""@it ,
+                                                                                                             "bois (matériau)"@fr ,
+                                                                                                             "wood"@en ;
+                                                             <http://www.w3.org/2004/02/skos/core#scopeNote> "" .
+
+
+###  http://opendata.inrae.fr/PO2/Ontology/TransformON/c_pZjAQu
+<http://opendata.inrae.fr/PO2/Ontology/TransformON/c_pZjAQu> rdf:type owl:Class ;
+                                                             rdfs:subClassOf <http://opendata.inrae.fr/PO2/Ontology/TransformON/c_1lRh7b> ;
+                                                             <http://opendata.inrae.fr/PO2/core/definitionStatus> "validated" ;
+                                                             <http://www.w3.org/2004/02/skos/core#altLabel> "hemp fiber"@en ,
+                                                                                                            "hemp stem fibre"@en ;
+                                                             <http://www.w3.org/2004/02/skos/core#definition> "The fibrous parts extracted from the Cannabis sativa plant, used as a raw material for various industrial applications."@en ;
+                                                             <http://www.w3.org/2004/02/skos/core#editorialNote> "SUBSTANCE::NON FOOD" ;
+                                                             <http://www.w3.org/2004/02/skos/core#exactMatch> <https://bioregistry.io/foodex2:A0BL6> ;
+                                                             <http://www.w3.org/2004/02/skos/core#inScheme> <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Main> ,
+                                                                                                            <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Non_food> ,
+                                                                                                            <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Substance> ;
+                                                             <http://www.w3.org/2004/02/skos/core#note> "A0BL6" ;
+                                                             <http://www.w3.org/2004/02/skos/core#prefLabel> ""@de ,
+                                                                                                             ""@es ,
+                                                                                                             ""@it ,
+                                                                                                             "fibre de chanvre"@fr ,
+                                                                                                             "hemp fibre"@en ;
+                                                             <http://www.w3.org/2004/02/skos/core#scopeNote> """@en: Hemp stalks contain two main types of fibre: bast or long fibres found in the bark (skin) and hurd (shive) or short fibres located in the core of the stem.
+""" .
+
+
+###  http://opendata.inrae.fr/PO2/Ontology/TransformON/c_rp3BUD
+<http://opendata.inrae.fr/PO2/Ontology/TransformON/c_rp3BUD> rdf:type owl:Class ;
+                                                             rdfs:subClassOf <http://opendata.inrae.fr/PO2/Ontology/TransformON/c_idmLS2> ;
+                                                             <http://opendata.inrae.fr/PO2/core/definitionStatus> "validated" ;
+                                                             <http://www.w3.org/2004/02/skos/core#definition> "A cylindrical vessel used to hold or transport liquids, gases, or powders."@en ;
+                                                             <http://www.w3.org/2004/02/skos/core#editorialNote> """MATERIAL
+""" ;
+                                                             <http://www.w3.org/2004/02/skos/core#inScheme> <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Main> ;
+                                                             <http://www.w3.org/2004/02/skos/core#note> "" ;
+                                                             <http://www.w3.org/2004/02/skos/core#prefLabel> ""@de ,
+                                                                                                             ""@es ,
+                                                                                                             ""@it ,
+                                                                                                             "tube"@en ,
+                                                                                                             "tube"@fr ;
+                                                             <http://www.w3.org/2004/02/skos/core#scopeNote> "" .
+
+
+###  http://opendata.inrae.fr/PO2/Ontology/TransformON/c_sR994TGG
+<http://opendata.inrae.fr/PO2/Ontology/TransformON/c_sR994TGG> rdf:type owl:Class ;
+                                                               rdfs:subClassOf <http://opendata.inrae.fr/PO2/Ontology/TransformON/c_9hqSfV> ;
+                                                               <http://opendata.inrae.fr/PO2/core/definitionStatus> "validated" ;
+                                                               <http://www.w3.org/2004/02/skos/core#definition> "A matter or material that has a distinct existence, composition, and properties, occurring naturally or as a result of human activity."@en ,
+                                                                                                                "Substance biologique ou chimique à l'état naturel ou le résultat d'un procédé de fabrication."@fr ;
+                                                               <http://www.w3.org/2004/02/skos/core#editorialNote> "SUBSTANCE" ;
+                                                               <http://www.w3.org/2004/02/skos/core#inScheme> <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Main> ,
+                                                                                                              <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Substance> ;
+                                                               <http://www.w3.org/2004/02/skos/core#note> "" ;
+                                                               <http://www.w3.org/2004/02/skos/core#prefLabel> ""@de ,
+                                                                                                               ""@es ,
+                                                                                                               ""@it ,
+                                                                                                               "substance (by nature)"@en ,
+                                                                                                               "substance (par nature)"@fr ;
+                                                               <http://www.w3.org/2004/02/skos/core#scopeNote> "" .
+
+
+###  http://opendata.inrae.fr/PO2/Ontology/TransformON/c_swW1FC
+<http://opendata.inrae.fr/PO2/Ontology/TransformON/c_swW1FC> rdf:type owl:Class ;
+                                                             rdfs:subClassOf <http://opendata.inrae.fr/PO2/Ontology/TransformON/c_Ielc6T> ;
+                                                             <http://opendata.inrae.fr/PO2/core/definitionStatus> "validated" ;
+                                                             <http://www.w3.org/2004/02/skos/core#definition> "A thin, flexible sheet material made from processed plant fibers, typically used for writing, printing, or packaging."@en ;
+                                                             <http://www.w3.org/2004/02/skos/core#editorialNote> "SUBSTANCE::NON FOOD" ;
+                                                             <http://www.w3.org/2004/02/skos/core#inScheme> <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Main> ,
+                                                                                                            <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Non_food> ,
+                                                                                                            <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Substance> ;
+                                                             <http://www.w3.org/2004/02/skos/core#note> "" ;
+                                                             <http://www.w3.org/2004/02/skos/core#prefLabel> ""@de ,
+                                                                                                             ""@es ,
+                                                                                                             ""@it ,
+                                                                                                             "paper"@en ,
+                                                                                                             "papier"@fr ;
+                                                             <http://www.w3.org/2004/02/skos/core#scopeNote> "" .
+
+
+###  http://opendata.inrae.fr/PO2/Ontology/TransformON/c_ubYyo4
+<http://opendata.inrae.fr/PO2/Ontology/TransformON/c_ubYyo4> rdf:type owl:Class ;
+                                                             rdfs:subClassOf <http://www.w3.org/ns/sosa/System> ;
+                                                             <http://opendata.inrae.fr/PO2/core/definitionStatus> "validated" ;
+                                                             <http://www.w3.org/2004/02/skos/core#altLabel> "appareil de transformation"@fr ,
+                                                                                                            "matériel de production"@fr ,
+                                                                                                            "matériel de transformation"@fr ,
+                                                                                                            "processing device"@en ,
+                                                                                                            "équipement de production"@fr ;
+                                                             <http://www.w3.org/2004/02/skos/core#definition> "A device or equipment used to transform, convert, or modify materials, products, or substances in various industrial processes."@en ;
+                                                             <http://www.w3.org/2004/02/skos/core#editorialNote> """MATERIAL
+""" ;
+                                                             <http://www.w3.org/2004/02/skos/core#inScheme> <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_LCA> ,
+                                                                                                            <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Main> ,
+                                                                                                            <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_drying> ;
+                                                             <http://www.w3.org/2004/02/skos/core#note> "" ;
+                                                             <http://www.w3.org/2004/02/skos/core#prefLabel> ""@de ,
+                                                                                                             ""@es ,
+                                                                                                             ""@it ,
+                                                                                                             "processing equipment"@en ,
+                                                                                                             "équipement de transformation"@fr ;
+                                                             <http://www.w3.org/2004/02/skos/core#scopeNote> "" .
+
+
+###  http://opendata.inrae.fr/PO2/Ontology/TransformON/c_yZVmbJHG
+<http://opendata.inrae.fr/PO2/Ontology/TransformON/c_yZVmbJHG> rdf:type owl:Class ;
+                                                               rdfs:subClassOf <http://opendata.inrae.fr/PO2/Ontology/TransformON/c_3sCzqA> ;
+                                                               <http://opendata.inrae.fr/PO2/core/definitionStatus> "validated" ;
+                                                               <http://www.w3.org/2004/02/skos/core#altLabel> "corps composé"@fr ;
+                                                               <http://www.w3.org/2004/02/skos/core#definition> "A substance formed when two or more chemical elements are chemically bonded together."@en ,
+                                                                                                                "Substance chimique composée d'au moins deux éléments chimiques différents."@fr ;
+                                                               <http://www.w3.org/2004/02/skos/core#editorialNote> "SUBSTANCE" ;
+                                                               <http://www.w3.org/2004/02/skos/core#inScheme> <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Main> ,
+                                                                                                              <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Substance> ;
+                                                               <http://www.w3.org/2004/02/skos/core#note> "" ;
+                                                               <http://www.w3.org/2004/02/skos/core#prefLabel> ""@de ,
+                                                                                                               ""@es ,
+                                                                                                               ""@it ,
+                                                                                                               "chemical compound"@en ,
+                                                                                                               "composé chimique"@fr ;
+                                                               <http://www.w3.org/2004/02/skos/core#scopeNote> "" .
+
+
+###  http://opendata.inrae.fr/PO2/core/Component
+<http://opendata.inrae.fr/PO2/core/Component> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> ,
+                                                              <https://w3id.org/iadopt/ont/Entity> ;
+                                              <http://opendata.inrae.fr/PO2/core/definitionStatus> "draft" ;
+                                              rdfs:label "Component" ;
+                                              <http://www.w3.org/2004/02/skos/core#editorialNote> "" ;
+                                              <http://www.w3.org/2004/02/skos/core#inScheme> <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Drink> ,
+                                                                                             <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Feed> ,
+                                                                                             <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Food> ,
+                                                                                             <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Food_additive> ,
+                                                                                             <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Food_ingredient> ,
+                                                                                             <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Grain_quality> ,
+                                                                                             <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_LCA> ,
+                                                                                             <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Living_organism> ,
+                                                                                             <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Main> ,
+                                                                                             <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Non_food> ,
+                                                                                             <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Substance> ,
+                                                                                             <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Wastewater> ,
+                                                                                             <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_drying> ,
+                                                                                             <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Food_additive;;http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Substance> ;
+                                              <http://www.w3.org/2004/02/skos/core#note> "" ;
+                                              <http://www.w3.org/2004/02/skos/core#prefLabel> ""@de ,
+                                                                                              ""@es ,
+                                                                                              ""@fr ,
+                                                                                              ""@it ,
+                                                                                              "Component"@en ;
+                                              <http://www.w3.org/2004/02/skos/core#scopeNote> "" .
+
+
+###  http://opendata.inrae.fr/PO2/core/Process
+<http://opendata.inrae.fr/PO2/core/Process> rdf:type owl:Class ;
+                                            rdfs:subClassOf <http://www.w3.org/ns/prov#Activity> ,
+                                                            <https://w3id.org/iadopt/ont/Entity> ;
+                                            <http://opendata.inrae.fr/PO2/core/definitionStatus> "draft" ;
+                                            rdfs:label "Process" ;
+                                            <http://www.w3.org/2004/02/skos/core#editorialNote> "" ;
+                                            <http://www.w3.org/2004/02/skos/core#inScheme> <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Drink> ,
+                                                                                           <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Feed> ,
+                                                                                           <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Food> ,
+                                                                                           <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Food_additive> ,
+                                                                                           <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Food_ingredient> ,
+                                                                                           <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Grain_quality> ,
+                                                                                           <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_LCA> ,
+                                                                                           <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Living_organism> ,
+                                                                                           <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Main> ,
+                                                                                           <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Non_food> ,
+                                                                                           <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Substance> ,
+                                                                                           <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Wastewater> ,
+                                                                                           <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_drying> ,
+                                                                                           <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Food_additive;;http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Substance> ;
+                                            <http://www.w3.org/2004/02/skos/core#note> "" ;
+                                            <http://www.w3.org/2004/02/skos/core#prefLabel> ""@de ,
+                                                                                            ""@es ,
+                                                                                            ""@fr ,
+                                                                                            ""@it ,
+                                                                                            "Process"@en ;
+                                            <http://www.w3.org/2004/02/skos/core#scopeNote> "" .
+
+
+###  http://opendata.inrae.fr/PO2/core/Step
+<http://opendata.inrae.fr/PO2/core/Step> rdf:type owl:Class ;
+                                         rdfs:subClassOf <http://www.w3.org/ns/sosa/Actuation> ,
+                                                         <https://w3id.org/iadopt/ont/Entity> ;
+                                         <http://opendata.inrae.fr/PO2/core/definitionStatus> "draft" ;
+                                         rdfs:label "Step" ;
+                                         <http://www.w3.org/2004/02/skos/core#editorialNote> "" ;
+                                         <http://www.w3.org/2004/02/skos/core#inScheme> <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Drink> ,
+                                                                                        <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Feed> ,
+                                                                                        <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Food> ,
+                                                                                        <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Food_additive> ,
+                                                                                        <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Food_ingredient> ,
+                                                                                        <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Grain_quality> ,
+                                                                                        <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_LCA> ,
+                                                                                        <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Living_organism> ,
+                                                                                        <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Main> ,
+                                                                                        <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Non_food> ,
+                                                                                        <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Substance> ,
+                                                                                        <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Wastewater> ,
+                                                                                        <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_drying> ,
+                                                                                        <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Food_additive;;http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Substance> ;
+                                         <http://www.w3.org/2004/02/skos/core#note> "" ;
+                                         <http://www.w3.org/2004/02/skos/core#prefLabel> ""@de ,
+                                                                                         ""@es ,
+                                                                                         ""@fr ,
+                                                                                         ""@it ,
+                                                                                         "Step"@en ;
+                                         <http://www.w3.org/2004/02/skos/core#scopeNote> "" .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000015
+<http://purl.obolibrary.org/obo/BFO_0000015> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000030
+<http://purl.obolibrary.org/obo/BFO_0000030> rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/prov#Activity
+<http://www.w3.org/ns/prov#Activity> rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/prov#Entity
+<http://www.w3.org/ns/prov#Entity> rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/sosa/Actuation
+<http://www.w3.org/ns/sosa/Actuation> rdf:type owl:Class ;
+                                      rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000015> ,
+                                                      <http://www.w3.org/ns/prov#Activity> ;
+                                      rdfs:label "Actuation" .
+
+
+###  http://www.w3.org/ns/sosa/Procedure
+<http://www.w3.org/ns/sosa/Procedure> rdf:type owl:Class ;
+                                      rdfs:subClassOf <https://w3id.org/iadopt/ont/Entity> ;
+                                      <http://opendata.inrae.fr/PO2/core/definitionStatus> "draft" ;
+                                      rdfs:label "Procedure" ;
+                                      <http://www.w3.org/2004/02/skos/core#editorialNote> "" ;
+                                      <http://www.w3.org/2004/02/skos/core#inScheme> <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Drink> ,
+                                                                                     <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Feed> ,
+                                                                                     <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Food> ,
+                                                                                     <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Food_additive> ,
+                                                                                     <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Food_ingredient> ,
+                                                                                     <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Grain_quality> ,
+                                                                                     <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_LCA> ,
+                                                                                     <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Living_organism> ,
+                                                                                     <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Main> ,
+                                                                                     <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Non_food> ,
+                                                                                     <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Substance> ,
+                                                                                     <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Wastewater> ,
+                                                                                     <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_drying> ,
+                                                                                     <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Food_additive;;http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Substance> ;
+                                      <http://www.w3.org/2004/02/skos/core#note> "" ;
+                                      <http://www.w3.org/2004/02/skos/core#prefLabel> ""@de ,
+                                                                                      ""@es ,
+                                                                                      ""@fr ,
+                                                                                      ""@it ,
+                                                                                      "Method"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#scopeNote> "" .
+
+
+###  http://www.w3.org/ns/sosa/System
+<http://www.w3.org/ns/sosa/System> rdf:type owl:Class ;
+                                   rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000030> ,
+                                                   <https://w3id.org/iadopt/ont/Entity> ;
+                                   <http://opendata.inrae.fr/PO2/core/definitionStatus> "draft" ;
+                                   rdfs:label "System" ;
+                                   <http://www.w3.org/2004/02/skos/core#editorialNote> "" ;
+                                   <http://www.w3.org/2004/02/skos/core#inScheme> <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Drink> ,
+                                                                                  <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Feed> ,
+                                                                                  <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Food> ,
+                                                                                  <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Food_additive> ,
+                                                                                  <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Food_ingredient> ,
+                                                                                  <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Grain_quality> ,
+                                                                                  <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_LCA> ,
+                                                                                  <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Living_organism> ,
+                                                                                  <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Main> ,
+                                                                                  <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Non_food> ,
+                                                                                  <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Substance> ,
+                                                                                  <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Wastewater> ,
+                                                                                  <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_drying> ,
+                                                                                  <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Food_additive;;http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Substance> ;
+                                   <http://www.w3.org/2004/02/skos/core#note> "" ;
+                                   <http://www.w3.org/2004/02/skos/core#prefLabel> ""@de ,
+                                                                                   ""@es ,
+                                                                                   ""@fr ,
+                                                                                   ""@it ,
+                                                                                   "Material"@en ;
+                                   <http://www.w3.org/2004/02/skos/core#scopeNote> "" .
+
+
+###  http://www.w3.org/ns/ssn/Property
+<http://www.w3.org/ns/ssn/Property> rdf:type owl:Class ;
+                                    rdfs:subClassOf <https://w3id.org/iadopt/ont/Entity> ;
+                                    <http://opendata.inrae.fr/PO2/core/definitionStatus> "draft" ;
+                                    rdfs:label "Property" ;
+                                    <http://www.w3.org/2004/02/skos/core#editorialNote> "" ;
+                                    <http://www.w3.org/2004/02/skos/core#inScheme> <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Drink> ,
+                                                                                   <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Feed> ,
+                                                                                   <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Food> ,
+                                                                                   <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Food_additive> ,
+                                                                                   <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Food_ingredient> ,
+                                                                                   <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Grain_quality> ,
+                                                                                   <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_LCA> ,
+                                                                                   <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Living_organism> ,
+                                                                                   <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Main> ,
+                                                                                   <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Non_food> ,
+                                                                                   <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Substance> ,
+                                                                                   <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Wastewater> ,
+                                                                                   <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_drying> ,
+                                                                                   <http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Food_additive;;http://opendata.inrae.fr/PO2/Ontology/TransformON/cs_Substance> ;
+                                    <http://www.w3.org/2004/02/skos/core#note> "" ;
+                                    <http://www.w3.org/2004/02/skos/core#prefLabel> ""@de ,
+                                                                                    ""@es ,
+                                                                                    ""@fr ,
+                                                                                    ""@it ,
+                                                                                    "Attribute"@en ;
+                                    <http://www.w3.org/2004/02/skos/core#scopeNote> "" .
+
+
+###  https://w3id.org/iadopt/ont/Entity
+<https://w3id.org/iadopt/ont/Entity> rdf:type owl:Class ;
+                                     rdfs:label "Entity" .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <http://opendata.inrae.fr/PO2/core/Component>
+                <http://opendata.inrae.fr/PO2/core/Process>
+                <http://opendata.inrae.fr/PO2/core/Step>
+                <http://www.w3.org/ns/sosa/Procedure>
+                <http://www.w3.org/ns/sosa/System>
+                <http://www.w3.org/ns/ssn/Property>
+              )
+] .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi

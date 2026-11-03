@@ -1,0 +1,25 @@
+[URI of the OWL(RDF/XML) output file]
+http://purl.obolibrary.org/obo/climoo/climoo-piccomela/chebi_imports
+
+[Source ontology]
+CHEBI
+
+[Low level source term URIs]
+
+http://purl.obolibrary.org/obo/CHEBI_33287
+http://purl.obolibrary.org/obo/CHEBI_33286
+http://purl.obolibrary.org/obo/CHEBI_33232
+
+[Top level source term URIs and target direct superclass URIs]
+
+http://purl.obolibrary.org/obo/CHEBI_33287
+subClassOf http://purl.obolibrary.org/obo/CHEBI_33286
+
+
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Source annotation URIs]
+includeAllAxioms
+
+[Source annotation URIs to be excluded]
