@@ -22,6 +22,9 @@ http://purl.obolibrary.org/obo/CHEBI_52211
 http://purl.obolibrary.org/obo/CHEBI_24432
 http://purl.obolibrary.org/obo/CHEBI_50906
 
+http://purl.obolibrary.org/obo/CHEBI_51143
+http://purl.obolibrary.org/obo/CHEBI_33302
+http://purl.obolibrary.org/obo/CHEBI_33300
 
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/CHEBI_24431
@@ -53,6 +56,11 @@ subClassOf http://purl.obolibrary.org/obo/CHEBI_50906
 http://purl.obolibrary.org/obo/CHEBI_33937
 subClassOf http://purl.obolibrary.org/obo/CHEBI_33284
 
+http://purl.obolibrary.org/obo/CHEBI_33300
+subClassOf http://purl.obolibrary.org/obo/CHEBI_33560
+
+http://purl.obolibrary.org/obo/CHEBI_51143
+subClassOf http://purl.obolibrary.org/obo/CHEBI_33675
 
 [Source term retrieval setting]
 includeAllIntermediates
