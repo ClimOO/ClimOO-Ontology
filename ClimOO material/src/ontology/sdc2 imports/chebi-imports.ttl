@@ -10,14 +10,14 @@
 @base <http://purl.obolibrary.org/obo/climoo/climoo-sdc2/chebi_imports#> .
 
 <http://purl.obolibrary.org/obo/climoo/climoo-sdc2/chebi_imports> rdf:type owl:Ontology ;
-                                                                   owl:versionIRI <http://purl.obolibrary.org/obo/climoo/climoo-sdc2/chebi_imports/2026-10-29> ;
+                                                                   owl:versionIRI <http://purl.obolibrary.org/obo/climoo/climoo-sdc2/chebi_imports/2026-11-10> ;
                                                                    rdfs:comment """This file contains ClimOO Ontology suite imports fletched from the Chemical Entities of Biological Interest Ontology (ChEBI) via OntoFox (https://ontofox.hegroup.org/index.php).
 
 Ontology source: https://ontobee.org/ontology/CHEBI"""@en ;
                                                                    rdfs:seeAlso """The related Ontofox imput file.
 https://github.com/ClimOO/ClimOO-Ontology/tree/main/ClimOO%20material/src/ontology/imports/sdc2%20imports/chebi-imports-ontofox-26/10/29"""@en ,
                                                                                 "https://www.ebi.ac.uk/chebi/" ;
-                                                                   owl:versionInfo "2026-10-29" .
+                                                                   owl:versionInfo "2026-11-10" .
 
 #################################################################
 #    Annotation properties
@@ -258,6 +258,23 @@ obo:CHEBI_33300 rdf:type owl:Class ;
                 rdfs:label "pnictogen" .
 
 
+###  http://purl.obolibrary.org/obo/CHEBI_33302
+obo:CHEBI_33302 rdf:type owl:Class ;
+                rdfs:subClassOf obo:CHEBI_33675 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000051 ;
+                                  owl:someValuesFrom obo:CHEBI_33300
+                                ] ;
+                obo:IAO_0000115 "A p-block molecular entity containing any pnictogen." ;
+                obo:IAO_0000412 obo:chebi.owl ;
+                oboInOwl:hasOBONamespace "chebi_ontology" ;
+                oboInOwl:hasRelatedSynonym "pnictogen molecular entities" ,
+                                           "pnictogen molecular entity" ;
+                oboInOwl:id "CHEBI:33302" ;
+                oboInOwl:inSubset <http://purl.oboInOwllibrary.org/oboInOwl/chebi/3_STAR> ;
+                rdfs:label "pnictogen molecular entity" .
+
+
 ###  http://purl.obolibrary.org/obo/CHEBI_33306
 obo:CHEBI_33306 rdf:type owl:Class ;
                 rdfs:subClassOf obo:CHEBI_33560 ;
@@ -376,6 +393,26 @@ obo:CHEBI_50906 rdf:type owl:Class ;
                 oboInOwl:id "CHEBI:50906" ;
                 oboInOwl:inSubset <http://purl.oboInOwllibrary.org/oboInOwl/chebi/3_STAR> ;
                 rdfs:label "role" .
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_51143
+obo:CHEBI_51143 rdf:type owl:Class ;
+                rdfs:subClassOf obo:CHEBI_33302 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000051 ;
+                                  owl:someValuesFrom obo:CHEBI_25555
+                                ] ;
+                obo:IAO_0000412 obo:chebi.owl ;
+                oboInOwl:hasAlternativeId "CHEBI:25556" ,
+                                          "CHEBI:7594" ;
+                oboInOwl:hasDbXref "kegg.compound:C06061" ;
+                oboInOwl:hasOBONamespace "chebi_ontology" ;
+                oboInOwl:hasRelatedSynonym "Nitrogenous compounds" ,
+                                           "nitrogen compounds" ,
+                                           "nitrogen molecular entities" ;
+                oboInOwl:id "CHEBI:51143" ;
+                oboInOwl:inSubset <http://purl.oboInOwllibrary.org/oboInOwl/chebi/3_STAR> ;
+                rdfs:label "nitrogen molecular entity" .
 
 
 ###  http://purl.obolibrary.org/obo/CHEBI_52211
