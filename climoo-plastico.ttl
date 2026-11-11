@@ -38,21 +38,61 @@ Documentation webpage: https://www.w3id.org/climoo/docs"""@en ,
 ###  http://purl.obolibrary.org/obo/BFO_0000056
 <http://purl.obolibrary.org/obo/BFO_0000056> rdfs:subPropertyOf <http://purl.obolibrary.org/obo/RO_0000056> .
 
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/BFO_0000056> ;
+   owl:annotatedProperty rdfs:subPropertyOf ;
+   owl:annotatedTarget <http://purl.obolibrary.org/obo/RO_0000056> ;
+   rdfs:comment """ClimOO Ontology comment:
+We include this axiom to map the two object properties, implementing ontology alignment and hierarchy consistency."""@en
+ ] .
+
 
 ###  http://purl.obolibrary.org/obo/BFO_0000057
 <http://purl.obolibrary.org/obo/BFO_0000057> rdfs:subPropertyOf <http://purl.obolibrary.org/obo/RO_0000057> .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/BFO_0000057> ;
+   owl:annotatedProperty rdfs:subPropertyOf ;
+   owl:annotatedTarget <http://purl.obolibrary.org/obo/RO_0000057> ;
+   rdfs:comment """ClimOO Ontology comment:
+We include this axiom to map the two object properties, implementing ontology alignment and hierarchy consistency."""@en
+ ] .
 
 
 ###  http://purl.obolibrary.org/obo/IAO_0000136
 <http://purl.obolibrary.org/obo/IAO_0000136> owl:equivalentProperty <http://www.ontologyrepository.com/CommonCoreOntologies/is_about> .
 
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/IAO_0000136> ;
+   owl:annotatedProperty owl:equivalentProperty ;
+   owl:annotatedTarget <http://www.ontologyrepository.com/CommonCoreOntologies/is_about> ;
+   rdfs:comment """ClimOO Ontology comment:
+We include this axiom to map the two object properties, implementing ontology alignment and hierarchy consistency."""@en
+ ] .
+
 
 ###  http://purl.obolibrary.org/obo/RO_0002500
 <http://purl.obolibrary.org/obo/RO_0002500> owl:equivalentProperty <https://www.w3id.org/sco#SCO_0000038> .
 
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/RO_0002500> ;
+   owl:annotatedProperty owl:equivalentProperty ;
+   owl:annotatedTarget <https://www.w3id.org/sco#SCO_0000038> ;
+   rdfs:comment """ClimOO Ontology comment:
+We include this axiom to map the two object properties, implementing ontology alignment and hierarchy consistency."""@en
+ ] .
+
 
 ###  http://purl.obolibrary.org/obo/RO_0002608
 <http://purl.obolibrary.org/obo/RO_0002608> owl:equivalentProperty <https://www.w3id.org/sco#SCO_0000037> .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/RO_0002608> ;
+   owl:annotatedProperty owl:equivalentProperty ;
+   owl:annotatedTarget <https://www.w3id.org/sco#SCO_0000037> ;
+   rdfs:comment """ClimOO Ontology comment:
+We include this axiom to map the two object properties, implementing ontology alignment and hierarchy consistency."""@en
+ ] .
 
 
 #################################################################
