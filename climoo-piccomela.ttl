@@ -186,10 +186,22 @@ Bibliographic reference: Prudhomme, T., De Colle, G., Liebers, A., Sculley, A., 
  ] .
 
 
-###  http://www.w3.org/ns/prov#Entity
-<http://www.w3.org/ns/prov#Entity> rdfs:subClassOf _:genid30 .
+###  http://purl.obolibrary.org/obo/UBERON_0001062
+<http://purl.obolibrary.org/obo/UBERON_0001062> rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000040> .
 
-_:genid30 rdf:type owl:Class ;
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://purl.obolibrary.org/obo/UBERON_0001062> ;
+   owl:annotatedProperty rdfs:subClassOf ;
+   owl:annotatedTarget <http://purl.obolibrary.org/obo/BFO_0000040> ;
+   rdfs:comment """ClimOO Ontology comment:
+In agreement with UBERON, we reclassify this class as a subclass of the \"material entity\" class."""@en
+ ] .
+
+
+###  http://www.w3.org/ns/prov#Entity
+<http://www.w3.org/ns/prov#Entity> rdfs:subClassOf _:genid31 .
+
+_:genid31 rdf:type owl:Class ;
            owl:unionOf ( <http://purl.obolibrary.org/obo/BFO_0000020>
                          <http://purl.obolibrary.org/obo/BFO_0000031>
                          [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/BFO_0000004>
@@ -204,7 +216,7 @@ _:genid30 rdf:type owl:Class ;
 [ rdf:type owl:Axiom ;
    owl:annotatedSource <http://www.w3.org/ns/prov#Entity> ;
    owl:annotatedProperty rdfs:subClassOf ;
-   owl:annotatedTarget _:genid30 ;
+   owl:annotatedTarget _:genid31 ;
    rdfs:comment """ClimOO Ontology comment:
 We mapped PROVO and BFO classes in compliance with the PROVO-BFO alignment, which can be found at the following link: https://github.com/BFO-Mappings/PROV-to-BFO 
 
@@ -213,9 +225,9 @@ Bibliographic reference: Prudhomme, T., De Colle, G., Liebers, A., Sculley, A., 
 
 
 ###  http://www.w3.org/ns/sosa/Procedure
-<http://www.w3.org/ns/sosa/Procedure> rdfs:subClassOf _:genid39 .
+<http://www.w3.org/ns/sosa/Procedure> rdfs:subClassOf _:genid40 .
 
-_:genid39 owl:intersectionOf ( <http://www.ontologyrepository.com/CommonCoreOntologies/DirectiveInformationContentEntity>
+_:genid40 owl:intersectionOf ( <http://www.ontologyrepository.com/CommonCoreOntologies/DirectiveInformationContentEntity>
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty <http://www.ontologyrepository.com/CommonCoreOntologies/prescribes> ;
                                   owl:someValuesFrom <http://opendata.inrae.fr/PO2/core/Process>
@@ -226,7 +238,7 @@ _:genid39 owl:intersectionOf ( <http://www.ontologyrepository.com/CommonCoreOnto
 [ rdf:type owl:Axiom ;
    owl:annotatedSource <http://www.w3.org/ns/sosa/Procedure> ;
    owl:annotatedProperty rdfs:subClassOf ;
-   owl:annotatedTarget _:genid39 ;
+   owl:annotatedTarget _:genid40 ;
    rdfs:comment """ClimOO Ontology comment:
 We mapped SSN/SOSA and BFO classes in compliance with the SSN/SOSA-BFO alignment, which can be found at the following link: https://github.com/BFO-Mappings/SSN-to-BFO"""@en
  ] .
@@ -245,9 +257,9 @@ We mapped SSN/SOSA and BFO classes in compliance with the SSN/SOSA-BFO alignment
 
 
 ###  http://www.w3.org/ns/ssn/Property
-<http://www.w3.org/ns/ssn/Property> owl:equivalentClass _:genid45 .
+<http://www.w3.org/ns/ssn/Property> owl:equivalentClass _:genid46 .
 
-_:genid45 rdf:type owl:Class ;
+_:genid46 rdf:type owl:Class ;
            owl:unionOf ( <http://purl.obolibrary.org/obo/BFO_0000020>
                          <http://purl.obolibrary.org/obo/BFO_0000144>
                        ) .
@@ -255,7 +267,7 @@ _:genid45 rdf:type owl:Class ;
 [ rdf:type owl:Axiom ;
    owl:annotatedSource <http://www.w3.org/ns/ssn/Property> ;
    owl:annotatedProperty owl:equivalentClass ;
-   owl:annotatedTarget _:genid45 ;
+   owl:annotatedTarget _:genid46 ;
    rdfs:comment """ClimOO Ontology comment:
 We mapped SSN/SOSA and BFO classes in compliance with the SSN/SOSA-BFO alignment, which can be found at the following link: https://github.com/BFO-Mappings/SSN-to-BFO"""@en
  ] .
@@ -646,6 +658,31 @@ https://i-adopt.github.io/ontology/index.html#/Entity"""@en
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
 
 
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000096
+:ClimOO_0000096 rdf:type owl:Class ;
+                rdfs:subClassOf <https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000254> ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000176> ;
+                                  owl:someValuesFrom :ClimOO_0000364
+                                ] ;
+                <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "agricultural plastics"@en ,
+                                                                               "agriplastics"@en ;
+                rdfs:label "agriplastic object"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A piece of polymer-based material that is part of an agricultural system and used for agricultural purposes."@en ,
+                                                                 "a piece of polymer-based synthetic material (no packaging) that is part of and used in an agricultural ecosystem."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :ClimOO_0000096 ;
+   owl:annotatedProperty <http://www.w3.org/2004/02/skos/core#definition> ;
+   owl:annotatedTarget "a piece of polymer-based synthetic material (no packaging) that is part of and used in an agricultural ecosystem."@en ;
+   <http://purl.org/dc/terms/source> "https://environment.ec.europa.eu/system/files/2021-09/Agricultural%20Plastics%20Final%20Report.pdf" ;
+   rdfs:comment """According to FAO (2021), agriplastics also count for plastic items used in aquaculture. We currently exclude reference to such objects as the ClimOO Ontology is on crop cultivation. 
+
+FAO. 2021. Assessment of agricultural plastics and their sustainability. A call for action. Rome. https://doi.org/10.4060/cb7856enThe"""
+ ] .
+
+
 ###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000364
 :ClimOO_0000364 rdf:type owl:Class ;
                 rdfs:subClassOf <https://www.w3id.org/sco#SCO_0000015> ,
@@ -681,7 +718,7 @@ https://i-adopt.github.io/ontology/index.html#/Entity"""@en
                                                      ) ;
                                   rdf:type owl:Class
                                 ] ,
-                                _:genid188 ;
+                                _:genid191 ;
                 rdfs:comment "We currently focus our system of analysis on activities up to harvesting activities in the agricultural supply chains."@en ,
                              """We included the SuMSO food system classes to provide users with an initial reference backbone hierarchy in case they need to model the relation between agricultural and food systems. 
 
@@ -692,14 +729,14 @@ The agricultural system class may be considered a potential subclass of the SuMS
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom> "http://purl.obolibrary.org/obo/ENVO_0000007; http://purl.obolibrary.org/obo/ENVO_01001246" ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
 
-_:genid188 rdf:type owl:Restriction ;
+_:genid191 rdf:type owl:Restriction ;
             owl:onProperty :ClimOO_0000366 ;
             owl:someValuesFrom <https://www.w3id.org/climoo/climoo-sdc2#ClimOO_0000298> .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource :ClimOO_0000364 ;
    owl:annotatedProperty rdfs:subClassOf ;
-   owl:annotatedTarget _:genid188 ;
+   owl:annotatedTarget _:genid191 ;
    rdfs:comment "We envision implementations to characterize the relations between these systems  with respect to components, interactions, boundaries, development, and history."@en
  ] .
 

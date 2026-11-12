@@ -211,6 +211,18 @@ We aligned CCO and IAO classes according to SuMSO model."""@en .
                                                                         ] .
 
 
+###  https://w3id.org/climoo/climoo-plastico#ClimOO_0000467
+<https://w3id.org/climoo/climoo-plastico#ClimOO_0000467> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000015> ,
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000057> ;
+                                                                           owl:someValuesFrom :ClimOO_0000163
+                                                                         ] ;
+                                                         rdfs:label "reducing plastic pollution process"@en ;
+                                                         <http://www.w3.org/2004/02/skos/core#definition> "A process that turns down the release and possible accumulation in an environment of plastic debris due to a plastic pollution process."@en ;
+                                                         <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
 ###  https://w3id.org/pmd/co/PMD_0000888
 <https://w3id.org/pmd/co/PMD_0000888> owl:equivalentClass :ClimOO_0000246 ;
                                       rdfs:comment """ClimOO Ontology comment:
