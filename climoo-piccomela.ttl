@@ -29,6 +29,12 @@ Documentation webpage: https://www.w3id.org/climoo/docs"""@en ,
                                                                                            "The most recent version of this file is available on GitHub at the following link: https://www.w3id.org/climoo/climoo-piccomela."@en .
 
 #################################################################
+#    Annotation properties
+#################################################################
+
+
+
+#################################################################
 #    Object Properties
 #################################################################
 
@@ -171,9 +177,6 @@ We extend the domain and range of this object property to “system environment�
 #################################################################
 #    Classes
 #################################################################
-
-###  http://purl.obolibrary.org/obo/BFO_0000015
-<http://purl.obolibrary.org/obo/BFO_0000015> owl:equivalentClass <http://www.w3.org/ns/prov#Activity> .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource <http://purl.obolibrary.org/obo/BFO_0000015> ;
@@ -1618,6 +1621,1188 @@ _:genid191 rdf:type owl:Restriction ;
                                 ] ;
                 rdfs:label "apple orchard system environment component perspective"@en ;
                 <http://www.w3.org/2004/02/skos/core#definition> "An apple farming system environment component perspective that is bearered by an apple orchard system environment component."@en .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000468
+:ClimOO_0000468 rdf:type owl:Class ;
+                rdfs:subClassOf <https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000202> ;
+                rdfs:label "agriplastic recycling process"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A recycling process of synthetic polymer molecules that applies to some recyclable polymer molecules constituting a portion of synthetic polymer-based material composing some agriplastic waste."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000469
+:ClimOO_0000469 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000096 ;
+                rdfs:label "biodegradable agriplastic object"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "An agriplastic object that is primarily made of biodegradable polymer-based material."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000470
+:ClimOO_0000470 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000469 ;
+                rdfs:label "compostable agriplastic object"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A biodegradable agriplastic object that is primarily made of compostable polymer-based material."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000471
+:ClimOO_0000471 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000475 ;
+                rdfs:label "recycled agriplastic object"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A synthetic agriplastic object that is primarily made of recycled synthetic polymer-based material."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000472
+:ClimOO_0000472 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000475 ;
+                rdfs:label "recyclable agriplastic object"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A synthetic agriplastic object that is primarily made of recyclable synthetic polymer-based material."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000473
+:ClimOO_0000473 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000474 ;
+                rdfs:label "compostable synthetic agriplastic object"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A biodegradable synthetic agriplastic object that is primarily made of compostable polymer-based material."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000474
+:ClimOO_0000474 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000475 ;
+                rdfs:label "biodegradable synthetic agriplastic object"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A synthetic agriplastic object that is primarily made of biodegradable polymer-based material."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000475
+:ClimOO_0000475 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000096 ;
+                rdfs:label "synthetic agriplastic object"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "An agriplastic object that is made of some synthetic polymer-based material."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000476
+:ClimOO_0000476 rdf:type owl:Class ;
+                rdfs:subClassOf <http://purl.obolibrary.org/obo/COB_0000035> ;
+                rdfs:comment "We currently exclude usages different for those for agriculture. An agriplastic object can be used in an agricultural system for purposes different from those." ;
+                rdfs:label "agriplastic usage process in agriculture"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A completely executed planned process that involves some agriplastic object employed for some agricultural purpose."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000477
+:ClimOO_0000477 rdf:type owl:Class ;
+                rdfs:subClassOf <https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000266> ;
+                rdfs:label "planned agriplastic transportation process in agriculture"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A transportation process that has, as the main participant, an agriplastic object in an agricultural system."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000478
+:ClimOO_0000478 rdf:type owl:Class ;
+                rdfs:subClassOf <http://purl.obolibrary.org/obo/COB_0000035> ;
+                rdfs:label "agriplastic disposal process"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A planned process that applies to agriplastic objects deemed to be waste, resulting in its removal and demise."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000479
+:ClimOO_0000479 rdf:type owl:Class ;
+                rdfs:subClassOf <https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000266> ;
+                rdfs:label "plastic pollution in agriculture"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A plastic pollution process that affects an agricultural system. Pollution can occur both inside the system and originate from outside."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000480
+:ClimOO_0000480 rdf:type owl:Class ;
+                rdfs:subClassOf <https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000163> ;
+                rdfs:label "agriplastic debris particle"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A plastic debris particle in an agricultural system or deriving from an agricultural system."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000481
+:ClimOO_0000481 rdf:type owl:Class ;
+                rdfs:subClassOf <https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000180> ;
+                rdfs:label "agriplastic biodegradation"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A polymer biodegradation process that applies to some biodegradable polymer molecules constituting some portion of biodegradable polymer-based material that composes some agriplastic object."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000482
+:ClimOO_0000482 rdf:type owl:Class ;
+                rdfs:subClassOf <https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000269> ;
+                rdfs:label "agriplastic degradation"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A polymer degradation process applying to polymer molecules constituting some portion of polymer-based material that composes some agriplastic object."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000483
+:ClimOO_0000483 rdf:type owl:Class ;
+                rdfs:subClassOf <https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000273> ;
+                rdfs:label "agriplastic fragmentation"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A fragmentation process of a piece of polymer-based material that leads to breaking down agriplastic objects into pieces of a smaller size."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000484
+:ClimOO_0000484 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000482 ;
+                rdfs:label "agriplastic degradation in agriculture"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "An agriplastic degradation that occurs in an agricultural system."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000485
+:ClimOO_0000485 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000483 ;
+                rdfs:label "agriplastic fragmentation in agriculture"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "An agriplastic fragmentation that occurs in an agricultural system."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000486
+:ClimOO_0000486 rdf:type owl:Class ;
+                rdfs:subClassOf <https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000272> ;
+                rdfs:label "agriplastic mineralization"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A polymer biomineralization process that applies to some biodegradable polymer molecules constituting some portions of biodegradable polymer-based material composing some agriplastic object."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000487
+:ClimOO_0000487 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000486 ;
+                rdfs:label "agriplastic mineralization in agriculture"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "An agriplastic mineralization that occurs in an agricultural system."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000488
+:ClimOO_0000488 rdf:type owl:Class ;
+                rdfs:subClassOf <https://www.w3id.org/climoo/climoo-sdc2#ClimOO_0000413> ;
+                rdfs:label "portion of agricultural soil organic carbon"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A portion of soil organic carbon that is part of a portion of soil in an agricultural system."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000489
+:ClimOO_0000489 rdf:type owl:Class ;
+                rdfs:subClassOf <https://www.w3id.org/climoo/climoo-picco#ClimOO_0000433> ;
+                rdfs:label "process of weed and crop competition in agriculture"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A weed and crop competition process that occurs in an agricultural system."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000490
+:ClimOO_0000490 rdf:type owl:Class ;
+                rdfs:subClassOf <https://www.w3id.org/climoo/climoo-sdc2#ClimOO_0000400> ;
+                rdfs:label "agricultural soil layer"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A soil layer that is the uppermost layer of an agricultural field and is made of a portion of agricultural soil."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000491
+:ClimOO_0000491 rdf:type owl:Class ;
+                rdfs:subClassOf <https://www.w3id.org/climoo/climoo-sdc2#ClimOO_0000401> ;
+                rdfs:comment "Tree rows, inter-rows, under-canopy zones and field margins of the portion of soil considered for analysis can affect the interpretation of soil/debris observations." ;
+                rdfs:label "portion of agricultural soil"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A portion of soil that is part of or originates from the soil layer of an agricultural system."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000492
+:ClimOO_0000492 rdf:type owl:Class ;
+                rdfs:subClassOf <https://www.w3id.org/climoo/climoo-picco#ClimOO_0000425> ;
+                rdfs:label "biofilm formation process on agricultural soil plastic debris"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A biofilm formation process on soil plastic debris that occurs on plastic debris in soil in an agricultural system."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000493
+:ClimOO_0000493 rdf:type owl:Class ;
+                rdfs:subClassOf <https://www.w3id.org/climoo/climoo-picco#ClimOO_0000441> ;
+                rdfs:label "plastic debris-driven alteration process of agricultural soil microbe metabolism"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A plastic debris-driven alteration process of soil microbe metabolism that occurs in an agricultural soil."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000494
+:ClimOO_0000494 rdf:type owl:Class ;
+                rdfs:subClassOf <https://www.w3id.org/climoo/climoo-picco#ClimOO_0000460> ;
+                rdfs:label "animal inhalation of agriplastic debris aerosol in agriculture"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "An animal inhalation of plastic debris aerosol that has, as the main participant, some agriplastic debris particles and occurs in an agricultural system."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000495
+:ClimOO_0000495 rdf:type owl:Class ;
+                rdfs:subClassOf <https://www.w3id.org/climoo/climoo-picco#ClimOO_0000461> ;
+                rdfs:label "human inhalation of agriplastic debris aerosol in agriculture"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A human inhalation of plastic debris aerosol that has, as the main participant, some agriplastic debris particles and occurs in an agricultural system."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000496
+:ClimOO_0000496 rdf:type owl:Class ;
+                rdfs:subClassOf <https://www.w3id.org/climoo/climoo-picco#ClimOO_0000459> ;
+                rdfs:label "animal ingestion of agriplastic debris in agriculture"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "An animal ingestion of plastic debris that has, as the main participant, some agriplastic debris particles and occurs in an agricultural system."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000497
+:ClimOO_0000497 rdf:type owl:Class ;
+                rdfs:subClassOf <https://www.w3id.org/climoo/climoo-picco#ClimOO_0000462> ;
+                rdfs:label "human ingestion of agriplastic debris in agriculture"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A human ingestion of plastic debris that has, as the main participant, some agriplastic debris particles and occurs in an agricultural system."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000498
+:ClimOO_0000498 rdf:type owl:Class ;
+                rdfs:subClassOf <https://www.w3id.org/climoo/climoo-sdc2#Emission_of_Greenhouse_Gas> ;
+                rdfs:label "release process of GHG emission in agriculture"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "An emission of greenhouse gas that occurs in an agricultural system."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000499
+:ClimOO_0000499 rdf:type owl:Class ;
+                rdfs:subClassOf <https://www.w3id.org/climoo/climoo-picco#ClimOO_0000448> ;
+                rdfs:label "release process of GHG emissions from plastic degradation in agriculture"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A release process of GHG emissions from plastic degradation process that occurs in an agricultural system."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000500
+:ClimOO_0000500 rdf:type owl:Class ;
+                rdfs:subClassOf <https://www.w3id.org/climoo/climoo-picco#ClimOO_0000449> ;
+                rdfs:label "release process of CO2 emissions from plastic degradation in agriculture"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A release process of CO2 gas emissions from plastic degradation process that occurs in an agricultural system."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000501
+:ClimOO_0000501 rdf:type owl:Class ;
+                rdfs:subClassOf <https://www.w3id.org/climoo/climoo-picco#ClimOO_0000450> ;
+                rdfs:label "release process of non-CO2 emissions from plastic degradation in agriculture"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A release process of non-CO2 gas emissions from plastic degradation process that occurs in an agricultural system."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000502
+:ClimOO_0000502 rdf:type owl:Class ;
+                rdfs:subClassOf <https://www.w3id.org/climoo/climoo-picco#ClimOO_0000451> ;
+                rdfs:label "release process of GHG emissions from agriplastic debris degradation"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A release process of GHG emissions from plastic debris degradation process that applies to agriplastic debris."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000503
+:ClimOO_0000503 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000502 ;
+                rdfs:label "release process of CO2 emissions from agriplastic debris degradation"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A release process of CO2 gas emissions from plastic debris degradation process that applies to agriplastic debris."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000504
+:ClimOO_0000504 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000502 ;
+                rdfs:label "release process of non-CO2 emissions from agriplastic debris degradation"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A release process of non-CO2 gas emissions from plastic debris degradation process that applies to agriplastic debris."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000505
+:ClimOO_0000505 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000502 ;
+                rdfs:label "release process of GHG emissions from agriplastic debris degradation in agriculture"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A release process of GHG emissions from agriplastic debris degradation that occurs in an agricultural system."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000506
+:ClimOO_0000506 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000503 ;
+                rdfs:label "release process of CO2 emissions from agriplastic debris degradation in agriculture"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A release process of CO2 emissions from agriplastic debris degradation that occurs in an agricultural system."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000507
+:ClimOO_0000507 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000504 ;
+                rdfs:label "release process of non-CO2 emissions from agriplastic debris degradation in agriculture"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A release process of non-CO2 emissions from agriplastic debris degradation that occurs in an agricultural system."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000508
+:ClimOO_0000508 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000505 ;
+                rdfs:label "release process of GHG emissions from agriplastic debris degradation in agricultural soil"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A release process of GHG emissions from agriplastic debris degradation in agriculture of agriplastic debris that is in or on a portion of soil."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000509
+:ClimOO_0000509 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000506 ;
+                rdfs:label "release process of CO2 emissions from agriplastic debris degradation in agricultural soil"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A release process of CO2 emissions from agriplastic debris degradation in agriculture of agriplastic debris that is in or on a portion of soil."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000510
+:ClimOO_0000510 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000507 ;
+                rdfs:label "release process of non-CO2 emissions from agriplastic debris degradation in agricultural soil"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A release process of non-CO2 emissions from agriplastic debris degradationin agriculture of agriplastic debris that is in or on a portion of soil."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000511
+:ClimOO_0000511 rdf:type owl:Class ;
+                rdfs:subClassOf <https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000164> ;
+                rdfs:label "agriplastic debris particle"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A plastic debris particle that is or derives from an agriplastic object."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000512
+:ClimOO_0000512 rdf:type owl:Class ;
+                rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000016> ;
+                rdfs:label "agricultural process"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A process that occurs in an agricultural system."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom> "http://purl.obolibrary.org/obo/ENVO_01001246" ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000513
+:ClimOO_0000513 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000515 ;
+                rdfs:label "apple farming process"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "An agricultural process that occurs in an apple farming system for the sake of apple growth, production, and harvest."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000514
+:ClimOO_0000514 rdf:type owl:Class ;
+                rdfs:subClassOf <https://w3id.org/sumso#SuMSO_0000069> ;
+                <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "apple grower, apple producer"@en ;
+                rdfs:label "apple farmer"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A farmer who is involved in the growing, harvest, and production of apples."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000515
+:ClimOO_0000515 rdf:type owl:Class ;
+                rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000024> ;
+                rdfs:comment "Agricultural fieds are complex systems themself." ;
+                rdfs:label "agricultural field"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A fiat object part that is a continuous expanse of land, part of an agricultural system, and is used for agricultural purposes, usually animal grazing and crop cultivation."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom> "http://purl.obolibrary.org/obo/ENVO_00000114;http://purl.obolibrary.org/obo/ENVO_01000352." ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000516
+:ClimOO_0000516 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000515 ;
+                rdfs:label "apple orchard field"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "An agricultural field that is part of an apple orchard."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000517
+:ClimOO_0000517 rdf:type owl:Class ;
+                rdfs:subClassOf <https://w3id.org/pmd/co/PMD_0000001> ;
+                rdfs:label "portion of agricultural field"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A portion of matter that is part of or originates from an agricultural field."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000518
+:ClimOO_0000518 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000517 ;
+                rdfs:label "portion of orchard field"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A portion of agricultural field that is part of or originates from an orchard field."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000519
+:ClimOO_0000519 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000520 ;
+                rdfs:comment "cutting grass among tree; Unkrautmanagement; different techniques and machines are employed."@en ;
+                rdfs:label "mowing in apple orchard"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A mowing in agriculture that occurs in an apple orchard."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000520
+:ClimOO_0000520 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000512 ;
+                rdfs:label "mowing in agriculture"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "An agricultural process that results in cutting plants, usually weeds or grass, from the surface of an agricultural field."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom> "http://purl.obolibrary.org/obo/AGRO_00000220" ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000521
+:ClimOO_0000521 rdf:type owl:Class ;
+                rdfs:subClassOf <http://opendata.inrae.fr/PO2/Ontology/TransformON/c_YjqYhO> ;
+                rdfs:label "apple packaging"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A packaging process that applies to some apples."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000522
+:ClimOO_0000522 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000514 ;
+                rdfs:label "apple storing in agriculture"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "An apple farming process that results in the collection and preservation of apples, often in boxes, usually prior to retail and sale, in an agricultural system."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000523
+:ClimOO_0000523 rdf:type owl:Class ;
+                rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000016> ;
+                rdfs:comment " We recreated this class on the basis of the corresponding GO class. GO axiomatizes the upper-level class “growth” with respect to the class “biological phase”, which presents axioms beyond the purposes of ClimOO. We envision discussions with subject matter experts. This class may be deprecated in favor of a more general class implemented in GO after discussions. We subsume this class under the BFO:process class, which is the direct upper-level class of the corresponding GO class."@en ;
+                rdfs:label "developmental growth"@en ;
+                rdfs:seeAlso "http://purl.obolibrary.org/obo/GO_0040007; http://purl.obolibrary.org/obo/GO_0044848; http://purl.obolibrary.org/obo/GO_0032502." ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A process that increases an integrated living unit, such as an entire organism, part of an organism, or a cell, in size and mass, contributing to its progression over time from one condition to another."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom> "http://purl.obolibrary.org/obo/GO_0048589" ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000524
+:ClimOO_0000524 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000523 ;
+                rdfs:comment "From an agricultural point of view, this phase corresponds to the first 3 years when farmers wait to harvest the apple tree."@en ;
+                rdfs:label "apple tree growth process in orchard"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A growth process of an apple tree in an orchard."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000525
+:ClimOO_0000525 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000513 ;
+                rdfs:comment "From an agricultural point of view, production covers the steps from tree planting to apple harvesting and preparation for the market, and possibly fruit selling, according to the context."@en ;
+                rdfs:label "apple production process"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "An apple farming process that results in securing apples for retail and sale."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000526
+:ClimOO_0000526 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000523 ;
+                rdfs:comment "From an agricultural point of view, this phase includes fruit growing, tree preparation, and plant and fruit supervision."@en ;
+                rdfs:label "apple growth process in orchard"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A growth process of an apple in a orchard."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000527
+:ClimOO_0000527 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000513 ;
+                rdfs:label "apple tree planting process in orchard"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "An apple farming process that results in an apple plant being set into a portion of soil in an orchard."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom> "http://purl.obolibrary.org/obo/AGRO_00000231; http://purl.obolibrary.org/obo/AGRO_00000032"@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000528
+:ClimOO_0000528 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000513 ;
+                <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "apple harvest; apple harvesting"@en ;
+                rdfs:label "apple harvesting process in orchard"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "An apple farming process in which apples are gathered from an apple tree in an orchard. The moment and apple conditions and qualities for harvest are defined by the farmer, accroding ot experience and possible standards."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom> "http://purl.obolibrary.org/obo/AGRO_00000025" ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000529
+:ClimOO_0000529 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000513 ;
+                rdfs:label "apple tree binding process in orchard"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "An apple farming process in which training bands are employed to guide apple tree growth in an orchard."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000530
+:ClimOO_0000530 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000513 ;
+                <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "apple tree pruning"@en ;
+                rdfs:label "apple tree cutting in orchard"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "An apple farming process in which certain parts of an apple tree or plant, such as branches and leaves, are selectively removed in an orchard for agricultural purposes."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom> "http://purl.obolibrary.org/obo/AGRO_00000566" ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000531
+:ClimOO_0000531 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000513 ;
+                <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "apple tree fertilization; fertilizer application to apple tree in orchard"@en ;
+                rdfs:label "apple tree fertilizing process in orchard"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "An apple farming process in which an apple tree in an orchard is treated with fertilizers to promote plant growth and health."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom> "http://purl.obolibrary.org/obo/AGRO_01000000" ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000532
+:ClimOO_0000532 rdf:type owl:Class ;
+                rdfs:subClassOf <http://www.ontologyrepository.com/CommonCoreOntologies/CalendarYear> ;
+                <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "year of the tree"@en ;
+                rdfs:label "tree age"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A calendar year that extends from the plant's birth (germination or grafting in the nursery) to the moment when the plant's age is measured, via methods such as plant circumference measurements and counting the number of plant growth rings."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000533
+:ClimOO_0000533 rdf:type owl:Class ;
+                rdfs:subClassOf <http://www.ontologyrepository.com/CommonCoreOntologies/CalendarYear> ;
+                rdfs:label "year of tree plantation"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A calendar year that corresponds to the year during which an apple tree has been planted."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000534
+:ClimOO_0000534 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000540 ;
+                rdfs:label "agriplastic usage process for extending apple tree seasonality in agriculture"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A usage process of agriplastics in an apple orchard that aims to broaden the time period within which apples are produced and harvested in an apple orchard."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000535
+:ClimOO_0000535 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000540 ;
+                rdfs:label "agriplastic usage process for apple tree protection"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A usage process of agriplastics in an apple orchard that aims to safeguard apple trees from adverse occurrences, including climate events, plant diseases, or harm caused by animals."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000536
+:ClimOO_0000536 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000540 ;
+                rdfs:label "agriplastic usage process to reduce water demand in apple production"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A usage process of agriplastics in an apple orchard that aims to diminish the water used for agricultural purposes during the production of apples."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000537
+:ClimOO_0000537 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000540 ;
+                rdfs:label "agriplastic usage process in apple tree growth and management"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A usage process of agriplastics in an apple orchard that aims to guide, handle, control, and achieve adequate apple tree growth and development to optimize apple production and harvest."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000538
+:ClimOO_0000538 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000539 ;
+                rdfs:label "usage process of agriplastics in agriculture"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A usage process of agriplastic that occurs in an agricultural system."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000539
+:ClimOO_0000539 rdf:type owl:Class ;
+                rdfs:subClassOf <https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000222> ;
+                rdfs:label "usage process of agriplastics"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A usage process of some piece of synthetic polymer-based material that has, as the main participant, an agriplastic object."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000540
+:ClimOO_0000540 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000539 ;
+                rdfs:label "usage process of agriplastics in apple orchard"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A usage process of agriplastics in agriculture that occurs in an apple orchard."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000541
+:ClimOO_0000541 rdf:type owl:Class ;
+                rdfs:subClassOf <http://purl.obolibrary.org/obo/COB_0000035> ;
+                rdfs:label "process of reducing agriplastic usage in agriculture"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A completely executed planned process that results in the turning down of the usage of agriplastic in an agricultural system, generally in favor of alternatives, usually considered more environmentally friendly."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000542
+:ClimOO_0000542 rdf:type owl:Class ;
+                rdfs:subClassOf <https://w3id.org/climoo/climoo-plastico#ClimOO_0000467> ;
+                rdfs:label "process of reducing plastic pollution in agriculture"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A process of reducing plastic pollution that occurs in an agricultural system."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000543
+:ClimOO_0000543 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000542 ;
+                rdfs:label "process of reducing agriplastic pollution in agriculture"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A process of reducing plastic pollution in agriculture that limits the release and possible accumulation of agriplastic debris particles."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000544
+:ClimOO_0000544 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000543 ;
+                rdfs:label "process of reducing agriplastic pollution in apple orchard"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A process of reducing agriplastic pollution in agriculture that occurs in an apple orchard."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000545
+:ClimOO_0000545 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000479 ;
+                rdfs:label "plastic pollution in apple orchard"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A plastic pollution process in agriculture that occurs in an apple orchard."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000546
+:ClimOO_0000546 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000545 ;
+                rdfs:label "plastic pollution in soils of apple orchard"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A plastic pollution process in apple orchard that occurs in a portion of the soil of that apple orchard."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000547
+:ClimOO_0000547 rdf:type owl:Class ;
+                rdfs:subClassOf <https://www.w3id.org/climoo/climoo-picco#ClimOO_0000440> ;
+                rdfs:comment "e.g pH, porosity, soil bulk, soil structure, soil enzyme activity, soil water, microbial population, composition, and diversity."@en ;
+                rdfs:label "agriplastic debris-driven alteration process of agricultural soil properties in apple orchard"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A plastic debris-driven alteration process of soil properties that occurs in an agricultural soil of an apple orchard caused by some agriplastic debris particles."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000548
+:ClimOO_0000548 rdf:type owl:Class ;
+                rdfs:subClassOf <https://www.w3id.org/climoo/climoo-picco#ClimOO_0000425> ;
+                rdfs:label "biofilm formation process on agridebris particle in agricultural soils"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A biofilm formation process on soil plastic debris that occurs on agriplastic debris in agricultural soil."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000549
+:ClimOO_0000549 rdf:type owl:Class ;
+                rdfs:subClassOf <https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000203> ;
+                rdfs:label "release process of agriplastic debris-carried pollutants in orchards"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A release process of plastic debris-carried pollutants into the environment that occurs in an orchard. Debris and pollutant molecules can already be in the orchard or originate from outside."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000550
+:ClimOO_0000550 rdf:type owl:Class ;
+                rdfs:subClassOf <https://www.w3id.org/climoo/climoo-picco#ClimOO_0000422> ;
+                rdfs:comment "Microplastic particles can derive from agriplastics or other plastic sources."@en ;
+                rdfs:label "apple tree uptake process of microplastic debris in orchards"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A plant uptake process of microplastics that occurs in an orchard, and microplastic particles enter an apple tree."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000551
+:ClimOO_0000551 rdf:type owl:Class ;
+                rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000015> ;
+                rdfs:label "plastic debris-driven alteration process of apple tree growth in orchard"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A process that occurs in an orchard caused by some plastic debris and has as its output an apple tree part of the orchard exhibiting a different growth pattern."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000552
+:ClimOO_0000552 rdf:type owl:Class ;
+                rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000015> ;
+                rdfs:label "aeration agricultural soil pore obstruction process by agripastic debris"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A process that has as its output a portion of agricultural soil with some aeration pore spaces blocked by some agriplastic debris."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000553
+:ClimOO_0000553 rdf:type owl:Class ;
+                rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000015> ;
+                rdfs:label "agricultural soil nutrient cycling impediment process"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A process that has as its output a portion of agricultural soil where nutrients, such as carbon and nitrogen, cannot cycle (participate in a cycling process)."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000554
+:ClimOO_0000554 rdf:type owl:Class ;
+                rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000015> ;
+                <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> "animal entrapment with agriplastics in apple orchards"@en ;
+                rdfs:label "animal entanglement process with agriplastics in apple orchards"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A process that occurs in an apple orchard and results in animals being entrapped in agriplastic objects or related debris."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000555
+:ClimOO_0000555 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000096 ;
+                rdfs:label "agriplastic film"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "An agriplastic object that is a laminar sheet employed for different agricultural purposes, including plant protection, sillage, and mulching."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000556
+:ClimOO_0000556 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000555 ;
+                rdfs:label "apple orchard reflective film"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "An agriplastic film that is used in apple orchards to redirect light to the target tree zones to vary apple coloration, according to certain stakeholder purposes."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000557
+:ClimOO_0000557 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000096 ;
+                rdfs:comment "Apple orchard: Spindle training system(practice); the system includes the use of binding objects to guide tree growth; a part of the step is plastic binding (other steps: cutting the tree)."@en ;
+                rdfs:label "agriplastic binding object for agricultural plant growth and training"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "An agriplastic object that is used within an agricultural system to attach and connect plants to supportive structures to guide and train the plant growth according to some agricultural purposes."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000558
+:ClimOO_0000558 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000096 ;
+                rdfs:comment "Details of different types of compositions, properties, and characteristics can be added as needed."@en ;
+                rdfs:label "agriplastic net"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "An agriplastic object that is constituted by threads connected together with each other, in a woven or knitted way, forming a regular porous geometric structure that allows fluids (gases and liquids) to pass through. A net is used for different agricultural purposes, including plant protection and harvest."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom> "10.13031/2013.25368" ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000559
+:ClimOO_0000559 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000558 ;
+                rdfs:comment "The net is applicable to all trees of an orchard or to a single one."@en ;
+                rdfs:label "agriplastic net for protection from meteorological hazards"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "An agriplastic net that is used to protect cultivations from possible hail and weather threats, including wind, hail, snow, frost, and rain within an agricultural system."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000560
+:ClimOO_0000560 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000558 ;
+                rdfs:comment "The net is applicable to all trees of an orchard or to a single one."@en ;
+                rdfs:label "agriplastic net for protection from animals"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "An agriplastic net that is used to protect cultivations from damage from animals, including insects, birds, rabbits, and mice, within an agricultural system."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000561
+:ClimOO_0000561 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000558 ;
+                rdfs:comment "To make borders among orchards; to stop and cluster liquid fertilizing on one specific orchard and not make it spread around; very fine grain in the nets, used if there is not space for siepi (other tree, no fruit trees)."@en ;
+                rdfs:label "agriplastic net for fertilizer management in apple orchards"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "An agriplastic net that is used to guide fertilization and cluster it to (portions of) orchards of interest, within an agricultural system, according to some stakeholder purposes. It is usually a very fine-mesh net, used to divide orchards when bush hedges are not present."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000562
+:ClimOO_0000562 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000096 ;
+                rdfs:comment "Details about the different types of systems can be added as needed."@en ;
+                rdfs:label "drainage agriplastic pipe"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "An agriplastic object that is a long tubular structure used to remove water from a desired location, within an agricultural system, according to some stakeholder purposes."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom> "https://www.britannica.com/topic/drainage" ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000563
+:ClimOO_0000563 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000588 ;
+                <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "irrigation agriplastic tube"@en ;
+                rdfs:label "irrigation agriplastic pipe"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "An agriplastic object for irrigation that is a long tubular structure used to move and distribute water from a source to a desired location, usually fields, within an agricultural system, according to some stakeholder purposes."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000564
+:ClimOO_0000564 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000096 ;
+                rdfs:label "agriplastic tube for pheromone distribution"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "An agriplastic object that is a tubular structure used to dispense and manage pheromones in agricultural fields to interfere with pest reproductive behaviors and safeguarde cultivations present in those fields."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000565
+:ClimOO_0000565 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000096 ;
+                rdfs:label "fertilizer agriplastic tube"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "An agriplastic object that is a tubular structure used to contain and distribute fertilizers on cultivations in agricultural fields."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000566
+:ClimOO_0000566 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000096 ;
+                <http://purl.org/dc/terms/source> "https://doi.org/10.4060/cb7856en; https://naturalresources.extension.iastate.edu/post/tree-cages-tree-shelters-very-quick-overview-pros-and-cons; https://assets.publishing.service.gov.uk/media/5ef9b9ded3bf7f76970eed47/Tree_shelters_guide.pdf" ;
+                <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "tree guard"@en ;
+                rdfs:label "tree guard agriplastic object"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "An agriplastic object that is a holed tubular lamina to be wrapped around the base of newly planted trees (mono-use) to support their establishment and growth, and protect them from potential damage, including weather and animal damage. They are fixed to plants usually with clips, ties, or cables."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000567
+:ClimOO_0000567 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000096 ;
+                <http://purl.org/dc/terms/source> "https://doi.org/10.4060/cb7856en; https://naturalresources.extension.iastate.edu/post/tree-cages-tree-shelters-very-quick-overview-pros-and-cons; https://assets.publishing.service.gov.uk/media/5ef9b9ded3bf7f76970eed47/Tree_shelters_guide.pdf" ;
+                <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> "tree tube agriplastic object; tree tube; tree protection tube"@en ;
+                rdfs:label "tree shelter agriplastic object"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "An agriplastic object that is a semi-rigid tubular lamina to be wrapped around the base of newly planted trees (mono-use) to support their establishment and growth, and protect them from potential damage, including weather and animal damage. It also generates a controlled microclimate for the plant. It is usually fixed to plants with clips, ties, or cables."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000568
+:ClimOO_0000568 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000096 ;
+                <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "plastic box for fertilizer"@en ;
+                rdfs:label "agriplastic pot for fertilizer"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A box that is an agriplastic object and contains fertilizers for use in agriculture."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000569
+:ClimOO_0000569 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000096 ;
+                rdfs:label "agriplastic box"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A box that is an agriplastic object and is used primarily for agricultural purposes."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000570
+:ClimOO_0000570 rdf:type owl:Class ;
+                rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000031> ;
+                <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "packaging"@en ;
+                rdfs:label "packaging object"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A product that is designed to envelop and contain a product or commodity."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom> "http://addictovocab.org/ADDICTO_0001235" ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000571
+:ClimOO_0000571 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000570 ;
+                rdfs:label "apple agriplastic packaging object"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "An agriplastic object that is designed to contain apples for selling."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000572
+:ClimOO_0000572 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000096 ;
+                <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "product, agriplastics"@en ;
+                rdfs:label "agriplastic product"@en ;
+                rdfs:seeAlso "https://w3id.org/pmd/co/PMD_0000833; http://purl.obolibrary.org/obo/ENVO_01000993; http://purl.obolibrary.org/obo/ENVO_00003074; https://journals.sagepub.com/doi/abs/10.3233/AO-190210" ;
+                <http://www.w3.org/2004/02/skos/core#definition> "An agriplastic object that is an output of a manufacturing process of a piece of synthetic polymer-based material."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000573
+:ClimOO_0000573 rdf:type owl:Class ;
+                rdfs:subClassOf <http://purl.obolibrary.org/obo/IAO_0020000> ;
+                rdfs:label "agriplastic product name"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "An identifier that provides the commercial designation of an agriplastic product, as by the retailer or manufacturer."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000574
+:ClimOO_0000574 rdf:type owl:Class ;
+                rdfs:subClassOf <http://www.ontologyrepository.com/CommonCoreOntologies/InformationContentEntity> ;
+                rdfs:label "agriplastic product price"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "An information content entity that is about the amount of money associated with, and that a consumer is willing to pay for, a unit of agriplastic product(s)."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom> "http://www.eionet.europa.eu/gemet/concept/6602" ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000575
+:ClimOO_0000575 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000574 ;
+                rdfs:label "standardized agriplastic product price - LRC"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "An agriplastic product price that has been normalized for comparison purposes by the Laimburg Research Centre (LRC)."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000576
+:ClimOO_0000576 rdf:type owl:Class ;
+                rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000202> ;
+                rdfs:label "agriplastic product lifespan"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A temporal interval within which an agriplastic product maintains its functionalities for the intended applications, according to manufacturer specifications."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000577
+:ClimOO_0000577 rdf:type owl:Class ;
+                rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000182> ;
+                rdfs:label "agriplastic product history"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A history of an agriplastic product."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000578
+:ClimOO_0000578 rdf:type owl:Class ;
+                rdfs:subClassOf <http://www.ontologyrepository.com/CommonCoreOntologies/DescriptiveInformationContentEntity> ;
+                rdfs:label "agriplastic product duration of application"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A descriptive information content entity that describes the time interval within which an agriplastic product can be employed in its typical intended applications before being damaged or deteriorating. It generically depends on the material composition of the agriplastic product."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000579
+:ClimOO_0000579 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000578 ;
+                rdfs:label "long-term agriplastic product duration of application"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "An agriplastic product duration of application that describes a time interval longer than one year (counted from the first product deployment for its designed application; the product is in good factory-fresh condition and not damaged). Reference: LRC."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000580
+:ClimOO_0000580 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000578 ;
+                rdfs:label "short-term agriplastic product duration of application"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "An agriplastic product duration of application that describes a time interval of less than one year, usully one apple growing season (counted from the first product deployment for its designed application; the product is in good factory-fresh condition and not damaged). Reference: LRC."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000581
+:ClimOO_0000581 rdf:type owl:Class ;
+                rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000016> ;
+                rdfs:label "agriplastic product disposition to single-use"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A disposition of an agriplastic product to be used a single time before being damaged or deteriorating in some usage process(es) of such product in its typical intended applications."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000582
+:ClimOO_0000582 rdf:type owl:Class ;
+                rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000016> ;
+                rdfs:label "agriplastic product disposition to multi-use"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A disposition of an agriplastic product to be used a multiple times before being damaged or deteriorating in some usage process(es) of such product in its typical intended applications."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000583
+:ClimOO_0000583 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000096 ;
+                rdfs:label "agriplastic object for agricultural weed management"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "An agriplastic object that is used in an agricultural system for the purpose of cutting weeds or grass from the surface of an agricultural field."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000584
+:ClimOO_0000584 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000096 ;
+                rdfs:label "agriplastic object for harvest and storage"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "An agriplastic object that is an agriplastic object for harvest or an agriplastic object for storage or both."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000585
+:ClimOO_0000585 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000096 ;
+                rdfs:label "agriplastic object for harvest"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "An agriplastic object that is used in an agricultural system for the purpose of gathering agricultural produces from the related sources, such as fields and trees."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000586
+:ClimOO_0000586 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000096 ;
+                rdfs:label "agriplastic object for storage"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "An agriplastic object that is used in an agricultural system for the purposes of saving and accumulating agricultural items, including food products and instruments."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000587
+:ClimOO_0000587 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000096 ;
+                rdfs:label "agriplastic object for irrigation"@en;
+                <http://www.w3.org/2004/02/skos/core#definition> "An agriplastic object that is used in an agricultural system for the purpose of moving and distributing water across fields and infrastructure according to some stakeholder objectives."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000588
+:ClimOO_0000588 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000096 ;
+                rdfs:label "agriplastic object for crop covering and protection"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "An agriplastic object that is used in an agricultural system for the purpose of safeguarding relevant apple trees from adverse occurrences, including climate events, plant diseases, or harm caused by animals."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000589
+:ClimOO_0000589 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000096 ;
+                rdfs:label "agriplastic object for plant support"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "An agriplastic object that is used in an agricultural system for the purpose of managing and guiding agricultural plant establishment and growth according to some stakeholder objectives."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000590
+:ClimOO_0000590 rdf:type owl:Class ;
+                rdfs:subClassOf <https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000246> ;
+                rdfs:label "portion of Terralix® material"@en ;
+                rdfs:seeAlso "https://agroplast.it/en/products/bio-tube-made-of-terralix-for-vine-tying-333; https://www.pefc.org/" ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A portion of polymer-based material that is biodegradable, bio-based, and primarily constituted by polyphenols, lignin, and wood fibres derived from forest waste from sustainably managed forests (PEFC), including tree bark. TERRALIX® is produced by SABIOMATERIALS."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom> "https://agroplast.it/en/products/bio-tube-made-of-terralix-for-vine-tying-333" ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000591
+:ClimOO_0000591 rdf:type owl:Class ;
+                rdfs:subClassOf <https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000246> ;
+                rdfs:label "portion of Mater-Bi material"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A portion of polymer-based material that is composed of compostable and bio-based polymers, primarily derived from starches and vegetable oils. Mater-Bi identifies a family of compostable and bio-based polymeric materials developed by Novamont."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom> "https://materbi.com/en/" ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000592
+:ClimOO_0000592 rdf:type owl:Class ;
+                rdfs:subClassOf <https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000246> ;
+                <http://purl.org/dc/terms/source> "https://www.specialchem.com/plastics/supplier/trinseo/apinat; https://daire.it/prodotti/apinat/; https://www.trinseo.com/solutions/bio-based-bio-attributed-and-bio-degradable-plastics/apinat-bio-biodegradable-tpc-compounds" ;
+                rdfs:label "portion of Apinat® material"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A portion of thermoplastic polymer-based material that is composed of biodegradable, renewable (variable proportion of total material composition), and bio-based polymers, primarily distinguished in rigid (35–78 Shore D) and soft (55–90 Shore A) based on the degree of material hardness. Apinat® identifies a family of biodegradable, renewable, and bio-based materials developed by Trinseo."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000593
+:ClimOO_0000593 rdf:type owl:Class ;
+                rdfs:subClassOf <https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000246> ;
+                <http://purl.org/dc/terms/source> "https://doi.org/10.1016/j.indcrop.2023.117904" ;
+                rdfs:label "portion of cellulose"@en ;
+                rdfs:seeAlso "http://opendata.inrae.fr/PO2/Ontology/TransformON/c_H9uktr" ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A portion of polymer-based material that is composed mainly of cellulose polymer molecules."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000594
+:ClimOO_0000594 rdf:type owl:Class ;
+                rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_33582> ;
+                rdfs:comment "We recreated this class on the basis of the corresponding ChEBI class. ChEBI axiomatizes upper-level classes of this class with respect to the carbon atom class, which presents axioms beyond the purposes of ClimOO. We envision discussions with subject matter experts. This class may be deprecated in favor of a more general class implemented in ChEBI after discussions. We subsume this class under the ChEBI carbon group molecular entity class, which is a direct upper-level class of the corresponding ChEBI class, and it is imported in ClimOO-SDC2."@en ;
+                rdfs:label "volatile organic compounds"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A carbon group molecular entity that is an organic compound with an initial boiling point less than or equal to 250 °C (482 °F). The measurement is done at the standard atmospheric pressure of 101.3 kPa."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom> "http://purl.obolibrary.org/obo/CHEBI_134179" ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000595
+:ClimOO_0000595 rdf:type owl:Class ;
+                rdfs:subClassOf <https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000211> ;
+                rdfs:label "portion of plant-based polymeric material"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A portion of synthetic polymer-based material that is composed of biobased polymer molecules derived from plants."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000596
+:ClimOO_0000596 rdf:type owl:Class ;
+                rdfs:subClassOf <https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000211> ;
+                rdfs:label "portion of synthetic polymer-based material containing grape seed granules"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A portion of synthetic polymer-based material that has part some granules derived from grape seed residues."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000597
+:ClimOO_0000597 rdf:type owl:Class ;
+                rdfs:subClassOf <https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000211> ;
+                rdfs:label "portion of synthetic biodegradable polymer-based and grape seed or pomace residue-derived material"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A portion of biodegradable bio-based polymeric material that is primarily constituted by grape seed and/or grape pomace residues derived from winery by-products, combined with biodegradable bio-based polymers from renewable feedstocks."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000598
+:ClimOO_0000598 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000512 ;
+                rdfs:label "viticulture"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "An agricultural process where grapes are grown for human consumption."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom> "http://aims.fao.org/aos/agrovoc/c_8277" ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000599
+:ClimOO_0000599 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000512 ;
+                rdfs:label "thinning"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "An agricultural process where selected parts of a plant are removed, usually damaged, diseased, non-productive, or dead parts, to improve plant health, reduce the risk of branch falling, manage nursery specimens for transplantation, or increase produce yield or quality, according to some stakeholder goals."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom> "http://purl.obolibrary.org/obo/AGRO_00000027" ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000600
+:ClimOO_0000600 rdf:type owl:Class ;
+                rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000030> ;
+                rdfs:comment "Specific subclasses for specific types of fibers can be created as needed."@en ;
+                rdfs:label "fiber object"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "An object primarily composed of fibers."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000601
+:ClimOO_0000601 rdf:type owl:Class ;
+                rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000030> ;
+                rdfs:label "metallic object"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "An object primarily composed of metal."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000602
+:ClimOO_0000602 rdf:type owl:Class ;
+                rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000030> ;
+                rdfs:label "aluminum object"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "An object primarily composed of aluminium."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000603
+:ClimOO_0000603 rdf:type owl:Class ;
+                rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000030> ;
+                rdfs:label "paper object"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "An object primarily composed of paper."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000604
+:ClimOO_0000604 rdf:type owl:Class ;
+                rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000030> ;
+                rdfs:label "cellulose object"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "An object primarily composed of cellulose."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000605
+:ClimOO_0000605 rdf:type owl:Class ;
+                rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000030> ;
+                rdfs:label "cotton object"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "An object primarily composed of cotton."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000606
+:ClimOO_0000606 rdf:type owl:Class ;
+                rdfs:subClassOf <https://www.w3id.org/climoo/climoo-sdc2#ClimOO_0000400> ;
+                rdfs:label "upper soil layer"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A layer that is the uppermost part of a soil layer."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000607
+:ClimOO_0000607 rdf:type owl:Class ;
+                rdfs:label "economic viability"@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional> .
+
+
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000608
+:ClimOO_0000608 rdf:type owl:Class ;
+                rdfs:subClassOf <http://opendata.inrae.fr/PO2/Ontology/TransformON/c_1lRh7b> ;
+                <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "cotton"@en ;
+                rdfs:label "cotton fiber"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A fiber obtained from plants of the genus Gossypium."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom> "http://www.eionet.europa.eu/gemet/concept/1827" .
 
 
 #################################################################
