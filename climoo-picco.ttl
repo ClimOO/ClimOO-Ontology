@@ -24,8 +24,512 @@ Documentation webpage: https://www.w3id.org/climoo/docs"""@en ,
                                                                                        "The most recent version of this file is available on GitHub at the following link: https://www.w3id.org/climoo/climoo-picco."@en .
 
 #################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym
+<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> rdf:type owl:AnnotationProperty .
+
+
+###  https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom
+<https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom> rdf:type owl:AnnotationProperty .
+
+
+###  https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity
+<https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
 #    Classes
 #################################################################
+
+###  http://purl.obolibrary.org/obo/BFO_0000015
+<http://purl.obolibrary.org/obo/BFO_0000015> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000016
+<http://purl.obolibrary.org/obo/BFO_0000016> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000019
+<http://purl.obolibrary.org/obo/BFO_0000019> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/GO_0008150
+<http://purl.obolibrary.org/obo/GO_0008150> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/PATO_0000125
+<http://purl.obolibrary.org/obo/PATO_0000125> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/PATO_0000973
+<http://purl.obolibrary.org/obo/PATO_0000973> rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/obo/PATO_0001018
+<http://purl.obolibrary.org/obo/PATO_0001018> rdf:type owl:Class .
+
+
+###  https://w3id.org/pmd/co/PMD_0020115
+<https://w3id.org/pmd/co/PMD_0020115> rdf:type owl:Class .
+
+
+###  https://www.w3id.org/climoo/climoo-picco#ClimOO_0000417
+:ClimOO_0000417 rdf:type owl:Class ;
+                rdfs:subClassOf <https://www.w3id.org/climoo/climoo-sdc2#ClimOO_0000304> ;
+                rdfs:comment "Subclasses for specific subjects of interest, such as fauna, plants, humans, etc., can be added as needed." ;
+                rdfs:label "process of increasing water scarcity" ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A climate system process that leads to a widening of the gap between the demand and supply of water with respect to a subject of interest." ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom> "https://unterm.un.org/unterm2/en/view/da8312f8-9e7a-44dc-a561-17480161930b" ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-picco#ClimOO_0000418
+:ClimOO_0000418 rdf:type owl:Class ;
+                rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000015> ;
+                rdfs:comment "This process can be seen at different levels of granularity, such as molecular, biological, and physiological levels. Definition focus can slightly change. We tried to accommodate possible views here." ;
+                rdfs:label "organism respiration process" ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A process that allows living organisms to produce energy and convert organic matter, involving the consumption of molecular oxygen captured from the organism's surroundings and the release of carbon dioxide." ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom> "https://unterm.un.org/unterm2/en/view/f9a1c142-43f5-4f07-b518-baacd482b234; http://opendata.inra.fr/anaeeThes/c_1406131609604" ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-picco#ClimOO_0000419
+:ClimOO_0000419 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000418 ;
+                rdfs:label "microbial respiration process" ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A respiration process that has, as main participants, some microorganisms." ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-picco#ClimOO_0000420
+:ClimOO_0000420 rdf:type owl:Class ;
+                rdfs:subClassOf <http://purl.obolibrary.org/obo/PATO_0000973> ;
+                rdfs:label "soil porosity" ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A porosity of some portion of soil." ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom> "http://purl.obolibrary.org/obo/ENVO_09200004" ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-picco#ClimOO_0000421
+:ClimOO_0000421 rdf:type owl:Class ;
+                rdfs:subClassOf <https://www.w3id.org/climoo/climoo-sdc2#Plant_Physical_Process> ;
+                rdfs:label "plant uptake of microplastics" ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A plant physical process where some microplastic debris particles enter a plant." ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-picco#ClimOO_0000422
+:ClimOO_0000422 rdf:type owl:Class ;
+                rdfs:subClassOf <https://w3id.org/pmd/co/PMD_0020115> ;
+                rdfs:label "plastic aerosol" ;
+                <http://www.w3.org/2004/02/skos/core#definition> "An aerosol composed of plastic debris particles." ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-picco#ClimOO_0000423
+:ClimOO_0000423 rdf:type owl:Class ;
+                rdfs:subClassOf <https://www.w3id.org/climoo/climoo-sdc2#Emission_of_Greenhouse_Gas> ;
+                rdfs:label "plastic debris-induced GHG emission process" ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A process of emission of greenhouse gas caused by plastic debris. Plastic debris may induce GHG emissions or alter GHG emission patterns." ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-picco#ClimOO_0000424
+:ClimOO_0000424 rdf:type owl:Class ;
+                rdfs:subClassOf <https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000265> ;
+                rdfs:label "airborne plastic deposition" ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A transportation process during which micro-and nano-plastic debris particles suspended in the atmosphere settle on the oceans or land, via direct surface delivery (dry deposition) or via rain and snow (wet deposition)." ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom> "10.1371/journal.pone.0199241; 10.3390/ijerph191912252" ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-picco#ClimOO_0000425
+:ClimOO_0000425 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000427 ;
+                rdfs:comment "Reference to microorganism colonization and biofilm formation phases can be added as needed." ;
+                rdfs:label "biofilm formation process on soil plastic debris" ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A biofilm formation process that occurs on plastic debris in soil." ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-picco#ClimOO_0000426
+:ClimOO_0000426 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000427 ;
+                rdfs:label "biofilm formation process on plastic debris" ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A biofilm formation process that occurs on plastic debris." ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-picco#ClimOO_0000427
+:ClimOO_0000427 rdf:type owl:Class ;
+                rdfs:subClassOf <http://purl.obolibrary.org/obo/GO_0008150> ;
+                rdfs:label "biofilm formation process" ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A biological process in which microorganisms, including bacteria and microalgae, grow, adhering to each other and to a surface in a layered structure, due to the production of an extracellular polymeric substance (EPS) matrix, resulting in changes in the microorganisms' growth rate and gene transcription." ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom> "10.1007/s42770-021-00624-x; http://purl.obolibrary.org/obo/GO_0042710; https://www.sciencedirect.com/topics/engineering/biofilm-formation" ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-picco#ClimOO_0000428
+:ClimOO_0000428 rdf:type owl:Class ;
+                rdfs:subClassOf <https://www.w3id.org/climoo/climoo-sdc2#Emission_of_Non-CO2_Greenhouse_Gas> ;
+                rdfs:label "soil CH4 emission process" ;
+                <http://www.w3.org/2004/02/skos/core#definition> "An emission process of methane that occurs from the soil." ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-picco#ClimOO_0000429
+:ClimOO_0000429 rdf:type owl:Class ;
+                rdfs:subClassOf <https://www.w3id.org/climoo/climoo-sdc2#Emission_of_Non-CO2_Greenhouse_Gas> ;
+                rdfs:label "soil N2O emission process" ;
+                <http://www.w3.org/2004/02/skos/core#definition> "An emission process of nitrous oxide that occurs from the soil." ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-picco#ClimOO_0000430
+:ClimOO_0000430 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000428 ;
+                rdfs:label "plastic debris-driven soil CH4 emission process" ;
+                <http://www.w3.org/2004/02/skos/core#definition> "An emission process of methane that occurs from soil when some soil plastic debris is present." ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-picco#ClimOO_0000431
+:ClimOO_0000431 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000429 ;
+                rdfs:label "plastic debris-driven soil N2O emission process" ;
+                <http://www.w3.org/2004/02/skos/core#definition> "An emission process of nitrous oxide that occurs from soil when some soil plastic debris is present." ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-picco#ClimOO_0000432
+:ClimOO_0000432 rdf:type owl:Class ;
+                rdfs:subClassOf <https://www.w3id.org/climoo/climoo-sdc2#Plant_Physical_Process> ;
+                rdfs:label "weed and crop competition process" ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A plant physical process occurring in an agricultural field in which weeds and crops interact to contend for the same resources for survival, primarily water, nutrients, light, and carbon dioxide, reducing agricultural outputs." ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom> "http://aims.fao.org/aos/agrovoc/c_35265; see also: https://lod.nal.usda.gov/nalt/30169" ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-picco#ClimOO_0000433
+:ClimOO_0000433 rdf:type owl:Class ;
+                rdfs:subClassOf <http://purl.obolibrary.org/obo/PATO_0000125> ;
+                rdfs:label "biomass - quality" ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A mass that inheres in a bearer in virtue of the total amount of biological entities that are part of such bearer." ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom> "http://opendata.inrae.fr/PO2/Ontology/TransformON/c_5a4AaY" ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-picco#ClimOO_0000434
+:ClimOO_0000434 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000433 ;
+                rdfs:label "microbial biomass - quality" ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A biomass that inheres in a bearer in virtue of the total amount of microorganisms that are part of such bearer." ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom> "http://opendata.inrae.fr/PO2/Ontology/TransformON/c_NtH53B" ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-picco#ClimOO_0000435
+:ClimOO_0000435 rdf:type owl:Class ;
+                rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000015> ;
+                rdfs:label "soil aeration" ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A process that leads to the exchange of gases, primarily CO2 and O2, between a portion of soil and a portion of the atmosphere nearby." ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-picco#ClimOO_0000436
+:ClimOO_0000436 rdf:type owl:Class ;
+                rdfs:subClassOf <http://purl.obolibrary.org/obo/PATO_0001018> ;
+                rdfs:comment "This wants to be a generalization of the PATO class." ;
+                rdfs:label "structure - quality" ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A morphology quality inhering in a bearer by virtue of the bearer's relative position, shape, arrangements and connectivity of a bearer's various parts; the pattern underlying its form." ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom> "http://purl.obolibrary.org/obo/PATO_0000141" ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-picco#ClimOO_0000437
+:ClimOO_0000437 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000436 ;
+                rdfs:label "soil structure" ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A structure that inheres in a portion of soil." ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-picco#ClimOO_0000438
+:ClimOO_0000438 rdf:type owl:Class ;
+                rdfs:subClassOf <https://www.w3id.org/climoo/climoo-sdc2#Biodiversity> ;
+                rdfs:comment "We envision implementations of this class with respect to different microbial populations, alternative interpretations of biodiversity, and related indexes." ;
+                rdfs:label "soil microbial diversity" ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A biodiversity of microorganisms in a portion of soil." ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-picco#ClimOO_0000439
+:ClimOO_0000439 rdf:type owl:Class ;
+                rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000019> ;
+                rdfs:label "soil microbial composition" ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A quality of soil given by the presence of resident microorganisms." ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-picco#ClimOO_0000440
+:ClimOO_0000440 rdf:type owl:Class ;
+                rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000015> ;
+                rdfs:comment "This class and the related subclasses are provisional. As soon as a solid representation of causation is available, we envision implementing this model. Subclasses for specific types of alterations can be added as needed." ;
+                rdfs:label "plastic debris-driven alteration process of soil properties" ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A process that occurs in a soil caused by some plastic debris and has as its output a portion of soil exhibiting different soil properties." ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-picco#ClimOO_0000441
+:ClimOO_0000441 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000440 ;
+                rdfs:label "plastic debris-driven alteration process of soil microbe metabolism" ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A process that occurs in soil caused by some plastic debris and has as its output the resident microbial communities with a different metabolism." ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-picco#ClimOO_0000442
+:ClimOO_0000442 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000441 ;
+                rdfs:label "plastic debris-driven alteration process of soil microbial biomass" ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A process that occurs in soil caused by some plastic debris and has as its output a portion of soil with a different microbial biomass." ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-picco#ClimOO_0000443
+:ClimOO_0000443 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000442 ;
+                rdfs:label "plastic debris-driven alteration process of soil microbial community composition" ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A process that occurs in soil caused by some plastic debris and has as its output a portion of soil with a different composition of the resident microbial communities." ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-picco#ClimOO_0000444
+:ClimOO_0000444 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000443 ;
+                rdfs:label "plastic debris-driven alteration process of soil porosity" ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A process that occurs in soil caused by some plastic debris and has as its output a portion of soil with a different porosity." ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-picco#ClimOO_0000445
+:ClimOO_0000445 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000444 ;
+                rdfs:label "plastic debris-driven alteration process of soil pore spaces for aeration" ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A plastic debris-driven alteration process of soil structure that has as its output a portion of soil with a different structure of the aeration pore spaces." ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-picco#ClimOO_0000446
+:ClimOO_0000446 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000445 ;
+                rdfs:label "plastic debris-driven alteration process of soil structure" ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A process that occurs in soil caused by some plastic debris and has as its output a portion of soil with a different structure." ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-picco#ClimOO_0000447
+:ClimOO_0000447 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000446 ;
+                rdfs:label "plastic debris-driven alteration process of soil pH" ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A process that occurs in soil caused by some plastic debris and has as its output a portion of soil with a different pH." ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-picco#ClimOO_0000448
+:ClimOO_0000448 rdf:type owl:Class ;
+                rdfs:subClassOf <https://www.w3id.org/climoo/climoo-sdc2#Emission_of_Greenhouse_Gas> ;
+                rdfs:label "release process of GHG emissions from plastic degradation process" ;
+                <http://www.w3.org/2004/02/skos/core#definition> "An emission process of greenhouse gases that occurs during some plastic degradation processes. The spatio-temporal region occupied by the first process is part of that occupied by the second." ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-picco#ClimOO_0000449
+:ClimOO_0000449 rdf:type owl:Class ;
+                rdfs:subClassOf <https://www.w3id.org/climoo/climoo-sdc2#Emission_of_CO2> ;
+                rdfs:label "release process of CO2 gas emissions from plastic degradation process" ;
+                <http://www.w3.org/2004/02/skos/core#definition> "An emission process of CO2 that occurs during some plastic degradation processes. The spatio-temporal region occupied by the first process is part of that occupied by the second." ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-picco#ClimOO_0000450
+:ClimOO_0000450 rdf:type owl:Class ;
+                rdfs:subClassOf <https://www.w3id.org/climoo/climoo-sdc2#Emission_of_Non-CO2_Greenhouse_Gas> ;
+                rdfs:label "release process of non-CO2 gas emissions from plastic degradation process" ;
+                <http://www.w3.org/2004/02/skos/core#definition> "An emission of non-CO2 greenhouse gas that occurs during some plastic degradation processes. The spatio-temporal region occupied by the first process is part of that occupied by the second." ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-picco#ClimOO_0000451
+:ClimOO_0000451 rdf:type owl:Class ;
+                rdfs:subClassOf <https://www.w3id.org/climoo/climoo-sdc2#Emission_of_Greenhouse_Gas> ;
+                rdfs:label "release process of GHG emissions from plastic debris degradation process" ;
+                <http://www.w3.org/2004/02/skos/core#definition> "An emission of greenhouse gas process that occurs during the degradation process of a plastic debris." ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-picco#ClimOO_0000452
+:ClimOO_0000452 rdf:type owl:Class ;
+                rdfs:subClassOf <https://www.w3id.org/climoo/climoo-sdc2#Emission_of_CO2> ;
+                rdfs:label "release process of CO2 gas emissions from plastic debris degradation process" ;
+                <http://www.w3.org/2004/02/skos/core#definition> "An emission of CO2 that occurs during the degradation process of a plastic debris." ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-picco#ClimOO_0000453
+:ClimOO_0000453 rdf:type owl:Class ;
+                rdfs:subClassOf <https://www.w3id.org/climoo/climoo-sdc2#Emission_of_Non-CO2_Greenhouse_Gas> ;
+                rdfs:label "release process of non-CO2 gas emissions from plastic debris degradation process" ;
+                <http://www.w3.org/2004/02/skos/core#definition> "An emission of non-CO2 greenhouse gas that occurs during the degradation process of plastic debris." ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-picco#ClimOO_0000454
+:ClimOO_0000454 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000451 ;
+                rdfs:label "release process of GHG emissions from soil plastic debris degradation process" ;
+                <http://www.w3.org/2004/02/skos/core#definition> "release process of GHG emission from a degradation process of plastic debris that is in or on a portion of soil." ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-picco#ClimOO_0000455
+:ClimOO_0000455 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000452 ;
+                rdfs:label "release process of CO2 gas emissions from soil plastic debris degradation process" ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A release process of CO2 gas emission from a degradation process of plastic debris that is in or on a portion of soil." ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-picco#ClimOO_0000456
+:ClimOO_0000456 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000453 ;
+                rdfs:label "release process of non-CO2 gas emissions from soil plastic debris degradation process" ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A release process of GHG emissions from a degradation process of plastic debris that is in or on a portion of soil." ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-picco#ClimOO_0000457
+:ClimOO_0000457 rdf:type owl:Class ;
+                rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000015> ;
+                rdfs:comment "This terminology is usually employed with respect to animals. We created subclasses accordingly." ;
+                rdfs:label "plastic debris aerosol inhalation process" ;
+                rdfs:seeAlso <http://purl.obolibrary.org/obo/ECTO_0700002> ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A process that results in the organism's intake of plastic debris particles that are suspended in an aerosol via the organism's (upper) respiratory tract." ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom> "http://purl.obolibrary.org/obo/NCIT_C95464" ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-picco#ClimOO_0000458
+:ClimOO_0000458 rdf:type owl:Class ;
+                rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000015> ;
+                rdfs:comment "This terminology is usually employed with respect to animals. We created subclasses accordingly." ;
+                rdfs:label "plastic debris ingestion process" ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A process that results in the organism's intake of plastic debris particles via the organism's (upper) digestive tract." ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-picco#ClimOO_0000459
+:ClimOO_0000459 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000458 ;
+                rdfs:label "animal ingestion of plastic debris" ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A plastic debris ingestion process that has, as main participant, an animal." ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-picco#ClimOO_0000460
+:ClimOO_0000460 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000457 ;
+                rdfs:label "animal inhalation of plastic debris aerosol" ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A plastic debris aerosol inhalation process that has, as main participant, an animal." ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-picco#ClimOO_0000461
+:ClimOO_0000461 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000460 ;
+                rdfs:label "human inhalation of plastic debris aerosol" ;
+                <http://www.w3.org/2004/02/skos/core#definition> "An animal inhalation of plastic debris aerosol that has, as main participant, a human." ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-picco#ClimOO_0000462
+:ClimOO_0000462 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000459 ;
+                rdfs:label "human ingestion of plastic debris" ;
+                <http://www.w3.org/2004/02/skos/core#definition> "An animal ingestion of plastic debris that has, as main participant, a human." ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-picco#ClimOO_0000463
+:ClimOO_0000463 rdf:type owl:Class ;
+                rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000019> ;
+                rdfs:comment "Reference to the process and ice can be added as needed." ;
+                rdfs:label "soil microbe activity - quality" ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A quality that inheres in a portion of soil in virtue of the metabolic processes of the microorganisms resident in that portion of soil." ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-picco#ClimOO_0000464
+:ClimOO_0000464 rdf:type owl:Class ;
+                rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000016> ;
+                rdfs:label "toxicity" ;
+                rdfs:seeAlso <http://semanticscience.org/resource/SIO_001008> ,
+                             <http://www.ebi.ac.uk/efo/EFO_0011061> ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A disposition bearered by a chemical substance whose realization leads the chemical substance to physiologically or biologically harm living organisms or cells, other than by mechanical means." ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom> "http://aims.fao.org/aos/agrovoc/c_7826" ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-picco#ClimOO_0000465
+:ClimOO_0000465 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000464 ;
+                rdfs:comment "Connections with human, soil and environmental pathogens." ;
+                rdfs:label "ecotoxicity" ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A toxicity that concerns living organisms in their belonging ecosystems (and consequently the ecosystems themselves)." ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom> "https://www.informea.org/en/terms/ecotoxicity; see also: http://aims.fao.org/aos/agrovoc/c_36259; http://www.eionet.europa.eu/gemet/concept/2528" ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-picco#ClimOO_0000466
+:ClimOO_0000466 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000465 ;
+                rdfs:label "plastic debris-induced ecotoxicity" ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A ecotoxicity that is caused by a plastic debris particle." ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-picco#ClimOO_0000467
+:ClimOO_0000467 rdf:type owl:Class ;
+                rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000019> ;
+                <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> "plastic debris-driven asphyxiation process" ;
+                rdfs:comment "The definition can be revised if a more detailed characterization is needed. Subclasses can be added to capture specific details. See: 10.1111/j.1556-4029.2010.01459.x and 10.1177/0300985816643370." ;
+                rdfs:label "plastic debris-driven suffocation process" ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A process that is the deprivation of oxygen supply to an organism's body tissues due to constriction of the organism's airway by ingested plastic debris. Suffocation can produce damage to the organism and potentially culminate in its death." ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom> "10.5811/westjem.2018.4.37198" ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-picco#ClimOO_0000468
+:ClimOO_0000468 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000467 ;
+                rdfs:label "animal plastic debris-driven suffocation process" ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A suffocation process that has an animal as the participant in which the lack of oxygen occurs." ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  https://www.w3id.org/climoo/climoo-picco#ClimOO_0000469
+:ClimOO_0000469 rdf:type owl:Class ;
+                rdfs:subClassOf :ClimOO_0000468 ;
+                rdfs:label "human plastic debris-driven suffocation process" ;
+                <http://www.w3.org/2004/02/skos/core#definition> "plastic debris-driven soffocation process that has a human as the participant in which the lack of oxygen occurs." ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
 
 ###  https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000165
 <https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000165> rdfs:subClassOf <https://www.w3id.org/climoo/climoo-sdc2#ClimOO_0000327> .
@@ -36,6 +540,34 @@ Documentation webpage: https://www.w3id.org/climoo/docs"""@en ,
    owl:annotatedTarget <https://www.w3id.org/climoo/climoo-sdc2#ClimOO_0000327> ;
    rdfs:comment "We include this axiom to map the classes, implementing architecture module alignment and hierarchy consistency."@en
  ] .
+
+
+###  https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000265
+<https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000265> rdf:type owl:Class .
+
+
+###  https://www.w3id.org/climoo/climoo-sdc2#Biodiversity
+<https://www.w3id.org/climoo/climoo-sdc2#Biodiversity> rdf:type owl:Class .
+
+
+###  https://www.w3id.org/climoo/climoo-sdc2#ClimOO_0000304
+<https://www.w3id.org/climoo/climoo-sdc2#ClimOO_0000304> rdf:type owl:Class .
+
+
+###  https://www.w3id.org/climoo/climoo-sdc2#Emission_of_CO2
+<https://www.w3id.org/climoo/climoo-sdc2#Emission_of_CO2> rdf:type owl:Class .
+
+
+###  https://www.w3id.org/climoo/climoo-sdc2#Emission_of_Greenhouse_Gas
+<https://www.w3id.org/climoo/climoo-sdc2#Emission_of_Greenhouse_Gas> rdf:type owl:Class .
+
+
+###  https://www.w3id.org/climoo/climoo-sdc2#Emission_of_Non-CO2_Greenhouse_Gas
+<https://www.w3id.org/climoo/climoo-sdc2#Emission_of_Non-CO2_Greenhouse_Gas> rdf:type owl:Class .
+
+
+###  https://www.w3id.org/climoo/climoo-sdc2#Plant_Physical_Process
+<https://www.w3id.org/climoo/climoo-sdc2#Plant_Physical_Process> rdf:type owl:Class .
 
 
 ###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
