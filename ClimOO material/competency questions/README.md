@@ -6,5 +6,5 @@
 This directory contains CQs materials used to validate the ClimOO Ontology suite, including:
 
 - A list of scoping themes emerged from discussions with stakeholders, on which we deifined CQs, in docx and pdf formats (as of 2026-09-08).
-- CQs formulated in natural language (English),in docx and pdf formats (as of 2026-09-08).
+- CQs formulated in natural language (English) and classified by ClimOO modules, in docx and pdf formats (as of 2026-11-17).
 - SPARQL queries for assessing CQs (as of 2026-09-15).
