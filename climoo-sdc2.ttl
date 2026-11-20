@@ -733,7 +733,7 @@ _:genid60 rdf:type owl:Restriction ;
                 rdfs:label "climate system"@en ;
                 rdfs:seeAlso "http://purl.obolibrary.org/obo/ENVO_01001364" ,
                              "http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#Climate_System_Role and subclasses" ;
-                <http://www.w3.org/2004/02/skos/core#definition> "A complex system that bears a climate disposition. Earth climate systemt is mainly composed of the atmosphere, the hydrosphere, the cryosphere, the lithosphere and the biosphere."@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A complex system that bears a climate disposition. The Earth's climate system is mainly composed of the atmosphere, the hydrosphere, the cryosphere, the lithosphere and the biosphere."@en ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom> "https://www.ipcc.ch/report/ar6/syr/downloads/report/IPCC_AR6_SYR_FullVolume.pdf" ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> ;
                 <https://www.w3id.org/sco#SCO_0000039> :ClimOO_0000306 ,
