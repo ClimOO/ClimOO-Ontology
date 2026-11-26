@@ -4181,7 +4181,8 @@ http://purl.obolibrary.org/obo/ENVO_06105126""" ;
                 <https://www.w3id.org/sco#SCO_0000039> :ClimOO_0000073 ,
                                                        :ClimOO_0000074 ,
                                                        :ClimOO_0000075 ,
-                                                       :ClimOO_0000228 .
+                                                       :ClimOO_0000228 ,
+                                                       "https://w3id.org/climoo/climoo-piccomela#ClimOO_0000609" .
 
 
 ###  https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000073

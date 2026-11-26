@@ -29,12 +29,6 @@ Documentation webpage: https://www.w3id.org/climoo/docs"""@en ,
                                                                                            "The most recent version of this file is available on GitHub at the following link: https://www.w3id.org/climoo/climoo-piccomela."@en .
 
 #################################################################
-#    Annotation properties
-#################################################################
-
-
-
-#################################################################
 #    Object Properties
 #################################################################
 
@@ -177,6 +171,9 @@ We extend the domain and range of this object property to “system environment�
 #################################################################
 #    Classes
 #################################################################
+
+###  http://purl.obolibrary.org/obo/BFO_0000015
+<http://purl.obolibrary.org/obo/BFO_0000015> owl:equivalentClass <http://www.w3.org/ns/prov#Activity> .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource <http://purl.obolibrary.org/obo/BFO_0000015> ;
@@ -598,6 +595,10 @@ https://i-adopt.github.io/ontology/index.html#/Entity"""@en
                                   rdf:type owl:Class
                                 ] ,
                                 [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000117> ;
+                                  owl:someValuesFrom :ClimOO_0000512
+                                ] ,
+                                [ rdf:type owl:Restriction ;
                                   owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000118> ;
                                   owl:someValuesFrom <https://www.w3id.org/climoo/climoo-sdc2#ClimOO_0000319>
                                 ] ;
@@ -721,7 +722,7 @@ FAO. 2021. Assessment of agricultural plastics and their sustainability. A call 
                                                      ) ;
                                   rdf:type owl:Class
                                 ] ,
-                                _:genid191 ;
+                                _:genid192 ;
                 rdfs:comment "We currently focus our system of analysis on activities up to harvesting activities in the agricultural supply chains."@en ,
                              """We included the SuMSO food system classes to provide users with an initial reference backbone hierarchy in case they need to model the relation between agricultural and food systems. 
 
@@ -732,14 +733,14 @@ The agricultural system class may be considered a potential subclass of the SuMS
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom> "http://purl.obolibrary.org/obo/ENVO_0000007; http://purl.obolibrary.org/obo/ENVO_01001246" ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
 
-_:genid191 rdf:type owl:Restriction ;
+_:genid192 rdf:type owl:Restriction ;
             owl:onProperty :ClimOO_0000366 ;
             owl:someValuesFrom <https://www.w3id.org/climoo/climoo-sdc2#ClimOO_0000298> .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource :ClimOO_0000364 ;
    owl:annotatedProperty rdfs:subClassOf ;
-   owl:annotatedTarget _:genid191 ;
+   owl:annotatedTarget _:genid192 ;
    rdfs:comment "We envision implementations to characterize the relations between these systems  with respect to components, interactions, boundaries, development, and history."@en
  ] .
 
@@ -1623,6 +1624,19 @@ _:genid191 rdf:type owl:Restriction ;
                 <http://www.w3.org/2004/02/skos/core#definition> "An apple farming system environment component perspective that is bearered by an apple orchard system environment component."@en .
 
 
+###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000432
+:ClimOO_0000432 rdf:type owl:Class ;
+                rdfs:subClassOf <https://www.w3id.org/climoo/climoo-sdc2#Plant_Physical_Process> ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000066> ;
+                                  owl:someValuesFrom :ClimOO_0000515
+                                ] ;
+                rdfs:label "weed and crop competition process"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A plant physical process occurring in an agricultural field in which weeds and crops interact to contend for the same resources for survival, primarily water, nutrients, light, and carbon dioxide, reducing agricultural outputs."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom> "http://aims.fao.org/aos/agrovoc/c_35265; see also: https://lod.nal.usda.gov/nalt/30169" ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
 ###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000468
 :ClimOO_0000468 rdf:type owl:Class ;
                 rdfs:subClassOf <https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000202> ;
@@ -1689,7 +1703,7 @@ _:genid191 rdf:type owl:Restriction ;
 
 ###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000476
 :ClimOO_0000476 rdf:type owl:Class ;
-                rdfs:subClassOf <http://purl.obolibrary.org/obo/COB_0000035> ;
+                rdfs:subClassOf <https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000221> ;
                 rdfs:comment "We currently exclude usages different for those for agriculture. An agriplastic object can be used in an agricultural system for purposes different from those." ;
                 rdfs:label "agriplastic usage process in agriculture"@en ;
                 <http://www.w3.org/2004/02/skos/core#definition> "A completely executed planned process that involves some agriplastic object employed for some agricultural purpose."@en ;
@@ -1706,7 +1720,7 @@ _:genid191 rdf:type owl:Restriction ;
 
 ###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000478
 :ClimOO_0000478 rdf:type owl:Class ;
-                rdfs:subClassOf <http://purl.obolibrary.org/obo/COB_0000035> ;
+                rdfs:subClassOf <https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000279> ;
                 rdfs:label "agriplastic disposal process"@en ;
                 <http://www.w3.org/2004/02/skos/core#definition> "A planned process that applies to agriplastic objects deemed to be waste, resulting in its removal and demise."@en ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
@@ -1979,9 +1993,17 @@ _:genid191 rdf:type owl:Restriction ;
 
 ###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000512
 :ClimOO_0000512 rdf:type owl:Class ;
-                rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000016> ;
+                rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000015> ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000117> ;
+                                  owl:someValuesFrom [ rdf:type owl:Class ;
+                                                       owl:unionOf ( :ClimOO_0000040
+                                                                     :ClimOO_0000048
+                                                                   )
+                                                     ]
+                                ] ;
                 rdfs:label "agricultural process"@en ;
-                <http://www.w3.org/2004/02/skos/core#definition> "A process that occurs in an agricultural system."@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A process that pertains to an agricultural system."@en ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom> "http://purl.obolibrary.org/obo/ENVO_01001246" ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
 
@@ -2073,7 +2095,7 @@ _:genid191 rdf:type owl:Restriction ;
 
 ###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000523
 :ClimOO_0000523 rdf:type owl:Class ;
-                rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000016> ;
+                rdfs:subClassOf <http://purl.obolibrary.org/obo/GO_0008150> ;
                 rdfs:comment " We recreated this class on the basis of the corresponding GO class. GO axiomatizes the upper-level class “growth” with respect to the class “biological phase”, which presents axioms beyond the purposes of ClimOO. We envision discussions with subject matter experts. This class may be deprecated in favor of a more general class implemented in GO after discussions. We subsume this class under the BFO:process class, which is the direct upper-level class of the corresponding GO class."@en ;
                 rdfs:label "developmental growth"@en ;
                 rdfs:seeAlso "http://purl.obolibrary.org/obo/GO_0040007; http://purl.obolibrary.org/obo/GO_0044848; http://purl.obolibrary.org/obo/GO_0032502." ;
@@ -2329,7 +2351,7 @@ _:genid191 rdf:type owl:Restriction ;
 
 ###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000553
 :ClimOO_0000553 rdf:type owl:Class ;
-                rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000015> ;
+                rdfs:subClassOf :ClimOO_0000512 ;
                 rdfs:label "agricultural soil nutrient cycling impediment process"@en ;
                 <http://www.w3.org/2004/02/skos/core#definition> "A process that has as its output a portion of agricultural soil where nutrients, such as carbon and nitrogen, cannot cycle (participate in a cycling process)."@en ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
@@ -2337,7 +2359,7 @@ _:genid191 rdf:type owl:Restriction ;
 
 ###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000554
 :ClimOO_0000554 rdf:type owl:Class ;
-                rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000015> ;
+                rdfs:subClassOf :ClimOO_0000512 ;
                 <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> "animal entrapment with agriplastics in apple orchards"@en ;
                 rdfs:label "animal entanglement process with agriplastics in apple orchards"@en ;
                 <http://www.w3.org/2004/02/skos/core#definition> "A process that occurs in an apple orchard and results in animals being entrapped in agriplastic objects or related debris."@en ;
@@ -2498,12 +2520,26 @@ _:genid191 rdf:type owl:Restriction ;
 
 ###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000572
 :ClimOO_0000572 rdf:type owl:Class ;
-                rdfs:subClassOf :ClimOO_0000096 ;
+                rdfs:subClassOf :ClimOO_0000096 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://purl.obolibrary.org/obo/RO_0002353> ;
+                                  owl:someValuesFrom <https://www.w3id.org/climoo/climoo-plastico#ClimOO_0000277>
+                                ] ;
                 <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "product, agriplastics"@en ;
+                rdfs:comment "The model needs implementations concerning product roles. See for instance  https://w3id.org/sumso#SuMSO_0000053"@en ;
                 rdfs:label "agriplastic product"@en ;
-                rdfs:seeAlso "https://w3id.org/pmd/co/PMD_0000833; http://purl.obolibrary.org/obo/ENVO_01000993; http://purl.obolibrary.org/obo/ENVO_00003074; https://journals.sagepub.com/doi/abs/10.3233/AO-190210" ;
+                rdfs:seeAlso """https://w3id.org/pmd/co/PMD_0000833; http://purl.obolibrary.org/obo/ENVO_01000993; http://purl.obolibrary.org/obo/ENVO_00003074;
+https://w3id.org/sumso#SuMSO_0000053;  https://journals.sagepub.com/doi/abs/10.3233/AO-190210""" ;
                 <http://www.w3.org/2004/02/skos/core#definition> "An agriplastic object that is an output of a manufacturing process of a piece of synthetic polymer-based material."@en ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :ClimOO_0000572 ;
+   owl:annotatedProperty rdfs:seeAlso ;
+   owl:annotatedTarget """https://w3id.org/pmd/co/PMD_0000833; http://purl.obolibrary.org/obo/ENVO_01000993; http://purl.obolibrary.org/obo/ENVO_00003074;
+https://w3id.org/sumso#SuMSO_0000053;  https://journals.sagepub.com/doi/abs/10.3233/AO-190210""" ;
+   rdfs:comment "We envision implementations to map and accommodate product representations across ontologies."@en
+ ] .
 
 
 ###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000573
@@ -2527,8 +2563,10 @@ _:genid191 rdf:type owl:Restriction ;
 :ClimOO_0000575 rdf:type owl:Class ;
                 rdfs:subClassOf :ClimOO_0000574 ;
                 rdfs:label "standardized agriplastic product price - LRC"@en ;
+                <http://www.w3.org/2004/02/skos/core#comment> "This class specifically refers to parameters set by and for LRC. Implementations may generalize these classes as needed."@en ;
                 <http://www.w3.org/2004/02/skos/core#definition> "An agriplastic product price that has been normalized for comparison purposes by the Laimburg Research Centre (LRC)."@en ;
-                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> ;
+                <https://www.w3id.org/sco#SCO_0000039> <https://w3id.org/climoo/climoo-piccomela#ClimOO_0000609> .
 
 
 ###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000576
@@ -2550,15 +2588,17 @@ _:genid191 rdf:type owl:Restriction ;
 ###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000578
 :ClimOO_0000578 rdf:type owl:Class ;
                 rdfs:subClassOf <http://www.ontologyrepository.com/CommonCoreOntologies/DescriptiveInformationContentEntity> ;
-                rdfs:label "agriplastic product duration of application"@en ;
+                rdfs:label "agriplastic product duration of application - LRC information"@en ;
+                <http://www.w3.org/2004/02/skos/core#comment> "This class and subclasses specifically refer to parameters set by and for LRC. Implementations may generalize these classes as needed."@en ;
                 <http://www.w3.org/2004/02/skos/core#definition> "A descriptive information content entity that describes the time interval within which an agriplastic product can be employed in its typical intended applications before being damaged or deteriorating. It generically depends on the material composition of the agriplastic product."@en ;
-                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> ;
+                <https://www.w3id.org/sco#SCO_0000039> <https://w3id.org/climoo/climoo-piccomela#ClimOO_0000609> .
 
 
 ###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000579
 :ClimOO_0000579 rdf:type owl:Class ;
                 rdfs:subClassOf :ClimOO_0000578 ;
-                rdfs:label "long-term agriplastic product duration of application"@en ;
+                rdfs:label "long-term agriplastic product duration of application - LRC information"@en ;
                 <http://www.w3.org/2004/02/skos/core#definition> "An agriplastic product duration of application that describes a time interval longer than one year (counted from the first product deployment for its designed application; the product is in good factory-fresh condition and not damaged). Reference: LRC."@en ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
 
@@ -2566,7 +2606,7 @@ _:genid191 rdf:type owl:Restriction ;
 ###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000580
 :ClimOO_0000580 rdf:type owl:Class ;
                 rdfs:subClassOf :ClimOO_0000578 ;
-                rdfs:label "short-term agriplastic product duration of application"@en ;
+                rdfs:label "short-term agriplastic product duration of application - LRC infomation"@en ;
                 <http://www.w3.org/2004/02/skos/core#definition> "An agriplastic product duration of application that describes a time interval of less than one year, usully one apple growing season (counted from the first product deployment for its designed application; the product is in good factory-fresh condition and not damaged). Reference: LRC."@en ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
 
@@ -2622,7 +2662,7 @@ _:genid191 rdf:type owl:Restriction ;
 ###  https://www.w3id.org/climoo/climoo-piccomela#ClimOO_0000587
 :ClimOO_0000587 rdf:type owl:Class ;
                 rdfs:subClassOf :ClimOO_0000096 ;
-                rdfs:label "agriplastic object for irrigation"@en;
+                rdfs:label "agriplastic object for irrigation"@en ;
                 <http://www.w3.org/2004/02/skos/core#definition> "An agriplastic object that is used in an agricultural system for the purpose of moving and distributing water across fields and infrastructure according to some stakeholder objectives."@en ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
 
@@ -2803,6 +2843,31 @@ _:genid191 rdf:type owl:Restriction ;
                 rdfs:label "cotton fiber"@en ;
                 <http://www.w3.org/2004/02/skos/core#definition> "A fiber obtained from plants of the genus Gossypium."@en ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom> "http://www.eionet.europa.eu/gemet/concept/1827" .
+
+
+###  https://www.w3id.org/climoo/climoo-sdc2#Plant_Growth
+<https://www.w3id.org/climoo/climoo-sdc2#Plant_Growth> rdfs:subClassOf :ClimOO_0000523 .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <https://www.w3id.org/climoo/climoo-sdc2#Plant_Growth> ;
+   owl:annotatedProperty rdfs:subClassOf ;
+   owl:annotatedTarget :ClimOO_0000523 ;
+   rdfs:comment "We introduce this axiom to align the representations between the ClimOO modules. Model implementations may include repositioning the upper-level class more upstream within the ClimOO architecture, e.g. ClimOO-SDC2, to ensure satisfactory class axiomatization and reuse across modules."@en
+ ] .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://w3id.org/climoo/climoo-piccomela#ClimOO_0000609
+<https://w3id.org/climoo/climoo-piccomela#ClimOO_0000609> rdf:type owl:NamedIndividual ,
+                                                                   <https://www.w3id.org/sco#SCO_0000016> ;
+                                                          <http://purl.org/dc/terms/description> "This owl:NamedIndividual tracks the perspectives of the Laimburg Research Centre (LRC) on plastics and plastic products."@en ;
+                                                          rdfs:label "LRC perspective on plastics"@en ;
+                                                          rdfs:seeAlso "https://pthsta.it/climoo" ,
+                                                                       "https://www.laimburg.it/en/home" ;
+                                                          owl:versionInfo "2026-11-24" .
 
 
 #################################################################
