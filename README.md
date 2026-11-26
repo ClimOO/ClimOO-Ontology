@@ -30,7 +30,7 @@ ClimOO materials can be found here:
 
 The most recent version of ClimOO Ontology suite modules can be always found here:
 - PlasticO: [https://w3id.org/climoo/climoo-plastico](https://w3id.org/climoo/climoo-plastico).
-- ClimOO-SDC2: [https://w3id.org/climoo/climoo-sdc2] (https://w3id.org/climoo/climoo-sdc2).
+- ClimOO-SDC2: [https://w3id.org/climoo/climoo-sdc2](https://w3id.org/climoo/climoo-sdc2).
 - PICCO.
 - PICCOmela.
 
