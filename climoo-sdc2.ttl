@@ -201,6 +201,7 @@ https://w3id.org/sumso/repo"""@en .
                                                      <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
 
 
+###  https://w3id.org/climoo/climoo-sdc2#ClimOO_0000612
 <https://w3id.org/climoo/climoo-sdc2#ClimOO_0000612> rdf:type owl:Class ;
                                                      rdfs:subClassOf <http://purl.obolibrary.org/obo/CHEBI_33675> ,
                                                                      [ rdf:type owl:Class ;
@@ -1146,6 +1147,7 @@ http://www.semanticweb.org/Davarpanah-Babaie/ontologies/2021/9/ClimateOnSDG1267#
                                                      ) ;
                                   rdf:type owl:Class
                                 ] ,
+                                [ rdf:type owl:Restriction ;
                                   owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000117> ;
                                   owl:someValuesFrom :ClimOO_0000304
                                 ] ;
@@ -2067,7 +2069,7 @@ _:genid325 owl:intersectionOf ( :ClimOO_0000320
 ###  https://www.w3id.org/climoo/climoo-sdc2#ClimOO_0000415
 :ClimOO_0000415 rdf:type owl:Class ;
                 rdfs:subClassOf <http://purl.obolibrary.org/obo/PATO_0001018> ;
-                <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "pH" ;
+                <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "pH"@en ;
                 rdfs:comment "We did not import the PATO class directly, as the amount hierarchy branch is only referred to organisms." ;
                 rdfs:label "acidity" ;
                 <http://www.w3.org/2004/02/skos/core#definition> "A physical quality inhering in a bearer due to the bearer's acid content (hydrogen ions)." ;
@@ -2077,7 +2079,7 @@ _:genid325 owl:intersectionOf ( :ClimOO_0000320
 [ rdf:type owl:Axiom ;
    owl:annotatedSource :ClimOO_0000415 ;
    owl:annotatedProperty <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> ;
-   owl:annotatedTarget "pH" ;
+   owl:annotatedTarget "pH"@en ;
    rdfs:comment """ClimOO Ontology comment: 
 the quality, and not the corresponding ICE."""@en
  ] .
@@ -3744,11 +3746,12 @@ We did not include this class for now."""@en ;
                rdfs:subClassOf :Well-mixed_Greenhouse_Gas ,
                                [ rdf:type owl:Restriction ;
                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000110> ;
-                                 owl:someValuesFrom <http://purl.obolibrary.org/obo/CHEBI_25555>
+                                 owl:someValuesFrom <http://purl.obolibrary.org/obo/CHEBI_51143>
                                ] ,
                                [ rdf:type owl:Restriction ;
                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000110> ;
-                                 owl:someValuesFrom <http://purl.obolibrary.org/obo/CHEBI_51143>
+                                 owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+                                 owl:onClass <http://purl.obolibrary.org/obo/CHEBI_25555>
                                ] ;
                rdfs:label "portion of nitrous oxide"@en ;
                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
@@ -5084,6 +5087,12 @@ Van Meerbeek, K., Jucker, T., & Svenning, J.-C. (2021). Unifying the concepts of
 
 [ owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger
 ] .
+
+[ owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
 
 [ owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger
  ] .
