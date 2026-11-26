@@ -10,14 +10,14 @@
 @base <http://purl.obolibrary.org/obo/climoo/climoo-sdc2/chebi_imports#> .
 
 <http://purl.obolibrary.org/obo/climoo/climoo-sdc2/chebi_imports> rdf:type owl:Ontology ;
-                                                                   owl:versionIRI <http://purl.obolibrary.org/obo/climoo/climoo-sdc2/chebi_imports/2026-11-10> ;
+                                                                   owl:versionIRI <http://purl.obolibrary.org/obo/climoo/climoo-sdc2/chebi_imports/2026-11-26> ;
                                                                    rdfs:comment """This file contains ClimOO Ontology suite imports fletched from the Chemical Entities of Biological Interest Ontology (ChEBI) via OntoFox (https://ontofox.hegroup.org/index.php).
 
 Ontology source: https://ontobee.org/ontology/CHEBI"""@en ;
                                                                    rdfs:seeAlso """The related Ontofox imput file.
 https://github.com/ClimOO/ClimOO-Ontology/tree/main/ClimOO%20material/src/ontology/imports/sdc2%20imports/chebi-imports-ontofox-26/10/29"""@en ,
                                                                                 "https://www.ebi.ac.uk/chebi/" ;
-                                                                   owl:versionInfo "2026-11-10" .
+                                                                   owl:versionInfo "2026-11-26" .
 
 #################################################################
 #    Annotation properties
@@ -204,6 +204,53 @@ obo:CHEBI_25585 rdf:type owl:Class ;
                 rdfs:label "nonmetal atom" .
 
 
+###  http://purl.obolibrary.org/obo/CHEBI_25805
+obo:CHEBI_25805 rdf:type owl:Class ;
+                rdfs:subClassOf obo:CHEBI_25585 ,
+                                obo:CHEBI_33303 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:RO_0000087 ;
+                                  owl:someValuesFrom obo:CHEBI_33937
+                                ] ;
+                obo:IAO_0000412 obo:chebi.owl ;
+                oboInOwl:hasDbXref "kegg.compound:C00007" ,
+                                   "webelements:O" ;
+                oboInOwl:hasExactSynonym "oxygen" ;
+                oboInOwl:hasOBONamespace "chebi_ontology" ;
+                oboInOwl:hasRelatedSynonym "8O" ,
+                                           "O" ,
+                                           "Sauerstoff" ,
+                                           "oxigeno" ,
+                                           "oxygen" ,
+                                           "oxygene" ;
+                oboInOwl:id "CHEBI:25805" ;
+                oboInOwl:inSubset <http://purl.oboInOwllibrary.org/oboInOwl/chebi/3_STAR> ;
+                rdfs:label "oxygen atom" ;
+                chemrof:charge 0 ;
+                chemrof:generalized_empirical_formula "O" ;
+                chemrof:inchi_key_string "QVGXLLKOCUKJST-UHFFFAOYSA-N" ;
+                chemrof:inchi_string "InChI=1S/O" ;
+                chemrof:mass 15.999 ;
+                chemrof:monoisotopic_mass 15.99491 ;
+                chemrof:smiles_string "[O]" .
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_25806
+obo:CHEBI_25806 rdf:type owl:Class ;
+                rdfs:subClassOf obo:CHEBI_33304 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000051 ;
+                                  owl:someValuesFrom obo:CHEBI_25805
+                                ] ;
+                obo:IAO_0000412 obo:chebi.owl ;
+                oboInOwl:hasOBONamespace "chebi_ontology" ;
+                oboInOwl:hasRelatedSynonym "oxygen molecular entities" ,
+                                           "oxygen molecular entity" ;
+                oboInOwl:id "CHEBI:25806" ;
+                oboInOwl:inSubset <http://purl.oboInOwllibrary.org/oboInOwl/chebi/3_STAR> ;
+                rdfs:label "oxygen molecular entity" .
+
+
 ###  http://purl.obolibrary.org/obo/CHEBI_33250
 obo:CHEBI_33250 rdf:type owl:Class ;
                 rdfs:subClassOf obo:CHEBI_24431 ;
@@ -273,6 +320,50 @@ obo:CHEBI_33302 rdf:type owl:Class ;
                 oboInOwl:id "CHEBI:33302" ;
                 oboInOwl:inSubset <http://purl.oboInOwllibrary.org/oboInOwl/chebi/3_STAR> ;
                 rdfs:label "pnictogen molecular entity" .
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_33303
+obo:CHEBI_33303 rdf:type owl:Class ;
+                rdfs:subClassOf obo:CHEBI_33560 ;
+                obo:IAO_0000115 "Any p-block element belonging to the group 16 family of the periodic table." ;
+                obo:IAO_0000412 obo:chebi.owl ;
+                oboInOwl:hasDbXref "pubmed:17084588" ;
+                oboInOwl:hasExactSynonym "chalcogen" ,
+                                         "chalcogens" ;
+                oboInOwl:hasOBONamespace "chebi_ontology" ;
+                oboInOwl:hasRelatedSynonym "Chalkogen" ,
+                                           "Chalkogene" ,
+                                           "anfigeno" ,
+                                           "anfigenos" ,
+                                           "calcogeno" ,
+                                           "calcogenos" ,
+                                           "chalcogen" ,
+                                           "chalcogene" ,
+                                           "chalcogenes" ,
+                                           "chalcogens" ,
+                                           "group 16 elements" ,
+                                           "group VI elements" ;
+                oboInOwl:id "CHEBI:33303" ;
+                oboInOwl:inSubset <http://purl.oboInOwllibrary.org/oboInOwl/chebi/3_STAR> ;
+                rdfs:label "chalcogen" .
+
+
+###  http://purl.obolibrary.org/obo/CHEBI_33304
+obo:CHEBI_33304 rdf:type owl:Class ;
+                rdfs:subClassOf obo:CHEBI_33675 ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty obo:BFO_0000051 ;
+                                  owl:someValuesFrom obo:CHEBI_33303
+                                ] ;
+                obo:IAO_0000115 "Any p-block molecular entity containing a chalcogen." ;
+                obo:IAO_0000412 obo:chebi.owl ;
+                oboInOwl:hasOBONamespace "chebi_ontology" ;
+                oboInOwl:hasRelatedSynonym "chalcogen compounds" ,
+                                           "chalcogen molecular entities" ,
+                                           "chalcogen molecular entity" ;
+                oboInOwl:id "CHEBI:33304" ;
+                oboInOwl:inSubset <http://purl.oboInOwllibrary.org/oboInOwl/chebi/3_STAR> ;
+                rdfs:label "chalcogen molecular entity" .
 
 
 ###  http://purl.obolibrary.org/obo/CHEBI_33306
