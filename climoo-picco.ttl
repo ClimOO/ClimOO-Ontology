@@ -47,25 +47,60 @@ Documentation webpage: https://www.w3id.org/climoo/docs"""@en ,
                                                       <http://www.w3.org/2004/02/skos/core#definition> "An emission process of carbon oxide that occurs from the soil."@en .
 
 
+###  https://w3id.org/climoo/climoo-picco#ClimOO_0000613
+<https://w3id.org/climoo/climoo-picco#ClimOO_0000613> rdf:type owl:Class ;
+                                                      rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000015> ,
+                                                                      [ rdf:type owl:Restriction ;
+                                                                        owl:onProperty <http://purl.obolibrary.org/obo/RO_0000057> ;
+                                                                        owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                             owl:complementOf <https://w3id.org/climoo/climoo-sdc2#ClimOO_0000612>
+                                                                                           ]
+                                                                      ] ;
+                                                      owl:disjointWith :ClimOO_0000418 ;
+                                                      rdfs:comment "This process can be seen at different levels of granularity, such as molecular, biological, and physiological levels. Definition focus can slightly change. We tried to accommodate possible views here."@en ;
+                                                      rdfs:label "organism anaerobic respiration process"@en ;
+                                                      <http://www.w3.org/2004/02/skos/core#comment> "We envision discussion with subject matter experts to expand this model, detailing it, especially across levels of analysis and with respect to other cellular metabolism pathways."@en ;
+                                                      <http://www.w3.org/2004/02/skos/core#definition> "A process that allows living organisms to produce energy and convert organic matter, in absence of molecular oxygen."@en ;
+                                                      <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom> "https://unterm.un.org/unterm2/en/view/666d152b-482b-48ac-99cb-cb9bff5efc6e"@en ;
+                                                      <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional> .
+
+
+###  https://w3id.org/climoo/climoo-picco#ClimOO_0000614
+<https://w3id.org/climoo/climoo-picco#ClimOO_0000614> rdf:type owl:Class ;
+                                                      rdfs:subClassOf <https://w3id.org/climoo/climoo-picco#ClimOO_0000613> ;
+                                                      rdfs:label "microbial anaerobic respiration process"@en ;
+                                                      <http://www.w3.org/2004/02/skos/core#definition> "An anaerobic respiration process that pertains to some microorganisms."@en ;
+                                                      <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
 ###  https://www.w3id.org/climoo/climoo-picco#ClimOO_0000418
 :ClimOO_0000418 rdf:type owl:Class ;
                 rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000015> ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://purl.obolibrary.org/obo/RO_0000057> ;
+                                  owl:someValuesFrom <https://w3id.org/climoo/climoo-sdc2#ClimOO_0000612>
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://purl.obolibrary.org/obo/RO_0000057> ;
+                                  owl:someValuesFrom <https://www.w3id.org/climoo/climoo-sdc2#ClimOO_0000403>
+                                ] ,
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty <http://purl.obolibrary.org/obo/RO_0002234> ;
                                   owl:someValuesFrom <https://w3id.org/climoo/climoo-sdc2#ClimOO_0000416>
                                 ] ;
                 rdfs:comment "This process can be seen at different levels of granularity, such as molecular, biological, and physiological levels. Definition focus can slightly change. We tried to accommodate possible views here."@en ;
-                rdfs:label "organism respiration process"@en ;
+                rdfs:label "organism aerobic respiration process"@en ;
+                <http://www.w3.org/2004/02/skos/core#comment> "We envision discussion with subject matter experts to expand this model, detailing it, especially across levels of analysis and with respect to other cellular metabolism pathways."@en ;
                 <http://www.w3.org/2004/02/skos/core#definition> "A process that allows living organisms to produce energy and convert organic matter, involving the consumption of molecular oxygen captured from the organism's surroundings and the release of carbon dioxide."@en ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom> "https://unterm.un.org/unterm2/en/view/f9a1c142-43f5-4f07-b518-baacd482b234; http://opendata.inra.fr/anaeeThes/c_1406131609604" ;
-                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional> .
 
 
 ###  https://www.w3id.org/climoo/climoo-picco#ClimOO_0000419
 :ClimOO_0000419 rdf:type owl:Class ;
                 rdfs:subClassOf :ClimOO_0000418 ;
-                rdfs:label "microbial respiration process"@en ;
-                <http://www.w3.org/2004/02/skos/core#definition> "A respiration process that has, as main participants, some microorganisms."@en ;
+                rdfs:label "microbial aerobic respiration process"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "An aerobic respiration process that pertains to some microorganisms."@en ;
                 <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
 
 
